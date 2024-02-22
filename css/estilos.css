@@ -1,0 +1,205 @@
+@font-face{
+    font-family: 'Mithella';
+    src: url(./Mithella-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: 'Mithella', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #535C91;
+    color: #353131;
+    
+}
+
+:root {
+    --background-color: #9290C3;
+    --main-color: #29d6b0;
+    --card-color: #7077A1;
+}
+
+header, section, footer {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 960px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+h2 {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+}
+section a{
+    text-decoration: none;
+    color: #353131;
+}
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#idiomas {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 180px;
+    text-align: center;
+}
+
+.language span {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+#informatica {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 180px;
+    text-align: center;
+}
+
+.skill span {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#experiencia {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 250px; /* Ajusta según necesidad */
+    text-align: center;
+}
+
+.job span {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#formacion-reglada {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.degree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 250px; /* Ajuste según necesidad */
+    text-align: center;
+}
+
+.degree span {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#formacion-complementaria {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 250px; /* Ajuste según necesidad */
+    text-align: center;
+}
+
+.course span {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
