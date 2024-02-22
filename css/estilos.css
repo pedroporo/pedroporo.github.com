@@ -1,9 +1,10 @@
-@font-face{
+@font-face {
     font-family: 'Mithella';
     src: url(./Mithella-Regular.otf);
     font-style: normal;
     font-weight: normal;
 }
+
 body {
     font-family: 'Mithella', sans-serif;
     margin: 0;
@@ -21,7 +22,9 @@ body {
     --card-color: #7077A1;
 }
 
-header, section, footer {
+header,
+section,
+footer {
     margin: 20px auto;
     width: 80%;
     max-width: 960px;
@@ -31,20 +34,27 @@ header {
     text-align: center;
     align-self: flex-start;
 }
-.profile{
+
+.profile {
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
 }
-.profile:hover{
-    border-radius:50%;
-    -webkit-border-radius:50%;
+
+.profile:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
     box-shadow: 0px 0px 15px 15px var(--main-color);
     -webkit-box-shadow: 0px 0px 15px 15px var(--main-color);
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: scale(1.3);
-    }
+
+}
+
 h1 {
     color: var(--main-color);
 }
@@ -53,15 +63,17 @@ h2 {
     border-bottom: 2px solid var(--main-color);
     padding-bottom: 5px;
 }
-section a{
+
+section a {
     text-decoration: none;
     color: #353131;
 }
+
 section {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -71,7 +83,7 @@ footer {
     background-color: var(--main-color);
     color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #idiomas {
@@ -93,7 +105,7 @@ footer {
     background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 180px;
     text-align: center;
 }
@@ -123,7 +135,7 @@ footer {
     background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 180px;
     text-align: center;
 }
@@ -145,9 +157,15 @@ footer {
     gap: 20px;
 }
 
-section div div:hover{
+section div div {
+    overflow: hidden;
+    transition-duration: 0.8s;
+}
+
+section div div:hover {
     transform: scale(1.3);
 }
+
 .job {
     display: flex;
     flex-direction: column;
@@ -155,8 +173,9 @@ section div div:hover{
     background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajusta según necesidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    /* Ajusta según necesidad */
     text-align: center;
 }
 
@@ -184,8 +203,9 @@ section div div:hover{
     background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajuste según necesidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    /* Ajuste según necesidad */
     text-align: center;
 }
 
@@ -213,8 +233,9 @@ section div div:hover{
     background-color: var(--card-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajuste según necesidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    /* Ajuste según necesidad */
     text-align: center;
 }
 
