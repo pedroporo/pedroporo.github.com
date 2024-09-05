@@ -3,4 +3,3 @@
 ---
 
 XD
-![OIG4.jpeg](/img/user/OIG4.jpeg)
