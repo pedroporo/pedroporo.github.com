@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://pedroporo.github.io/notas/">
+    <title>Yazan&#39;s Blog</title>
+    <link href="https://pedroporo.github.io/notas//feed.xml" rel="self" >
+    <link href="https://pedroporo.github.io/notas/" >
+    <updated>2024-09-05T10:58:26Z</updated>
+    <id>https://pedroporo.github.io/notas/</id>
+        <entry>
+            <title>
+                Desarollo Web en entorno cliente
+                
+            </title>
+            <updated>2024-09-05T10:58:18Z</updated>
+            <id>https://pedroporo.github.io/notas//notes/Desarollo Web en entorno cliente/</id>
+            <content type="html">
+                
+            </content>
+            <link href="https://pedroporo.github.io/notas//notes/Desarollo Web en entorno cliente/" >
+        </entry>
+</feed>
