@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/notas/ingles/ingles/"}
 ---
-fghfghghj
-Holaaghfg
+
+XDd
