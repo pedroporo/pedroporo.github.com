@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/notas//feed.xml" rel="self" >
     <link href="https://pedroporo.github.io/notas/" >
-    <updated>2024-09-05T12:08:29Z</updated>
+    <updated>2024-09-05T12:09:15Z</updated>
     <id>https://pedroporo.github.io/notas/</id>
         <entry>
             <title>
                 Indice
                 
             </title>
-            <updated>2024-09-05T12:08:13Z</updated>
+            <updated>2024-09-05T12:09:08Z</updated>
             <id>https://pedroporo.github.io/notas//</id>
             <content type="html">
                 
@@ -22,12 +22,12 @@
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-09-05T12:08:13Z</updated>
-            <id>https://pedroporo.github.io/notas//desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
+            <updated>2024-09-05T12:09:08Z</updated>
+            <id>https://pedroporo.github.io/notas//notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;p&gt;testeo&lt;/p&gt;
 
             </content>
-            <link href="https://pedroporo.github.io/notas//desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/" >
+            <link href="https://pedroporo.github.io/notas//notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/" >
         </entry>
 </feed>
