@@ -3,15 +3,15 @@
     <title>Pedro Blog</title>
     <link href="https://pedroporo.github.io/notas/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io/notas" >
-    <updated>2024-09-05T11:25:05Z</updated>
+    <updated>2024-09-05T11:33:13Z</updated>
     <id>https://pedroporo.github.io/notas</id>
         <entry>
             <title>
                 test
                 
             </title>
-            <updated>2024-09-05T11:24:57Z</updated>
-            <id>https://pedroporo.github.io/notas/atlas-without-atlas/</id>
+            <updated>2024-09-05T11:33:06Z</updated>
+            <id>https://pedroporo.github.io/notas/</id>
             <content type="html">
                 &lt;p&gt;Suspendisse faucibus ut quam sit amet finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vitae porttitor dui, id ullamcorper sem. Nulla nulla lacus, aliquam eu ultricies in, venenatis eget felis. Phasellus est metus, tristique ut nulla vitae, laoreet pretium sapien. Praesent porta elit odio, vitae condimentum turpis dapibus non. Fusce condimentum et justo in molestie. Integer varius fringilla sapien ut mollis. Integer accumsan, diam vel tincidunt consequat, lacus lacus malesuada sem, non lobortis dolor quam sit amet eros. Duis cursus libero massa, ac fermentum augue egestas eget. Nulla sed laoreet velit, at mattis nulla.&lt;/p&gt;
 &lt;p&gt;Aliquam vel nunc purus. Fusce lobortis et diam eu mollis. Curabitur in felis est. Sed vitae erat neque. Sed at egestas augue. Duis vitae nulla id sem facilisis ultrices. Aenean imperdiet pharetra neque, ac auctor urna tempus sed. Morbi consequat tincidunt nibh in dapibus.&lt;/p&gt;
@@ -20,14 +20,14 @@
 &lt;p&gt;Pellentesque sit amet elit a sem venenatis efficitur. Etiam sed dui porta, condimentum elit quis, sodales nunc. Ut nec aliquam erat, et mollis urna. In in sodales ipsum. Praesent suscipit enim a sem egestas, sit amet congue nibh volutpat. Donec imperdiet felis nec aliquam rutrum. Proin fermentum, velit sed vestibulum vulputate, est lectus sodales mauris, id viverra erat felis id urna. Proin eget efficitur diam. Integer laoreet bibendum neque, convallis elementum turpis tincidunt vitae. Quisque vitae ex velit. Proin ultrices vestibulum semper. Sed maximus tellus quis dapibus vehicula. Nam luctus magna eget velit euismod, non varius justo tincidunt. Cras placerat elit dapibus, efficitur nisi et, bibendum turpis. Nulla laoreet dui sem, sed posuere leo vestibulum vitae. Maecenas eu orci laoreet, euismod nisl vitae, lobortis massa.&lt;/p&gt;
 
             </content>
-            <link href="https://pedroporo.github.io/notas/atlas-without-atlas/" >
+            <link href="https://pedroporo.github.io/notas/" >
         </entry>
         <entry>
             <title>
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-09-05T11:24:57Z</updated>
+            <updated>2024-09-05T11:33:06Z</updated>
             <id>https://pedroporo.github.io/notas/notes/Desarollo Web en entorno cliente/</id>
             <content type="html">
                 
