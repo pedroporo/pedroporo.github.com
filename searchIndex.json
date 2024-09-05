@@ -1,7 +1,7 @@
 [
 {
 		"title": "Asignatura de entornos a clientes",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/",
 		"content": "testeo",
 		"tags": [ "note"]
@@ -9,31 +9,31 @@
 
 {
 		"title": "Desarollo Web en entorno servidor",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/",
-		"content": "",
+		"content": "Hola",
 		"tags": [ "note"]
 },
 
 {
 		"title": "Despliegue de aplicaciones WEB",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/",
-		"content": "",
+		"content": "Hola despliege",
 		"tags": [ "note"]
 },
 
 {
 		"title": "Diseño de interfaces WEB",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/",
-		"content": "",
+		"content": "Hola Diseño",
 		"tags": [ "note"]
 },
 
 {
 		"title": "Indice",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "",
 		"tags": [ "note","gardenEntry"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "Ingles",
-		"date":"Thu Sep 05 2024 12:16:51 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:17:35 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/ingles/ingles/",
 		"content": "fghfghghj\nHolaaghfg",
 		"tags": [ "note"]
