@@ -1,7 +1,7 @@
 [
 {
 		"title": "Asignatura de entornos a clientes",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/",
 		"content": "testeo",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Desarollo Web en entorno servidor",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/",
 		"content": "Hola",
 		"tags": [ "note"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Despliegue de aplicaciones WEB",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/",
 		"content": "Hola despliege",
 		"tags": [ "note"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "Diseño de interfaces WEB",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/",
 		"content": "Hola Diseño",
 		"tags": [ "note"]
@@ -33,7 +33,7 @@
 
 {
 		"title": "Indice",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/ingles/ingles/\">Ingles</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/\">Despliegue de aplicaciones WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>",
 		"tags": [ "note","gardenEntry"]
@@ -41,7 +41,7 @@
 
 {
 		"title": "Ingles",
-		"date":"Thu Sep 05 2024 13:22:37 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 13:31:55 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/ingles/ingles/",
 		"content": "XD",
 		"tags": [ "note"]
