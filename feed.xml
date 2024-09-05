@@ -3,17 +3,18 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2024-09-05T13:32:17Z</updated>
+    <updated>2024-09-05T13:40:31Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 Ingles
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/notas/ingles/ingles/</id>
             <content type="html">
-                &lt;p&gt;XD&lt;/p&gt;
+                &lt;p&gt;XD&lt;br /&gt;
+&lt;img src=&quot;https://pedroporo.github.io/img/user/OIG4.jpeg&quot; alt=&quot;OIG4.jpeg&quot; /&gt;&lt;/p&gt;
 
             </content>
             <link href="https://pedroporo.github.io/notas/ingles/ingles/" >
@@ -23,7 +24,7 @@
                 Indice
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/ingles/ingles/&quot;&gt;Ingles&lt;/a&gt;&lt;br /&gt;
@@ -40,7 +41,7 @@
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -53,7 +54,7 @@
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -66,7 +67,7 @@
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;Hola&lt;/p&gt;
@@ -79,7 +80,7 @@
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-09-05T13:32:10Z</updated>
+            <updated>2024-09-05T13:40:23Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;p&gt;testeo&lt;/p&gt;
