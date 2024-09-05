@@ -33,4 +33,4 @@ jobs:
       with:
         publish_dir: ./dist
         github_token: ${{ secrets.GH_TOKEN }}
-        cname: notes.worldmemistic.duckdns.org
+        cname: pedroporo.github.io/notas/
