@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2024-09-05T14:46:51Z</updated>
+    <updated>2024-09-05T15:24:03Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 Ingles
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/notas/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;XD&lt;/p&gt;
@@ -23,14 +23,94 @@
                 Indice
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/ingles/ingles/&quot;&gt;Ingles&lt;/a&gt;&lt;br /&gt;
+                &lt;p&gt;Asignaturas&lt;br /&gt;
+&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/ingles/ingles/&quot;&gt;Ingles&lt;/a&gt;&lt;br /&gt;
 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/&quot;&gt;Diseño de interfaces WEB&lt;/a&gt;&lt;br /&gt;
 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/&quot;&gt;Despliegue de aplicaciones WEB&lt;/a&gt;&lt;br /&gt;
 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/&quot;&gt;Desarollo Web en entorno servidor&lt;/a&gt;&lt;br /&gt;
 &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/&quot;&gt;Desarollo Web en entorno cliente&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Horario:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Hora&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Lunes&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Martes&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Miercoles&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Jueves&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Viernes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;14:55 - 15:50&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;15:50 - 16:45&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;16:45 - 17:40&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;17:40 - 18:00&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Descanso&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Descanso&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Descanso&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Descanso&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Descanso&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;18:00 - 18:55&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;18:55 - 19:50&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;19:50 - 20:45&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;20:45 - 21:40&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
             </content>
             <link href="https://pedroporo.github.io/" >
@@ -40,7 +120,7 @@
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -53,7 +133,7 @@
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -66,7 +146,7 @@
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;Hola&lt;/p&gt;
@@ -79,7 +159,7 @@
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-09-05T14:46:43Z</updated>
+            <updated>2024-09-05T15:23:55Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;p&gt;testeo&lt;/p&gt;
