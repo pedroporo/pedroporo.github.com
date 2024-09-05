@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://notas.pedroporo.github.io/notas/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://notas.pedroporo.github.io">
     <title>Notas de pedro</title>
-    <link href="https://notas.pedroporo.github.io/notas//feed.xml" rel="self" >
-    <link href="https://notas.pedroporo.github.io/notas/" >
-    <updated>2024-09-05T12:13:40Z</updated>
-    <id>https://notas.pedroporo.github.io/notas/</id>
+    <link href="https://notas.pedroporo.github.io/feed.xml" rel="self" >
+    <link href="https://notas.pedroporo.github.io" >
+    <updated>2024-09-05T12:13:43Z</updated>
+    <id>https://notas.pedroporo.github.io</id>
         <entry>
             <title>
                 Ingles
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//notas/ingles/ingles/</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/notas/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;fghfghghj&lt;br /&gt;
 Holaaghfg&lt;/p&gt;
 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//notas/ingles/ingles/" >
+            <link href="https://notas.pedroporo.github.io/notas/ingles/ingles/" >
         </entry>
         <entry>
             <title>
                 Indice
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/</id>
             <content type="html">
                 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//" >
+            <link href="https://notas.pedroporo.github.io/" >
         </entry>
         <entry>
             <title>
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//notas/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//notas/diseno-de-interfaces-web/diseno-de-interfaces-web/" >
+            <link href="https://notas.pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/" >
         </entry>
         <entry>
             <title>
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/" >
+            <link href="https://notas.pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/" >
         </entry>
         <entry>
             <title>
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/" >
+            <link href="https://notas.pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/" >
         </entry>
         <entry>
             <title>
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-09-05T12:13:32Z</updated>
-            <id>https://notas.pedroporo.github.io/notas//notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
+            <updated>2024-09-05T12:13:35Z</updated>
+            <id>https://notas.pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;p&gt;testeo&lt;/p&gt;
 
             </content>
-            <link href="https://notas.pedroporo.github.io/notas//notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/" >
+            <link href="https://notas.pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/" >
         </entry>
 </feed>
