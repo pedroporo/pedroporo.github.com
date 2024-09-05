@@ -1,9 +1,17 @@
 [
 {
 		"title": "Inicio",
-		"date":"Thu Sep 05 2024 12:07:00 GMT+0000 (Coordinated Universal Time)",
+		"date":"Thu Sep 05 2024 12:08:13 GMT+0000 (Coordinated Universal Time)",
 		"url":"/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/",
 		"content": "testeo",
 		"tags": [ "note"]
+},
+
+{
+		"title": "Indice",
+		"date":"Thu Sep 05 2024 12:08:13 GMT+0000 (Coordinated Universal Time)",
+		"url":"/",
+		"content": "",
+		"tags": [ "note","gardenEntry"]
 }
 ]
