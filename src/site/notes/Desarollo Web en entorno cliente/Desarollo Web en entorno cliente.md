@@ -1,8 +1,7 @@
 ---
-dg-publish: true
-title: "My Custom Title"
-dg-home: true
+{"dg-publish":true,"permalink":"/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/","title":"Titulo"}
 ---
+
 
 
 
