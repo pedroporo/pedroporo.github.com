@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/","title":"Titulo"}
+{"dg-publish":true,"permalink":"/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/","title":"Inicio"}
 ---
 
 
