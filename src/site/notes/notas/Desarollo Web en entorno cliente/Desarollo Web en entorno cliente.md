@@ -1,7 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/","title":"Asignatura de entornos a clientes"}
+dg-publish: true
+title: Asignatura de entornos a clientes
 ---
-
 
 
 
