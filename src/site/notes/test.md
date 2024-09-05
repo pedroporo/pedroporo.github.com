@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/atlas-without-atlas/"}
+{"dg-publish":true,"permalink":"/test/","tags":["gardenEntry"]}
 ---
+
 
 
 Suspendisse faucibus ut quam sit amet finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vitae porttitor dui, id ullamcorper sem. Nulla nulla lacus, aliquam eu ultricies in, venenatis eget felis. Phasellus est metus, tristique ut nulla vitae, laoreet pretium sapien. Praesent porta elit odio, vitae condimentum turpis dapibus non. Fusce condimentum et justo in molestie. Integer varius fringilla sapien ut mollis. Integer accumsan, diam vel tincidunt consequat, lacus lacus malesuada sem, non lobortis dolor quam sit amet eros. Duis cursus libero massa, ac fermentum augue egestas eget. Nulla sed laoreet velit, at mattis nulla.
