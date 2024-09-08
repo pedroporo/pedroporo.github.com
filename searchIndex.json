@@ -1,7 +1,7 @@
 [
 {
 		"title": "Asignatura de entornos a clientes",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/",
 		"content": "testeo",
 		"tags": [ "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Desarollo Web en entorno servidor",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/",
 		"content": "Hola",
 		"tags": [ "note"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Despliegue de aplicaciones WEB",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/",
 		"content": "Hola despliege",
 		"tags": [ "note"]
@@ -25,7 +25,7 @@
 
 {
 		"title": "Diseño de interfaces WEB",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/",
 		"content": "Hola Diseño",
 		"tags": [ "note"]
@@ -33,15 +33,15 @@
 
 {
 		"title": "Indice",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
-		"content": "Asignaturas\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/ingles/ingles/\">Ingles</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/\">Despliegue de aplicaciones WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\nHorario:\n\nHora\nLunes\nMartes\nMiercoles\nJueves\nViernes\n\n14:55 - 15:50\nEmpresa\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n15:50 - 16:45\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n16:45 - 17:40\n\n17:40 - 18:00\nDescanso\nDescanso\nDescanso\nDescanso\nDescanso\n\n18:00 - 18:55\n\n18:55 - 19:50\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n19:50 - 20:45\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n20:45 - 21:40",
+		"content": "Asignaturas\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/ingles/ingles/\">Ingles</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/\">Despliegue de aplicaciones WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\nHorario:\n\nHora\nLunes\nMartes\nMiercoles\nJueves\nViernes\n\n14:55 - 15:50\nEmpresa\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\nTutoria\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\nTutoria\n\n15:50 - 16:45\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\nTutoria\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\nTutoria\n\n16:45 - 17:40\n\nTutoria\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\nEmpresa\n\n17:40 - 18:00\nDescanso\nDescanso\nDescanso\nDescanso\nDescanso\n\n18:00 - 18:55\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\nEmpresa\n\n18:55 - 19:50\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n19:50 - 20:45\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/\">Desarollo Web en entorno servidor</a>\n\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/\">Desarollo Web en entorno cliente</a>\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/\">Diseño de interfaces WEB</a>\n\n20:45 - 21:40",
 		"tags": [ "note","gardenEntry"]
 },
 
 {
 		"title": "Ingles",
-		"date":"Sun Sep 08 2024 09:58:21 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Sep 08 2024 10:03:07 GMT+0000 (Coordinated Universal Time)",
 		"url":"/notas/ingles/ingles/",
 		"content": "XD\nname Add note\ntype command\naction QuickAdd: add note\ncolor default",
 		"tags": [ "note"]
