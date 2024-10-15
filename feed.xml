@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2024-10-15T18:18:28Z</updated>
+    <updated>2024-10-15T18:18:38Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 xx-tests
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -166,7 +166,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -324,7 +324,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -493,7 +493,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -664,7 +664,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -1052,7 +1052,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -1257,7 +1257,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -1539,7 +1539,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -2360,7 +2360,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -2668,7 +2668,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/07-globales/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-nativos&quot; tabindex=&quot;-1&quot;&gt;Objetos nativos&lt;/h1&gt;
@@ -2921,7 +2921,7 @@ console.log( fecha.getDate() )      // imprime 30
                 06-eventos
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -3183,7 +3183,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -3390,7 +3390,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -3595,7 +3595,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/04-dom/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -3978,7 +3978,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/03-1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -4076,7 +4076,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/03-1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -4316,7 +4316,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -4594,7 +4594,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/02-2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -4994,7 +4994,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/02-1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -5174,7 +5174,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;h1 id=&quot;sintaxis&quot; tabindex=&quot;-1&quot;&gt;Sintaxis&lt;/h1&gt;
@@ -5735,7 +5735,7 @@ try {
                 Ingles
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -5748,7 +5748,7 @@ try {
                 Indice
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -5845,7 +5845,7 @@ try {
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -5858,7 +5858,7 @@ try {
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -5871,7 +5871,7 @@ try {
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -5884,7 +5884,7 @@ try {
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2024-10-15T18:18:20Z</updated>
+            <updated>2024-10-15T18:18:29Z</updated>
             <id>https://pedroporo.github.io/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
