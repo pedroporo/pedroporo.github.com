@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>03.1-vite</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,234 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="vite" tabindex="-1">Vite</h1>
+<ul>
+<li><a href="#vite" target="_blank" class="external-link">Vite</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#crear-un-nuevo-proyecto" target="_blank" class="external-link">Crear un nuevo proyecto</a></li>
+<li><a href="#desarrollar-nuestro-proyecto" target="_blank" class="external-link">Desarrollar nuestro proyecto</a>
+<ul>
+<li><a href="#trabajar-con-distintos-ficheros-de-c%C3%B3digo" target="_blank" class="external-link">Trabajar con distintos ficheros de código</a>
+<ul>
+<li><a href="#named-export" target="_blank" class="external-link">Named export</a></li>
+<li><a href="#default-export" target="_blank" class="external-link">Default export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#im%C3%A1genes" target="_blank" class="external-link">Imágenes</a></li>
+<li><a href="#paso-a-producci%C3%B3n" target="_blank" class="external-link">Paso a producción</a></li>
+<li><a href="#testear-el-proyecto" target="_blank" class="external-link">Testear el proyecto</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>Cuando crece el tamaño de un proyecto y tenemos más ficheros de código (cómo al trabajar con clases) es necesario organizarlos de forma que sea fácil encontrarlos y que no haya problemas de dependencias.</p>
+<p>Sin embargo tener muchos ficheros hace que tengamos que importarlos todos, y en el orden adecuado, en nuestro <em>index.html</em> (mediante etiquetas <code>&lt;script src=&quot;...&quot;&gt;</code>) lo que empieza a ser engorroso y reduce el rendimiento al tener el navegador que hacer muchas peticiones HTTP.</p>
+<p>Además muchas veces incluimos en el código características del lenguaje que aún no están soportadas por todos los navegadores y cuantos más código usemos más se reduce el número de nevegadores que soportan nuestro código.</p>
+<p>Para evitar este problema se utilizan las herramientas de construcción de proyectos o <em>module bundlers</em> que unen todo el código de los distintos ficheros javascript en un único fichero que es el que se importa en el <em>index.html</em> y hacen los mismo con los ficheros CSS.</p>
+<p>Además proporcionan otras ventajas:</p>
+<ul>
+<li><strong>transpilan</strong> el código, de forma que podemos usar sentencias javascript que aún no soportan muchos navegadores ya que se convertirán a sentencias que hacen lo mismo pero con código <em>legacy</em></li>
+<li><strong>minimizan</strong> y <strong>optimizan</strong> el código para que ocupe menos y su carga sea más rápida, reduciendo el nombre de variables y funciones, eliminando espacios en blanco y comentarios, ...</li>
+<li>dicha minimización <strong>ofusca</strong> el código lo que dificulta que el usuario pueda ver en la consola lo que hace el programa y manipularlo</li>
+</ul>
+<p>Nosotros usaremos el <em>bundler</em> <strong>Vite</strong> que, junto con <strong>webpack</strong>, son los más usados en entorno <em>frontend</em>. Junto a <em>npm</em> tendremos una forma fácil y práctica de empaquetar el código.</p>
+<p>Además <em>Vite</em> incorpora un servidor de desarrollo para hacer más cómoda la creación y prueba de nuestros proyectos.</p>
+<p>Para poder usar <em>Vite</em> debemos instalarlo. Como lo usaremos en muchos proyectos lo podemos instalarlo global con</p>
+<pre><code class="language-bash">npm install -g vite
+</code></pre>
+<h2 id="crear-un-nuevo-proyecto" tabindex="-1">Crear un nuevo proyecto</h2>
+<p>Vite necesita <em>Node.js</em> versión 16 o superior aunque lo mejor es tenerlo actualizado para poder utilitzar todas sus plantillas. Para crear un nuevo proyecto haremos:</p>
+<pre><code class="language-bash">npm create vite@latest
+</code></pre>
+<p>(si no tenemos instalado el paquete <em>create-vite</em> nos preguntará si lo instala)</p>
+<p>Al crear el proyecto nos pregunta qué framework vamos a utilizar (le diremos que <em>Vanilla</em>, es decir, Javascript sin framework) y si como lenguaje usaremos Javascript o Typescript.</p>
+<p>Esto crea el <em>scaffolding</em> de nuestro proyecto que consiste en una carpeta con el mismo nombre que el proyecto y una serie de ficheros en su interior:<br>
+Nos preguntará el nombre del proyecto, la plantilla (<em>Vanilla</em> para Javascript sin framework) y el lenguaje que queremos usar (<em>Javascript/Typescript</em>) y se crea una carpeta con el nombre de nuestro proyecto que contiene:</p>
+<ul>
+<li><code>index.html</code>: html con un div con <em>id</em> <strong>app</strong> que es donde se cargará la app y una etiqueta <strong>script</strong> que carga un módulo llamado <code>main.js</code></li>
+<li><code>main.js</code>: es el punto de entrada a la aplicación .Importa los ficheros CSS, imágenes y ficheros JS con funciones o clases y establece el contenido de la página principal</li>
+<li><code>counter.js</code>: módulo JS que exporta una función como ejemplo que es usada en el <em>main.js</em></li>
+<li><code>style.css</code>: fichero donde poner nuestros estilos, con CSS de ejemplo</li>
+<li><code>public/</code>: carpeta donde dejar elementos estáticos que no pasarán por <em>vite</em> (como imágenes, ficheros CSS, ...)</li>
+<li><code>node_modules</code>: librerías de las dependencias (si usamos alguna)</li>
+<li><code>package.json</code>: fichero de configuración del proyecto. Además del nombre y la versión incluye apartados importantes:
+<ul>
+<li><code>devDependences</code>: dependencias que se usan en desarrollo pero que no se incorporarán al código final</li>
+<li><code>dependences</code>: dependencias que sí se incluirán en el código final (librerías que estemos usando)</li>
+<li><code>scripts</code>: para ejecutar el servidor de desarrollo (<code>npm run dev</code>), generar el código final de producción (<code>npm run build</code>) y previsualizarlo en modo producción (<code>npm run preview</code>). Podemos añadir más para tests, etc</li>
+</ul>
+</li>
+</ul>
+<p>Si nuestra aplicación no va a ser muy pequeña como la del ejemplo sino que tendrá diferentes ficheros Javascript, acceso a datos, interfaz de usuario, etc deberíamos organizar en código en carpetas para mejorar su legibilidad. Lo adecuando es dejar en el raíz de nuestro proyecto los ficheros <code>index.html</code> y <code>main.js</code> y crear una carpeta <code>src</code> donde poner el resto de código. En función del tamaño de la aplicación podríamos crear dentro subcarpetas (os propongo un nombre para ellas aunque podéis llamarlas como queráis) para:</p>
+<ul>
+<li><code>model</code>: el modelo de datos, es decir, las clases</li>
+<li><code>pages</code> o <code>views</code>: las páginas que tendrá nuestra SPA a las que se navega desde el router (aunque en realidad sólo hay una)</li>
+<li><code>api</code>: acceso a la API que usemos. Sólo deben conectarse al servidor y transmitir los datos recibidos al resto de la aplicación</li>
+<li><code>components</code>: web components que usemos para cosntruir las páginas</li>
+<li><code>services</code>: métodos síncronos que proporcionan funcionalidad</li>
+<li>si nuestra aplicación es grande con muchos casos de uso convendría crear una carpeta <code>usecases</code> donde guardarlos. Cada uno debería tener un único método llamado <code>run</code> o <code>execute</code></li>
+<li><code>test</code>: carpeta donde guardar los ficheros de test</li>
+<li>...</li>
+</ul>
+<p><strong>NOTA</strong>: todos los ficheros javascript de un proyecto con <em>Vite</em> son módulos y en ellos, igual que en las clases, no es necesario poner <code>'use strict'</code> porque por defecto los módulos ya funcionan así.</p>
+<h2 id="desarrollar-nuestro-proyecto" tabindex="-1">Desarrollar nuestro proyecto</h2>
+<p>Para empezar a trabajar ejecutamos desde la terminal el script</p>
+<pre><code class="language-bash">npm run dev
+</code></pre>
+<p>Esto hace que <em>Vite</em> lance un servidor web en el puerto 5173 donde podemos ver la ejecución de nuestro proyecto.</p>
+<h3 id="trabajar-con-distintos-ficheros-de-codigo" tabindex="-1">Trabajar con distintos ficheros de código</h3>
+<p>Una de las razones de usar un <em>bundler</em> es que podemos repartir el código entre varios ficheros de forma que quede más organizado.</p>
+<p>Para que un fichero pueda tener acceso a código de otro fichero hay que hacer 2 cosas:</p>
+<ol>
+<li>El fichero al que queremos acceder debe <strong>exportar</strong> el código que desea que sea accesible desde otros ficheros</li>
+<li>El fichero que quiere acceder a ese código debe <strong>importarlo</strong> a una variable</li>
+</ol>
+<p>Esto es lo que hacíamos en el ejercicio de la frase para poder pasar los tests y lo que haremos con los ficheros donde declaremos clases.</p>
+<p>ES6 nos proporciona 2 formas de exportar/importar código:</p>
+<ul>
+<li>exportar con nombre (<em>named export</em>): <code>export</code></li>
+<li>exportar por defecto (<em>default export</em>): <code>export default</code></li>
+</ul>
+<h4 id="named-export" tabindex="-1">Named export</h4>
+<p>De esta manera puedo exportar tantos elementos (funciones, variables, clases, ...) de un fichero como quiera. Por ejemplo, si es un fichero con una única función a exportar:</p>
+<pre><code class="language-javascript">// Fichero cuadrado.js
+export function cuadrado (value) {
+  return value * value
+}
+</code></pre>
+<p>En el caso de querer exportar muchas funciones lo más sencillo es exportarlas juntas en un objeto como en el fichero <em>functions.js</em>:</p>
+<pre><code class="language-javascript">function letras () {
+  ...
+}
+
+function palabras () {
+  ...
+}
+
+function maysc () {
+  ...
+}
+...
+export {
+	letras,
+	palabras,
+	maysc
+}
+</code></pre>
+<p>Si es un fichero que define una clase la exportamos tal cual:</p>
+<pre><code class="language-javascript">export class Product {
+    constructor() {
+
+    }
+    ...
+}
+</code></pre>
+<p>Para importarlo lo hacemos poniendo lo que queremos importar entre <code>{ }</code>. Si se trata de una única función:</p>
+<pre><code class="language-javascript">import { cuadrado } from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + cuadrado(2))
+</code></pre>
+<p>También podríamos usar un nombre diferente para lo que importamos:</p>
+<pre><code class="language-javascript">import { cuadrado as cuad} from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + cuad(2))
+</code></pre>
+<p>Si es un fichero con muchas funciones exportadas a un objeto podemos importar sólo las que queramos o todas:</p>
+<pre><code class="language-javascript">import { letras, maysc } from './functions.js'
+
+console.log('Las letras de &quot;Hola&quot; son ' + letras(&quot;Hola&quot;))
+</code></pre>
+<p>También podemos importarlas todas a un objeto sin indicar sus nombres, con <code>*</code>:</p>
+<pre><code class="language-javascript">import * as MyFunctions from './functions.js'
+
+console.log('Las letras de &quot;Hola&quot; son ' + MyFunctions.letras(&quot;Hola&quot;))
+</code></pre>
+<p>Para importar una clase:</p>
+<pre><code class="language-javascript">import { Product } from './product.class'
+
+const myProd = new Product()
+</code></pre>
+<h4 id="default-export" tabindex="-1">Default export</h4>
+<p>De esta manera sólo puedo exportar un elemento por fichero, y a la hora de importarlo le doy el nombre que quiera. Por ejemplo, si es un fichero con una única función a exportar:</p>
+<pre><code class="language-javascript">// Fichero cuadrado.js
+export default function cuadrado (value) {
+  return value * value
+}
+</code></pre>
+<p>Y donde vaya a usarlo:</p>
+<pre><code class="language-javascript">import myCuadrado from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + myCuadrado(2))
+</code></pre>
+<p>En el caso de una clase:</p>
+<pre><code class="language-javascript">export default class Product {
+    constructor() {
+
+    }
+    ...
+}
+</code></pre>
+<p>Y para importarla:</p>
+<pre><code class="language-javascript">import Product from './product.class'
+
+const myProd = new Product()
+</code></pre>
+<p>En resumen, si exporto con <code>export</code> importo con <code>{ }</code> y si exporto con <code>export default</code> importo sin <code>{ }</code> pero sólo puedo exportar 1 elemento.</p>
+<h2 id="imagenes" tabindex="-1">Imágenes</h2>
+<p>Si se trata de imágenes estáticas lo más sencillo es ponerlas dentro de la carpeta <code>public</code> y hacer referencia a ellas usando <strong>ruta absoluta</strong>. Todo lo que está en <em>public</em> se referencia como si estuviera en la raíz de nuestra aplicación:</p>
+<pre><code class="language-html">&lt;img src=&quot;/vite.png&quot; height=&quot;100px&quot; alt=&quot;Logo de Vite&quot;&gt;
+</code></pre>
+<p>También podemos poner las imágenes en la carpeta <code>assets</code>, pero antes de usarlas deberemos imnportarlas. Ejemplo:</p>
+<pre><code class="language-javascript">import viteLogo from './assets/vite.png'
+...
+const logoHtml = `&lt;img src=&quot;${viteLogo}&quot; height=&quot;100px&quot; alt=&quot;Vite logo&quot;&gt;`
+document.body.prepend(logoHtml)
+</code></pre>
+<p>Con <em>Vite</em> también podemos importarlas usando <code>import.meta.url</code>, lo que es útil si no conocemos previamente el nombre del fichero con la imagen (más información en la <a href="https://vitejs.dev/guide/assets.html#new-url-url-import-meta-url" target="_blank" class="external-link">documentación de Vite</a>):</p>
+<pre><code class="language-javascript">function getImage(fileName, height, alt) {
+  imgUrl = new URL(fileName, import.meta.url).href
+  const imgHtml = `&lt;img src=&quot;${viteLogo}&quot; height=&quot;${height}&quot; alt=&quot;${alt}&quot;&gt;`
+  
+  return logoHtml
+}
+</code></pre>
+<h2 id="paso-a-produccion" tabindex="-1">Paso a producción</h2>
+<p>Cuando lo hayamos acabado y queramos subirlo a producción ejecutaremos</p>
+<pre><code class="language-bash">npm run build
+</code></pre>
+<p>que crea la carpeta <code>/dist</code> con los ficheros que debemos subir al servidor web de producción:</p>
+<ul>
+<li><code>index.html</code></li>
+<li>cualquier fichero que tengamos en <em>/public</em></li>
+<li>carpeta <code>assets</code> con
+<ul>
+<li>fichero JS con todo el código que necesita el proyecto</li>
+<li>fichero CSS con todos los estilos del proyecto</li>
+<li>otros ficheros importados en el JS como imágenes, ...</li>
+</ul>
+</li>
+</ul>
+<h2 id="testear-el-proyecto" tabindex="-1">Testear el proyecto</h2>
+<p>Si queremos testear el proyecto deberemos usar una herramienta de testing y crear los tests adecuados. Lo más sencillo es usar <strong><em>Vitest</em></strong> que es muy similar a <em>Jest</em> pero preparado para interacutar fácilmente con <em>Vite</em>.</p>
+<p>Lo primero es importarlo como dependencia de producción (no lo usaremos en producción)</p>
+<pre><code class="language-bash">npm install --save-dev vitest
+</code></pre>
+<p>o abreviado</p>
+<pre><code class="language-bash">npm i -D vitest
+</code></pre>
+<p>Debemos añadir un nuevo script en el <code>package.json</code> que le indique a vite que queremos usarlo para testear:</p>
+<pre><code class="language-json">  &quot;scripts&quot;: {
+		...
+    &quot;test&quot;: &quot;vitest&quot;
+  },
+</code></pre>
+<p>Crearemos los tests en una carpeta en la raíz de nuestro proyecto llamada <code>/test</code> y en ella crearemos los diferentes fichero cuya extensión será <code>.spec.js</code> o <code>.test.js</code>. Cada vez que queramos pasar los tests ejecutaremos</p>
+<pre><code class="language-bash">npm run test
+</code></pre>
+<p>Podéis obtener más información en infinidad de páginas de internet, como el <a href="https://xxjcaxx.github.io/libro_dwec/tests.html#instalacion-de-vitest" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a>, y en la <a href="https://es.vitejs.dev/guide/" target="_blank" class="external-link">web oficial de vite</a>.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

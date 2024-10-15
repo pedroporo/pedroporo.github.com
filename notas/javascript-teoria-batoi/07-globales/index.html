@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>07-globales</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -161,7 +161,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/07-globales/">07-globales </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/07-globales/">07-globales </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,247 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="objetos-nativos" tabindex="-1">Objetos nativos</h1>
+<ul>
+<li><a href="#objetos-nativos" target="_blank" class="external-link">Objetos nativos</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#funciones-globales" target="_blank" class="external-link">Funciones globales</a></li>
+<li><a href="#objetos-nativos-del-lenguaje" target="_blank" class="external-link">Objetos nativos del lenguaje</a></li>
+<li><a href="#objeto-math" target="_blank" class="external-link">Objeto Math</a></li>
+<li><a href="#objeto-date" target="_blank" class="external-link">Objeto Date</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>En este tema vamos a ver las funciones globales de Javascript (muchas de las cuales ya hemos visto como <em>Number()</em> o <em>String()</em>) y los objetos nativos que incorpora Javascript y que nos facilitarán el trabajo proporcionándonos métodos y propiedades útiles para no tener que &quot;reinventar la rueda&quot; en nuestras aplicaciones. Dentro de ellos está el objeto <strong>RegExpr</strong> que nos permite trabajar con <strong>expresiones regulares</strong> (son iguales que en otros lenguajes) que nos serán de gran ayuda, sobre todo a la hora de validar formularios y que por eso veremos en la siguiente unidad.</p>
+<h2 id="funciones-globales" tabindex="-1">Funciones globales</h2>
+<ul>
+<li><code>parseInt(valor)</code>: devuelve el valor pasado como parámetro convertido a entero o <em>NaN</em> si no es posible la conversión. Este método es mucho más permisivo que <em>Number</em> y convierte cualquier cosa que comience por un número (si encuentra un carácter no numérico detiene la conversión y devuelve lo convertido hasta el momento). Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( parseInt(3.84) )            // imprime 3 (ignora los decimales)
+console.log( parseInt('3.84') )          // imprime 3
+console.log( parseInt('28manzanas') )    // imprime 28
+console.log( parseInt('manzanas28') )    // imprime NaN
+</code></pre>
+<ul>
+<li><code>parseFloat(valor)</code>: igual pero devuelve un número decimal. Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( parseFloat(3.84) )            // imprime 3.84
+console.log( parseFloat('3.84') )          // imprime 3.84
+console.log( parseFloat('3,84') )          // imprime 3 (la coma no es un carácter numérico)
+console.log( parseFloat('28manzanas') )    // imprime 28
+console.log( parseFloat('manzanas28') )    // imprime NaN
+</code></pre>
+<ul>
+<li><code>Number(valor)</code>: convierte el valor a un número. Es como <em>parseFloat</em> pero más estricto y si no puede convertir todo el valor devuelve <em>NaN</em>. Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( Number(3.84) )            // imprime 3.84
+console.log( Number('3.84') )          // imprime 3.84
+console.log( Number('3,84') )          // imprime NaN (la coma no es un carácter numérico)
+console.log( Number('28manzanas') )    // imprime NaN
+console.log( Number('manzanas28') )    // imprime NaN
+</code></pre>
+<ul>
+<li><code>String(valor)</code>: convierte el valor pasado a una cadena de texto. Si le pasamos un objeto llama al método <em>.toString()</em> del objeto. Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( String(3.84) )                  // imprime '3.84'
+console.log( String([24, 3. 12]) )           // imprime '24,3,12'
+console.log( {nombre: 'Marta', edad: 26} )   // imprime &quot;[object Object]&quot;
+</code></pre>
+<ul>
+<li><code>Boolean(valor)</code>: convierte el valor pasado a un booleano. Sería el resultado de tenerlo como condición en un <code>if</code>. Muchas veces en vez de usar esto usamos la doble negación <code>!!</code> que da el mismo resultado. Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( Boolean('Hola') )      // Equivaldría a !!'Hola'. Imprime true
+console.log( Boolean(0) )           // Equivaldría a !!0. Imprime false
+</code></pre>
+<ul>
+<li><code>isNaN(valor)</code>: devuelve <em>true</em> si lo pasado NO es un número o no puede convertirse en un número. Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( isNaN(3.84) )            // imprime false
+console.log( isNaN('3.84') )          // imprime false
+console.log( isNaN('3,84') )          // imprime true (la coma no es un carácter numérico)
+console.log( isNaN('28manzanas') )    // imprime true
+console.log( isNaN('manzanas28') )    // imprime true
+</code></pre>
+<ul>
+<li><code>isFinite(valor)</code>: devuelve <em>false</em> si es número pasado es infinito (o demasiado grande)</li>
+</ul>
+<pre><code class="language-javascript">console.log( isFinite(3.84) )            // imprime true
+console.log( isFinite(3.84 / 0) )            // imprime false
+</code></pre>
+<ul>
+<li><code>encodeURI(string)</code> / <code>decodeURI(string)</code>: transforma la cadena pasada a una URL codificada válida transformando los caracteres especiales que contenga, excepto , / ? : @ &amp; = + $ #. Debemos usarla siempre que vayamos a pasar una URL. Ejemplo:
+<ul>
+<li>Decoded: “<a href="http://domain.com?val=1" target="_blank" class="external-link">http://domain.com?val=1</a> 2 3&amp;val2=r+y%6&quot;</li>
+<li>Encoded: “<a href="http://domain.com?val=1%202%203&amp;val2=r+y%256%E2%80%9D" target="_blank" class="external-link">http://domain.com?val=1 2 3&amp;val2=r+y%256”</a></li>
+</ul>
+</li>
+<li><code>encodeURIComponent(string)</code> / <code>decodeURIComponent(string)</code>: transforma también los caracteres que no transforma la anterior. Debemos usarla para codificar parámetros pero no una URL entera. Ejemplo:
+<ul>
+<li>Decoded: “<a href="http://domain.com?val=1" target="_blank" class="external-link">http://domain.com?val=1</a> 2 3&amp;val2=r+y%6&quot;</li>
+<li>Encoded: “http%3A%2F%<a href="http://2Fdomain.com" target="_blank" class="external-link">2Fdomain.com</a>%3Fval%3D1%202%203%26val2%3Dr%2By%256”</li>
+</ul>
+</li>
+</ul>
+<h2 id="objetos-nativos-del-lenguaje" tabindex="-1">Objetos nativos del lenguaje</h2>
+<p>En Javascript casi todo son objetos. Ya hemos visto diferentes objetos:</p>
+<ul>
+<li>window</li>
+<li>screen</li>
+<li>navigator</li>
+<li>location</li>
+<li>history</li>
+<li>document</li>
+</ul>
+<p>Los 5 primeros se corresponden al modelo de objetos del navegador (<em>BOM, Browser Object Model</em>) y <em>document</em> se corresponde al modelo de objetos del documento (<em>DOM, Document Object Model</em>, ya lo hemos visto). Todos nos permiten interactuar con el navegador para realizar distintas acciones.</p>
+<p>Pero además tenemos los tipos de objetos nativos, que no dependen del navegador. Son:</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Array</li>
+<li>Function</li>
+<li>Object</li>
+<li>Math</li>
+<li>Date</li>
+<li>RegExp</li>
+</ul>
+<p>Además de los tipos primitivos de número, cadena, booleano, undefined y null, Javascript tiene todos los objetos indicados. Como vimos se puede crear un número usando su tipo primitivo (<code>const num = 5</code>) o su objeto (<code>const num = new Number(5)</code>) pero es mucho más eficiente usar los tipos primitivos. Pero aunque lo creemos usando el tipo de dato primitivo se considera un objeto y tenemos acceso a todas sus propiedades y métodos (<code>num.toFixed(2)</code>).</p>
+<p>Ya hemos visto las principales propiedades y métodos de <a href="./01-sintaxis.html#number" target="_blank" class="external-link"><em>Number</em></a>, <a href="./01-sintaxis.html#string" target="_blank" class="external-link"><em>String</em></a>, <a href="./01-sintaxis.html#boolean" target="_blank" class="external-link">Boolean</a> y <a href="./02-arrays.html" target="_blank" class="external-link"><em>Array</em></a> y aquí vamos a ver las de <strong>Math</strong> y <strong>Date</strong> y en el apartado de validar formularios las de <strong>RegExp</strong>.</p>
+<h2 id="objeto-math" tabindex="-1">Objeto Math</h2>
+<p>Proporciona constantes y métodos para trabajar con valores numéricos:</p>
+<ul>
+<li>constantes: <code>.PI</code> (número pi), <code>.E</code> (número de Euler), <code>.LN2</code> (algoritmo natural en base 2), <code>.LN10</code> (logaritmo natural en base 10), <code>.LOG2E</code> (logaritmo de E en base 2), <code>.LOG10E</code> (logaritmo de E en base 10), <code>.SQRT2</code> (raíz cuadrada de 2), <code>.SQRT1_2</code> (raíz cuadrada de 1⁄2). Ejemplos:</li>
+</ul>
+<pre><code class="language-javascript">console.log( Math.PI )            // imprime 3.141592653589793
+console.log( Math.SQRT2 )         // imprime 1.4142135623730951
+</code></pre>
+<ul>
+<li><code>Math.round(x)</code>: redondea x al entero más cercano</li>
+<li><code>Math.floor(x)</code>: redondea x hacia abajo (5.99 → 5. Quita la parte decimal)</li>
+<li><code>Math.ceil(x)</code>: redondea x hacia arriba (5.01 → 6)</li>
+<li><code>Math.min(x1,x2,...)</code>: devuelve el número más bajo de los argumentos que se le pasan.</li>
+<li><code>Math.max(x1,x2,...)</code>: devuelve el número más alto de los argumentos que se le pasan.</li>
+<li><code>Math.pow(x, y)</code>: devuelve x y (x elevado a y).</li>
+<li><code>Math.abs(x)</code>: devuelve el valor absoluto de x.</li>
+<li><code>Math.random()</code>: devuelve un número decimal aleatorio entre 0 (incluido) y 1 (no incluido). Si queremos un número entre otros rangos haremos <code>Math.random() * (max - min) + min</code> o si lo queremos sin decimales <code>Math.round(Math.random() * (max - min) + min)</code></li>
+<li><code>Math.cos(x)</code>: devuelve el coseno de x (en radianes).</li>
+<li><code>Math.sin(x)</code>: devuelve el seno de x.</li>
+<li><code>Math.tan(x)</code>: devuelve la tangente de x.</li>
+<li><code>Math.sqrt(x)</code>: devuelve la raíz cuadrada de x</li>
+</ul>
+<p>Ejemplos:</p>
+<pre><code class="language-javascript">console.log( Math.round(3.14) )     // imprime 3
+console.log( Math.round(3.84) )     // imprime 4
+console.log( Math.floor(3.84) )     // imprime 3
+console.log( Math.ceil(3.14) )      // imprime 4
+console.log( Math.sqrt(2) )         // imprime 1.4142135623730951
+</code></pre>
+<h2 id="objeto-date" tabindex="-1">Objeto Date</h2>
+<p>Es la clase que usaremos siempre que vayamos a trabajar con fechas. Al crear una instancia de la clase le pasamos la fecha que queremos crear o lo dejamos en blanco para que nos cree la fecha actual. Si le pasamos la fecha podemos pasarle:</p>
+<ul>
+<li>milisegundos, desde la fecha EPOCH</li>
+<li>cadena de fecha (en formato AAAA-MM-DD o MM-DD-AAAA)</li>
+<li>valor para año, mes (entre 0 y 11), día, hora, minutos, segundos, milisegundos</li>
+</ul>
+<p>Ejemplos:</p>
+<pre><code class="language-javascript">const date1=new Date()    // Mon Jul 30 2018 12:44:07 GMT+0200 (CEST) (es cuando he ejecutado la instrucción)
+const date7=new Date(1532908800000)    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (miliseg. desde 1/1/1070)
+const date2=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST) (la fecha pasada a las 0h. GMT)
+const date3=new Date('2018-07-30 05:30')  // Mon Jul 30 2018 05:30:00 GMT+0200 (CEST) (la fecha pasada a las 05:300h. local)
+const date6=new Date('30-07-2018')    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (OJO: formato MM-DD-AAAA)
+const date6=new Date('07-30-2018')    // Invalid date
+const date7=new Date('30-Jul-2018')    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) (tb. podemos poner 'July')
+const date4=new Date(2018,7,30)    // OJO: Thu Ago 30 2018 00:00:00 GMT+0200 (CEST) (OJO: 0-&gt;Ene,1-&gt;Feb... y a las 0h. local)
+const date5=new Date(2018,7,30,5,30)    // OJO: Thu Ago 30 2018 05:30:00 GMT+0200 (CEST) (OJO: 0-&gt;Ene,1-&gt;Feb,...)
+</code></pre>
+<blockquote>
+<p>EJERCICIO: Crea en la consola dos variables fecNac1 y fecNac2 que contengan tu fecha de nacimiento. La primera la creas pasandole una cadena y la segunda pasándole año, mes y día</p>
+</blockquote>
+<p>Cuando ponemos la fecha como texto, como separador de las fechas podemos usar <code>-</code>, <code>/</code> o <code>espacio</code>. Como separador de las horas debemos usar <code>:</code>. Cuando ponemos la fecha cono parámetros numéricos (separados por <code>,</code>) podemos poner valores fuera de rango que se sumarán al valor anterior. Por ejemplo:</p>
+<pre><code class="language-javascript">const date=new Date(2018,7,41)    // Mon Sep 10 2018 00:00:00 GMT+0200 (CEST) -&gt; 41=31Ago+10
+const date=new Date(2018,7,0)     // Tue Jul 31 2018 00:00:00 GMT+0200 (CEST) -&gt; 0=0Ago=31Jul (el anterior)
+const date=new Date(2018,7,-1)    // Mon Jul 30 2018 00:00:00 GMT+0200 (CEST) -&gt; -1=0Ago-1=31Jul-1=30Jul
+</code></pre>
+<p>OJO con el rango de los meses que empieza en 0-&gt;Ene, 1-&gt;Feb,...,11-&gt;Dic</p>
+<p>Tenemos métodos <strong><em>getter</em></strong> y <strong><em>setter</em></strong> para obtener o cambiar los valores de una fecha:</p>
+<ul>
+<li><strong>fullYear</strong>: permite ver (<em>get</em>) y cambiar (<em>set</em>) el año de la fecha:</li>
+</ul>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getFullYear() )  // imprime 2018
+fecha.setFullYear(2019)             // Tue Jul 30 2019 02:00:00 GMT+0200 (CEST)
+</code></pre>
+<ul>
+<li><strong>month</strong>: devuelve/cambia el número de mes, pero recuerda que 0-&gt;Ene,...,11-&gt;Dic</li>
+</ul>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getMonth() )     // imprime 6
+fecha.setMonth(8)                   // Mon Sep 30 2019 02:00:00 GMT+0200 (CEST)
+</code></pre>
+<ul>
+<li><strong>date</strong>: devuelve/cambia el número de día:</li>
+</ul>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getDate() )      // imprime 30
+fecha.setDate(-2)                   // Thu Jun 28 2018 02:00:00 GMT+0200 (CEST)
+</code></pre>
+<ul>
+<li><strong>day</strong>: devuelve el número de día de la semana (0-&gt;Dom, 1-&gt;Lun, ..., 6-&gt;Sáb). Este método NO tiene <em>setter</em>:</li>
+</ul>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getDay() )       // imprime 1
+</code></pre>
+<ul>
+<li><strong>hours</strong>, <strong>minutes</strong>, <strong>seconds</strong>, <strong>milliseconds</strong>, : devuelve/cambia el número de la hora, minuto, segundo o milisegundo, respectivamente.</li>
+<li><strong>time</strong>: devuelve/cambia el número de milisegundos desde Epoch (1/1/1970 00:00:00 GMT):</li>
+</ul>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getTime() )      // imprime 1532908800000
+fecha.setTime(1000*60*60*24*25)     // Fri Jan 02 1970 01:00:00 GMT+0100 (CET) (le hemos añadido 25 días a Epoch)
+</code></pre>
+<blockquote>
+<p>EJERCICIO: Realiza en la consola los siguientes ejercicios (usa las variables que creaste antes)</p>
+<ul>
+<li>muestra el día de la semana en que naciste</li>
+<li>modifica fecNac1 para que contenga la fecha de tu cumpleaños de este año (cambia sólo el año)</li>
+<li>muestra el día de la semana de tu cumpleaños de este año</li>
+<li>calcula el nº de días que han pasado desde que naciste hasta hoy</li>
+</ul>
+</blockquote>
+<p>Para mostrar la fecha tenemos varios métodos diferentes:</p>
+<ul>
+<li><strong>.toString()</strong>: &quot;Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)&quot;</li>
+<li><strong>.toUTCString()</strong>: &quot;Mon, 30 Jul 2018 00:00:00 GMT&quot;</li>
+<li><strong>.toDateString()</strong>: &quot;Mon, 30 Jul 2018&quot;</li>
+<li><strong>.toTimeString()</strong>: &quot;02:00:00 GMT+0200 (hora de verano de Europa central)&quot;</li>
+<li><strong>.toISOString()</strong>: &quot;2018-07-30T00:00:00.000Z&quot;</li>
+<li><strong>.toLocaleString()</strong>: &quot;30/7/2018 2:00:00&quot;</li>
+<li><strong>.toLocaleDateString()</strong>: &quot;30/7/2018&quot;</li>
+<li><strong>.toLocaleTimeString()</strong>: &quot;2:00:00&quot;</li>
+</ul>
+<blockquote>
+<p>EJERCICIO: muestra en distintos formatos la fecha y la hora de hoy</p>
+</blockquote>
+<p><strong>NOTA</strong>: recuerda que las fechas son objetos y que se copian y se pasan como parámetro por referencia:</p>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+const otraFecha=fecha
+otraFecha.setDate(28)               // Thu Jul 28 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getDate() )      // imprime 28 porque fecha y otraFecha son el mismo objeto
+</code></pre>
+<p>Una forma sencilla de copiar una fecha es crear una nueva pasándole la que queremos copiar:</p>
+<pre><code class="language-javascript">const fecha=new Date('2018-07-30')    // Mon Jul 30 2018 02:00:00 GMT+0200 (CEST)
+const otraFecha=new Date(fecha)
+otraFecha.setDate(28)               // Thu Jul 28 2018 02:00:00 GMT+0200 (CEST)
+console.log( fecha.getDate() )      // imprime 30
+</code></pre>
+<p>En realidad lo que le estamos pasando es el tiempo Epoch de la fecha (es como hacer <code>otraFecha=new Date(fecha.getTime())</code>)</p>
+<p><strong>NOTA</strong>: la comparación entre fechas funciona correctamente con los operadores <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code> y <code>&lt;=</code> pero NO con <code>==</code>, <code>===</code>, <code>!=</code> y <code>!==</code> ya que compara los objetos y ve que son objetos diferentes. Si queremos saber si 2 fechas son iguales (siendo diferentes objetos) el código que pondremos NO es <code>fecha1 === fecha2</code> sino <code>fecha1.getTime() === fecha2.getTime()</code>.</p>
+<blockquote>
+<p>EJERCICIO: comprueba si es mayor tu fecha de nacimiento o el 1 de enero de este año</p>
+</blockquote>
+<p>Podemos probar los distintos métodos de las fechas en la página de <a href="http://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank" class="external-link">w3schools</a>.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

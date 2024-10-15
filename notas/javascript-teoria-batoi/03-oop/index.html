@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>03-oop</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -133,7 +133,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,272 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="programacion-orientada-a-objetos-en-javascript" tabindex="-1">Programación orientada a Objetos en Javascript</h1>
+<ul>
+<li><a href="#programaci%C3%B3n-orientada-a-objetos-en-javascript" target="_blank" class="external-link">Programación orientada a Objetos en Javascript</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#herencia" target="_blank" class="external-link">Herencia</a></li>
+<li><a href="#m%C3%A9todos-y-propiedades-est%C3%A1ticas" target="_blank" class="external-link">Métodos y propiedades estáticas</a></li>
+<li><a href="#propiedades-y-m%C3%A9todos-privados-y-protegidos" target="_blank" class="external-link">Propiedades y métodos privados y protegidos</a></li>
+<li><a href="#m%C3%A9todo-tostring" target="_blank" class="external-link">Método <em>toString()</em></a></li>
+<li><a href="#m%C3%A9todo-valueof" target="_blank" class="external-link">Método <em>valueOf()</em></a></li>
+<li><a href="#organizar-el-c%C3%B3digo" target="_blank" class="external-link">Organizar el código</a></li>
+<li><a href="#el-contexto-de-this" target="_blank" class="external-link">El contexto de <em>this</em></a></li>
+<li><a href="#mixins" target="_blank" class="external-link">Mixins</a></li>
+<li><a href="#programaci%C3%B3n-orientada-a-objetos-en-js5" target="_blank" class="external-link">Programación orientada a objetos en JS5</a></li>
+<li><a href="#bibliograf%C3%ADa" target="_blank" class="external-link">Bibliografía</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>Desde ES2015 la POO en Javascript es similar a como se hace en otros lenguajes, con clases, herencia, ...:</p>
+<pre><code class="language-javascript">class Alumno {
+    constructor(nombre, apellidos, edad) {
+        this.nombre = nombre
+        this.apellidos = apellidos
+        this.edad = edad
+    }
+    getInfo() {
+        return 'El alumno ' + this.nombre + ' ' + this.apellidos + ' tiene ' + this.edad + ' años'
+    }
+}
+
+let alumno1 = new Alumno('Carlos', 'Pérez Ortiz', 19)
+console.log(alumno1.getInfo())     // imprime 'El alumno Carlos Pérez Ortíz tiene 19 años'
+</code></pre>
+<p><strong>NOTA</strong>: en las clases no es necesario poner <code>'use strict'</code> porque por defecto todas las clases ya lo tienen.</p>
+<blockquote>
+<p>EJERCICIO: Crea una clase Productos con las propiedades <em>name</em>, <em>category</em>, <em>units</em> y <em>price</em> y los métodos <em>total</em> que devuelve el importe del producto y <em>getInfo</em> que devolverá: '<em>Name</em> (<em>category</em>): <em>units</em> uds x <em>price</em> € = <em>total</em> €'. Crea 3 productos diferentes.</p>
+</blockquote>
+<h2 id="herencia" tabindex="-1">Herencia</h2>
+<p>Una clase puede heredar de otra utilizando la palabra reservada <strong>extends</strong> y heredará todas sus propiedades y métodos. Podemos sobrescribirlos en la clase hija (seguimos pudiendo llamar a los métodos de la clase padre utilizando la palabra reservada <strong>super</strong> -es lo que haremos si creamos un constructor en la clase hija-).</p>
+<pre><code class="language-javascript">class AlumnInf extends Alumno{
+  constructor(nombre, apellidos, edad, ciclo) {
+    super(nombre, apellidos, edad)
+    this.ciclo = ciclo
+  }
+  getInfo() {
+    return super.getInfo() + ' y estudia el Grado ' + (this.getGradoMedio ? 'Medio' : 'Superior') + ' de ' + this.ciclo
+  }
+  getGradoMedio() {
+    if (this.ciclo.toUpperCase === 'SMX')
+      return true
+    return false
+  }
+}
+
+let cpo = new AlumnInf('Carlos', 'Pérez Ortiz', 19, 'DAW')
+console.log(cpo.getInfo())     // imprime 'El alumno Carlos Pérez Ortíz tiene 19 años y estudia el Grado Superior de DAW'
+</code></pre>
+<blockquote>
+<p>EJERCICIO: crea una clase Televisores que hereda de Productos y que tiene una nueva propiedad llamada tamaño. El método getInfo mostrará el tamaño junto al nombre</p>
+</blockquote>
+<h2 id="metodos-y-propiedades-estaticas" tabindex="-1">Métodos y propiedades estáticas</h2>
+<p>Desde ES2015 podemos declarar métodos estáticos. Estos métodos se llaman directamente utilizando el nombre de la clase y no tienen acceso al objeto <em>this</em> (ya que no hay objeto instanciado).</p>
+<pre><code class="language-javascript">class User {
+    ...
+    static getRoles() {
+        return [&quot;user&quot;, &quot;guest&quot;, &quot;admin&quot;]
+    }
+}
+
+console.log(User.getRoles()) // [&quot;user&quot;, &quot;guest&quot;, &quot;admin&quot;]
+let user = new User(&quot;john&quot;)
+console.log(user.getRoles()) // Uncaught TypeError: user.getRoles is not a function
+</code></pre>
+<p>Suelen usarse para crear funciones de la aplicación.</p>
+<p>Recientemente se han introducido también propiedades estáticas, que funcionan directamente desde la clase no desde un objeto, igual que los métodos estáticos. Al ser una adición reciente pueden no funcionar en algunos navegadores.</p>
+<h2 id="propiedades-y-metodos-privados-y-protegidos" tabindex="-1">Propiedades y métodos privados y protegidos</h2>
+<p>A la hora de encapsular el código de las clases es importante el uso de este tipo de elementos pero Javascript sólo los incluye desde ES2019 donde introdujo la sintaxis <strong><code>#</code></strong> para declaralos:</p>
+<pre><code class="language-javascript">class Position {
+    <a class="tag" onclick="toggleTagSearch(this)" data-content="#x">#x</a> = 0;
+    <a class="tag" onclick="toggleTagSearch(this)" data-content="#y">#y</a> = 0;
+
+    constructor(x, y) {
+        this.#x = x
+        this.#y = y
+    }
+    getPosition() {
+        return { x: this.#x, y: this.#y };
+    }
+    increaseX() {
+        this.#x++;
+    }
+    increaseY() {
+        this.#y++;
+    }
+}
+
+const myPosition = new Position(20, 10);
+console.log(Position.getPosition()); // { x: 20, y: 10 }
+console.log(Position.x); // undefined
+console.log(Position.y); // undefined
+</code></pre>
+<p>Anteriormente existía una convención de que cualquier propiedad o método que comience por el carácter <code>_</code> se trata de una propiedad o método <strong>protegido</strong> y no debería accederse al mismo desde el exterior (aunque en realidad el lenguaje permite hacerlo).</p>
+<p>Estas propiedades y métodos protegidos se heredan como cualquier otro.</p>
+<h2 id="metodo-em-to-string-em" tabindex="-1">Método <em>toString()</em></h2>
+<p>Al convertir un objeto a string (por ejemplo al concatenarlo con un String) se llama al método <strong><em>.toString()</em></strong> del mismo, que por defecto devuelve la cadena <code>[object Object]</code>. Podemos sobrecargar este método para que devuelva lo que queramos:</p>
+<pre><code class="language-javascript">class Alumno {
+    ...
+    toString() {
+        return this.apellidos + ', ' + this.nombre
+    }
+}
+
+let carPerOrt = new Alumno('Carlos', 'Pérez Ortiz', 19);
+console.log('Alumno:' + carPerOrt)     // imprime 'Alumno: Pérez Ortíz, Carlos'
+                                // en vez de 'Alumno: [object Object]'
+</code></pre>
+<p>Este método también es el que se usará si queremos ordenar una array de objetos (recordad que <em>.sort()</em> ordena alfabéticamente para lo que llama al método <em>.toString()</em> del objeto a ordenar). Por ejemplo, tenemos el array de alumnos <em>misAlumnos</em> que queremos ordenar alfabéticamente. Si la clase <em>Alumno</em> no tiene un método <em>toString</em> habría que hacer como vimos en el tema de <a href="02.2-arrays.md" target="_blank" class="external-link">Arrays</a>:</p>
+<pre><code class="language-javascript">misAlumnos.sort((alum1, alum2) =&gt; (alum1.apellidos+alum1.nombre).localeCompare(alum2.apellidos+alum2.nombre));   
+</code></pre>
+<p>Pero con el método <em>toString</em> que hemos definido antes podemos hacer directamente:</p>
+<pre><code class="language-javascript">misAlumnos.sort() 
+</code></pre>
+<blockquote>
+<p>EJERCICIO: modifica las clases Productos y Televisores para que el método que muestra los datos del producto se llame de la manera más adecuada</p>
+</blockquote>
+<blockquote>
+<p>EJERCICIO: Crea 5 productos y guárdalos en un array. Crea las siguientes funciones (todas reciben ese array como parámetro):</p>
+<ul>
+<li>prodsSortByName: devuelve un array con los productos ordenados alfabéticamente</li>
+<li>prodsSortByPrice: devuelve un array con los productos ordenados por importe</li>
+<li>prodsTotalPrice: devuelve el importe total del los productos del array, con 2 decimales</li>
+<li>prodsWithLowUnits: además del array recibe como segundo parámetro un nº y devuelve un array con todos los productos de los que quedan menos de los unidades indicadas</li>
+<li>prodsList: devuelve una cadena que dice 'Listado de productos:' y en cada línea un guión y la información de un producto del array</li>
+</ul>
+</blockquote>
+<h2 id="metodo-em-value-of-em" tabindex="-1">Método <em>valueOf()</em></h2>
+<p>Al comparar objetos (con &gt;, &lt;, ...) se usa el valor devuelto por el método <strong><em>.valueOf()</em></strong> para realizar la comparación:</p>
+<pre><code class="language-javascript">class Alumno {
+    ...
+    valueOf() {
+        return this.edad
+    }
+}
+
+let cpo = new Alumno('Carlos', 'Pérez Ortiz', 19)
+let aat = new Alumno('Ana', 'Abad Tudela', 23)
+console.log(cpo &lt; aat)     // imprime true ya que 19&lt;23
+</code></pre>
+<p>Si este método no existiera será <em>.toString()</em> el que se usaría.</p>
+<h2 id="organizar-el-codigo" tabindex="-1">Organizar el código</h2>
+<p>Lo más conveniente es guardar cada clase en su propio fichero, que llamaremos como la clase con la extensión <code>.class.js</code>. Por ejemplo el fichero de la clase <em>Users</em> seria <code>users.class.js</code>.</p>
+<p>En dicho fichero exportamos la clase (con <code>export</code> o mejor <code>export default</code> porque sólo hay una) y donde queramos usarla la importamos (<code>import { Users } from 'users.class'</code> o <code>import Users from 'users.class'</code>, según cómo la hayamos exportado).</p>
+<h2 id="el-contexto-de-em-this-em" tabindex="-1">El contexto de <em>this</em></h2>
+<p>El valor de la variable <em>this</em> depende del contexto e que se ejecuta el código. Al crear una instancia de una calse con <code>new</code> <em>this</em> hace referencia a la instancia creada. Pero dentro de una función se crea un nuevo contexto y la variable <em>this</em> pasa a hacer referencia a dicho contexto. Si en el ejemplo anterior hiciéramos algo como esto:</p>
+<pre><code class="language-javascript">class Alumno {
+    ...
+    getInfo() {
+        function nomAlum() {
+            return this.nombre + ' ' + this.apellidos      // Aquí this no es la instancia del objeto Alumno
+        }
+
+        return 'El alumno ' + nomAlum() + ' tiene ' + this.edad + ' años'
+    }
+}
+</code></pre>
+<p>Este código fallaría porque dentro de la función <em>nomAlum</em> la variable <em>this</em> ya no hace referencia a a instancia del objeto <em>Alumno</em> sino al contexto de la función. Este ejemplo no tiene mucho sentido pero a veces nos pasará en manejadores de eventos.</p>
+<p>Si debemos llamar a una función dentro de un método (o de un manejador de eventos) tenemos varias formas de pasarle el valor de <em>this</em>:</p>
+<ol>
+<li>Usando una <em>arrow function</em> que no crea un nuevo contexto por lo que <em>this</em> conserva su valor</li>
+</ol>
+<pre><code class="language-javascript">    getInfo() {
+        const nomAlum = () =&gt; this.nombre + ' ' + this.apellidos
+
+        return 'El alumno ' + nomAlum() + ' tiene ' + this.edad + ' años'
+    }
+</code></pre>
+<ol start="2">
+<li>Pasándole <em>this</em> como parámetro a la función</li>
+</ol>
+<pre><code class="language-javascript">    getInfo() {
+        function nomAlum(alumno) {
+            return alumno.nombre + ' ' + alumno.apellidos
+        }
+
+        return 'El alumno ' + nomAlum(this) +' tiene ' + this.edad + ' años'
+    }
+</code></pre>
+<ol start="3">
+<li>Guardando el valor en otra variable (como <em>that</em>)</li>
+</ol>
+<pre><code class="language-javascript">    getInfo() {
+        function nomAlum() {
+            return that.nombre + ' ' + that.apellidos      // Aquí this no es el objeto Alumno
+        }
+
+        let that = this;
+        return 'El alumno ' + nomAlum() +' tiene ' + this.edad + ' años'
+    }
+</code></pre>
+<ol start="4">
+<li>Haciendo un <em>bind</em> de <em>this</em> (lo veremos de nuevo al hablar de eventos)</li>
+</ol>
+<pre><code class="language-javascript">class Alumno {
+    ...
+    getInfo() {
+        function nomAlum() {
+            return this.nombre + ' ' + this.apellidos      // Aquí this no es el objeto Alumno
+        }
+
+        return 'El alumno ' + nomAlum.bind(this) + ' tiene ' + this.edad + ' años'
+    }
+}
+</code></pre>
+<p>Al llamar a la función <code>nomAlumn</code> le <em>enlazamos</em> (<code>.bind</code>) el valor que queremos que tenga <em>this</em> dentro de ella, en nuestro caso el <em>this</em> de donde hacemos la llamada.</p>
+<h2 id="mixins" tabindex="-1">Mixins</h2>
+<p>Wikipedia define un mixin como una clase que contiene métodos que pueden ser utilizados por otras clases sin necesidad de heredar de ella.</p>
+<p>En Javascript se trata de un objeto que contiene métodos que podemos aplicar a una clase para datarla de ciertos comportamientos. Por ejemplo:</p>
+<pre><code class="language-javascript">// mixin
+let saludaMixin = {
+  saluda() {
+    alert(`Hola, soy ${this.nombre}`)
+  }
+}
+
+class Alumno {
+  constructor(nombre, apellidos, edad) {
+    ...
+  }
+  ...
+}
+
+// asignamos el mixin a la clase
+Object.assign(Alumno.prototype, saludaMixin);
+
+// Ahora el Alumno puede decir hola
+const alumno = new User('Carlos', 'Pérez', 25)
+alumno.saluda(); // Hola, soy Carlos
+</code></pre>
+<h2 id="programacion-orientada-a-objetos-en-js-5" tabindex="-1">Programación orientada a objetos en JS5</h2>
+<blockquote>
+<p><strong>NOTA</strong>: este apartado está sólo para que comprendamos este código si lo vemos en algún programa pero nosotros programaremos como hemos visto antes.</p>
+</blockquote>
+<p>En Javascript un objeto se crea a partir de otro (al que se llama <em>prototipo</em>). Así se crea una cadena de prototipos, el primero de los cuales es el objeto <em>null</em>.</p>
+<p>Las versiones de Javascript anteriores a ES2015 no soportan clases ni herencia. Si queremos emular en ellas el comportamiento de las clases lo que se hace es:</p>
+<ul>
+<li>para crear el constructor se crea una función con el nombre del objeto</li>
+<li>para crear los métodos se aconseja hacerlo en el <em>prototipo</em> del objeto para que no se cree una copia del mismo por cada instancia que creemos:</li>
+</ul>
+<pre><code class="language-javascript">function Alumno(nombre, apellidos, edad) {
+    this.nombre = nombre
+    this.apellidos = apellidos
+    this.edad = edad
+}
+Alumno.prototype.getInfo = function() {
+    return `El alumno ${this.nombre} ${this.apellidos} tiene ${this.edad} años`
+}
+
+let cpo = new Alumno('Carlos', 'Pérez Ortiz', 19)
+console.log(cpo.getInfo())     // imprime 'El alumno Carlos Pérez Ortíz tiene 19 años'
+</code></pre>
+<p>Cada objeto tiene un prototipo del que hereda sus propiedades y métodos (es el equivalente a su clase, pero en realidad es un objeto que está instanciado). Si añadimos una propiedad o método al prototipo se añade a todos los objetos creados a partir de él lo que ahorra mucha memoria.</p>
+<h2 id="bibliografia" tabindex="-1">Bibliografía</h2>
+<ul>
+<li>Curso 'Programación con JavaScript'. CEFIRE Xest. Arturo Bernal Mayordomo</li>
+</ul>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>11-mas</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -177,7 +177,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,199 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="mas-cosas-a-aprender-en-javascript" tabindex="-1">Más cosas a aprender en Javascript</h1>
+<ul>
+<li><a href="#m%C3%A1s-cosas-a-aprender-en-javascript" target="_blank" class="external-link">Más cosas a aprender en Javascript</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#webcomponents" target="_blank" class="external-link">WebComponents</a></li>
+<li><a href="#websockets" target="_blank" class="external-link">WebSockets</a></li>
+<li><a href="#webworkers" target="_blank" class="external-link">WebWorkers</a></li>
+<li><a href="#typescript" target="_blank" class="external-link">Typescript</a></li>
+<li><a href="#jquery" target="_blank" class="external-link">jQuery</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>Hace unos años Javscript era considerado un lenguaje de programación de segunda categoría, que se usaba para hacer molestas páginas web. Hoy en día el navegador es la aplicación más importante de un equipo y con él, además de navegar, se ejecutan todo tipo de aplicaciones. Además HTML5 y JavaScript han pasado de estar solo en nuestro navegador a ser un pilar básico de las plataformas móviles, de aplicaciones de escritorio e incluso JavaScript lo encontramos en servidores (con <em>Node.js</em>) o como lenguaje estándar de algunos entornos de escritorio (como <em>GNOME</em> para Linux).</p>
+<p>Por ello HTML5 y Javascript siguen su contínuo crecimiento... y su contínua evolución que les permite hacer cada vez más cosas. En esta página vamos a hablar muy brevemente de algunas de las características que están incorporando.</p>
+<h2 id="web-components" tabindex="-1">WebComponents</h2>
+<p>Son distintas tecnologías que podemos usar (todas o alguna de ellas) para crear componentes reutilizables para nuestras páginas HTML. Las tecnologías que hay tras los Web Components son:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements" target="_blank" class="external-link">Custom Elements</a>: permite crear elementos HTML personalizados, es decir, nuevas etiquetas definidas por nosotros con funcionalidad propia. Por ejemplo</li>
+</ul>
+<pre><code class="language-html">&lt;comp-calendar
+    mode=&quot;month&quot;
+    date=&quot;2020-02-23&quot;
+    on-select=&quot;dateSelected()&quot; &gt;
+&lt;/comp-calendar&gt;
+</code></pre>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank" class="external-link">HTML Templates</a>: la etiqueta <code>&lt;template&gt;</code> permite definir fragmentos de código HTML que no serán renderizados y que usaremos más adelante. Pueden incluir <strong>slots</strong> o huecos a los que se pasa un contenido</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM" target="_blank" class="external-link">Shadow DOM</a>: permite asociar un DOM oculto a un elemento. Esto permite que tenga su propio código JS y estilos CSS aislados del resto del DOM</li>
+<li><a href="https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system" target="_blank" class="external-link">ES Modules</a>: Es el estándar de ECMAScript para importar módulos Javascript.</li>
+</ul>
+<p>Un WebComponent es un elemento que creamos y que tiene su propia representación (HTML) y funcionalidad (establecida con Javascript). Este elemento es reusable y compartible y se contruye sin librerías externas, sólo con HTML5, ES6 y CSS3.</p>
+<p>Algunos ejemplos de componentes útiles que podríamos usar son:</p>
+<ul>
+<li>componente para loguearnos mediante Google, Facebook, etc</li>
+<li>componente que me muestre el tiempo en una ciudad</li>
+<li>componente para hacer un modal</li>
+<li>...</li>
+</ul>
+<p>Hay infinidad de páginas donde podemos aprender más sobre WebComponents y cómo crear nuestro propio componente, como:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/Web/Web_Components" target="_blank" class="external-link">Web Components | MDN</a></li>
+<li><a href="https://www.webcomponents.org/introduction" target="_blank" class="external-link">Introduction - webcomponents.org</a></li>
+<li><a href="https://lenguajejs.com/webcomponents/introduccion/que-son-webcomponents/" target="_blank" class="external-link">¿Qué son los WebComponents? - Javascript en español</a></li>
+<li><a href="https://www.youtube.com/watch?v=8bcfgXePHnk&amp;feature=em-subs_digest" target="_blank" class="external-link">Carlos Azaustre - Cómo crear un WebComponent de forma nativa</a></li>
+<li>...</li>
+</ul>
+<p>En resumen debemos crear un fichero donde definimos la clase de nuestro componente que debe heredar de <code>HTMLElement</code>. Es conveniente que su nombre (y por tanto el de la etiqueta que usaremos para mostrarlo) tenga al menos 2 palabras para evitar que pueda entrar en conflicto con posibles futuras etiquetas de HTML (por ejemplo podría ser &lt;social-login&gt; o &lt;my-weather&gt;). En esta clase definiremos el HTML y el estilo que tendrá nuestro componente, así como su comportamiento.</p>
+<p>Actualmente no todos los navegadores ofrecen soporte para WebComponents. Esto junto al hecho de que frameworks como Vue, Angular o React ofrecen soluciones con sus propios componentes han hecho que el uso de los WebComponents no acabe de despegar. A pesar de ello hay lugares como <a href="https://www.webcomponents.org/" target="_blank" class="external-link">WebComponents.org</a> donde podemos encontrar un catálogo de componentes hechos y que podemos usar en nuestras páginas.</p>
+<p>Por su parte Google ha desarrollado la librería Polymer para ayudarnos a crear nuestros propios componentes basados en WebComponents y los principales frameworks JS como Angular o Vue permiten crear sus propios componentes de forma muy sencilla, com veremos en el bloque de Vue.</p>
+<h2 id="web-sockets" tabindex="-1">WebSockets</h2>
+<p>WebSockets es una tecnología basada en el protocolo <strong>ws</strong> que permite establecer una conexión continua <em>full-duplex</em> entre un cliente (puede ser un navegador) y un servidor. La conexión siempre la abre el cliente pero una vez abierta no se cierra por lo que el servidor puede comunicar en cualquier momento con el cliente y enviarle información.</p>
+<p>Ejemplo:</p>
+<pre><code class="language-javascript">let exampleSocket=new WebSocket(uri);
+exampleWebsocjet.onopen=function(event) {
+    console.log('Se ha establecido la conexión');
+}
+exampleSocket.onclose=function(event) {
+    console.log('Se ha cerrado la conexión');
+}
+exampleSocket.onerror=function(event) {
+    console.log('Se ha producido un error en la conexión');
+}
+exampleSocket.onmessage=function(event) {
+    console.log('Se ha recibido el mensaje:' + event.data);
+}
+</code></pre>
+<p>El <em>uri</em> de la conexión deberá usar el protocolo <strong>ws</strong> (o wss), no http (ej. &quot;ws://miservidor.com/socketserver&quot;). El evento <em>open</em> se produce cuando la propiedad <em>readyState</em> cambia a OPEN y el <em>close</em> cuando cambia su valor a CLOSED. Cada vez que se reciba algo del servidor se produce el evento <em>message</em> y en la propiedad <strong>data</strong> del mismo tendremos lo que se nos ha enviado.</p>
+<p>Para enviar algo al servidor usamos el mátodo <strong>.send</strong>. Lo que le enviamos ex texto en formato utf-8 (o un objeto convertido a JSON):</p>
+<pre><code class="language-javascript">exampleSocket.send('Your message');
+exampleSocket.send(JSON.stringify(msg));
+</code></pre>
+<p>También podemos enviar (y recibir) imágenes (convertidas a ArrayBuffer) o ficheros como un objeto Blob.</p>
+<p>Para cerrar la conexión llamamos al método <strong>.close()</strong>:</p>
+<pre><code class="language-javascript">exampleSocket.close();
+console.log('Conexión cerrada');
+</code></pre>
+<p>Para programar la parte del servidor podemos usar librerías que nos ayudan como <a href="https://github.com/ghedipunk/PHP-WebSockets" target="_blank" class="external-link">PHP-WebSockets</a>, SocketIO, ...</p>
+<p>Las aplicaciones de esta tecnología son muchas:</p>
+<ul>
+<li>Juegos multjugador</li>
+<li>Aplicaciones de chat</li>
+<li>Actualización en tiempo real de cotizaciones de bolsa, recursos en uso o cualquier otra información</li>
+<li>...</li>
+</ul>
+<p>Podemos practicar con <a href="https://www.websocket.org/echo.html" target="_blank" class="external-link">www.websocket.org</a> que tiene un servidor websocket que devuelve lo que le enviamos. En esta web también tenemos ejemplos de aplicaciones.</p>
+<p>Saber más:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/WebSockets-840092-dup/Writing_WebSocket_client_applications" target="_blank" class="external-link">MDN: Escribiendo aplicaciones con WebSockets</a></li>
+<li><a href="https://es.javascript.info/websocket" target="_blank" class="external-link">WebSocket - El Tutorial de JavaScript Moderno</a></li>
+<li><a href="https://www.youtube.com/watch?v=ppiAvvkvAz0" target="_blank" class="external-link">Carlos Azaustre: Crear chat con WebSockets</a></li>
+</ul>
+<h2 id="web-workers" tabindex="-1">WebWorkers</h2>
+<p>En principio Javascript se ejecuta en un único hilo de ejecución pero esta tecnología permite ejecutar scripts en segundo plano en hilos separados que se ejecutan en segundo plano y se comunican con la tarea que los crea mediante el envío de mensajes.</p>
+<p>Cuando se está ejecutando un script la página no responde hasta que finaliza su ejecución. Si el script lo ejecuta un web worker la página será funcional (podemos interactuar con ella) ya que le ejecución del script se realiza en segundo plano en otro hilo.</p>
+<p>Hay 3 tipos de <em>WebWorkers</em>:</p>
+<ul>
+<li>Dedicated Workers: Estos son los más comunes y se ejecutan en un hilo dedicado al contexto del script que los creó. No comparten recursos con otros scripts y son útiles para tareas intensivas que requieren mucho procesamiento.</li>
+<li>Shared Workers: Pueden ser compartidos por varios scripts ejecutándose en diferentes ventanas, pestañas o iframes dentro del mismo dominio. Son ideales para aplicaciones que necesitan coordinar tareas entre múltiples instancias de la misma aplicación web.</li>
+<li>Service Workers: Actúan como servidores proxy que se ejecutan en segundo plano y gestionan eventos de red como las peticiones HTTP. Son esenciales para crear aplicaciones web progresivas (PWAs) que funcionen sin conexión y mejoren la velocidad de carga.</li>
+</ul>
+<p>Podéis ver un ejemplo de cómo crear un WebWorker para generar números primos en el <a href="https://xxjcaxx.github.io/libro_dwec/webworkers.html#ejemplo-de-uso-dedicated-worker" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a></p>
+<p>Saber más:</p>
+<ul>
+<li><a href="https://xxjcaxx.github.io/libro_dwec/webworkers.html" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers" target="_blank" class="external-link">MDN - Usando WebWorkers</a></li>
+<li><a href="https://www.w3schools.com/html/html5_webworkers.asp" target="_blank" class="external-link">w3schools - HTML5 Web Workers</a></li>
+</ul>
+<h2 id="typescript" tabindex="-1">Typescript</h2>
+<p>TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipado estático y objetos basados en clases. TypeScript extiende la sintaxis de JavaScript, por tanto cualquier código JavaScript existente debería funcionar sin problemas.</p>
+<p>Puede que la principal diferencia entre ambos es que Typescript obliga al tipado de las variables (y por supuesto no permite cambios de tipo) lo que evita muchos errores a la hora de programar.</p>
+<p>Algunos frameworks y librerías, como Angular, utilizan TS en lugar de JS como lenguaje, que luego es transpilado a JS a la hora de generar la aplicación para producción.</p>
+<p>Quizá el inconveniente es que es algo más difícil que JS pero como está basado en él y la sintaxis es prácticamente igual el esfuerzo de aprender TS para un programador JS es muy pequeño.</p>
+<p>Saber más:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/TypeScript" target="_blank" class="external-link">Wikipedia - Typescript</a></li>
+<li><a href="https://www.typescriptlang.org/" target="_blank" class="external-link">Typescriptlang</a></li>
+</ul>
+<h2 id="j-query" tabindex="-1">jQuery</h2>
+<p>Se trata de una biblioteca que nos facilita enormemente el trabajo con el DOM ya que tiene &quot;atajos&quot; para muchas instrucciones, por ejemplo para poner 'Hola mundo' como contenido de un elemento cuya <em>id</em> es <code>mensaje</code>:</p>
+<pre><code class="language-javascript">// Código con Javascript sólo
+document.getElementById('mensaje').textContent = 'Hola mundo'
+
+// Código con jQuery
+$('#mensaje').text('Hola mundo')
+</code></pre>
+<p>Otra ventaja de jQuery es que permite trabajar con conjuntos de elementos sin tener que hacer un <code>forEach</code> (lo hace internamente). Por ejemplo para poner un escuchador que muestre un alert 'Párrafo pinchado' al hacer click sobre cualquier párrafo de la clase 'importante' tendríamos que hacer:</p>
+<pre><code class="language-javascript">// Código con Javascript sólo
+Array.from(document.querySelectorAll('p.importante'))
+.forEach(parrafo =&gt; parrafo.addEventListener('click', () =&gt; alert('Párrafo pinchado'))
+
+// Código con jQuery
+$('p.importante').click(() =&gt; alert('Párrafo pinchado'))
+</code></pre>
+<p>Como vemos, básicamente nos permite hacer lo mismo pero escribiendo mucho menos código. También incluye funciones para cosas que en Javascript requieren varias líneas de código como animaciones o Ajax. Por ejemplo una pertición para mostrar en una tabla con id <em>posts</em> todos los posts del servidor <em>jsonplaceholder</em> tendremos que hacer:</p>
+<pre><code class="language-javascript">// Código con Javascript sólo
+const SERVER = 'https://jsonplaceholder.typicode.com';
+
+function getPosts() {   // Función que pide los datos al servidor
+  return new Promise(function(resolve, reject) {
+    let peticion = new XMLHttpRequest();
+    peticion.open('GET', SERVER + '/posts');
+    peticion.send();
+    peticion.addEventListener('load', function() {
+      if (peticion.status === 200) {
+        resolve(JSON.parse(peticion.responseText));
+      } else {
+        reject(&quot;Error &quot; + this.status + &quot; (&quot; + this.statusText + &quot;) en la petición&quot;);
+      }
+    })
+    peticion.addEventListener('error', () =&gt; reject('Error en la petición HTTP'));
+  })
+}
+
+function renderPosts() {   // Función que los muestra en la página
+  getPosts(idUser)
+    .then((posts) =&gt; {
+      document.querySelector('#posts tbody').innerHTML = ''; // borramos su contenido
+      posts.forEach((post) =&gt; {
+        const newPost = document.createElement('tr');
+        newPost.innerHTML = `
+          &lt;td&gt;${post.userId}&lt;/td&gt;
+          &lt;td&gt;${post.id}&lt;/td&gt;
+          &lt;td&gt;${post.title}&lt;/td&gt;
+          &lt;td&gt;${post.body}&lt;/td&gt;`;
+        document.querySelector('#posts tbody').appendChild(newPost);
+      })
+    })
+    .catch((error) =&gt; console.error(error))
+}
+</code></pre>
+<p>Usando jQuery es mucho más sencillo. En primer lugar no hay que hacer la función que hace la petición al servidor porque hay uns función que hace eso: <code>$.ajax</code> y sus derivadas <code>$.get</code>, <code>$.post</code>, ... Además la parte de pintar los datos es también mucho más corta:</p>
+<pre><code class="language-javascript">// Código con jquery
+const SERVER = 'https://jsonplaceholder.typicode.com';
+
+function renderPosts() {   // Función que los muestra en la página
+  $.get(SERVER + '/posts')
+    .done((posts) =&gt; {
+      $('#posts tbody').text('');    // borramos el contenido de la tabla
+      posts.forEach(post =&gt; $('#posts tbody').append(
+        `&lt;tr&gt;
+          &lt;td&gt;${post.userId}&lt;/td&gt;
+          &lt;td&gt;${post.id}&lt;/td&gt;
+          &lt;td&gt;${post.title}&lt;/td&gt;
+          &lt;td&gt;${post.body}&lt;/td&gt;
+        &lt;/tr&gt;`
+      ))
+    })
+    .fail((error) =&gt; console.error(error))
+}
+</code></pre>
+<p>Encontraréis infinidad de tutoriales por Internet donde aprender <em>jQuery</em>, por ejemplo unos vídeos de <a href="https://didacticode.com/" target="_blank" class="external-link">Didacticode</a> que podéis encontrar en <a href="https://didacticode.com/curso/curso-de-jquery/" target="_blank" class="external-link">https://didacticode.com/curso/curso-de-jquery/</a> (tenéis que registraros para tener acceso a muchos cursos de Javascript y &quot;derivados&quot; pero vale la pena) o directamente en su <a href="https://www.youtube.com/channel/UCPbFiM-HA4lwJH12JXdXxDA" target="_blank" class="external-link">canal de Youtube</a>.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

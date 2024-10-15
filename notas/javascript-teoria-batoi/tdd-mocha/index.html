@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>TDD-mocha</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -193,7 +193,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,163 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="desarrollo-guiado-por-pruebas-tdd" tabindex="-1">Desarrollo guiado por pruebas (TDD)</h1>
+<p>Es una forma de programar que consiste en escribir primero las pruebas que deba pasar el código (Test Dirve Development) y después refactorizarlo (<a href="https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n" target="_blank" class="external-link">Refactoring</a>). Para escribir las pruebas generalmente se utilizan las <a href="https://es.wikipedia.org/wiki/Prueba_unitaria" target="_blank" class="external-link">pruebas unitarias</a> (unit test en inglés).</p>
+<p>El ciclo de programación usando TDD tiene tres fases:</p>
+<ol>
+<li>Fase <em>roja</em>: escribimos el test que cumpla los requerimientos y lo pasamos. Fallará ya que nuestro código no pasa el est (de hecho la primera vez no tenemos ni código)</li>
+<li>Fase <em>verde</em>: conseguimos que nuestro código pase el test. Ya funciona aunque seguramente no estará muy bien escrito</li>
+<li><em>Refactorización</em>: mejoramos nuestro código</li>
+</ol>
+<p>En primer lugar, se escribe una prueba y se verifica que las pruebas fallan. A continuación, se implementa el código que hace que la prueba pase satisfactoriamente y seguidamente se refactoriza el código escrito. El propósito del desarrollo guiado por pruebas es lograr un código limpio que funcione. La idea es que los requisitos sean traducidos a pruebas, de este modo, cuando las pruebas pasen se garantizará que el software cumple con los requisitos que se han establecido.</p>
+<p>Para ello debemos en primer lugar se debe definir una lista de requisitos y después se ejecuta el siguiente ciclo:</p>
+<ol>
+<li>Elegir un requisito: Se elige de una lista el requisito que se cree que nos dará mayor conocimiento del problema y que a la vez sea fácilmente implementable.</li>
+<li>Escribir una prueba: Se comienza escribiendo una prueba para el requisito. Para ello el programador debe entender claramente las especificaciones y los requisitos de la funcionalidad que está por implementar. Este paso fuerza al programador a tomar la perspectiva de un cliente considerando el código a través de sus interfaces.</li>
+<li>Verificar que la prueba falla: Si la prueba no falla es porque el requisito ya estaba implementado o porque la prueba es errónea.</li>
+<li>Escribir la implementación: Escribir el código más sencillo que haga que la prueba funcione. Se usa la expresión &quot;Déjelo simple&quot; (&quot;Keep It Simple, Stupid!&quot;), conocida como principio KISS.</li>
+<li>Ejecutar las pruebas automatizadas: Verificar si todo el conjunto de pruebas funciona correctamente.</li>
+<li>Eliminación de duplicación: El paso final es la refactorización, que se utilizará principalmente para eliminar código duplicado. Se hace un pequeño cambio cada vez y luego se corren las pruebas hasta que funcionen.</li>
+<li>Actualización de la lista de requisitos: Se actualiza la lista de requisitos tachando el requisito implementado. Asimismo se agregan requisitos que se hayan visto como necesarios durante este ciclo y se agregan requisitos de diseño (P. ej que una funcionalidad esté desacoplada de otra).</li>
+</ol>
+<p>Tener un único repositorio universal de pruebas facilita complementar TDD con otra práctica recomendada por los procesos ágiles de desarrollo, la &quot;Integración Continua&quot;. Integrar continuamente nuestro trabajo con el del resto del equipo de desarrollo permite ejecutar toda batería de pruebas y así descubrir si nuestra última versión es compatible con el resto del sistema. Es recomendable y menos costoso corregir pequeños problemas cada pocas horas que enfrentarse a problemas enormes cerca de la fecha de entrega fijada.</p>
+<p>(Fuente <a href="https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas" target="_blank" class="external-link">Wikipedia</a>).</p>
+<h2 id="usar-tdd-en-javascript" tabindex="-1">Usar TDD en Javascript</h2>
+<p>Lo más sencillo es usar alguna librería como <strong>Mocha</strong>. Se trata de un gramework que se ejecuta sobre <em>Node.js</em> y permite crear tests tanto síncronos como asíncronos. Para usarlo necesitaremos tener <strong>npm</strong> instalado. Luego creamos una carpeta para nuestro proyecto y dentro ejecutamos:</p>
+<pre><code class="language-bash">npm install -g mocha    # lo instalamos globalmente para que esté disponible para todos los proyectos
+npm init                # crea en el directorio el package.json
+npm install chai     # en vez de chai podríamos usar assert, should, etc
+</code></pre>
+<p>La librería <em>Chai</em> permite 3 tipos de sentencias:</p>
+<ul>
+<li>asserts</li>
+<li>expects</li>
+<li>should</li>
+</ul>
+<p>Nosotros vamos a usar <em>asserts</em> por lo que es lo que deberemos importar en los ficheros de tests.</p>
+<p>Dentro de nuestro proyecto crearemos una carpeta donde guardaremos los ficheros JS de los tests (podemos llamarla '<em>tests</em>') y en cada fichero importaremos <em>chai</em> y los ficheros necesarios. Ej.:</p>
+<blockquote>
+<p>Fichero <em>tests/store.specs.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">const assert = require('chai').assert;
+const Store = require('../store.class.js');
+
+describe('Store', () =&gt; {
+
+	it('should had an integer id', function() {
+		let foo = new Store();
+		assert.typeOf(foo.id, 'integer', 'La id no es un entero')
+	});
+
+	it('should had an empty array of products', function() {
+		let foo = new Store();
+		assert.typeOf(foo.products, 'array', 'Products no es un array')
+		assert.lengthOf(foo.products, 0, 'Products no es un array vacío')
+	});
+})
+</code></pre>
+<p>Para poder importar un módulo con <em>require</em> debemos haberlo exprtado previamente:</p>
+<blockquote>
+<p>Fichero <em>store.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">class Store {
+    constructor (id) {
+        this.id=id;
+        this.products=[];
+    }
+    ...
+}
+ module.exports = Store;
+</code></pre>
+<p>Para ejecutar todos los tests de nuestro proyecto ejecutaremos desde la terminal:</p>
+<pre><code class="language-bash">mocha tests
+</code></pre>
+<p>Si sólo queremos pasar uno lo indicamos en el comando: <code>mocha tests/store.specs.js</code>.</p>
+<p>Podemos hacer que <em>mocha</em> escuche en segundo plano y se ejecute automáticamente cada vez que hacemos algún cambio en un fichero con:</p>
+<pre><code class="language-bash">mocha tests --watch
+</code></pre>
+<h2 id="el-fichero-de-tests" tabindex="-1">El fichero de tests</h2>
+<p>Debemos importar le librería <em>Chai</em> y el fichero con el código a testear como hemov visto antes. El fichero con el código que debe exportar la clase o función que contiene con <code>module.exports</code>. Si queremos exportar varias funciones exportaremos un objeto con todas ellas:</p>
+<pre><code class="language-bash">module.exports = {
+    addItem,
+    removeItem
+}
+</code></pre>
+<p>Tras importar los ficheros pondremos el <em>describe</em> y los bloques <em>it</em> que queramos y dentro de cada uno los <em>aasert</em> necesarios:</p>
+<pre><code class="language-bash">const assert = require('chai').assert;
+const index = require('../index.js');
+
+describe('manage items', () =&gt; {
+	it('add a new item', function() {
+		let myItem = ...;
+		assert.typeOf(item, 'object', 'No crea un objeto sino '+typeof(item) );
+		assert.equal(item.units, 0);
+	});
+	
+	if ('change an item () =&gt; {
+	...
+	});
+})
+</code></pre>
+<h2 id="algunas-sentecias-em-assert-em" tabindex="-1">Algunas sentecias <em>assert</em></h2>
+<p>Estas<br>
+Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar. Recordad que todas pueden tener un último parámetro opcional que es un mensaje a mostrar en caso de que falle esta comprobación:</p>
+<ul>
+<li>.equal(actual, esperado): comprueba que sea el mismo valor, pero sin comprobar los tupos (usa ==, no ===)</li>
+<li>.notEqual(actual, esperado)</li>
+<li>.strictEqual, .notStrictEqual: igual pero hace la compribaciónestricta (===)</li>
+<li>.deepEqual, notDeepEqual: hace una comprobación de cada propiedad del objeto pasado</li>
+<li>.match(valor, regexp), .notMatch: comprueba si el valor cumple o no la expresión regular pasada</li>
+<li>.isAbove(actual, esperado): comprueba que actual &gt; esperado</li>
+<li>.isAtLeast(actual, esperado): comprueba que actual &gt;= esperado</li>
+<li>.isBelow, .isAtMost: comprueba que sea &lt; o &lt;= respectivamente</li>
+<li>.isTrue, .isNotTrue, .isFalse, .isNotFalse, .isNull, .isNotNull, .isUndefined, .isDefined, .isNaN, .isNotNaN, .isFunction, .isNotFunction, .isObject, .isNotObject, .isArray, .isNotArray, .isString, .isNotString, .isNumber, .isNotNumber, .isBoolean, .isNotBoolean, .isFinite</li>
+<li>.exists(valor), .notExists: comprueba que valor no sea (o sea) <em>null</em> o <em>undefined</em></li>
+<li>.typeOf(valor, tipo), .notTypeOf: indica si valor es o no del tipo indicado, que puede ser 'string', 'number', boolean', 'array', 'object', 'null', 'undefined', 'regexp', ...</li>
+<li>.instanceOf(objeto, Clase), .notInstanceOf: indica si un objeto es o no una instancia de la clase indicada</li>
+<li>.include(string/array/objeto, substring/elemento/propiedad:valor): comprueba si la subcadena existe en el string o el elemento se encuentra en el array (usa =<mark>) o si existe la propiedad o propiedades pasadas y su valor es estrictamente (</mark>=) igual al indicado.</li>
+<li>.notInclude</li>
+<li>.property(objeto, propiedad), .notProperty: comprueba si el objeto posee o no la propiedad pasada</li>
+<li>.lengthOf(string/array, num): comprueba que la longitud de la cadena o el array sea la indicada</li>
+<li>.isEmpty(string/array/object), .isNotEmpty: comprueba que la cadena sea '', el array [] o el objeto {}, o no.</li>
+<li>.throws(funcion, [errorLike/string], [string]): para comprobar que la función lanza un error del tipo indicado (TypeError, RangeError, ...) e incluso con el mensaje indicado</li>
+</ul>
+<p>Más información en la [página de <em>Chai</em>])<a href="https://www.chaijs.com/api/assert/" target="_blank" class="external-link">https://www.chaijs.com/api/assert/</a>).</p>
+<h2 id="tests-de-funciones-asincronas-con-promesas" tabindex="-1">Tests de funciones asíncronas con promesas</h2>
+<p>Si hacemos llamadas asíncronas Mocha permite testearlas tras el .then o el .catch:</p>
+<pre><code class="language-javascript">describe('API de artículos', () =&gt; {
+	it('should return the article 3', function() {
+		return getArticulo(3)
+			.then(art =&gt; {
+				assert.instanceOf(art, Articulos);
+				assert.equal(art.id, 3);
+			})
+	});
+	it('should return an error', function() {
+		return getArticulo(undefined)
+			.catch(err =&gt; {
+				...
+			})
+	});
+})
+</code></pre>
+<h2 id="em-hooks-em-de-mocha" tabindex="-1"><em>Hooks</em> de Mocha</h2>
+<p>Nos permiten ejecutar código en momentos puntuales. Reciben como parámetro la función a ejecutar. Son:</p>
+<ul>
+<li>before(): el código se ejecutará una vez antes del primer test del bloque <em>describe</em></li>
+<li>beforeEach(): se ejecutará antes de cada test</li>
+<li>after(), afterEach(): lo mismo pero tras ejecutar los tests</li>
+</ul>
+<h2 id="tests-para-la-ui" tabindex="-1">Tests para la UI</h2>
+<p>Necesitaremos alguna librería que nos permita contruir escenarios de navegación como <em>CasperJS</em> y otra que imite al navegador como <em>PhantomJS</em> (para WebKit) o <em>SlimerJS</em> (para Gecko).</p>
+<p>Hay muchas páginas que nos enseñan a usar Mocha para testear la UI como:</p>
+<ul>
+<li><a href="https://dev.to/ykyuen/web-ui-testing-in-nodejs--kda" target="_blank" class="external-link">Web UI Testing in NodeJS</a></li>
+<li><a href="https://blogs.msdn.microsoft.com/nilayshah/2018/01/21/ui-test-automation-with-node-js-typescript-mocha-and-selenium/" target="_blank" class="external-link">UI Test Automation with Node.js, TypeScript, Mocha and Selenium</a></li>
+<li><a href="https://itnext.io/automated-ui-testing-with-selenium-and-javascript-90bbe7ca13a3" target="_blank" class="external-link">Automated UI Testing with Selenium and JavaScript</a></li>
+<li><a href="https://medium.com/@tariqul.islam.rony/automated-ui-ux-testing-with-puppeteer-mocha-and-chai-800cfb028ab9" target="_blank" class="external-link">Automated UI/UX Testing with Puppeteer Mocha and Chai</a></li>
+<li></li>
+</ul>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

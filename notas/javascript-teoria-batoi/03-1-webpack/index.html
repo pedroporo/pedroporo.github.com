@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>03.1-webpack</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -141,7 +141,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,92 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="webpack" tabindex="-1">Webpack</h1>
+<p>Cuando trabajamos con clases la mejor forma de organizar el código es poniendo cada clase un su propio fichero javascript. Esto reduce el acoplamiento de nuestro código y nos permite reutilizar una clase en cualquier proyecto en que la necesitemos.</p>
+<p>Sin embargo tener muchos ficheros hace que tengamos que importarlos todos, y en el orden adecuado, en nuestro <em>index.html</em> (mediante etiquetas <code>&lt;script src=&quot;...&quot;&gt;</code>) lo que empieza a ser engorroso.</p>
+<p>Para evitar este problema se utilizan los <em>module bundlers</em> o empaquetadores de código que unen todo el código de los distintos ficheros javascript en un único fichero que es el que se importa en el <em>index.html</em>.</p>
+<p>Además proporciona otras ventajas:</p>
+<ul>
+<li><strong>transpila</strong> el código, de forma que podemos usar sentencias javascript que aún no soportan muchos navegadores ya que se convertirán a sentencias que hacen lo mismo pero con código <em>legacy</em></li>
+<li><strong>minimiza</strong> y <strong>optimiza</strong> el código para que ocupe menos y su carga sea más rápida</li>
+<li><strong>ofusca</strong> el código al minimizarlo lo que dificulta que el usuario pueda ver en la consola lo que hace el programa y manipularlo</li>
+</ul>
+<p>Nosotros usaremos el <em>bundler</em> *<em>webpack</em> que es el más usado en entorno <em>frontend</em>. Junto a <em>npm</em> tendremos una forma fácil y práctica de empaquetar el código.</p>
+<h2 id="trabajar-con-distintos-ficheros" tabindex="-1">Trabajar con distintos ficheros</h2>
+<p>Para que un fichero pueda tener acceso a código de otro fichero hay que hacer 2 cosas:</p>
+<ol>
+<li>El fichero al que queremos acceder debe <strong>exportar</strong> el código que desea que sea accesible desde otros ficheros</li>
+<li>El fichero que quiere acceder a ese código debe <strong>importarlo</strong> a una variable</li>
+</ol>
+<p>Esto es lo que hacíamos en el ejercicio de la frase para poder pasar los tests y lo que haremos con los ficheros donde declaramos clases.</p>
+<h3 id="exportamos-el-codigo" tabindex="-1">Exportamos el código</h3>
+<p>En el caso de un fichero con una función a exportar será lo que exportaremos. Por ejemplo:</p>
+<pre><code class="language-javascript">// Fichero cuadrado.js
+const cuadrado = (value) =&gt; value * value
+module.exports = cuadrado
+</code></pre>
+<p>En el caso de querer exportar muchas funciones lo más sencillo es exportarlas juntas en un objeto como en el fichero <em>functions.js</em>:</p>
+<pre><code class="language-javascript">module.exports = {
+	letras,
+	palabras,
+	maysc,
+	titulo,
+	letrasReves,
+	palabrasReves,
+	palindromo
+}
+</code></pre>
+<p>Aquí estamos exportando un objeto que contiene una serie de funciones</p>
+<p>Si es un fichero que define una clase la exportamos tal cual:</p>
+<pre><code class="language-javascript">class Product {
+    constructor() {
+
+    }
+    ...
+}
+module.exports = Product
+</code></pre>
+<h3 id="lo-importamos-donde-queramos-usarlo" tabindex="-1">Lo importamos donde queramos usarlo</h3>
+<p>En el fichero donde vayamos a usar dicho código lo importamos a una variable. Si se trata de una única función:</p>
+<pre><code class="language-javascript">const cuadrado = require('./cuadrado.js')
+console.log('El cuadrado de 2 es ' + cuadrado(2))
+</code></pre>
+<p>Si es un fichero con muchas funciones exportadas a un objeto podemos importar sólo las que queramos o todas:</p>
+<pre><code class="language-javascript">const functions = require('./functions.js')
+console.log('Las letras de &quot;Hola&quot; son ' + functions.letras(&quot;Hola&quot;) + ' y al revés es ' + functions.letrasReves('Hola'))
+</code></pre>
+<p>o bien</p>
+<pre><code class="language-javascript">const { letras, letrasReves } = require('./functions.js')
+console.log('Las letras de &quot;Hola&quot; son ' + letras(&quot;Hola&quot;) + ' y al revés es ' + letrasReves('Hola'))
+</code></pre>
+<p>Para usar una clase la importamos:</p>
+<pre><code class="language-javascript">const Product = require('./product.class')
+const myProd = new Product()
+</code></pre>
+<h2 id="usar-em-webpack-em" tabindex="-1">Usar <em>webpack</em></h2>
+<p>Una vez que tenemos nuestro código correctamente exportado e importado vamos a usar <em>webpack</em> para empaquetarlo.</p>
+<p>Lo primero que habría que hacer es crear nuestro proyecto si no lo hemos hecho ya mediante <code>npm init</code>. Esto inicializa el proyecto y crea el fichero <strong><em>package.json</em></strong>. Recuerda escribir <em>jest</em> cuando nos pregunte por los tests.</p>
+<p>Para usar <em>webpack</em> simplemente lo incluímos mediante <em>npm</em>:</p>
+<pre><code class="language-bash">npm i -D webpack webpack-cli
+</code></pre>
+<p>La opción <code>-D</code> instala webpack como dependencia de desarrollo, lo que significa que en la versión de producción del código no se incluirá.</p>
+<p>Para instalar todas nuestras dependencias y que se cree la carpeta <em>node_modules</em> ejecutamos <code>npm install</code>.</p>
+<p>Ahora ya estamos listos para usar <em>webpack</em>. Como hemos dicho es un <em>module bundler</em>, es decir, un empaquetador de código. Toma el fichero que le indiquemos como fichero principal (por defecto el <strong><em>./src/index.js</em></strong>), lo junta con todas sus dependencias (sus <em>require</em> y los de sus dependencias) y los transpila a un único fichero (por defecto <strong><em>./dist/main.js</em></strong>) que es el que se enlaza en el <em>index.html</em>. Además minimiza y optimiza dicho código al generarlo.</p>
+<p>Para generar el código empaquetado ejecutamos</p>
+<pre><code class="language-bash">npx webpack --mode=development
+</code></pre>
+<p>Este código hay que ejecutarlo cada vez que se hagan cambios en el código. Si no quieres tener que ejecutarlo cada vez se puede lanzar con la opción <code>--watch</code> que deja la consola abierta y ejecuta el comando automáticamente cuando guardamos cualquiera de los ficheros del proyecto:</p>
+<pre><code class="language-bash">npx webpack --mode=development --watch
+</code></pre>
+<p>Si nuestro fichero principal no es <code>src/index.js</code> lo indicaremos con la opción <code>--entry</code>:</p>
+<pre><code class="language-bash">npx webpack --entry=scripts/main.js --mode=development
+</code></pre>
+<p>Cuando usamos webpack le tenemos que indicar que tipo de código de salida queremos:</p>
+<ul>
+<li><strong>development</strong>: <em>webpack</em> permite &quot;seguir&quot; la ejecución del código desde la consola ya que &quot;mapea&quot; el código generado al original de forma que en la consola vemos como si se ejecutara nuestro código (los distintos ficheros) en vez del código generado por <em>webpack</em> que es el que realmente se está ejecutando</li>
+<li><strong>production</strong>: minimiza y optimiza el código para producción y ya no es posible desde la consola acceder al código original. Es lo que haremos para generar el código que subiremos al servidor de producción (NUNCA subimos el código de desarrollo).</li>
+</ul>
+<p>Podéis obtener más información en infinidad de páginas de internet y en la <a href="https://webpack.js.org/" target="_blank" class="external-link">web oficial de webpack</a>. Las diferentes opciones que podemos pasarle a este comando las podemos consultar en la página del <a href="https://webpack.js.org/api/cli/#flags" target="_blank" class="external-link">CLI de webpack</a>.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

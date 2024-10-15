@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>10-apis</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">notas</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/diseno-de-interfaces-web/diseno-de-interfaces-web/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/ingles/ingles/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/01-sintaxis/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/07-globales/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps" tabindex="-1">APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps</h1>
+<ul>
+<li><a href="#apis-html5-drag-and-drop-local-storage-geolocalizaci%C3%B3n-api-de-google-maps" target="_blank" class="external-link">APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#html-drag-and-drop-api" target="_blank" class="external-link">HTML Drag And Drop API</a></li>
+<li><a href="#almacenamiento-en-el-cliente-api-storage" target="_blank" class="external-link">Almacenamiento en el cliente: API Storage</a>
+<ul>
+<li><a href="#a-tener-en-cuenta" target="_blank" class="external-link">A tener en cuenta</a></li>
+<li><a href="#storage-vs-cookies" target="_blank" class="external-link">Storage vs cookies</a></li>
+<li><a href="#cookies" target="_blank" class="external-link">Cookies</a></li>
+</ul>
+</li>
+<li><a href="#geolocation-api" target="_blank" class="external-link">Geolocation API</a></li>
+<li><a href="#google-maps-api" target="_blank" class="external-link">Google Maps API</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>En este tema varemos diferentes APIs incluidas en HTML5 (como la de Local Storage) y otras que se han hecho muy populares como la de Google Maps.</p>
+<p>HTML5 incluye un buen número de APIs que facilitan el trabajo con cosas complejas, como</p>
+<ul>
+<li>APIs para manejo de audio y vídeo</li>
+<li>APIs para manejo de formularios</li>
+<li>API de dibujo canvas (en el módulo de DIW)</li>
+</ul>
+<p>Aquí comentaremos Storage, Drag&amp;Drop, Geolocation, File Access, Communication, Web Workers, History y Offline</p>
+<h2 id="html-drag-and-drop-api" tabindex="-1">HTML Drag And Drop API</h2>
+<p>Con HTML5 es muy sencillo arrastrar y soltar elementos en una página web. Podemos arrastrar y soltar cualquier nodo DOM (una imagen, un archivo, enlaces, texto seleccionado, ...). Para ello sólo es necesario que ese elemento tenga el atributo <code>dragable=&quot;true&quot;</code>. Si le ponemos <code>false</code> no se podrá arrastrar y si no definimos el atributo podrá o no arrastrarse según el valor predeterminado del navegador (en la mayoría son <em>dragables</em> las imágenes, los links y las selecciones de texto).</p>
+<p>Al arrastrar y soltar intervienen 2 elementos diferentes:</p>
+<ul>
+<li>el elemento que estamos arrastrando</li>
+<li>el elemento sobre el cual lo soltamos</li>
+</ul>
+<p>Para poder realizar la operación <em>event</em> tiene una propiedad llamada <strong>dataTransfer</strong> que es un objeto en el que almacenamos qué elemento estamos arrastrando (o cualquier otra cosa que queramos) y así cuando se suelte sobre el elemento destino éste último pueda saber quién se le ha soltado.</p>
+<p>Los pasos para arrastrar y soltar un elemento son:</p>
+<ol>
+<li>El elemento debe ser <strong><em>draggable</em></strong></li>
+<li>Capturamos el evento <a href="https://developer.mozilla.org/en-US/docs/Web/Events/dragstart" target="_blank" class="external-link"><strong>dragstart</strong></a>. Este evento se produce sobre un elemento cuando comenzamos a arrastrarlo. Deberemos almacenar en el <em>dataTransfer</em> quién está siendo arrastrado (si no guardamos nada se guarda automáticamente su <code>src</code> si es una imagen o su <code>href</code> si es un enlace). Indicaremos el tipo del dato que estamos almacenando (texto plano, HTML, fichero, etc) y su valor. Ej.:</li>
+</ol>
+<pre><code class="language-html">&lt;img id=&quot;imgGoogle&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google.png/320px-Google.png&quot;&gt;
+&lt;div id=&quot;zonaDrop1&quot; class=&quot;drop&quot;&gt;
+  &lt;p&gt;Puedes soltar aquí la imagen&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;zonaDrop2&quot; class=&quot;drop&quot;&gt;
+  &lt;p&gt;Y también aquí&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-javascript">document.getElementById('imgGoogle').addEventListener('dragstart', (event) =&gt; {
+    event.dataTransfer.setData('text/plain', event.target.id);  // Estamos guardando el texto 'imgGoogle'
+})
+</code></pre>
+<ol start="3">
+<li>Capturamos el evento <a href="https://developer.mozilla.org/en-US/docs/Web/Events/dragover" target="_blank" class="external-link"><strong>dragover</strong></a>. Este evento se produce cada pocas décimas de segundo sobre elemento sobre el que se está arrastrando algo. Por defecto no se puede soltar un elemento en ningún sitio así que capturamos este evento para evitar que el navegador haga la acción por defecto e impida que se suelte lo que estamos arrastrando. Ej.:</li>
+</ol>
+<pre><code class="language-javascript">document.getElementById('zonaDrop1').addEventListener('dragover', (event) =&gt; {
+    event.preventDefault();
+})
+document.getElementById('zonaDrop2').addEventListener('dragover', (event) =&gt; {
+    event.preventDefault();
+})
+</code></pre>
+<ol>
+<li>Capturamos el evento <a href="https://developer.mozilla.org/en-US/docs/Web/Events/drop" target="_blank" class="external-link"><strong>drop</strong></a>. Este evento se produce sobre elemento sobre el que se suelta lo que estábamos arrastrando. Lo que haremos es evitar el comportamiento por defecto del navegador (que en caso de imágenes o enlaces es cargarlos en la página), obtener quién se ha soltado a partir del objeto <em>dataTransfer</em> y realizar lo que queramos, que normalmente será añadir el objeto arrastrado como hijo del objeto sobre el que se ha hecho el <em>drop</em>. Ej.:</li>
+</ol>
+<pre><code class="language-javascript">document.getElementById('zonaDrop1').addEventListener('drop', (event) =&gt; {
+    event.preventDefault();
+    const data=event.dataTransfer.getData(&quot;text/plain&quot;);      // Obtenemos ìmgGoogle'
+    event.target.appendChild(document.getElementById(data));
+})
+document.getElementById('zonaDrop2').addEventListener('drop', (event) =&gt; {
+    event.preventDefault();
+    const data=event.dataTransfer.getData(&quot;text/plain&quot;);      // Obtenemos ìmgGoogle'
+    event.target.appendChild(document.getElementById(data));
+})
+</code></pre>
+<p>Podéis ver el funcionamiento de este ejemplo:</p>
+<script async src="//jsfiddle.net/juansegura/bn495ygj/embed/"></script>
+<p>NOTA: si hacemos <em>draggable</em> un elemento, por ejemplo un párrafo, ya no se puede seleccionar con el ratón ya que al pinchar y arrastrar se mueve, no se selecciona. Para poder seleccionarlo debemos pinchar y arrastrar el ratón con las teclas <em>Ctrl+Alt</em> pulsadas o hacerlo con el teclado. Ejemplo:</p>
+<script async src="//jsfiddle.net/juansegura/dgyvLtho/embed/"></script>
+<p>Podemos obtener más información de esta API <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API" target="_blank" class="external-link">MDN web docs</a>.</p>
+<blockquote>
+<p>EJERCICIO: mira y modifica el ejemplo de <a href="https://www.w3schools.com/html/html5_draganddrop.asp" target="_blank" class="external-link">w3schools</a> para entender bien el funcionamiento del Drag&amp;Drop (ten en cuenta que en vez de <code>.addEventListener()</code> las llamadas a los escuchadores están puestas como atributos del HTML pero el funcionamiento es el mismo).</p>
+</blockquote>
+<h2 id="almacenamiento-en-el-cliente-api-storage" tabindex="-1">Almacenamiento en el cliente: API Storage</h2>
+<p>Antes de HTML5 la única manera que tenían los programadores de guardar algo en el navegador del cliente (como sus preferencias, su idioma predeterminado para nuestra web, etc) era utilizando <em>cookies</em>. Las cookies tienen muchas limitaciones y es engorroso trabajar con ellas.</p>
+<p>HTML5 incorpora la <a href="https://developer.mozilla.org/es/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API" target="_blank" class="external-link">API de Storage</a> para subsanar esto. Además existen otros métodos de almacenamiento en el cliente más avanzados como <a href="https://developer.mozilla.org/es/docs/Web/API/IndexedDB_API" target="_blank" class="external-link">IndexedDB</a> (es un estándar del W3C pero aún con poco soporte entre los navegadores).</p>
+<p>El funcionamiento de la API Storage es muy sencillo: dentro del objeto <em>window</em> tendremos los objetos <strong>localStorage</strong> y <strong>sessionStorage</strong> donde podremos almacenar información en el espacio de almacenamiento local (5 o 10 MB por sitio web según el navegador, que es mucho más de lo que teníamos con las cookies). La principal diferencia entre ellos es que la información almacenada en <em>localStorage</em> nunca expira, permanece allí hasta que la borremos (nosotros o el usuario) mientras que la almacenada en <em>sessionStorage</em> se elimina automáticamente al cerrar la sesión el usuario.</p>
+<p>Sólo los navegadores muy antiguos (Internet Explorer 7 y anteriores) no soportan esta característica. Puedo saber si el navegador soporta o no esta API simplemente mirando su <code>typeof</code>:</p>
+<pre><code class="language-javascript">if (typeof(Storage) === 'undefined')    // NO está soportado
+</code></pre>
+<p>Tanto <em>localStorage</em> como <em>sessionStorage</em> son como un objeto global al que tengo acceso desde el código. Lo que puedo hacer con ellos es:</p>
+<ul>
+<li><strong>Guardar</strong> un dato: <code>localStorage.setItem('dato', 'valor')</code> o también <code>localStorage.dato = 'valor'</code></li>
+<li><strong>Recuperar</strong> un dato: <code>let miDato=localStorage.getItem('dato')</code> o también <code>let miDato = localStorage.dato</code></li>
+<li><strong>Borrar</strong> datos: <code>localStorage.removeItem('dato')</code> para borrar 'dato'. Si quiero borrar TODO lo que tengo <code>localStorage.clear()</code></li>
+<li>Saber <strong>cuántos</strong> datos tenemos: <code>localStorage.length</code></li>
+</ul>
+<p>Sólo podemos guardar objetos primitivos (cadenas, números, ...) por lo que si queremos guardar un objeto o un array hay que convertirlo a una cadena JSON con <code>localStorage.setItem('dato', JSON.stringify('objeto'))</code>. Para recuperar el objeto haremos <code>let miObjeto = JSON.parse(localStorage.getItem('dato'))</code>.</p>
+<p>Cada vez que cambia la información que tenemos en nuestro localStorage se produce un evento <strong>storage</strong>. Si, por ejemplo, queremos que una ventana actualice su información si otra cambia algún dato del storage haremos:</p>
+<pre><code class="language-javascript">window.addEventListener(&quot;storage&quot;, actualizaDatos);
+</code></pre>
+<p>y la función 'actualizaDatos' podrá leer de nuevo lo que hay y actuar en consecuencia.</p>
+<blockquote>
+<p>EJERCICIO: comprueba qué tienes almacenado en el localStorage y el sessionStorage de tu navegador. Guarda y recupera algunas variables. Luego cierra el navegador y vuelve a abrir la página. ¿Están las variables guardadas en localStorage? ¿Y las de sessionStorage?</p>
+</blockquote>
+<p>Puedes ver un ejemplo <a href="https://www.youtube.com/watch?v=ASQQUSFtr8g&amp;list=PLI7nHlOIIPOJtTDs1HVJABswW-xJcA7_o&amp;index=65" target="_blank" class="external-link">en este vídeo</a> de cómo almacenar en el <em>Storage</em> datos del usuario.</p>
+<h3 id="a-tener-en-cuenta" tabindex="-1">A tener en cuenta</h3>
+<p><em>localStorage</em>, <em>sessionStorage</em> y <em>cookies</em> almacenan información en un navegador específico del cliente, y por tanto:</p>
+<ul>
+<li>No podemos asegurar que permanece ahí</li>
+<li>Puede ser borrada/manipulada</li>
+<li>Puede ser leída, por lo que NO es adecuada para almacenar información sensible pero sí para preferencias del usuario, marcadores de juegos, etc</li>
+</ul>
+<p>Podríamos usar <em>localStorage</em> para almacenar localmente los datos con los que trabaja una aplicación web. Así conseguiríamos minimizan los accesos al servidor y que la velocidad de la aplicación sea mucho mayor al trabajar con datos locales. Pero periódicamente debemos sincronizar la información con el servidor.</p>
+<h3 id="storage-vs-cookies" tabindex="-1">Storage vs cookies</h3>
+<p>Ventajas de localStorage:</p>
+<ul>
+<li>5 o 10 MB de almacenamiento frente a 4 KB de las cookies</li>
+<li>Todas las cookies del dominio se envían al servidor con cada petición al mismo lo que aumenta el tráfico innecesariamente</li>
+</ul>
+<p>Ventajas de las cookies:</p>
+<ul>
+<li>Soportadas por navegadores muy antiguos</li>
+<li>Las cookies ofrecen algo de protección frente a <em>XSS</em> (<em>Cross-Site Scripting</em>) y <em>Script injection</em></li>
+</ul>
+<h3 id="cookies" tabindex="-1">Cookies</h3>
+<p>Son pequeños ficheros de texto y tienen las siguientes limitaciones:</p>
+<ul>
+<li>Máximo 300 cookies, si hay más se borran las antiguas</li>
+<li>Máximo 4 KB por cookie, si nos pasamos se truncará</li>
+<li>Máximo 20 cookies por dominio</li>
+</ul>
+<p>Cada cookie almacena los siguientes datos:</p>
+<ul>
+<li>Nombre de la cookie (obligatorio)</li>
+<li>Valor de la misma</li>
+<li><em>expires</em>: timestamp en que se borrará (si no pone nada se borra al salir del dominio)</li>
+<li><em>max-age</em>: en lugar de <em>expires</em> podemos indicar aquí los segundos que durará la cookie antes de expirar</li>
+<li><em>path</em>: ruta desde dónde es accesible (/: todo el dominio, /xxx: esa carpeta y subcarpetas). Si no se pone nada sólo lo será desde la carpeta actual</li>
+<li><em>domain</em>: dominio desde el que es accesible. Si no ponemos nada lo será desde este dominio y sus subdominios</li>
+<li><em>secure</em>: si aparece indica que sólo se enviará esta cookie con https</li>
+</ul>
+<p>Un ejemplo de cookie sería:</p>
+<pre><code class="language-javascript">username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC;
+</code></pre>
+<p>Se puede acceder a las cookies desde <strong>document.cookie</strong> que es una cadena con las cookies de nuestras páginas. Para trabajar con ellas conviene que creemos funciones para guardar, leer o borrar cookies, por ejemplo:</p>
+<ul>
+<li>Crear una nueva cookie</li>
+</ul>
+<pre><code class="language-javascript">function setCookie(cname, cvalue, cexpires, cpath, cdomain, csecure) {
+  document.cookie = cname + '=' + cvalue + 
+    (cexpires?';expires='+cexpires.toUTCString():'') + 
+    (cpath?';path='+cpath:'') + 
+    (cdomain?';domain='+cdomain:'') + 
+    (csecure?';secure':'')
+}
+</code></pre>
+<ul>
+<li>Leer una cookie</li>
+</ul>
+<pre><code class="language-javascript">function getCookie(cname) {
+    if(document.cookie.length &gt; 0){
+        start = document.cookie.indexOf(cname + '=')
+        if (start != -1) {   // Existe la cookie, busquemos dónde acaba su valor
+            //El inicio de la cookie, el nombre de la cookie mas les simbolo '='
+            start = start + nombre.length + 1
+            //Buscamos el final de la cookie (es el simbolo ';')
+            end = document.cookie.indexOf(';', start + cname.length + 1)
+            if (end === -1) {   // si no encuentra el ; es que es la última cookie
+                end = document.cookie.length;
+            }
+            return document.cookie.substring(start + cname.length + 1, end)
+        }
+    }
+    return ''   // Si estamos aquí es que no hemos encontrado la cookie
+}
+</code></pre>
+<ul>
+<li>Borrar una cookie</li>
+</ul>
+<pre><code class="language-javascript">function delCookie(cname) {
+    return document.cookie = cname + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+}
+</code></pre>
+<p>Podéis ver en <a href="https://www.youtube.com/watch?v=k7pteU48rpc&amp;list=PLI7nHlOIIPOJtTDs1HVJABswW-xJcA7_o&amp;index=62" target="_blank" class="external-link">este vídeo</a> un ejemplo de cómo trabajar con cookies, aunque como ya hemos dicho lo recomendable es trabajar con <em>Storage</em>.</p>
+<h2 id="geolocation-api" tabindex="-1">Geolocation API</h2>
+<p>Esta API permite a la aplicación web acceder a la localización del usuario si éste da su permiso. Muchos navegadores sólo permiten usarlo en páginas seguras (https).</p>
+<p>Podemos acceder a esta API mediante el objeto <strong>geolocation</strong> de <em>navigator</em>. Para saber si nuestro navegador soporta o no la API podemos hacer:</p>
+<pre><code class="language-javascript">if (geolocation in navigator)   // devuelve true si está soportado
+</code></pre>
+<p>Para obtener la posición este objeto proporciona el método <strong>navigator.geolocation.getCurrentPosition()</strong> que hace una petición <strong>asíncrona</strong>. Cuando se reciba la posición se ejecutará la función <em>callback</em> que pasemos como parámetro y que recibirá las coordenadas de la localización. Podemos pasar otra como segundo parámetro que se ejecutará si se produce algú error y que recibirá un objeto con la propiedad <em>code</em> que indica el error producido. Ej.:</p>
+<pre><code class="language-javascript">navigator.geolocation.getCurrentPosition(
+  (position) =&gt; {
+    pinta_posicion(position.coords.latitude, position.coords.longitude)
+  },
+  (error) =&gt; {
+    switch(error.code) {
+      case error.PERMISSION_DENIED: // El usuario no autoriza al navegador a acceder a la localización
+        msg = 'El usuario ha denegado la petición de geolocalización'
+        break
+      case error.POSITION_UNAVAILABLE: // No se puede obtener la localización
+        msg = 'La información de localización no está disponible.'
+        break
+      case error.TIMEOUT: // Ha expirado el tiempo para obtener la localización
+        msg = 'Ha expirado el tiempo para obtener la localización'
+        break
+      case error.UNKNOWN_ERROR:
+        msg = 'Se ha producido un error desconocido.'
+        break
+    }
+    muestra_error(msg)
+  }
+)
+</code></pre>
+<p>Si queremos ir obteniendo continuamente la posición podemos usar el método <strong>.watchPosition()</strong> que tiene los mismos parámetros y funciona igual pero se ejecuta repetidamente. Este método devuelve un identificador para que lo podemos detener cuando queremos con <strong>.clearWatch(ident)</strong>. Ej.:</p>
+<pre><code class="language-javascript">const watchIdent = navigator.geolocation.watchPosition(
+  (position) =&gt; pinta_posicion(position.coords.latitude, position.coords.longitude),
+  (error) =&gt; muestra_error(error)
+)
+...
+// Cuando queremos dejar de obtener la posición haremos
+navigator.geolocation.clearWatch(watchIdent)
+</code></pre>
+<p>Las principales propiedades del objeto de localización (algunas sólo estarán disponible cuando usemos un GPS) son:</p>
+<ul>
+<li>coords.latitude: latitud</li>
+<li>coords.longitude: longitud</li>
+<li>coords.accuracy: precisión (en metros)</li>
+<li>coords.altitude: altitud (en metros, sobre el nivel del mar)</li>
+<li>coords.altitudeAccuracy: precisión de la altitud</li>
+<li>coords.heading: orientación (en grados)</li>
+<li>coords.speed: velocidad (en metros/segundo)</li>
+<li>timestamp: tiempo de respuesta UNIX</li>
+</ul>
+<p>Podemos pasarle como tercer parámetro al método getCurrentPosition un objeto JSON con una o más de estas propiedades:</p>
+<ul>
+<li>enableHighAccuracy: true/false que indica si el dispositivo debe usar todo lo posible para obtener la posición con mayor precisión (por defecto false porque consume más batería y tiempo)</li>
+<li>timeout: milisegundos a esperar para obtener la posición antes de lanzar un error (por defecto es 0, espera indefinidamente)</li>
+<li>maximumAge: milisegundos que guarda la última posición en caché. Si se solicita una nueva posición antes de expirar el<br>
+tiempo, el navegador devuelve directamente el dato almacenado</li>
+</ul>
+<p>Podemos obtener más información de esta API en <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API" target="_blank" class="external-link">MDN web docs</a> y ver y modificar ejemplos en <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank" class="external-link">w3schools</a> y muchas otras páginas. i</p>
+<h2 id="google-maps-api" tabindex="-1">Google Maps API</h2>
+<p>Para poder utilizar la API en primer lugar debemos <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank" class="external-link">obtener una API KEY</a> de Google.</p>
+<p>Una vez hecho para incluir un mapa en nuestra web debemos cargar la librería para lo que incluiremos en nuestro código el script:</p>
+<pre><code class="language-javascript">&lt;script async defer
+  src=&quot;https://maps.googleapis.com/maps/api/js?key=ESCRIBE_AQUI_TU_API_KEY&amp;callback=initMap&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+<p>(el parámetro <em>callback</em> será el encargado de llamar a la función <em>initMap()</em> que inicie el mapa)</p>
+<p>Ahora incluir un mapa es tán sencillo como crear un nuevo objeto de tipo <em>Map</em> que recibe el elemento DOM donde se pintará (un div normalmente) y un objeto con los parámetros del mapa (como mínimo su centro y el zoom):</p>
+<pre><code class="language-javascript">let map
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 38.6909085, lng: -0.4963000000000193 },
+    zoom: 12
+  })
+}
+</code></pre>
+<p>Por su parte añadir un marcador es igual de simple. Creamos una instancia de la clase <em>Marker</em> a la que le pasamos al menos la posición, el mapa en que se creará y un título para el marcador:</p>
+<pre><code class="language-javascript">let marker = new google.maps.Marker({
+  position: { lat: 38.6909085, lng: -0.4963000000000193 },
+  map: map,
+  title: 'CIP FP Batoi'
+})
+</code></pre>
+<p>Aquí tenéis el ejemplo anterior:</p>
+<script async src="//jsfiddle.net/juansegura/pqzhd2vm/embed/"></script>
+<p>Podemos obtener más información de esta API en <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank" class="external-link">Google Maps Plataform</a>, en el tutorial de <a href="https://www.w3schools.com/graphics/google_maps_intro.asp" target="_blank" class="external-link">w3schools</a> y en muchas otras páginas.</p>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

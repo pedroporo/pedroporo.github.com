@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>02.1-objetos</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -125,7 +125,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,174 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="objetos-en-javascript" tabindex="-1">Objetos en Javascript</h1>
+<ul>
+<li><a href="#objetos-en-javascript" target="_blank" class="external-link">Objetos en Javascript</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#propiedades-de-un-objeto" target="_blank" class="external-link">Propiedades de un objeto</a></li>
+<li><a href="#m%C3%A9todos-de-un-objeto" target="_blank" class="external-link">Métodos de un objeto</a></li>
+<li><a href="#propagaci%C3%B3n-de-propiedades" target="_blank" class="external-link">Propagación de propiedades</a></li>
+<li><a href="#desestructuraci%C3%B3n-de-objetos" target="_blank" class="external-link">Desestructuración de objetos</a></li>
+<li><a href="#comparaci%C3%B3n-de-objetos" target="_blank" class="external-link">Comparación de objetos</a></li>
+<li><a href="#copia-de-objetos" target="_blank" class="external-link">Copia de objetos</a></li>
+<li><a href="#bibliograf%C3%ADa" target="_blank" class="external-link">Bibliografía</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>En Javascript podemos definir cualquier variable como un objeto declarándola con <strong>new</strong> (NO se recomienda) o creando un <em>literal object</em> (usando notación <strong>JSON</strong>). Ejemplo con <em>new</em> (no recomendado):</p>
+<pre><code class="language-javascript">const alumno = new Object()
+alumno.nombre = 'Carlos'     // se crea la propiedad 'nombre' y se le asigna un valor
+alumno['apellidos'] = 'Pérez Ortiz'    // se crea la propiedad 'apellidos'
+alumno.edad = 19
+</code></pre>
+<p>Creando un <em>literal object</em> (es la forma <strong>recomendada</strong>) el ejemplo anterior sería:</p>
+<pre><code class="language-javascript">const alumno = {
+    nombre: 'Carlos',
+    apellidos: 'Pérez Ortiz',
+    edad: 19,
+};
+</code></pre>
+<h2 id="propiedades-de-un-objeto" tabindex="-1">Propiedades de un objeto</h2>
+<p>Podemos acceder a las propiedades con <code>.</code> (punto) o <code>[ ]</code>:</p>
+<pre><code class="language-javascript">console.log(alumno.nombre)       // imprime 'Carlos'
+console.log(alumno['nombre'])    // imprime 'Carlos'
+let prop = 'nombre'
+console.log(alumno[prop])        // imprime 'Carlos'
+</code></pre>
+<p>Si intentamos acceder a propiedades que no existen no se produce un error, se devuelve <em>undefined</em>:</p>
+<pre><code class="language-javascript">console.log(alumno.ciclo)      // muestra undefined
+</code></pre>
+<p>Sin embargo se genera un error si intentamos acceder a propiedades de algo que no es un objeto:</p>
+<pre><code class="language-javascript">console.log(alumno.ciclo)           // muestra undefined
+console.log(alumno.ciclo.descrip)      // se genera un ERROR
+</code></pre>
+<p>Para evitar ese error antes había que comprobar que existan las propiedades previas:</p>
+<pre><code class="language-javascript">console.log(alumno.ciclo &amp;&amp; alumno.ciclo.descrip)
+// si alumno.ciclo es un objeto muestra el valor de 
+// alumno.ciclo.descrip y si no muestra undefined
+</code></pre>
+<p>Con ES2020 (ES11) se ha incluido el operador de encadenamiento opcional <strong>?.</strong> para evitar tener que comprobar esto nosotros:</p>
+<pre><code class="language-javascript">console.log(alumno.ciclo?.descrip)
+// si alumno.ciclo es un objeto muestra el valor de 
+// alumno.ciclo.descrip y si no muestra undefined
+</code></pre>
+<p>Podremos recorrer las propiedades de un objecto con <code>for..in</code>:</p>
+<pre><code class="language-javascript">for (let prop in alumno) {
+    console.log(prop + ': ' + alumno[prop])
+}
+</code></pre>
+<p>Si el valor de una propiedad es el valor de una variable que se llama como la propiedad no es necesario ponerlo:</p>
+<pre><code class="language-javascript">let nombre = 'Carlos'
+
+const alumno = {
+    nombre,            // es equivalente a nombre: nombre
+    apellidos: 'Pérez Ortiz',
+    ...
+</code></pre>
+<h2 id="metodos-de-un-objeto" tabindex="-1">Métodos de un objeto</h2>
+<p>Una propiedad de un objeto puede ser una función:</p>
+<pre><code class="language-javascript">alumno.getInfo = function() {
+    return 'El alumno ' + this.nombre + ' ' + this.apellidos + ' tiene ' + this.edad + ' años'
+}
+</code></pre>
+<p>NOTA: No podemos ponerlo con sintaxis <em>arrow function</em> porque no se podría acceder a las propiedades del objeto con <code>this</code>.</p>
+<p>Y para llamarlo se hace como con cualquier otra propiedad:</p>
+<pre><code class="language-javascript">console.log(alumno.getInfo())    // imprime 'El alumno Carlos Pérez Ortíz tiene 19 años'
+</code></pre>
+<blockquote>
+<p>EJERCICIO: Crea un objeto llamado tvSamsung con las propiedades nombre (&quot;TV Samsung 42&quot;), categoria (&quot;Televisores&quot;), unidades (4), precio (345.95) y con un método llamado importe que devuelve el valor total de las unidades (nº de unidades * precio)</p>
+</blockquote>
+<h2 id="propagacion-de-propiedades" tabindex="-1">Propagación de propiedades</h2>
+<p>El operador de propagación, <strong><code>...</code></strong> (3 puntos), permite extraer las propiedades de un objeto. Ejemplo:</p>
+<pre><code class="language-javascript">const personaCarlos = {
+    nombre: 'Carlos',
+    apellidos: 'Pérez Ortiz',
+    edad: 19,
+};
+const alumnoCarlos = {
+    ...personaCarlos,
+    ciclo: 'DAW',
+    curso: 2,
+};
+</code></pre>
+<p>El objeto <em>alumnoCarlos</em> tendrá las propiedades de <em>personaCarlos</em> y las que se le añadan. Si se repiten las propiedades se sobreescriben:</p>
+<pre><code class="language-javascript">const alumnoCarlos = {
+    ...personaCarlos,
+    ciclo: 'DAW',
+    curso: 2,
+    edad: 20,
+};
+</code></pre>
+<h2 id="desestructuracion-de-objetos" tabindex="-1">Desestructuración de objetos</h2>
+<p>Similar al anterior, permite extraer directamente a variables sólo las propiedades que necesitemos de un objeto. Ejemplo:</p>
+<pre><code class="language-javascript">const personaCarlos = {
+    nombre: 'Carlos',
+    apellidos: 'Pérez Ortiz',
+    edad: 19,
+};
+
+function muestraNombre({nombre, apellidos}) {
+    console.log('El nombre es ' + nombre + ' ' + apellidos)
+}
+
+muestraNombre(personaCarlos)
+</code></pre>
+<p>Aunque a la función se le pasa un objeto esta toma como parámetros sólo 2 de sus propiedades y las asigna a las variables <em>nombre</em> y <em>apellidos</em>.</p>
+<p>También podemos asignar valores por defecto:</p>
+<pre><code class="language-javascript">function miProducto({nombre, apellidos = 'Desconocidos'}) {
+...
+</code></pre>
+<h2 id="comparacion-de-objetos" tabindex="-1">Comparación de objetos</h2>
+<p>En Javascript los objetos se comparan por referencia, no por valor. Por lo que dos objetos con los mismos valores no son iguales:</p>
+<pre><code class="language-javascript">const a = {id:2, name: 'object 2'}
+const b = {id:2, name: 'object 2'}
+console.log(a === b)    // muestra false
+</code></pre>
+<h2 id="copia-de-objetos" tabindex="-1">Copia de objetos</h2>
+<p>Cuando copiamos una variable de tipo <em>boolean</em>, <em>string</em> o <em>number</em> o se pasa como parámetro a una función se hace una copia de la misma y si se modifica la variable original no es alterada. Ej.:</p>
+<pre><code class="language-javascript">let a = 54
+let b = a      // a = 54 b = 54
+b = 86         // a = 54 b = 86
+</code></pre>
+<p>Sin embargo al copiar objetos (y arrays, que son un tipo de objeto) la nueva variable apunta a la misma posición de memoria que la antigua por lo que los datos de ambas son los mismos:</p>
+<pre><code class="language-javascript">const a = {id:2, name: 'object 2'}
+const b = a
+b.name = 'object 3'      // a = {id:2, name: 'object 3'} b = {id:2, name: 'object 3'}
+
+const a = [54, 23, 12]
+const b = a      // a = [54, 23, 12] b = [54, 23, 12]
+b[0] = 3       // a = [3, 23, 12] b = [3, 23, 12]
+
+const fecha1 = new Date('2018-09-23')
+const fecha2 = fecha1          // fecha1 = '2018-09-23'   fecha2 = '2018-09-23'
+fecha2.setFullYear(1999)   // fecha1 = '1999-09-23'   fecha2 = '1999-09-23'
+</code></pre>
+<p>Para obtener una copia independiente de un array o un objeto podemos usar el operador de propagación <code>...</code> o el método <code>Object.assign</code>. Ejemplo:</p>
+<pre><code class="language-javascript">const a = {id:2, name: 'object 2'}
+const b = {...a}      // ahora ambos objetos contienen lo mismo pero son diferentes
+b.name = 'object 3'      // a = {id:2, name: 'object 2'} b = {id:2, name: 'object 3'}
+</code></pre>
+<p>Con <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign" target="_blank" class="external-link"><code>Object.assign</code></a> haremos:</p>
+<pre><code class="language-javascript">const a = {id:2, name: 'object 2'}
+const b = Object.assign({}, a)       // ahora ambos objetos contienen lo mismo pero son diferentes
+</code></pre>
+<p>Sin embargo si el objeto tiene como propiedades otros objetos estos se continúan pasando por referencia. Es ese caso lo más sencillo sería hacer:</p>
+<pre><code class="language-javascript">const a = {id: 2, name: 'object 2', address: {street: 'Rue del Percebe', num: 13} }
+const copiaDeA =  JSON.parse(JSON.stringify(a))       // ahora ambos objetos contienen lo mismo pero son diferentes
+</code></pre>
+<p>o bien usar la función <a href="https://developer.mozilla.org/en-US/docs/Web/API/structuredClone" target="_blank" class="external-link"><code>structuredClone</code></a>:</p>
+<pre><code class="language-javascript">const a = {id: 2, name: 'object 2', address: {street: 'Rue del Percebe', num: 13} }
+const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pero son diferentes
+</code></pre>
+<blockquote>
+<p>EJERCICIO: Dado el objeto <em>a</em> del último ejemplo copialo a un nuevo objeto b con <code>...</code> y prueba a cambiar las pripiedades <em>id</em> y <em>street</em> de <em>b</em>. ¿Qué pasa con sus valores en <em>a</em>?.</p>
+</blockquote>
+<h2 id="bibliografia" tabindex="-1">Bibliografía</h2>
+<ul>
+<li>Curso 'Programación con JavaScript'. CEFIRE Xest. Arturo Bernal Mayordomo</li>
+</ul>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

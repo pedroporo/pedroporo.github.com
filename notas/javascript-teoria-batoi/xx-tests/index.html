@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>xx-tests</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -197,7 +197,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
 </div>
 </div>
 </div>
@@ -216,7 +216,150 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h2 id="usar-tdd-en-javascript" tabindex="-1">Usar TDD en Javascript</h2>
+<p>Lo más sencillo es usar alguna librería como <strong>Jest</strong>, <strong>Mocha</strong> o <strong>Vitests</strong> (una adaptación de <em>Jest</em> para <em>Vite</em>). Se trata de librerías que se ejecutan sobre <em>Node.js</em> y permiten crear tests tanto síncronos como asíncronos. Para usarlo necesitaremos tener <strong>npm</strong> instalado.</p>
+<h2 id="uso-de-vitest" tabindex="-1">Uso de Vitest</h2>
+<p>Podéis obtener información sobre cómo hacer test con <em>Vitest</em> en muchas páginas de Internet como:</p>
+<ul>
+<li><a href="https://xxjcaxx.github.io/libro_dwec/tests.html" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a></li>
+<li><a href="https://vitejs.dev/guide/features.html#testing" target="_blank" class="external-link">Vitest</a></li>
+</ul>
+<h2 id="uso-de-mocha" tabindex="-1">Uso de Mocha</h2>
+<p>Para instalarlo ejecutamos:</p>
+<pre><code class="language-bash">npm install -g mocha    # lo instalamos globalmente para que esté disponible para todos los proyectos
+npm init                # crea en el directorio el package.json
+npm install chai     # en vez de chai podríamos usar assert, should, etc
+</code></pre>
+<p>La librería <em>Chai</em> permite 3 tipos de sentencias:</p>
+<ul>
+<li>asserts</li>
+<li>expects</li>
+<li>should</li>
+</ul>
+<p>Nosotros vamos a usar <em>asserts</em> por lo que es lo que deberemos importar en los ficheros de tests.</p>
+<p>Dentro de nuestro proyecto crearemos una carpeta donde guardaremos los ficheros JS de los tests (podemos llamarla '<em>tests</em>') y en cada fichero importaremos <em>chai</em> y los ficheros necesarios. Ej.:</p>
+<blockquote>
+<p>Fichero <em>tests/store.specs.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">const assert = require('chai').assert;
+const Store = require('../store.class.js');
+
+describe('Store', () =&gt; {
+
+	it('should had an integer id', function() {
+		let foo = new Store();
+		assert.typeOf(foo.id, 'integer', 'La id no es un entero')
+	});
+
+	it('should had an empty array of products', function() {
+		let foo = new Store();
+		assert.typeOf(foo.products, 'array', 'Products no es un array')
+		assert.lengthOf(foo.products, 0, 'Products no es un array vacío')
+	});
+})
+</code></pre>
+<p>Para poder importar un módulo con <em>require</em> debemos haberlo exprtado previamente:</p>
+<blockquote>
+<p>Fichero <em>store.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">class Store {
+    constructor (id) {
+        this.id=id;
+        this.products=[];
+    }
+    ...
+}
+ module.exports = Store;
+</code></pre>
+<p>Para ejecutar todos los tests de nuestro proyecto ejecutaremos desde la terminal:</p>
+<pre><code class="language-bash">mocha tests
+</code></pre>
+<p>Si sólo queremos pasar uno lo indicamos en el comando: <code>mocha tests/store.specs.js</code>.</p>
+<p>Podemos hacer que <em>mocha</em> escuche en segundo plano y se ejecute automáticamente cada vez que hacemos algún cambio en un fichero con:</p>
+<pre><code class="language-bash">mocha tests --watch
+</code></pre>
+<h2 id="el-fichero-de-tests" tabindex="-1">El fichero de tests</h2>
+<p>Debemos importar le librería <em>Chai</em> y el fichero con el código a testear como hemov visto antes. El fichero con el código que debe exportar la clase o función que contiene con <code>module.exports</code>. Si queremos exportar varias funciones exportaremos un objeto con todas ellas:</p>
+<pre><code class="language-bash">module.exports = {
+    addItem,
+    removeItem
+}
+</code></pre>
+<p>Tras importar los ficheros pondremos el <em>describe</em> y los bloques <em>it</em> que queramos y dentro de cada uno los <em>aasert</em> necesarios:</p>
+<pre><code class="language-bash">const assert = require('chai').assert;
+const index = require('../index.js');
+
+describe('manage items', () =&gt; {
+	it('add a new item', function() {
+		let myItem = ...;
+		assert.typeOf(item, 'object', 'No crea un objeto sino '+typeof(item) );
+		assert.equal(item.units, 0);
+	});
+	
+	if ('change an item () =&gt; {
+	...
+	});
+})
+</code></pre>
+<h2 id="algunas-sentecias-em-assert-em" tabindex="-1">Algunas sentecias <em>assert</em></h2>
+<p>Estas<br>
+Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar. Recordad que todas pueden tener un último parámetro opcional que es un mensaje a mostrar en caso de que falle esta comprobación:</p>
+<ul>
+<li>.equal(actual, esperado): comprueba que sea el mismo valor, pero sin comprobar los tupos (usa ==, no ===)</li>
+<li>.notEqual(actual, esperado)</li>
+<li>.strictEqual, .notStrictEqual: igual pero hace la compribaciónestricta (===)</li>
+<li>.deepEqual, notDeepEqual: hace una comprobación de cada propiedad del objeto pasado</li>
+<li>.match(valor, regexp), .notMatch: comprueba si el valor cumple o no la expresión regular pasada</li>
+<li>.isAbove(actual, esperado): comprueba que actual &gt; esperado</li>
+<li>.isAtLeast(actual, esperado): comprueba que actual &gt;= esperado</li>
+<li>.isBelow, .isAtMost: comprueba que sea &lt; o &lt;= respectivamente</li>
+<li>.isTrue, .isNotTrue, .isFalse, .isNotFalse, .isNull, .isNotNull, .isUndefined, .isDefined, .isNaN, .isNotNaN, .isFunction, .isNotFunction, .isObject, .isNotObject, .isArray, .isNotArray, .isString, .isNotString, .isNumber, .isNotNumber, .isBoolean, .isNotBoolean, .isFinite</li>
+<li>.exists(valor), .notExists: comprueba que valor no sea (o sea) <em>null</em> o <em>undefined</em></li>
+<li>.typeOf(valor, tipo), .notTypeOf: indica si valor es o no del tipo indicado, que puede ser 'string', 'number', boolean', 'array', 'object', 'null', 'undefined', 'regexp', ...</li>
+<li>.instanceOf(objeto, Clase), .notInstanceOf: indica si un objeto es o no una instancia de la clase indicada</li>
+<li>.include(string/array/objeto, substring/elemento/propiedad:valor): comprueba si la subcadena existe en el string o el elemento se encuentra en el array (usa =<mark>) o si existe la propiedad o propiedades pasadas y su valor es estrictamente (</mark>=) igual al indicado.</li>
+<li>.notInclude</li>
+<li>.property(objeto, propiedad), .notProperty: comprueba si el objeto posee o no la propiedad pasada</li>
+<li>.lengthOf(string/array, num): comprueba que la longitud de la cadena o el array sea la indicada</li>
+<li>.isEmpty(string/array/object), .isNotEmpty: comprueba que la cadena sea '', el array [] o el objeto {}, o no.</li>
+<li>.throws(funcion, [errorLike/string], [string]): para comprobar que la función lanza un error del tipo indicado (TypeError, RangeError, ...) e incluso con el mensaje indicado</li>
+</ul>
+<p>Más información en la [página de <em>Chai</em>])<a href="https://www.chaijs.com/api/assert/" target="_blank" class="external-link">https://www.chaijs.com/api/assert/</a>).</p>
+<h2 id="tests-de-funciones-asincronas-con-promesas" tabindex="-1">Tests de funciones asíncronas con promesas</h2>
+<p>Si hacemos llamadas asíncronas Mocha permite testearlas tras el .then o el .catch:</p>
+<pre><code class="language-javascript">describe('API de artículos', () =&gt; {
+	it('should return the article 3', function() {
+		return getArticulo(3)
+			.then(art =&gt; {
+				assert.instanceOf(art, Articulos);
+				assert.equal(art.id, 3);
+			})
+	});
+	it('should return an error', function() {
+		return getArticulo(undefined)
+			.catch(err =&gt; {
+				...
+			})
+	});
+})
+</code></pre>
+<h2 id="em-hooks-em-de-mocha" tabindex="-1"><em>Hooks</em> de Mocha</h2>
+<p>Nos permiten ejecutar código en momentos puntuales. Reciben como parámetro la función a ejecutar. Son:</p>
+<ul>
+<li>before(): el código se ejecutará una vez antes del primer test del bloque <em>describe</em></li>
+<li>beforeEach(): se ejecutará antes de cada test</li>
+<li>after(), afterEach(): lo mismo pero tras ejecutar los tests</li>
+</ul>
+<h2 id="tests-para-la-ui" tabindex="-1">Tests para la UI</h2>
+<p>Necesitaremos alguna librería que nos permita contruir escenarios de navegación como <em>CasperJS</em> y otra que imite al navegador como <em>PhantomJS</em> (para WebKit) o <em>SlimerJS</em> (para Gecko).</p>
+<p>Hay muchas páginas que nos enseñan a usar Mocha para testear la UI como:</p>
+<ul>
+<li><a href="https://dev.to/ykyuen/web-ui-testing-in-nodejs--kda" target="_blank" class="external-link">Web UI Testing in NodeJS</a></li>
+<li><a href="https://blogs.msdn.microsoft.com/nilayshah/2018/01/21/ui-test-automation-with-node-js-typescript-mocha-and-selenium/" target="_blank" class="external-link">UI Test Automation with Node.js, TypeScript, Mocha and Selenium</a></li>
+<li><a href="https://itnext.io/automated-ui-testing-with-selenium-and-javascript-90bbe7ca13a3" target="_blank" class="external-link">Automated UI Testing with Selenium and JavaScript</a></li>
+<li><a href="https://medium.com/@tariqul.islam.rony/automated-ui-ux-testing-with-puppeteer-mocha-and-chai-800cfb028ab9" target="_blank" class="external-link">Automated UI/UX Testing with Puppeteer Mocha and Chai</a></li>
+<li></li>
+</ul>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>

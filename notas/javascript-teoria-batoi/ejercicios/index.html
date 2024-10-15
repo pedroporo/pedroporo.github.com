@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Desarollo Web en entorno servidor</title>
+<title>ejercicios</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,7 +69,7 @@
 <span class="foldername">Desarollo Web en entorno servidor</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
 </div>
 </div>
 </div>
@@ -185,7 +185,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -216,7 +216,149 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a href="https://github.com/cipfpbatoi/dwes2324" target="_blank" class="external-link">Pagina de github de los apuntes</a></p>
+<h1 id="ejercicios-de-javascript" tabindex="-1">Ejercicios de Javascript</h1>
+<p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc" target="_blank" class="external-link">DocToc</a></em></p>
+<ul>
+<li><a href="#ejercicios-de-javascript" target="_blank" class="external-link">Ejercicios de Javascript</a>
+<ul>
+<li><a href="#1--sintaxis" target="_blank" class="external-link">1.- Sintaxis</a>
+<ul>
+<li><a href="#11-frase" target="_blank" class="external-link">1.1 Frase</a></li>
+</ul>
+</li>
+<li><a href="#2--arrays" target="_blank" class="external-link">2.- Arrays</a></li>
+<li><a href="#3--poo" target="_blank" class="external-link">3.- POO</a>
+<ul>
+<li><a href="#31--productos-de-un-almac%C3%A9n" target="_blank" class="external-link">3.1.- Productos de un almacén</a></li>
+<li><a href="#32--carro-de-compra" target="_blank" class="external-link">3.2.- Carro de compra</a></li>
+</ul>
+</li>
+<li><a href="#4--dom" target="_blank" class="external-link">4.- DOM</a></li>
+<li><a href="#5--bom" target="_blank" class="external-link">5.- BOM</a></li>
+<li><a href="#6--eventos" target="_blank" class="external-link">6.- Eventos</a></li>
+<li><a href="#7--objetos-globales" target="_blank" class="external-link">7.- Objetos globales</a></li>
+<li><a href="#8--ajax" target="_blank" class="external-link">8.- Ajax</a></li>
+<li><a href="#9--apis" target="_blank" class="external-link">9.- APIs</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-sintaxis" tabindex="-1">1.- Sintaxis</h2>
+<h3 id="1-1-frase" tabindex="-1">1.1 Frase</h3>
+<p>Vamos a pedir al usuario que introduzca una frase y a continuación mostraremos en la consola:</p>
+<ul>
+<li>el número de letras y de palabras que tiene</li>
+<li>la frase en mayúsculas</li>
+<li>la frase con la primera letra de cada palabra en mayúsculas</li>
+<li>la frase escrita con las letras al revés</li>
+<li>la frase escrita con las palabras al revés</li>
+<li>si es o no un palíndromo (si se lee igual al revés) pero omitiendo espacios en blanco y sin diferenciar mayúsculas y minúsculas.</li>
+</ul>
+<p>Ej.: con la frase introducida “<em>La ruta nos aporto otro paso natural</em>” se mostraría</p>
+<blockquote>
+<p>36 letras y 7 palabras<br>
+LA RUTA NOS APORTO OTRO PASO NATURAL<br>
+La Ruta Nos Aporto Otro Paso Natural<br>
+larutan osap orto otropa son atur aL<br>
+natural paso otro aporto nos ruta La<br>
+Sí es un palíndromo</p>
+</blockquote>
+<p>Intenta usar en cada caso el bucle más adecuado. Las funciones <code>split</code> y <code>join</code> (lo opuesto) de String y Array nos pueden ayudar a algunas cosas.</p>
+<p><strong>RECUERDA</strong>:</p>
+<ul>
+<li>el código deberá estar en un fichero externo y se incluirá al final del body</li>
+<li>debes comentarlo para tener claro qué hace</li>
+<li>tanto el código JS como el HTML deben estar correctamente indentados</li>
+<li>ten en cuenta los datos que pueden “estropearnos” el programa: introducir un dato de un tipo que no te esperas, omitir algún parámetro, ...</li>
+<li>usa las recomendaciones indicadas: 'use strict', ...</li>
+<li>el código debe ser lo más limpio y claro posible, sin variables o código innecesario</li>
+<li>siempre es bueno refactorizar el código: cuando nuestro programa ya funciona bien le damos un “repaso” para mejorar su claridad (y lo volvemos a probar)</li>
+</ul>
+<h2 id="2-arrays" tabindex="-1">2.- Arrays</h2>
+<p>Vamos a hacer un programa que va pidiendo al usuario que introduzca las notas de un examen y las va guardando en un array. El usuario puede introducir una sóla nota o varias separadas por un guión (ej. 4,5 - 6 - 8,75) y se continuará pidiendo notas al usuario hasta que éste pulse 'Cancelar'. Recuerda que en Javascript el símbolo decimal es el punto pero el usuario puede introducir decimales con la coma.</p>
+<p>Cada nota introducida se almacenará en un array y una vez que estén todas se mostrará por la consola:</p>
+<ul>
+<li>el array con los datos suministrados por el usuario</li>
+<li>el array &quot;limpiado&quot;: quitaremos del mismo todo lo que no sean números o no estén entre 0 y 10</li>
+<li>el nº total de aprobados y sus notas</li>
+<li>el nº total de suspensos y sus notas</li>
+<li>la nota del 1º suspenso y su posición en el array</li>
+<li>la nota media del examen</li>
+</ul>
+<p>Siempre que sea posible utilizaremos métodos de arrays en lugar de bucles.</p>
+<h2 id="3-poo" tabindex="-1">3.- POO</h2>
+<h3 id="3-1-productos-de-un-almacen" tabindex="-1">3.1.- Productos de un almacén</h3>
+<p>En este ejercicio vamos a trabajar con los productos de un almacén, para lo que crearemos las clases:</p>
+<ul>
+<li><strong><em>Product</em></strong>: cada producto será un objeto con las propiedades <em>cod</em>, <em>name</em>, <em>price</em> y <em>units</em> (las unidades que tenemos de ese producto). Si no le pasamos unidades al constructor su número por defecto será 1. Esta clase tendrá los siguientes métodos:
+<ul>
+<li><strong><em>changeUnits</em></strong>: recibe la cantidad a aumentar (positiva o negativa) e incrementa (o decrementa) las unidades en la cantidad recibida. Si se intentan restar más unidades de las que hay no hace nada y devuelve <em>false</em> y en otro caso cambia las unidades y devuelve <em>true</em></li>
+<li><strong><em>productImport</em></strong>: devuelve el importe total del producto (su precio multiplicado por el nº de unidades)</li>
+<li>además si se intenta imprimir el producto se mostrará su descripción, sus unidades entre paréntesis, su precio y el importe total, como en el siguiente ejemplo: <code>TV Samsung MP45 (5): 235,95 €/u =&gt; 1179,75 €</code></li>
+</ul>
+</li>
+<li><strong><em>Store</em></strong>: es el almacén de productos y tendrá las propiedades <em>id</em> (código numérico que nos pasan al crear el almacén) y <em>products</em> (array de productos que al crearlo estará vacío) y los métodos:
+<ul>
+<li><strong><em>findProduct</em></strong>: recibe un código de producto y devuelve el producto que tiene dicho código o <em>null</em> si ese código no existe en el almacén</li>
+<li><strong><em>addProduct</em></strong>: recibe como parámetro el código y unidades a añadir y, opcionalmente, el nombre y precio (si se trata de un producto nuevo) y lo añade al almacén. Si ya existe el código suma al producto las unidades indicadas y si no existe crea un nuevo producto en el array. Devuelve <em>true</em></li>
+<li><strong><em>delProduct</em></strong>: recibe como parámetro el código y las unidades a quitar de un producto y lo resta del almacén. Devuelve <em>true</em> a menos que haya menos unidades de las que quieren restarse, en cuyo caso no hace nada y devuelve <em>false</em></li>
+<li><strong><em>totalImport</em></strong>: devuelve el valor total de los productos del almacén</li>
+<li><strong><em>orderByDescrip</em></strong>: devuelve el array de productos ordenado por el nombre</li>
+<li><strong><em>orderByUnits</em></strong>: devuelve el array de productos ordenado por unidades descendente</li>
+</ul>
+</li>
+</ul>
+<p>Para probar que funciona correctamente ejecutaremos en nuestro fichero main.js:</p>
+<pre><code class="language-javascript">let almacen=new Store(1);
+almacen.addProduct(1, 4, 'TV Samsung MP45', 345.95);
+almacen.addProduct(2, 8, 'Portátil Acer Travelmate 200', 245.95);
+almacen.addProduct(3, 15, 'Impresora Epson LX-455', 45.95);
+almacen.addProduct(4, 25, 'USB Kingston 16GB', 5.95);
+
+console.log('LISTADO DEL ALMACÉN');
+almacen.products.forEach(prod=&gt;console.log(prod.toString()));
+
+almacen.addProduct(5, 15, 'USB Kingston 64GB', 15.95);
+almacen.delProduct(3, 11);
+almacen.delProduct(3, 7);
+almacen.addProduct(1, 9);
+
+console.log('LISTADO DEL ALMACÉN');
+almacen.products.forEach(prod=&gt;console.log(prod.toString()));
+</code></pre>
+<p>Además en nuestro main.js haremos que se muestren por consola todos los productos de los que tenemos menos de 5 unidades en stock o cuyo importe es inferior a 150 €.</p>
+<h3 id="3-2-carro-de-compra" tabindex="-1">3.2.- Carro de compra</h3>
+<p>Vamos a permitir que los usuarios hagan compras on-line para lo que crearemos una clase para los carritos de la compra:</p>
+<ul>
+<li><strong><em>Cart</em></strong>: esta clase la usaremos para crear carritos de compra con los productos a comprar. Es como la clase <em>Store</em> pero tiene además la propiedad <em>user</em> con el identificador del usuario que hace la compra y que nos lo pasarán al crear el carrito. Respecto a sus métodos son igual que los de la clase <em>Store</em> pero:
+<ul>
+<li>el método <em>delProduct</em> eliminará el producto del array de productos si sus unidades son 0</li>
+<li>tendrá dos nuevos métodos <strong><em>addToCart</em></strong> y <strong><em>removeFromCart</em></strong> que nos permitan añadir y quitar productos del carro y que recibirán como parámetros el código del producto y las unidades a añadir o quitar.</li>
+</ul>
+</li>
+</ul>
+<p>NOTA: la variable del almacén será una variable global en el fichero main.js</p>
+<h2 id="4-dom" tabindex="-1">4.- DOM</h2>
+<p>Vamos a mostrar en una tabla los products de nuestro almacén. Cada fila corresponderá a un producto y se mostrará su código, nombre, unidades, precio por unidad e importe. Debajo de la tabla mostraremos el importe total del almacén. En el fichero <em>index.html</em> crearemos la tabla vacía y el párrafo para poner el importe total.</p>
+<p>Para simplificar nuestro código a la clase <em>Product</em> le añadiremos el método <strong><em>toTR</em></strong> que devolverá el código HTML para mostrar una fila con los datos del producto y a la clase <em>Store</em> le añadiremos el método <strong><em>toHTML</em></strong> que devolverá el código HTML que insertaremos dentro de la tabla del almacén.</p>
+<p>Además cada vez que creemos un carrito se mostrará en la página una nueva UL con su código y su usuario. Cada artículo del carro será una LI de la UL y al final habrá una LI con el importe total del carro. Ej.:</p>
+<blockquote>
+<p>Carro 2 - juan</p>
+<ul>
+<li>1 x TV Samsung MP45 (345.95 €) = 345.95 €</li>
+<li>3 x USB Kingston 16GB (5.95 €) = 17.85 €</li>
+<li>Importe total: 353.80 €</li>
+</ul>
+</blockquote>
+<p>NOTA: podemos hacer algo para que sea más fácil crear los elementos del DOM tal y como hems hecho para crear la tabla???.</p>
+<p>OPCIONAL: mejorar la presentación usando bootstrap. Pondremos la tabla del almacén y debajo los carritos, 2 por fila.</p>
+<h2 id="5-bom" tabindex="-1">5.- BOM</h2>
+<h2 id="6-eventos" tabindex="-1">6.- Eventos</h2>
+<p>Botones y enlaces para el ejercicio del almacén</p>
+<h2 id="7-objetos-globales" tabindex="-1">7.- Objetos globales</h2>
+<p>Fechas, ...</p>
+<h2 id="8-ajax" tabindex="-1">8.- Ajax</h2>
+<p>Leer y guardar el almacén (y los carritos?)</p>
+<h2 id="9-ap-is" tabindex="-1">9.- APIs</h2>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
