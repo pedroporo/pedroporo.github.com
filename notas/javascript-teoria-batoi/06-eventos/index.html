@@ -23,6 +23,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <style></style>
 </head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
 <div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
 <div x-show.important="!isDesktop" style="display:none">
 <nav class="navbar">
@@ -120,7 +121,7 @@
 <span class="foldername">Javascript Teoria Batoi</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/01-sintaxis/">01-sintaxis </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -160,7 +161,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/07-globales/">07-globales </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -202,7 +203,182 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('templates')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">templates</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/default/">Default </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/sin-titulo/">Sin título </a>
 </div>
 </div>
 </div>
@@ -210,6 +386,7 @@
 </div>
 </nav>
 </div>
+<main class="content cm-s-obsidian">
 <header>
 <div class="header-meta">
 </div>
@@ -249,7 +426,7 @@
 <p>Nos permiten detectar acciones que realiza el usuario o cambios que suceden en la página y reaccionar en respuesta a ellas. Existen muchos eventos diferentes (podéis ver la lista en <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" class="external-link">w3schools</a>) aunque nosotros nos centraremos en los más comunes.</p>
 <p>Javascript nos permite ejecutar código cuando se produce un evento (por ejemplo el evento <em>click</em> del ratón) asociando al mismo una función. Hay varias formas de hacerlo.</p>
 <h2 id="como-escuchar-un-evento" tabindex="-1">Cómo escuchar un evento</h2>
-<p>La primera manera &quot;estándar&quot; de asociar código a un evento era añadiendo un atributo con el nombre del evento a escuchar (con 'on' delante) en el elemento HTML. Por ejemplo, para ejecutar código al producirse el evento 'click' sobre un botón se escribía:</p>
+<p>La manera tradicional de asociar código a un evento era añadiendo un atributo con el nombre del evento a escuchar (con 'on' delante) en el elemento HTML. Por ejemplo, para ejecutar código al producirse el evento '<em>click</em>' sobre un botón se escribía:</p>
 <pre><code class="language-html">&lt;input type=&quot;button&quot; id=&quot;boton1&quot; onclick=&quot;alert('Se ha pulsado');&quot; /&gt;
 </code></pre>
 <p>Una mejora era llamar a una función que contenía el código:</p>
@@ -259,43 +436,54 @@
   alert('Se ha pulsado');
 }
 </code></pre>
-<p>Esto &quot;ensuciaba&quot; con código la página HTML por lo que se creó el modelo de registro de eventos tradicional que permitía asociar a un elemento HTML una propiedad con el nombre del evento a escuchar (con 'on' delante). En el caso anterior:</p>
-<pre><code class="language-javascript">document.getElementById('boton1').onclick = funnction () {
+<p>Como se trata de poner un atributo al elemento podemos usar DOM para evitar &quot;ensuciar&quot; con código la página HTML:</p>
+<pre><code class="language-javascript">document.getElementById('boton1').onclick = function () {
   alert('Se ha pulsado');
 }
-...
 </code></pre>
-<p>NOTA: hay que tener cuidado porque si se ejecuta el código antes de que se haya creado el botón estaremos asociando la función al evento <em>click</em> de un elemento que aún no existe así que no hará nada. Para evitarlo siempre es conveniente poner el código que atiende a los eventos dentro de una función que se ejecute al producirse el evento <em>load</em> de la ventana. Este evento se produce cuando se han cargado todos los elementos HTML de la página y se ha creado el árbol DOM. Lo mismo habría que hacer con cualquier código que modifique el árbol DOM. El código correcto sería:</p>
+<p><strong>IMPORTANTE</strong>: si asociamos un evento a un elemento que aún no existe (porque aún no lo ha renderizado el navegador) no se produce ningún error pero cuando posteriormente se renderice ese elemento no tendrá asociado el evento. Para evitarlo siempre es conveniente poner los escuchadores de los eventos dentro de una función que se ejecute cuando sepamos que ya se ha renderizado toda la página, es decir tras producirse:</p>
+<ul>
+<li>el evento <em>load</em> de la ventana: se produce cuando se han cargado todos los elementos HTML de la página (incluyendo imágenes, ficheros, etc) y se ha creado el árbol DOM</li>
+<li>el evento <em>DOMContentLoaded</em> del documento: se produce cuando se ha creado el árbol DOM pero no se han cargado imágenes, hojas de estilo, ni subframes. Es el ideal para realizar acciones del DOM sin tener que esperar a que se carguen las imágenes y el CSS</li>
+</ul>
+<p>Lo mismo habría que hacer con cualquier código que modifique el árbol DOM. El código correcto sería:</p>
 <pre><code class="language-javascript">window.onload = function() {
   document.getElementById('boton1').onclick = function() {
     alert('Se ha pulsado');
   }
 }
 </code></pre>
+<p>o mejor</p>
+<pre><code class="language-javascript">document.onDOMContentLoaded = () =&gt; {
+document.getElementById('boton1').onclick = function() {
+  alert('Se ha pulsado');
+}
+}
+</code></pre>
 <h3 id="event-listeners" tabindex="-1">Event listeners</h3>
-<p>La forma recomendada de hacerlo es usando el modelo avanzado de registro de eventos del W3C. Se usa el método <code>addEventListener</code> que recibe como primer parámetro el nombre del evento a escuchar (sin 'on') y como segundo parámetro la función a ejecutar (OJO, sin paréntesis) cuando se produzca:</p>
+<p>Pero esta forma <em>tradicional</em> de poner escuchadores a los eventos lo es la más adecuada. La forma recomendada de hacerlo es usando el modelo avanzado de registro de eventos del <em>W3C</em>, mediante el método <code>addEventListener</code> que recibe como primer parámetro el nombre del evento a escuchar (sin '<em>on</em>') y como segundo parámetro la función a ejecutar cuando se produzca (OJO, <strong>sin paréntesis</strong>):</p>
 <pre><code class="language-javascript">document.getElementById('boton1').addEventListener('click', pulsado);
 ...
 function pulsado() {
   alert('Se ha pulsado');
-})
+}
 </code></pre>
 <p>Habitualmente se usan funciones anónimas ya que no necesitan ser llamadas desde fuera del escuchador:</p>
-<pre><code class="language-javascript">document.getElementById('boton1').addEventListener('click', function() {
+<pre><code class="language-javascript">document.getElementById('boton1').addEventListener('click', () =&gt; {
   alert('Se ha pulsado');
 });
 </code></pre>
-<p>Si queremos pasarle algún parámetro a la función escuchadora (cosa bastante poco usual) debemos usar funciones anónimas como escuchadores de eventos:</p>
+<p>Si queremos pasarle algún parámetro a la función manejadora (cosa bastante poco usual) debemos usar obligatoriamente funciones anónimas como escuchadores de eventos:</p>
 <script async src="//jsfiddle.net/juansegura/L5pkg93w/1/embed/js,html,result/"></script>
-<p>NOTA: igual que antes debemos estar seguros de que se ha creado el árbol DOM antes de poner un escuchador por lo que se recomienda ponerlos siempre dentro de la función asociada al evento <code>window.onload</code> (o mejor <code>window.addEventListener('load', ...)</code> como en el ejemplo anterior).</p>
-<p>Una ventaja de este método es que podemos poner varios escuchadores para el mismo evento y se ejecutarán todos ellos. Para eliminar un escuchador se usa el método <code>removeEventListener</code>.</p>
-<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado);
+<p>NOTA: igual que antes debemos estar seguros de que se ha creado el árbol DOM antes de poner un escuchador por lo que se recomienda ponerlos siempre dentro una función asociada a <code>window.addEventListener(&quot;load&quot;, ...)</code> o mejor a <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code>.</p>
+<p>Una ventaja de esta forma de poner escuchadores es que podemos poner varios escuchadores para el mismo evento y se ejecutarán todos ellos. Para eliminar un escuchador se usa el método <code>removeEventListener</code>.</p>
+<pre><code class="language-javascript">document.getElementById('boton1').removeEventListener('click', pulsado);
 </code></pre>
 <p>NOTA: no se puede quitar un escuchador si hemos usado una función anónima, para quitarlo debemos usar como escuchador una función con nombre.</p>
 <h2 id="tipos-de-eventos" tabindex="-1">Tipos de eventos</h2>
 <p>Según qué o dónde se produce un evento estos se clasifican en:</p>
 <h3 id="eventos-de-pagina" tabindex="-1">Eventos de página</h3>
-<p>Se producen en el documento HTML, normalmente en el BODY:</p>
+<p>Se producen en el documento HTML:</p>
 <ul>
 <li><strong>load</strong>: se produce cuando termina de cargarse la página. Es útil para hacer acciones que requieran que la página esté cargada</li>
 <li><strong>DOMContentLoaded</strong>: se produce cuando se ha cargado el árbol DOM pero no se han cargado imágenes, hojas de estilo, ni subframes. Es el ideal para realizar acciones del DOM sin tener que esperar a que se carguen las imágenes y el CSS</li>
@@ -308,12 +496,12 @@ function pulsado() {
 <ul>
 <li><strong>click</strong> / <strong>dblclick</strong>: cuando se hace click/doble click sobre un elemento</li>
 <li><strong>mousedown</strong> / <strong>mouseup</strong>: al pulsar/soltar cualquier botón del ratón</li>
-<li><strong>mouseenter</strong> / <strong>mouseleave</strong>: cuando el puntero del ratón entra/sale del elemento (tb. podemos usar mouseover/mouseout)</li>
+<li><strong>mouseover</strong> / <strong>mouseout</strong>: cuando el puntero del ratón entra/sale del elemento (tb. podemos usar <strong>mouseenter</strong> / <strong>mouseleave</strong>)</li>
 <li><strong>mousemove</strong>: se produce continuamente mientras el puntero se mueva dentro del elemento</li>
 </ul>
 <p>NOTA: si hacemos doble click sobre un elemento la secuencia de eventos que se produciría es: <em>mousedown</em> -&gt; <em>mouseup</em> -&gt; <em>click</em> -&gt; <em>mousedown</em> -&gt; <em>mouseup</em> -&gt; <em>click</em> -&gt; <em>dblclick</em></p>
 <blockquote>
-<p>EJERCICIO: Pon un escuchador desde la consola al botón 1 de la <a href="ejemploDOM.html" target="_blank" class="external-link">página de ejemplo de DOM</a> para que al hacer click se muestre el un alert con 'Click sobre botón 1'. Ponle otro para que al pasar el ratón sobre él se muestre 'Entrando en botón 1'.</p>
+<p>EJERCICIO: Pon un escuchador desde la consola al botón 1 de la <a href="./ejercicios/ejemplos/ejemploDOM.html" target="_blank" class="external-link">página de ejemplo de DOM</a> para que al hacer click se muestre el un alert con 'Click sobre botón 1'. Ponle otro para que al pasar el ratón sobre él se muestre 'Entrando en botón 1'.</p>
 </blockquote>
 <h3 id="eventos-de-teclado" tabindex="-1">Eventos de teclado</h3>
 <p>Los produce el usuario al usar el teclado:</p>
@@ -343,12 +531,14 @@ function pulsado() {
 </ul>
 <h2 id="los-objetos-em-this-em-y-em-event-em" tabindex="-1">Los objetos <em>this</em> y <em>event</em></h2>
 <p>Al producirse un evento se generan automáticamente en su función manejadora 2 objetos:</p>
-<li><strong>this</strong>: siempre hace referencia al elemento que contiene el código en donde se encuentra la variable <em>this</em>. En el caso de una función escuchadora será el elemento que tiene el escuchador que ha recibido el evento</li>
-<strong>event</strong>: es un objeto y la función escuchadora lo recibe como parámetro. Tiene propiedades y métodos que nos dan información sobre el evento, como:
+<ul>
+<li><strong>this</strong>: siempre hace referencia al elemento que contiene el código en donde se encuentra la variable <em>this</em>. En el caso de una función manejadora será el elemento que tiene el escuchador que ha recibido el evento. OJO: se sobreescribe el valor anterior de <em>this</em> por lo que si queremos conservarlo debemos guardarlo en otra variable antes de entrar en la función manejadora.</li>
+<li><strong>event</strong>: es un objeto y la función manejadora lo recibe como parámetro. Tiene propiedades y métodos que nos dan información sobre el evento, como:
+<ul>
 <li><strong>.type</strong>: qué evento se ha producido (click, submit, keyDown, ...)</li>
 <li><strong>.target</strong>: el elemento donde se produjo el evento (puede ser <em>this</em> o un descendiente de <em>this</em>, como en el ejemplo siguiente)</li>
-<strong>.currentTarget</strong>: el elemento que contiene el escuchador del evento lanzado (normalmente el mismo que <em>this</em>). Por ejemplo si tenemos un al que le ponemos un escuchador de 'click' que dentro tiene un elemento , si hacemos <em>click</em> sobre el <strong>event.target</strong> será el que es donde hemos hecho click (está dentro de ) pero tanto como <em>event.currentTarget</em> será <p> (que es quien tiene el escuchador que se está ejecutando).
-</p><li><strong>.relatedTarget</strong>: en un evento 'mouseover' <strong>event.target</strong> es el elemento donde ha entrado el puntero del ratón y <strong>event.relatedTarget</strong> el elemento del que ha salido. En un evento 'mouseout' sería al revés.</li>
+<li><strong>.currentTarget</strong>: el elemento que contiene el escuchador del evento lanzado (normalmente el mismo que <em>this</em>). Por ejemplo si tenemos un <em><code>&lt;p&gt;</code></em> al que le ponemos un escuchador de 'click' que dentro tiene un elemento <em><code>&lt;span&gt;</code></em>, si hacemos <em>click</em> sobre el <em><code>&lt;span&gt;</code></em> <strong>event.target</strong> será el <em><code>&lt;span&gt;</code></em> que es donde hemos hecho click (está dentro de <em><code>&lt;p&gt;</code></em>) pero tanto <em><code>&lt;this&gt;</code></em> como <em>event.currentTarget</em> será <em><code>&lt;p&gt;</code></em> (que es quien tiene el escuchador que se está ejecutando).</li>
+<li><strong>.relatedTarget</strong>: en un evento 'mouseover' <strong>event.target</strong> es el elemento donde ha entrado el puntero del ratón y <strong>event.relatedTarget</strong> el elemento del que ha salido. En un evento 'mouseout' sería al revés.</li>
 <li><strong>.cancelable</strong>: si el evento puede cancelarse. En caso afirmativo se puede llamar a <strong>event.preventDefault()</strong> para cancelarlo</li>
 <li><strong>.preventDefault()</strong>: si un evento tiene un escuchador asociado se ejecuta el código de dicho escuchador y después el navegador realiza la acción que correspondería por defecto al evento si no tuviera escuchador (por ejemplo un escuchador del evento <em>click</em> sobre un hiperenlace hará que se ejecute su código y después saltará a la página indicada en el <em>href</em> del hiperenlace). Este método cancela la acción por defecto del navegador para el evento. Por ejemplo si el evento era el <em>submit</em> de un formulario éste no se enviará o si era un <em>click</em> sobre un hiperenlace no se irá a la página indicada en él.</li>
 <li><strong>.stopPropagation</strong>: un evento se produce sobre un elemento y todos su padres. Por ejemplo si hacemos click en un &lt;span&gt; que está en un &lt;p&gt; que está en un &lt;div&gt; que está en el BODY el evento se va propagando por todos estos elementos y saltarían los escuchadores asociados a todos ellos (si los hubiera). Si alguno llama a este método el evento no se propagará a los demás elementos padre.</li>
@@ -370,20 +560,23 @@ function pulsado() {
 <li><strong>.which</strong>: devuelve el código de la tecla pulsada</li>
 <li><strong>.keyCode</strong> / <strong>.charCode</strong>: código de la tecla pulsada y del carácter pulsado (según navegadores)</li>
 <li><strong>.shiftKey</strong> / <strong>.ctrlKey</strong> / <strong>.altKey</strong> / <strong>.metaKey</strong>: si está o no pulsada la tecla SHIFT / CTRL / ALT / META. Esta propiedad también la tienen los eventos de ratón</li>
-</ul>
+<li>
 <blockquote>
 <p>NOTA: a la hora de saber qué tecla ha pulsado el usuario es conveniente tener en cuenta:</p>
-<ul>
+</blockquote>
+</li>
 <li>para saber qué carácter se ha pulsado lo mejor usar la propiedad <em>key</em> o <em>charCode</em> de <em>keyPress</em>, pero varía entre navegadores</li>
 <li>para saber la tecla especial pulsada mejor usar el <em>key</em> o el <em>keyCode</em> de <em>keyUp</em></li>
 <li>captura sólo lo que sea necesario, se producen muchos eventos de teclado</li>
 <li>para obtener el carácter a partir del código: <code>String fromCharCode(codigo);</code></li>
 </ul>
-</blockquote>
 </li>
 </ul>
 </li>
-<p></p><p>Lo mejor para familiarizarse con los diferentes eventos es consultar los <a href="https://www.w3schools.com/js/js_events_examples.asp" target="_blank" class="external-link">ejemplos de w3schools</a>.</p>
+</ul>
+</li>
+</ul>
+<p>Lo mejor para familiarizarse con los diferentes eventos es consultar los <a href="https://www.w3schools.com/js/js_events_examples.asp" target="_blank" class="external-link">ejemplos de w3schools</a>.</p>
 <blockquote>
 <p>EJERCICIO: Pon desde la consola un escuchador al BODY de la página de ejemplo para que al mover el ratón en cualquier punto de la ventana del navegador, se muestre en algún sitio (añade un DIV o un P al HTML) la posición del puntero respecto del navegador y respecto de la página.</p>
 </blockquote>
@@ -391,16 +584,29 @@ function pulsado() {
 <p>EJERCICIO: Pon desde la consola un escuchador al BODY de la página de ejemplo para que al pulsar cualquier tecla nos muestre en un alert el <em>key</em> y el <em>keyCode</em> de la tecla pulsada. Pruébalo con diferentes teclas</p>
 </blockquote>
 <h3 id="em-bindeo-em-del-objeto-em-this-em" tabindex="-1"><em>Bindeo</em> del objeto <em>this</em></h3>
-<p>En ocasiones no queremos que <em>this</em> sea el elemento sobre quien se produce el evento sino que queremos conservar el valor que tenía antes de entrar a la función escuchadora. Por ejemplo la función escuchadora es un método de una clase en <em>this</em> tenemos el objeto de la clase sobre el que estamos actuando pero al entrar en la función perdemos esa referencia.</p>
-<p>El método <em>.bind()</em> nos permite pasarle a una función el valor que queremos darle a la variable <em>this</em> dentro de dicha función. Por defecto a una función escuchadora de eventos se le <em>bindea</em> le valor de <strong>event.currentTarget</strong>. Si queremos que tenga otro valor se lo indicamos con <strong>.bind()</strong>:</p>
+<p>En ocasiones no queremos que <em>this</em> sea el elemento sobre quien se produce el evento sino que queremos conservar el valor que tenía antes de entrar a la función manejadora. Por ejemplo, si la función manejadora es un método de una clase en <em>this</em> tenemos el objeto de la clase sobre el que estamos actuando pero al entrar en la función manejadora del evento se sobreescribe esta variable.</p>
+<p>Podríamos guardarla en otra variable antes de entrar en la función manejadora como vimos en el <a href="./05-POO.md" target="_blank" class="external-link">tema de POO</a>, por ejemplo:</p>
+<pre><code class="language-javascript">let that = this;
+document.getElementById('acepto').addEventListener('click', function() {
+  // Aquí dentro this será el elemento sobre el que se ha hecho click
+  // y that será el objeto que tenía antes de entrar en la función manejadora
+});
+</code></pre>
+<p>Pero también podemos usar el método <em>.bind()</em>, que nos permite pasarle a una función el valor que queremos darle a la variable <em>this</em> dentro de dicha función:</p>
 <pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(variable));
 </code></pre>
-<p>En este ejemplo el valor de <em>this</em> dentro de la función <em>aceptado</em> será <em>variable</em>. En el ejemplo que habíamos comentado de un escuchador dentro de una clase, para mantener el valor de <em>this</em> y que haga referencia al objeto sobre el que estamos actuando haríamos:</p>
+<p>En este ejemplo el valor de <em>this</em> dentro de la función <em>aceptado</em> será _variable_en lugar de <em>event.currentTarget</em>.</p>
+<p>En el ejemplo que habíamos comentado de un manejador dentro de una clase, para mantener el valor de <em>this</em> y que haga referencia al objeto sobre el que estamos actuando haríamos:</p>
 <pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(this));
 </code></pre>
-<p>por lo que el valor de <em>this</em> dentro de la función <em>aceptado</em> será el mismo que tenía fuera, es decir, el objeto.</p>
-<p>Podemos <em>bindear</em>, es decir, pasarle a la función escuchadora más variables declarándolas como parámetros de <em>bind</em>. El primer parámetro será el valor de <em>this</em> y los demás serán parámetros que recibirá la función antes de recibir el parámetro <em>event</em> que será el último. Por ejemplo:</p>
-<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(var1, var2, var3));
+<p>por lo que el valor de <em>this</em> dentro de la función <em>aceptado</em> será el mismo que tenía fuera, es decir, la instancia del objeto.</p>
+<p>Esto es lo que hacíamos en la práctica de DOM cuando le pasábamos a las funciones manejadoras del <em>submit</em> y el <em>click</em> del formulario en la <em>vista</em> métodos del <em>controlador</em> con el objeto <em>this</em> bindeado:</p>
+<pre><code class="language-javascript">this.view.setBookSubmitHandler(this.handleSubmitBook.bind(this));
+this.view.setBookRemoveHandler(this.handleRemoveBook.bind(this));
+</code></pre>
+<p>Sin ese bindeo esos métodos perderían la referencia a la instancia del <em>controlador</em> y no podrían acceder a sus propiedades y métodos.</p>
+<p>Podemos <em>bindear</em>, es decir, pasarle a la función manejadora más variables declarándolas como parámetros de <em>bind</em>. El primer parámetro será el valor de <em>this</em> y los demás serán parámetros que recibirá la función antes de recibir el parámetro <em>event</em> que será el último. Por ejemplo:</p>
+<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(var1, var2));
 ...
 function aceptado(param1, param2, event) {
   // Aquí dentro tendremos los valores
@@ -424,15 +630,16 @@ function aceptado(param1, param2, event) {
 <p>En cualquier momento podemos evitar que se siga propagando el evento ejecutando el método <code>.stopPropagation()</code> en el código de cualquiera de los escuchadores.</p>
 <p>Podéis ver las distintas fases de un evento en la página <a href="https://domevents.dev/" target="_blank" class="external-link">domevents.dev</a>.</p>
 <h2 id="inner-html-y-escuchadores-de-eventos" tabindex="-1">innerHTML y escuchadores de eventos</h2>
-<p>Si cambiamos la propiedad <em>innerHTML</em> de un elemento del árbol DOM todos sus escuchadores de eventos desaparecen ya que es como si se volviera a crear ese elemento (y los escuchadores deben ponerse después de crearse).</p>
-<p>Por ejemplo, tenemos una tabla de datos y queremos que al hacer doble click en cada fila se muestre su id. La función que añade una nueva fila podría ser:</p>
+<p>Como los escuchadores de eventos se asocian a un elemento, si lo borramos desaparecerá el escuchador aunque luego lo volvamos a pintar no tendrá escuchador a menos que se lo pongamos de nuevo.</p>
+<p>Por ejemplo, si cambiamos el contenido de la propiedad <em>innerHTML</em> de un elemento todos los escuchadores de eventos de sus elementos hijos desaparecen ya que es como eliminar su contenido y volverlo a renderizar.</p>
+<p>Eso pasaría en este ejemplo en que tenemos una tabla de datos donde al hacer dobleclick en cada fila se muestra su id. La función que añade una nueva fila podría ser:</p>
 <pre><code class="language-javascript">function renderNewRow(data) {
   let miTabla = document.getElementById('tabla-datos');
   let nuevaFila = `&lt;tr id=&quot;${data.id}&quot;&gt;&lt;td&gt;${data.dato1}&lt;/td&gt;&lt;td&gt;${data.dato2}...&lt;/td&gt;&lt;/tr&gt;`;
   miTabla.innerHTML += nuevaFila;
   document.getElementById(data.id).addEventListener('dblclick', event =&gt; alert('Id: '+ event.target.id));
 </code></pre>
-<p>Sin embargo esto sólo funcionaría para la última fila añadida ya que la línea <code>miTabla.innerHTML += nuevaFila</code> equivale a <code>miTabla.innerHTML = miTabla.innerHTML + nuevaFila</code>. Por tanto estamos asignando a <em>miTabla</em> un código HTML que ya no contiene escuchadores, excepto el de <em>nuevaFila</em> que lo ponemos después de hacer la asignación.</p>
+<p>Sin embargo así sólo la última fila añadida tendría escuchador ya que la línea <code>miTabla.innerHTML += nuevaFila</code> borra todo el contenido de <em>myTabla</em> y lo vuelve a renderizar pero ya no tendría escuchadores, excepto el de <em>nuevaFila</em> que lo ponemos después de renderizarlo.</p>
 <p>La forma correcta de hacerlo sería:</p>
 <pre><code class="language-javascript">function renderNewRow(data) {
   let miTabla = document.getElementById('tabla-datos');
@@ -442,11 +649,11 @@ function aceptado(param1, param2, event) {
   nuevaFila.addEventListener('dblclick', event =&gt; alert('Id: ' + event.target.id) );
   miTabla.appendChild(nuevaFila);
 </code></pre>
-<p>De esta forma además mejoramos el rendimiento ya que el navegador sólo tiene que renderizar el nodo correspondiente a la nuevaFila. Si lo hacemos como estaba al principio se deben volver a crear y a renderizar todas las filas de la tabla (todo lo que hay dentro de miTabla).</p>
+<p>De esta forma además mejoramos el rendimiento ya que el navegador sólo tiene que renderizar el nodo correspondiente a la nuevaFila y no todas las filas de la tabla como pasaba con el primer código.</p>
 <h2 id="delegacion-de-eventos" tabindex="-1">Delegación de eventos</h2>
 <p>Es un patrón de diseño que nos permite no tener que poner un escuchador a cada elemento sino uno global que haga el trabajo de todos.</p>
-<p>Por ejemplo si queremos escuchar cuándo hacemos <em>click</em> en cada celda de la tabla en lugar de poner un escuchador en cada una (que podría tener cientos) pongo sólo 1 en la tabla y mediante la propiedad <code>event.target</code> puede saber sobre qué celda en concreto se ha hecho <em>click</em>. Esto además seguirá funcionando si dinámicamente añado nuevas celdas a la tabla ya que no son ellas las que tienen el escuchador sino la propia tabla.</p>
-<p><strong>NOTA</strong>: ten en cuenta que a veces el evento se produce en alguna etiqueta interna y <code>event.target</code> no es el elemento que buscamos. Por ejemplo si hay una imagen en la celda el <code>event.target</code> podría ser la &lt;img&gt; y no la &lt;td&gt;. Para asegurarnos de llegar al elemento deseado podemos usar el selector <code>closest()</code> que vimos en el DOM.</p>
+<p>Por ejemplo si queremos escuchar cuándo hacemos <em>click</em> en cada celda de la tabla en lugar de poner un escuchador en cada una (que podría tener cientos) pongo sólo 1 en la tabla y mediante la propiedad <code>event.target</code> puedo saber sobre qué celda en concreto se ha hecho <em>click</em>. Esto además seguirá funcionando si dinámicamente añado nuevas celdas a la tabla ya que no son ellas las que tienen el escuchador sino la propia tabla.</p>
+<p><strong>NOTA</strong>: ten en cuenta que a veces el evento se produce en alguna etiqueta interna al elemento por lo que <code>event.target</code> no sería el elemento que buscamos sino su descendiente. Por ejemplo si hay una imagen en la celda el <code>event.target</code> podría ser la &lt;img&gt; y no la &lt;td&gt;. Para asegurarnos de llegar al elemento deseado podemos usar el selector <code>closest()</code> que vimos en el DOM (<code>tdClicked = event.target.closest('td')</code>).</p>
 <p>Podéis ver más ejemplos de delegación de eventos en <a href="https://es.javascript.info/event-delegation" target="_blank" class="external-link">El Tutorial de JavaScript Moderno</a>.</p>
 <h2 id="eventos-personalizados" tabindex="-1">Eventos personalizados</h2>
 <p>También podemos mediante código lanzar manualmente cualquier evento sobre un elemento con el método <code>dispatchEvent()</code> e incluso crear eventos personalizados, por ejemplo:</p>
@@ -461,6 +668,7 @@ elem.dispatchEvent(event);
 <p>Incluso podemos añadir datos al objeto <em>event</em> si creamos el evento con <code>new CustomEvent()</code>. Podéis obtener más información en la <a href="https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events" target="_blank" class="external-link">página de MDN</a>.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
 <style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
 <div style="opacity:0;display:none" id="tooltip-wrapper">
 <div id="tooltip-content">
@@ -473,4 +681,5 @@ elem.dispatchEvent(event);
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
 <script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
 </html>
