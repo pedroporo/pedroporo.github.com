@@ -6,4 +6,5 @@ Profesor:
 
 
 agendaweb
-15 de noviembre examen
+21 de noviempre exposicion a las 16:30
+
