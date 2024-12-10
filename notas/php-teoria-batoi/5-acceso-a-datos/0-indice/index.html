@@ -356,6 +356,59 @@
 <div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -391,15 +444,49 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="desenvolupament-d-aplicacions-web-acces-a-dades" tabindex="-1">Desenvolupament d'aplicacions web: Accés a Dades.</h1>
 <div class="callout" data-callout="abstract"><div class="callout-title"><div class="callout-title-inner"> &quot;Duració i criteris d'avaluació&quot;<br></div></div>
 <div class="callout-content">
 <p>
-Duració estimada: 10 hores<br>
-| Resultat d'aprenentatge | Criteris d'avaluació |<br>
-| -------- | -------- |<br>
-| 6. Desenvolupa aplicacions web d'accés a magatzems de dades, aplicant mesures per a mantindre la seguretat i la integritat de la informació.| a) S'han analitzat les tecnologies que permeten l'accés mitjançant programació a la informació disponible en magatzems de dades. <br> b) S'han creat aplicacions que establisquen connexions amb bases de dades. <br> c) S'ha recuperat informació emmagatzemada en bases de dades. <br> d) S'ha publicat en aplicacions web la informació recuperada. <br> e) S'han utilitzat conjunts de dades per a emmagatzemar la informació. <br> f) S'han creat aplicacions web que permeten l'actualització i l'eliminació d'informació disponible en una base de dades.<br> g) S'han provat i documentat les aplicacions web. |</p>
+Duració estimada: 10 hores</p>
 </div></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Resultat d'aprenentatge</th>
+<th>Criteris d'avaluació</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6. Desenvolupa aplicacions web d'accés a magatzems de dades, aplicant mesures per a mantindre la seguretat i la integritat de la informació.</td>
+<td>a) S'han analitzat les tecnologies que permeten l'accés mitjançant programació a la informació disponible en magatzems de dades.</td>
+</tr>
+<tr>
+<td></td>
+<td>b) S'han creat aplicacions que establisquen connexions amb bases de dades.</td>
+</tr>
+<tr>
+<td></td>
+<td>c) S'ha recuperat informació emmagatzemada en bases de dades.</td>
+</tr>
+<tr>
+<td></td>
+<td>d) S'ha publicat en aplicacions web la informació recuperada.</td>
+</tr>
+<tr>
+<td></td>
+<td>e) S'han utilitzat conjunts de dades per a emmagatzemar la informació.</td>
+</tr>
+<tr>
+<td></td>
+<td>f) S'han creat aplicacions web que permeten l'actualització i l'eliminació d'informació disponible en una base de dades.</td>
+</tr>
+<tr>
+<td></td>
+<td>g) S'han provat i documentat les aplicacions web.</td>
+</tr>
+</tbody>
+</table></div>
 <p>En aquesta unitat aprendrem a accedir a dades que es troben en un servidor; recuperant, editant i creant aquestes dades a través d'una base de dades.</p>
 <p>A través de les diferents capes o nivells, de les quals 2 d'elles ja coneixem (<em>Nginx</em>, <em>PHP</em>) i <em>MySQL</em> la que estudiarem en aquest tema.</p>
 <p><picture src="/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-arquitectura-3-niveles.png" alt="imagenes/06/06-bbdd-arquitectura-3-niveles.png"><source media="(max-width:480px)" srcset="/img/optimized/LCvNpoIjCG-500.webp" type="image/webp">

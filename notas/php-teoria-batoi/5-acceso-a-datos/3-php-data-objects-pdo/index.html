@@ -356,6 +356,59 @@
 <div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -391,32 +444,68 @@
 <div class="header-meta">
 </div>
 </header>
-<p><em>PHP Data Objects</em> (o <em>PDO</em>) és un <em>driver</em> de <em>PHP</em> que s'utilitza per a treballar sota una interfície d'objectes amb la base de dades. Hui dia és el que més s'utilitza per a manejar informació des d'una base de dades, ja siga relacional o no relacional.</p>
-<p>Per establir la connexió en la bbdd utilitzarem:</p>
+<p>La classe PDO de PHP s'utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:</p>
+<h3 id="constructor-de-la-classe-pdo" tabindex="-1">Constructor de la classe PDO</h3>
+<p>El constructor de la classe PDO accepta tres paràmetres obligatoris i un opcional:</p>
 <pre><code class="language-php">&lt;?php
-    $conexion = new PDO('mysql:host=localhost; dbname=dwes', 'dwes', 'abc123');
-</code></pre>
-<p>A més, amb <em>PDO</em> podem usar les excepcions amb <em>try catch</em> per a gestionar els errors que es produïsquen en la nostra aplicació, per a això, com féiem abans, hem d'encapsular el codi entre blocs <em>try / catch</em>.</p>
-<pre><code class="language-php">&lt;?php
+    $pdo = new PDO(string $dsn, string $username, string $password, array $options);
 
-    $dsn = 'mysql:dbname=prueba;host=127.0.0.1';
-    $usuario = 'usuario';
-    $contraseña = 'contraseña';
-
-    try {
-        $mbd = new PDO($dsn, $usuario, $contraseña);
-        $mbd-&gt;setAttributeATTR_ERRMODE, PDO::ERRMODE_EXCEPTION;
-    } catch (PDOException $e) {
-        echo 'Falló la conexión: ' . $e-&gt;getMessage();
-    }
 </code></pre>
-<p>En primer lloc, creem la connexió amb la base de dades a través del constructor <em>PDO</em> passant-li la informació de la base de dades.</p>
-<p>En segon lloc, establim els paràmetres per a manejar les exempcions, en aquest cas hem utilitzat:</p>
 <ul>
-<li><code>PDO::ATTR_ERRMODE</code> indicant-li a PHP que volem un reporte d'errors.</li>
-<li><code>PDO::ERRMODE_EXCEPTION</code> amb aquest atribut obliguem al fet que llance exempcions, a més de ser l'opció més humana i llegible que hi ha a l'hora de controlar errors.</li>
+<li>$dsn (Data Source Name): És una cadena que especifica el tipus de base de dades i la informació necessària per connectar-s'hi.
+<ul>
+<li>Format per tipus de base de dades i configuració, per exemple:
+<ul>
+<li>Mysql:host=localhost;dbname=testdb (per a MySQL).</li>
+<li>pgsql:host=localhost;port=5432;dbname=testdb (per a PostgreSQL).</li>
+<li>sqlite:/path/to/database.db (per a SQLite).</li>
 </ul>
-<p>Qualsevol error que es llance a través de <strong>PDO</strong>, el sistema llançarà una <span class="alert"><strong>PDOException</strong></span>.</p>
+</li>
+<li>$username: El nom d'usuari per a la connexió a la base de dades.</li>
+<li>$password: La contrasenya associada al nom d'usuari.</li>
+<li>$options (Opcional): Un array d'opcions per definir el comportament de la connexió. Aquests són alguns dels valors més comuns que es poden definir en aquest array:
+<ul>
+<li>PDO::ATTR_ERRMODE: Controla com es gestionen els errors. Alguns valors comuns són:
+<ul>
+<li>PDO::ERRMODE_SILENT: Els errors no generen cap missatge.</li>
+<li>PDO::ERRMODE_WARNING: Els errors generen un avís.</li>
+<li>PDO::ERRMODE_EXCEPTION: Els errors generen una excepció, que és el més recomanable per controlar errors.</li>
+</ul>
+</li>
+<li>PDO::ATTR_DEFAULT_FETCH_MODE: Defineix el mode de recuperació de dades per defecte, com ara:
+<ul>
+<li>PDO::FETCH_ASSOC: Retorna les dades com un array associatiu.</li>
+<li>PDO::FETCH_OBJ: Retorna les dades com un objecte.</li>
+<li>PDO::FETCH_BOTH: Retorna les dades com un array associatiu i numèric.</li>
+</ul>
+</li>
+<li>PDO::ATTR_PERSISTENT: Habilita connexions persistents. Una connexió persistent pot millorar el rendiment mantenint la connexió activa per múltiples peticions en lloc de crear-ne una nova cada vegada.</li>
+<li>PDO::ATTR_TIMEOUT: Defineix un temps límit per a la connexió en segons.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="exemple-de-connexio-amb-pdo" tabindex="-1">Exemple de connexió amb PDO</h5>
+<pre><code class="language-php">$dsn = &quot;mysql:host=localhost;dbname=testdb&quot;;
+$username = &quot;usuari&quot;;
+$password = &quot;contrasenya&quot;;
+$options = [
+    PDO::ATTR_ERRMODE =&gt; PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE =&gt; PDO::FETCH_ASSOC,
+    PDO::ATTR_PERSISTENT =&gt; true,
+    PDO::MYSQL_ATTR_INIT_COMMAND =&gt; &quot;SET NAMES utf8&quot;
+];
+
+try {
+    $pdo = new PDO($dsn, $username, $password, $options);
+    echo &quot;Connexió establerta amb èxit!&quot;;
+} catch (PDOException $e) {
+    echo &quot;Error de connexió: &quot; . $e-&gt;getMessage();
+}
+</code></pre>
+<p>Aquest codi estableix una connexió a una base de dades MySQL amb un joc de caràcters utf8, una connexió persistent, i llança excepcions en cas d'errors.</p>
+<p>Qualsevol error que es llance a través de <strong>PDO</strong>, el sistema llançarà una <strong>PDOException</strong> .</p>
 <h3 id="fitxer-de-configuracio-de-la-bd" tabindex="-1">Fitxer de configuració de la BD</h3>
 <p>De la mateixa manera que podem tenir el nostre arxiu de funcions <code>funciones.php</code> i alberguem totes les funcions que s'usen de manera global en l'aplicació, podem establir un arxiu de constants on definim els paràmetres de connexió amb la base de dades.</p>
 <pre><code class="language-php">&lt;?php
@@ -450,7 +539,7 @@
 </ul>
 <h3 id="exemple-parametros" tabindex="-1">Exemple paràmetros</h3>
 <pre><code class="language-php">&lt;?php
-    //  ▒▒▒▒▒▒▒▒ Borrando con parámetros ▒▒▒▒▒▒▒▒
+     
 
     include &quot;config/database.inc.php&quot;;
 
@@ -553,11 +642,11 @@
 <ul>
 <li><code>PDO::FETCH_ASSOC:</code> array indexat que els seus keys són el nom de les columnes.</li>
 <li><code>PDO::FETCH_NUM:</code> array indexat que els seus keys són números.</li>
-<li><code>PDO::FETCH_BOTH:</code> valor per defecte. Retorna un array indexat que els seus keys són tant el nom de les columnes com números.<br>
-<picture src="/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-pdo-listado-fetch.png" alt="imagenes/06/06-pdo-listado-fetch.png"><source media="(max-width:480px)" srcset="/img/optimized/B89A3TOUAS-500.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/B89A3TOUAS-500.jpeg">
-<source media="(max-width:1920px)" srcset="/img/optimized/B89A3TOUAS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/B89A3TOUAS-700.jpeg"><img class="" src="/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-pdo-listado-fetch.png" alt="imagenes/06/06-pdo-listado-fetch.png" width=""></picture></li>
+<li><code>PDO::FETCH_BOTH:</code> valor per defecte. Retorna un array indexat que els seus keys són tant el nom de les columnes com números.</li>
 </ul>
+<p><picture src="/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-pdo-listado-fetch.png" alt="imagenes/06/06-pdo-listado-fetch.png"><source media="(max-width:480px)" srcset="/img/optimized/B89A3TOUAS-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/B89A3TOUAS-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/B89A3TOUAS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/B89A3TOUAS-700.jpeg"><img class="" src="/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-pdo-listado-fetch.png" alt="imagenes/06/06-pdo-listado-fetch.png" width=""></picture></p>
 <pre><code class="language-php">&lt;?php
     //  ▒▒▒▒▒▒▒▒ consulta con array asociativo.php ▒▒▒▒▒▒▒▒
 
@@ -652,7 +741,7 @@
     $sentencia = $conexion -&gt; prepare($sql);
 
     // Aquí 'Tienda' es el nombre de nuestra clase
-    $sentencia -&gt; setFetchModeFETCH_CLASS, &quot;Tienda&quot;;
+    $sentencia -&gt; setFetchModeFETCH_CLASS, Tienda::class;
     $sentencia -&gt; execute();
 
     while($t = $sentencia -&gt; fetch()) {
