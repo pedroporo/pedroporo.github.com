@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>06-eventos</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">notas</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('templates')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">templates</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/default/">Default </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/sin-titulo/">Sin título </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="eventos" tabindex="-1">Eventos</h1>
+<ul>
+<li><a href="#eventos" target="_blank" class="external-link">Eventos</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#c%C3%B3mo-escuchar-un-evento" target="_blank" class="external-link">Cómo escuchar un evento</a>
+<ul>
+<li><a href="#event-listeners" target="_blank" class="external-link">Event listeners</a></li>
+</ul>
+</li>
+<li><a href="#tipos-de-eventos" target="_blank" class="external-link">Tipos de eventos</a>
+<ul>
+<li><a href="#eventos-de-p%C3%A1gina" target="_blank" class="external-link">Eventos de página</a></li>
+<li><a href="#eventos-de-rat%C3%B3n" target="_blank" class="external-link">Eventos de ratón</a></li>
+<li><a href="#eventos-de-teclado" target="_blank" class="external-link">Eventos de teclado</a></li>
+<li><a href="#eventos-de-toque" target="_blank" class="external-link">Eventos de toque</a></li>
+<li><a href="#eventos-de-formulario" target="_blank" class="external-link">Eventos de formulario</a></li>
+</ul>
+</li>
+<li><a href="#los-objetos-this-y-event" target="_blank" class="external-link">Los objetos <em>this</em> y <em>event</em></a>
+<ul>
+<li><a href="#bindeo-del-objeto-this" target="_blank" class="external-link"><em>Bindeo</em> del objeto <em>this</em></a></li>
+</ul>
+</li>
+<li><a href="#propagaci%C3%B3n-de-eventos" target="_blank" class="external-link">Propagación de eventos</a></li>
+<li><a href="#innerhtml-y-escuchadores-de-eventos" target="_blank" class="external-link">innerHTML y escuchadores de eventos</a></li>
+<li><a href="#delegaci%C3%B3n-de-eventos" target="_blank" class="external-link">Delegación de eventos</a></li>
+<li><a href="#eventos-personalizados" target="_blank" class="external-link">Eventos personalizados</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>Nos permiten detectar acciones que realiza el usuario o cambios que suceden en la página y reaccionar en respuesta a ellas. Existen muchos eventos diferentes (podéis ver la lista en <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" class="external-link">w3schools</a>) aunque nosotros nos centraremos en los más comunes.</p>
+<p>Javascript nos permite ejecutar código cuando se produce un evento (por ejemplo el evento <em>click</em> del ratón) asociando al mismo una función. Hay varias formas de hacerlo.</p>
+<h2 id="como-escuchar-un-evento" tabindex="-1">Cómo escuchar un evento</h2>
+<p>La manera tradicional de asociar código a un evento era añadiendo un atributo con el nombre del evento a escuchar (con 'on' delante) en el elemento HTML. Por ejemplo, para ejecutar código al producirse el evento '<em>click</em>' sobre un botón se escribía:</p>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; id=&quot;boton1&quot; onclick=&quot;alert('Se ha pulsado');&quot; /&gt;
+</code></pre>
+<p>Una mejora era llamar a una función que contenía el código:</p>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; id=&quot;boton1&quot; onclick=&quot;clicked()&quot; /&gt;
+</code></pre>
+<pre><code class="language-javascript">function clicked() {
+  alert('Se ha pulsado');
+}
+</code></pre>
+<p>Como se trata de poner un atributo al elemento podemos usar DOM para evitar &quot;ensuciar&quot; con código la página HTML:</p>
+<pre><code class="language-javascript">document.getElementById('boton1').onclick = function () {
+  alert('Se ha pulsado');
+}
+</code></pre>
+<p><strong>IMPORTANTE</strong>: si asociamos un evento a un elemento que aún no existe (porque aún no lo ha renderizado el navegador) no se produce ningún error pero cuando posteriormente se renderice ese elemento no tendrá asociado el evento. Para evitarlo siempre es conveniente poner los escuchadores de los eventos dentro de una función que se ejecute cuando sepamos que ya se ha renderizado toda la página, es decir tras producirse:</p>
+<ul>
+<li>el evento <em>load</em> de la ventana: se produce cuando se han cargado todos los elementos HTML de la página (incluyendo imágenes, ficheros, etc) y se ha creado el árbol DOM</li>
+<li>el evento <em>DOMContentLoaded</em> del documento: se produce cuando se ha creado el árbol DOM pero no se han cargado imágenes, hojas de estilo, ni subframes. Es el ideal para realizar acciones del DOM sin tener que esperar a que se carguen las imágenes y el CSS</li>
+</ul>
+<p>Lo mismo habría que hacer con cualquier código que modifique el árbol DOM. El código correcto sería:</p>
+<pre><code class="language-javascript">window.onload = function() {
+  document.getElementById('boton1').onclick = function() {
+    alert('Se ha pulsado');
+  }
+}
+</code></pre>
+<p>o mejor</p>
+<pre><code class="language-javascript">document.onDOMContentLoaded = () =&gt; {
+document.getElementById('boton1').onclick = function() {
+  alert('Se ha pulsado');
+}
+}
+</code></pre>
+<h3 id="event-listeners" tabindex="-1">Event listeners</h3>
+<p>Pero esta forma <em>tradicional</em> de poner escuchadores a los eventos lo es la más adecuada. La forma recomendada de hacerlo es usando el modelo avanzado de registro de eventos del <em>W3C</em>, mediante el método <code>addEventListener</code> que recibe como primer parámetro el nombre del evento a escuchar (sin '<em>on</em>') y como segundo parámetro la función a ejecutar cuando se produzca (OJO, <strong>sin paréntesis</strong>):</p>
+<pre><code class="language-javascript">document.getElementById('boton1').addEventListener('click', pulsado);
+...
+function pulsado() {
+  alert('Se ha pulsado');
+}
+</code></pre>
+<p>Habitualmente se usan funciones anónimas ya que no necesitan ser llamadas desde fuera del escuchador:</p>
+<pre><code class="language-javascript">document.getElementById('boton1').addEventListener('click', () =&gt; {
+  alert('Se ha pulsado');
+});
+</code></pre>
+<p>Si queremos pasarle algún parámetro a la función manejadora (cosa bastante poco usual) debemos usar obligatoriamente funciones anónimas como escuchadores de eventos:</p>
+<script async src="//jsfiddle.net/juansegura/L5pkg93w/1/embed/js,html,result/"></script>
+<p>NOTA: igual que antes debemos estar seguros de que se ha creado el árbol DOM antes de poner un escuchador por lo que se recomienda ponerlos siempre dentro una función asociada a <code>window.addEventListener(&quot;load&quot;, ...)</code> o mejor a <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code>.</p>
+<p>Una ventaja de esta forma de poner escuchadores es que podemos poner varios escuchadores para el mismo evento y se ejecutarán todos ellos. Para eliminar un escuchador se usa el método <code>removeEventListener</code>.</p>
+<pre><code class="language-javascript">document.getElementById('boton1').removeEventListener('click', pulsado);
+</code></pre>
+<p>NOTA: no se puede quitar un escuchador si hemos usado una función anónima, para quitarlo debemos usar como escuchador una función con nombre.</p>
+<h2 id="tipos-de-eventos" tabindex="-1">Tipos de eventos</h2>
+<p>Según qué o dónde se produce un evento estos se clasifican en:</p>
+<h3 id="eventos-de-pagina" tabindex="-1">Eventos de página</h3>
+<p>Se producen en el documento HTML:</p>
+<ul>
+<li><strong>load</strong>: se produce cuando termina de cargarse la página. Es útil para hacer acciones que requieran que la página esté cargada</li>
+<li><strong>DOMContentLoaded</strong>: se produce cuando se ha cargado el árbol DOM pero no se han cargado imágenes, hojas de estilo, ni subframes. Es el ideal para realizar acciones del DOM sin tener que esperar a que se carguen las imágenes y el CSS</li>
+<li><strong>unload</strong>: al destruirse el documento (ej. cerrar)</li>
+<li><strong>beforeUnload</strong>: antes de destruirse (podríamos mostrar un mensaje de confirmación)</li>
+<li><strong>resize</strong>: si cambia el tamaño del documento (porque se redimensiona la ventana)</li>
+</ul>
+<h3 id="eventos-de-raton" tabindex="-1">Eventos de ratón</h3>
+<p>Los produce el usuario con el ratón:</p>
+<ul>
+<li><strong>click</strong> / <strong>dblclick</strong>: cuando se hace click/doble click sobre un elemento</li>
+<li><strong>mousedown</strong> / <strong>mouseup</strong>: al pulsar/soltar cualquier botón del ratón</li>
+<li><strong>mouseover</strong> / <strong>mouseout</strong>: cuando el puntero del ratón entra/sale del elemento (tb. podemos usar <strong>mouseenter</strong> / <strong>mouseleave</strong>)</li>
+<li><strong>mousemove</strong>: se produce continuamente mientras el puntero se mueva dentro del elemento</li>
+</ul>
+<p>NOTA: si hacemos doble click sobre un elemento la secuencia de eventos que se produciría es: <em>mousedown</em> -&gt; <em>mouseup</em> -&gt; <em>click</em> -&gt; <em>mousedown</em> -&gt; <em>mouseup</em> -&gt; <em>click</em> -&gt; <em>dblclick</em></p>
+<blockquote>
+<p>EJERCICIO: Pon un escuchador desde la consola al botón 1 de la <a href="ejemploDOM.html" target="_blank" class="external-link">página de ejemplo de DOM</a> para que al hacer click se muestre el un alert con 'Click sobre botón 1'. Ponle otro para que al pasar el ratón sobre él se muestre 'Entrando en botón 1'.</p>
+</blockquote>
+<h3 id="eventos-de-teclado" tabindex="-1">Eventos de teclado</h3>
+<p>Los produce el usuario al usar el teclado:</p>
+<ul>
+<li><strong>keydown</strong>: se produce al presionar una tecla y se repite continuamente si la tecla se mantiene pulsada</li>
+<li><strong>keyup</strong>: cuando se deja de presionar la tecla</li>
+<li><strong>keypress</strong>: acción de pulsar y soltar (sólo se produce en las teclas alfanuméricas)</li>
+</ul>
+<p>NOTA: el orden de secuencia de los eventos es:<br>
+<em>keyDown</em> -&gt; <em>keyPress</em> -&gt; <em>keyUp</em></p>
+<h3 id="eventos-de-toque" tabindex="-1">Eventos de toque</h3>
+<p>Se producen al usar una pantalla táctil:</p>
+<ul>
+<li><strong>touchstart</strong>: se produce cuando se detecta un toque en la pantalla táctil</li>
+<li><strong>touchend</strong>: cuando se deja de pulsar la pantalla táctil</li>
+<li><strong>touchmove</strong>: cuando un dedo es desplazado a través de la pantalla</li>
+<li><strong>touchcancel</strong>: cuando se interrumpe un evento táctil.</li>
+</ul>
+<h3 id="eventos-de-formulario" tabindex="-1">Eventos de formulario</h3>
+<p>Se producen en los formularios:</p>
+<ul>
+<li><strong>focus</strong> / <strong>blur</strong>: al obtener/perder el foco el elemento</li>
+<li><strong>change</strong>: al perder el foco un &lt;input&gt; o &lt;textarea&gt; si ha cambiado su contenido o al cambiar de valor un &lt;select&gt; o un &lt;checkbox&gt;</li>
+<li><strong>input</strong>: al cambiar el valor de un &lt;imput&gt; o &lt;textarea&gt; (se produce cada vez que escribimos una letra es estos elementos)</li>
+<li><strong>select</strong>: al cambiar el valor de un &lt;select&gt; o al seleccionar texto de un &lt;imput&gt; o &lt;textarea&gt;</li>
+<li><strong>submit</strong> / <strong>reset</strong>: al enviar/recargar un formulario</li>
+</ul>
+<h2 id="los-objetos-em-this-em-y-em-event-em" tabindex="-1">Los objetos <em>this</em> y <em>event</em></h2>
+<p>Al producirse un evento se generan automáticamente en su función manejadora 2 objetos:</p>
+<ul>
+<li><strong>this</strong>: siempre hace referencia al elemento que contiene el código en donde se encuentra la variable <em>this</em>. En el caso de una función manejadora será el elemento que tiene el escuchador que ha recibido el evento. OJO: se sobreescribe el valor anterior de <em>this</em> por lo que si queremos conservarlo debemos guardarlo en otra variable antes de entrar en la función manejadora.</li>
+<li><strong>event</strong>: es un objeto y la función manejadora lo recibe como parámetro. Tiene propiedades y métodos que nos dan información sobre el evento, como:
+<ul>
+<li><strong>.type</strong>: qué evento se ha producido (click, submit, keyDown, ...)</li>
+<li><strong>.target</strong>: el elemento donde se produjo el evento (puede ser <em>this</em> o un descendiente de <em>this</em>, como en el ejemplo siguiente)</li>
+<li><strong>.currentTarget</strong>: el elemento que contiene el escuchador del evento lanzado (normalmente el mismo que <em>this</em>). Por ejemplo si tenemos un <em><code>&lt;p&gt;</code></em> al que le ponemos un escuchador de 'click' que dentro tiene un elemento <em><code>&lt;span&gt;</code></em>, si hacemos <em>click</em> sobre el <em><code>&lt;span&gt;</code></em> <strong>event.target</strong> será el <em><code>&lt;span&gt;</code></em> que es donde hemos hecho click (está dentro de <em><code>&lt;p&gt;</code></em>) pero tanto <em><code>&lt;this&gt;</code></em> como <em>event.currentTarget</em> será <em><code>&lt;p&gt;</code></em> (que es quien tiene el escuchador que se está ejecutando).</li>
+<li><strong>.relatedTarget</strong>: en un evento 'mouseover' <strong>event.target</strong> es el elemento donde ha entrado el puntero del ratón y <strong>event.relatedTarget</strong> el elemento del que ha salido. En un evento 'mouseout' sería al revés.</li>
+<li><strong>.cancelable</strong>: si el evento puede cancelarse. En caso afirmativo se puede llamar a <strong>event.preventDefault()</strong> para cancelarlo</li>
+<li><strong>.preventDefault()</strong>: si un evento tiene un escuchador asociado se ejecuta el código de dicho escuchador y después el navegador realiza la acción que correspondería por defecto al evento si no tuviera escuchador (por ejemplo un escuchador del evento <em>click</em> sobre un hiperenlace hará que se ejecute su código y después saltará a la página indicada en el <em>href</em> del hiperenlace). Este método cancela la acción por defecto del navegador para el evento. Por ejemplo si el evento era el <em>submit</em> de un formulario éste no se enviará o si era un <em>click</em> sobre un hiperenlace no se irá a la página indicada en él.</li>
+<li><strong>.stopPropagation</strong>: un evento se produce sobre un elemento y todos su padres. Por ejemplo si hacemos click en un &lt;span&gt; que está en un &lt;p&gt; que está en un &lt;div&gt; que está en el BODY el evento se va propagando por todos estos elementos y saltarían los escuchadores asociados a todos ellos (si los hubiera). Si alguno llama a este método el evento no se propagará a los demás elementos padre.</li>
+<li>dependiento del tipo de evento tendrá más propiedades:
+<ul>
+<li>eventos de ratón:
+<ul>
+<li><strong>.button</strong>: qué botón del ratón se ha pulsado (0: izq, 1: rueda; 2: dcho).</li>
+<li><strong>.screenX</strong> / <strong>.screenY</strong>: las corrdenadas del ratón respecto a la pantalla</li>
+<li><strong>.clientX</strong> / <strong>.clientY</strong>: las coordenadas del ratón respecto a la ventana cuando se produjo el evento</li>
+<li><strong>.pageX</strong> / <strong>.pageY</strong>: las coordenadas del ratón respecto al documento (si se ha hecho un scroll será el clientX/Y más el scroll)</li>
+<li><strong>.offsetX</strong> / <strong>.offsetY</strong>: las coordenadas del ratón respecto al elemento sobre el que se produce el evento</li>
+<li><strong>.detail</strong>: si se ha hecho click, doble click o triple click</li>
+</ul>
+</li>
+<li>eventos de teclado: son los más incompatibles entre diferentes navegadores. En el teclado hay teclas normales y especiales (Alt, Ctrl, Shift, Enter, Tab, flechas, Supr, ...). En la información del teclado hay que distinguir entre el código del carácter pulsado (e=101, E=69, €=8364) y el código de la tecla pulsada (para los 3 caracteres es el 69 ya que se pulsa la misma tecla). Las principales propiedades de <em>event</em> son:
+<ul>
+<li><strong>.key</strong>: devuelve el nombre de la tecla pulsada</li>
+<li><strong>.which</strong>: devuelve el código de la tecla pulsada</li>
+<li><strong>.keyCode</strong> / <strong>.charCode</strong>: código de la tecla pulsada y del carácter pulsado (según navegadores)</li>
+<li><strong>.shiftKey</strong> / <strong>.ctrlKey</strong> / <strong>.altKey</strong> / <strong>.metaKey</strong>: si está o no pulsada la tecla SHIFT / CTRL / ALT / META. Esta propiedad también la tienen los eventos de ratón</li>
+<li>
+<blockquote>
+<p>NOTA: a la hora de saber qué tecla ha pulsado el usuario es conveniente tener en cuenta:</p>
+</blockquote>
+</li>
+<li>para saber qué carácter se ha pulsado lo mejor usar la propiedad <em>key</em> o <em>charCode</em> de <em>keyPress</em>, pero varía entre navegadores</li>
+<li>para saber la tecla especial pulsada mejor usar el <em>key</em> o el <em>keyCode</em> de <em>keyUp</em></li>
+<li>captura sólo lo que sea necesario, se producen muchos eventos de teclado</li>
+<li>para obtener el carácter a partir del código: <code>String fromCharCode(codigo);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Lo mejor para familiarizarse con los diferentes eventos es consultar los <a href="https://www.w3schools.com/js/js_events_examples.asp" target="_blank" class="external-link">ejemplos de w3schools</a>.</p>
+<blockquote>
+<p>EJERCICIO: Pon desde la consola un escuchador al BODY de la página de ejemplo para que al mover el ratón en cualquier punto de la ventana del navegador, se muestre en algún sitio (añade un DIV o un P al HTML) la posición del puntero respecto del navegador y respecto de la página.</p>
+</blockquote>
+<blockquote>
+<p>EJERCICIO: Pon desde la consola un escuchador al BODY de la página de ejemplo para que al pulsar cualquier tecla nos muestre en un alert el <em>key</em> y el <em>keyCode</em> de la tecla pulsada. Pruébalo con diferentes teclas</p>
+</blockquote>
+<h3 id="em-bindeo-em-del-objeto-em-this-em" tabindex="-1"><em>Bindeo</em> del objeto <em>this</em></h3>
+<p>En ocasiones no queremos que <em>this</em> sea el elemento sobre quien se produce el evento sino que queremos conservar el valor que tenía antes de entrar a la función manejadora. Por ejemplo, si la función manejadora es un método de una clase en <em>this</em> tenemos el objeto de la clase sobre el que estamos actuando pero al entrar en la función manejadora del evento se sobreescribe esta variable.</p>
+<p>Podríamos guardarla en otra variable antes de entrar en la función manejadora como vimos en el <a href="./05-POO.md" target="_blank" class="external-link">tema de POO</a>, por ejemplo:</p>
+<pre><code class="language-javascript">let that = this;
+document.getElementById('acepto').addEventListener('click', function() {
+  // Aquí dentro this será el elemento sobre el que se ha hecho click
+  // y that será el objeto que tenía antes de entrar en la función manejadora
+});
+</code></pre>
+<p>Pero también podemos usar el método <em>.bind()</em>, que nos permite pasarle a una función el valor que queremos darle a la variable <em>this</em> dentro de dicha función:</p>
+<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(variable));
+</code></pre>
+<p>En este ejemplo el valor de <em>this</em> dentro de la función <em>aceptado</em> será _variable_en lugar de <em>event.currentTarget</em>.</p>
+<p>En el ejemplo que habíamos comentado de un manejador dentro de una clase, para mantener el valor de <em>this</em> y que haga referencia al objeto sobre el que estamos actuando haríamos:</p>
+<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(this));
+</code></pre>
+<p>por lo que el valor de <em>this</em> dentro de la función <em>aceptado</em> será el mismo que tenía fuera, es decir, la instancia del objeto.</p>
+<p>Esto es lo que hacíamos en la práctica de DOM cuando le pasábamos a las funciones manejadoras del <em>submit</em> y el <em>click</em> del formulario en la <em>vista</em> métodos del <em>controlador</em> con el objeto <em>this</em> bindeado:</p>
+<pre><code class="language-javascript">this.view.setBookSubmitHandler(this.handleSubmitBook.bind(this));
+this.view.setBookRemoveHandler(this.handleRemoveBook.bind(this));
+</code></pre>
+<p>Sin ese bindeo esos métodos perderían la referencia a la instancia del <em>controlador</em> y no podrían acceder a sus propiedades y métodos.</p>
+<p>Podemos <em>bindear</em>, es decir, pasarle a la función manejadora más variables declarándolas como parámetros de <em>bind</em>. El primer parámetro será el valor de <em>this</em> y los demás serán parámetros que recibirá la función antes de recibir el parámetro <em>event</em> que será el último. Por ejemplo:</p>
+<pre><code class="language-javascript">document.getElementById('acepto').removeEventListener('click', aceptado.bind(var1, var2));
+...
+function aceptado(param1, param2, event) {
+  // Aquí dentro tendremos los valores
+  // this = var1
+  // param1 = var2
+  // param2 = var3
+  // event es el objeto con la información del evento producido
+}
+</code></pre>
+<h2 id="propagacion-de-eventos" tabindex="-1">Propagación de eventos</h2>
+<p>Normalmente en una página web los elementos HTML se solapan unos con otros, por ejemplo, un &lt;span&gt; está en un &lt;p&gt; que está en un &lt;div&gt; que está en el &lt;body&gt;. Si ponemos un escuchador del evento <em>click</em> a todos ellos se ejecutarán todos ellos, pero ¿en qué orden?.</p>
+<p>Pues el W3C establecíó un modelo en el que primero se disparan los eventos de fuera hacia dentro (primero el &lt;body&gt;) y al llegar al más interno (el &lt;span&gt;) se vuelven a disparar de nuevo pero de dentro hacia afuera. La primera fase se conoce como <strong>fase de captura</strong> y la segunda como <strong>fase de burbujeo (<em>bubbling</em>)</strong>. Cuando ponemos un escuchador con <code>addEventListener</code> el tercer parámetro indica en qué fase debe dispararse:</p>
+<ul>
+<li><strong>true</strong>: en fase de captura</li>
+<li><strong>false</strong> (valor por defecto): en fase de burbujeo</li>
+</ul>
+<p>Por tanto, por defecto se disparará el escuchador más interno (el del &lt;span&gt;) y continuará el resto hasta el más externo (&lt;body&gt;) como si fuera una burbuja que sale afuera desde el interior.</p>
+<p>Podéis ver un ejemplo en:</p>
+<script async src="//jsfiddle.net/juansegura/n3b6fph0/embed/js,html,result/"></script>
+<p>Sin embargo si al método <code>.addEventListener</code> le pasamos un tercer parámetro con el valor <em>true</em> el comportamiento será el contrario, lo que se conoce como <em>captura</em> y el primer escuchador que se ejecutará es el del &lt;body&gt; y el último el del &lt;span&gt; (podéis probarlo añadiendo ese parámetro a los escuchadores del ejemplo anterior).</p>
+<p>En cualquier momento podemos evitar que se siga propagando el evento ejecutando el método <code>.stopPropagation()</code> en el código de cualquiera de los escuchadores.</p>
+<p>Podéis ver las distintas fases de un evento en la página <a href="https://domevents.dev/" target="_blank" class="external-link">domevents.dev</a>.</p>
+<h2 id="inner-html-y-escuchadores-de-eventos" tabindex="-1">innerHTML y escuchadores de eventos</h2>
+<p>Como los escuchadores de eventos se asocian a un elemento, si lo borramos desaparecerá el escuchador aunque luego lo volvamos a pintar no tendrá escuchador a menos que se lo pongamos de nuevo.</p>
+<p>Por ejemplo, si cambiamos el contenido de la propiedad <em>innerHTML</em> de un elemento todos los escuchadores de eventos de sus elementos hijos desaparecen ya que es como eliminar su contenido y volverlo a renderizar.</p>
+<p>Eso pasaría en este ejemplo en que tenemos una tabla de datos donde al hacer dobleclick en cada fila se muestra su id. La función que añade una nueva fila podría ser:</p>
+<pre><code class="language-javascript">function renderNewRow(data) {
+  let miTabla = document.getElementById('tabla-datos');
+  let nuevaFila = `&lt;tr id=&quot;${data.id}&quot;&gt;&lt;td&gt;${data.dato1}&lt;/td&gt;&lt;td&gt;${data.dato2}...&lt;/td&gt;&lt;/tr&gt;`;
+  miTabla.innerHTML += nuevaFila;
+  document.getElementById(data.id).addEventListener('dblclick', event =&gt; alert('Id: '+ event.target.id));
+</code></pre>
+<p>Sin embargo así sólo la última fila añadida tendría escuchador ya que la línea <code>miTabla.innerHTML += nuevaFila</code> borra todo el contenido de <em>myTabla</em> y lo vuelve a renderizar pero ya no tendría escuchadores, excepto el de <em>nuevaFila</em> que lo ponemos después de renderizarlo.</p>
+<p>La forma correcta de hacerlo sería:</p>
+<pre><code class="language-javascript">function renderNewRow(data) {
+  let miTabla = document.getElementById('tabla-datos');
+  let nuevaFila = document.createElement('tr');
+  nuevaFila.id = data.id;
+  nuevaFila.innerHTML = `&lt;td&gt;${data.dato1}&lt;/td&gt;&lt;td&gt;${data.dato2}...&lt;/td&gt;`;
+  nuevaFila.addEventListener('dblclick', event =&gt; alert('Id: ' + event.target.id) );
+  miTabla.appendChild(nuevaFila);
+</code></pre>
+<p>De esta forma además mejoramos el rendimiento ya que el navegador sólo tiene que renderizar el nodo correspondiente a la nuevaFila y no todas las filas de la tabla como pasaba con el primer código.</p>
+<h2 id="delegacion-de-eventos" tabindex="-1">Delegación de eventos</h2>
+<p>Es un patrón de diseño que nos permite no tener que poner un escuchador a cada elemento sino uno global que haga el trabajo de todos.</p>
+<p>Por ejemplo si queremos escuchar cuándo hacemos <em>click</em> en cada celda de la tabla en lugar de poner un escuchador en cada una (que podría tener cientos) pongo sólo 1 en la tabla y mediante la propiedad <code>event.target</code> puedo saber sobre qué celda en concreto se ha hecho <em>click</em>. Esto además seguirá funcionando si dinámicamente añado nuevas celdas a la tabla ya que no son ellas las que tienen el escuchador sino la propia tabla.</p>
+<p><strong>NOTA</strong>: ten en cuenta que a veces el evento se produce en alguna etiqueta interna al elemento por lo que <code>event.target</code> no sería el elemento que buscamos sino su descendiente. Por ejemplo si hay una imagen en la celda el <code>event.target</code> podría ser la &lt;img&gt; y no la &lt;td&gt;. Para asegurarnos de llegar al elemento deseado podemos usar el selector <code>closest()</code> que vimos en el DOM (<code>tdClicked = event.target.closest('td')</code>).</p>
+<p>Podéis ver más ejemplos de delegación de eventos en <a href="https://es.javascript.info/event-delegation" target="_blank" class="external-link">El Tutorial de JavaScript Moderno</a>.</p>
+<h2 id="eventos-personalizados" tabindex="-1">Eventos personalizados</h2>
+<p>También podemos mediante código lanzar manualmente cualquier evento sobre un elemento con el método <code>dispatchEvent()</code> e incluso crear eventos personalizados, por ejemplo:</p>
+<pre><code class="language-javascript">const event = new Event('build');
+
+// Listen for the event.
+elem.addEventListener('build', (e) =&gt; { /* ... */ });
+
+// Dispatch the event.
+elem.dispatchEvent(event);
+</code></pre>
+<p>Incluso podemos añadir datos al objeto <em>event</em> si creamos el evento con <code>new CustomEvent()</code>. Podéis obtener más información en la <a href="https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events" target="_blank" class="external-link">página de MDN</a>.</p>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

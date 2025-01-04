@@ -1,0 +1,2047 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>1. Arquitecturas WEB</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">notas</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('templates')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">templates</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/default/">Default </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/sin-titulo/">Sin título </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="arquitectures-web" tabindex="-1">Arquitectures Web</h1>
+<p>Una arquitectura web defineix l'estructura i el comportament dels components d'una aplicació web, incloent com es comuniquen entre ells i amb els usuaris finals. Aquesta arquitectura pot abastar des de la interfície d'usuari en el client fins als serveis de backend i bases de dades en el servidor.</p>
+<p>Les arquitectures web són fonamentals en el desenvolupament d'aplicacions web modernes per diverses raons:</p>
+<ul>
+<li><strong>Escalabilitat</strong>: Les arquitectures ben dissenyades permeten que les aplicacions web gestionen un nombre creixent d'usuaris i dades sense sacrificar el rendiment. Per exemple, una arquitectura de microserveis facilita l'escalabilitat horitzontal, ja que cada servei es pot escalar independentment.</li>
+<li><strong>Mantenibilitat</strong>: Una bona arquitectura facilita el manteniment i l'actualització de les aplicacions. Mitjançant la separació de preocupacions (per exemple, en una arquitectura de tres capes), es poden fer canvis en una part del sistema sense afectar altres parts.</li>
+<li><strong>Seguretat</strong>: Les arquitectures web poden incorporar diverses capes de seguretat per protegir les dades i les comunicacions. Això inclou mesures com l'autenticació, l'autorització, la xifratge de dades, i la protecció contra atacs comuns com les injeccions SQL i el cross-site scripting (XSS).</li>
+<li><strong>Rendiment</strong>: L'arquitectura de l'aplicació web afecta directament el seu rendiment. Una arquitectura ben dissenyada optimitza el temps de resposta i la gestió de recursos, millorant l'experiència de l'usuari. L'ús de tècniques com la caché, el balanç de càrrega, i la compressió de contingut són exemples d'estratègies per millorar el rendiment.</li>
+<li><strong>Flexibilitat i Adaptabilitat</strong>: Les arquitectures modernes permeten l'ús de diverses tecnologies i eines per a diferents parts del sistema, proporcionant flexibilitat i permetent una adaptació ràpida als canvis tecnològics. Això és especialment rellevant amb l'adopció de pràctiques DevOps i l'ús de contenidors i orquestradors com Docker i Kubernetes.</li>
+<li><strong>Col·laboració i Desplegament</strong>: Un bon disseny arquitectònic facilita la col·laboració entre equips de desenvolupament, ja que clarifica les responsabilitats i els punts d'integració. També permet un desplegament més eficient i automatitzat, reduint els riscos d'errors i millorant el temps de lliurament.</li>
+</ul>
+<h2 id="1-tipus-d-arquitectures-web" tabindex="-1">1.Tipus d'Arquitectures Web</h2>
+<p>A continuació, es descriuen alguns dels principals tipus d'arquitectures web, cadascun amb les seves pròpies característiques, avantatges i desavantatges:</p>
+<h3 id="arquitectura-client-servidor" tabindex="-1">Arquitectura Client-Servidor</h3>
+<p>En aquest model, el client (generalment un navegador web) envia sol·licituds al servidor, que processa aquestes sol·licituds i envia les respostes corresponents.</p>
+<p><strong>Diagrama:</strong></p>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/clienteservidor.png" alt="clienteservidor.png"><source media="(max-width:480px)" srcset="/img/optimized/dhNoDtPlAx-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/dhNoDtPlAx-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/dhNoDtPlAx-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/dhNoDtPlAx-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/clienteservidor.png" alt="clienteservidor.png" width=""></picture><br>
+<strong>Característiques:</strong></p>
+<ul>
+<li>El client és responsable de la interfície d'usuari.</li>
+<li>El servidor maneja la lògica d'aplicació i l'accés a les dades.</li>
+</ul>
+<p><strong>Avantatges:</strong></p>
+<ul>
+<li>Separació de responsabilitats.</li>
+<li>Facilita el manteniment i la seguretat.</li>
+</ul>
+<p><strong>Desavantatges:</strong></p>
+<ul>
+<li>Pot tenir problemes de rendiment amb moltes sol·licituds simultànies.</li>
+</ul>
+<h3 id="arquitectura-de-tres-capes" tabindex="-1">Arquitectura de Tres Capes</h3>
+<p>Aquesta arquitectura divideix l'aplicació en tres nivells: la capa de presentació, la capa de lògica d'aplicació, i la capa de dades.</p>
+<p><strong>Diagrama:</strong></p>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/model3capes.png" alt="model3capes.png"><source media="(max-width:480px)" srcset="/img/optimized/BowP2g3nPp-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/BowP2g3nPp-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/BowP2g3nPp-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/BowP2g3nPp-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/model3capes.png" alt="model3capes.png" width=""></picture></p>
+<p><strong>Característiques:</strong></p>
+<ul>
+<li>La capa de presentació gestiona la interfície d'usuari.</li>
+<li>La capa de lògica d'aplicació processa les dades i executa la lògica de negoci.</li>
+<li>La capa de dades emmagatzema i recupera la informació.</li>
+</ul>
+<p><strong>Avantatges:</strong></p>
+<ul>
+<li>Facilita l'escalabilitat.</li>
+<li>Millora la seguretat, ja que les dades no són directament accessibles des del client.</li>
+</ul>
+<p><strong>Desavantatges:</strong></p>
+<ul>
+<li>Pot ser més complexa de desenvolupar i mantenir.</li>
+</ul>
+<h3 id="arquitectura-de-microserveis" tabindex="-1">Arquitectura de Microserveis</h3>
+<p>Els microserveis descomponen una aplicació en una sèrie de serveis petits i independents, cadascun executant una funció específica.</p>
+<p><strong>Diagrama:</strong></p>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/microserveis.png" alt="microserveis.png"><source media="(max-width:480px)" srcset="/img/optimized/TVjcK1Yu79-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/TVjcK1Yu79-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/TVjcK1Yu79-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/TVjcK1Yu79-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/microserveis.png" alt="microserveis.png" width=""></picture></p>
+<p><strong>Característiques:</strong></p>
+<ul>
+<li>Cada microservei es pot desplegar, actualitzar, i escalar independentment.</li>
+<li>Utilitzen protocols lleugers com HTTP/REST o gRPC per comunicar-se.</li>
+</ul>
+<p><strong>Avantatges:</strong></p>
+<ul>
+<li>Millora l'escalabilitat i la flexibilitat.</li>
+<li>Facilita l'ús de diferents tecnologies per a diferents serveis.</li>
+</ul>
+<p><strong>Desavantatges:</strong></p>
+<ul>
+<li>Pot ser complexa de gestionar i coordinar.</li>
+<li>Requereix una infraestructura de desplegament i monitorització més robusta.</li>
+</ul>
+<h4 id="recursos-addicionals" tabindex="-1">Recursos Addicionals</h4>
+<ul>
+<li><strong>Documentació sobre Arquitectures de Software:</strong> <a href="https://martinfowler.com/architecture/" target="_blank" class="external-link">Software Architecture Guide</a></li>
+<li><strong>Tutorial de Microserveis:</strong> <a href="https://www.tutorialspoint.com/microservice_architecture/index.htm" target="_blank" class="external-link">Microservices Tutorial</a></li>
+</ul>
+<h4 id="resum" tabindex="-1">Resum</h4>
+<p>Les arquitectures web són fonamentals per al desenvolupament d'aplicacions eficients i escalables. La selecció de l'arquitectura adequada depèn de les necessitats específiques del projecte, incloent-hi consideracions de rendiment, escalabilitat, seguretat i mantenibilitat.</p>
+<h2 id="2-pagines-web-estatiques-vs-dinamiques" tabindex="-1">2. Pàgines Web Estàtiques vs. Dinàmiques</h2>
+<h3 id="pagines-estatiques" tabindex="-1">Pàgines estàtiques</h3>
+<p>Les pàgines web estàtiques són aquelles en què el contingut no canvia en funció de les accions de l'usuari. Estan construïdes amb HTML i CSS, i cada pàgina es carrega de manera independent des del servidor.</p>
+<h4 id="avantatges" tabindex="-1">Avantatges</h4>
+<ul>
+<li><strong>Senzillesa:</strong> Fàcils de crear i mantenir.</li>
+<li><strong>Rendiment:</strong> Temps de càrrega ràpid perquè no requereixen processament addicional.</li>
+<li><strong>Seguretat:</strong> Menys vulnerabilitats, ja que no hi ha lògica de servidor ni bases de dades.</li>
+</ul>
+<h4 id="desavantatges" tabindex="-1">Desavantatges</h4>
+<ul>
+<li><strong>Flexibilitat:</strong> Difícils de modificar a gran escala sense eines automatitzades.</li>
+<li><strong>Interactivitat:</strong> Limitada, ja que no poden respondre a les accions de l'usuari de manera dinàmica.</li>
+</ul>
+<h4 id="exemple-practic" tabindex="-1">Exemple Pràctic</h4>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Pàgina Estàtica&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; }
+        .content { margin: 20px; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;content&quot;&gt;
+    &lt;h1&gt;Benvingut!&lt;/h1&gt;
+    &lt;p&gt;Aquesta és una pàgina web estàtica.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="pagines-dinamiques" tabindex="-1">Pàgines dinàmiques</h3>
+<p>Les pàgines web dinàmiques són aquelles en què el contingut pot canviar en funció de les accions de l'usuari o altres factors. Utilitzen <strong>llenguatges de guions</strong> o d'scripting. Els llenguatges de guions sovint s’utilitzen per ampliar les prestacions que ofereix un altre llenguatge, entorn o aplicació. En aquest sentit són molt utilitzats en el desenvolupament d’aplicacions web:</p>
+<ul>
+<li><strong>Scripts de navegadors web.</strong> S’utilitzen per ampliar les capacitats de l’HTML i per inserir accions en pàgines web. Permeten crear efectes especials i aporten interactivitat. Els scripts són interpretats i executats en la màquina client pel navegador web, el qual ha d’incorporar l’intèrpret del llenguatge. Un exemple de llenguatge d’aquest tipus molt utilitzat és JavaScript.</li>
+<li><strong>Scripts de servidor.</strong> Són programes que permeten donar funcionalitats a les pàgines web que no es poden resoldre només amb els scripts de navegador. Els scripts de servidor permeten dotar de certa “intel·ligència” els llocs web, la qual cosa fa que generin pàgines diferents segons les circumstàncies. Exemples de llenguatges de servidor són PHP, Python, Node.js, entre altres.</li>
+</ul>
+<h4 id="avantatges-1" tabindex="-1">Avantatges</h4>
+<p><strong>Actualització en Temps Real</strong></p>
+<ul>
+<li><strong>Descripció:</strong> Les pàgines es poden actualitzar automàticament sense necessitat de recarregar tota la pàgina.</li>
+<li><strong>Cas d'Ús:</strong> Un portal de notícies que mostra articles nous sense necessitat de recarregar la pàgina.</li>
+</ul>
+<p><strong>Personalització del Contingut</strong></p>
+<ul>
+<li><strong>Descripció:</strong> Permet adaptar el contingut a les preferències i el comportament de l'usuari.</li>
+<li><strong>Cas d'Ús:</strong> Una botiga en línia que mostra recomanacions de productes basades en l'historial de navegació i compres de l'usuari.</li>
+</ul>
+<p><strong>Interactivitat Avançada</strong></p>
+<ul>
+<li><strong>Descripció:</strong> Facilita la creació d'aplicacions web interactives que poden respondre a les accions de l'usuari en temps real.</li>
+<li><strong>Cas d'Ús:</strong> Aplicacions de xarxes socials que mostren actualitzacions i notificacions en temps real.</li>
+</ul>
+<p><strong>Gestió Eficient de Contingut</strong></p>
+<ul>
+<li><strong>Descripció:</strong> Permet gestionar grans quantitats de contingut de manera més eficient, mostrant només el contingut rellevant en funció de la sol·licitud de l'usuari.</li>
+<li><strong>Cas d'Ús:</strong> Un sistema de gestió de continguts (CMS) que permet als administradors editar i publicar articles de manera dinàmica.</li>
+</ul>
+<h4 id="desavantatges-1" tabindex="-1">Desavantatges</h4>
+<ul>
+<li><strong>Complexitat:</strong> Més difícils de crear i mantenir, ja que requereixen programació tant al client com al servidor.</li>
+<li><strong>Rendiment:</strong> Poden ser més lentes a causa de la necessitat de processament al servidor.</li>
+<li><strong>Seguretat:</strong> Exposades a més vulnerabilitats, com injeccions SQL, si no es prenen les precaucions adequades.</li>
+</ul>
+<h4 id="impacte-en-aplicacions-modernes" tabindex="-1">Impacte en Aplicacions Modernes</h4>
+<p><strong>Millora de l'Experiència d'Usuari</strong></p>
+<ul>
+<li>Les aplicacions modernes utilitzen la generació dinàmica de pàgines per oferir una experiència més fluida i responsiva. Per exemple, aplicacions com Gmail i Google Docs permeten als usuaris interactuar amb el contingut en temps real sense interrupcions.</li>
+</ul>
+<p><strong>Optimització del Rendiment</strong></p>
+<ul>
+<li>La generació dinàmica de pàgines permet carregar només el contingut necessari, reduint la càrrega inicial i millorant el rendiment general de l'aplicació. Això és especialment útil en aplicacions complexes amb molta interactivitat.</li>
+</ul>
+<p><strong>Capacitat de Resposta a les Sol·licituds de l'Usuari</strong></p>
+<ul>
+<li>Aplicacions com Facebook i Twitter utilitzen la generació dinàmica per actualitzar el feed en temps real, oferint als usuaris informació actualitzada immediatament.</li>
+</ul>
+<h4 id="exemple-practic-php" tabindex="-1">Exemple Pràctic (PHP)</h4>
+<pre><code class="language-php">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Pàgina Dinàmica&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; }
+        .content { margin: 20px; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h1&gt;Benvingut!&lt;/h1&gt;
+        &lt;p&gt;Aquesta pàgina ha estat generada a les &lt;?php echo date('H:i:s'); ?&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="comparativa-entre-pagines-web-estatiques-i-dinamiques" tabindex="-1">Comparativa entre Pàgines Web Estàtiques i Dinàmiques</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Pàgines Web Estàtiques</th>
+<th>Pàgines Web Dinàmiques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Contingut</strong></td>
+<td>Fix, no canvia</td>
+<td>Variable, pot canviar</td>
+</tr>
+<tr>
+<td><strong>Complexitat</strong></td>
+<td>Baixa</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><strong>Interactivitat</strong></td>
+<td>Limitada</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><strong>Rendiment</strong></td>
+<td>Alt</td>
+<td>Pot ser baix</td>
+</tr>
+<tr>
+<td><strong>Seguretat</strong></td>
+<td>Alta</td>
+<td>Depèn de la implementació</td>
+</tr>
+<tr>
+<td><strong>Flexibilitat</strong></td>
+<td>Baixa</td>
+<td>Alta</td>
+</tr>
+<tr>
+<td><strong>SEO</strong></td>
+<td>Bona</td>
+<td>Depèn de la implementació</td>
+</tr>
+<tr>
+<td><strong>Temps de Desenvolupament</strong></td>
+<td>Curt</td>
+<td>Llarg</td>
+</tr>
+<tr>
+<td><strong>Actualització del Contingut</strong></td>
+<td>Manual</td>
+<td>Automàtica</td>
+</tr>
+<tr>
+<td><strong>Cost de Manteniment</strong></td>
+<td>Baix</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/paginadinamica.png" alt="paginadinamica.png"><source media="(max-width:480px)" srcset="/img/optimized/sX_GJsMpTm-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/sX_GJsMpTm-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/sX_GJsMpTm-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/sX_GJsMpTm-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/01/paginadinamica.png" alt="paginadinamica.png" width=""></picture></p>
+<h4 id="recursos-addicionals-1" tabindex="-1">Recursos Addicionals</h4>
+<ul>
+<li><a href="https://www.example.com" target="_blank" class="external-link">Article sobre els avantatges de les pàgines dinàmiques</a></li>
+<li><a href="https://www.example.com" target="_blank" class="external-link">Curs sobre generació dinàmica de pàgines web</a></li>
+<li><strong>Documentació de HTML:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="external-link">MDN HTML Guide</a></li>
+<li><strong>Documentació de CSS:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="external-link">MDN CSS Guide</a></li>
+<li><strong>Documentació de PHP:</strong> <a href="https://www.php.net/docs.php" target="_blank" class="external-link">PHP Documentation</a></li>
+<li><strong>Documentació de JavaScript (MDN):</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" class="external-link">MDN JavaScript Guide</a></li>
+<li><strong>Documentació de Node.js:</strong> <a href="https://nodejs.org/en/docs/" target="_blank" class="external-link">Node.js Documentation</a></li>
+<li><strong>Documentació de React:</strong> <a href="https://reactjs.org/docs/getting-started.html" target="_blank" class="external-link">React Documentation</a></li>
+</ul>
+<h4 id="resum-1" tabindex="-1">Resum</h4>
+<p>Les pàgines web estàtiques són adequades per a llocs web senzills amb contingut fix, mentre que les pàgines web dinàmiques són necessàries per a aplicacions més complexes que requereixen interactivitat i contingut variable. La decisió entre utilitzar una pàgina estàtica o dinàmica dependrà de les necessitats específiques del projecte i dels recursos disponibles. Les SPA ofereixen una experiència d'usuari molt rica però poden tenir desavantatges en termes de SEO i temps de càrrega inicial.</p>
+<h2 id="3-models-d-execucio" tabindex="-1">3. Models d'Execució</h2>
+<p>Els models d'execució de codi en el desenvolupament web es poden dividir principalment en dos tipus: execució al client i execució al servidor. Cada model té les seves pròpies característiques, avantatges i desavantatges que cal considerar a l'hora de dissenyar una aplicació web.</p>
+<h3 id="execucio-de-codi-al-client-front-end" tabindex="-1">Execució de Codi al Client (FrontEnd)</h3>
+<p>L'execució de codi al client es realitza al navegador web de l'usuari. Els llenguatges utilitzats principalment per a l'execució al client són HTML, CSS i JavaScript.</p>
+<h4 id="avantatges-2" tabindex="-1">Avantatges</h4>
+<ul>
+<li><strong>Interactivitat:</strong> Permet la creació d'experiències d'usuari riques i interactives.</li>
+<li><strong>Reducció de la càrrega del servidor:</strong> El processament es fa al dispositiu de l'usuari, disminuint la càrrega del servidor.</li>
+<li><strong>Actualització instantània:</strong> Canvis en l'UI poden ser reflectits immediatament sense necessitat de recarregar la pàgina.</li>
+</ul>
+<h4 id="desavantatges-2" tabindex="-1">Desavantatges</h4>
+<ul>
+<li><strong>Seguretat:</strong> El codi del client és visible i modificable pels usuaris, la qual cosa pot representar un risc de seguretat.</li>
+<li><strong>Compatibilitat:</strong> Pot haver-hi diferències en la manera com diferents navegadors interpreten el codi.</li>
+</ul>
+<p>Exemple de codi</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Exemple Client&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; }
+        .content { margin: 20px; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h1&gt;Hola, món!&lt;/h1&gt;
+        &lt;button onclick=&quot;mostrarMissatge()&quot;&gt;Fes clic aquí&lt;/button&gt;
+        &lt;p id=&quot;missatge&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        function mostrarMissatge() {
+            document.getElementById('missatge').innerText = 'Has fet clic al botó!';
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="execucio-de-codi-al-servidor-back-end" tabindex="-1">Execució de Codi al Servidor (BackEnd)</h3>
+<p>L'execució de codi al servidor es realitza al servidor web abans que els resultats es retornin al navegador del client. Els llenguatges habituals inclouen PHP, Python, Ruby, Node.js, entre altres.</p>
+<h4 id="avantatges-3" tabindex="-1">Avantatges</h4>
+<ul>
+<li><strong>Seguretat:</strong> El codi del servidor no és accessible pels usuaris finals, la qual cosa augmenta la seguretat.</li>
+<li><strong>Potència:</strong> Els servidors solen ser més potents que els dispositius dels usuaris, permetent processar operacions més complexes.</li>
+</ul>
+<h4 id="desavantatges-3" tabindex="-1">Desavantatges</h4>
+<ul>
+<li><strong>Latència:</strong> Les sol·licituds al servidor poden ser lentes a causa de la distància física i la càrrega del servidor.</li>
+<li><strong>Escalabilitat:</strong> Pot ser necessari més esforç per escalar una aplicació a mesura que augmenta el nombre d'usuaris.</li>
+</ul>
+<p>Exemple de codi</p>
+<pre><code class="language-node.js">// server.js
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+res.statusCode = 200;
+res.setHeader('Content-Type', 'text/plain');
+res.end('Hola, món!\n');
+});
+
+server.listen(port, hostname, () =&gt; {
+console.log(`El servidor s'està executant a http://${hostname}:${port}/`);
+});
+</code></pre>
+<h3 id="single-page-application-spa" tabindex="-1">Single Page Application (SPA)</h3>
+<p>Una Single Page Application (SPA) és un tipus d'aplicació web que carrega una única pàgina HTML i dinàmicament actualitza el contingut a mesura que l'usuari interactua amb l'aplicació, utilitzant JavaScript per a gestionar la lògica i les actualitzacions de la interfície d'usuari.</p>
+<h4 id="avantatges-4" tabindex="-1">Avantatges</h4>
+<ul>
+<li><strong>Experiència d'usuari millorada:</strong> Les SPA ofereixen una navegació més ràpida i fluida, similar a una aplicació d'escriptori.</li>
+<li><strong>Menys càrrega del servidor:</strong> Menys sol·licituds al servidor ja que només es carrega una pàgina inicialment.</li>
+<li><strong>Desenvolupament modular:</strong> Facilita la creació de components reutilitzables.</li>
+</ul>
+<h4 id="desavantatges-4" tabindex="-1">Desavantatges</h4>
+<ul>
+<li><strong>SEO:</strong> Les SPA poden ser menys amigables amb els motors de cerca.</li>
+<li><strong>Carregada inicial:</strong> Pot requerir una major càrrega inicial de recursos, afectant el temps de càrrega inicial.</li>
+<li><strong>Gestió de l'estat complexa:</strong> Pot ser més complicat gestionar l'estat de l'aplicació.</li>
+</ul>
+<p>Exemple Pràctic (React)</p>
+<pre><code class="language-jsx">// index.html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Exemple SPA&lt;/title&gt;
+    &lt;script defer src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+// index.js
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+
+function App() {
+    const [message, setMessage] = useState('');
+
+    const handleClick = () =&gt; {
+        setMessage('Has fet clic al botó!');
+    };
+
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;Hola, món!&lt;/h1&gt;
+            &lt;button onClick={handleClick}&gt;Fes clic aquí&lt;/button&gt;
+            &lt;p&gt;{message}&lt;/p&gt;
+        &lt;/div&gt;
+    );
+}
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
+</code></pre>
+<h3 id="comparativa-entre-execucio-de-codi-al-client-al-servidor-i-el-spa" tabindex="-1">Comparativa entre Execució de Codi al Client,al Servidor i el SPA</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Client-Side</th>
+<th>Server-Side</th>
+<th>Single Page Application (SPA)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Execució</strong></td>
+<td>Navegador del client</td>
+<td>Servidor</td>
+<td>Navegador del client</td>
+</tr>
+<tr>
+<td><strong>Llenguatges</strong></td>
+<td>JavaScript, HTML, CSS</td>
+<td>PHP, Node.js, Python, Java</td>
+<td>JavaScript, HTML, CSS</td>
+</tr>
+<tr>
+<td><strong>Temps de Resposta</strong></td>
+<td>Immediata (després de la càrrega)</td>
+<td>Depèn de la comunicació amb el servidor</td>
+<td>Baixa (després de la càrrega inicial)</td>
+</tr>
+<tr>
+<td><strong>Seguretat</strong></td>
+<td>Més exposat a vulnerabilitats</td>
+<td>Més controlat</td>
+<td>Mitjana</td>
+</tr>
+<tr>
+<td><strong>Recursos</strong></td>
+<td>Limitats pels recursos del client</td>
+<td>Recursos del servidor</td>
+<td>Limitats pels recursos del client</td>
+</tr>
+<tr>
+<td><strong>Accés a Dades</strong></td>
+<td>No pot accedir directament a bases de dades</td>
+<td>Accés directe a bases de dades</td>
+<td>Generalment via API</td>
+</tr>
+<tr>
+<td><strong>Interactivitat</strong></td>
+<td>Elevada, pot respondre ràpidament a les accions de l'usuari</td>
+<td>Més difícil d'aconseguir sense Ajax o websockets</td>
+<td>Molt Alta</td>
+</tr>
+<tr>
+<td><strong>Processament</strong></td>
+<td>Menys capacitat de procés</td>
+<td>Alta capacitat de procés</td>
+<td>Processament distribuit</td>
+</tr>
+<tr>
+<td><strong>Carrega del servidor</strong></td>
+<td>Baixa</td>
+<td>Alta</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td><strong>Latència</strong></td>
+<td>Baixa</td>
+<td>Pot ser alta</td>
+<td>Baixa (després de la càrrega inicial)</td>
+</tr>
+<tr>
+<td><strong>Accés a recursos locals</strong></td>
+<td>Limitat al navegador</td>
+<td>Complet accés al sistema del servidor</td>
+<td>Limitat al navegador</td>
+</tr>
+<tr>
+<td><strong>SEO</strong></td>
+<td>Mitjana</td>
+<td>Alta</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td><strong>Temps de càrrega inicial</strong></td>
+<td>Ràpid</td>
+<td>Depèn de la complexitat</td>
+<td>Pot ser lent</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="comparativa-entre-desenvolupadors" tabindex="-1">Comparativa entre desenvolupadors</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Ferramenta</th>
+<th>Tecnologia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Front-end</em> / client</td>
+<td>Navegador Web</td>
+<td>HTML + CSS + JavaScript</td>
+</tr>
+<tr>
+<td><em>Back-end</em> / servidor</td>
+<td>Servidor Web + BBDD</td>
+<td>PHP, Python, Ruby, Java / JSP, .Net / .asp</td>
+</tr>
+</tbody>
+</table></div>
+<p>!!! tip &quot;Perfil <em>Full-stack</em>&quot;<br>
+En les ofertes de treball quan fan referència a un <strong>Full-stack developer</strong>, estan buscant un perfil que domina tant el <strong>front-end</strong> com el <strong>back-end</strong>.</p>
+<h4 id="recursos-addicionals-2" tabindex="-1">Recursos addicionals</h4>
+<ul>
+<li><strong>Documentació de JavaScript (MDN):</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" class="external-link">MDN JavaScript Guide</a></li>
+<li><strong>Guia de Node.js:</strong> <a href="https://nodejs.org/en/docs/" target="_blank" class="external-link">Node.js Documentation</a></li>
+<li><strong>Documentació de React:</strong> <a href="https://reactjs.org/docs/getting-started.html" target="_blank" class="external-link">React Documentation</a></li>
+</ul>
+<h4 id="resum-2" tabindex="-1">Resum</h4>
+<p>La decisió sobre si utilitzar l'execució de codi al client, al servidor o una SPA depèn de les necessitats específiques de l'aplicació i els recursos disponibles. Comprendre les diferències clau i els avantatges de cada model ajudarà a prendre decisions informades i a desenvolupar aplicacions web eficients i segures.</p>
+<h2 id="4-servidors-web" tabindex="-1">4. Servidors Web</h2>
+<p>Un servidor web és un programa que serveix contingut web estàtic com HTML, CSS, JavaScript, imatges i altres fitxers als clients a través del protocol HTTP o HTTPS. El servidor web gestiona les sol·licituds entrants dels clients (navegadors web) i retorna les respostes adequades.</p>
+<h3 id="funcionalitats-dels-servidors-web" tabindex="-1">Funcionalitats dels Servidors Web</h3>
+<h4 id="servei-de-contingut-estatic" tabindex="-1">Servei de Contingut Estàtic</h4>
+<ul>
+<li><strong>Descripció:</strong> Proporciona fitxers estàtics com HTML, CSS, JavaScript, imatges i altres recursos directament als clients.</li>
+<li><strong>Exemple:</strong> Quan un usuari sol·licita una pàgina HTML, el servidor web envia el fitxer HTML corresponent al navegador de l'usuari.</li>
+</ul>
+<h4 id="gestio-de-peticions-http" tabindex="-1">Gestió de Peticions HTTP</h4>
+<ul>
+<li><strong>Descripció:</strong> Maneja sol·licituds HTTP de clients, com GET, POST, PUT, DELETE, i retorna les respostes adequades amb els codis d'estat corresponents.</li>
+<li><strong>Exemple:</strong> Un servidor web processa una sol·licitud GET per una pàgina web i retorna el contingut de la pàgina amb un codi d'estat 200 (OK).</li>
+</ul>
+<h4 id="redireccio-i-reescriptura-d-ur-ls" tabindex="-1">Redirecció i Reescriptura d'URLs</h4>
+<ul>
+<li><strong>Descripció:</strong> Permet la redirecció de peticions a diferents URLs i la reescriptura d'URLs per millorar l'accessibilitat i la SEO.</li>
+<li><strong>Exemple:</strong> Reescriptura d'URLs amigables per als usuaris, com convertir <code>example.com/page?id=123</code> a <code>example.com/page/123</code>.</li>
+</ul>
+<h4 id="suport-per-a-https" tabindex="-1">Suport per a HTTPS</h4>
+<ul>
+<li><strong>Descripció:</strong> Proporciona connexions segures utilitzant el protocol HTTPS, que xifra les dades entre el client i el servidor.</li>
+<li><strong>Exemple:</strong> Un servidor web configurat amb un certificat SSL/TLS que permet connexions segures a través de HTTPS.</li>
+</ul>
+<h3 id="exemples-de-servidors-web" tabindex="-1">Exemples de Servidors Web</h3>
+<h4 id="apache-http-server" tabindex="-1">Apache HTTP Server</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor web de codi obert molt utilitzat, conegut per la seva flexibilitat i extensibilitat.</li>
+<li><strong>Funcionalitats:</strong> Suport per a mòduls que afegeixen funcionalitats com l'autenticació, la reescriptura d'URLs i la compressió de contingut.</li>
+</ul>
+<h4 id="nginx" tabindex="-1">Nginx</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor web i servidor intermediari de codi obert, dissenyat per gestionar moltes connexions simultànies amb un ús eficient dels recursos.</li>
+<li><strong>Funcionalitats:</strong> Actua com a servidor proxy invers, equilibrador de càrrega i servidor de fitxers estàtics.</li>
+</ul>
+<h4 id="microsoft-internet-information-services-iis" tabindex="-1">Microsoft Internet Information Services (IIS)</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor web i d'aplicacions de Microsoft per a plataformes Windows.</li>
+<li><strong>Funcionalitats:</strong> Suport per a aplicacions <a href="http://ASP.NET" target="_blank" class="external-link">ASP.NET</a>, autenticació integrada i eines de gestió robustes.</li>
+</ul>
+<h3 id="mecanismes-d-execucio-de-codi-en-servidors-web" tabindex="-1">Mecanismes d'Execució de Codi en Servidors Web</h3>
+<h4 id="llenguatges-interpretats-php-python" tabindex="-1">Llenguatges interpretats: PHP, Python</h4>
+<p>El codi es processa línia per línia en temps real, permetent una major flexibilitat durant el desenvolupament, ja que els canvis poden ser implementats i testats immediatament sense necessitat de recompilar tot el projecte.</p>
+<pre><code class="language-php">    &lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;&lt;?php echo &quot;Hola, món!&quot;; ?&gt;&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<h4 id="llenguatges-compilats-java" tabindex="-1">Llenguatges compilats: Java</h4>
+<p>El codi es compila abans de ser executat, el que significa que és transformat en un format executable per la màquina abans de la seva execució. Això sol millorar el rendiment, ja que el codi compilat s'executa més ràpidament que el codi interpretat.</p>
+<pre><code class="language-java">  // Exemple simplificat d'un servlet Java
+  import java.io.*;
+  import javax.servlet.*;
+  import javax.servlet.http.*;
+  
+  public class HelloWorldServlet extends HttpServlet {
+  public void doGet(HttpServletRequest request, HttpServletResponse response)
+  throws ServletException, IOException {
+      response.setContentType(&quot;text/html&quot;);
+      PrintWriter out = response.getWriter();
+      out.println(&quot;&lt;h1&gt;Hola, món!&lt;/h1&gt;&quot;);
+      }
+  }
+</code></pre>
+<h4 id="intermediari-node-js" tabindex="-1">Intermediari: Node.js</h4>
+<p>Permet la programació asíncrona i escalable amb JavaScript, oferint la capacitat de gestionar moltes connexions simultànies de manera eficient. Això és especialment útil per a aplicacions que necessiten alta concurrència, com aplicacions en temps real.</p>
+<pre><code class="language-javascript">    const express = require('express');
+    const app = express();
+    
+    app.get('/', (req, res) =&gt; {
+    res.send('Hola, món!');
+    });
+    
+    app.listen(3000, () =&gt; {
+    console.log('Servidor escoltant a http://localhost:3000');
+});
+</code></pre>
+<h3 id="llenguatges-i-tecnologies-de-programacio-web-en-entorn-servidor" tabindex="-1">Llenguatges i Tecnologies de Programació Web en Entorn Servidor</h3>
+<p>Els mecanismes d'execució de codi en els servidors web permeten que les aplicacions generin contingut dinàmic, gestionin dades i interaccions d'usuaris de manera eficient. A continuació es descriuen diversos llenguatges i com funcionen en el context del servidor.</p>
+<h4 id="php" tabindex="-1">PHP</h4>
+<ul>
+<li><strong>Descripció:</strong> PHP és un llenguatge interpretat popularment utilitzat per a la creació de pàgines web dinàmiques.</li>
+<li><strong>Mecanisme:</strong> El codi PHP s'incrusta dins dels fitxers HTML i es processa en temps real pel servidor web abans de ser enviat al client.</li>
+</ul>
+<h4 id="node-js" tabindex="-1">Node.js</h4>
+<ul>
+<li><strong>Descripció:</strong> Node.js permet la programació asíncrona i escalable amb JavaScript.</li>
+<li><strong>Mecanisme:</strong> Utilitza un model basat en esdeveniments que permet la gestió de moltes connexions simultànies sense bloquejar-se.</li>
+</ul>
+<h4 id="java-jsp-servlets" tabindex="-1">Java (JSP/Servlets)</h4>
+<ul>
+<li><strong>Descripció:</strong> Java s'utilitza per a aplicacions empresarials amb alta complexitat i escalabilitat.</li>
+<li><strong>Mecanisme:</strong> El codi Java es compila abans d'executar-se, millorant el rendiment. Els servlets i JSP gestionen les sol·licituds HTTP i generen contingut dinàmic.</li>
+</ul>
+<h4 id="python-django-flask" tabindex="-1">Python (Django/Flask)</h4>
+<ul>
+<li><strong>Descripció:</strong> Python és conegut per la seva sintaxi clara i les seves biblioteques extensives. Django i Flask són frameworks populars.</li>
+<li><strong>Mecanisme:</strong> Django utilitza un ORM per interactuar amb bases de dades, mentre que Flask és més lleuger i flexible.</li>
+</ul>
+<pre><code class="language-python">from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+return 'Hola, món!'
+
+if __name__ == '__main__':
+app.run()
+</code></pre>
+<h4 id="ruby-ruby-on-rails" tabindex="-1">Ruby (Ruby on Rails)</h4>
+<ul>
+<li><strong>Descripció:</strong> Ruby és apreciat per la seva elegància i facilitat d'ús. Ruby on Rails és un framework popular.</li>
+<li><strong>Mecanisme:</strong> Ruby on Rails segueix el patró MVC, facilitant el desenvolupament d'aplicacions web estructurades.</li>
+</ul>
+<pre><code class="language-ruby">class WelcomeController &lt; ApplicationController
+def index
+render plain: &quot;Hola, món!&quot;
+end
+end
+</code></pre>
+<h4 id="go" tabindex="-1">Go</h4>
+<ul>
+<li><strong>Descripció:</strong> Go és un llenguatge de programació desenvolupat per Google, conegut per la seva eficiència i concurrència.</li>
+<li><strong>Mecanisme:</strong> Go permet la creació de servidors web ràpids i escalables, utilitzant goroutines per gestionar múltiples connexions de manera eficient.</li>
+</ul>
+<pre><code class="language-go">package main
+
+import (
+&quot;fmt&quot;
+&quot;net/http&quot;
+)
+
+func helloHandler(w http.ResponseWriter, r *http.Request) {
+fmt.Fprintf(w, &quot;Hola, món!&quot;)
+}
+
+func main() {
+http.HandleFunc(&quot;/&quot;, helloHandler)
+http.ListenAndServe(&quot;:8080&quot;, nil)
+}
+</code></pre>
+<h3 id="comparativa-entre-llenguatges" tabindex="-1">Comparativa entre llenguatges</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Llenguatge</th>
+<th>Avantatges</th>
+<th>Desavantatges</th>
+<th>Usos Comuns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PHP</strong></td>
+<td>Amplament utilitzat, gran comunitat, fàcil d'aprendre</td>
+<td>Seguretat (cal bones pràctiques), rendiment inferior a altres llenguatges</td>
+<td>Aplicacions web, CMS com WordPress</td>
+</tr>
+<tr>
+<td><strong>Python</strong></td>
+<td>Senzillesa i llegibilitat, gran quantitat de biblioteques, potent per a prototips</td>
+<td>Rendiment inferior en algunes àrees, gestió de concurrència</td>
+<td>Aplicacions web (Django, Flask), anàlisi de dades</td>
+</tr>
+<tr>
+<td><strong>Node.js</strong></td>
+<td>Alta velocitat, no bloqueig (event-driven), gran ecosistema (NPM)</td>
+<td>Pot ser complicat per a grans aplicacions, gestió de callbacks</td>
+<td>Aplicacions en temps real, serveis web</td>
+</tr>
+<tr>
+<td><strong>Java</strong></td>
+<td>Rendiment elevat, robustesa, seguretat, escalabilitat</td>
+<td>Verborrea, aprenentatge més complex</td>
+<td>Aplicacions empresarials, sistemes grans, Android</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="recursos-addicionals-3" tabindex="-1">Recursos Addicionals:</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Introduction" target="_blank" class="external-link">Client-side vs Server-side</a></li>
+<li><a href="https://httpd.apache.org/docs/" target="_blank" class="external-link">Apache HTTP Server Documentation</a></li>
+<li><a href="https://nginx.org/en/docs/" target="_blank" class="external-link">Nginx Official Documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/iis/" target="_blank" class="external-link">Microsoft IIS Documentation</a></li>
+<li><a href="https://www.w3schools.com/php/" target="_blank" class="external-link">W3Schools: PHP Tutorial</a></li>
+<li><a href="https://nodejs.org/en/docs/" target="_blank" class="external-link">Node.js Documentation</a></li>
+<li><a href="https://docs.djangoproject.com/en/stable/" target="_blank" class="external-link">Django Documentation</a></li>
+<li><a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank" class="external-link">Flask Documentation</a></li>
+<li><a href="https://guides.rubyonrails.org/" target="_blank" class="external-link">Ruby on Rails Guides</a></li>
+<li><a href="https://golang.org/doc/" target="_blank" class="external-link">Go Documentation</a></li>
+<li><a href="https://www.codementor.io/@iliawebdev/top-programming-languages-for-web-development-in-2021-1hzczfuoei" target="_blank" class="external-link">Comparació de llenguatges</a></li>
+<li><a href="https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/" target="_blank" class="external-link">Criteris per apendre un llenguatge de programació</a></li>
+</ul>
+<h4 id="resum-3" tabindex="-1">Resum</h4>
+<p>Un servidor web serveix contingut estàtic com HTML, CSS, JavaScript i imatges als clients a través de HTTP o HTTPS. Gestiona sol·licituds entrants i retorna respostes adequades. Exemples de servidors web inclouen Apache, Nginx i Microsoft IIS, cadascun amb funcionalitats úniques com la redirecció d'URLs, suport per a HTTPS i gestió de peticions HTTP. A més, utilitzen llenguatges interpretats (PHP, Python), compilats (Java) i intermediaris (Node.js) per executar codi.</p>
+<h2 id="5-servidors-d-aplicacions" tabindex="-1">5. Servidors d'Aplicacions</h2>
+<p>Un servidor d'aplicacions és un tipus de servidor dissenyat per executar aplicacions web dinàmiques i gestionar la lògica de negoci d'una aplicació. Aquest servidor actua com una capa intermèdia entre el client (navegador web) i les bases de dades o altres serveis de backend, proporcionant un entorn d'execució per a aplicacions web.</p>
+<h3 id="principals-funcionalitats-dels-servidors-d-aplicacions" tabindex="-1">Principals Funcionalitats dels Servidors d'Aplicacions</h3>
+<h4 id="gestio-de-sessions" tabindex="-1">Gestió de Sessions</h4>
+<ul>
+<li><strong>Descripció:</strong> Manteniment de l'estat de l'usuari durant la seva interacció amb l'aplicació.</li>
+<li><strong>Exemple:</strong> Sessions PHP que emmagatzemen informació de l'usuari.</li>
+</ul>
+<h4 id="concurrencia" tabindex="-1">Concurrència</h4>
+<ul>
+<li><strong>Descripció:</strong> Capacitat per gestionar múltiples peticions simultànies de manera eficient.</li>
+<li><strong>Exemple:</strong> Node.js gestiona peticions de manera asíncrona.</li>
+</ul>
+<h4 id="seguretat" tabindex="-1">Seguretat</h4>
+<ul>
+<li><strong>Descripció:</strong> Autenticació i autorització dels usuaris per accedir a diferents parts de l'aplicació.</li>
+<li><strong>Exemple:</strong> Utilització de JWT (JSON Web Tokens) per autenticar usuaris en una aplicació Node.js.</li>
+</ul>
+<h3 id="relacio-entre-servidors-web-i-servidors-d-aplicacions" tabindex="-1">Relació entre Servidors Web i Servidors d'Aplicacions</h3>
+<h4 id="integracio-i-col-laboracio" tabindex="-1">Integració i Col·laboració</h4>
+<p>Els servidors web treballen conjuntament amb els servidors d'aplicacions per gestionar les sol·licituds de manera eficient. Mentre que el servidor web maneja les sol·licituds HTTP i serveix contingut estàtic, el servidor d'aplicacions processa la lògica de negoci i genera contingut dinàmic.</p>
+<h4 id="exemple-de-configuracio" tabindex="-1">Exemple de Configuració</h4>
+<ul>
+<li><strong>Servidor Web (Nginx):</strong> Actua com a proxy invers, encaminant les sol·licituds dinàmiques al servidor d'aplicacions.</li>
+<li><strong>Servidor d'Aplicacions (Node.js):</strong> Gestiona les sol·licituds dinàmiques, executa la lògica de negoci i retorna les respostes al servidor web.</li>
+</ul>
+<p><strong>Configuració de Nginx com a Proxy Invers</strong></p>
+<pre><code class="language-nginx">server {
+   listen 80;
+   server_name example.com;
+
+   location / {
+       proxy_pass http://localhost:3000;
+       proxy_set_header Host $host;
+       proxy_set_header X-Real-IP $remote_addr;
+       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+       proxy_set_header X-Forwarded-Proto $scheme;
+   }
+}
+</code></pre>
+<p><strong>Configuració servidor d'aplicacions Node.js</strong></p>
+<pre><code class="language-javascript">
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) =&gt; {
+    res.send('Hola, món!');
+});
+
+app.listen(3000, () =&gt; {
+    console.log('Servidor escoltant a http://localhost:3000');
+});  
+
+</code></pre>
+<p>Aquesta col·laboració permet una gestió eficient de les sol·licituds i una millor distribució de la càrrega, millorant el rendiment i l'escalabilitat de les aplicacions web.</p>
+<h3 id="exemples-de-servidors-d-aplicacions" tabindex="-1">Exemples de Servidors d'Aplicacions</h3>
+<h4 id="apache-tomcat" tabindex="-1">Apache Tomcat</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor d'aplicacions de codi obert per a aplicacions web Java.</li>
+<li><strong>Funcionalitats:</strong> Suporta servlets Java i JavaServer Pages (JSP), facilitant l'execució d'aplicacions Java.</li>
+</ul>
+<h4 id="microsoft-internet-information-services-iis-1" tabindex="-1">Microsoft Internet Information Services (IIS)</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor web i d'aplicacions de Microsoft per a plataformes Windows.</li>
+<li><strong>Funcionalitats:</strong> Suporta aplicacions <a href="http://ASP.NET" target="_blank" class="external-link">ASP.NET</a>, autenticació integrada, i eines de gestió robustes.</li>
+</ul>
+<h4 id="j-boss-eap-enterprise-application-platform" tabindex="-1">JBoss EAP (Enterprise Application Platform)</h4>
+<ul>
+<li><strong>Descripció:</strong> Un servidor d'aplicacions Java EE de codi obert desenvolupat per Red Hat.</li>
+<li><strong>Funcionalitats:</strong> Proporciona un entorn robust per a la implementació d'aplicacions empresarials amb suport per a diversos frameworks Java.</li>
+</ul>
+<h4 id="node-js-1" tabindex="-1">Node.js</h4>
+<ul>
+<li><strong>Descripció:</strong> Una plataforma per a l'execució de codi JavaScript en el servidor.</li>
+<li><strong>Funcionalitats:</strong> Permet la programació asíncrona, ideal per a aplicacions en temps real i escalables com xats i jocs multijugador.</li>
+</ul>
+<p>!!! info<br>
+Tant els servidors web com els servidors d'aplicacions s'estudien en el mòdul de &quot;Desplegament d'Aplicacions Web&quot;.</p>
+<h4 id="recursos-addicionals-4" tabindex="-1">Recursos addicionals</h4>
+<ul>
+<li><a href="https://www.redhat.com/en/topics/middleware/what-is-an-application-server" target="_blank" class="external-link">What is an Application Server?</a></li>
+<li><a href="https://tomcat.apache.org/tomcat-9.0-doc/" target="_blank" class="external-link">Apache Tomcat Documentation</a></li>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/" target="_blank" class="external-link">JBoss Documentation</a></li>
+<li><a href="https://javaee.github.io/glassfish/" target="_blank" class="external-link">GlassFish Documentation</a></li>
+<li><a href="https://spring.io/projects/spring-framework" target="_blank" class="external-link">Spring Framework Documentation</a></li>
+</ul>
+<h4 id="resum-4" tabindex="-1">Resum</h4>
+<p>Els servidors d'aplicacions executen aplicacions dinàmiques i proporcionen serveis empresarials. Es diferencien dels servidors web en què no només serveixen contingut estàtic, sinó que també processen lògica d'aplicació i interaccions de base de dades. Exemples inclouen Apache Tomcat, JBoss i GlassFish, utilitzats per a aplicacions Java. També donen suport a tecnologies com servlets, JSP, EJB i frameworks com Spring, facilitant la construcció d'aplicacions robustes i escalables.</p>
+<h2 id="6-frameworks-de-programacio-en-entorn-servidor" tabindex="-1">6.Frameworks de Programació en Entorn Servidor</h2>
+<p>Un framework és una plataforma de desenvolupament que proporciona una estructura estandarditzada per a la creació d'aplicacions web. Facilita i accelera el procés de desenvolupament oferint biblioteques de codi preescrit, components reutilitzables i un conjunt de bones pràctiques. Els frameworks ajuden els desenvolupadors a centrar-se en la funcionalitat de l'aplicació en lloc de preocupar-se pels aspectes bàsics i repetitius de la programació.</p>
+<h3 id="principals-frameworks-en-entorn-servidor" tabindex="-1">Principals Frameworks en Entorn Servidor</h3>
+<h4 id="express-js" tabindex="-1">Express.js</h4>
+<ul>
+<li><strong>Descripció:</strong> Express.js és un framework web minimalista per a Node.js. Proporciona eines senzilles i flexibles per a la creació d'aplicacions web i API.</li>
+<li><strong>Característiques:</strong>
+<ul>
+<li>Middleware per a gestionar peticions HTTP.</li>
+<li>Sistema d'enrutament senzill i modular.</li>
+<li>Suport per a motors de plantilles com Pug i EJS.</li>
+</ul>
+</li>
+<li><strong>Avantatges:</strong>
+<ul>
+<li>Lleuger i flexible.</li>
+<li>Gran comunitat de suport i moltes extensions disponibles.</li>
+</ul>
+</li>
+<li><strong>Inconvenients:</strong>
+<ul>
+<li>Requereix més configuració manual comparat amb altres frameworks.</li>
+</ul>
+</li>
+</ul>
+<h4 id="django" tabindex="-1">Django</h4>
+<ul>
+<li><strong>Descripció:</strong> Django és un framework de programació web d'alt nivell per a Python que permet un desenvolupament ràpid i un disseny net i pragmàtic.</li>
+<li><strong>Característiques:</strong>
+<ul>
+<li>Inclou un ORM (Object-Relational Mapping) potent.</li>
+<li>Sistema d'administració automàtic.</li>
+<li>Seguretat integrada.</li>
+</ul>
+</li>
+<li><strong>Avantatges:</strong>
+<ul>
+<li>Promou les bones pràctiques de desenvolupament.</li>
+<li>Molt complet, amb moltes funcionalitats &quot;out-of-the-box&quot;.</li>
+</ul>
+</li>
+<li><strong>Inconvenients:</strong>
+<ul>
+<li>Pot ser massa gran per a aplicacions petites.</li>
+</ul>
+</li>
+</ul>
+<h4 id="laravel" tabindex="-1">Laravel</h4>
+<ul>
+<li><strong>Descripció:</strong> Laravel és un framework PHP elegant i expressiu que ofereix un conjunt complet d'eines i recursos per a construir aplicacions web.</li>
+<li><strong>Característiques:</strong>
+<ul>
+<li>Sistema d'enrutament senzill i potent.</li>
+<li>Eloquent ORM per a una interacció fàcil amb bases de dades.</li>
+<li>Sistema de templates Blade.</li>
+</ul>
+</li>
+<li><strong>Avantatges:</strong>
+<ul>
+<li>Gran comunitat i abundant documentació.</li>
+<li>Facilitat per a desenvolupar aplicacions robustes i escalables.</li>
+</ul>
+</li>
+<li><strong>Inconvenients:</strong>
+<ul>
+<li>Pot tenir una corba d'aprenentatge per als nous desenvolupadors.</li>
+</ul>
+</li>
+</ul>
+<h3 id="comparativa-dels-frameworks" tabindex="-1">Comparativa dels Frameworks</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Express.js</th>
+<th>Django</th>
+<th>Laravel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Idioma de programació</strong></td>
+<td>JavaScript</td>
+<td>Python</td>
+<td>PHP</td>
+</tr>
+<tr>
+<td><strong>ORM</strong></td>
+<td>No integrat, però es pot utilitzar Sequelize o Mongoose</td>
+<td>Sí (integrat)</td>
+<td>Sí (integrat, Eloquent ORM)</td>
+</tr>
+<tr>
+<td><strong>Sistema d'enrutament</strong></td>
+<td>Sí</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td><strong>Motor de plantilles</strong></td>
+<td>Suport per Pug, EJS, etc.</td>
+<td>Sí (Django Templates)</td>
+<td>Sí (Blade)</td>
+</tr>
+<tr>
+<td><strong>Sistema d'administració</strong></td>
+<td>No</td>
+<td>Sí</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Comunitat</strong></td>
+<td>Gran</td>
+<td>Gran</td>
+<td>Gran</td>
+</tr>
+<tr>
+<td><strong>Facilitat d'aprenentatge</strong></td>
+<td>Moderada</td>
+<td>Moderada</td>
+<td>Moderada</td>
+</tr>
+<tr>
+<td><strong>Documentació</strong></td>
+<td>Excel·lent</td>
+<td>Excel·lent</td>
+<td>Excel·lent</td>
+</tr>
+<tr>
+<td><strong>Seguretat</strong></td>
+<td>Depèn de la configuració</td>
+<td>Alta, amb funcions integrades</td>
+<td>Alta, amb funcions integrades</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="com-trieu-un-framework" tabindex="-1">Com Trieu un Framework?</h3>
+<p>La selecció del framework adequat per a un projecte depèn de diversos factors:</p>
+<ul>
+<li><strong>Tipus de Projecte:</strong> Aplicacions en temps real, aplicacions CRUD, aplicacions amb necessitats específiques de seguretat, etc.</li>
+<li><strong>Idioma de Programació:</strong> Si el teu equip està més familiaritzat amb JavaScript, Python o PHP, per exemple.</li>
+<li><strong>Escalabilitat i Rendiment:</strong> Alguns frameworks són més adequats per a aplicacions petites, mentre que altres gestionen millor aplicacions de gran escala.</li>
+<li><strong>Ecosistema i Comunitat:</strong> La disponibilitat de biblioteques, plugins i la mida de la comunitat poden influir en la decisió.</li>
+<li><strong>Facilitat d'ús i Documentació:</strong> Un bon framework ha de tenir una documentació clara i fàcil d'entendre, així com una corba d'aprenentatge adequada per al teu equip.</li>
+</ul>
+<h4 id="recursos-addicionals-5" tabindex="-1">Recursos Addicionals:</h4>
+<ul>
+<li><strong>Node.js Official Documentation:</strong> <a href="https://nodejs.org/en/docs/" target="_blank" class="external-link">Node.js</a></li>
+<li><strong>Express.js Official Documentation:</strong> <a href="https://expressjs.com/" target="_blank" class="external-link">Express.js</a></li>
+<li><strong>Django Official Documentation:</strong> <a href="https://docs.djangoproject.com/en/stable/" target="_blank" class="external-link">Django</a></li>
+<li><strong>Laravel Documentation:</strong> <a href="https://laravel.com/docs" target="_blank" class="external-link">Laravel</a></li>
+</ul>
+<h2 id="7-entorn-de-treball" tabindex="-1">7. Entorn de treball</h2>
+<h3 id="entorn-de-desenvolupament-integrat-ide" tabindex="-1">Entorn de desenvolupament integrat (IDE)</h3>
+<p>En este curso utilitzarem <a href="https://code.visualstudio.com" target="_blank" class="external-link"><strong>Visual Studio Code</strong></a> com a editor de codi. Existixen altres alternatives, com <a href="https://www.jetbrains.com/phpstorm/" target="_blank" class="external-link"><strong>PHP Storm</strong></a>.</p>
+<h3 id="git-hub-classroom" tabindex="-1">GitHub Classroom</h3>
+<p>Us haureu de <a href="https://classroom.github.com/" target="_blank" class="external-link">registrar</a> ja que l'utilitzarem durant el curs per la còpia de repositoris i entrega de treballs.</p>
+<p><strong>Metodologia de treball amb el github classroom</strong></p>
+<ul>
+<li>Se proporcionarà a l'alumnat un enllaç amb la invitació.</li>
+<li>Accedint a l'enllaç a cada alumne se li crearà un repositori individual en l'organització.</li>
+<li>L'alumnat treballa en el seu repositori assignat. Se'l pot baixar per treballar en local.</li>
+<li>Inicialment, l'alumne crea una branca nova sobre la que va a treballar.</li>
+<li>Quan vullga sol.licitar ajuda o revisió del professor, l'alumne genera una pull request a la branca principal del seu repositori en la que cita al professor per tal que reba una notificació.</li>
+<li>El profesor proporciona retroalimentació mitjançant comentaris en la pull request o en un determinat commit individual.</li>
+<li>Opcionalment es poden utilitzar els issues y les cites d'usuari per sol·licitar la intervenció del profesor.</li>
+<li>Quan l'alumne finalitza la tasca, genera una últim pull request</li>
+<li>El profesor revisa la pull request i opcionalment fa comentaris.</li>
+</ul>
+<h3 id="entorns-de-desenvolupament-local" tabindex="-1">Entorns de desenvolupament local</h3>
+<p>Pera fer correr les aplicacions de servidor ens cal, com a mínim, un <strong>servidor web</strong>, l'interpret de <strong>php</strong> i un <strong>motor de base de dades</strong>. Hem de distinguir l'<strong>entorn de desenvolupament</strong>, on anem a programar i mantindre la nostra aplicació, de l'<strong>entorn de producció</strong>, on anem a executar-la.<br>
+Normalment el primer depén de nosaltres mentre que el segon pot dependre de l'empresa on s'allotjarà la nostra web. Per a preparar el nostre entorn de desenvolupament podem optar per:</p>
+<ul>
+<li>Qualsevol solució <strong>LAMP</strong> (Linux, Apache, Mysql, PHP). Als que haurem d'afegir, una vegada els projectes es facen grans <strong>composer, git i les opcions de la part de client</strong>.</li>
+<li>Una màquina virtual ja configurada.</li>
+<li>Una solució docker.</li>
+</ul>
+<p>La primera solució és senzilla d'implementar però no hauria de ser la nostra primera opció per:</p>
+<ul>
+<li>Estem possant en funcionament en la nostra màquina una sèrie de serveis que normalment no fariem, baixant el rendiment de la màquina i obrint vulnerabilitats.</li>
+<li>Si treballem en grup, les instal·lacions i el funcionament no són iguals, depenen del sistema operatiu que té instal·lat cadascú. Allò que li funciona a ú pot ser no li funciona a un altre. Això és inevitable quan el projecte es complica i es perd molt de temps.</li>
+<li>Passa el mateix quan passem a l'entorn de producció.</li>
+</ul>
+<p>La segona solució soluciona els dos primers problemes, doncs tots els desenvolupadors poden tindre virtualitzada, la mateixa màquina. Encara que si la màquina no la fem nosaltres sinó que utilitzem alguna ja configurada (<strong>vagrant</strong>) o si ens cal instal·lar alguna cosa més, ho hauria de fer tot l'equip.</p>
+<p>Així i tot, tindriem les següents desaventatges:</p>
+<ul>
+<li>A l'instal·lar una maquina virtual sencera ocupa recursos del sistema.</li>
+<li>La màquina instal·la més coses de les necessàries habitualment.</li>
+<li>No reprodueix l'entorn de producció.</li>
+</ul>
+<p>La tercera opció té les següents característiques:</p>
+<ul>
+<li>Al principi és més difícil de possar en funcionamet ja que calen coneixements de docker.</li>
+<li>Tots els desenvolupadors comparteixen entorn encara que utilitzen màquines o sistemes operatius diferents.</li>
+<li>Si hi ha algun canvi de configuració de l'entorn és fácilment transladable a tots els desenvolupadors.</li>
+<li>Es poden crear tants entorns de desenvolupament com projectes diferents hi hajen.</li>
+<li>Els contenidors ocupen pocs recursos.</li>
+<li>Els projectes es poden possar en producció utilitzan una solució docker de manera inmediata.</li>
+</ul>
+<h3 id="xampp" tabindex="-1">XAMPP</h3>
+<p>XAMPP (<a href="https://www.apachefriends.org/es/index.html" target="_blank" class="external-link">https://www.apachefriends.org/es/index.html</a>) és una distribució composta amb el programari necessari per a desenvolupar en entorn servidor. Es compon de les següents eines sobre la base de les seues sigles:<br>
+Des de la pròpia pàgina es pot descarregar l'arxiu executable per al sistema operatiu del nostre ordinador. Es recomana llegir la FAQ de cada sistema operatiu amb instruccions per a la seua posada en marxa.</p>
+<p>!!! note &quot;Acrònim&quot;<br>
+* X per al sistema operatiu (d'aquí ve que es conega altrament com LAMP o WAMP).<br>
+* A per a Apatxe.<br>
+* M per a MySQL / MariaDB. També inclou phpMyAdmin per a l'administració de la base de dades des d'una interfície web.<br>
+* P per a PHP.<br>
+* P per a Perl.</p>
+<p>!!! note &quot;XAMPP en Windows&quot;<br>
+Si treballes amb el teu propi ordinador, XAMPP és una solució més senzilla que Docker, sobretot si treballes amb Windows com a sistema operatiu.</p>
+<h3 id="docker" tabindex="-1">Docker</h3>
+<p>Docker (<a href="https://www.docker.com" target="_blank" class="external-link">https://www.docker.com</a>) és un gestor de contenidors, considerant un contenidor com un mètode de virtualització del sistema operatiu.<br>
+L'ús de contenidors requereix menys recursos que una màquina virtual, per tant, el seu llançament i detenció són més ràpids que les màquines virtuals.</p>
+<p>Així doncs, <em>Docker</em> permet crear, provar i implementar aplicacions ràpidament, a partir d'una sèrie de plantilles que es coneixen com a <strong>imatges</strong> de <em>Docker</em>.</p>
+<p>Per a això, instal·larem <strong>Docker Desktop</strong> (<a href="https://www.docker.com/products/docker-desktop" target="_blank" class="external-link">https://www.docker.com/products/docker-desktop</a>) en els nostres entorns de desenvolupament (el qual ja inclou en <strong>nucli</strong> de <em>Docker</em> i l'eina <strong>docker compose</strong>).</p>
+<p>Al llarg del curs anirem creant diferents contenidors amb els serveis necessaris, de manera que cada vegada només treballem amb el programari mínim.</p>
+<p>!!! note &quot;Docker en windows&quot;<br>
+Per a instal·lar-ho en Windows, és necessari instal·lar prèviament <strong>WSL 2</strong>, el qual és un subsistema de <em>Linux</em> dins de <em>Windows</em>.</p>
+<h4 id="plantilla-inicial-servidor-web-nginx-php-my-sql-php-my-admin" tabindex="-1">Plantilla Inicial : Servidor Web nginx + PHP + MySQL + phpMyAdmin</h4>
+<p><strong>Docker</strong> es basa en l'ús d'imatges per a crear contenidors. <em>Docker Compose</em> simplifica el treball amb múltiples contenidors, i per això, per a facilitar l'arranc, ens centrarem en <em>Docker Compose</em> utilitzant una plantilla que únicament contindrà com a serveis Nginx i PHP.<br>
+Per a facilitar la posada en marxa, us facilite un repositori, disponible per a la seua descarrega mitjançant el <strong>git clone</strong>.</p>
+<ul>
+<li>Grup A: <a href="#GitHub-Classroom" target="_blank" class="external-link">github classroom</a> <a href="https://classroom.github.com/a/y5FOCalw" target="_blank" class="external-link">Nginx/PHP</a></li>
+<li>Grup B: <a href="#GitHub-Classroom" target="_blank" class="external-link">github classroom</a> <a href="https://classroom.github.com/a/k_osQPW4" target="_blank" class="external-link">Nginx/PHP</a></li>
+</ul>
+<p><strong>L'haureu de possar en un directori fàcilment localitzable i amb un nom significatiu, ja que serà el vostre directori de treball</strong>.<br>
+Dins d'este repositori, el fitxer <strong>'docker-compose.yaml'</strong> indica quines màquines ha de montar i té el següent aspecte</p>
+<p>=== &quot;Nginx i PHP&quot;</p>
+<p>``` yaml<br>
+# Services<br>
+services:</p>
+<p># Nginx Service<br>
+nginx:<br>
+image: nginx:1.19<br>
+ports:<br>
+- 80:80<br>
+volumes:<br>
+- ./src:/var/www/php<br>
+- ./.docker/nginx/conf.d:/etc/nginx/conf.d<br>
+depends_on:<br>
+- php</p>
+<p># PHP Service<br>
+php:<br>
+build: ./.docker/php/<br>
+working_dir: /var/www/php<br>
+expose:<br>
+- 9000<br>
+volumes:<br>
+- ./src:/var/www/php<br>
+- ./.docker/php/conf.d/Xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini<br>
+- ./.docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini</p>
+<p>```<br>
+Per arrencar les màquines o podem fer des de la consola amb</p>
+<pre><code class="language-console">docker compose up -d
+</code></pre>
+<p>Si volem accedir a un terminal interactiu dins del contenidor:</p>
+<pre><code class="language-console">docker exec -it nombreContenedor bash
+</code></pre>
+<p>Altres comandos que podem arribar a utilitzar són:</p>
+<ul>
+<li><code>docker ps</code>: Veure els contenidors que es estan executant</li>
+<li><code>docker ps -a</code>: Veure tots els contenidors</li>
+<li><code>docker start nombreContenedor</code>: Arrancar un contenidor</li>
+<li><code>docker images</code>: Veure les imatges que tenim descarregades</li>
+</ul>
+<p>!!! tip &quot;Docker stack&quot;<br>
+Existeixen diverses opcions mitjançant Docker que ofereixen solucions completes i empaquetes per a tot el stack de desenvolupament. Com a exemple tenim <em>Devilbox</em> (<a href="http://devilbox.org" target="_blank" class="external-link">http://devilbox.org</a>) i <em>Laradock</em> (<a href="https://laradock.io" target="_blank" class="external-link">https://laradock.io</a>)</p>
+<p>Una altra forma més senzilla per a llançar de nou els contenidors i gestionar-los una vegada creats és utilitzar la interfície gràfica que ofereix Docker Desktop:</p>
+<figure>
+<img src="imagenes/01/dockerdesktop.png">
+<figcaption>Arranc de contenidor mitjançant Docker Desktop</figcaption>
+</figure>
+<p>!!! note &quot;Tot funciona&quot;<br>
+Heu de comprovar que a l'accedir a <code>http://localhost/phpinfo.php</code> en el vostre navegador se us obre una pàgina amb la configuració de php.<br>
+També si accediu a <code>http://localhost:8000</code> veureu la pàgina d'accès a phpmyadmin.</p>
+<p>!!! important &quot;Directoris de php&quot;<br>
+Si us fixeu en les carpetes que us ha creat el repositori veureu que les pàgines que pot executar (directori arrel de la nostra web) es troba a php/src. Les pàgines que anem a crear , de moment, les haureu de ficar ahí.</p>
+<h2 id="8-referencies" tabindex="-1">8. Referències</h2>
+<h3 id="llibres-recomanats" tabindex="-1">Llibres Recomanats</h3>
+<ol>
+<li><strong><a href="https://www.amazon.com/Web-Architecture-Concepts-Richard-N-Taylor/dp/0134765048" target="_blank" class="external-link">Web Architecture: Core Concepts</a></strong> de Richard N. Taylor, Nenad Medvidovic i Eric Dashofy</li>
+</ol>
+<ul>
+<li>Aquest llibre ofereix una visió profunda sobre els conceptes bàsics i els principis fonamentals de les arquitectures web, incloent-hi patrons de disseny i les millors pràctiques.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://www.oreilly.com/library/view/restful-web-apis/9781449358063/" target="_blank" class="external-link">RESTful Web APIs</a></strong> de Leonard Richardson i Mike Amundsen</li>
+</ol>
+<ul>
+<li>Se centra en el disseny i la construcció d'APIs web RESTful, un component essencial de les arquitectures modernes basades en serveis web.</li>
+</ul>
+<ol start="3">
+<li><strong><a href="https://www.oreilly.com/library/view/building-microservices/9781491950340/" target="_blank" class="external-link">Building Microservices: Designing Fine-Grained Systems</a></strong> de Sam Newman</li>
+</ol>
+<ul>
+<li>Explora el disseny de microserveis, una arquitectura emergent que permet crear aplicacions escalables i flexibles.</li>
+</ul>
+<h3 id="documentacio-oficial-i-guies" tabindex="-1">Documentació Oficial i Guies</h3>
+<ol>
+<li><strong><a href="https://12factor.net/" target="_blank" class="external-link">The Twelve-Factor App</a></strong></li>
+</ol>
+<ul>
+<li>Una metodologia per construir aplicacions web modernes que són fàcilment escalables i mantenibles.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://web.dev/progressive-web-apps/" target="_blank" class="external-link">Documentació de l'Arquitectura de PWA (Progressive Web Apps)</a></strong></li>
+</ol>
+<ul>
+<li>Guia detallada sobre el disseny i la implementació d'aplicacions web progressives, que combinen el millor de les aplicacions web i mòbils.</li>
+</ul>
+<h3 id="cursos-en-linia" tabindex="-1">Cursos en Línia</h3>
+<ol>
+<li><strong><a href="https://www.coursera.org/learn/web-app" target="_blank" class="external-link">Coursera - Web Application Architectures</a></strong></li>
+</ol>
+<ul>
+<li>Curs que proporciona una visió general de les arquitectures d'aplicacions web, incloent-hi clients i servidors, HTTP, i serveis web.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044" target="_blank" class="external-link">Udacity - Full Stack Web Developer Nanodegree</a></strong></li>
+</ol>
+<ul>
+<li>Aquest programa cobreix temes com arquitectures de servidor, autenticació, i API RESTful.</li>
+</ul>
+<h3 id="recursos-addicionals-6" tabindex="-1">Recursos Addicionals</h3>
+<ol>
+<li><strong><a href="https://microservices.io/" target="_blank" class="external-link">Microservices.io</a></strong></li>
+</ol>
+<ul>
+<li>Recursos sobre patrons de microserveis, arquitectures i millors pràctiques per implementar microserveis amb èxit.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://martinfowler.com/" target="_blank" class="external-link">Martin Fowler's Blog</a></strong></li>
+</ol>
+<ul>
+<li>Un blog que cobreix diversos aspectes de l'arquitectura del programari, incloent-hi articles sobre disseny de microserveis i altres arquitectures emergents.</li>
+</ul>
+<h3 id="exemples-i-tutorials" tabindex="-1">Exemples i Tutorials</h3>
+<ol>
+<li><strong><a href="https://www.digitalocean.com/community/tutorials" target="_blank" class="external-link">DigitalOcean Community Tutorials</a></strong></li>
+</ol>
+<ul>
+<li>Ofereix tutorials pràctics sobre una àmplia gamma de temes relacionats amb l'arquitectura web, des de configuració de servidors fins a desplegament d'aplicacions.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://developer.mozilla.org/es/docs/Learn/Server-side" target="_blank" class="external-link">Mozilla Developer Network (MDN) Web Docs</a></strong></li>
+</ol>
+<ul>
+<li>Un recurs complet per aprendre sobre tecnologies del costat del servidor, protocols web, i altres conceptes clau de les arquitectures web.</li>
+</ul>
+<h3 id="repositoris-de-codi" tabindex="-1">Repositoris de Codi</h3>
+<ol>
+<li><strong><a href="https://github.com/binhnguyennus/awesome-scalability" target="_blank" class="external-link">Awesome Scalability</a></strong></li>
+</ol>
+<ul>
+<li>Una col·lecció de recursos i exemples sobre escalabilitat, arquitectures web i disseny de sistemes distribuits.</li>
+</ul>
+<ol start="2">
+<li><strong><a href="https://github.com/search?q=microservices" target="_blank" class="external-link">GitHub Microservices Examples</a></strong></li>
+</ol>
+<ul>
+<li>Repositoris de codi font en GitHub que il·lustren com implementar microserveis i altres arquitectures web modernes.</li>
+</ul>
+<h2 id="9-auto-avaluacio" tabindex="-1">9.AutoAvaluació</h2>
+<h4 id="exercici-1-models-d-execucio-de-codi" tabindex="-1">Exercici 1: Models d'execució de codi</h4>
+<h5 id="pregunta" tabindex="-1">Pregunta:</h5>
+<p>Explica les principals diferències entre el model d'execució de codi en client i en servidor.</p>
+<h5 id="opcions" tabindex="-1">Opcions:</h5>
+<form>
+<input type="radio" id="a" name="question1" value="a">
+<label for="a">a) El codi en client s'executa al servidor, mentre que el codi en servidor s'executa al navegador del client.</label><br>
+<input type="radio" id="b" name="question1" value="b">
+<label for="b">b) El codi en client s'executa al navegador del client, mentre que el codi en servidor s'executa al servidor.</label><br>
+<input type="radio" id="c" name="question1" value="c">
+<label for="c">c) Ambdós s'executen al servidor.</label><br>
+<input type="radio" id="d" name="question1" value="d">
+<label for="d">d) Ambdós s'executen al navegador del client.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer1()">
+</form>
+<p id="result1"></p>
+<script>function checkAnswer1(){for(var e,r=document.getElementsByName("question1"),t=0,c=r.length;t<c;t++)if(r[t].checked){e=r[t].value;break}var n="b"===e?"Correcte!":"Incorrecte. La resposta correcta és b) El codi en client s'executa al navegador del client, mentre que el codi en servidor s'executa al servidor.";document.getElementById("result1").innerText=n}</script>
+<h4 id="exercici-2-avantatges-de-la-generacio-dinamica-de-pagines" tabindex="-1">Exercici 2: Avantatges de la generació dinàmica de pàgines</h4>
+<h5 id="pregunta-1" tabindex="-1">Pregunta:</h5>
+<p>Quins són els avantatges de la generació dinàmica de pàgines web? Selecciona totes les que apliquen.</p>
+<h5 id="opcions-1" tabindex="-1">Opcions:</h5>
+<form>
+<input type="checkbox" id="opt1" name="question2" value="a">
+<label for="opt1">a) Reducció de la càrrega del servidor.</label><br>
+<input type="checkbox" id="opt2" name="question2" value="b">
+<label for="opt2">b) Personalització del contingut per usuari.</label><br>
+<input type="checkbox" id="opt3" name="question2" value="c">
+<label for="opt3">c) Major interactivitat amb l'usuari.</label><br>
+<input type="checkbox" id="opt4" name="question2" value="d">
+<label for="opt4">d) Menor temps de càrrega inicial de la pàgina.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer2()">
+</form>
+<p id="result2"></p>
+<script>function checkAnswer2(){for(var e=["b","c"],t=document.getElementsByName("question2"),r=[],n=0,c=t.length;n<c;n++)t[n].checked&&r.push(t[n].value);var s=r.length===e.length&&r.every(((t,r)=>t===e[r]))?"Correcte!":"Incorrecte. Les respostes correctes són b) Personalització del contingut per usuari i c) Major interactivitat amb l'usuari.";document.getElementById("result2").innerText=s}</script>
+<h4 id="exercici-3-mecanismes-d-execucio-de-codi-en-els-servidors-web" tabindex="-1">Exercici 3: Mecanismes d'execució de codi en els servidors web</h4>
+<h5 id="pregunta-2" tabindex="-1">Pregunta:</h5>
+<p>Quins dels següents són mecanismes d'execució de codi en els servidors web?</p>
+<h5 id="opcions-2" tabindex="-1">Opcions:</h5>
+<form>
+<input type="radio" id="a" name="question3" value="a">
+<label for="a">a) CGI (Common Gateway Interface).</label><br>
+<input type="radio" id="b" name="question3" value="b">
+<label for="b">b) API Gateway.</label><br>
+<input type="radio" id="c" name="question3" value="c">
+<label for="c">c) Servlets.</label><br>
+<input type="radio" id="d" name="question3" value="d">
+<label for="d">d) Totes les anteriors.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer3()">
+</form>
+<p id="result3"></p>
+<script>function checkAnswer3(){for(var e,t=document.getElementsByName("question3"),r=0,n=t.length;r<n;r++)if(t[r].checked){e=t[r].value;break}var c="d"===e?"Correcte!":"Incorrecte. La resposta correcta és d) Totes les anteriors.";document.getElementById("result3").innerText=c}</script>
+<h4 id="exercici-4-funcionalitats-dels-servidors-d-aplicacions" tabindex="-1">Exercici 4: Funcionalitats dels servidors d'aplicacions</h4>
+<h5 id="pregunta-3" tabindex="-1">Pregunta:</h5>
+<p>Quines són algunes de les funcionalitats proporcionades pels servidors d'aplicacions?</p>
+<h5 id="opcions-3" tabindex="-1">Opcions:</h5>
+<form>
+<input type="checkbox" id="opt1" name="question4" value="a">
+<label for="opt1">a) Gestió de sessions.</label><br>
+<input type="checkbox" id="opt2" name="question4" value="b">
+<label for="opt2">b) Autenticació d'usuaris.</label><br>
+<input type="checkbox" id="opt3" name="question4" value="c">
+<label for="opt3">c) Generació de pàgines estàtiques.</label><br>
+<input type="checkbox" id="opt4" name="question4" value="d">
+<label for="opt4">d) Gestió de transaccions.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer4()">
+</form>
+<p id="result4"></p>
+<script>function checkAnswer4(){for(var e=["a","b","d"],t=document.getElementsByName("question4"),s=[],n=0,c=t.length;n<c;n++)t[n].checked&&s.push(t[n].value);var r=s.length===e.length&&s.every(((t,s)=>t===e[s]))?"Correcte!":"Incorrecte. Les respostes correctes són a) Gestió de sessions, b) Autenticació d'usuaris, d) Gestió de transaccions.";document.getElementById("result4").innerText=r}</script>
+<h4 id="exercici-5-llenguatges-i-tecnologies-relacionades-amb-la-programacio-web-en-entorn-servidor" tabindex="-1">Exercici 5: Llenguatges i tecnologies relacionades amb la programació web en entorn servidor</h4>
+<h5 id="pregunta-4" tabindex="-1">Pregunta:</h5>
+<p>Quins dels següents llenguatges i tecnologies són utilitzats en la programació web en entorn servidor?</p>
+<h5 id="opcions-4" tabindex="-1">Opcions:</h5>
+<form>
+<input type="checkbox" id="opt1" name="question5" value="a">
+<label for="opt1">a) PHP.</label><br>
+<input type="checkbox" id="opt2" name="question5" value="b">
+<label for="opt2">b) SQL.</label><br>
+<input type="checkbox" id="opt3" name="question5" value="c">
+<label for="opt3">c) HTML.</label><br>
+<input type="checkbox" id="opt4" name="question5" value="d">
+<label for="opt4">d) JavaScript.</label><br>
+<input type="checkbox" id="opt5" name="question5" value="e">
+<label for="opt5">e) Java.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer5()">
+</form>
+<p id="result5"></p>
+<script>function checkAnswer5(){for(var e=["a","b","e"],t=document.getElementsByName("question5"),n=[],r=0,c=t.length;r<c;r++)t[r].checked&&n.push(t[r].value);var s=n.length===e.length&&n.every(((t,n)=>t===e[n]))?"Correcte!":"Incorrecte. Les respostes correctes són a) PHP, b) SQL, e) Java.";document.getElementById("result5").innerText=s}</script>
+<h4 id="exercici-6-integracio-dels-llenguatges-de-marques-amb-els-llenguatges-de-programacio" tabindex="-1">Exercici 6: Integració dels llenguatges de marques amb els llenguatges de programació</h4>
+<h5 id="pregunta-5" tabindex="-1">Pregunta:</h5>
+<p>Com s'integren els llenguatges de marques com HTML amb els llenguatges de programació com PHP?</p>
+<h5 id="opcions-5" tabindex="-1">Opcions:</h5>
+<form>
+<input type="radio" id="a" name="question6" value="a">
+<label for="a">a) Utilitzant etiquetes especials de PHP dins del codi HTML.</label><br>
+<input type="radio" id="b" name="question6" value="b">
+<label for="b">b) Convertint tot el codi HTML a PHP.</label><br>
+<input type="radio" id="c" name="question6" value="c">
+<label for="c">c) No es poden integrar.</label><br>
+<input type="radio" id="d" name="question6" value="d">
+<label for="d">d) Utilitzant un altre llenguatge de programació per connectar-los.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer6()">
+</form>
+<p id="result6"></p>
+<script>function checkAnswer6(){for(var e,t=document.getElementsByName("question6"),c=0,n=t.length;c<n;c++)if(t[c].checked){e=t[c].value;break}var r="a"===e?"Correcte!":"Incorrecte. La resposta correcta és a) Utilitzant etiquetes especials de PHP dins del codi HTML.";document.getElementById("result6").innerText=r}</script>
+<h4 id="exercici-7-eines-i-frameworks-de-programacio-en-entorn-servidor" tabindex="-1">Exercici 7: Eines i frameworks de programació en entorn servidor</h4>
+<h5 id="pregunta-6" tabindex="-1">Pregunta:</h5>
+<p>Quines són algunes de les eines i frameworks més utilitzats en la programació web en entorn servidor?</p>
+<h5 id="opcions-6" tabindex="-1">Opcions:</h5>
+<form>
+<input type="checkbox" id="opt1" name="question7" value="a">
+<label for="opt1">a) Laravel.</label><br>
+<input type="checkbox" id="opt2" name="question7" value="b">
+<label for="opt2">b) Django.</label><br>
+<input type="checkbox" id="opt3" name="question7" value="c">
+<label for="opt3">c) React.</label><br>
+<input type="checkbox" id="opt4" name="question7" value="d">
+<label for="opt4">d) Node.js.</label><br>
+<input type="checkbox" id="opt5" name="question7" value="e">
+<label for="opt5">e) Spring Boot.</label><br><br>
+<input type="button" value="Comprovar" onclick="checkAnswer7()">
+</form>
+<p id="result7"></p>
+<script>function checkAnswer7(){for(var e=["a","b","d","e"],t=document.getElementsByName("question7"),n=[],r=0,o=t.length;r<o;r++)t[r].checked&&n.push(t[r].value);var c=n.length===e.length&&n.every(((t,n)=>t===e[n]))?"Correcte!":"Incorrecte. Les respostes correctes són a) Laravel, b) Django, d) Node.js, e) Spring Boot.";document.getElementById("result7").innerText=c}</script>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

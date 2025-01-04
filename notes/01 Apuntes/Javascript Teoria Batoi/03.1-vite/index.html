@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>03.1-vite</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">notas</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('notas/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('templates')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">templates</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/default/">Default </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/templates/sin-titulo/">Sin título </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="vite" tabindex="-1">Vite</h1>
+<ul>
+<li><a href="#vite" target="_blank" class="external-link">Vite</a>
+<ul>
+<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
+<li><a href="#crear-un-nuevo-proyecto" target="_blank" class="external-link">Crear un nuevo proyecto</a></li>
+<li><a href="#desarrollar-nuestro-proyecto" target="_blank" class="external-link">Desarrollar nuestro proyecto</a>
+<ul>
+<li><a href="#trabajar-con-distintos-ficheros-de-c%C3%B3digo" target="_blank" class="external-link">Trabajar con distintos ficheros de código</a>
+<ul>
+<li><a href="#named-export" target="_blank" class="external-link">Named export</a></li>
+<li><a href="#default-export" target="_blank" class="external-link">Default export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#im%C3%A1genes" target="_blank" class="external-link">Imágenes</a></li>
+<li><a href="#paso-a-producci%C3%B3n" target="_blank" class="external-link">Paso a producción</a></li>
+<li><a href="#testear-el-proyecto" target="_blank" class="external-link">Testear el proyecto</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="introduccion" tabindex="-1">Introducción</h2>
+<p>Cuando crece el tamaño de un proyecto y tenemos más ficheros de código (cómo al trabajar con clases) es necesario organizarlos de forma que sea fácil encontrarlos y que no haya problemas de dependencias.</p>
+<p>Sin embargo tener muchos ficheros hace que tengamos que importarlos todos, y en el orden adecuado, en nuestro <em>index.html</em> (mediante etiquetas <code>&lt;script src=&quot;...&quot;&gt;</code>) lo que empieza a ser engorroso y reduce el rendimiento al tener el navegador que hacer muchas peticiones HTTP.</p>
+<p>Además muchas veces incluimos en el código características del lenguaje que aún no están soportadas por todos los navegadores y cuantos más código usemos más se reduce el número de nevegadores que soportan nuestro código.</p>
+<p>Para evitar este problema se utilizan las herramientas de construcción de proyectos o <em>module bundlers</em> que unen todo el código de los distintos ficheros javascript en un único fichero que es el que se importa en el <em>index.html</em> y hacen los mismo con los ficheros CSS.</p>
+<p>Además proporcionan otras ventajas:</p>
+<ul>
+<li><strong>transpilan</strong> el código, de forma que podemos usar sentencias javascript que aún no soportan muchos navegadores ya que se convertirán a sentencias que hacen lo mismo pero con código <em>legacy</em></li>
+<li><strong>minimizan</strong> y <strong>optimizan</strong> el código para que ocupe menos y su carga sea más rápida, reduciendo el nombre de variables y funciones, eliminando espacios en blanco y comentarios, ...</li>
+<li>dicha minimización <strong>ofusca</strong> el código lo que dificulta que el usuario pueda ver en la consola lo que hace el programa y manipularlo</li>
+</ul>
+<p>Nosotros usaremos el <em>bundler</em> <strong>Vite</strong> que, junto con <strong>webpack</strong>, son los más usados en entorno <em>frontend</em>. Junto a <em>npm</em> tendremos una forma fácil y práctica de empaquetar el código.</p>
+<p>Además <em>Vite</em> incorpora un servidor de desarrollo para hacer más cómoda la creación y prueba de nuestros proyectos.</p>
+<p>Para poder usar <em>Vite</em> debemos instalarlo. Como lo usaremos en muchos proyectos lo podemos instalarlo global con</p>
+<pre><code class="language-bash">npm install -g vite
+</code></pre>
+<h2 id="crear-un-nuevo-proyecto" tabindex="-1">Crear un nuevo proyecto</h2>
+<p>Vite necesita <em>Node.js</em> versión 16 o superior aunque lo mejor es tenerlo actualizado para poder utilitzar todas sus plantillas. Para crear un nuevo proyecto haremos:</p>
+<pre><code class="language-bash">npm create vite@latest
+</code></pre>
+<p>(si no tenemos instalado el paquete <em>create-vite</em> nos preguntará si lo instala)</p>
+<p>Al crear el proyecto nos pregunta qué framework vamos a utilizar (le diremos que <em>Vanilla</em>, es decir, Javascript sin framework) y si como lenguaje usaremos Javascript o Typescript.</p>
+<p>Esto crea el <em>scaffolding</em> de nuestro proyecto que consiste en una carpeta con el mismo nombre que el proyecto y una serie de ficheros en su interior:<br>
+Nos preguntará el nombre del proyecto, la plantilla (<em>Vanilla</em> para Javascript sin framework) y el lenguaje que queremos usar (<em>Javascript/Typescript</em>) y se crea una carpeta con el nombre de nuestro proyecto que contiene:</p>
+<ul>
+<li><code>index.html</code>: html con un div con <em>id</em> <strong>app</strong> que es donde se cargará la app y una etiqueta <strong>script</strong> que carga un módulo llamado <code>main.js</code></li>
+<li><code>main.js</code>: es el punto de entrada a la aplicación .Importa los ficheros CSS, imágenes y ficheros JS con funciones o clases y establece el contenido de la página principal</li>
+<li><code>counter.js</code>: módulo JS que exporta una función como ejemplo que es usada en el <em>main.js</em></li>
+<li><code>style.css</code>: fichero donde poner nuestros estilos, con CSS de ejemplo</li>
+<li><code>public/</code>: carpeta donde dejar elementos estáticos que no pasarán por <em>vite</em> (como imágenes, ficheros CSS, ...)</li>
+<li><code>node_modules</code>: librerías de las dependencias (si usamos alguna)</li>
+<li><code>package.json</code>: fichero de configuración del proyecto. Además del nombre y la versión incluye apartados importantes:
+<ul>
+<li><code>devDependences</code>: dependencias que se usan en desarrollo pero que no se incorporarán al código final</li>
+<li><code>dependences</code>: dependencias que sí se incluirán en el código final (librerías que estemos usando)</li>
+<li><code>scripts</code>: para ejecutar el servidor de desarrollo (<code>npm run dev</code>), generar el código final de producción (<code>npm run build</code>) y previsualizarlo en modo producción (<code>npm run preview</code>). Podemos añadir más para tests, etc</li>
+</ul>
+</li>
+</ul>
+<p>Si nuestra aplicación no va a ser muy pequeña como la del ejemplo sino que tendrá diferentes ficheros Javascript, acceso a datos, interfaz de usuario, etc deberíamos organizar en código en carpetas para mejorar su legibilidad. Lo adecuando es dejar en el raíz de nuestro proyecto los ficheros <code>index.html</code> y <code>main.js</code> y crear una carpeta <code>src</code> donde poner el resto de código. En función del tamaño de la aplicación podríamos crear dentro subcarpetas (os propongo un nombre para ellas aunque podéis llamarlas como queráis) para:</p>
+<ul>
+<li><code>model</code>: el modelo de datos, es decir, las clases</li>
+<li><code>pages</code> o <code>views</code>: las páginas que tendrá nuestra SPA a las que se navega desde el router (aunque en realidad sólo hay una)</li>
+<li><code>api</code>: acceso a la API que usemos. Sólo deben conectarse al servidor y transmitir los datos recibidos al resto de la aplicación</li>
+<li><code>components</code>: web components que usemos para cosntruir las páginas</li>
+<li><code>services</code>: métodos síncronos que proporcionan funcionalidad</li>
+<li>si nuestra aplicación es grande con muchos casos de uso convendría crear una carpeta <code>usecases</code> donde guardarlos. Cada uno debería tener un único método llamado <code>run</code> o <code>execute</code></li>
+<li><code>test</code>: carpeta donde guardar los ficheros de test</li>
+<li>...</li>
+</ul>
+<p><strong>NOTA</strong>: todos los ficheros javascript de un proyecto con <em>Vite</em> son módulos y en ellos, igual que en las clases, no es necesario poner <code>'use strict'</code> porque por defecto los módulos ya funcionan así.</p>
+<h2 id="desarrollar-nuestro-proyecto" tabindex="-1">Desarrollar nuestro proyecto</h2>
+<p>Para empezar a trabajar ejecutamos desde la terminal el script</p>
+<pre><code class="language-bash">npm run dev
+</code></pre>
+<p>Esto hace que <em>Vite</em> lance un servidor web en el puerto 5173 donde podemos ver la ejecución de nuestro proyecto.</p>
+<h3 id="trabajar-con-distintos-ficheros-de-codigo" tabindex="-1">Trabajar con distintos ficheros de código</h3>
+<p>Una de las razones de usar un <em>bundler</em> es que podemos repartir el código entre varios ficheros de forma que quede más organizado.</p>
+<p>Para que un fichero pueda tener acceso a código de otro fichero hay que hacer 2 cosas:</p>
+<ol>
+<li>El fichero al que queremos acceder debe <strong>exportar</strong> el código que desea que sea accesible desde otros ficheros</li>
+<li>El fichero que quiere acceder a ese código debe <strong>importarlo</strong> a una variable</li>
+</ol>
+<p>Esto es lo que hacíamos en el ejercicio de la frase para poder pasar los tests y lo que haremos con los ficheros donde declaremos clases.</p>
+<p>ES6 nos proporciona 2 formas de exportar/importar código:</p>
+<ul>
+<li>exportar con nombre (<em>named export</em>): <code>export</code></li>
+<li>exportar por defecto (<em>default export</em>): <code>export default</code></li>
+</ul>
+<h4 id="named-export" tabindex="-1">Named export</h4>
+<p>De esta manera puedo exportar tantos elementos (funciones, variables, clases, ...) de un fichero como quiera. Por ejemplo, si es un fichero con una única función a exportar:</p>
+<pre><code class="language-javascript">// Fichero cuadrado.js
+export function cuadrado (value) {
+  return value * value
+}
+</code></pre>
+<p>En el caso de querer exportar muchas funciones lo más sencillo es exportarlas juntas en un objeto como en el fichero <em>functions.js</em>:</p>
+<pre><code class="language-javascript">function letras () {
+  ...
+}
+
+function palabras () {
+  ...
+}
+
+function maysc () {
+  ...
+}
+...
+export {
+	letras,
+	palabras,
+	maysc
+}
+</code></pre>
+<p>Si es un fichero que define una clase la exportamos tal cual:</p>
+<pre><code class="language-javascript">export class Product {
+    constructor() {
+
+    }
+    ...
+}
+</code></pre>
+<p>Para importarlo lo hacemos poniendo lo que queremos importar entre <code>{ }</code>. Si se trata de una única función:</p>
+<pre><code class="language-javascript">import { cuadrado } from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + cuadrado(2))
+</code></pre>
+<p>También podríamos usar un nombre diferente para lo que importamos:</p>
+<pre><code class="language-javascript">import { cuadrado as cuad} from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + cuad(2))
+</code></pre>
+<p>Si es un fichero con muchas funciones exportadas a un objeto podemos importar sólo las que queramos o todas:</p>
+<pre><code class="language-javascript">import { letras, maysc } from './functions.js'
+
+console.log('Las letras de &quot;Hola&quot; son ' + letras(&quot;Hola&quot;))
+</code></pre>
+<p>También podemos importarlas todas a un objeto sin indicar sus nombres, con <code>*</code>:</p>
+<pre><code class="language-javascript">import * as MyFunctions from './functions.js'
+
+console.log('Las letras de &quot;Hola&quot; son ' + MyFunctions.letras(&quot;Hola&quot;))
+</code></pre>
+<p>Para importar una clase:</p>
+<pre><code class="language-javascript">import { Product } from './product.class'
+
+const myProd = new Product()
+</code></pre>
+<h4 id="default-export" tabindex="-1">Default export</h4>
+<p>De esta manera sólo puedo exportar un elemento por fichero, y a la hora de importarlo le doy el nombre que quiera. Por ejemplo, si es un fichero con una única función a exportar:</p>
+<pre><code class="language-javascript">// Fichero cuadrado.js
+export default function cuadrado (value) {
+  return value * value
+}
+</code></pre>
+<p>Y donde vaya a usarlo:</p>
+<pre><code class="language-javascript">import myCuadrado from './cuadrado.js'
+
+console.log('El cuadrado de 2 es ' + myCuadrado(2))
+</code></pre>
+<p>En el caso de una clase:</p>
+<pre><code class="language-javascript">export default class Product {
+    constructor() {
+
+    }
+    ...
+}
+</code></pre>
+<p>Y para importarla:</p>
+<pre><code class="language-javascript">import Product from './product.class'
+
+const myProd = new Product()
+</code></pre>
+<p>En resumen, si exporto con <code>export</code> importo con <code>{ }</code> y si exporto con <code>export default</code> importo sin <code>{ }</code> pero sólo puedo exportar 1 elemento.</p>
+<h2 id="imagenes" tabindex="-1">Imágenes</h2>
+<p>Si se trata de imágenes estáticas lo más sencillo es ponerlas dentro de la carpeta <code>public</code> y hacer referencia a ellas usando <strong>ruta absoluta</strong>. Todo lo que está en <em>public</em> se referencia como si estuviera en la raíz de nuestra aplicación:</p>
+<pre><code class="language-html">&lt;img src=&quot;/vite.png&quot; height=&quot;100px&quot; alt=&quot;Logo de Vite&quot;&gt;
+</code></pre>
+<p>También podemos poner las imágenes en la carpeta <code>assets</code>, pero antes de usarlas deberemos imnportarlas. Ejemplo:</p>
+<pre><code class="language-javascript">import viteLogo from './assets/vite.png'
+...
+const logoHtml = `&lt;img src=&quot;${viteLogo}&quot; height=&quot;100px&quot; alt=&quot;Vite logo&quot;&gt;`
+document.body.prepend(logoHtml)
+</code></pre>
+<p>Con <em>Vite</em> también podemos importarlas usando <code>import.meta.url</code>, lo que es útil si no conocemos previamente el nombre del fichero con la imagen (más información en la <a href="https://vitejs.dev/guide/assets.html#new-url-url-import-meta-url" target="_blank" class="external-link">documentación de Vite</a>):</p>
+<pre><code class="language-javascript">function getImage(fileName, height, alt) {
+  imgUrl = new URL(fileName, import.meta.url).href
+  const imgHtml = `&lt;img src=&quot;${viteLogo}&quot; height=&quot;${height}&quot; alt=&quot;${alt}&quot;&gt;`
+  
+  return logoHtml
+}
+</code></pre>
+<h2 id="paso-a-produccion" tabindex="-1">Paso a producción</h2>
+<p>Cuando lo hayamos acabado y queramos subirlo a producción ejecutaremos</p>
+<pre><code class="language-bash">npm run build
+</code></pre>
+<p>que crea la carpeta <code>/dist</code> con los ficheros que debemos subir al servidor web de producción:</p>
+<ul>
+<li><code>index.html</code></li>
+<li>cualquier fichero que tengamos en <em>/public</em></li>
+<li>carpeta <code>assets</code> con
+<ul>
+<li>fichero JS con todo el código que necesita el proyecto</li>
+<li>fichero CSS con todos los estilos del proyecto</li>
+<li>otros ficheros importados en el JS como imágenes, ...</li>
+</ul>
+</li>
+</ul>
+<h2 id="testear-el-proyecto" tabindex="-1">Testear el proyecto</h2>
+<p>Si queremos testear el proyecto deberemos usar una herramienta de testing y crear los tests adecuados. Lo más sencillo es usar <strong><em>Vitest</em></strong> que es muy similar a <em>Jest</em> pero preparado para interacutar fácilmente con <em>Vite</em>.</p>
+<p>Lo primero es importarlo como dependencia de producción (no lo usaremos en producción)</p>
+<pre><code class="language-bash">npm install --save-dev vitest
+</code></pre>
+<p>o abreviado</p>
+<pre><code class="language-bash">npm i -D vitest
+</code></pre>
+<p>Debemos añadir un nuevo script en el <code>package.json</code> que le indique a vite que queremos usarlo para testear:</p>
+<pre><code class="language-json">  &quot;scripts&quot;: {
+		...
+    &quot;test&quot;: &quot;vitest&quot;
+  },
+</code></pre>
+<p>Crearemos los tests en una carpeta en la raíz de nuestro proyecto llamada <code>/test</code> y en ella crearemos los diferentes fichero cuya extensión será <code>.spec.js</code> o <code>.test.js</code>. Cada vez que queramos pasar los tests ejecutaremos</p>
+<pre><code class="language-bash">npm run test
+</code></pre>
+<p>Podéis obtener más información en infinidad de páginas de internet, como el <a href="https://xxjcaxx.github.io/libro_dwec/tests.html#instalacion-de-vitest" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a>, y en la <a href="https://es.vitejs.dev/guide/" target="_blank" class="external-link">web oficial de vite</a>.</p>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
