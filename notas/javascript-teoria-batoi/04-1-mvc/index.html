@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>12. Referències Bibliogràfiques</title>
+<title>04.1-MVC</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -434,7 +434,7 @@
 <span class="foldername">Javascript Teoria Batoi</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/notas/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -725,109 +725,199 @@
 <div class="header-meta">
 </div>
 </header>
-<h3 id="programacio-orientada-a-objectes-en-php" tabindex="-1">Programació Orientada a Objectes en PHP</h3>
+<h1 id="el-patron-modelo-vista-controlador" tabindex="-1">El patrón Modelo-Vista-Controlador</h1>
+<p><strong>Modelo-vista-controlador (MVC)</strong> es un patrón de arquitectura de software muy utilizado en la actualidad en desarrollo web (y también en muchas aplicaciones de escritorio). Este patrón propone separar la aplicación en <strong>componentes</strong> distintos: el <strong>modelo</strong>, la <strong>vista</strong> y el <strong>controlador</strong>:</p>
 <ul>
-<li>
-<p><strong>&quot;PHP Objects, Patterns, and Practice&quot;</strong><br>
-per M. Zandstra. Apress, 2017. ISBN: 978-1-4842-1361-3. Aquest llibre és un recurs essencial per entendre els fonaments de la programació orientada a objectes en PHP, així com patrons de disseny.</p>
-</li>
-<li>
-<p><strong>&quot;Learning PHP, MySQL &amp; JavaScript: With jQuery, CSS &amp; HTML5&quot;</strong><br>
-per Robin Nixon. O'Reilly Media, 2018. ISBN: 978-1-4919-2070-2. Ofereix una introducció completa a la programació amb PHP, incloent-hi el model d'objectes de PHP.</p>
-</li>
+<li>El <strong>modelo</strong> representa y gestiona los datos o información con la que trabaja la aplicación que normalmente serán variables extraidas de una base de datos. Normalmente el modelo no tiene conocimiento de las otras partes de la aplicación.</li>
+<li>La <strong>vista</strong> muestra al usuario el modelo (información y lógica de negocio) en un formato adecuado para interactuar con él (usualmente la interfaz de usuario). Es la intermediaria entre la aplicación y el usuario</li>
+<li>El <strong>controlador</strong> es el encargado de coordinar el funcionamiento de la aplicación. Responde a los eventos del usuario para lo que hace peticiones al modelo (para obtener o cambiar la información) y a la vista (para que muestre al usuario dicha información).</li>
 </ul>
-<h3 id="constructors-i-destructors" tabindex="-1">Constructors i Destructors</h3>
+<p>Además de etos componentes usualmente tendremos otros como:</p>
 <ul>
-<li><strong>PHP Manual: Constructors and Destructors</strong><br>
-Documentació oficial de PHP sobre constructors i destructors en la programació orientada a objectes. Disponible a <a href="https://www.php.net/manual/en/language.oop5.decon.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.decon.php</a>.</li>
+<li>Los <strong>servicios</strong> que controlan la comunicación con el servidor y otras fuentes externas de datos. Gestionan los accesos a la información, tanto consultas como actualizaciones, implementando también los privilegios de acceso que se hayan descrito en las especificaciones de la aplicación (lógica de negocio).</li>
+<li>Las <strong>rutas</strong> gestionan la navegación y las rutas de la aplicación en SPA.</li>
 </ul>
-<h3 id="encapsulacio-i-visibilitat" tabindex="-1">Encapsulació i Visibilitat</h3>
+<p>Este patrón de arquitectura de software se basa en las ideas de reutilización de código y la separación de conceptos, características que buscan facilitar la tarea de desarrollo de aplicaciones y su posterior mantenimiento.</p>
+<h2 id="una-aplicacion-sin-mvc" tabindex="-1">Una aplicación sin MVC</h2>
+<p>Si una aplicación no utiliza este modelo la función que modifique los datos debe además reflejar dicha modificación en la página para que la vea el usuario. Por ejemplo vamos a hacer una aplicación para gestionar un almacén. Entre otras muchas cosas tendrá una función (podemos llamarle <em>addProduct</em>) que se encargue de añadir un nuevo producto al almacén y dicha función deberá realizar:</p>
 <ul>
-<li><strong>PHP Manual: Visibility</strong><br>
-Secció del manual oficial de PHP que explica les paraules clau <code>public</code>, <code>protected</code>, i <code>private</code>, així com el concepte d'encapsulació. Accessible a <a href="https://www.php.net/manual/en/language.oop5.visibility.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.visibility.php</a>.</li>
+<li>añadir el nuevo producto al almacén (por ejemplo añadiéndolo a un array de productos)</li>
+<li>pintar en la página ese nuevo producto (por ejemplo añadiendo una nueva línea a una tabla donde se muestran los productos)</li>
 </ul>
-<h3 id="herencia-i-polimorfisme" tabindex="-1">Herència i Polimorfisme</h3>
+<pre><code class="language-javascript">// La función que se ejecuta cuando el usuario envía el
+// formulario para añadir un producto debería hacer:
+document.getElementById('product-form').addEventListener('submit', async (event) =&gt; {
+    event.preventDefault()
+    // Coge los datos del formlario
+    const name = document.getElementById('product-form-name').value
+    const price = document.getElementById('product-form-name').price
+    ...
+    // Valida cada dato
+    if (!name || name.length &lt; 5 || ...)
+    ...
+    // Añade el producto a la BBDD
+    const prod = await addProductToDatabase(payload)
+    let newProd = new Product(prod.id, prod.name, prod.price, prod.units)
+    this.products.push(newProd)
+    ...
+    // Pinta en la página el nuevo producto
+    const DOMproduct = document.createElement('tr')
+    DOMproduct.innerHTML = `
+        &lt;td&gt;${newProd.id}&lt;/td&gt;
+        &lt;td&gt;${newProd.name}&lt;/td&gt;
+        &lt;td&gt;${newProd.price}&lt;/td&gt;
+        &lt;td&gt;${newProd.units}&lt;/td&gt;`
+    document.getElementById('products-table').apendChild(DOMproduct)
+    // Gestiona los posibles errores producidos en todo este proceso
+    ...
+})
+</code></pre>
+<p>Como vemos, se va a convertir en una función muy grande y que se encarga de muchas cosas distintas por lo que va a ser difícil mantener ese código. Además toda la función es muy dependiente del HTML (en muchas partes se buscan elementos por su id).</p>
+<h2 id="nuestro-patron-mvc" tabindex="-1">Nuestro patrón MVC</h2>
+<p>En una aplicación muy sencilla podemos no seguir este modelo pero en cuanto la misma se complica un poco es imprescindible programar siguiendo buenas prácticas ya que si no lo hacemos nuestro código se volverá rápidamente muy difícil de mantener.</p>
+<p>Hay muchas formas de implementar este modelo. Si estamos haciendo un proyecto con <em>OOP</em> podemos seguir el patrón MVC usando clases. Si sólo usamos programación estructurada será igual pero en vez de clases y métodos tendremos funciones.</p>
+<p>Para organizar el código crearemos subcarpetas dentro de la carpeta <code>src</code>:</p>
 <ul>
-<li>
-<p><strong>&quot;Programming PHP&quot;</strong><br>
-per Kevin Tatroe, Peter MacIntyre, i Rasmus Lerdorf. O'Reilly Media, 2013. ISBN: 978-1-4493-5053-6. Aquest llibre cobreix àmpliament els conceptes d'herència i polimorfisme en PHP, proporcionant exemples pràctics.</p>
-</li>
-<li>
-<p><strong>PHP Manual: Inheritance</strong><br>
-Documentació oficial de PHP que tracta sobre l'herència en classes, incloent el polimorfisme. Disponible a <a href="https://www.php.net/manual/en/language.oop5.inheritance.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.inheritance.php</a>.</p>
-</li>
+<li><code>model</code>: aquí incluiremos las clases que constituyen el modelo de nuestra aplicación</li>
+<li><code>view</code>: aquí crearemos un fichero JS que será el encargado de la GUI de nuestra aplicación, el único dependiente del HTML. Nuestro fichero será una clase que representa toda la vista aunque en aplicaciones mayores lo normal es tener clases para cada página, etc</li>
+<li><code>controller</code>: aquí crearemos el fichero JS que contendrá el controlador de la aplicación</li>
+<li><code>services</code>: aquí crearemos el fichero JS que se encargará de comunicarse con el servidor y proporcionar los datos al modelo</li>
 </ul>
-<h3 id="classes-abstractes-i-interficies" tabindex="-1">Classes Abstractes i Interfícies</h3>
+<p>De este forma, si quiero cambiar la forma en que se muestra algo voy directamente a la vista y modifico la función que se ocupa de ello.</p>
+<p>La vista será una clase cuyas propiedades serán elementos de la página HTML a los que accedamos frecuentemente, para no tener que buscarlos cada vez y para que estén disponibles para el controlador. Contendrá métodos para renderizar los distintos elementos de la vista.</p>
+<p>El controlador será una clase cuyas propedades serán el modelo y la vista, de forma que pueda acceder a ambos elementos. Tendrá métodos para las distintas acciones que pueda hacer el usuario (y que se ejecutarán como respuesta a dichas acciones, como veremos en el tema de <em>eventos</em>). Cada uno de esos métodos llamará a métodos del modelo (para obtener o cambiar la información necesaria) y posteriormente de la vista (para reflejar esos cambios en lo que ve el usuario).</p>
+<p>Por su parte el modelo gestionará los datos de la aplicación llamando a los servicios para obtener datos del servidor o guardar en él las modificaciones pertinentes.</p>
+<p>El fichero principal de la aplicación instanciará un controlador y lo inicializará.</p>
+<p>Por ejemplo, siguiendo con la aplicación para gestionar un almacén. El modelo constará de la clase <em>Store</em> que es nuestro almacén de productos (con métodos para añadir o eliminar productos, etc) y la clase <em>Product</em> que gestiona cada producto del almacén (con métodos para crear un nuevo producto, etc).</p>
+<p>El fichero principal sería algo como:</p>
 <ul>
-<li><strong>PHP Manual: Interfaces and Abstract Classes</strong><br>
-Explicació oficial de les classes abstractes i les interfícies en PHP. Disponible a <a href="https://www.php.net/manual/en/language.oop5.interfaces.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.interfaces.php</a>.</li>
+<li>main.js</li>
 </ul>
-<h3 id="nombres-magics-i-metodes-magics" tabindex="-1">Nombres màgics i Metodes màgics</h3>
+<pre><code class="language-javascript">const storeApp = new Controller()		// crea el controlador
+storeApp.init()				// lo inicializa
+
+// En desarrollo podemos añadir algunas líneas que luego quitaremos para
+// imitar acciones del usuario y así ver el funcionamiento de la aplicación:
+storeApp.addProductToStore({ name: 'Portátil Acer Travelmate E2100', price: 523.12 })
+storeApp.changeProduct({ id: 1, price: 515.95 })
+storeApp.deleteProduct(1)
+</code></pre>
 <ul>
-<li><strong>PHP Manual: Magic Methods</strong><br>
-Guia completa sobre els mètodes màgics en PHP, com <code>__construct()</code>, <code>__destruct()</code>, <code>__get()</code>, <code>__set()</code>, entre altres. Disponible a <a href="https://www.php.net/manual/en/language.oop5.magic.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.magic.php</a>.</li>
+<li>controller/index.js</li>
 </ul>
-<h3 id="trait-en-php" tabindex="-1">Trait en PHP</h3>
+<pre><code class="language-javascript">export default class Controller {
+    constructor() {
+        this.store = new Store(1)		// crea el modelo, un Store con id 1
+        this.view = new View()		// crea la vista
+    }
+
+    init() {
+        // inicializa la vista y el modelo, si es necesario
+        this.store.init()
+        this.view.init()			
+
+        // Le indica a la vista qué funciones callback se encargarán 
+        // de responder a los eventos del usuario (siguiente tema)
+        this.view.setSubmitHandler(this.handleSubmitProductForm.bind(this))
+    }
+	
+    handleSubmitProductForm(payload) {
+        // haría las comprobaciones necesarias sobre los datos
+        if (!payload.name || payload.name.length &lt; 5 || ...) {
+            this.view.showErrorMessage('error', 'Datos incorrectos')
+            return
+        }
+        ...
+        // y luego dice al modelo que añada el producto
+        try {
+            const newProd = this.store.addProduct(prod)
+            // si lo ha hecho le dice a la vista que lo pinte	
+            this.view.renderNewProduct(newProd)	
+        } catch(err) {
+            this.view.showErrorMessage('error', 'Error al añadir el producto')
+        }
+    }
+    ...
+}
+</code></pre>
 <ul>
-<li><strong>PHP Manual: Traits</strong><br>
-Documentació sobre traits en PHP, que permeten reutilitzar codi entre diferents classes. Disponible a <a href="https://www.php.net/manual/en/language.oop5.traits.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.traits.php</a>.</li>
+<li>model/store.class.js</li>
 </ul>
-<h3 id="excepcions-en-php" tabindex="-1">Excepcions en PHP</h3>
+<pre><code class="language-javascript">export default class Store {
+    constructor (id) {
+        this.id=Number(id)
+        this.products=[]
+    }
+
+    addProduct(payload) {
+        // llama a métodos de los servicios para que añada el producto
+        const prod = await addProductToDatabase(payload)
+        let newProd = new Product(prod.id, prod.name, prod.price, prod.units)
+        this.products.push(newProd)
+        return newProd
+    }
+    ...
+}
+</code></pre>
 <ul>
-<li>
-<p><strong>&quot;The Pragmatic Programmer: Your Journey to Mastery&quot;</strong><br>
-per David Thomas i Andrew Hunt. Addison-Wesley Professional, 2019. ISBN: 978-0-1359-5202-8. Inclou bones pràctiques per a la gestió d'excepcions, aplicables també a PHP.</p>
-</li>
-<li>
-<p><strong>PHP Manual: Exceptions</strong><br>
-Secció del manual de PHP dedicada a les excepcions, explicant com llençar i capturar excepcions en PHP. Accessible a <a href="https://www.php.net/manual/en/language.exceptions.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.exceptions.php</a>.</p>
-</li>
+<li>model/product.class.js</li>
 </ul>
-<h3 id="proves-amb-php-unit" tabindex="-1">Proves amb PHPUnit</h3>
+<pre><code class="language-javascript">export default class Product {
+    constructor (id, name, price, units) {
+        this.id = id
+        this.name = name
+        this.price = price
+        this.units = units
+    }
+    ...
+}
+</code></pre>
 <ul>
-<li>
-<p><strong>&quot;Modern PHP: New Features and Good Practices&quot;</strong><br>
-per Josh Lockhart. O'Reilly Media, 2015. ISBN: 978-1-4919-2904-0. Aquest llibre inclou una secció sobre proves amb PHPUnit.</p>
-</li>
-<li>
-<p><strong>PHPUnit Documentation</strong><br>
-Documentació oficial de PHPUnit, que cobreix com escriure i executar proves unitàries en PHP. Accessible a <a href="https://phpunit.de/documentation.html" target="_blank" class="external-link">https://phpunit.de/documentation.html</a>.</p>
-</li>
+<li>view/index.js</li>
 </ul>
-<h3 id="eines-de-desenvolupament-i-autocarrega" tabindex="-1">Eines de Desenvolupament i Autocàrrega</h3>
-<ul>
-<li>
-<p><strong>Composer Documentation</strong><br>
-Accessible des de <a href="https://getcomposer.org/doc/" target="_blank" class="external-link">https://getcomposer.org/doc/</a>. Composer és l'eina estàndard per a la gestió de dependències en PHP, i inclou suport per a l'autocàrrega de classes.</p>
-</li>
-<li>
-<p><strong>PHP Manual: Autoloading Classes</strong><br>
-Guia sobre el mecanisme d'autocàrrega en PHP, que facilita la inclusió automàtica de classes en els teus projectes. Disponible a <a href="https://www.php.net/manual/en/language.oop5.autoload.php" target="_blank" class="external-link">https://www.php.net/manual/en/language.oop5.autoload.php</a>.</p>
-</li>
-</ul>
-<h3 id="poo-avancada-patrons-de-disseny" tabindex="-1">POO Avançada: Patrons de Disseny</h3>
-<ul>
-<li>
-<p><strong>&quot;Head First Design Patterns&quot;</strong><br>
-per Eric Freeman i Elisabeth Robson. O'Reilly Media, 2020. ISBN: 978-1-4919-7175-9. Un recurs excel·lent per aprendre patrons de disseny aplicables a PHP.</p>
-</li>
-<li>
-<p><strong>&quot;PHP Design Patterns&quot;</strong><br>
-per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-3. Aquest llibre explora com aplicar patrons de disseny en projectes PHP.</p>
-</li>
-</ul>
-<h3 id="webs-de-referencia-addicionals" tabindex="-1">Webs de Referència Addicionals</h3>
-<ul>
-<li>
-<p><strong>PHP: The Right Way</strong><br>
-<a href="https://phptherightway.com/" target="_blank" class="external-link">https://phptherightway.com/</a>. Una guia per a desenvolupar aplicacions PHP seguint les millors pràctiques de la indústria.</p>
-</li>
-<li>
-<p><strong>Stack Overflow</strong><br>
-<a href="https://stackoverflow.com/questions/tagged/php" target="_blank" class="external-link">https://stackoverflow.com/questions/tagged/php</a>. Una font d'informació valuosa per resoldre problemes específics de PHP i discutir amb altres desenvolupadors.</p>
-</li>
-</ul>
-<hr>
+<pre><code class="language-javascript">export default class View {
+    constructor {
+        this.messageDiv = document.getElementById('messages')
+        this.productForm = document.getElementById('product-form')
+        this.productsList = document.getElementById('products-table')
+    }
+
+    init() {
+        ...			// inicializa la vista, si es necesario
+    }
+
+    setSubmitHandler(callback) {
+        // código para que el controlador llame a la función callback
+        // cuando se envíe el formulario de añadir un producto
+        this.productForm.addEventListener('submit', (event) =&gt; {
+            event.preventDefault()
+            const name = document.getElementById('product-form-name').value
+            const price = document.getElementById('product-form-name').price
+            ...
+            callback({ name, price, ... })
+        })
+    }
+
+    renderNewProduct(prod) {
+        // código para añadir a la tabla el producto pasado añadiendo una nueva fila
+        const DOMproduct = document.createElement('tr')
+        DOMproduct.innerHTML = `
+            &lt;td&gt;${newProd.id}&lt;/td&gt;
+            &lt;td&gt;${newProd.name}&lt;/td&gt;
+            &lt;td&gt;${newProd.price}&lt;/td&gt;
+            &lt;td&gt;${newProd.units}&lt;/td&gt;`
+        this.productsList.apendChild(DOMproduct)
+    }
+  
+    showMessage(type, message) {
+        // código para mostrar mensajes al usuario y no tener que usar los alert
+        const DOMmessage = document.createElement('div')
+        ...
+        this.messageDiv.apendChild(DOMmessage)
+    }
+}
+</code></pre>
+<p>Podéis obtener más información y ver un ejemplo más completo en <a href="https://www.natapuntes.es/patron-mvc-en-vanilla-javascript/" target="_blank" class="external-link">https://www.natapuntes.es/patron-mvc-en-vanilla-javascript/</a></p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
