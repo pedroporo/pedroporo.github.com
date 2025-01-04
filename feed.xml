@@ -3,14 +3,2172 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-01-04T22:46:14Z</updated>
+    <updated>2025-01-04T22:46:17Z</updated>
     <id>https://pedroporo.github.io</id>
+        <entry>
+            <title>
+                Sin título
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/templates/sin-titulo/</id>
+            <content type="html">
+                
+            </content>
+            <link href="https://pedroporo.github.io/templates/sin-titulo/" >
+        </entry>
+        <entry>
+            <title>
+                Default
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/templates/default/</id>
+            <content type="html">
+                
+            </content>
+            <link href="https://pedroporo.github.io/templates/default/" >
+        </entry>
         <entry>
             <title>
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
+            <content type="html">
+                &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;strong-1-crear-la-migracio-per-a-la-taula-code-equips-code-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Crear la Migració per a la Taula &lt;code&gt;equips&lt;/code&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;strong-migracio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Migració&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Genera una migració per a la taula &lt;code&gt;equips&lt;/code&gt; amb la següent estructura:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt;: Clau primària, autoincremental.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nom&lt;/code&gt;: Nom de l&#39;equip (cadena, únic, obligatori).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;estadi&lt;/code&gt;: Nom de l&#39;estadi de l&#39;equip (cadena, obligatori).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;titols&lt;/code&gt;: Nombre de títols guanyats (entero, predeterminat 0).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;created_at&lt;/code&gt; i &lt;code&gt;updated_at&lt;/code&gt;: Camps de timestamps generats automàticament.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration create_equips_table --create=equips
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Modifica el fitxer de migració per incloure l&#39;estructura de la taula:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function up()
+{
+    Schema::create(&#39;equips&#39;, function (Blueprint $table) {
+        $table-&amp;gt;id();
+        $table-&amp;gt;string(&#39;nom&#39;)-&amp;gt;unique();
+        $table-&amp;gt;string(&#39;estadi&#39;);
+        $table-&amp;gt;integer(&#39;titols&#39;)-&amp;gt;default(0);
+        $table-&amp;gt;timestamps();
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Executa la migració per crear la taula:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-models-i-seeders-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Models i Seeders&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Genera un model anomenat &lt;code&gt;Equip&lt;/code&gt; per gestionar la taula:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:model Equip 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Modifica el model Equip a app/Models/Equip.php per definir els camps que es poden emplenar mitjançant assignació massiva:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;protected $fillable = [&#39;nom&#39;, &#39;estadi&#39;, &#39;titols&#39;];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Crea un seeder per a la taula &lt;code&gt;equips&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:seeder EquipsSeeder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Modifica el seeder EquipsSeeder per generar dades d&#39;exemple:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    DB::table(&#39;equips&#39;)-&amp;gt;insert([
+            [&#39;nom&#39; =&amp;gt; &#39;Barça Femení&#39;, &#39;estadi&#39; =&amp;gt; &#39;Camp Nou&#39;, &#39;titols&#39; =&amp;gt; 30],
+            [&#39;nom&#39; =&amp;gt; &#39;Atlètic de Madrid&#39;, &#39;estadi&#39; =&amp;gt; &#39;Cívitas Metropolitano&#39;, &#39;titols&#39; =&amp;gt; 10],
+            [&#39;nom&#39; =&amp;gt; &#39;Real Madrid Femení&#39;, &#39;estadi&#39; =&amp;gt; &#39;Alfredo Di Stéfano&#39;, &#39;titols&#39; =&amp;gt; 5],
+    ]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Afegeix el seeder EquipsSeeder al fitxer DatabaseSeeder:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    $this-&amp;gt;call([
+        EquipsSeeder::class,
+    ]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Executa els seeders per omplir la taula &lt;code&gt;equips&lt;/code&gt; amb dades d&#39;exemple:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;   php artisan db:seed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-controladors-i-crud-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Controladors i CRUD&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Modifica el mètode &lt;code&gt;index&lt;/code&gt;,&lt;code&gt;show&lt;/code&gt;,&lt;code&gt;create&lt;/code&gt;,&lt;code&gt;edit&lt;/code&gt; i &lt;code&gt;destroy&lt;/code&gt; del controlador per obtenir els equips des de la base de dades:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function index() {
+     $equips = Equip::all();
+     return view(&#39;equips.index&#39;, compact(&#39;equips&#39;));
+ }
+
+ public function show(Equip $equip) {
+     return view(&#39;equips.show&#39;, compact(&#39;equip&#39;));
+ }
+
+ public function create() {
+     return view(&#39;equips.create&#39;);
+ }
+
+ public function edit(Equip $equip) {
+     return view(&#39;equips.edit&#39;, compact(&#39;equip&#39;));
+ }
+
+ public function destroy(Equip $equip) {
+     $equip-&amp;gt;delete();
+     return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip esborrat correctament!&#39;);
+ } 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;strong-relacions-entre-taules-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Relacions entre Taules&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Anem a crear la migració, model i seeder per la taula &lt;code&gt;estadis&lt;/code&gt; i vincular-la amb la taula &lt;code&gt;equips&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration create_estadis_table
+php artisan make:migration add_estadi_id_to_equips_table
+php artisan make:model Estadi
+php artisan make:seeder EstadisSeeder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Modifica la migració &lt;code&gt;create_estadis_table&lt;/code&gt; per incloure l&#39;estructura de la taula &lt;code&gt;estadis&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function up()
+{
+    Schema::create(&#39;estadis&#39;, function (Blueprint $table) {
+        $table-&amp;gt;id();
+        $table-&amp;gt;string(&#39;nom&#39;)-&amp;gt;unique();
+        $table-&amp;gt;integer(&#39;capacitat&#39;);
+        $table-&amp;gt;timestamps();
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Modifica la migració &lt;code&gt;add_estadi_id_to_equips_table&lt;/code&gt; per afegir la clau forana &lt;code&gt;estadi_id&lt;/code&gt; a la taula &lt;code&gt;equips&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function up()
+{
+    Schema::table(&#39;equips&#39;, function (Blueprint $table) {
+        $table-&amp;gt;dropColumn(&#39;estadi&#39;); // Esborra el camp estadi
+        $table-&amp;gt;foreignId(&#39;estadi_id&#39;)-&amp;gt;constrained(); // Afegir la clau forana
+    });
+ }
+
+public function down()
+{
+    Schema::table(&#39;equips&#39;, function (Blueprint $table) {
+        $table-&amp;gt;string(&#39;estadi&#39;);
+        $table-&amp;gt;dropForeign([&#39;estadi_id&#39;]);
+        $table-&amp;gt;dropColumn(&#39;estadi_id&#39;);
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Modifica el model &lt;code&gt;Equip&lt;/code&gt; per definir la relació amb l&#39;estadi:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function estadi()
+{
+    return $this-&amp;gt;belongsToclass;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Modifica el model &lt;code&gt;Estadi&lt;/code&gt; per definir la relació amb els equips:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function equips()
+{
+    return $this-&amp;gt;hasManyclass;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Modifica el seeder &lt;code&gt;EstadisSeeder&lt;/code&gt; per generar dades d&#39;exemple per a la taula &lt;code&gt;estadis&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    DB::table(&#39;estadis&#39;)-&amp;gt;insert([
+        [&#39;nom&#39; =&amp;gt; &#39;Camp Nou&#39;, &#39;capacitat&#39; =&amp;gt; 99000],
+        [&#39;nom&#39; =&amp;gt; &#39;Wanda Metropolitano&#39;, &#39;capacitat&#39; =&amp;gt; 68000],
+        [&#39;nom&#39; =&amp;gt; &#39;Santiago Bernabéu&#39;, &#39;capacitat&#39; =&amp;gt; 81000],
+    ]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Afegeix el seeder &lt;code&gt;EstadisSeeder&lt;/code&gt; al fitxer &lt;code&gt;DatabaseSeeder&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    $this-&amp;gt;call([
+        EstadisSeeder::class,
+        EquipsSeeder::class,
+        
+    ]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;Modifica el seeder &lt;code&gt;EquipsSeeder&lt;/code&gt; per assignar equips a estadis existents:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    $estadi = Estadi::where(&#39;nom&#39;, &#39;Camp Nou&#39;)-&amp;gt;first();
+    $estadi-&amp;gt;equips()-&amp;gt;create([
+        &#39;nom&#39; =&amp;gt; &#39;Barça Femení&#39;,
+        &#39;titols&#39; =&amp;gt; 30,
+    ]);
+    $estadi = Estadi::where(&#39;nom&#39;, &#39;Wanda Metropolitano&#39;)-&amp;gt;first();
+    $estadi-&amp;gt;equips()-&amp;gt;create([
+        &#39;nom&#39; =&amp;gt; &#39;Atlètic de Madrid&#39;,
+        &#39;titols&#39; =&amp;gt; 10,
+    ]);
+    $estadi = Estadi::where(&#39;nom&#39;, &#39;Santiago Bernabéu&#39;)-&amp;gt;first();
+    $estadi-&amp;gt;equips()-&amp;gt;create([
+        &#39;nom&#39; =&amp;gt; &#39;Real Madrid Femení&#39;,
+        &#39;titols&#39; =&amp;gt; 5,
+    ]);
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;Executa els seeders per omplir les taules &lt;code&gt;equips&lt;/code&gt; i &lt;code&gt;estadis&lt;/code&gt; amb dades d&#39;exemple:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:fresh --seed 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;Modifica la vista &lt;code&gt;equips.index&lt;/code&gt; per mostrar l&#39;estadi de cada equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;@foreach ($equips as $equip)
+    &amp;lt;tr class=&amp;quot;hover:bg-gray-100&amp;quot;&amp;gt;
+        &amp;lt;td class=&amp;quot;border border-gray-300 p-2&amp;quot;&amp;gt;
+            &amp;lt;a href=&amp;quot;{{ route(&#39;equips.show&#39;, $equip-&amp;gt;id) }}&amp;quot; class=&amp;quot;text-blue-700 hover:underline&amp;quot;&amp;gt;{{ $equip-&amp;gt;nom }}&amp;lt;/a&amp;gt;
+        &amp;lt;/td&amp;gt;
+        &amp;lt;td class=&amp;quot;border border-gray-300 p-2&amp;quot;&amp;gt;{{ $equip-&amp;gt;estadi-&amp;gt;nom }}&amp;lt;/td&amp;gt;
+        &amp;lt;td class=&amp;quot;border border-gray-300 p-2&amp;quot;&amp;gt;{{ $equip-&amp;gt;titols }}&amp;lt;/td&amp;gt;
+        &amp;lt;td class=&amp;quot;border border-gray-300 p-2 flex space-x-2&amp;quot;&amp;gt;
+            &amp;lt;a href=&amp;quot;{{ route(&#39;equips.show&#39;, $equip-&amp;gt;id) }}&amp;quot; class=&amp;quot;text-green-600 hover:underline&amp;quot;&amp;gt;Mostrar&amp;lt;/a&amp;gt;
+            &amp;lt;a href=&amp;quot;{{ route(&#39;equips.edit&#39;, $equip-&amp;gt;id) }}&amp;quot; class=&amp;quot;text-yellow-600 hover:underline&amp;quot;&amp;gt;Editar&amp;lt;/a&amp;gt;
+        &amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+@endforeach
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;Crea la vista &lt;code&gt;equips.create&lt;/code&gt; per incloure un desplegable amb els estadis disponibles:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;form action=&amp;quot;{{ route(&#39;equips.store&#39;) }}&amp;quot; method=&amp;quot;POST&amp;quot; class=&amp;quot;bg-white p-6 rounded-lg shadow-md max-w-md mx-auto&amp;quot;&amp;gt;
+    @csrf
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;nom&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Nom:&amp;lt;/label&amp;gt;
+        &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nom&amp;quot; id=&amp;quot;nom&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&amp;quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;titols&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Títols:&amp;lt;/label&amp;gt;
+        &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;titols&amp;quot; id=&amp;quot;titols&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&amp;quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;estadi_id&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Estadi:&amp;lt;/label&amp;gt;
+        &amp;lt;select name=&amp;quot;estadi_id&amp;quot; id=&amp;quot;estadi_id&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&amp;quot;&amp;gt;
+            @foreach ($estadis as $estadi)
+                &amp;lt;option value=&amp;quot;{{ $estadi-&amp;gt;id }}&amp;quot;&amp;gt;{{ $estadi-&amp;gt;nom }}&amp;lt;/option&amp;gt;
+            @endforeach
+        &amp;lt;/select&amp;gt;
+    &amp;lt;/div&amp;gt;
+    
+    &amp;lt;button type=&amp;quot;submit&amp;quot;
+        class=&amp;quot;w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-blue-600 focus:ring focus:ring-blue-300&amp;quot;&amp;gt;
+        Crear Equip
+    &amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Cal modificar el controlador &lt;code&gt;EquipController&lt;/code&gt; per obtenir els estadis disponibles.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&quot;12&quot;&gt;
+&lt;li&gt;Crea el mètode store en el controlador EquipController per emmagatzemar un nou equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function store(Request $request) {
+    $validated = $request-&amp;gt;validate([
+        &#39;nom&#39; =&amp;gt; &#39;required|unique:equips&#39;,
+        &#39;estadi_id&#39; =&amp;gt; &#39;required|exists:estadis,id&#39;,
+        &#39;titols&#39; =&amp;gt; &#39;integer|min:0&#39;,
+    ]);
+    Equip::create($validated);
+    return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip creat correctament!&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Cal modificat el model &lt;code&gt;Equip&lt;/code&gt; per permetre l&#39;assignació massiva de l&#39;estadi.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&quot;13&quot;&gt;
+&lt;li&gt;Modifica la vista &lt;code&gt;equips.edit&lt;/code&gt; per incloure un desplegable amb els estadis disponibles:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;form action=&amp;quot;{{ route(&#39;equips.update&#39;, $equip-&amp;gt;id) }}&amp;quot; method=&amp;quot;POST&amp;quot; class=&amp;quot;bg-white p-6 rounded-lg shadow-md max-w-md mx-auto&amp;quot;&amp;gt;
+    @csrf
+    @method(&#39;PUT&#39;)
+
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;nom&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Nom:&amp;lt;/label&amp;gt;
+        &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;nom&amp;quot; id=&amp;quot;nom&amp;quot; value=&amp;quot;{{ old(&#39;nom&#39;, $equip-&amp;gt;nom) }}&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error(&#39;nom&#39;) border-red-500 @enderror&amp;quot;&amp;gt;
+        @error(&#39;nom&#39;)
+            &amp;lt;p class=&amp;quot;text-red-500 text-sm mt-1&amp;quot;&amp;gt;{{ $message }}&amp;lt;/p&amp;gt;
+        @enderror
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;titols&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Títols:&amp;lt;/label&amp;gt;
+        &amp;lt;input type=&amp;quot;number&amp;quot; name=&amp;quot;titols&amp;quot; id=&amp;quot;titols&amp;quot; value=&amp;quot;{{ old(&#39;titols&#39;, $equip-&amp;gt;titols) }}&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error(&#39;titols&#39;) border-red-500 @enderror&amp;quot;&amp;gt;
+        @error(&#39;titols&#39;)
+            &amp;lt;p class=&amp;quot;text-red-500 text-sm mt-1&amp;quot;&amp;gt;{{ $message }}&amp;lt;/p&amp;gt;
+        @enderror
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+        &amp;lt;label for=&amp;quot;estadi_id&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Estadi:&amp;lt;/label&amp;gt;
+        &amp;lt;select name=&amp;quot;estadi_id&amp;quot; id=&amp;quot;estadi_id&amp;quot; required
+            class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error(&#39;estadi_id&#39;) border-red-500 @enderror&amp;quot;&amp;gt;
+            @foreach ($estadis as $estadi)
+                &amp;lt;option value=&amp;quot;{{ $estadi-&amp;gt;id }}&amp;quot; {{ $estadi-&amp;gt;id == $equip-&amp;gt;estadi_id ? &#39;selected&#39; : &#39;&#39; }}&amp;gt;
+                    {{ $estadi-&amp;gt;nom }}
+                &amp;lt;/option&amp;gt;
+            @endforeach
+        &amp;lt;/select&amp;gt;
+        @error(&#39;estadi_id&#39;)
+            &amp;lt;p class=&amp;quot;text-red-500 text-sm mt-1&amp;quot;&amp;gt;{{ $message }}&amp;lt;/p&amp;gt;
+        @enderror
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;button type=&amp;quot;submit&amp;quot;
+        class=&amp;quot;w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-blue-600 focus:ring focus:ring-blue-300&amp;quot;&amp;gt;
+        Actualitzar Equip
+    &amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;14&quot;&gt;
+&lt;li&gt;Crea el mètode update en el controlador EquipController per actualitzar un equip existent:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function update(Request $request, $id) {
+    $validated = $request-&amp;gt;validate([
+        &#39;nom&#39; =&amp;gt; &#39;required|unique:equips,nom,&#39;.$id,
+        &#39;estadi_id&#39; =&amp;gt; &#39;required|exists:estadis,id&#39;,
+        &#39;titols&#39; =&amp;gt; &#39;integer|min:0&#39;,
+    ]);
+    $equip = Equip::findOrFail($id);
+    $equip-&amp;gt;update($validated);
+    return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip actualitzat correctament!&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-afegir-un-escut-a-l-equip-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Afegir un escut a l&#39;equip&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Crea una migració per afegir un camp &lt;code&gt;escut&lt;/code&gt; a la taula &lt;code&gt;equips&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration add_escut_to_equips_table
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Modifica la migració &lt;code&gt;add_escut_to_equips_table&lt;/code&gt; per incloure el camp &lt;code&gt;escut&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function up()
+{
+    Schema::table(&#39;equips&#39;, function (Blueprint $table) {
+        $table-&amp;gt;string(&#39;escut&#39;)-&amp;gt;nullable();
+    });
+}
+public function down()
+{
+    Schema::table(&#39;equips&#39;, function (Blueprint $table) {
+        $table-&amp;gt;dropColumn(&#39;escut&#39;);
+    });
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Aplicar la migració&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Modifica el model &lt;code&gt;Equip&lt;/code&gt; per incloure el camp &lt;code&gt;escut&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;protected $fillable = [&#39;nom&#39;, &#39;estadi_id&#39;, &#39;titols&#39;, &#39;escut&#39;];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Modifica la vista &lt;code&gt;equips.create&lt;/code&gt; per incloure un camp d&#39;arxiu per pujar l&#39;escut de l&#39;equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+    &amp;lt;label for=&amp;quot;escut&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Escut:&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;escut&amp;quot; id=&amp;quot;escut&amp;quot;
+        class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Modifica la vista &lt;code&gt;equips.edit&lt;/code&gt; per incloure un camp d&#39;arxiu per actualitzar l&#39;escut de l&#39;equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;div class=&amp;quot;mb-4&amp;quot;&amp;gt;
+    &amp;lt;label for=&amp;quot;escut&amp;quot; class=&amp;quot;block text-sm font-medium text-gray-700 mb-1&amp;quot;&amp;gt;Escut:&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;escut&amp;quot; id=&amp;quot;escut&amp;quot; 
+        class=&amp;quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&amp;quot;&amp;gt;
+    @if ($equip-&amp;gt;escut)
+        &amp;lt;p class=&amp;quot;mt-2 text-sm text-gray-500&amp;quot;&amp;gt;Escut actual:&amp;lt;/p&amp;gt;
+        &amp;lt;img src=&amp;quot;{{ asset(&#39;storage/&#39; . $equip-&amp;gt;escut) }}&amp;quot; alt=&amp;quot;Escut de {{ $equip-&amp;gt;nom }}&amp;quot; class=&amp;quot;h-16 mt-2&amp;quot;&amp;gt;
+    @endif
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Afegeix enctype=&amp;quot;multipart/form-data&amp;quot; al dos formularis:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;form action=&amp;quot;{{ route(&#39;equips.store&#39;) }}&amp;quot; method=&amp;quot;POST&amp;quot; enctype=&amp;quot;multipart/form-data&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;Crea un enllaç simbòlic a la carpeta storage&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan storage:link
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;Actualitza el mètode store del controlador&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function store(Request $request)
+{
+    $validated = $request-&amp;gt;validate([
+        &#39;nom&#39; =&amp;gt; &#39;required|unique:equips&#39;,
+        &#39;titols&#39; =&amp;gt; &#39;integer|min:0&#39;,
+        &#39;estadi_id&#39; =&amp;gt; &#39;required|exists:estadis,id&#39;,
+        &#39;escut&#39; =&amp;gt; &#39;nullable|image|mimes:jpeg,png,jpg|max:2048&#39;, // Validació del fitxer
+    ]);
+
+    if ($request-&amp;gt;hasFile(&#39;escut&#39;)) {
+        $path = $request-&amp;gt;file(&#39;escut&#39;)-&amp;gt;store(&#39;escuts&#39;, &#39;public&#39;);
+        $validated[&#39;escut&#39;] = $path;
+    }
+
+    Equip::create($validated);
+
+    return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip creat correctament!&#39;);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;Actualitza el mètode update del controlador&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function update(Request $request, $id)
+{
+    $validated = $request-&amp;gt;validate([
+        &#39;nom&#39; =&amp;gt; &#39;required|unique:equips,nom,&#39; . $id,
+        &#39;titols&#39; =&amp;gt; &#39;integer|min:0&#39;,
+        &#39;estadi_id&#39; =&amp;gt; &#39;required|exists:estadis,id&#39;,
+        &#39;escut&#39; =&amp;gt; &#39;nullable|image|mimes:jpeg,png,jpg|max:2048&#39;,
+    ]);
+
+    $equip = Equip::findOrFail($id);
+
+    if ($request-&amp;gt;hasFile(&#39;escut&#39;)) {
+        if ($equip-&amp;gt;escut) {
+            Storage::disk(&#39;public&#39;)-&amp;gt;delete($equip-&amp;gt;escut); // Esborra l&#39;escut antic
+        }
+        $path = $request-&amp;gt;file(&#39;escut&#39;)-&amp;gt;store(&#39;escuts&#39;, &#39;public&#39;);
+        $validated[&#39;escut&#39;] = $path;
+    }
+
+    $equip-&amp;gt;update($validated);
+
+    return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip actualitzat correctament!&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;Crea el mètode delete per esborrar l&#39;escut de l&#39;equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function delete(Equip $equip)
+{
+    if ($equip-&amp;gt;escut) {
+        Storage::disk(&#39;public&#39;)-&amp;gt;delete($equip-&amp;gt;escut);
+    }
+    $equip-&amp;gt;delete();
+    return redirect()-&amp;gt;route(&#39;equips.index&#39;)-&amp;gt;with(&#39;success&#39;, &#39;Equip esborrat correctament!&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;12&quot;&gt;
+&lt;li&gt;Modificat el component de la vista &lt;code&gt;equips.show&lt;/code&gt; per mostrar l&#39;escut de l&#39;equip:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;div class=&amp;quot;equip border rounded-lg shadow-md p-4 bg-white&amp;quot;&amp;gt;
+      @if ($escut)
+          &amp;lt;td class=&amp;quot;border border-gray-300 p-2&amp;quot;&amp;gt;
+              &amp;lt;img src=&amp;quot;{{ asset(&#39;storage/&#39; . $escut) }}&amp;quot; alt=&amp;quot;Escut de {{ $nom }}&amp;quot; class=&amp;quot;h-8 w-8 object-cover rounded-full&amp;quot;&amp;gt;
+          &amp;lt;/td&amp;gt;
+      @endif
+    &amp;lt;h2 class=&amp;quot;text-xl font-bold text-blue-800&amp;quot;&amp;gt;{{ $nom }}&amp;lt;/h2&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Estadi:&amp;lt;/strong&amp;gt; {{ $estadi }}&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Títols:&amp;lt;/strong&amp;gt; {{ $titols }}&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-utilitzar-factories-per-a-dades-d-exemple-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Utilitzar Factories per a Dades d&#39;Exemple&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Crea un factory per a la taula &lt;code&gt;equips&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:factory EquipFactory --model=Equip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Modifica el factory &lt;code&gt;EquipFactory&lt;/code&gt; per generar dades aleatòries:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function definition()
+{
+       return [
+           &#39;nom&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;unique()-&amp;gt;company,
+           &#39;titols&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;numberBetween(0, 50),
+           &#39;estadi_id&#39; =&amp;gt; &#92;App&#92;Models&#92;Estadi::factory(),
+           &#39;escut&#39; =&amp;gt; &#39;escuts/dummy.png&#39;, // Imatge de prova predefinida
+        ];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Actualitza el seeder &lt;code&gt;EquipsSeeder&lt;/code&gt; per utilitzar el factory:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function run()
+{
+    ...
+    Equip::factory()-&amp;gt;count(10)-&amp;gt;create();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Modifica el model &lt;code&gt;Equip&lt;/code&gt; per permetre els factories:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;use Illuminate&#92;Database&#92;Eloquent&#92;Factories&#92;HasFactory;
+use Illuminate&#92;Database&#92;Eloquent&#92;Model;
+
+class Estadi extends Model
+{
+    use HasFactory;
+ ...  
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Crea el factory per a la taula &lt;code&gt;estadis&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:factory EstadiFactory --model=Estadi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Modifica el factory &lt;code&gt;EstadiFactory&lt;/code&gt; per generar dades aleatòries:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function definition()
+{
+    return [
+        &#39;nom&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;unique()-&amp;gt;city.&#39; Stadium&#39;,
+        &#39;capacitat&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;numberBetween(10000, 100000),
+    ];
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Executa els seeders per omplir la taula &lt;code&gt;equips&lt;/code&gt; amb dades generades pel factory:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:fresh --seed
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/" >
+        </entry>
+        <entry>
+            <title>
+                7. Requests, Responses i Validació en Laravel
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
+            <content type="html">
+                &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
+&lt;h4 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Un &lt;em&gt;Request&lt;/em&gt; en Laravel és un objecte que encapsula la informació sobre la petició HTTP, incloent dades, capçaleres, paràmetres i fitxers.&lt;/p&gt;
+&lt;h4 id=&quot;strong-acces-a-dades-del-request-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Accés a dades del Request&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$input = $request-&amp;gt;all(); //Accedir a tots els inputs.
+$name = $request-&amp;gt;input(&#39;name&#39;); //Obtenir un input específic.
+$age = $request-&amp;gt;input(&#39;age&#39;, 18); //Especificar valors per defecte.
+$id = $request-&amp;gt;route(&#39;id&#39;); //Accedir a paràmetres de ruta.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;strong-validacio-de-presencia-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Validació de presència&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;if ($request-&amp;gt;has(&#39;email&#39;)) {
+    // Input &#39;email&#39; present
+}
+if ($request-&amp;gt;filled(&#39;name&#39;)) {
+    // Input &#39;name&#39; no està buit
+}
+$filtered = $request-&amp;gt;only([&#39;name&#39;, &#39;email&#39;]); //Filtrar inputs específics.
+$excluded = $request-&amp;gt;except([&#39;password&#39;]); //Excloure certs inputs.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-tractament-de-fitxers-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tractament de fitxers&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;if ($request-&amp;gt;hasFile(&#39;photo&#39;)) { //Comprovar si hi ha un fitxer.
+    $file = $request-&amp;gt;file(&#39;photo&#39;);
+}
+$path = $request-&amp;gt;file(&#39;photo&#39;)-&amp;gt;store(&#39;photos&#39;); //Emmagatzemar un fitxer.
+    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-2-responses-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;2. Responses&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;strong-creacio-de-respostes-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Creació de respostes&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;return response(&#39;Hello World&#39;, 200); //Crear una resposta bàsica.
+return response()-&amp;gt;json([
+    &#39;name&#39; =&amp;gt; &#39;John&#39;,
+    &#39;status&#39; =&amp;gt; &#39;success&#39;
+]); //Crear una resposta JSON.
+return redirect(&#39;dashboard&#39;); //Redirecció .
+return redirect(&#39;login&#39;)-&amp;gt;with(&#39;status&#39;, &#39;Sessió iniciada&#39;); //Redirecció amb dades de sessió.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-manipular-capcaleres-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Manipular capçaleres&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;//Afegeix una o múltiples capçaleres.
+return response(&#39;Hello&#39;)-&amp;gt;header(&#39;Content-Type&#39;, &#39;text/plain&#39;);
+return response(&#39;Hello&#39;)
+-&amp;gt;header(&#39;Content-Type&#39;, &#39;application/json&#39;)
+-&amp;gt;header(&#39;Cache-Control&#39;, &#39;no-cache&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-respostes-de-fitxers-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Respostes de fitxers&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
+return response()-&amp;gt;download($pathToFile); //Descàrrega de fitxers.
+return response()-&amp;gt;file($pathToFile); //Mostrar fitxers.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;strong-3-validacio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;3. Validació&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;strong-introduccio-strong-1&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Laravel ofereix un sistema potent i senzill per validar dades d&#39;inputs.&lt;/p&gt;
+&lt;h3 id=&quot;strong-validacio-basica-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Validació bàsica&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    // Validar dades amb un Request.
+$request-&amp;gt;validate([
+    &#39;name&#39; =&amp;gt; &#39;required|string|max:255&#39;,
+    &#39;email&#39; =&amp;gt; &#39;required|email&#39;,
+    &#39;password&#39; =&amp;gt; &#39;required|min:8&#39;,
+]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    // Validar manualment.
+$validator = Validator::make($request-&amp;gt;all(), [
+    &#39;title&#39; =&amp;gt; &#39;required|max:255&#39;,
+    &#39;body&#39; =&amp;gt; &#39;required&#39;,
+]);
+
+if ($validator-&amp;gt;fails()) {
+    return redirect(&#39;/form&#39;)-&amp;gt;withErrors($validator);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-regles-comunes-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Regles comunes&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;required&lt;/code&gt;: Camp obligatori.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;email&lt;/code&gt;: Validació d&#39;un correu electrònic.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;min:value&lt;/code&gt;: Mínim de caràcters o valor numèric.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;max:value&lt;/code&gt;: Màxim de caràcters o valor numèric.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unique:table,column&lt;/code&gt;: Ha de ser únic en una taula/columna.&lt;br /&gt;
+&lt;a href=&quot;https://laravel.com/docs/11.x/validation#available-validation-rules&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Llista sencera de regles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;strong-missatges-personalitzats-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Missatges personalitzats&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// Es poden definir missatges personalitzats per a les regles de validació.
+
+$request-&amp;gt;validate([
+    &#39;name&#39; =&amp;gt; &#39;required&#39;,
+], [
+    &#39;name.required&#39; =&amp;gt; &#39;El nom és obligatori.&#39;,
+]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-validacio-condicional-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Validació condicional&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt; // Validació basada en altres camps o condicions.
+$request-&amp;gt;validate([
+    &#39;password&#39; =&amp;gt; &#39;required_if:is_admin,true&#39;,
+]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-validacio-personalitzada-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Validació personalitzada&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// Es poden afegir regles personalitzades mitjançant extensions del Validator.
+
+Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters, $validator) {
+    return strtoupper($value) === $value;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-errors-de-validacio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Errors de validació&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// Obtenir tots els errors en la vista
+@if ($errors-&amp;gt;any())
+    &amp;lt;ul&amp;gt;
+        @foreach ($errors-&amp;gt;all() as $error)
+            &amp;lt;li&amp;gt;{{ $error }}&amp;lt;/li&amp;gt;
+        @endforeach
+    &amp;lt;/ul&amp;gt;
+@endif
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    // Mostrar errors per camp específic
+@error(&#39;name&#39;)
+    &amp;lt;div&amp;gt;{{ $message }}&amp;lt;/div&amp;gt;
+@enderror
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/" >
+        </entry>
+        <entry>
+            <title>
+                6. Seeders i Factories en Laravel
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
+            <content type="html">
+                &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;strong-seeders-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Seeders&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Els seeders són classes especials que permeten &amp;quot;sembrar&amp;quot; dades a la base de dades.&lt;/p&gt;
+&lt;h4 id=&quot;strong-crear-un-seeder-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Crear un Seeder&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:seeder NomSeeder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Això crea un fitxer a la carpeta database/seeders. Per exemple:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class BooksSeeder extends Seeder
+{
+    public function run()
+    {
+        // Exemple: Crear un llibre
+        $book = new Book();
+        $book-&amp;gt;title = &amp;quot;Laravel for Beginners&amp;quot;;
+        $book-&amp;gt;author = &amp;quot;John Doe&amp;quot;;
+        $book-&amp;gt;save();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;afegir-seeders-al-seeder-general&quot; tabindex=&quot;-1&quot;&gt;Afegir Seeders al Seeder General&lt;/h4&gt;
+&lt;p&gt;Inclou els seeders al fitxer DatabaseSeeder:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class DatabaseSeeder extends Seeder
+{
+    public function run()
+    {
+        $this-&amp;gt;call([
+            BooksSeeder::class,
+            AuthorsSeeder::class,
+        ]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;executar-seeders&quot; tabindex=&quot;-1&quot;&gt;Executar Seeders&lt;/h4&gt;
+&lt;p&gt;Executar tots els seeders:&lt;br /&gt;
+Executar un seeder específic:&lt;br /&gt;
+Reiniciar les migracions i executar els seeders:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan db:seed
+php artisan db:seed --class=BooksSeeder
+php artisan migrate:fresh --seed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;factories&quot; tabindex=&quot;-1&quot;&gt;Factories&lt;/h3&gt;
+&lt;p&gt;Els factories permeten crear grans quantitats de dades de manera ràpida i dinàmica mitjançant Faker.&lt;/p&gt;
+&lt;h4 id=&quot;crear-un-factory&quot; tabindex=&quot;-1&quot;&gt;Crear un Factory&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:factory NomFactory -m Model
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Per exemple, per al model Author:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;namespace Database&#92;Factories;
+
+use App&#92;Models&#92;Author;
+use Illuminate&#92;Database&#92;Eloquent&#92;Factories&#92;Factory;
+
+class AuthorFactory extends Factory
+{
+protected $model = Author::class;
+
+    public function definition()
+    {
+        return [
+            &#39;name&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;name,
+            &#39;birth_year&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;year,
+        ];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;utilitzar-un-factory&quot; tabindex=&quot;-1&quot;&gt;Utilitzar un Factory&lt;/h4&gt;
+&lt;p&gt;Per generar dades amb un factory:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;use App&#92;Models&#92;Author;
+
+// Crear un únic autor
+Author::factory()-&amp;gt;create();
+
+// Crear diversos autors
+Author::factory()-&amp;gt;count(10)-&amp;gt;create();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;integracio-amb-seeders&quot; tabindex=&quot;-1&quot;&gt;Integració amb Seeders&lt;/h4&gt;
+&lt;p&gt;Combina factories amb seeders per generar dades dinàmiques:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class AuthorsSeeder extends Seeder
+{
+    public function run()
+    {
+        Author::factory()-&amp;gt;count(10)-&amp;gt;create();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;dades-relacionades&quot; tabindex=&quot;-1&quot;&gt;Dades Relacionades&lt;/h4&gt;
+&lt;p&gt;Els factories permeten generar dades relacionades. Per exemple, llibres amb els seus autors:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class BooksSeeder extends Seeder
+{
+    public function run()
+    {
+        $authors = Author::factory()-&amp;gt;count(5)-&amp;gt;create();
+
+        $authors-&amp;gt;each(function ($author) {
+            Book::factory()-&amp;gt;count(2)-&amp;gt;create([&#39;author_id&#39; =&amp;gt; $author-&amp;gt;id]);
+        });
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;exemples-avancats&quot; tabindex=&quot;-1&quot;&gt;Exemples Avançats&lt;/h4&gt;
+&lt;p&gt;Podem cercar com construir factories més complexes a la &lt;a href=&quot;https://fakerphp.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentació oficial&lt;/a&gt;.&lt;/p&gt;
+&lt;h5 id=&quot;utilitzar-factories-per-relacions&quot; tabindex=&quot;-1&quot;&gt;Utilitzar Factories per Relacions&lt;/h5&gt;
+&lt;p&gt;Definir relacions dins d’un factory:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class BookFactory extends Factory
+{
+    public function definition()
+    {
+        return [
+            &#39;title&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;sentence,
+            &#39;author_id&#39; =&amp;gt; Author::factory(),
+        ];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Llançar el factory:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Book::factory()-&amp;gt;count(10)-&amp;gt;create();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&quot;factories-amb-estats&quot; tabindex=&quot;-1&quot;&gt;Factories amb Estats&lt;/h5&gt;
+&lt;p&gt;Els estats permeten definir configuracions personalitzades per un model:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class BookFactory extends Factory
+{
+    public function withDiscount()
+    {
+        return $this-&amp;gt;state([
+        &#39;price&#39; =&amp;gt; $this-&amp;gt;faker-&amp;gt;numberBetween(5, 10),
+        ]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ús d&#39;un estat:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Book::factory()-&amp;gt;withDiscount()-&amp;gt;create();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;avantatges-dels-factories&quot; tabindex=&quot;-1&quot;&gt;Avantatges dels Factories&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Faciliten la generació massiva de dades.&lt;/li&gt;
+&lt;li&gt;Simplifiquen les proves i el desenvolupament amb dades fictícies realistes.&lt;/li&gt;
+&lt;li&gt;Redueixen el temps d&#39;inicialització de les aplicacions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/" >
+        </entry>
+        <entry>
+            <title>
+                5. Laravel Eloquent
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
+            <content type="html">
+                &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
+&lt;h3 id=&quot;strong-definicio-de-models-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Definició de Models&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Els models es defineixen dins de la carpeta &lt;code&gt;app/Models&lt;/code&gt; i es poden crear mitjançant Artisan:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:model Movie
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;exemple-basic&quot; tabindex=&quot;-1&quot;&gt;Exemple bàsic:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;namespace App&#92;Models;
+
+use Illuminate&#92;Database&#92;Eloquent&#92;Model;
+
+class Movie extends Model
+{
+    // Taula associada al model
+    protected $table = &#39;movies&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Per defecte:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El model s&#39;associa a una taula plural (&lt;code&gt;movies&lt;/code&gt; per al model &lt;code&gt;Movie&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Utilitza &lt;code&gt;id&lt;/code&gt; com a clau primària.&lt;/li&gt;
+&lt;li&gt;Assumeix l&#39;ús de camps &lt;code&gt;created_at&lt;/code&gt; i &lt;code&gt;updated_at&lt;/code&gt; gestionats automàticament.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;strong-us-basic-d-un-model-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Ús bàsic d&#39;un model&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;recuperar-dades&quot; tabindex=&quot;-1&quot;&gt;Recuperar dades:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Tots els registres:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::all();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Registres filtrats:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::where(&#39;rating&#39;, &#39;&amp;gt;&#39;, 4)-&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Registre únic:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::findOrFail($id);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;inserir-dades&quot; tabindex=&quot;-1&quot;&gt;Inserir dades:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = new Movie();
+$movie-&amp;gt;title = &amp;quot;Inception&amp;quot;;
+$movie-&amp;gt;director = &amp;quot;Christopher Nolan&amp;quot;;
+$movie-&amp;gt;save();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;actualitzar-dades&quot; tabindex=&quot;-1&quot;&gt;Actualitzar dades:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::find($id);
+$movie-&amp;gt;title = &amp;quot;Updated Title&amp;quot;;
+$movie-&amp;gt;save();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;esborrar-dades&quot; tabindex=&quot;-1&quot;&gt;Esborrar dades:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::find($id);
+$movie-&amp;gt;delete();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;propietats-comuns-dels-models-eloquent&quot; tabindex=&quot;-1&quot;&gt;Propietats comuns dels Models Eloquent&lt;/h3&gt;
+&lt;p&gt;Els models d&#39;Eloquent ofereixen diverses propietats que permeten configurar el comportament de la interacció amb la base de dades. A continuació es detallen les més importants:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+namespace App&#92;Models;
+
+use Illuminate&#92;Database&#92;Eloquent&#92;Model;
+
+class Example extends Model
+{
+    // Especifica el nom de la taula si no segueix la convenció per defecte
+    protected $table = &#39;custom_table_name&#39;;
+
+    // Defineix la clau primària de la taula
+    protected $primaryKey = &#39;custom_id&#39;;
+
+    // Indica si la clau primària és autoincremental
+    public $incrementing = false;
+
+    // Especifica el tipus de la clau primària (per exemple, string si no és integer)
+    protected $keyType = &#39;string&#39;;
+
+    // Defineix quins camps poden ser assignats massivament
+    protected $fillable = [&#39;name&#39;, &#39;email&#39;, &#39;password&#39;];
+
+    // Defineix quins camps no poden ser assignats massivament
+    protected $guarded = [&#39;is_admin&#39;];
+
+    // Oculta camps quan es converteix a JSON o arrays
+    protected $hidden = [&#39;password&#39;, &#39;remember_token&#39;];
+
+    // Defineix quins camps són visibles quan es converteix a JSON o arrays
+    protected $visible = [&#39;name&#39;, &#39;email&#39;];
+
+    // Transformació automàtica de camps a un tipus específic
+    protected $casts = [
+        &#39;is_admin&#39; =&amp;gt; &#39;boolean&#39;,
+        &#39;settings&#39; =&amp;gt; &#39;array&#39;,
+    ];
+
+    // Indica si la taula té els camps `created_at` i `updated_at`
+    public $timestamps = true;
+
+    // Defineix la connexió a la base de dades
+    protected $connection = &#39;mysql&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-relacions-en-eloquent-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Relacions en Eloquent&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;1-strong-un-a-un-one-to-one-strong&quot; tabindex=&quot;-1&quot;&gt;1. &lt;strong&gt;Un a un (One-to-One):&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Un usuari té un perfil:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
+{
+    public function profile()
+    {
+        return $this-&amp;gt;hasOneclass;
+    }
+}
+
+$user = User::find(1);
+$profile = $user-&amp;gt;profile;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;2-strong-un-a-molts-one-to-many-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;Un a molts (One-to-Many):&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Un autor té molts llibres:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Author extends Model
+{
+    public function books()
+    {
+        return $this-&amp;gt;hasManyclass;
+    }
+}
+
+$author = Author::find(1);
+$books = $author-&amp;gt;books;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;3-strong-molts-a-molts-many-to-many-strong&quot; tabindex=&quot;-1&quot;&gt;3. &lt;strong&gt;Molts a molts (Many-to-Many):&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Un usuari té molts rols:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
+{
+    public function roles()
+    {
+        return $this-&amp;gt;belongsToManyclass;
+    }
+}
+
+$user = User::find(1);
+$roles = $user-&amp;gt;roles;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;4-strong-has-many-through-relacions-transitives-strong&quot; tabindex=&quot;-1&quot;&gt;4. &lt;strong&gt;Has Many Through (Relacions transitives):&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Permet accedir a dades relacionades a través d&#39;un altre model.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Country extends Model
+{
+    public function posts()
+    {
+        return $this-&amp;gt;hasManyThroughclass, User::class;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-eager-loading-carrega-eficient-de-relacions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Eager Loading (Càrrega eficient de relacions)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Per evitar múltiples consultes a la base de dades, pots carregar relacions amb &lt;code&gt;with&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$authors = Author::with(&#39;books&#39;)-&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-col-leccions-i-agrupacions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Col·leccions i Agrupacions&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Eloquent retorna col·leccions per defecte, que permeten treballar amb &lt;a href=&quot;https://laravel.com/docs/11.x/eloquent-collections#available-methods&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mètodes&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;strong-mutators-i-accessors-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Mutators i Accessors&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Els &lt;strong&gt;mutators&lt;/strong&gt; permeten transformar dades abans de guardar-les, i els &lt;strong&gt;accessors&lt;/strong&gt; les transformen en recuperar-les.&lt;/p&gt;
+&lt;h4 id=&quot;exemple&quot; tabindex=&quot;-1&quot;&gt;Exemple:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
+{
+    // Accessor
+    public function getFullNameAttribute()
+    {
+        return &amp;quot;{$this-&amp;gt;first_name} {$this-&amp;gt;last_name}&amp;quot;;
+    }
+
+    // Mutator
+    public function setPasswordAttribute($value)
+    {
+        $this-&amp;gt;attributes[&#39;password&#39;] = bcrypt($value);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;us&quot; tabindex=&quot;-1&quot;&gt;Ús:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$user = User::find(1);
+$fullName = $user-&amp;gt;full_name;
+
+$user-&amp;gt;password = &#39;new_password&#39;;
+$user-&amp;gt;save();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;strong-paginacio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Paginació&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Laravel facilita la paginació:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::paginate(10);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En la vista:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;{{ $movies-&amp;gt;links() }}
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/" >
+        </entry>
+        <entry>
+            <title>
+                4. Laravel Query Builder
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
+            <content type="html">
+                &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;strong-exemples-d-us-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Exemples d&#39;ús&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;obtenir-tots-els-registres&quot; tabindex=&quot;-1&quot;&gt;Obtenir tots els registres:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = DB::table(&#39;users&#39;)-&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;filtrar-registres&quot; tabindex=&quot;-1&quot;&gt;Filtrar registres:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = DB::table(&#39;users&#39;)
+    -&amp;gt;where(&#39;active&#39;, 1)
+    -&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;seleccionar-columnes-especifiques&quot; tabindex=&quot;-1&quot;&gt;Seleccionar columnes específiques:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = DB::table(&#39;users&#39;)
+    -&amp;gt;select(&#39;name&#39;, &#39;email&#39;)
+    -&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;ordenar-resultats&quot; tabindex=&quot;-1&quot;&gt;Ordenar resultats:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = DB::table(&#39;users&#39;)
+    -&amp;gt;orderBy(&#39;name&#39;, &#39;asc&#39;)
+    -&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;comptar-registres&quot; tabindex=&quot;-1&quot;&gt;Comptar registres:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$count = DB::table(&#39;users&#39;)-&amp;gt;count();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;consultes-amb-agregats&quot; tabindex=&quot;-1&quot;&gt;Consultes amb agregats:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$maxSalary = DB::table(&#39;employees&#39;)-&amp;gt;max(&#39;salary&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;consultes-amb-subconsultes&quot; tabindex=&quot;-1&quot;&gt;Consultes amb subconsultes:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$users = DB::table(&#39;users&#39;)
+    -&amp;gt;whereExists(function ($query) {
+        $query-&amp;gt;selectraw(1)
+              -&amp;gt;from(&#39;orders&#39;)
+              -&amp;gt;whereColumn(&#39;orders.user_id&#39;, &#39;users.id&#39;);
+    })
+    -&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;unions&quot; tabindex=&quot;-1&quot;&gt;Unions:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$first = DB::table(&#39;users&#39;)-&amp;gt;where(&#39;type&#39;, &#39;admin&#39;);
+$second = DB::table(&#39;users&#39;)-&amp;gt;where(&#39;type&#39;, &#39;customer&#39;);
+
+$users = $first-&amp;gt;union($second)-&amp;gt;get();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;inserir-un-registre&quot; tabindex=&quot;-1&quot;&gt;Inserir un registre:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;DB::table(&#39;users&#39;)-&amp;gt;insert([
+    &#39;name&#39; =&amp;gt; &#39;John Doe&#39;,
+    &#39;email&#39; =&amp;gt; &#39;john@example.com&#39;,
+]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;actualitzar-un-registre&quot; tabindex=&quot;-1&quot;&gt;Actualitzar un registre:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;DB::table(&#39;users&#39;)
+    -&amp;gt;where(&#39;id&#39;, 1)
+    -&amp;gt;update([&#39;name&#39; =&amp;gt; &#39;Updated Name&#39;]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;esborrar-un-registre&quot; tabindex=&quot;-1&quot;&gt;Esborrar un registre:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;DB::table(&#39;users&#39;)
+    -&amp;gt;where(&#39;id&#39;, 1)
+    -&amp;gt;delete();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;esborrar-tots-els-registres&quot; tabindex=&quot;-1&quot;&gt;Esborrar tots els registres:&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;DB::table(&#39;users&#39;)-&amp;gt;truncate();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-avantatges-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Avantatges&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;El Query Builder és ideal per a:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consultes personalitzades on el rendiment és una prioritat.&lt;/li&gt;
+&lt;li&gt;Consultes complexes que no es poden expressar fàcilment amb Eloquent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/" >
+        </entry>
+        <entry>
+            <title>
+                3. Migracions en Laravel
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
+            <content type="html">
+                &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Les migracions són un sistema de control de versions per a bases de dades que permet treballar de manera col·laborativa, mantenint un històric dels canvis realitzats en l&#39;esquema. Amb migracions, pots:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crear, modificar i esborrar taules.&lt;/li&gt;
+&lt;li&gt;Gestionar l&#39;esquema de manera programàtica utilitzant Artisan i el &lt;strong&gt;Schema Builder&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Revertir canvis mitjançant &lt;code&gt;rollback&lt;/code&gt; o tornar a aplicar tots els canvis amb &lt;code&gt;refresh&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Laravel proporciona un conjunt d&#39;eines intuïtives per gestionar migracions, com Artisan i la classe &lt;strong&gt;Schema&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;strong-estructura-de-les-migracions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Estructura de les migracions&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Totes les migracions es guarden a la carpeta &lt;code&gt;database/migrations&lt;/code&gt; i segueixen una estructura predefinida amb dos mètodes principals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;up&lt;/code&gt;&lt;/strong&gt;: Defineix les operacions que s&#39;han d&#39;aplicar a la base de dades (crear taules, afegir columnes, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;down&lt;/code&gt;&lt;/strong&gt;: Defineix les operacions inverses per revertir els canvis aplicats per &lt;code&gt;up&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exemple bàsic:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;public function up()
+{
+    Schema::create(&#39;usuarios&#39;, function (Blueprint $tabla) {
+        $tabla-&amp;gt;id();
+        $tabla-&amp;gt;string(&#39;nombre&#39;);
+        $tabla-&amp;gt;string(&#39;email&#39;)-&amp;gt;unique();
+        $tabla-&amp;gt;timestamps();
+    });
+}
+
+public function down()
+{
+    Schema::dropIfExists(&#39;usuarios&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Per defecte, Laravel afegeix un camp autonumèric &lt;code&gt;id&lt;/code&gt; i dues columnes &lt;code&gt;timestamps&lt;/code&gt; (&lt;code&gt;created_at&lt;/code&gt; i &lt;code&gt;updated_at&lt;/code&gt;) gestionades automàticament.&lt;/p&gt;
+&lt;h3 id=&quot;strong-crear-una-migracio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Crear una migració&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Utilitza Artisan per crear una nova migració:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration nom_migracio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquest comando genera un fitxer amb un nom que inclou un &lt;strong&gt;timestamp&lt;/strong&gt; per assegurar l&#39;ordre cronològic.&lt;/p&gt;
+&lt;h3 id=&quot;strong-exemples-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Exemples&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Crear una taula:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration crear_tabla_usuarios --create=usuarios
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Modificar una taula existent:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:migration afegir_camp_a_usuarios --table=usuarios
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Laravel pot inferir accions del nom de la migració gràcies a la classe &lt;strong&gt;TableGuesser&lt;/strong&gt;. Per exemple, si el nom conté &lt;code&gt;create&lt;/code&gt; o &lt;code&gt;to&lt;/code&gt;, Artisan deduirà si és per crear o modificar taules.&lt;/p&gt;
+&lt;h3 id=&quot;strong-schema-builder-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Schema Builder&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;La classe &lt;strong&gt;Schema&lt;/strong&gt; és el nucli per definir i modificar l&#39;esquema de les bases de dades. Inclou constructors per crear, modificar i eliminar taules i columnes.&lt;/p&gt;
+&lt;h4 id=&quot;strong-crear-una-taula-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Crear una taula&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Schema::create(&#39;users&#39;, function (Blueprint $table) {
+    $table-&amp;gt;id();
+    $table-&amp;gt;string(&#39;username&#39;, 32);
+    $table-&amp;gt;timestamps();
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;strong-eliminar-una-taula-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Eliminar una taula&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Schema::dropIfExists(&#39;users&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;strong-afegir-columnes-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Afegir columnes&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Schema::table(&#39;usuarios&#39;, function (Blueprint $table) {
+    $table-&amp;gt;string(&#39;telefono&#39;)-&amp;gt;after(&#39;email&#39;)-&amp;gt;nullable();
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;strong-eliminar-columnes-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Eliminar columnes&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;Schema::table(&#39;usuarios&#39;, function (Blueprint $table) {
+    $table-&amp;gt;dropColumn(&#39;telefono&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-tipus-de-columnes-disponibles-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Tipus de columnes disponibles&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Laravel ofereix una àmplia varietat de tipus de columnes per satisfer diferents &lt;a href=&quot;https://laravel.com/docs/11.x/migrations#available-column-types&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;necessitats&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;strong-indexs-i-claus-foranies-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Índexs i claus forànies&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;strong-crear-indexs-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Crear índexs&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$table-&amp;gt;unique(&#39;email&#39;);
+$table-&amp;gt;index(&#39;state&#39;);
+$table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;strong-definir-claus-foranies-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Definir claus forànies&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$table-&amp;gt;foreignId(&#39;user_id&#39;)-&amp;gt;constrained()-&amp;gt;onDelete(&#39;cascade&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;strong-executar-i-revertir-migracions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Executar i revertir migracions&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Executar migracions pendents:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Revertir l&#39;última migració:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:rollback
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Revertir totes les migracions:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:reset
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Refrescar totes les migracions:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:refresh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Comprovar l&#39;estat de les migracions:&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquest conjunt de comandes permet un control complet sobre l&#39;estat de les migracions durant el desenvolupament.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/" >
+        </entry>
+        <entry>
+            <title>
+                2. Configuració inicial
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
+            <content type="html">
+                &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple de configuració al fitxer &lt;code&gt;.env&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-env&quot;&gt;DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nom_base_de_dades
+DB_USERNAME=usuari
+DB_PASSWORD=contrasenya
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Comprovació de connexió:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Després de configurar el &lt;code&gt;.env&lt;/code&gt;, utilitza el comandament:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan migrate:status
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquest comandament confirma si Laravel pot connectar-se a la base de dades configurada.&lt;/p&gt;
+&lt;h4 id=&quot;strong-deteccio-de-problemes-comuns-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Detecció de problemes comuns&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Comprovar que l&#39;extensió del driver de la base de dades (com &lt;code&gt;pdo_mysql&lt;/code&gt; o &lt;code&gt;pdo_pgsql&lt;/code&gt;) estigui habilitada al &lt;code&gt;php.ini&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Utilitzar &lt;code&gt;php artisan config:clear&lt;/code&gt; per esborrar la memòria cau de configuracions si els canvis al &lt;code&gt;.env&lt;/code&gt; no es reflecteixen.&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/" >
+        </entry>
+        <entry>
+            <title>
+                1. Introducció
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
+            <content type="html">
+                &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/" >
+        </entry>
+        <entry>
+            <title>
+                7. Web Scraping
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
+            <content type="html">
+                &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
+Aquesta pràctica requereix l&#39;ús d&#39;una llibreria que facilite la descàrrega de la informació desitjada imitant la interacció d&#39;un navegador web. Aquest &amp;quot;robot&amp;quot; pot accedir a diverses pàgines simultàniament.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!question] &amp;quot;¿És legal?&amp;quot;&lt;br /&gt;
+Si el lloc web indica que té el contingut protegit per drets d&#39;autor o en les normes d&#39;accés via usuari/contrasenya ens avisa de la seua prohibició, estaríem incorrent en un delicte.&lt;br /&gt;
+És recomanable estudiar l&#39;arxiu &lt;code&gt;robots.txt&lt;/code&gt; que es troba en l&#39;arrel de cada lloc web.&lt;br /&gt;
+Més informació en l&#39;article &lt;a href=&quot;https://ichi.pro/es/el-manual-completo-para-el-web-scraping-legal-y-etico-en-2021-69178542830388&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;El manual complet per al web scraping legal i ètic en 2021&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;goutte&quot; tabindex=&quot;-1&quot;&gt;Goutte&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/FriendsOfPHP/Goutte&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Goutte&lt;/a&gt; és un senzill client HTTP per a PHP creat específicament per a fer web scraping. Ho va desenvolupar el mateix autor del framework &lt;em&gt;Symfony&lt;/em&gt; i ofereix un API senzilla per a extraure dades de les respostes HTML/XML dels llocs web.&lt;/p&gt;
+&lt;p&gt;Els components principals que abstrau &lt;em&gt;Goutte&lt;/em&gt; sobre &lt;em&gt;Symfony&lt;/em&gt; són:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BrowserKit&lt;/code&gt;: simula el comportament d&#39;un navegador web.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CssSelector&lt;/code&gt;: tradueix consultes CSS en consultes XPath.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DomCrawler&lt;/code&gt;: facilita l&#39;ús del DOM i XPath.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Per a poder utilitzar &lt;em&gt;Goutte&lt;/em&gt; en el nostre projecte, executarem el següent comando en el terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;composer require fabpot/goutte
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;goutte-con-selectores-css&quot; tabindex=&quot;-1&quot;&gt;Goutte con selectores CSS&lt;/h3&gt;
+&lt;p&gt;A continuació farem un exemple molt senzill utilitzant els selectors CSS, extraient informació de la web &lt;code&gt;https://books.toscrape.com/&lt;/code&gt;, la qual és una pàgina per a proves que no rebutjarà les nostres peticions.&lt;/p&gt;
+&lt;p&gt;Després de crear un client amb &lt;em&gt;Goutte&lt;/em&gt;, hem de realitzar un petició a una URL. Amb la resposta obtinguda, podem utilitzar el mètode &lt;code&gt;filter&lt;/code&gt; per a indicar-li la ruta CSS que volem recórrer i iterar sobre els resultats mitjançant una funció anònima. Una vegada estem dins d&#39;un determinat node, el mètode &lt;code&gt;text()&lt;/code&gt; ens retornarà el contingut del propi node.&lt;/p&gt;
+&lt;p&gt;En concret, ficarem en un array associatiu el títol i el preu de tots els llibres de la categoria &lt;em&gt;Classics&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+require &#39;../vendor/autoload.php&#39;;
+
+$httpClient = new &#92;Goutte&#92;Client();
+$response = $httpClient-&amp;gt;request(&#39;GET&#39;, &#39;https://books.toscrape.com/catalogue/category/books/classics_6/index.html&#39;);
+// colocamos los precios en un array
+$precios = [];
+$response-&amp;gt;filter(&#39;.row li article div.product_price p.price_color&#39;)-&amp;gt;each(
+    // le pasamos $precios por referencia para poder editarla dentro del closure
+    function ($node) use (&amp;amp;$precios) {
+        $precios[] = $node-&amp;gt;text();
+    }
+);
+
+// colocamos el nombre y el precio en un array asociativo
+$contadorPrecios = 0;
+$libros = [];
+$response-&amp;gt;filter(&#39;.row li article h3 a&#39;)-&amp;gt;each(
+    function ($node) use ($precios, &amp;amp;$contadorPrecios, &amp;amp;$libros) {
+        $libros[$node-&amp;gt;text()] = $precios[$contadorPrecios];
+        $contadorPrecios++;
+    }
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;crawler&quot; tabindex=&quot;-1&quot;&gt;Crawler&lt;/h3&gt;
+&lt;p&gt;Un cas molt comú és obtindre la informació d&#39;una pàgina que té els resultats paginados, de manera que anem recorrent els enllaços i accedint a cadascun dels resultats.&lt;/p&gt;
+&lt;p&gt;En aquest cas agafarem tots els preus dels llibres de fantasia, i els sumarem:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+require &#39;../vendor/autoload.php&#39;;
+
+use Goutte&#92;Client;
+use Symfony&#92;Component&#92;HttpClient&#92;HttpClient;
+
+$client = new Clientcreate([&#39;timeout&#39; =&amp;gt; 60]);
+$crawler = $client-&amp;gt;request(&#39;GET&#39;, &#39;https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html&#39;);
+
+$salir = false;
+
+$precios = [];
+while (!$salir) {
+    $crawler-&amp;gt;filter(&#39;.row li article div.product_price p.price_color&#39;)-&amp;gt;each(
+        function ($node) use (&amp;amp;$precios) {
+            $texto = $node-&amp;gt;text();
+            $cantidad = substr($texto, 2); // Le quitamos las libras ¿2 posiciones?
+            $precios[] = floatval($cantidad);
+        }
+    );
+
+    $enlace = $crawler-&amp;gt;selectLink(&#39;next&#39;);
+    if ($enlace-&amp;gt;count() != 0) {
+        // el enlace next existe
+        $sigPag = $crawler-&amp;gt;selectLink(&#39;next&#39;)-&amp;gt;link();
+        $crawler = $client-&amp;gt;click($sigPag); // hacemos click
+    } else {
+        // ya no hay enlace next
+        $salir = true;
+    }
+}
+
+$precioTotal = array_sum($precios);
+echo $precioTotal;
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/" >
+        </entry>
+        <entry>
+            <title>
+                6. Accès a fitxers
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
+            <content type="html">
+                &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
+&lt;p&gt;A aquesta funció cal passar-li 2 paràmetres; el nom de l&#39;arxiu que volem obrir i la manera en què s&#39;obrirà&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$fp = fopen(&amp;quot;miarchivo.txt&amp;quot;, &amp;quot;r&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Moltes vegades no podem obrir l&#39;arxiu perquè aquest no es troba o no tenim accés a ell, per això és recomanable comprovar que podem fer-ho&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;if (!$fp = fopen(&amp;quot;miarchivo.txt&amp;quot;, &amp;quot;r&amp;quot;)){
+    echo &amp;quot;No se ha podido abrir el archivo&amp;quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;maneres-d-obertura-de-fitxers&quot; tabindex=&quot;-1&quot;&gt;Maneres d&#39;obertura de fitxers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&lt;/code&gt;: Manera lectura. Punter al principi de l&#39;arxiu.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;r+&lt;/code&gt;: Obertura per a lectura i escriptura. Punter al principi de l&#39;arxiu&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;/code&gt;: Obertura per a escriptura. Punter al principi de l&#39;arxiu i el sobreescriu. Si no existeix s&#39;intenta crear.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;w+&lt;/code&gt;: Obertura per a lectura i escriptura. Punter al principi de l&#39;arxiu i el sobreescriu. Si no existeix s&#39;intenta crear.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;/code&gt;: Obertura per a escriptura. Punter al final de l&#39;arxiu. Si no existeix s&#39;intenta crear.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;a+&lt;/code&gt;: Obertura per a lectura i escriptura. Punter al final de l&#39;arxiu. Si no existeix s&#39;intenta crear.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt;: Creació i obertura per a només escriptura. Punter al principi de l&#39;arxiu. Si l&#39;arxiu ja existeix donarà error E_*WARNING. Si no existeix s&#39;intenta crear.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x+&lt;/code&gt;: Creació i obertura per a lectura i escriptura. Mateix comportament que x.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c&lt;/code&gt;: Obertura per a escriptura. Si no existeix es crea. Si existeix no se sobreescriu ni dona cap error. Punter al principi de l&#39;arxiu.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;c+&lt;/code&gt;: Obertura per a lectura i escriptura. Mateix comportament que C.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt;: Quan es treballa amb arxius binaris com *jpg, pdf, *png i altres. Se sol col·locar al final de la manera, és a dir *rb, r+b, x+b, *wb...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;operacions-amb-arxius&quot; tabindex=&quot;-1&quot;&gt;Operacions amb arxius&lt;/h3&gt;
+&lt;p&gt;Per a poder &lt;strong&gt;llegir&lt;/strong&gt; un arxiu necessitem usar la funció &lt;em&gt;fread()&lt;/em&gt; de &lt;em&gt;PHP&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;//  ▒▒▒▒▒▒▒▒ Abriendo un archivo y leyendo su contenido ▒▒▒▒▒▒▒▒
+
+$file = &amp;quot;miarchivo.txt&amp;quot;;
+$fp = fopen($file, &amp;quot;r&amp;quot;);
+
+// filesize() nos devuelve el tamaño del archivo en cuestión
+$contents = fread($fp, filesize($file));
+
+// Cerramos la conexión con el archivo
+fclose();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si el que volem és &lt;strong&gt;escriure&lt;/strong&gt; en un arxiu, haurem de fer ús de la funció &lt;em&gt;fwrite()&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;//  ▒▒▒▒▒▒▒▒ Escribiendo en un archivo ▒▒▒▒▒▒▒▒
+
+$file = &amp;quot;miarchivo.txt&amp;quot;;
+$texto = &amp;quot;Hola que tal&amp;quot;;
+
+$fp = fopen($file, &amp;quot;w&amp;quot;);
+
+fwrite($fp, $texto);
+fclose($fp);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;informacio-d-un-fitxer&quot; tabindex=&quot;-1&quot;&gt;Informació d&#39;un fitxer&lt;/h3&gt;
+&lt;p&gt;Amb PHP i el seu mètode &lt;em&gt;stat()&lt;/em&gt; podem obtindre informació sobre els arxius que li indiquem. Aquest mètode retorna fins a un total de 12 elements amb &lt;em&gt;informació&lt;/em&gt; sobre el nostre arxiu.&lt;/p&gt;
+&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;&lt;em&gt;dev&lt;/em&gt;	 número de dispositiu&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;ino&lt;/em&gt;	 número d&#39;i-node&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;mode&lt;/em&gt;	 manera de protecció de l&#39;i-node&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;nlink&lt;/em&gt;	 nombre d&#39;enllaços&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;uid&lt;/em&gt;	 ID d&#39;usuari del propietari&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;gid&lt;/em&gt;	 ID de grup del propietari&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;rdev&lt;/em&gt;	 tipus de dispositiu, si és un dispositiu i-node&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;size&lt;/em&gt;	 grandària en bytes&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;atime&lt;/em&gt;	 moment de l&#39;últim accés (temps Unix)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;mtime&lt;/em&gt;	 moment de l&#39;última modificació (temps Unix)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;ctime&lt;/em&gt;	 moment de l&#39;última modificació de l&#39;i-node (temps Unix)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;blksize&lt;/em&gt;	 grandària del bloc E/S del sistema de fitxers&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;blocks&lt;/em&gt;	 nombre de blocs de 512 bytes assignats&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Uns exemples...&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+//  ▒▒▒▒▒▒▒▒ Información del archivo ▒▒▒▒▒▒▒▒
+
+$file = &amp;quot;miarchivo.txt&amp;quot;;
+$texto = &amp;quot;Todos somos muy ignorantes, lo que ocurre es que no todos ignoramos las mismas cosas.&amp;quot;;
+
+$fp = fopen($file, &amp;quot;w&amp;quot;);
+fwrite($fp, $texto);
+
+$datos = stat($file);
+
+echo $datos[3] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Número de enlaces, 1
+echo $datos[7] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Tamaño en bytes, 85
+echo $datos[8] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de último acceso, 1444138104
+echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última modificación, 1444138251
+
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Dona una ullada a &lt;a href=&quot;https://www.php.net/manual/es/book.dir.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;les funcions de directoris&lt;/a&gt; que té &lt;strong&gt;PHP&lt;/strong&gt;, és molt interessant.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/" >
+        </entry>
+        <entry>
+            <title>
+                5. QueryBuilder
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
+            <content type="html">
+                &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
+&lt;p&gt;A continuació, detallo algunes de les principals avantatges i característiques d&#39;un Query Builder com el que has compartit anteriorment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Abstracció de la Base de Dades:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;El Query Builder proporciona una capa d&#39;abstracció que permet interactuar amb diferents tipus de bases de dades (MySQL, PostgreSQL, SQLite, etc.) sense canviar el codi de la teva aplicació. Això facilita la portabilitat i l&#39;escalabilitat del codi.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Seguretat:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevé injeccions SQL: Gràcies a l&#39;ús de sentències preparades i enllaçament de paràmetres, el Query Builder ajuda a prevenir atacs d&#39;injecció SQL, una de les amenaces més comunes en desenvolupament web.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Sintaxi Més Neta i Més Fàcil:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Els Query Builders solen proporcionar una sintaxi més neta i fàcil d&#39;entendre que les cadenes SQL pures. Això fa que el codi sigui més llegible i fàcil de mantenir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Reutilització de Codi:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Les funcions del Query Builder es poden reutilitzar a tot el projecte, reduint la duplicació de codi i facilitant el manteniment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Flexibilitat:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Permet realitzar consultes complexes amb una sintaxi simplificada, facilitant l&#39;adaptació del codi a canvis en els requeriments de l&#39;aplicació.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Desenvolupament Més Ràpid:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Ajuda a accelerar el procés de desenvolupament, ja que els desenvolupadors no necessiten recordar la sintaxi SQL exacta per a cada tipus de base de dades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Fàcil de Depurar:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;El codi generat pel Query Builder és més fàcil de depurar en comparació amb les llargues cadenes SQL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;Suport per a Operacions CRUD:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Els Query Builders solen incloure suport integrat per a operacions CRUD (Crear, Llegir, Actualitzar, Esborrar), fent més fàcil la manipulació de dades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En resum, un Query Builder serveix per simplificar la interacció amb bases de dades, proporcionant una interfície més segura, neta i fàcil d&#39;utilitzar que les cadenes SQL pures. Ajuda a accelerar el desenvolupament, facilita el manteniment i millora la seguretat de l&#39;aplicació.&lt;br /&gt;
+Ací en tenim un exemple de construcció casera:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+namespace BatBook;
+
+use PDO;
+
+class QueryBuilder
+{
+    // Aquesta funció serveix per a construir i executar consultes SQL de tipus SELECT.
+    // Es pot filtrar per valors, limitar la quantitat de resultats i establir un offset.
+    public static function sql($class, $values=null, $limit = null, $offset = null)
+    {
+        // Obté el nom de la taula a partir de la propietat estàtica $nameTable de la classe passada com argument.
+        $table = $class::$nameTable;
+        
+        // Obté una connexió a la base de dades.
+        $conn = Connection::get();
+        
+        // Construeix la consulta SQL bàsica.
+        $sql = &amp;quot;SELECT * FROM $table&amp;quot;;
+        
+        // Afegeix condicions WHERE si es proporcionen valors per a filtrar.
+        if ($values) {
+            $sql .= &amp;quot; WHERE &amp;quot;;
+            foreach (array_keys($values) as $key =&amp;gt; $id) {
+                if ($key != 0) {
+                    $sql .= &amp;quot; AND $id=:$id&amp;quot;;
+                } else {
+                    $sql .= &amp;quot;$id=:$id&amp;quot;;
+                }
+            }
+        }
+        
+        // Afegeix les clàusules LIMIT i OFFSET si són necessàries.
+        if (isset($limit) &amp;amp;&amp;amp; isset($offset)) {
+            $sql .= &amp;quot; LIMIT $limit OFFSET $offset&amp;quot;;
+        }
+        
+        // Prepara la sentència SQL.
+        $sentence = $conn-&amp;gt;prepare($sql);
+        
+        // Enllaça els valors a la sentència.
+        foreach ($values??[] as $key =&amp;gt; $value) {
+            $sentence-&amp;gt;bindValue(&amp;quot;:$key&amp;quot;, $value);
+        }
+        
+        // Estableix el mode de recuperació a objectes de la classe especificada.
+        $sentence -&amp;gt; setFetchModeFETCH_CLASS | PDO::FETCH_PROPS_LATE , $class;
+        
+        // Executa la consulta.
+        $sentence -&amp;gt; execute();
+        
+        // Retorna tots els resultats obtinguts.
+        return  $sentence-&amp;gt;fetchAll();
+    }
+
+    // Aquesta funció serveix per a trobar una fila en una taula basant-se en el seu ID.
+    public static function find($class, $id)
+    {
+        //TODO
+    }
+
+    // Aquesta funció serveix per a insertar una fila en una taula.
+    public static function insert($class, $values)
+    {
+        $table = $class::$nameTable;
+        $conn = Connection::get();
+        $sql = &amp;quot;INSERT INTO $table (&amp;quot;;
+        foreach (array_keys($values) as $key =&amp;gt; $id) {
+            if ($key != 0) {
+                $sql .= &#39;,&#39;.$id;
+            } else {
+                $sql .= $id;
+            }
+        }
+        $sql .= &amp;quot;) VALUES (&amp;quot;;
+        foreach (array_keys($values) as $key =&amp;gt; $id) {
+            if ($key != 0) {
+                $sql .= &#39;,:&#39;.$id;
+            } else {
+                $sql .= &#39;:&#39;.$id;
+            }
+        }
+        $sql .= &amp;quot;)&amp;quot;;
+        $sentence = $conn-&amp;gt;prepare($sql);
+        foreach ($values as $key =&amp;gt; $value) {
+            $sentence-&amp;gt;bindValue(&amp;quot;:$key&amp;quot;, $value);
+        }
+        $sentence -&amp;gt; execute();
+        return $conn-&amp;gt;lastInsertId();
+    }
+
+    // Aquesta funció serveix per a actualitzar una fila en una taula.
+    public static function update($class, $values, $id)
+    {
+        $table = $class::$nameTable;
+        $conn = Connection::get();
+        $sql = &amp;quot;UPDATE $table SET &amp;quot;;
+        foreach (array_keys($values) as $key =&amp;gt; $value) {
+            if ($key != 0) {
+                $sql .= &#39;,&#39;.$value.&#39;=:&#39;.$value;
+            } else {
+                $sql .= $value.&#39;=:&#39;.$value;
+            }
+        }
+        $sql .= &amp;quot; WHERE id=:id&amp;quot;;
+        $sentence = $conn-&amp;gt;prepare($sql);
+        foreach ($values as $key =&amp;gt; $value) {
+            $sentence-&amp;gt;bindValue(&amp;quot;:$key&amp;quot;, $value);
+        }
+        $sentence-&amp;gt;bindValue(&amp;quot;:id&amp;quot;, $id);  
+        $sentence -&amp;gt; execute();
+        return $id;
+    }
+
+    // Aquesta funció serveix per a eliminar una fila en una taula basant-se en el seu ID.
+    public static function delete($class, $id)
+    {
+        //TODO
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;En resum, aquesta classe proporciona funcions estàtiques per a la construcció i execució de consultes SQL bàsiques com SELECT, INSERT, UPDATE, i DELETE. Utilitza l&#39;extensió PDO per a la connexió a bases de dades i la preparació de sentències SQL, la qual cosa ajuda a prevenir injeccions SQL. També permet la manipulació fàcil de files en bases de dades, tot retornant objectes de la classe especificada.&lt;/p&gt;
+&lt;h3 id=&quot;respotes-d-error&quot; tabindex=&quot;-1&quot;&gt;Respotes d&#39;error&lt;/h3&gt;
+&lt;p&gt;Quan no trebem un recurs en al nostra web, podem mostrar a l&#39;usuari una pàgina específica d&#39;error utilitzant la funció header. Una típica seria:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;!-- not-found.php --&amp;gt;
+&amp;lt;?php http_response_code(404); ?&amp;gt;
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;No trobat&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;404 - Pàgina no trobada&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;Ho sentim, la pàgina que estàs buscant no s&#39;ha pogut trobar.&amp;lt;/p&amp;gt;
+    &amp;lt;a href=&amp;quot;index.php&amp;quot;&amp;gt;Torna a l&#39;inici&amp;lt;/a&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I per a utilitzar-la:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+header(&amp;quot;Location: not-found.php&amp;quot;);
+exit;
+?&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/" >
+        </entry>
+        <entry>
+            <title>
+                4. Login &amp; Password
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
+            <content type="html">
+                &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;imagenes/06/06-login-password.gif&quot; /&gt;&lt;br /&gt;
+Per a manejar un sistema complet de login i password amb contrasenyes xifrades, necessitem un mètode que xifre aqueixos &lt;em&gt;strings&lt;/em&gt; que l&#39;usuari introdueix com a contrasenya; tant en el formulari de registre com en el del &lt;em&gt;login&lt;/em&gt;, ja que en codificar una contrasenya, després hem de descodificar-la per a comprovar que totes dues *contrasenyes (la que introdueix l&#39;usuari en el login i la que tenim en la base de dades) coincidisquen.&lt;/p&gt;
+&lt;p&gt;Necessitem doncs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;password_hash()&lt;/code&gt; per a emmagatzemar la contrasenya en la base de dades a l&#39;hora de fer el &lt;em&gt;INSERT&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;PASSWORD_DEFAULT&lt;/code&gt; emmagatzemem la contrasenya usant el mètode d&#39;encriptació bcrypt&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;PASSWORD_BCRYPT&lt;/code&gt; emmagatzemem la contrasenya usant l&#39;algorisme CRYPT_BLOWFISH compatible amb crypt()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;password_verify()&lt;/code&gt; per a verificar l&#39;usuari i la contrasenya&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ Almacenando usuario y password en BD ▒▒▒▒▒▒▒▒
+
+    $usu = $_POST[&amp;quot;usuario&amp;quot;];
+    $pas = $_POST[&amp;quot;password&amp;quot;];
+
+    $sql = &amp;quot;INSERT INTO usuarios(usuario, password) VALUES (:usuario, :password)&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+
+    $isOk = $sentencia -&amp;gt; execute([
+        &amp;quot;usuario&amp;quot; =&amp;gt; $usu,
+        &amp;quot;password&amp;quot; =&amp;gt; password_hash($pas,PASSWORD_DEFAULT)
+    ]);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ara que tenim l&#39;usuari codificat i guardat en la base de dades, el recuperarem per a poder loguejar-lo correctament.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ Recuperando usuario y password en BD ▒▒▒▒▒▒▒▒
+
+    $usu = $_POST[&amp;quot;login&amp;quot;] ?? &amp;quot;&amp;quot;;
+
+    $sql = &amp;quot;select * from usuarios where usuario = ?&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; execute([$usu]);
+
+    $usuario = $sentencia -&amp;gt; fetch();
+
+    if($usuario &amp;amp;&amp;amp; password_verify($_POST[&#39;pass&#39;], $usuario[&#39;password&#39;])) {
+        echo&amp;quot;OK!&amp;quot;;
+    } else {
+        echo&amp;quot;KO&amp;quot;;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/" >
+        </entry>
+        <entry>
+            <title>
+                3. PHP Data Objects  PDO
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
+            <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
+            <content type="html">
+                &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
+&lt;h3 id=&quot;constructor-de-la-classe-pdo&quot; tabindex=&quot;-1&quot;&gt;Constructor de la classe PDO&lt;/h3&gt;
+&lt;p&gt;El constructor de la classe PDO accepta tres paràmetres obligatoris i un opcional:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    $pdo = new PDO(string $dsn, string $username, string $password, array $options);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;$dsn (Data Source Name): És una cadena que especifica el tipus de base de dades i la informació necessària per connectar-s&#39;hi.
+&lt;ul&gt;
+&lt;li&gt;Format per tipus de base de dades i configuració, per exemple:
+&lt;ul&gt;
+&lt;li&gt;Mysql:host=localhost;dbname=testdb (per a MySQL).&lt;/li&gt;
+&lt;li&gt;pgsql:host=localhost;port=5432;dbname=testdb (per a PostgreSQL).&lt;/li&gt;
+&lt;li&gt;sqlite:/path/to/database.db (per a SQLite).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$username: El nom d&#39;usuari per a la connexió a la base de dades.&lt;/li&gt;
+&lt;li&gt;$password: La contrasenya associada al nom d&#39;usuari.&lt;/li&gt;
+&lt;li&gt;$options (Opcional): Un array d&#39;opcions per definir el comportament de la connexió. Aquests són alguns dels valors més comuns que es poden definir en aquest array:
+&lt;ul&gt;
+&lt;li&gt;PDO::ATTR_ERRMODE: Controla com es gestionen els errors. Alguns valors comuns són:
+&lt;ul&gt;
+&lt;li&gt;PDO::ERRMODE_SILENT: Els errors no generen cap missatge.&lt;/li&gt;
+&lt;li&gt;PDO::ERRMODE_WARNING: Els errors generen un avís.&lt;/li&gt;
+&lt;li&gt;PDO::ERRMODE_EXCEPTION: Els errors generen una excepció, que és el més recomanable per controlar errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PDO::ATTR_DEFAULT_FETCH_MODE: Defineix el mode de recuperació de dades per defecte, com ara:
+&lt;ul&gt;
+&lt;li&gt;PDO::FETCH_ASSOC: Retorna les dades com un array associatiu.&lt;/li&gt;
+&lt;li&gt;PDO::FETCH_OBJ: Retorna les dades com un objecte.&lt;/li&gt;
+&lt;li&gt;PDO::FETCH_BOTH: Retorna les dades com un array associatiu i numèric.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PDO::ATTR_PERSISTENT: Habilita connexions persistents. Una connexió persistent pot millorar el rendiment mantenint la connexió activa per múltiples peticions en lloc de crear-ne una nova cada vegada.&lt;/li&gt;
+&lt;li&gt;PDO::ATTR_TIMEOUT: Defineix un temps límit per a la connexió en segons.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;exemple-de-connexio-amb-pdo&quot; tabindex=&quot;-1&quot;&gt;Exemple de connexió amb PDO&lt;/h5&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$dsn = &amp;quot;mysql:host=localhost;dbname=testdb&amp;quot;;
+$username = &amp;quot;usuari&amp;quot;;
+$password = &amp;quot;contrasenya&amp;quot;;
+$options = [
+    PDO::ATTR_ERRMODE =&amp;gt; PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE =&amp;gt; PDO::FETCH_ASSOC,
+    PDO::ATTR_PERSISTENT =&amp;gt; true,
+    PDO::MYSQL_ATTR_INIT_COMMAND =&amp;gt; &amp;quot;SET NAMES utf8&amp;quot;
+];
+
+try {
+    $pdo = new PDO($dsn, $username, $password, $options);
+    echo &amp;quot;Connexió establerta amb èxit!&amp;quot;;
+} catch (PDOException $e) {
+    echo &amp;quot;Error de connexió: &amp;quot; . $e-&amp;gt;getMessage();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquest codi estableix una connexió a una base de dades MySQL amb un joc de caràcters utf8, una connexió persistent, i llança excepcions en cas d&#39;errors.&lt;/p&gt;
+&lt;p&gt;Qualsevol error que es llance a través de &lt;strong&gt;PDO&lt;/strong&gt;, el sistema llançarà una  &lt;strong&gt;PDOException&lt;/strong&gt; .&lt;/p&gt;
+&lt;h3 id=&quot;fitxer-de-configuracio-de-la-bd&quot; tabindex=&quot;-1&quot;&gt;Fitxer de configuració de la BD&lt;/h3&gt;
+&lt;p&gt;De la mateixa manera que podem tenir el nostre arxiu de funcions &lt;code&gt;funciones.php&lt;/code&gt; i alberguem totes les funcions que s&#39;usen de manera global en l&#39;aplicació, podem establir un arxiu de constants on definim els paràmetres de connexió amb la base de dades.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+
+    //  ▒▒▒▒▒▒▒▒ conexion.php ▒▒▒▒▒▒▒▒
+
+    constDSN = &amp;quot;mysql:host=localhost;dbname=dwes&amp;quot;;
+    constUSUARIO = &amp;quot;dwes&amp;quot;;
+    constPASSWORD = &amp;quot;abc123&amp;quot;;
+
+    /*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+        ▒▒▒▒▒▒▒▒ NO SUBAS ESTE ARCHIVO A git ▒▒▒▒▒
+
+        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ */
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Aquest arxiu conté informació &lt;span class=&quot;alert&quot;&gt;&lt;strong&gt;molt sensible&lt;/strong&gt;&lt;/span&gt; així que no és recomanable que puges aquest arxiu a &lt;strong&gt;git&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;sentencies-preparades&quot; tabindex=&quot;-1&quot;&gt;Sentències preparades&lt;/h3&gt;
+&lt;p&gt;Es tracta de sentències que s&#39;estableixen com si foren plantilles de la SQL que llançarem, acceptant paràmetres que són establits a posteriori de la declaració de la sentència preparada.&lt;/p&gt;
+&lt;p&gt;Les sentències preparades eviten la &lt;strong&gt;injecció&lt;/strong&gt; de SQL (SQL Injection) i milloren el rendiment de nostres &lt;em&gt;aplicacions&lt;/em&gt; o pàgines web.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    $sql = &amp;quot;INSERT INTO Clientes VALUES (?, ?, ?, ?)&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Cada interrogant és un paràmetre que establirem després, unes quantes línies més a baix.&lt;/p&gt;
+&lt;p&gt;Una vegada tenim la plantilla de la nostra consulta, hem de seguir amb la preparació juntament amb 3 mètodes més de &lt;strong&gt;PHP&lt;/strong&gt; per a la seua completa execució:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;prepare:&lt;/code&gt; prepara la &lt;strong&gt;sentencia&lt;/strong&gt; abans de ser executada.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bind&lt;/code&gt;: el tipus d&#39;unió (*&lt;em&gt;bind&lt;/em&gt;^) de dada que pot ser mitjançant &#39; ? &#39; o &#39; :parametre &#39;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;execute&lt;/code&gt; s&#39;executa la consulta unint la plantilla amb les &lt;em&gt;variables&lt;/em&gt; o paràmetres que hem establit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;exemple-parametros&quot; tabindex=&quot;-1&quot;&gt;Exemple paràmetros&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+     
+
+    include &amp;quot;config/database.inc.php&amp;quot;;
+
+    $conexion = null;
+
+    try { 
+        $cantidad = $_GET[&amp;quot;cantidad&amp;quot;];
+
+        $conexion = new PDO(DSN, USUARIO, PASSWORD);
+        $conexion -&amp;gt; setAttributeATTR_ERRMODE, PDO::ERRMODE_EXCEPTION;
+
+        $sql = &amp;quot;DELETE FROM stock WHERE unidades = ?&amp;quot;;
+        $sentencia = $conexion -&amp;gt; prepare($sql);
+
+        $isOk = $sentencia -&amp;gt; execute([$cantidad]);
+        $cantidadAfectada = $sentencia -&amp;gt; rowCount();
+
+        echo $cantidadAfectada;
+    } catch (PDOException $e) {
+        echo $e -&amp;gt; getMessage();
+    }
+
+    $conexion = null
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;exemple-bind-param&quot; tabindex=&quot;-1&quot;&gt;Exemple bindParam&lt;/h3&gt;
+&lt;p&gt;Molt semblant a utilitzar paràmetres però aquesta vegada la variable està dins de la sentència SQL, en aquest cas l&#39;hem anomenada &lt;code&gt;:cant&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    include &amp;quot;config/database.inc.php&amp;quot;;
+
+    $conexion=null;
+
+    try {
+        $cantidad = $_GET[&amp;quot;cantidad&amp;quot;] ?? 0;
+
+        $conexion = new PDO(DSN, USUARIO, PASSWORD);
+        $conexion -&amp;gt; setAttributeATTR_ERRMODE, PDO::ERRMODE_EXCEPTION;
+
+        $sql = &amp;quot;DELETE FROM stock WHERE unidades = :cant&amp;quot;;
+
+        $sentencia = $conexion -&amp;gt; prepare($sql);
+        $sentencia -&amp;gt; bindParam(&amp;quot;:cant&amp;quot;, $cantidad);
+        
+        $isOk = $sentencia -&amp;gt; execute();
+        
+        $cantidadAfectada = $sentencia -&amp;gt; rowCount();
+        
+        echo $cantidadAfectada;
+    } catch (PDOException $e) {
+        echo $e -&amp;gt; getMessage();
+    }
+
+    $conexion = null;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;bind-param-vs-bind-value&quot; tabindex=&quot;-1&quot;&gt;bindParam VS bindValue&lt;/h3&gt;
+&lt;p&gt;Utilitzarem &lt;code&gt;bindValue()&lt;/code&gt; quan hàgem d&#39;inserir dades només una vegada, en canvi, haurem d&#39;usar &lt;code&gt;bindParam()&lt;/code&gt; quan hàgem de passar dades múltiples, com per exemple, un &lt;em&gt;array&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    // se asignan nombre a los parámetros
+    $sql = &amp;quot;DELETE FROM stock WHERE unidades = :cant&amp;quot;;
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+
+    // bindParam enlaza por referencia
+    $cantidad = 0;
+
+    $sentencia -&amp;gt; bindParam(&amp;quot;:cant&amp;quot;, $cantidad);
+    $cantidad = 1;
+
+    // se eliminan con cant = 1
+    $isOk = $sentencia -&amp;gt; execute();
+
+    // bindValue enlaza por valor
+    $cantidad = 0;
+
+    $sentencia -&amp;gt; bindValue(&amp;quot;:cant&amp;quot;, $cantidad);
+    $cantidad = 1;
+
+    // se eliminan con cant = 0
+    $isOk = $sentencia-&amp;gt;execute();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Per a més informació i ús de les variables &lt;em&gt;PDO&lt;/em&gt; &lt;a href=&quot;https://www.php.net/manual/es/pdo.constants.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;consulta el manual de PHP&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;inserint-registres&quot; tabindex=&quot;-1&quot;&gt;Inserint registres&lt;/h3&gt;
+&lt;p&gt;A l&#39;hora d&#39;inserir registres en una base de dades, hem de tindre en compte que en la taula pot haver-hi valors autoincrementats. Per a salvaguardar açò, el que hem de fer és deixar aqueix camp autoincrementat buit, però a l&#39;hora de fer la connexió, hem de recuperar-ho amb el mètode &lt;code&gt;lastInsertId()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    $nombre = $_GET[&amp;quot;nombre&amp;quot;] ?? &amp;quot;SUCURSAL X&amp;quot;;
+    $telefono = $_GET[&amp;quot;telefono&amp;quot;] ?? &amp;quot;636123456&amp;quot;;
+
+    $sql=&amp;quot;INSERT INTO tienda(nombre, tlf) VALUES (:nombre, :telefono)&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; bindParam(&amp;quot;:nombre&amp;quot;, $nombre);
+    $sentencia -&amp;gt; bindParam(&amp;quot;:telefono&amp;quot;, $telefono);
+
+    $isOk = $sentencia -&amp;gt; execute();
+    $idGenerado = $conexion -&amp;gt; lastInsertId();
+
+    echo $idGenerado;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;consultant-registres&quot; tabindex=&quot;-1&quot;&gt;Consultant registres&lt;/h3&gt;
+&lt;p&gt;A l&#39;hora de recuperar els resultats d&#39;una consulta, bastarà amb invocar al mètode &lt;code&gt;PDOStatement::fetch&lt;/code&gt; per a llistar les files generades per la consulta.&lt;/p&gt;
+&lt;p&gt;Però hem de triar el tipus de dada que volem rebre entre els 3 que hi ha disponibles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;PDO::FETCH_ASSOC:&lt;/code&gt; array indexat que els seus keys són el nom de les columnes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PDO::FETCH_NUM:&lt;/code&gt; array indexat que els seus keys són números.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PDO::FETCH_BOTH:&lt;/code&gt; valor per defecte. Retorna un array indexat que els seus keys són tant el nom de les columnes com números.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-pdo-listado-fetch.png&quot; alt=&quot;imagenes/06/06-pdo-listado-fetch.png&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ consulta con array asociativo.php ▒▒▒▒▒▒▒▒
+
+    include &amp;quot;config/database.inc.php&amp;quot;;
+
+    $conexion = null;
+
+    try{
+        $conexion = new PDO(DSN, USUARIO, PASSWORD);
+        $conexion -&amp;gt; setAttributeATTR_ERRMODE, PDO::ERRMODE_EXCEPTION;
+
+        $sql = &amp;quot;select * from tienda&amp;quot;;
+
+        $sentencia = $conexion -&amp;gt; prepare($sql);
+        $sentencia -&amp;gt; setFetchModeFETCH_ASSOC;
+        $sentencia -&amp;gt; execute();
+        
+        while($fila = $sentencia -&amp;gt; fetch()){
+            echo &amp;quot;Codigo:&amp;quot; . $fila[&amp;quot;cod&amp;quot;] . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+            echo &amp;quot;Nombre:&amp;quot; . $fila[&amp;quot;nombre&amp;quot;] . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+            echo &amp;quot;Teléfono:&amp;quot; . $fila[&amp;quot;tlf&amp;quot;] . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        }
+
+    }catch(PDOException $e) {
+        echo $e -&amp;gt; getMessage();
+    }
+
+    $conexion = null;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Recuperant dades amb una matriu com a resultat de la nostra consulta&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ consulta con array asociativo ▒▒▒▒▒▒▒▒
+
+    $sql=&amp;quot;SELECT * FROM tienda&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; setFetchModeFETCH_ASSOC;
+    $sentencia -&amp;gt; execute();
+
+    $tiendas = $sentencia -&amp;gt; fetchAll();
+
+    foreach($tiendasas$tienda) {
+        echo&amp;quot;Codigo:&amp;quot; . $tienda[&amp;quot;cod&amp;quot;] . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        echo&amp;quot;Nombre:&amp;quot; . $tienda[&amp;quot;nombre&amp;quot;] . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Però si el que volem és llegir dades amb forma d&#39;objecte utilitzant &lt;code&gt;PDO::FETCH_OBJ&lt;/code&gt;, hem de crear un objecte amb propietats públiques amb el mateix nom que les columnes de la taula que anem a consultar.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ consulta con formato de objeto ▒▒▒▒▒▒▒▒
+
+    $sql=&amp;quot;SELECT * FROM tienda&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; setFetchModeFETCH_OBJ;
+    $sentencia -&amp;gt; execute();
+
+    while($t = $sentencia -&amp;gt; fetch()) {
+        echo&amp;quot;Codigo:&amp;quot; . $t -&amp;gt; cod . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        echo&amp;quot;Nombre:&amp;quot; . $t -&amp;gt; nombre . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        echo&amp;quot;Teléfono:&amp;quot; . $t -&amp;gt; tlf . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;consultes-amb-models&quot; tabindex=&quot;-1&quot;&gt;Consultes amb models&lt;/h3&gt;
+&lt;p&gt;Portem temps creant classes en PHP i les consultes també admeten aquest tipus de dades mitjançant l&#39;ús de &lt;code&gt;PDO::FETCH_CLASS&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Si usem aquest mètode, hem de tindre en compte que els noms dels atributs privats han de coincidir amb els noms de les columnes de la taula que anem a manejar.&lt;/p&gt;
+&lt;p&gt;Així doncs, si pel que siga canviem l&#39;estructura de la taula &lt;span class=&quot;alert&quot;&gt;&lt;strong&gt;HEM DE CANVIAR&lt;/strong&gt;&lt;/span&gt; la nostra classe perquè tot continue funcionant.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ clase Tienda ▒▒▒▒▒▒▒▒
+
+    classTienda {
+        private int $cod;
+        private string $nombre;
+        private ? string $tlf;
+        
+        public function getCodigo() : int {
+            return $this -&amp;gt; cod;
+        }
+        
+        public function getNombre() : string {
+            return $this -&amp;gt; nombre;
+        }
+        
+        public function getTelefono() : ?string {
+            return $this -&amp;gt; tlf;
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ Consultando a través de la clase Tienda ▒▒▒▒▒▒▒▒
+
+    $sql = &amp;quot;SELECT * FROM tienda&amp;quot;;
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+
+    // Aquí &#39;Tienda&#39; es el nombre de nuestra clase
+    $sentencia -&amp;gt; setFetchModeFETCH_CLASS, Tienda::class;
+    $sentencia -&amp;gt; execute();
+
+    while($t = $sentencia -&amp;gt; fetch()) {
+        echo &amp;quot;Codigo: &amp;quot; . $t -&amp;gt; getCodigo() . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        echo &amp;quot;Nombre: &amp;quot; . $t -&amp;gt; getNombre() . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        echo &amp;quot;Teléfono: &amp;quot; . $t -&amp;gt; getTelefono() . &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;
+        
+        var_dump($t);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Però què passa si les nostres classes tenen constructor? doncs que hem d&#39;indicar-li, al mètode FECTH, que emplene les propietats després de cridar al constructor i per a això fem ús de &lt;code&gt;PDO::FETCH_PROPS_LATE&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ Consulta para una clase con constructor ▒▒▒▒▒▒▒▒
+
+    $sql = &amp;quot;SELECT * FROM tienda&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; setFetchModeFETCH_CLASS | PDO::FETCH_PROPS_LATE, Tienda::class;
+    $sentencia -&amp;gt; execute();
+
+    $tiendas = $sentencia -&amp;gt; fetchAll();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;consultes-amb-like&quot; tabindex=&quot;-1&quot;&gt;Consultes amb LIKE&lt;/h3&gt;
+&lt;p&gt;Per a utilitzar el comodí &lt;em&gt;LIKE&lt;/em&gt; o altres comodins, hem d&#39;associar-lo a la dada i MAI en la pròpia consulta.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+    //  ▒▒▒▒▒▒▒▒ Utilizando comodines :: LIKE ▒▒▒▒▒▒▒▒
+
+    $sql = &amp;quot;SELECT * FROM tienda where nombre like :nombre or tlf like :tlf&amp;quot;;
+
+    $sentencia = $conexion -&amp;gt; prepare($sql);
+    $sentencia -&amp;gt; setFetchModeFETCH_CLASS | PDO::FETCH_PROPS_LATE, Tienda::class;
+
+    $cadBuscar = &amp;quot;%&amp;quot; . $busqueda . &amp;quot;%&amp;quot;;
+
+    $sentencia -&amp;gt; execute([&amp;quot;nombre&amp;quot; =&amp;gt; $cadBuscar,&amp;quot;tlf&amp;quot; =&amp;gt; $cadBuscar]);
+
+    $result = $sentencia -&amp;gt; fetchAll();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Teniu una llista d&#39;exemples molt completa en la &lt;a href=&quot;https://phpdelusions.net/pdo/objects&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentació oficial&lt;/a&gt;.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/" >
+        </entry>
+        <entry>
+            <title>
+                8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
+                
+            </title>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -571,7 +2729,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/7. Requests, Responses i Validació en Laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -698,7 +2856,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/6. Seeders i Factories en Laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -849,7 +3007,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/5. Laravel Eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -1051,7 +3209,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/4. Laravel Query Builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -1131,7 +3289,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/3. Migracions en Laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -1251,7 +3409,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/2. Configuració inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -1282,7 +3440,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/1. Introducció/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -1295,7 +3453,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/7. Web Scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -1392,7 +3550,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/6. Accès a fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -1489,7 +3647,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/5. QueryBuilder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -1734,7 +3892,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/4. Login &amp; Password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -1797,7 +3955,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/3. PHP Data Objects  PDO/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -2144,7 +4302,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/2. Bases de dades relacionals (SQL)/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -2260,7 +4418,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/1. Introducció a les tecnologies per accedir a dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -2282,7 +4440,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/0. Indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -2339,7 +4497,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -5367,7 +7525,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/Exercicis proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -5543,7 +7701,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/9.  Generació de PDF amb DOMPDF/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -5605,7 +7763,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/8. Logger amb Monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -5812,7 +7970,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/7. Composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -5905,7 +8063,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/6. Gestió d&#39;Errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -6113,7 +8271,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/5. Tecnologies i Mecanismes per a la Separació/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -6189,7 +8347,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -6246,7 +8404,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/3. Espai de noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -6369,7 +8527,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/2. Principis de la POO/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -6835,7 +8993,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/15. Autoavaluació Programació Orientada a Objectes en PHP/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -7064,7 +9222,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/14. Enunciat dels projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -7302,7 +9460,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/13. Exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -8005,7 +10163,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/12. Referències Bibliogràfiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -8120,7 +10278,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/11. Proves amb PHPUNIT/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -8254,7 +10412,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/10. Documentación con phpDocumentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -8362,7 +10520,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/1. Concepte de classes i Objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -8425,7 +10583,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB/Programación en Web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -9880,7 +12038,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -9893,7 +12051,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1.1 Entornos de desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -10086,7 +12244,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1. Arquitecturas WEB/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -11467,7 +13625,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -11623,7 +13781,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -11781,7 +13939,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/TDD-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -11950,7 +14108,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/README/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -12121,7 +14279,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -12509,7 +14667,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -12714,7 +14872,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -12996,7 +15154,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -13817,7 +15975,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -14125,7 +16283,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -14138,7 +16296,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -14425,7 +16583,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/05-BOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -14632,7 +16790,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04.1-MVC/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -14837,7 +16995,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04-DOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -15220,7 +17378,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -15318,7 +17476,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -15558,7 +17716,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -15836,7 +17994,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -16236,7 +18394,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -16416,7 +18574,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -16433,7 +18591,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -16448,7 +18606,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -16545,7 +18703,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Diseño de interfaces WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -16559,7 +18717,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Despliegue de aplicaciones Web/Despliegue de aplicaciones WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -16573,7 +18731,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -16586,7 +18744,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-01-04T22:46:04Z</updated>
+            <updated>2025-01-04T22:46:09Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
