@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-01-04T22:45:04Z</updated>
+    <updated>2025-01-04T22:45:07Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 Sin título
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/templates/sin-titulo/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 Default
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/templates/default/</id>
             <content type="html">
                 
@@ -34,7 +34,7 @@
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -595,7 +595,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -722,7 +722,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -873,7 +873,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -1075,7 +1075,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -1155,7 +1155,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -1275,7 +1275,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -1306,7 +1306,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -1319,7 +1319,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -1416,7 +1416,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -1513,7 +1513,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -1758,7 +1758,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;imagenes/06/06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -1821,7 +1821,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -2168,7 +2168,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -2284,7 +2284,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -2306,7 +2306,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -2363,7 +2363,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -5391,7 +5391,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -5567,7 +5567,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -5629,7 +5629,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -5836,7 +5836,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;imagenes/05/logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -5929,7 +5929,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -6137,7 +6137,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -6213,7 +6213,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -6270,7 +6270,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -6393,7 +6393,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -6859,7 +6859,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -7088,7 +7088,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -7326,7 +7326,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -8029,7 +8029,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -8144,7 +8144,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -8278,7 +8278,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -8386,7 +8386,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -8449,7 +8449,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -9901,1753 +9901,10 @@ function checkAnswer7() {
         </entry>
         <entry>
             <title>
-                Introducción a PHP
-                
-            </title>
-            <updated>2025-01-04T22:44:55Z</updated>
-            <id>https://pedroporo.github.io/notes/notas/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
-            <content type="html">
-                &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notes/notas/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/" >
-        </entry>
-        <entry>
-            <title>
-                1.1 Entornos de desarrollo
-                
-            </title>
-            <updated>2025-01-04T22:44:55Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
-            <content type="html">
-                &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
-&lt;p&gt;Pera fer correr les aplicacions de servidor ens cal, com a mínim, un &lt;strong&gt;servidor web&lt;/strong&gt;, l&#39;interpret de &lt;strong&gt;php&lt;/strong&gt; i un &lt;strong&gt;motor de base de dades&lt;/strong&gt;. Hem de distinguir l&#39;&lt;strong&gt;entorn de desenvolupament&lt;/strong&gt;, on anem a programar i mantindre la nostra aplicació, de l&#39;&lt;strong&gt;entorn de producció&lt;/strong&gt;, on anem a executar-la.&lt;br /&gt;
-Normalment el primer depén de nosaltres mentre que el segon pot dependre de l&#39;empresa on s&#39;allotjarà la nostra web. Per a preparar el nostre entorn de desenvolupament podem optar per:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Qualsevol solució &lt;strong&gt;LAMP&lt;/strong&gt; (Linux, Apache, Mysql, PHP). Als que haurem d&#39;afegir, una vegada els projectes es facen grans &lt;strong&gt;composer, git i les opcions de la part de client&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Una màquina virtual ja configurada.&lt;/li&gt;
-&lt;li&gt;Una solució docker.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La primera solució és senzilla d&#39;implementar però no hauria de ser la nostra primera opció per:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Estem possant en funcionament en la nostra màquina una sèrie de serveis que normalment no fariem, baixant el rendiment de la màquina i obrint vulnerabilitats.&lt;/li&gt;
-&lt;li&gt;Si treballem en grup, les instal·lacions i el funcionament no són iguals, depenen del sistema operatiu que té instal·lat cadascú. Allò que li funciona a ú  pot ser no li funciona a un altre. Això és inevitable quan el projecte es complica i es perd molt de temps.&lt;/li&gt;
-&lt;li&gt;Passa el mateix quan passem a l&#39;entorn de producció.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La segona solució soluciona els dos primers problemes, doncs tots els desenvolupadors poden tindre virtualitzada, la mateixa màquina. Encara que si la màquina no la fem nosaltres sinó que utilitzem alguna ja configurada (&lt;strong&gt;vagrant&lt;/strong&gt;) o si ens cal instal·lar alguna cosa més, ho hauria de fer tot l&#39;equip.&lt;/p&gt;
-&lt;p&gt;Així i tot, tindriem les següents desaventatges:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A l&#39;instal·lar una maquina virtual sencera ocupa recursos del sistema.&lt;/li&gt;
-&lt;li&gt;La màquina instal·la més coses de les necessàries habitualment.&lt;/li&gt;
-&lt;li&gt;No reprodueix l&#39;entorn de producció.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pot ser molt útil, per exemple, quan la fem servir per desenvolupar en un framework, que ja ve configurat per fer-lo funcionar inmediatament i amb totes les característiques instal·lades.&lt;/p&gt;
-&lt;p&gt;La tercera opció té les següents característiques:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Al principi és més difícil de possar en funcionamet ja que calen coneixements de docker.&lt;/li&gt;
-&lt;li&gt;Tots els desenvolupadors comparteixen entorn encara que utilitzen màquines o sistemes operatius diferents.&lt;/li&gt;
-&lt;li&gt;Si hi ha algun canvi de configuració de l&#39;entorn és fácilment transladable a tots els desenvolupadors.&lt;/li&gt;
-&lt;li&gt;Es poden crear tants entorns  de desenvolupament com projectes diferents hi hajen.&lt;/li&gt;
-&lt;li&gt;Els contenidors ocupen pocs recursos.&lt;/li&gt;
-&lt;li&gt;Els projectes es poden possar en producció utilitzan una solució docker de manera inmediata.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;xampp&quot; tabindex=&quot;-1&quot;&gt;XAMPP&lt;/h3&gt;
-&lt;p&gt;XAMPP (&lt;a href=&quot;https://www.apachefriends.org/es/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.apachefriends.org/es/index.html&lt;/a&gt;) és una distribució composta amb el programari necessari per a desenvolupar en entorn servidor. Es compon de les següents eines sobre la base de les seues sigles:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;X per al sistema operatiu (d&#39;aquí ve que es conega altrament com LAMP o WAMP).&lt;/li&gt;
-&lt;li&gt;A per a Apatxe.&lt;/li&gt;
-&lt;li&gt;M per a MySQL / MariaDB. També inclou phpMyAdmin per a l&#39;administració de la base de dades des d&#39;una interfície web.&lt;/li&gt;
-&lt;li&gt;P per a PHP.&lt;/li&gt;
-&lt;li&gt;l&#39;última P per a Perl.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Des de la pròpia pàgina es pot descarregar l&#39;arxiu executable per al sistema operatiu del nostre ordinador. Es recomana llegir la FAQ de cada sistema operatiu amb instruccions per a la seua posada en marxa.&lt;/p&gt;
-&lt;p&gt;!!! note &amp;quot;XAMPP en Windows&amp;quot;&lt;br /&gt;
-Si treballes amb el teu propi ordinador, XAMPP és una solució més senzilla que Docker, sobretot si treballes amb Windows com a sistema operatiu.&lt;/p&gt;
-&lt;h3 id=&quot;docker&quot; tabindex=&quot;-1&quot;&gt;Docker&lt;/h3&gt;
-&lt;p&gt;Docker (&lt;a href=&quot;https://www.docker.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.docker.com&lt;/a&gt;) és un gestor de contenidors, considerant un contenidor com un mètode de virtualització del sistema operatiu.&lt;/p&gt;
-&lt;p&gt;L&#39;ús de contenidors requereix menys recursos que una màquina virtual, per tant, el seu llançament i detenció són més ràpids que les màquines virtuals.&lt;/p&gt;
-&lt;p&gt;Així doncs, &lt;em&gt;Docker&lt;/em&gt; permet crear, provar i implementar aplicacions ràpidament, a partir d&#39;una sèrie de plantilles que es coneixen com a &lt;strong&gt;imatges&lt;/strong&gt; de &lt;em&gt;Docker&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Per a això és necessari tindre instal·lat &lt;strong&gt;Docker Desktop&lt;/strong&gt; (&lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.docker.com/products/docker-desktop&lt;/a&gt;) en els nostres entorns de desenvolupament (el qual ja inclou en &lt;strong&gt;nucli&lt;/strong&gt; de &lt;em&gt;Docker&lt;/em&gt; i l&#39;eina &lt;strong&gt;docker compose&lt;/strong&gt;). Per a instal·lar-ho en Windows, és necessari instal·lar prèviament &lt;strong&gt;WSL 2&lt;/strong&gt;, el qual és un subsistema de &lt;em&gt;Linux&lt;/em&gt; dins de &lt;em&gt;Windows&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Al llarg del curs anirem creant diferents contenidors amb els serveis necessaris, de manera que cada vegada només treballem amb el programari mínim.&lt;/p&gt;
-&lt;p&gt;!!! caution &amp;quot;Versions&amp;quot;&lt;br /&gt;
-Al llarg del curs usarem PHP &lt;code&gt;8.1&lt;/code&gt;. Respecte a &lt;em&gt;Docker&lt;/em&gt;, per a escriure les anotacions hem utilitzat la versio &lt;code&gt;20.10&lt;/code&gt; i la versio &lt;code&gt;2.19&lt;/code&gt; de &lt;strong&gt;docker compose&lt;/strong&gt;. Finalment, la versió de &lt;em&gt;Docker Desktop&lt;/em&gt; que hem utilitzat és la &lt;code&gt;4.0&lt;/code&gt;.&lt;/p&gt;
-&lt;h4 id=&quot;instal-lacio-de-docker&quot; tabindex=&quot;-1&quot;&gt;Instal·lació de docker&lt;/h4&gt;
-&lt;p&gt;La instal·lació de docker dependrà del sistema operatiu que estem utilitzant. Ací anem a vore la que efecturan els que utilitzen linux, amb el sistema operatiu linux-mint o ubuntu , que és el que ve instal·lat en les imatges suministrades. Per a mac o windows s&#39;haurà de mirar la pàgina web de &lt;a href=&quot;https://www.docker.com/get-started&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;docker&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ens donem privilegis&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo su
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Utilitzant els repositoris de docker l&#39;instal·lem:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;echo &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable&amp;quot; | tee /etc/apt/sources.list.d/docker.list
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-
-apt update
-
-apt install docker-ce docker-ce-cli containerd.io pigz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Donem permisos a l&#39;usuari afegint-lo al grup de docker&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;usermod -aG docker $USER
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On $USER és el teu usuari.&lt;/p&gt;
-&lt;p&gt;També haurem d&#39;instal·lar el docker-compose&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;curl -SL &amp;quot;https://github.com/docker/compose/releases/download/v2.10.2/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose
-
-chmod +x /usr/local/bin/docker-compose
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I provem&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker --version
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Faltarà engegar el servei de docker per a poder executar contenidors&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo systemctl start docker.service
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;plantilla-servidor-web-php&quot; tabindex=&quot;-1&quot;&gt;Plantilla Servidor Web + PHP&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Docker&lt;/strong&gt; es basa en l&#39;ús d&#39;imatges per a crear contenidors. &lt;em&gt;Docker Compose&lt;/em&gt; simplifica el treball amb múltiples contenidors, i per això, per a facilitar l&#39;arranc, ens centrarem en &lt;em&gt;Docker Compose&lt;/em&gt; utilitzant una plantilla que únicament contindrà com a serveis Nginx i PHP.&lt;br /&gt;
-Per a facilitar la posada en marxa, us facilite un repositori en &lt;a href=&quot;https://pedroporo.github.io/#GitHub-Classroom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github classroom&lt;/a&gt; &lt;a href=&quot;https://classroom.github.com/a/hrZehkpi&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx/PHP&lt;/a&gt; disponible per a la seua descàrrega. &lt;strong&gt;L&#39;haureu de possar en un directori fàcilment localitzable i amb un nom significatiu, ja que serà el vostre directori de treball&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Dins d&#39;este repositori, el fitxer &lt;strong&gt;&#39;docker-compose.yaml&#39;&lt;/strong&gt; indica quines màquines ha de montar i té el següent aspecte&lt;/p&gt;
-&lt;p&gt;=== &amp;quot;Nginx i PHP&amp;quot;&lt;/p&gt;
-&lt;p&gt;``` yaml&lt;br /&gt;
-# Services&lt;br /&gt;
-services:&lt;/p&gt;
-&lt;p&gt;# Nginx Service&lt;br /&gt;
-nginx:&lt;br /&gt;
-image: nginx:1.19&lt;br /&gt;
-ports:&lt;br /&gt;
-- 80:80&lt;br /&gt;
-volumes:&lt;br /&gt;
-- ./src:/var/www/php&lt;br /&gt;
-- ./.docker/nginx/conf.d:/etc/nginx/conf.d&lt;br /&gt;
-depends_on:&lt;br /&gt;
-- php&lt;/p&gt;
-&lt;p&gt;# PHP Service&lt;br /&gt;
-php:&lt;br /&gt;
-build: ./.docker/php/&lt;br /&gt;
-working_dir: /var/www/php&lt;br /&gt;
-expose:&lt;br /&gt;
-- 9000&lt;br /&gt;
-volumes:&lt;br /&gt;
-- ./src:/var/www/php&lt;br /&gt;
-- ./.docker/php/conf.d/Xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini&lt;br /&gt;
-- ./.docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini&lt;/p&gt;
-&lt;p&gt;# Más info en&lt;br /&gt;
-# &lt;a href=&quot;https://tech.osteel.med/posts/docker-for-local-web-development-part-1-a-basic-lemp-stack&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://tech.osteel.med/posts/docker-for-local-web-development-part-1-a-basic-lemp-stack&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;# Lanzar con&lt;br /&gt;
-# docker-compose up -d&lt;/p&gt;
-&lt;p&gt;# Ver los logs con&lt;br /&gt;
-# docker-compose logs -f&lt;/p&gt;
-&lt;p&gt;```&lt;br /&gt;
-Per arrencar les màquines o podem fer des de la consola amb&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;docker compose up -d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si volem accedir a un terminal interactiu dins del contenidor:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;docker exec -it nombreContenedor bash
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Altres comandos que podem arribar a utilitzar són:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;docker ps&lt;/code&gt;: Veure els contenidors que es estan executant&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker ps -a&lt;/code&gt;: Veure tots els contenidors&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker start nombreContenedor&lt;/code&gt;: Arrancar un contenidor&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker images&lt;/code&gt;: Veure les imatges que tenim descarregades&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Una altra forma més senzilla per a llançar de nou els contenidors i gestionar-los una vegada creats és utilitzar la interfície gràfica que ofereix Docker Desktop:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/01/dockerdesktop.png&quot; alt=&quot;imagenes/01/dockerdesktop.png&quot; /&gt;&lt;br /&gt;
-!!! tip &amp;quot;Docker stack&amp;quot;&lt;br /&gt;
-Existeixen diverses opcions mitjançant Docker que ofereixen solucions completes i empaquetes per a tot el stack de desenvolupament. En posteriors sessions utilitzarem tant &lt;em&gt;Devilbox&lt;/em&gt; (&lt;a href=&quot;http://devilbox.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://devilbox.org&lt;/a&gt;) com &lt;em&gt;Laradock&lt;/em&gt; (&lt;a href=&quot;https://laradock.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://laradock.io&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;!!! question &amp;quot;Però vull saver com funciona...&amp;quot;&lt;br /&gt;
-En el mòdul de Desplegament d&#39;aplicacions estudiareu en profunditat, a més de Docker, Apatxe i altres serveis que ens serviran d&#39;ajuda per al desenvolupament en entorn servidor.&lt;/p&gt;
-&lt;h3 id=&quot;tot-funciona&quot; tabindex=&quot;-1&quot;&gt;Tot funciona&lt;/h3&gt;
-&lt;p&gt;Heu de comprovar que a l&#39;accedir a &lt;code&gt;http://localhost&lt;/code&gt; en el vostre navegador se us obre una pàgina de salutació.&lt;/p&gt;
-&lt;h3 id=&quot;entorn-de-desenvolupament-1&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h3&gt;
-&lt;p&gt;En este curso utilitzarem &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;PHP Storm&lt;/strong&gt;&lt;/a&gt; com a entorn de desenvolupament. Existixen altres alternatives, com &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h4 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h4&gt;
-&lt;p&gt;Podem fer-ho de manera automàtica utilitzant snap. Per fer-ho amb linux-mint&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;sudo rm /etc/apt/preferences.d/nosnap.pref
-sudo apt update
-sudo apt install snapd
-sudo snap install phpstorm --classic
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;També es pot instal·lar baixant-se el paquet de la pàgina web.&lt;/p&gt;
-&lt;h5 id=&quot;llicencia&quot; tabindex=&quot;-1&quot;&gt;Llicència&lt;/h5&gt;
-&lt;p&gt;Podeu sol·licitar una llicència a &lt;a href=&quot;mailto:i.gomismullor@edu.gva.es&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;i.gomismullor@edu.gva.es&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;entorn-de-proves&quot; tabindex=&quot;-1&quot;&gt;Entorn de proves&lt;/h3&gt;
-&lt;p&gt;La màquina docker ve configurada amb &lt;strong&gt;&lt;a href=&quot;https://codeception.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;codeception&lt;/a&gt;&lt;/strong&gt; i una col·leció de proves per als exercicis que desenvoluparem al llarg de les primeres unitats.&lt;br /&gt;
-S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;sh test.sh
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;git-hub-classroom&quot; tabindex=&quot;-1&quot;&gt;GitHub Classroom&lt;/h3&gt;
-&lt;p&gt;Us podeu &lt;a href=&quot;https://classroom.github.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;registrar&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Metodologia de treball amb el github classroom&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Se proporcionarà a l&#39;alumnat un enllaç amb la invitació.&lt;/li&gt;
-&lt;li&gt;Accedint a l&#39;enllaç a cada alumne se li crearà un repositori individual en l&#39;organització.&lt;/li&gt;
-&lt;li&gt;L&#39;alumnat treballa en el seu repositori assignat. Se&#39;l pot baixar per treballar en local.&lt;/li&gt;
-&lt;li&gt;Inicialment, l&#39;alumne crea una branca nova sobre la que va a treballar.&lt;/li&gt;
-&lt;li&gt;Quan vullga sol.licitar ajuda o revisió del professor, l&#39;alumne genera una pull request a la branca principal del seu repositori en la que cita al professor per tal que reba una notificació.&lt;/li&gt;
-&lt;li&gt;El profesor proporciona retroalimentació mitjançant comentaris en la pull request o en un determinat commit individual.&lt;/li&gt;
-&lt;li&gt;Opcionalment es poden utilitzar els issues y les cites d&#39;usuari per sol·licitar la intervenció del profesor.&lt;/li&gt;
-&lt;li&gt;Quan l&#39;alumne finalitza la tasca, genera una últim pull request&lt;/li&gt;
-&lt;li&gt;El profesor revisa la pull request i opcionalment fa comentaris.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;referencies&quot; tabindex=&quot;-1&quot;&gt;Referències&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Curs de introducció a Docker, per &lt;em&gt;Sergi García Barea&lt;/em&gt; : &lt;a href=&quot;https://sergarb1.github.io/CursoIntroduccionADocker/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://sergarb1.github.io/CursoIntroduccionADocker/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Article &lt;a href=&quot;https://www.arquitecturajava.com/arquitecturas-web-y-su-evolucion/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Arquitectures Web i sa evolució&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;videos&quot; tabindex=&quot;-1&quot;&gt;Videos&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://laracasts.com/series/php-for-beginners-2023-edition/episodes/1&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Triar un llenguatge de programació&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://laracasts.com/series/php-for-beginners-2023-edition/episodes/2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Instal.Lació entorn de desenvolupament&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/" >
-        </entry>
-        <entry>
-            <title>
-                1. Arquitecturas WEB
-                
-            </title>
-            <updated>2025-01-04T22:44:55Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
-            <content type="html">
-                &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
-&lt;p&gt;Una arquitectura web defineix l&#39;estructura i el comportament dels components d&#39;una aplicació web, incloent com es comuniquen entre ells i amb els usuaris finals. Aquesta arquitectura pot abastar des de la interfície d&#39;usuari en el client fins als serveis de backend i bases de dades en el servidor.&lt;/p&gt;
-&lt;p&gt;Les arquitectures web són fonamentals en el desenvolupament d&#39;aplicacions web modernes per diverses raons:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Escalabilitat&lt;/strong&gt;: Les arquitectures ben dissenyades permeten que les aplicacions web gestionen un nombre creixent d&#39;usuaris i dades sense sacrificar el rendiment. Per exemple, una arquitectura de microserveis facilita l&#39;escalabilitat horitzontal, ja que cada servei es pot escalar independentment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mantenibilitat&lt;/strong&gt;: Una bona arquitectura facilita el manteniment i l&#39;actualització de les aplicacions. Mitjançant la separació de preocupacions (per exemple, en una arquitectura de tres capes), es poden fer canvis en una part del sistema sense afectar altres parts.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seguretat&lt;/strong&gt;: Les arquitectures web poden incorporar diverses capes de seguretat per protegir les dades i les comunicacions. Això inclou mesures com l&#39;autenticació, l&#39;autorització, la xifratge de dades, i la protecció contra atacs comuns com les injeccions SQL i el cross-site scripting (XSS).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Rendiment&lt;/strong&gt;: L&#39;arquitectura de l&#39;aplicació web afecta directament el seu rendiment. Una arquitectura ben dissenyada optimitza el temps de resposta i la gestió de recursos, millorant l&#39;experiència de l&#39;usuari. L&#39;ús de tècniques com la caché, el balanç de càrrega, i la compressió de contingut són exemples d&#39;estratègies per millorar el rendiment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Flexibilitat i Adaptabilitat&lt;/strong&gt;: Les arquitectures modernes permeten l&#39;ús de diverses tecnologies i eines per a diferents parts del sistema, proporcionant flexibilitat i permetent una adaptació ràpida als canvis tecnològics. Això és especialment rellevant amb l&#39;adopció de pràctiques DevOps i l&#39;ús de contenidors i orquestradors com Docker i Kubernetes.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Col·laboració i Desplegament&lt;/strong&gt;: Un bon disseny arquitectònic facilita la col·laboració entre equips de desenvolupament, ja que clarifica les responsabilitats i els punts d&#39;integració. També permet un desplegament més eficient i automatitzat, reduint els riscos d&#39;errors i millorant el temps de lliurament.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;1-tipus-d-arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;1.Tipus d&#39;Arquitectures Web&lt;/h2&gt;
-&lt;p&gt;A continuació, es descriuen alguns dels principals tipus d&#39;arquitectures web, cadascun amb les seves pròpies característiques, avantatges i desavantatges:&lt;/p&gt;
-&lt;h3 id=&quot;arquitectura-client-servidor&quot; tabindex=&quot;-1&quot;&gt;Arquitectura Client-Servidor&lt;/h3&gt;
-&lt;p&gt;En aquest model, el client (generalment un navegador web) envia sol·licituds al servidor, que processa aquestes sol·licituds i envia les respostes corresponents.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Diagrama:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/01/clienteservidor.png&quot; alt=&quot;clienteservidor.png&quot; /&gt;&lt;br /&gt;
-&lt;strong&gt;Característiques:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El client és responsable de la interfície d&#39;usuari.&lt;/li&gt;
-&lt;li&gt;El servidor maneja la lògica d&#39;aplicació i l&#39;accés a les dades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Separació de responsabilitats.&lt;/li&gt;
-&lt;li&gt;Facilita el manteniment i la seguretat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Desavantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pot tenir problemes de rendiment amb moltes sol·licituds simultànies.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;arquitectura-de-tres-capes&quot; tabindex=&quot;-1&quot;&gt;Arquitectura de Tres Capes&lt;/h3&gt;
-&lt;p&gt;Aquesta arquitectura divideix l&#39;aplicació en tres nivells: la capa de presentació, la capa de lògica d&#39;aplicació, i la capa de dades.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Diagrama:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/01/model3capes.png&quot; alt=&quot;model3capes.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Característiques:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;La capa de presentació gestiona la interfície d&#39;usuari.&lt;/li&gt;
-&lt;li&gt;La capa de lògica d&#39;aplicació processa les dades i executa la lògica de negoci.&lt;/li&gt;
-&lt;li&gt;La capa de dades emmagatzema i recupera la informació.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Facilita l&#39;escalabilitat.&lt;/li&gt;
-&lt;li&gt;Millora la seguretat, ja que les dades no són directament accessibles des del client.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Desavantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pot ser més complexa de desenvolupar i mantenir.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;arquitectura-de-microserveis&quot; tabindex=&quot;-1&quot;&gt;Arquitectura de Microserveis&lt;/h3&gt;
-&lt;p&gt;Els microserveis descomponen una aplicació en una sèrie de serveis petits i independents, cadascun executant una funció específica.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Diagrama:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/01/microserveis.png&quot; alt=&quot;microserveis.png&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Característiques:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cada microservei es pot desplegar, actualitzar, i escalar independentment.&lt;/li&gt;
-&lt;li&gt;Utilitzen protocols lleugers com HTTP/REST o gRPC per comunicar-se.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Millora l&#39;escalabilitat i la flexibilitat.&lt;/li&gt;
-&lt;li&gt;Facilita l&#39;ús de diferents tecnologies per a diferents serveis.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Desavantatges:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pot ser complexa de gestionar i coordinar.&lt;/li&gt;
-&lt;li&gt;Requereix una infraestructura de desplegament i monitorització més robusta.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;recursos-addicionals&quot; tabindex=&quot;-1&quot;&gt;Recursos Addicionals&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Documentació sobre Arquitectures de Software:&lt;/strong&gt; &lt;a href=&quot;https://martinfowler.com/architecture/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Software Architecture Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tutorial de Microserveis:&lt;/strong&gt; &lt;a href=&quot;https://www.tutorialspoint.com/microservice_architecture/index.htm&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Microservices Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;resum&quot; tabindex=&quot;-1&quot;&gt;Resum&lt;/h4&gt;
-&lt;p&gt;Les arquitectures web són fonamentals per al desenvolupament d&#39;aplicacions eficients i escalables. La selecció de l&#39;arquitectura adequada depèn de les necessitats específiques del projecte, incloent-hi consideracions de rendiment, escalabilitat, seguretat i mantenibilitat.&lt;/p&gt;
-&lt;h2 id=&quot;2-pagines-web-estatiques-vs-dinamiques&quot; tabindex=&quot;-1&quot;&gt;2. Pàgines Web Estàtiques vs. Dinàmiques&lt;/h2&gt;
-&lt;h3 id=&quot;pagines-estatiques&quot; tabindex=&quot;-1&quot;&gt;Pàgines estàtiques&lt;/h3&gt;
-&lt;p&gt;Les pàgines web estàtiques són aquelles en què el contingut no canvia en funció de les accions de l&#39;usuari. Estan construïdes amb HTML i CSS, i cada pàgina es carrega de manera independent des del servidor.&lt;/p&gt;
-&lt;h4 id=&quot;avantatges&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Senzillesa:&lt;/strong&gt; Fàcils de crear i mantenir.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Rendiment:&lt;/strong&gt; Temps de càrrega ràpid perquè no requereixen processament addicional.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seguretat:&lt;/strong&gt; Menys vulnerabilitats, ja que no hi ha lògica de servidor ni bases de dades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;desavantatges&quot; tabindex=&quot;-1&quot;&gt;Desavantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Flexibilitat:&lt;/strong&gt; Difícils de modificar a gran escala sense eines automatitzades.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Interactivitat:&lt;/strong&gt; Limitada, ja que no poden respondre a les accions de l&#39;usuari de manera dinàmica.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;exemple-practic&quot; tabindex=&quot;-1&quot;&gt;Exemple Pràctic&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Pàgina Estàtica&amp;lt;/title&amp;gt;
-    &amp;lt;style&amp;gt;
-        body { font-family: Arial, sans-serif; }
-        .content { margin: 20px; }
-    &amp;lt;/style&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
-    &amp;lt;h1&amp;gt;Benvingut!&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;Aquesta és una pàgina web estàtica.&amp;lt;/p&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;pagines-dinamiques&quot; tabindex=&quot;-1&quot;&gt;Pàgines dinàmiques&lt;/h3&gt;
-&lt;p&gt;Les pàgines web dinàmiques són aquelles en què el contingut pot canviar en funció de les accions de l&#39;usuari o altres factors. Utilitzen &lt;strong&gt;llenguatges de guions&lt;/strong&gt; o d&#39;scripting. Els llenguatges de guions sovint s’utilitzen per ampliar les prestacions que ofereix un altre llenguatge, entorn o aplicació. En aquest sentit són molt utilitzats en el desenvolupament d’aplicacions web:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Scripts de navegadors web.&lt;/strong&gt; S’utilitzen per ampliar les capacitats de l’HTML i per inserir accions en pàgines web. Permeten crear efectes especials i aporten interactivitat. Els scripts són interpretats i executats en la màquina client pel navegador web, el qual ha d’incorporar l’intèrpret del llenguatge. Un exemple de llenguatge d’aquest tipus molt utilitzat és JavaScript.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scripts de servidor.&lt;/strong&gt; Són programes que permeten donar funcionalitats a les pàgines web que no es poden resoldre només amb els scripts de navegador. Els scripts de servidor permeten dotar de certa “intel·ligència” els llocs web, la qual cosa fa que generin pàgines diferents segons les circumstàncies. Exemples de llenguatges de servidor són PHP, Python, Node.js, entre altres.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;avantatges-1&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Actualització en Temps Real&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Les pàgines es poden actualitzar automàticament sense necessitat de recarregar tota la pàgina.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cas d&#39;Ús:&lt;/strong&gt; Un portal de notícies que mostra articles nous sense necessitat de recarregar la pàgina.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Personalització del Contingut&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Permet adaptar el contingut a les preferències i el comportament de l&#39;usuari.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cas d&#39;Ús:&lt;/strong&gt; Una botiga en línia que mostra recomanacions de productes basades en l&#39;historial de navegació i compres de l&#39;usuari.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Interactivitat Avançada&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Facilita la creació d&#39;aplicacions web interactives que poden respondre a les accions de l&#39;usuari en temps real.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cas d&#39;Ús:&lt;/strong&gt; Aplicacions de xarxes socials que mostren actualitzacions i notificacions en temps real.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Gestió Eficient de Contingut&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Permet gestionar grans quantitats de contingut de manera més eficient, mostrant només el contingut rellevant en funció de la sol·licitud de l&#39;usuari.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cas d&#39;Ús:&lt;/strong&gt; Un sistema de gestió de continguts (CMS) que permet als administradors editar i publicar articles de manera dinàmica.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;desavantatges-1&quot; tabindex=&quot;-1&quot;&gt;Desavantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Complexitat:&lt;/strong&gt; Més difícils de crear i mantenir, ja que requereixen programació tant al client com al servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Rendiment:&lt;/strong&gt; Poden ser més lentes a causa de la necessitat de processament al servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seguretat:&lt;/strong&gt; Exposades a més vulnerabilitats, com injeccions SQL, si no es prenen les precaucions adequades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;impacte-en-aplicacions-modernes&quot; tabindex=&quot;-1&quot;&gt;Impacte en Aplicacions Modernes&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Millora de l&#39;Experiència d&#39;Usuari&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Les aplicacions modernes utilitzen la generació dinàmica de pàgines per oferir una experiència més fluida i responsiva. Per exemple, aplicacions com Gmail i Google Docs permeten als usuaris interactuar amb el contingut en temps real sense interrupcions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Optimització del Rendiment&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;La generació dinàmica de pàgines permet carregar només el contingut necessari, reduint la càrrega inicial i millorant el rendiment general de l&#39;aplicació. Això és especialment útil en aplicacions complexes amb molta interactivitat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Capacitat de Resposta a les Sol·licituds de l&#39;Usuari&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Aplicacions com Facebook i Twitter utilitzen la generació dinàmica per actualitzar el feed en temps real, oferint als usuaris informació actualitzada immediatament.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;exemple-practic-php&quot; tabindex=&quot;-1&quot;&gt;Exemple Pràctic (PHP)&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Pàgina Dinàmica&amp;lt;/title&amp;gt;
-    &amp;lt;style&amp;gt;
-        body { font-family: Arial, sans-serif; }
-        .content { margin: 20px; }
-    &amp;lt;/style&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
-        &amp;lt;h1&amp;gt;Benvingut!&amp;lt;/h1&amp;gt;
-        &amp;lt;p&amp;gt;Aquesta pàgina ha estat generada a les &amp;lt;?php echo date(&#39;H:i:s&#39;); ?&amp;gt;.&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comparativa-entre-pagines-web-estatiques-i-dinamiques&quot; tabindex=&quot;-1&quot;&gt;Comparativa entre Pàgines Web Estàtiques i Dinàmiques&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Característica&lt;/th&gt;
-&lt;th&gt;Pàgines Web Estàtiques&lt;/th&gt;
-&lt;th&gt;Pàgines Web Dinàmiques&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Contingut&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Fix, no canvia&lt;/td&gt;
-&lt;td&gt;Variable, pot canviar&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Complexitat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Interactivitat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Limitada&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Rendiment&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Alt&lt;/td&gt;
-&lt;td&gt;Pot ser baix&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Seguretat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;td&gt;Depèn de la implementació&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Flexibilitat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;SEO&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Bona&lt;/td&gt;
-&lt;td&gt;Depèn de la implementació&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Temps de Desenvolupament&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Curt&lt;/td&gt;
-&lt;td&gt;Llarg&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Actualització del Contingut&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Manual&lt;/td&gt;
-&lt;td&gt;Automàtica&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Cost de Manteniment&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Baix&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/01/paginadinamica.png&quot; alt=&quot;paginadinamica.png&quot; /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;recursos-addicionals-1&quot; tabindex=&quot;-1&quot;&gt;Recursos Addicionals&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Article sobre els avantatges de les pàgines dinàmiques&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.example.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curs sobre generació dinàmica de pàgines web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de HTML:&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN HTML Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de CSS:&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN CSS Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de PHP:&lt;/strong&gt; &lt;a href=&quot;https://www.php.net/docs.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PHP Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de JavaScript (MDN):&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN JavaScript Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de Node.js:&lt;/strong&gt; &lt;a href=&quot;https://nodejs.org/en/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Node.js Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de React:&lt;/strong&gt; &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;React Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;resum-1&quot; tabindex=&quot;-1&quot;&gt;Resum&lt;/h4&gt;
-&lt;p&gt;Les pàgines web estàtiques són adequades per a llocs web senzills amb contingut fix, mentre que les pàgines web dinàmiques són necessàries per a aplicacions més complexes que requereixen interactivitat i contingut variable. La decisió entre utilitzar una pàgina estàtica o dinàmica dependrà de les necessitats específiques del projecte i dels recursos disponibles. Les SPA ofereixen una experiència d&#39;usuari molt rica però poden tenir desavantatges en termes de SEO i temps de càrrega inicial.&lt;/p&gt;
-&lt;h2 id=&quot;3-models-d-execucio&quot; tabindex=&quot;-1&quot;&gt;3. Models d&#39;Execució&lt;/h2&gt;
-&lt;p&gt;Els models d&#39;execució de codi en el desenvolupament web es poden dividir principalment en dos tipus: execució al client i execució al servidor. Cada model té les seves pròpies característiques, avantatges i desavantatges que cal considerar a l&#39;hora de dissenyar una aplicació web.&lt;/p&gt;
-&lt;h3 id=&quot;execucio-de-codi-al-client-front-end&quot; tabindex=&quot;-1&quot;&gt;Execució de Codi al Client (FrontEnd)&lt;/h3&gt;
-&lt;p&gt;L&#39;execució de codi al client es realitza al navegador web de l&#39;usuari. Els llenguatges utilitzats principalment per a l&#39;execució al client són HTML, CSS i JavaScript.&lt;/p&gt;
-&lt;h4 id=&quot;avantatges-2&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Interactivitat:&lt;/strong&gt; Permet la creació d&#39;experiències d&#39;usuari riques i interactives.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reducció de la càrrega del servidor:&lt;/strong&gt; El processament es fa al dispositiu de l&#39;usuari, disminuint la càrrega del servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Actualització instantània:&lt;/strong&gt; Canvis en l&#39;UI poden ser reflectits immediatament sense necessitat de recarregar la pàgina.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;desavantatges-2&quot; tabindex=&quot;-1&quot;&gt;Desavantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Seguretat:&lt;/strong&gt; El codi del client és visible i modificable pels usuaris, la qual cosa pot representar un risc de seguretat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Compatibilitat:&lt;/strong&gt; Pot haver-hi diferències en la manera com diferents navegadors interpreten el codi.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Exemple de codi&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Exemple Client&amp;lt;/title&amp;gt;
-    &amp;lt;style&amp;gt;
-        body { font-family: Arial, sans-serif; }
-        .content { margin: 20px; }
-    &amp;lt;/style&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div class=&amp;quot;content&amp;quot;&amp;gt;
-        &amp;lt;h1&amp;gt;Hola, món!&amp;lt;/h1&amp;gt;
-        &amp;lt;button onclick=&amp;quot;mostrarMissatge()&amp;quot;&amp;gt;Fes clic aquí&amp;lt;/button&amp;gt;
-        &amp;lt;p id=&amp;quot;missatge&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;script&amp;gt;
-        function mostrarMissatge() {
-            document.getElementById(&#39;missatge&#39;).innerText = &#39;Has fet clic al botó!&#39;;
-        }
-    &amp;lt;/script&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;execucio-de-codi-al-servidor-back-end&quot; tabindex=&quot;-1&quot;&gt;Execució de Codi al Servidor (BackEnd)&lt;/h3&gt;
-&lt;p&gt;L&#39;execució de codi al servidor es realitza al servidor web abans que els resultats es retornin al navegador del client. Els llenguatges habituals inclouen PHP, Python, Ruby, Node.js, entre altres.&lt;/p&gt;
-&lt;h4 id=&quot;avantatges-3&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Seguretat:&lt;/strong&gt; El codi del servidor no és accessible pels usuaris finals, la qual cosa augmenta la seguretat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Potència:&lt;/strong&gt; Els servidors solen ser més potents que els dispositius dels usuaris, permetent processar operacions més complexes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;desavantatges-3&quot; tabindex=&quot;-1&quot;&gt;Desavantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Latència:&lt;/strong&gt; Les sol·licituds al servidor poden ser lentes a causa de la distància física i la càrrega del servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Escalabilitat:&lt;/strong&gt; Pot ser necessari més esforç per escalar una aplicació a mesura que augmenta el nombre d&#39;usuaris.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Exemple de codi&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-node.js&quot;&gt;// server.js
-const http = require(&#39;http&#39;);
-
-const hostname = &#39;127.0.0.1&#39;;
-const port = 3000;
-
-const server = http.createServer((req, res) =&amp;gt; {
-res.statusCode = 200;
-res.setHeader(&#39;Content-Type&#39;, &#39;text/plain&#39;);
-res.end(&#39;Hola, món!&#92;n&#39;);
-});
-
-server.listen(port, hostname, () =&amp;gt; {
-console.log(`El servidor s&#39;està executant a http://${hostname}:${port}/`);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;single-page-application-spa&quot; tabindex=&quot;-1&quot;&gt;Single Page Application (SPA)&lt;/h3&gt;
-&lt;p&gt;Una Single Page Application (SPA) és un tipus d&#39;aplicació web que carrega una única pàgina HTML i dinàmicament actualitza el contingut a mesura que l&#39;usuari interactua amb l&#39;aplicació, utilitzant JavaScript per a gestionar la lògica i les actualitzacions de la interfície d&#39;usuari.&lt;/p&gt;
-&lt;h4 id=&quot;avantatges-4&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Experiència d&#39;usuari millorada:&lt;/strong&gt; Les SPA ofereixen una navegació més ràpida i fluida, similar a una aplicació d&#39;escriptori.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Menys càrrega del servidor:&lt;/strong&gt; Menys sol·licituds al servidor ja que només es carrega una pàgina inicialment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Desenvolupament modular:&lt;/strong&gt; Facilita la creació de components reutilitzables.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;desavantatges-4&quot; tabindex=&quot;-1&quot;&gt;Desavantatges&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SEO:&lt;/strong&gt; Les SPA poden ser menys amigables amb els motors de cerca.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Carregada inicial:&lt;/strong&gt; Pot requerir una major càrrega inicial de recursos, afectant el temps de càrrega inicial.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gestió de l&#39;estat complexa:&lt;/strong&gt; Pot ser més complicat gestionar l&#39;estat de l&#39;aplicació.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Exemple Pràctic (React)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-jsx&quot;&gt;// index.html
-&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
-    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;Exemple SPA&amp;lt;/title&amp;gt;
-    &amp;lt;script defer src=&amp;quot;bundle.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-    &amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-// index.js
-import React, { useState } from &#39;react&#39;;
-import ReactDOM from &#39;react-dom&#39;;
-
-function App() {
-    const [message, setMessage] = useState(&#39;&#39;);
-
-    const handleClick = () =&amp;gt; {
-        setMessage(&#39;Has fet clic al botó!&#39;);
-    };
-
-    return (
-        &amp;lt;div&amp;gt;
-            &amp;lt;h1&amp;gt;Hola, món!&amp;lt;/h1&amp;gt;
-            &amp;lt;button onClick={handleClick}&amp;gt;Fes clic aquí&amp;lt;/button&amp;gt;
-            &amp;lt;p&amp;gt;{message}&amp;lt;/p&amp;gt;
-        &amp;lt;/div&amp;gt;
-    );
-}
-
-ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&#39;root&#39;));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comparativa-entre-execucio-de-codi-al-client-al-servidor-i-el-spa&quot; tabindex=&quot;-1&quot;&gt;Comparativa entre Execució de Codi al Client,al Servidor i el SPA&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Característica&lt;/th&gt;
-&lt;th&gt;Client-Side&lt;/th&gt;
-&lt;th&gt;Server-Side&lt;/th&gt;
-&lt;th&gt;Single Page Application (SPA)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Execució&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Navegador del client&lt;/td&gt;
-&lt;td&gt;Servidor&lt;/td&gt;
-&lt;td&gt;Navegador del client&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Llenguatges&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;JavaScript, HTML, CSS&lt;/td&gt;
-&lt;td&gt;PHP, Node.js, Python, Java&lt;/td&gt;
-&lt;td&gt;JavaScript, HTML, CSS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Temps de Resposta&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Immediata (després de la càrrega)&lt;/td&gt;
-&lt;td&gt;Depèn de la comunicació amb el servidor&lt;/td&gt;
-&lt;td&gt;Baixa (després de la càrrega inicial)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Seguretat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Més exposat a vulnerabilitats&lt;/td&gt;
-&lt;td&gt;Més controlat&lt;/td&gt;
-&lt;td&gt;Mitjana&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Recursos&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Limitats pels recursos del client&lt;/td&gt;
-&lt;td&gt;Recursos del servidor&lt;/td&gt;
-&lt;td&gt;Limitats pels recursos del client&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Accés a Dades&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No pot accedir directament a bases de dades&lt;/td&gt;
-&lt;td&gt;Accés directe a bases de dades&lt;/td&gt;
-&lt;td&gt;Generalment via API&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Interactivitat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Elevada, pot respondre ràpidament a les accions de l&#39;usuari&lt;/td&gt;
-&lt;td&gt;Més difícil d&#39;aconseguir sense Ajax o websockets&lt;/td&gt;
-&lt;td&gt;Molt Alta&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Processament&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Menys capacitat de procés&lt;/td&gt;
-&lt;td&gt;Alta capacitat de procés&lt;/td&gt;
-&lt;td&gt;Processament distribuit&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Carrega del servidor&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Latència&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;td&gt;Pot ser alta&lt;/td&gt;
-&lt;td&gt;Baixa (després de la càrrega inicial)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Accés a recursos locals&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Limitat al navegador&lt;/td&gt;
-&lt;td&gt;Complet accés al sistema del servidor&lt;/td&gt;
-&lt;td&gt;Limitat al navegador&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;SEO&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Mitjana&lt;/td&gt;
-&lt;td&gt;Alta&lt;/td&gt;
-&lt;td&gt;Baixa&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Temps de càrrega inicial&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Ràpid&lt;/td&gt;
-&lt;td&gt;Depèn de la complexitat&lt;/td&gt;
-&lt;td&gt;Pot ser lent&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;comparativa-entre-desenvolupadors&quot; tabindex=&quot;-1&quot;&gt;Comparativa entre desenvolupadors&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Perfil&lt;/th&gt;
-&lt;th&gt;Ferramenta&lt;/th&gt;
-&lt;th&gt;Tecnologia&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Front-end&lt;/em&gt; / client&lt;/td&gt;
-&lt;td&gt;Navegador Web&lt;/td&gt;
-&lt;td&gt;HTML + CSS + JavaScript&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Back-end&lt;/em&gt; / servidor&lt;/td&gt;
-&lt;td&gt;Servidor Web + BBDD&lt;/td&gt;
-&lt;td&gt;PHP, Python, Ruby, Java / JSP, .Net / .asp&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;!!! tip &amp;quot;Perfil &lt;em&gt;Full-stack&lt;/em&gt;&amp;quot;&lt;br /&gt;
-En les ofertes de treball quan fan referència a un &lt;strong&gt;Full-stack developer&lt;/strong&gt;, estan buscant un perfil que domina tant el &lt;strong&gt;front-end&lt;/strong&gt; com el &lt;strong&gt;back-end&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4 id=&quot;recursos-addicionals-2&quot; tabindex=&quot;-1&quot;&gt;Recursos addicionals&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de JavaScript (MDN):&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN JavaScript Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Guia de Node.js:&lt;/strong&gt; &lt;a href=&quot;https://nodejs.org/en/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Node.js Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació de React:&lt;/strong&gt; &lt;a href=&quot;https://reactjs.org/docs/getting-started.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;React Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;resum-2&quot; tabindex=&quot;-1&quot;&gt;Resum&lt;/h4&gt;
-&lt;p&gt;La decisió sobre si utilitzar l&#39;execució de codi al client, al servidor o una SPA depèn de les necessitats específiques de l&#39;aplicació i els recursos disponibles. Comprendre les diferències clau i els avantatges de cada model ajudarà a prendre decisions informades i a desenvolupar aplicacions web eficients i segures.&lt;/p&gt;
-&lt;h2 id=&quot;4-servidors-web&quot; tabindex=&quot;-1&quot;&gt;4. Servidors Web&lt;/h2&gt;
-&lt;p&gt;Un servidor web és un programa que serveix contingut web estàtic com HTML, CSS, JavaScript, imatges i altres fitxers als clients a través del protocol HTTP o HTTPS. El servidor web gestiona les sol·licituds entrants dels clients (navegadors web) i retorna les respostes adequades.&lt;/p&gt;
-&lt;h3 id=&quot;funcionalitats-dels-servidors-web&quot; tabindex=&quot;-1&quot;&gt;Funcionalitats dels Servidors Web&lt;/h3&gt;
-&lt;h4 id=&quot;servei-de-contingut-estatic&quot; tabindex=&quot;-1&quot;&gt;Servei de Contingut Estàtic&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Proporciona fitxers estàtics com HTML, CSS, JavaScript, imatges i altres recursos directament als clients.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Quan un usuari sol·licita una pàgina HTML, el servidor web envia el fitxer HTML corresponent al navegador de l&#39;usuari.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;gestio-de-peticions-http&quot; tabindex=&quot;-1&quot;&gt;Gestió de Peticions HTTP&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Maneja sol·licituds HTTP de clients, com GET, POST, PUT, DELETE, i retorna les respostes adequades amb els codis d&#39;estat corresponents.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Un servidor web processa una sol·licitud GET per una pàgina web i retorna el contingut de la pàgina amb un codi d&#39;estat 200 (OK).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;redireccio-i-reescriptura-d-ur-ls&quot; tabindex=&quot;-1&quot;&gt;Redirecció i Reescriptura d&#39;URLs&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Permet la redirecció de peticions a diferents URLs i la reescriptura d&#39;URLs per millorar l&#39;accessibilitat i la SEO.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Reescriptura d&#39;URLs amigables per als usuaris, com convertir &lt;code&gt;example.com/page?id=123&lt;/code&gt; a &lt;code&gt;example.com/page/123&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;suport-per-a-https&quot; tabindex=&quot;-1&quot;&gt;Suport per a HTTPS&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Proporciona connexions segures utilitzant el protocol HTTPS, que xifra les dades entre el client i el servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Un servidor web configurat amb un certificat SSL/TLS que permet connexions segures a través de HTTPS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;exemples-de-servidors-web&quot; tabindex=&quot;-1&quot;&gt;Exemples de Servidors Web&lt;/h3&gt;
-&lt;h4 id=&quot;apache-http-server&quot; tabindex=&quot;-1&quot;&gt;Apache HTTP Server&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor web de codi obert molt utilitzat, conegut per la seva flexibilitat i extensibilitat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Suport per a mòduls que afegeixen funcionalitats com l&#39;autenticació, la reescriptura d&#39;URLs i la compressió de contingut.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;nginx&quot; tabindex=&quot;-1&quot;&gt;Nginx&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor web i servidor intermediari de codi obert, dissenyat per gestionar moltes connexions simultànies amb un ús eficient dels recursos.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Actua com a servidor proxy invers, equilibrador de càrrega i servidor de fitxers estàtics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;microsoft-internet-information-services-iis&quot; tabindex=&quot;-1&quot;&gt;Microsoft Internet Information Services (IIS)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor web i d&#39;aplicacions de Microsoft per a plataformes Windows.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Suport per a aplicacions &lt;a href=&quot;http://asp.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ASP.NET&lt;/a&gt;, autenticació integrada i eines de gestió robustes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;mecanismes-d-execucio-de-codi-en-servidors-web&quot; tabindex=&quot;-1&quot;&gt;Mecanismes d&#39;Execució de Codi en Servidors Web&lt;/h3&gt;
-&lt;h4 id=&quot;llenguatges-interpretats-php-python&quot; tabindex=&quot;-1&quot;&gt;Llenguatges interpretats: PHP, Python&lt;/h4&gt;
-&lt;p&gt;El codi es processa línia per línia en temps real, permetent una major flexibilitat durant el desenvolupament, ja que els canvis poden ser implementats i testats immediatament sense necessitat de recompilar tot el projecte.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    &amp;lt;html&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;h1&amp;gt;&amp;lt;?php echo &amp;quot;Hola, món!&amp;quot;; ?&amp;gt;&amp;lt;/h1&amp;gt;
-    &amp;lt;/body&amp;gt;
-    &amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;llenguatges-compilats-java&quot; tabindex=&quot;-1&quot;&gt;Llenguatges compilats: Java&lt;/h4&gt;
-&lt;p&gt;El codi es compila abans de ser executat, el que significa que és transformat en un format executable per la màquina abans de la seva execució. Això sol millorar el rendiment, ja que el codi compilat s&#39;executa més ràpidament que el codi interpretat.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;  // Exemple simplificat d&#39;un servlet Java
-  import java.io.*;
-  import javax.servlet.*;
-  import javax.servlet.http.*;
-  
-  public class HelloWorldServlet extends HttpServlet {
-  public void doGet(HttpServletRequest request, HttpServletResponse response)
-  throws ServletException, IOException {
-      response.setContentType(&amp;quot;text/html&amp;quot;);
-      PrintWriter out = response.getWriter();
-      out.println(&amp;quot;&amp;lt;h1&amp;gt;Hola, món!&amp;lt;/h1&amp;gt;&amp;quot;);
-      }
-  }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;intermediari-node-js&quot; tabindex=&quot;-1&quot;&gt;Intermediari: Node.js&lt;/h4&gt;
-&lt;p&gt;Permet la programació asíncrona i escalable amb JavaScript, oferint la capacitat de gestionar moltes connexions simultànies de manera eficient. Això és especialment útil per a aplicacions que necessiten alta concurrència, com aplicacions en temps real.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    const express = require(&#39;express&#39;);
-    const app = express();
-    
-    app.get(&#39;/&#39;, (req, res) =&amp;gt; {
-    res.send(&#39;Hola, món!&#39;);
-    });
-    
-    app.listen(3000, () =&amp;gt; {
-    console.log(&#39;Servidor escoltant a http://localhost:3000&#39;);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;llenguatges-i-tecnologies-de-programacio-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Llenguatges i Tecnologies de Programació Web en Entorn Servidor&lt;/h3&gt;
-&lt;p&gt;Els mecanismes d&#39;execució de codi en els servidors web permeten que les aplicacions generin contingut dinàmic, gestionin dades i interaccions d&#39;usuaris de manera eficient. A continuació es descriuen diversos llenguatges i com funcionen en el context del servidor.&lt;/p&gt;
-&lt;h4 id=&quot;php&quot; tabindex=&quot;-1&quot;&gt;PHP&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; PHP és un llenguatge interpretat popularment utilitzat per a la creació de pàgines web dinàmiques.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; El codi PHP s&#39;incrusta dins dels fitxers HTML i es processa en temps real pel servidor web abans de ser enviat al client.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;node-js&quot; tabindex=&quot;-1&quot;&gt;Node.js&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Node.js permet la programació asíncrona i escalable amb JavaScript.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; Utilitza un model basat en esdeveniments que permet la gestió de moltes connexions simultànies sense bloquejar-se.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;java-jsp-servlets&quot; tabindex=&quot;-1&quot;&gt;Java (JSP/Servlets)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Java s&#39;utilitza per a aplicacions empresarials amb alta complexitat i escalabilitat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; El codi Java es compila abans d&#39;executar-se, millorant el rendiment. Els servlets i JSP gestionen les sol·licituds HTTP i generen contingut dinàmic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;python-django-flask&quot; tabindex=&quot;-1&quot;&gt;Python (Django/Flask)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Python és conegut per la seva sintaxi clara i les seves biblioteques extensives. Django i Flask són frameworks populars.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; Django utilitza un ORM per interactuar amb bases de dades, mentre que Flask és més lleuger i flexible.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from flask import Flask
-
-app = Flask(__name__)
-
-@app.route(&#39;/&#39;)
-def hello_world():
-return &#39;Hola, món!&#39;
-
-if __name__ == &#39;__main__&#39;:
-app.run()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;ruby-ruby-on-rails&quot; tabindex=&quot;-1&quot;&gt;Ruby (Ruby on Rails)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Ruby és apreciat per la seva elegància i facilitat d&#39;ús. Ruby on Rails és un framework popular.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; Ruby on Rails segueix el patró MVC, facilitant el desenvolupament d&#39;aplicacions web estructurades.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;class WelcomeController &amp;lt; ApplicationController
-def index
-render plain: &amp;quot;Hola, món!&amp;quot;
-end
-end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;go&quot; tabindex=&quot;-1&quot;&gt;Go&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Go és un llenguatge de programació desenvolupat per Google, conegut per la seva eficiència i concurrència.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mecanisme:&lt;/strong&gt; Go permet la creació de servidors web ràpids i escalables, utilitzant goroutines per gestionar múltiples connexions de manera eficient.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-go&quot;&gt;package main
-
-import (
-&amp;quot;fmt&amp;quot;
-&amp;quot;net/http&amp;quot;
-)
-
-func helloHandler(w http.ResponseWriter, r *http.Request) {
-fmt.Fprintf(w, &amp;quot;Hola, món!&amp;quot;)
-}
-
-func main() {
-http.HandleFunc(&amp;quot;/&amp;quot;, helloHandler)
-http.ListenAndServe(&amp;quot;:8080&amp;quot;, nil)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comparativa-entre-llenguatges&quot; tabindex=&quot;-1&quot;&gt;Comparativa entre llenguatges&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Llenguatge&lt;/th&gt;
-&lt;th&gt;Avantatges&lt;/th&gt;
-&lt;th&gt;Desavantatges&lt;/th&gt;
-&lt;th&gt;Usos Comuns&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Amplament utilitzat, gran comunitat, fàcil d&#39;aprendre&lt;/td&gt;
-&lt;td&gt;Seguretat (cal bones pràctiques), rendiment inferior a altres llenguatges&lt;/td&gt;
-&lt;td&gt;Aplicacions web, CMS com WordPress&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Senzillesa i llegibilitat, gran quantitat de biblioteques, potent per a prototips&lt;/td&gt;
-&lt;td&gt;Rendiment inferior en algunes àrees, gestió de concurrència&lt;/td&gt;
-&lt;td&gt;Aplicacions web (Django, Flask), anàlisi de dades&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Node.js&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Alta velocitat, no bloqueig (event-driven), gran ecosistema (NPM)&lt;/td&gt;
-&lt;td&gt;Pot ser complicat per a grans aplicacions, gestió de callbacks&lt;/td&gt;
-&lt;td&gt;Aplicacions en temps real, serveis web&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Java&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Rendiment elevat, robustesa, seguretat, escalabilitat&lt;/td&gt;
-&lt;td&gt;Verborrea, aprenentatge més complex&lt;/td&gt;
-&lt;td&gt;Aplicacions empresarials, sistemes grans, Android&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id=&quot;recursos-addicionals-3&quot; tabindex=&quot;-1&quot;&gt;Recursos Addicionals:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Server-side/Introduction&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Client-side vs Server-side&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://httpd.apache.org/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Apache HTTP Server Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://nginx.org/en/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx Official Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/iis/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Microsoft IIS Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/php/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;W3Schools: PHP Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Node.js Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.djangoproject.com/en/stable/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Django Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://flask.palletsprojects.com/en/2.0.x/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Flask Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://guides.rubyonrails.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ruby on Rails Guides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://golang.org/doc/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Go Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.codementor.io/@iliawebdev/top-programming-languages-for-web-development-in-2021-1hzczfuoei&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Comparació de llenguatges&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Criteris per apendre un llenguatge de programació&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;resum-3&quot; tabindex=&quot;-1&quot;&gt;Resum&lt;/h4&gt;
-&lt;p&gt;Un servidor web serveix contingut estàtic com HTML, CSS, JavaScript i imatges als clients a través de HTTP o HTTPS. Gestiona sol·licituds entrants i retorna respostes adequades. Exemples de servidors web inclouen Apache, Nginx i Microsoft IIS, cadascun amb funcionalitats úniques com la redirecció d&#39;URLs, suport per a HTTPS i gestió de peticions HTTP. A més, utilitzen llenguatges interpretats (PHP, Python), compilats (Java) i intermediaris (Node.js) per executar codi.&lt;/p&gt;
-&lt;h2 id=&quot;5-servidors-d-aplicacions&quot; tabindex=&quot;-1&quot;&gt;5. Servidors d&#39;Aplicacions&lt;/h2&gt;
-&lt;p&gt;Un servidor d&#39;aplicacions és un tipus de servidor dissenyat per executar aplicacions web dinàmiques i gestionar la lògica de negoci d&#39;una aplicació. Aquest servidor actua com una capa intermèdia entre el client (navegador web) i les bases de dades o altres serveis de backend, proporcionant un entorn d&#39;execució per a aplicacions web.&lt;/p&gt;
-&lt;h3 id=&quot;principals-funcionalitats-dels-servidors-d-aplicacions&quot; tabindex=&quot;-1&quot;&gt;Principals Funcionalitats dels Servidors d&#39;Aplicacions&lt;/h3&gt;
-&lt;h4 id=&quot;gestio-de-sessions&quot; tabindex=&quot;-1&quot;&gt;Gestió de Sessions&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Manteniment de l&#39;estat de l&#39;usuari durant la seva interacció amb l&#39;aplicació.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Sessions PHP que emmagatzemen informació de l&#39;usuari.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;concurrencia&quot; tabindex=&quot;-1&quot;&gt;Concurrència&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Capacitat per gestionar múltiples peticions simultànies de manera eficient.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Node.js gestiona peticions de manera asíncrona.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;seguretat&quot; tabindex=&quot;-1&quot;&gt;Seguretat&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Autenticació i autorització dels usuaris per accedir a diferents parts de l&#39;aplicació.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exemple:&lt;/strong&gt; Utilització de JWT (JSON Web Tokens) per autenticar usuaris en una aplicació Node.js.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;relacio-entre-servidors-web-i-servidors-d-aplicacions&quot; tabindex=&quot;-1&quot;&gt;Relació entre Servidors Web i Servidors d&#39;Aplicacions&lt;/h3&gt;
-&lt;h4 id=&quot;integracio-i-col-laboracio&quot; tabindex=&quot;-1&quot;&gt;Integració i Col·laboració&lt;/h4&gt;
-&lt;p&gt;Els servidors web treballen conjuntament amb els servidors d&#39;aplicacions per gestionar les sol·licituds de manera eficient. Mentre que el servidor web maneja les sol·licituds HTTP i serveix contingut estàtic, el servidor d&#39;aplicacions processa la lògica de negoci i genera contingut dinàmic.&lt;/p&gt;
-&lt;h4 id=&quot;exemple-de-configuracio&quot; tabindex=&quot;-1&quot;&gt;Exemple de Configuració&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Servidor Web (Nginx):&lt;/strong&gt; Actua com a proxy invers, encaminant les sol·licituds dinàmiques al servidor d&#39;aplicacions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Servidor d&#39;Aplicacions (Node.js):&lt;/strong&gt; Gestiona les sol·licituds dinàmiques, executa la lògica de negoci i retorna les respostes al servidor web.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Configuració de Nginx com a Proxy Invers&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-nginx&quot;&gt;server {
-   listen 80;
-   server_name example.com;
-
-   location / {
-       proxy_pass http://localhost:3000;
-       proxy_set_header Host $host;
-       proxy_set_header X-Real-IP $remote_addr;
-       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-       proxy_set_header X-Forwarded-Proto $scheme;
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Configuració servidor d&#39;aplicacions Node.js&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;
-const express = require(&#39;express&#39;);
-const app = express();
-
-app.get(&#39;/&#39;, (req, res) =&amp;gt; {
-    res.send(&#39;Hola, món!&#39;);
-});
-
-app.listen(3000, () =&amp;gt; {
-    console.log(&#39;Servidor escoltant a http://localhost:3000&#39;);
-});  
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Aquesta col·laboració permet una gestió eficient de les sol·licituds i una millor distribució de la càrrega, millorant el rendiment i l&#39;escalabilitat de les aplicacions web.&lt;/p&gt;
-&lt;h3 id=&quot;exemples-de-servidors-d-aplicacions&quot; tabindex=&quot;-1&quot;&gt;Exemples de Servidors d&#39;Aplicacions&lt;/h3&gt;
-&lt;h4 id=&quot;apache-tomcat&quot; tabindex=&quot;-1&quot;&gt;Apache Tomcat&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor d&#39;aplicacions de codi obert per a aplicacions web Java.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Suporta servlets Java i JavaServer Pages (JSP), facilitant l&#39;execució d&#39;aplicacions Java.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;microsoft-internet-information-services-iis-1&quot; tabindex=&quot;-1&quot;&gt;Microsoft Internet Information Services (IIS)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor web i d&#39;aplicacions de Microsoft per a plataformes Windows.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Suporta aplicacions &lt;a href=&quot;http://asp.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ASP.NET&lt;/a&gt;, autenticació integrada, i eines de gestió robustes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;j-boss-eap-enterprise-application-platform&quot; tabindex=&quot;-1&quot;&gt;JBoss EAP (Enterprise Application Platform)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Un servidor d&#39;aplicacions Java EE de codi obert desenvolupat per Red Hat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Proporciona un entorn robust per a la implementació d&#39;aplicacions empresarials amb suport per a diversos frameworks Java.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;node-js-1&quot; tabindex=&quot;-1&quot;&gt;Node.js&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Una plataforma per a l&#39;execució de codi JavaScript en el servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalitats:&lt;/strong&gt; Permet la programació asíncrona, ideal per a aplicacions en temps real i escalables com xats i jocs multijugador.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;!!! info&lt;br /&gt;
-Tant els servidors web com els servidors d&#39;aplicacions s&#39;estudien en el mòdul de &amp;quot;Desplegament d&#39;Aplicacions Web&amp;quot;.&lt;/p&gt;
-&lt;h4 id=&quot;recursos-addicionals-4&quot; tabindex=&quot;-1&quot;&gt;Recursos addicionals&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.redhat.com/en/topics/middleware/what-is-an-application-server&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;What is an Application Server?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://tomcat.apache.org/tomcat-9.0-doc/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Apache Tomcat Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JBoss Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://javaee.github.io/glassfish/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GlassFish Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://spring.io/projects/spring-framework&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Spring Framework Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;resum-4&quot; tabindex=&quot;-1&quot;&gt;Resum&lt;/h4&gt;
-&lt;p&gt;Els servidors d&#39;aplicacions executen aplicacions dinàmiques i proporcionen serveis empresarials. Es diferencien dels servidors web en què no només serveixen contingut estàtic, sinó que també processen lògica d&#39;aplicació i interaccions de base de dades. Exemples inclouen Apache Tomcat, JBoss i GlassFish, utilitzats per a aplicacions Java. També donen suport a tecnologies com servlets, JSP, EJB i frameworks com Spring, facilitant la construcció d&#39;aplicacions robustes i escalables.&lt;/p&gt;
-&lt;h2 id=&quot;6-frameworks-de-programacio-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;6.Frameworks de Programació en Entorn Servidor&lt;/h2&gt;
-&lt;p&gt;Un framework és una plataforma de desenvolupament que proporciona una estructura estandarditzada per a la creació d&#39;aplicacions web. Facilita i accelera el procés de desenvolupament oferint biblioteques de codi preescrit, components reutilitzables i un conjunt de bones pràctiques. Els frameworks ajuden els desenvolupadors a centrar-se en la funcionalitat de l&#39;aplicació en lloc de preocupar-se pels aspectes bàsics i repetitius de la programació.&lt;/p&gt;
-&lt;h3 id=&quot;principals-frameworks-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Principals Frameworks en Entorn Servidor&lt;/h3&gt;
-&lt;h4 id=&quot;express-js&quot; tabindex=&quot;-1&quot;&gt;Express.js&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Express.js és un framework web minimalista per a Node.js. Proporciona eines senzilles i flexibles per a la creació d&#39;aplicacions web i API.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Característiques:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Middleware per a gestionar peticions HTTP.&lt;/li&gt;
-&lt;li&gt;Sistema d&#39;enrutament senzill i modular.&lt;/li&gt;
-&lt;li&gt;Suport per a motors de plantilles com Pug i EJS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Lleuger i flexible.&lt;/li&gt;
-&lt;li&gt;Gran comunitat de suport i moltes extensions disponibles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inconvenients:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Requereix més configuració manual comparat amb altres frameworks.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;django&quot; tabindex=&quot;-1&quot;&gt;Django&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Django és un framework de programació web d&#39;alt nivell per a Python que permet un desenvolupament ràpid i un disseny net i pragmàtic.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Característiques:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Inclou un ORM (Object-Relational Mapping) potent.&lt;/li&gt;
-&lt;li&gt;Sistema d&#39;administració automàtic.&lt;/li&gt;
-&lt;li&gt;Seguretat integrada.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Promou les bones pràctiques de desenvolupament.&lt;/li&gt;
-&lt;li&gt;Molt complet, amb moltes funcionalitats &amp;quot;out-of-the-box&amp;quot;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inconvenients:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Pot ser massa gran per a aplicacions petites.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;laravel&quot; tabindex=&quot;-1&quot;&gt;Laravel&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descripció:&lt;/strong&gt; Laravel és un framework PHP elegant i expressiu que ofereix un conjunt complet d&#39;eines i recursos per a construir aplicacions web.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Característiques:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Sistema d&#39;enrutament senzill i potent.&lt;/li&gt;
-&lt;li&gt;Eloquent ORM per a una interacció fàcil amb bases de dades.&lt;/li&gt;
-&lt;li&gt;Sistema de templates Blade.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Avantatges:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Gran comunitat i abundant documentació.&lt;/li&gt;
-&lt;li&gt;Facilitat per a desenvolupar aplicacions robustes i escalables.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inconvenients:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Pot tenir una corba d&#39;aprenentatge per als nous desenvolupadors.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;comparativa-dels-frameworks&quot; tabindex=&quot;-1&quot;&gt;Comparativa dels Frameworks&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Característica&lt;/th&gt;
-&lt;th&gt;Express.js&lt;/th&gt;
-&lt;th&gt;Django&lt;/th&gt;
-&lt;th&gt;Laravel&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Idioma de programació&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;JavaScript&lt;/td&gt;
-&lt;td&gt;Python&lt;/td&gt;
-&lt;td&gt;PHP&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;ORM&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No integrat, però es pot utilitzar Sequelize o Mongoose&lt;/td&gt;
-&lt;td&gt;Sí (integrat)&lt;/td&gt;
-&lt;td&gt;Sí (integrat, Eloquent ORM)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Sistema d&#39;enrutament&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Sí&lt;/td&gt;
-&lt;td&gt;Sí&lt;/td&gt;
-&lt;td&gt;Sí&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Motor de plantilles&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Suport per Pug, EJS, etc.&lt;/td&gt;
-&lt;td&gt;Sí (Django Templates)&lt;/td&gt;
-&lt;td&gt;Sí (Blade)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Sistema d&#39;administració&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;td&gt;Sí&lt;/td&gt;
-&lt;td&gt;No&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Comunitat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Gran&lt;/td&gt;
-&lt;td&gt;Gran&lt;/td&gt;
-&lt;td&gt;Gran&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Facilitat d&#39;aprenentatge&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Moderada&lt;/td&gt;
-&lt;td&gt;Moderada&lt;/td&gt;
-&lt;td&gt;Moderada&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Documentació&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Excel·lent&lt;/td&gt;
-&lt;td&gt;Excel·lent&lt;/td&gt;
-&lt;td&gt;Excel·lent&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Seguretat&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Depèn de la configuració&lt;/td&gt;
-&lt;td&gt;Alta, amb funcions integrades&lt;/td&gt;
-&lt;td&gt;Alta, amb funcions integrades&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;com-trieu-un-framework&quot; tabindex=&quot;-1&quot;&gt;Com Trieu un Framework?&lt;/h3&gt;
-&lt;p&gt;La selecció del framework adequat per a un projecte depèn de diversos factors:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tipus de Projecte:&lt;/strong&gt; Aplicacions en temps real, aplicacions CRUD, aplicacions amb necessitats específiques de seguretat, etc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Idioma de Programació:&lt;/strong&gt; Si el teu equip està més familiaritzat amb JavaScript, Python o PHP, per exemple.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Escalabilitat i Rendiment:&lt;/strong&gt; Alguns frameworks són més adequats per a aplicacions petites, mentre que altres gestionen millor aplicacions de gran escala.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ecosistema i Comunitat:&lt;/strong&gt; La disponibilitat de biblioteques, plugins i la mida de la comunitat poden influir en la decisió.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Facilitat d&#39;ús i Documentació:&lt;/strong&gt; Un bon framework ha de tenir una documentació clara i fàcil d&#39;entendre, així com una corba d&#39;aprenentatge adequada per al teu equip.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;recursos-addicionals-5&quot; tabindex=&quot;-1&quot;&gt;Recursos Addicionals:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Node.js Official Documentation:&lt;/strong&gt; &lt;a href=&quot;https://nodejs.org/en/docs/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Express.js Official Documentation:&lt;/strong&gt; &lt;a href=&quot;https://expressjs.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Express.js&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Django Official Documentation:&lt;/strong&gt; &lt;a href=&quot;https://docs.djangoproject.com/en/stable/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Django&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Laravel Documentation:&lt;/strong&gt; &lt;a href=&quot;https://laravel.com/docs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;7-entorn-de-treball&quot; tabindex=&quot;-1&quot;&gt;7. Entorn de treball&lt;/h2&gt;
-&lt;h3 id=&quot;entorn-de-desenvolupament-integrat-ide&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament integrat (IDE)&lt;/h3&gt;
-&lt;p&gt;En este curso utilitzarem &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt;&lt;/a&gt; com a editor  de codi. Existixen altres alternatives, com  &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;PHP Storm&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;git-hub-classroom&quot; tabindex=&quot;-1&quot;&gt;GitHub Classroom&lt;/h3&gt;
-&lt;p&gt;Us haureu de &lt;a href=&quot;https://classroom.github.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;registrar&lt;/a&gt; ja que l&#39;utilitzarem durant el curs per la còpia  de repositoris i entrega de treballs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Metodologia de treball amb el github classroom&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Se proporcionarà a l&#39;alumnat un enllaç amb la invitació.&lt;/li&gt;
-&lt;li&gt;Accedint a l&#39;enllaç a cada alumne se li crearà un repositori individual en l&#39;organització.&lt;/li&gt;
-&lt;li&gt;L&#39;alumnat treballa en el seu repositori assignat. Se&#39;l pot baixar per treballar en local.&lt;/li&gt;
-&lt;li&gt;Inicialment, l&#39;alumne crea una branca nova sobre la que va a treballar.&lt;/li&gt;
-&lt;li&gt;Quan vullga sol.licitar ajuda o revisió del professor, l&#39;alumne genera una pull request a la branca principal del seu repositori en la que cita al professor per tal que reba una notificació.&lt;/li&gt;
-&lt;li&gt;El profesor proporciona retroalimentació mitjançant comentaris en la pull request o en un determinat commit individual.&lt;/li&gt;
-&lt;li&gt;Opcionalment es poden utilitzar els issues y les cites d&#39;usuari per sol·licitar la intervenció del profesor.&lt;/li&gt;
-&lt;li&gt;Quan l&#39;alumne finalitza la tasca, genera una últim pull request&lt;/li&gt;
-&lt;li&gt;El profesor revisa la pull request i opcionalment fa comentaris.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;entorns-de-desenvolupament-local&quot; tabindex=&quot;-1&quot;&gt;Entorns de desenvolupament local&lt;/h3&gt;
-&lt;p&gt;Pera fer correr les aplicacions de servidor ens cal, com a mínim, un &lt;strong&gt;servidor web&lt;/strong&gt;, l&#39;interpret de &lt;strong&gt;php&lt;/strong&gt; i un &lt;strong&gt;motor de base de dades&lt;/strong&gt;. Hem de distinguir l&#39;&lt;strong&gt;entorn de desenvolupament&lt;/strong&gt;, on anem a programar i mantindre la nostra aplicació, de l&#39;&lt;strong&gt;entorn de producció&lt;/strong&gt;, on anem a executar-la.&lt;br /&gt;
-Normalment el primer depén de nosaltres mentre que el segon pot dependre de l&#39;empresa on s&#39;allotjarà la nostra web. Per a preparar el nostre entorn de desenvolupament podem optar per:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Qualsevol solució &lt;strong&gt;LAMP&lt;/strong&gt; (Linux, Apache, Mysql, PHP). Als que haurem d&#39;afegir, una vegada els projectes es facen grans &lt;strong&gt;composer, git i les opcions de la part de client&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Una màquina virtual ja configurada.&lt;/li&gt;
-&lt;li&gt;Una solució docker.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La primera solució és senzilla d&#39;implementar però no hauria de ser la nostra primera opció per:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Estem possant en funcionament en la nostra màquina una sèrie de serveis que normalment no fariem, baixant el rendiment de la màquina i obrint vulnerabilitats.&lt;/li&gt;
-&lt;li&gt;Si treballem en grup, les instal·lacions i el funcionament no són iguals, depenen del sistema operatiu que té instal·lat cadascú. Allò que li funciona a ú  pot ser no li funciona a un altre. Això és inevitable quan el projecte es complica i es perd molt de temps.&lt;/li&gt;
-&lt;li&gt;Passa el mateix quan passem a l&#39;entorn de producció.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La segona solució soluciona els dos primers problemes, doncs tots els desenvolupadors poden tindre virtualitzada, la mateixa màquina. Encara que si la màquina no la fem nosaltres sinó que utilitzem alguna ja configurada (&lt;strong&gt;vagrant&lt;/strong&gt;) o si ens cal instal·lar alguna cosa més, ho hauria de fer tot l&#39;equip.&lt;/p&gt;
-&lt;p&gt;Així i tot, tindriem les següents desaventatges:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A l&#39;instal·lar una maquina virtual sencera ocupa recursos del sistema.&lt;/li&gt;
-&lt;li&gt;La màquina instal·la més coses de les necessàries habitualment.&lt;/li&gt;
-&lt;li&gt;No reprodueix l&#39;entorn de producció.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;La tercera opció té les següents característiques:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Al principi és més difícil de possar en funcionamet ja que calen coneixements de docker.&lt;/li&gt;
-&lt;li&gt;Tots els desenvolupadors comparteixen entorn encara que utilitzen màquines o sistemes operatius diferents.&lt;/li&gt;
-&lt;li&gt;Si hi ha algun canvi de configuració de l&#39;entorn és fácilment transladable a tots els desenvolupadors.&lt;/li&gt;
-&lt;li&gt;Es poden crear tants entorns  de desenvolupament com projectes diferents hi hajen.&lt;/li&gt;
-&lt;li&gt;Els contenidors ocupen pocs recursos.&lt;/li&gt;
-&lt;li&gt;Els projectes es poden possar en producció utilitzan una solució docker de manera inmediata.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;xampp&quot; tabindex=&quot;-1&quot;&gt;XAMPP&lt;/h3&gt;
-&lt;p&gt;XAMPP (&lt;a href=&quot;https://www.apachefriends.org/es/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.apachefriends.org/es/index.html&lt;/a&gt;) és una distribució composta amb el programari necessari per a desenvolupar en entorn servidor. Es compon de les següents eines sobre la base de les seues sigles:&lt;br /&gt;
-Des de la pròpia pàgina es pot descarregar l&#39;arxiu executable per al sistema operatiu del nostre ordinador. Es recomana llegir la FAQ de cada sistema operatiu amb instruccions per a la seua posada en marxa.&lt;/p&gt;
-&lt;p&gt;!!! note &amp;quot;Acrònim&amp;quot;&lt;br /&gt;
-* X per al sistema operatiu (d&#39;aquí ve que es conega altrament com LAMP o WAMP).&lt;br /&gt;
-* A per a Apatxe.&lt;br /&gt;
-* M per a MySQL / MariaDB. També inclou phpMyAdmin per a l&#39;administració de la base de dades des d&#39;una interfície web.&lt;br /&gt;
-* P per a PHP.&lt;br /&gt;
-* P per a Perl.&lt;/p&gt;
-&lt;p&gt;!!! note &amp;quot;XAMPP en Windows&amp;quot;&lt;br /&gt;
-Si treballes amb el teu propi ordinador, XAMPP és una solució més senzilla que Docker, sobretot si treballes amb Windows com a sistema operatiu.&lt;/p&gt;
-&lt;h3 id=&quot;docker&quot; tabindex=&quot;-1&quot;&gt;Docker&lt;/h3&gt;
-&lt;p&gt;Docker (&lt;a href=&quot;https://www.docker.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.docker.com&lt;/a&gt;) és un gestor de contenidors, considerant un contenidor com un mètode de virtualització del sistema operatiu.&lt;br /&gt;
-L&#39;ús de contenidors requereix menys recursos que una màquina virtual, per tant, el seu llançament i detenció són més ràpids que les màquines virtuals.&lt;/p&gt;
-&lt;p&gt;Així doncs, &lt;em&gt;Docker&lt;/em&gt; permet crear, provar i implementar aplicacions ràpidament, a partir d&#39;una sèrie de plantilles que es coneixen com a &lt;strong&gt;imatges&lt;/strong&gt; de &lt;em&gt;Docker&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Per a això, instal·larem &lt;strong&gt;Docker Desktop&lt;/strong&gt; (&lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.docker.com/products/docker-desktop&lt;/a&gt;) en els nostres entorns de desenvolupament (el qual ja inclou en &lt;strong&gt;nucli&lt;/strong&gt; de &lt;em&gt;Docker&lt;/em&gt; i l&#39;eina &lt;strong&gt;docker compose&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Al llarg del curs anirem creant diferents contenidors amb els serveis necessaris, de manera que cada vegada només treballem amb el programari mínim.&lt;/p&gt;
-&lt;p&gt;!!! note &amp;quot;Docker en windows&amp;quot;&lt;br /&gt;
-Per a instal·lar-ho en Windows, és necessari instal·lar prèviament &lt;strong&gt;WSL 2&lt;/strong&gt;, el qual és un subsistema de &lt;em&gt;Linux&lt;/em&gt; dins de &lt;em&gt;Windows&lt;/em&gt;.&lt;/p&gt;
-&lt;h4 id=&quot;plantilla-inicial-servidor-web-nginx-php-my-sql-php-my-admin&quot; tabindex=&quot;-1&quot;&gt;Plantilla Inicial : Servidor Web nginx + PHP + MySQL + phpMyAdmin&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Docker&lt;/strong&gt; es basa en l&#39;ús d&#39;imatges per a crear contenidors. &lt;em&gt;Docker Compose&lt;/em&gt; simplifica el treball amb múltiples contenidors, i per això, per a facilitar l&#39;arranc, ens centrarem en &lt;em&gt;Docker Compose&lt;/em&gt; utilitzant una plantilla que únicament contindrà com a serveis Nginx i PHP.&lt;br /&gt;
-Per a facilitar la posada en marxa, us facilite un repositori, disponible per a la seua descarrega mitjançant el &lt;strong&gt;git clone&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Grup A: &lt;a href=&quot;https://pedroporo.github.io/#GitHub-Classroom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github classroom&lt;/a&gt; &lt;a href=&quot;https://classroom.github.com/a/y5FOCalw&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx/PHP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Grup B: &lt;a href=&quot;https://pedroporo.github.io/#GitHub-Classroom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;github classroom&lt;/a&gt; &lt;a href=&quot;https://classroom.github.com/a/k_osQPW4&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nginx/PHP&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;L&#39;haureu de possar en un directori fàcilment localitzable i amb un nom significatiu, ja que serà el vostre directori de treball&lt;/strong&gt;.&lt;br /&gt;
-Dins d&#39;este repositori, el fitxer &lt;strong&gt;&#39;docker-compose.yaml&#39;&lt;/strong&gt; indica quines màquines ha de montar i té el següent aspecte&lt;/p&gt;
-&lt;p&gt;=== &amp;quot;Nginx i PHP&amp;quot;&lt;/p&gt;
-&lt;p&gt;``` yaml&lt;br /&gt;
-# Services&lt;br /&gt;
-services:&lt;/p&gt;
-&lt;p&gt;# Nginx Service&lt;br /&gt;
-nginx:&lt;br /&gt;
-image: nginx:1.19&lt;br /&gt;
-ports:&lt;br /&gt;
-- 80:80&lt;br /&gt;
-volumes:&lt;br /&gt;
-- ./src:/var/www/php&lt;br /&gt;
-- ./.docker/nginx/conf.d:/etc/nginx/conf.d&lt;br /&gt;
-depends_on:&lt;br /&gt;
-- php&lt;/p&gt;
-&lt;p&gt;# PHP Service&lt;br /&gt;
-php:&lt;br /&gt;
-build: ./.docker/php/&lt;br /&gt;
-working_dir: /var/www/php&lt;br /&gt;
-expose:&lt;br /&gt;
-- 9000&lt;br /&gt;
-volumes:&lt;br /&gt;
-- ./src:/var/www/php&lt;br /&gt;
-- ./.docker/php/conf.d/Xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini&lt;br /&gt;
-- ./.docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini&lt;/p&gt;
-&lt;p&gt;```&lt;br /&gt;
-Per arrencar les màquines o podem fer des de la consola amb&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;docker compose up -d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si volem accedir a un terminal interactiu dins del contenidor:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-console&quot;&gt;docker exec -it nombreContenedor bash
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Altres comandos que podem arribar a utilitzar són:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;docker ps&lt;/code&gt;: Veure els contenidors que es estan executant&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker ps -a&lt;/code&gt;: Veure tots els contenidors&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker start nombreContenedor&lt;/code&gt;: Arrancar un contenidor&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;docker images&lt;/code&gt;: Veure les imatges que tenim descarregades&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;!!! tip &amp;quot;Docker stack&amp;quot;&lt;br /&gt;
-Existeixen diverses opcions mitjançant Docker que ofereixen solucions completes i empaquetes per a tot el stack de desenvolupament. Com a exemple tenim  &lt;em&gt;Devilbox&lt;/em&gt; (&lt;a href=&quot;http://devilbox.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://devilbox.org&lt;/a&gt;) i &lt;em&gt;Laradock&lt;/em&gt; (&lt;a href=&quot;https://laradock.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://laradock.io&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Una altra forma més senzilla per a llançar de nou els contenidors i gestionar-los una vegada creats és utilitzar la interfície gràfica que ofereix Docker Desktop:&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;https://pedroporo.github.io/imagenes/01/dockerdesktop.png&quot; /&gt;
-  &lt;figcaption&gt;Arranc de contenidor mitjançant Docker Desktop&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;!!! note &amp;quot;Tot funciona&amp;quot;&lt;br /&gt;
-Heu de comprovar que a l&#39;accedir a &lt;code&gt;http://localhost/phpinfo.php&lt;/code&gt; en el vostre navegador se us obre una pàgina amb la configuració de php.&lt;br /&gt;
-També si accediu a &lt;code&gt;http://localhost:8000&lt;/code&gt; veureu la pàgina d&#39;accès a phpmyadmin.&lt;/p&gt;
-&lt;p&gt;!!! important &amp;quot;Directoris de php&amp;quot;&lt;br /&gt;
-Si us fixeu en les carpetes que us ha creat el repositori veureu que les pàgines que pot executar (directori arrel de la nostra web) es troba a php/src. Les pàgines que anem a crear , de moment, les haureu de ficar ahí.&lt;/p&gt;
-&lt;h2 id=&quot;8-referencies&quot; tabindex=&quot;-1&quot;&gt;8. Referències&lt;/h2&gt;
-&lt;h3 id=&quot;llibres-recomanats&quot; tabindex=&quot;-1&quot;&gt;Llibres Recomanats&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.amazon.com/Web-Architecture-Concepts-Richard-N-Taylor/dp/0134765048&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Web Architecture: Core Concepts&lt;/a&gt;&lt;/strong&gt; de Richard N. Taylor, Nenad Medvidovic i Eric Dashofy&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Aquest llibre ofereix una visió profunda sobre els conceptes bàsics i els principis fonamentals de les arquitectures web, incloent-hi patrons de disseny i les millors pràctiques.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.oreilly.com/library/view/restful-web-apis/9781449358063/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;RESTful Web APIs&lt;/a&gt;&lt;/strong&gt; de Leonard Richardson i Mike Amundsen&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Se centra en el disseny i la construcció d&#39;APIs web RESTful, un component essencial de les arquitectures modernes basades en serveis web.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.oreilly.com/library/view/building-microservices/9781491950340/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Building Microservices: Designing Fine-Grained Systems&lt;/a&gt;&lt;/strong&gt; de Sam Newman&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Explora el disseny de microserveis, una arquitectura emergent que permet crear aplicacions escalables i flexibles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;documentacio-oficial-i-guies&quot; tabindex=&quot;-1&quot;&gt;Documentació Oficial i Guies&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://12factor.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The Twelve-Factor App&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Una metodologia per construir aplicacions web modernes que són fàcilment escalables i mantenibles.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://web.dev/progressive-web-apps/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Documentació de l&#39;Arquitectura de PWA (Progressive Web Apps)&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Guia detallada sobre el disseny i la implementació d&#39;aplicacions web progressives, que combinen el millor de les aplicacions web i mòbils.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;cursos-en-linia&quot; tabindex=&quot;-1&quot;&gt;Cursos en Línia&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.coursera.org/learn/web-app&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Coursera - Web Application Architectures&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Curs que proporciona una visió general de les arquitectures d&#39;aplicacions web, incloent-hi clients i servidors, HTTP, i serveis web.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Udacity - Full Stack Web Developer Nanodegree&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Aquest programa cobreix temes com arquitectures de servidor, autenticació, i API RESTful.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;recursos-addicionals-6&quot; tabindex=&quot;-1&quot;&gt;Recursos Addicionals&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://microservices.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Microservices.io&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Recursos sobre patrons de microserveis, arquitectures i millors pràctiques per implementar microserveis amb èxit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://martinfowler.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Martin Fowler&#39;s Blog&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Un blog que cobreix diversos aspectes de l&#39;arquitectura del programari, incloent-hi articles sobre disseny de microserveis i altres arquitectures emergents.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;exemples-i-tutorials&quot; tabindex=&quot;-1&quot;&gt;Exemples i Tutorials&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;DigitalOcean Community Tutorials&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Ofereix tutorials pràctics sobre una àmplia gamma de temes relacionats amb l&#39;arquitectura web, des de configuració de servidors fins a desplegament d&#39;aplicacions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/Learn/Server-side&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mozilla Developer Network (MDN) Web Docs&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Un recurs complet per aprendre sobre tecnologies del costat del servidor, protocols web, i altres conceptes clau de les arquitectures web.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;repositoris-de-codi&quot; tabindex=&quot;-1&quot;&gt;Repositoris de Codi&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/binhnguyennus/awesome-scalability&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Awesome Scalability&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Una col·lecció de recursos i exemples sobre escalabilitat, arquitectures web i disseny de sistemes distribuits.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/search?q=microservices&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;GitHub Microservices Examples&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Repositoris de codi font en GitHub que il·lustren com implementar microserveis i altres arquitectures web modernes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;9-auto-avaluacio&quot; tabindex=&quot;-1&quot;&gt;9.AutoAvaluació&lt;/h2&gt;
-&lt;h4 id=&quot;exercici-1-models-d-execucio-de-codi&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Models d&#39;execució de codi&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Explica les principals diferències entre el model d&#39;execució de codi en client i en servidor.&lt;/p&gt;
-&lt;h5 id=&quot;opcions&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;a&quot; name=&quot;question1&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;a&quot;&gt;a) El codi en client s&#39;executa al servidor, mentre que el codi en servidor s&#39;executa al navegador del client.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;b&quot; name=&quot;question1&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;b&quot;&gt;b) El codi en client s&#39;executa al navegador del client, mentre que el codi en servidor s&#39;executa al servidor.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;c&quot; name=&quot;question1&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;c&quot;&gt;c) Ambdós s&#39;executen al servidor.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;d&quot; name=&quot;question1&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;d&quot;&gt;d) Ambdós s&#39;executen al navegador del client.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer1()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result1&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer1() {
-  var correctAnswer = &quot;b&quot;;
-  var radios = document.getElementsByName(&#39;question1&#39;);
-  var userAnswer;
-  for (var i = 0, length = radios.length; i &lt; length; i++) {
-    if (radios[i].checked) {
-      userAnswer = radios[i].value;
-      break;
-    }
-  }
-  var resultText = userAnswer === correctAnswer ? &quot;Correcte!&quot; : &quot;Incorrecte. La resposta correcta és b) El codi en client s&#39;executa al navegador del client, mentre que el codi en servidor s&#39;executa al servidor.&quot;;
-  document.getElementById(&#39;result1&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-2-avantatges-de-la-generacio-dinamica-de-pagines&quot; tabindex=&quot;-1&quot;&gt;Exercici 2: Avantatges de la generació dinàmica de pàgines&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-1&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Quins són els avantatges de la generació dinàmica de pàgines web? Selecciona totes les que apliquen.&lt;/p&gt;
-&lt;h5 id=&quot;opcions-1&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt1&quot; name=&quot;question2&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;opt1&quot;&gt;a) Reducció de la càrrega del servidor.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt2&quot; name=&quot;question2&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;opt2&quot;&gt;b) Personalització del contingut per usuari.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt3&quot; name=&quot;question2&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;opt3&quot;&gt;c) Major interactivitat amb l&#39;usuari.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt4&quot; name=&quot;question2&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;opt4&quot;&gt;d) Menor temps de càrrega inicial de la pàgina.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer2()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result2&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer2() {
-  var correctAnswers = [&quot;b&quot;, &quot;c&quot;];
-  var checkboxes = document.getElementsByName(&#39;question2&#39;);
-  var userAnswers = [];
-  for (var i = 0, length = checkboxes.length; i &lt; length; i++) {
-    if (checkboxes[i].checked) {
-      userAnswers.push(checkboxes[i].value);
-    }
-  }
-  var resultText = (userAnswers.length === correctAnswers.length &amp;&amp; userAnswers.every((val, index) =&gt; val === correctAnswers[index])) 
-                    ? &quot;Correcte!&quot; 
-                    : &quot;Incorrecte. Les respostes correctes són b) Personalització del contingut per usuari i c) Major interactivitat amb l&#39;usuari.&quot;;
-  document.getElementById(&#39;result2&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-3-mecanismes-d-execucio-de-codi-en-els-servidors-web&quot; tabindex=&quot;-1&quot;&gt;Exercici 3: Mecanismes d&#39;execució de codi en els servidors web&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-2&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Quins dels següents són mecanismes d&#39;execució de codi en els servidors web?&lt;/p&gt;
-&lt;h5 id=&quot;opcions-2&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;a&quot; name=&quot;question3&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;a&quot;&gt;a) CGI (Common Gateway Interface).&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;b&quot; name=&quot;question3&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;b&quot;&gt;b) API Gateway.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;c&quot; name=&quot;question3&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;c&quot;&gt;c) Servlets.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;d&quot; name=&quot;question3&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;d&quot;&gt;d) Totes les anteriors.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer3()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result3&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer3() {
-  var correctAnswer = &quot;d&quot;;
-  var radios = document.getElementsByName(&#39;question3&#39;);
-  var userAnswer;
-  for (var i = 0, length = radios.length; i &lt; length; i++) {
-    if (radios[i].checked) {
-      userAnswer = radios[i].value;
-      break;
-    }
-  }
-  var resultText = userAnswer === correctAnswer ? &quot;Correcte!&quot; : &quot;Incorrecte. La resposta correcta és d) Totes les anteriors.&quot;;
-  document.getElementById(&#39;result3&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-4-funcionalitats-dels-servidors-d-aplicacions&quot; tabindex=&quot;-1&quot;&gt;Exercici 4: Funcionalitats dels servidors d&#39;aplicacions&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-3&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Quines són algunes de les funcionalitats proporcionades pels servidors d&#39;aplicacions?&lt;/p&gt;
-&lt;h5 id=&quot;opcions-3&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt1&quot; name=&quot;question4&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;opt1&quot;&gt;a) Gestió de sessions.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt2&quot; name=&quot;question4&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;opt2&quot;&gt;b) Autenticació d&#39;usuaris.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt3&quot; name=&quot;question4&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;opt3&quot;&gt;c) Generació de pàgines estàtiques.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt4&quot; name=&quot;question4&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;opt4&quot;&gt;d) Gestió de transaccions.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer4()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result4&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer4() {
-  var correctAnswers = [&quot;a&quot;, &quot;b&quot;, &quot;d&quot;];
-  var checkboxes = document.getElementsByName(&#39;question4&#39;);
-  var userAnswers = [];
-  for (var i = 0, length = checkboxes.length; i &lt; length; i++) {
-    if (checkboxes[i].checked) {
-      userAnswers.push(checkboxes[i].value);
-    }
-  }
-  var resultText = (userAnswers.length === correctAnswers.length &amp;&amp; userAnswers.every((val, index) =&gt; val === correctAnswers[index])) 
-                    ? &quot;Correcte!&quot; 
-                    : &quot;Incorrecte. Les respostes correctes són a) Gestió de sessions, b) Autenticació d&#39;usuaris, d) Gestió de transaccions.&quot;;
-  document.getElementById(&#39;result4&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-5-llenguatges-i-tecnologies-relacionades-amb-la-programacio-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Exercici 5: Llenguatges i tecnologies relacionades amb la programació web en entorn servidor&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-4&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Quins dels següents llenguatges i tecnologies són utilitzats en la programació web en entorn servidor?&lt;/p&gt;
-&lt;h5 id=&quot;opcions-4&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt1&quot; name=&quot;question5&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;opt1&quot;&gt;a) PHP.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt2&quot; name=&quot;question5&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;opt2&quot;&gt;b) SQL.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt3&quot; name=&quot;question5&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;opt3&quot;&gt;c) HTML.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt4&quot; name=&quot;question5&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;opt4&quot;&gt;d) JavaScript.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt5&quot; name=&quot;question5&quot; value=&quot;e&quot; /&gt;
-  &lt;label for=&quot;opt5&quot;&gt;e) Java.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer5()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result5&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer5() {
-  var correctAnswers = [&quot;a&quot;, &quot;b&quot;, &quot;e&quot;];
-  var checkboxes = document.getElementsByName(&#39;question5&#39;);
-  var userAnswers = [];
-  for (var i = 0, length = checkboxes.length; i &lt; length; i++) {
-    if (checkboxes[i].checked) {
-      userAnswers.push(checkboxes[i].value);
-    }
-  }
-  var resultText = (userAnswers.length === correctAnswers.length &amp;&amp; userAnswers.every((val, index) =&gt; val === correctAnswers[index])) 
-                    ? &quot;Correcte!&quot; 
-                    : &quot;Incorrecte. Les respostes correctes són a) PHP, b) SQL, e) Java.&quot;;
-  document.getElementById(&#39;result5&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-6-integracio-dels-llenguatges-de-marques-amb-els-llenguatges-de-programacio&quot; tabindex=&quot;-1&quot;&gt;Exercici 6: Integració dels llenguatges de marques amb els llenguatges de programació&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-5&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Com s&#39;integren els llenguatges de marques com HTML amb els llenguatges de programació com PHP?&lt;/p&gt;
-&lt;h5 id=&quot;opcions-5&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;a&quot; name=&quot;question6&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;a&quot;&gt;a) Utilitzant etiquetes especials de PHP dins del codi HTML.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;b&quot; name=&quot;question6&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;b&quot;&gt;b) Convertint tot el codi HTML a PHP.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;c&quot; name=&quot;question6&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;c&quot;&gt;c) No es poden integrar.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;radio&quot; id=&quot;d&quot; name=&quot;question6&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;d&quot;&gt;d) Utilitzant un altre llenguatge de programació per connectar-los.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer6()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result6&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer6() {
-  var correctAnswer = &quot;a&quot;;
-  var radios = document.getElementsByName(&#39;question6&#39;);
-  var userAnswer;
-  for (var i = 0, length = radios.length; i &lt; length; i++) {
-    if (radios[i].checked) {
-      userAnswer = radios[i].value;
-      break;
-    }
-  }
-  var resultText = userAnswer === correctAnswer ? &quot;Correcte!&quot; : &quot;Incorrecte. La resposta correcta és a) Utilitzant etiquetes especials de PHP dins del codi HTML.&quot;;
-  document.getElementById(&#39;result6&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-&lt;h4 id=&quot;exercici-7-eines-i-frameworks-de-programacio-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Exercici 7: Eines i frameworks de programació en entorn servidor&lt;/h4&gt;
-&lt;h5 id=&quot;pregunta-6&quot; tabindex=&quot;-1&quot;&gt;Pregunta:&lt;/h5&gt;
-&lt;p&gt;Quines són algunes de les eines i frameworks més utilitzats en la programació web en entorn servidor?&lt;/p&gt;
-&lt;h5 id=&quot;opcions-6&quot; tabindex=&quot;-1&quot;&gt;Opcions:&lt;/h5&gt;
-&lt;form&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt1&quot; name=&quot;question7&quot; value=&quot;a&quot; /&gt;
-  &lt;label for=&quot;opt1&quot;&gt;a) Laravel.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt2&quot; name=&quot;question7&quot; value=&quot;b&quot; /&gt;
-  &lt;label for=&quot;opt2&quot;&gt;b) Django.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt3&quot; name=&quot;question7&quot; value=&quot;c&quot; /&gt;
-  &lt;label for=&quot;opt3&quot;&gt;c) React.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt4&quot; name=&quot;question7&quot; value=&quot;d&quot; /&gt;
-  &lt;label for=&quot;opt4&quot;&gt;d) Node.js.&lt;/label&gt;&lt;br /&gt;
-  &lt;input type=&quot;checkbox&quot; id=&quot;opt5&quot; name=&quot;question7&quot; value=&quot;e&quot; /&gt;
-  &lt;label for=&quot;opt5&quot;&gt;e) Spring Boot.&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
-  &lt;input type=&quot;button&quot; value=&quot;Comprovar&quot; onclick=&quot;checkAnswer7()&quot; /&gt;
-&lt;/form&gt;
-&lt;p id=&quot;result7&quot;&gt;&lt;/p&gt;
-&lt;script&gt;
-function checkAnswer7() {
-  var correctAnswers = [&quot;a&quot;, &quot;b&quot;, &quot;d&quot;, &quot;e&quot;];
-  var checkboxes = document.getElementsByName(&#39;question7&#39;);
-  var userAnswers = [];
-  for (var i = 0, length = checkboxes.length; i &lt; length; i++) {
-    if (checkboxes[i].checked) {
-      userAnswers.push(checkboxes[i].value);
-    }
-  }
-  var resultText = (userAnswers.length === correctAnswers.length &amp;&amp; userAnswers.every((val, index) =&gt; val === correctAnswers[index])) 
-                    ? &quot;Correcte!&quot; 
-                    : &quot;Incorrecte. Les respostes correctes són a) Laravel, b) Django, d) Node.js, e) Spring Boot.&quot;;
-  document.getElementById(&#39;result7&#39;).innerText = resultText;
-}
-&lt;/script&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/" >
-        </entry>
-        <entry>
-            <title>
-                xx-tests
-                
-            </title>
-            <updated>2025-01-04T22:44:55Z</updated>
-            <id>https://pedroporo.github.io/notas/javascript-teoria-batoi/xx-tests/</id>
-            <content type="html">
-                &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
-&lt;p&gt;Lo más sencillo es usar alguna librería como &lt;strong&gt;Jest&lt;/strong&gt;, &lt;strong&gt;Mocha&lt;/strong&gt; o &lt;strong&gt;Vitests&lt;/strong&gt; (una adaptación de &lt;em&gt;Jest&lt;/em&gt; para &lt;em&gt;Vite&lt;/em&gt;). Se trata de librerías que se ejecutan sobre &lt;em&gt;Node.js&lt;/em&gt; y permiten crear tests tanto síncronos como asíncronos. Para usarlo necesitaremos tener &lt;strong&gt;npm&lt;/strong&gt; instalado.&lt;/p&gt;
-&lt;h2 id=&quot;uso-de-vitest&quot; tabindex=&quot;-1&quot;&gt;Uso de Vitest&lt;/h2&gt;
-&lt;p&gt;Podéis obtener información sobre cómo hacer test con &lt;em&gt;Vitest&lt;/em&gt; en muchas páginas de Internet como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://xxjcaxx.github.io/libro_dwec/tests.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso DWEC de Jose Castillo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vitejs.dev/guide/features.html#testing&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vitest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;uso-de-mocha&quot; tabindex=&quot;-1&quot;&gt;Uso de Mocha&lt;/h2&gt;
-&lt;p&gt;Para instalarlo ejecutamos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm install -g mocha    # lo instalamos globalmente para que esté disponible para todos los proyectos
-npm init                # crea en el directorio el package.json
-npm install chai     # en vez de chai podríamos usar assert, should, etc
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La librería &lt;em&gt;Chai&lt;/em&gt; permite 3 tipos de sentencias:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;asserts&lt;/li&gt;
-&lt;li&gt;expects&lt;/li&gt;
-&lt;li&gt;should&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nosotros vamos a usar &lt;em&gt;asserts&lt;/em&gt; por lo que es lo que deberemos importar en los ficheros de tests.&lt;/p&gt;
-&lt;p&gt;Dentro de nuestro proyecto crearemos una carpeta donde guardaremos los ficheros JS de los tests (podemos llamarla &#39;&lt;em&gt;tests&lt;/em&gt;&#39;) y en cada fichero importaremos &lt;em&gt;chai&lt;/em&gt; y los ficheros necesarios. Ej.:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Fichero &lt;em&gt;tests/store.specs.js&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const assert = require(&#39;chai&#39;).assert;
-const Store = require(&#39;../store.class.js&#39;);
-
-describe(&#39;Store&#39;, () =&amp;gt; {
-
-	it(&#39;should had an integer id&#39;, function() {
-		let foo = new Store();
-		assert.typeOf(foo.id, &#39;integer&#39;, &#39;La id no es un entero&#39;)
-	});
-
-	it(&#39;should had an empty array of products&#39;, function() {
-		let foo = new Store();
-		assert.typeOf(foo.products, &#39;array&#39;, &#39;Products no es un array&#39;)
-		assert.lengthOf(foo.products, 0, &#39;Products no es un array vacío&#39;)
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para poder importar un módulo con &lt;em&gt;require&lt;/em&gt; debemos haberlo exprtado previamente:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Fichero &lt;em&gt;store.js&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;class Store {
-    constructor (id) {
-        this.id=id;
-        this.products=[];
-    }
-    ...
-}
- module.exports = Store;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para ejecutar todos los tests de nuestro proyecto ejecutaremos desde la terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mocha tests
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si sólo queremos pasar uno lo indicamos en el comando: &lt;code&gt;mocha tests/store.specs.js&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Podemos hacer que &lt;em&gt;mocha&lt;/em&gt; escuche en segundo plano y se ejecute automáticamente cada vez que hacemos algún cambio en un fichero con:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mocha tests --watch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;el-fichero-de-tests&quot; tabindex=&quot;-1&quot;&gt;El fichero de tests&lt;/h2&gt;
-&lt;p&gt;Debemos importar le librería &lt;em&gt;Chai&lt;/em&gt; y el fichero con el código a testear como hemov visto antes. El fichero con el código que debe exportar la clase o función que contiene con &lt;code&gt;module.exports&lt;/code&gt;. Si queremos exportar varias funciones exportaremos un objeto con todas ellas:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;module.exports = {
-    addItem,
-    removeItem
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Tras importar los ficheros pondremos el &lt;em&gt;describe&lt;/em&gt; y los bloques &lt;em&gt;it&lt;/em&gt; que queramos y dentro de cada uno los &lt;em&gt;aasert&lt;/em&gt; necesarios:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;const assert = require(&#39;chai&#39;).assert;
-const index = require(&#39;../index.js&#39;);
-
-describe(&#39;manage items&#39;, () =&amp;gt; {
-	it(&#39;add a new item&#39;, function() {
-		let myItem = ...;
-		assert.typeOf(item, &#39;object&#39;, &#39;No crea un objeto sino &#39;+typeof(item) );
-		assert.equal(item.units, 0);
-	});
-	
-	if (&#39;change an item () =&amp;gt; {
-	...
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;algunas-sentecias-em-assert-em&quot; tabindex=&quot;-1&quot;&gt;Algunas sentecias &lt;em&gt;assert&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;Estas&lt;br /&gt;
-Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar. Recordad que todas pueden tener un último parámetro opcional que es un mensaje a mostrar en caso de que falle esta comprobación:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;.equal(actual, esperado): comprueba que sea el mismo valor, pero sin comprobar los tupos (usa ==, no ===)&lt;/li&gt;
-&lt;li&gt;.notEqual(actual, esperado)&lt;/li&gt;
-&lt;li&gt;.strictEqual, .notStrictEqual: igual pero hace la compribaciónestricta (===)&lt;/li&gt;
-&lt;li&gt;.deepEqual, notDeepEqual: hace una comprobación de cada propiedad del objeto pasado&lt;/li&gt;
-&lt;li&gt;.match(valor, regexp), .notMatch: comprueba si el valor cumple o no la expresión regular pasada&lt;/li&gt;
-&lt;li&gt;.isAbove(actual, esperado): comprueba que actual &amp;gt; esperado&lt;/li&gt;
-&lt;li&gt;.isAtLeast(actual, esperado): comprueba que actual &amp;gt;= esperado&lt;/li&gt;
-&lt;li&gt;.isBelow, .isAtMost: comprueba que sea &amp;lt; o &amp;lt;= respectivamente&lt;/li&gt;
-&lt;li&gt;.isTrue, .isNotTrue, .isFalse, .isNotFalse, .isNull, .isNotNull, .isUndefined, .isDefined, .isNaN, .isNotNaN, .isFunction, .isNotFunction, .isObject, .isNotObject, .isArray, .isNotArray, .isString, .isNotString, .isNumber, .isNotNumber, .isBoolean, .isNotBoolean, .isFinite&lt;/li&gt;
-&lt;li&gt;.exists(valor), .notExists: comprueba que valor no sea (o sea) &lt;em&gt;null&lt;/em&gt; o &lt;em&gt;undefined&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;.typeOf(valor, tipo), .notTypeOf: indica si valor es o no del tipo indicado, que puede ser &#39;string&#39;, &#39;number&#39;, boolean&#39;, &#39;array&#39;, &#39;object&#39;, &#39;null&#39;, &#39;undefined&#39;, &#39;regexp&#39;, ...&lt;/li&gt;
-&lt;li&gt;.instanceOf(objeto, Clase), .notInstanceOf: indica si un objeto es o no una instancia de la clase indicada&lt;/li&gt;
-&lt;li&gt;.include(string/array/objeto, substring/elemento/propiedad:valor): comprueba si la subcadena existe en el string o el elemento se encuentra en el array (usa =&lt;mark&gt;) o si existe la propiedad o propiedades pasadas y su valor es estrictamente (&lt;/mark&gt;=) igual al indicado.&lt;/li&gt;
-&lt;li&gt;.notInclude&lt;/li&gt;
-&lt;li&gt;.property(objeto, propiedad), .notProperty: comprueba si el objeto posee o no la propiedad pasada&lt;/li&gt;
-&lt;li&gt;.lengthOf(string/array, num): comprueba que la longitud de la cadena o el array sea la indicada&lt;/li&gt;
-&lt;li&gt;.isEmpty(string/array/object), .isNotEmpty: comprueba que la cadena sea &#39;&#39;, el array [] o el objeto {}, o no.&lt;/li&gt;
-&lt;li&gt;.throws(funcion, [errorLike/string], [string]): para comprobar que la función lanza un error del tipo indicado (TypeError, RangeError, ...) e incluso con el mensaje indicado&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Más información en la [página de &lt;em&gt;Chai&lt;/em&gt;])&lt;a href=&quot;https://www.chaijs.com/api/assert/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.chaijs.com/api/assert/&lt;/a&gt;).&lt;/p&gt;
-&lt;h2 id=&quot;tests-de-funciones-asincronas-con-promesas&quot; tabindex=&quot;-1&quot;&gt;Tests de funciones asíncronas con promesas&lt;/h2&gt;
-&lt;p&gt;Si hacemos llamadas asíncronas Mocha permite testearlas tras el .then o el .catch:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;API de artículos&#39;, () =&amp;gt; {
-	it(&#39;should return the article 3&#39;, function() {
-		return getArticulo(3)
-			.then(art =&amp;gt; {
-				assert.instanceOf(art, Articulos);
-				assert.equal(art.id, 3);
-			})
-	});
-	it(&#39;should return an error&#39;, function() {
-		return getArticulo(undefined)
-			.catch(err =&amp;gt; {
-				...
-			})
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;em-hooks-em-de-mocha&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;Hooks&lt;/em&gt; de Mocha&lt;/h2&gt;
-&lt;p&gt;Nos permiten ejecutar código en momentos puntuales. Reciben como parámetro la función a ejecutar. Son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;before(): el código se ejecutará una vez antes del primer test del bloque &lt;em&gt;describe&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;beforeEach(): se ejecutará antes de cada test&lt;/li&gt;
-&lt;li&gt;after(), afterEach(): lo mismo pero tras ejecutar los tests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;tests-para-la-ui&quot; tabindex=&quot;-1&quot;&gt;Tests para la UI&lt;/h2&gt;
-&lt;p&gt;Necesitaremos alguna librería que nos permita contruir escenarios de navegación como &lt;em&gt;CasperJS&lt;/em&gt; y otra que imite al navegador como &lt;em&gt;PhantomJS&lt;/em&gt; (para WebKit) o &lt;em&gt;SlimerJS&lt;/em&gt; (para Gecko).&lt;/p&gt;
-&lt;p&gt;Hay muchas páginas que nos enseñan a usar Mocha para testear la UI como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://dev.to/ykyuen/web-ui-testing-in-nodejs--kda&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Web UI Testing in NodeJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/nilayshah/2018/01/21/ui-test-automation-with-node-js-typescript-mocha-and-selenium/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UI Test Automation with Node.js, TypeScript, Mocha and Selenium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://itnext.io/automated-ui-testing-with-selenium-and-javascript-90bbe7ca13a3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Automated UI Testing with Selenium and JavaScript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/@tariqul.islam.rony/automated-ui-ux-testing-with-puppeteer-mocha-and-chai-800cfb028ab9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Automated UI/UX Testing with Puppeteer Mocha and Chai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/javascript-teoria-batoi/xx-tests/" >
-        </entry>
-        <entry>
-            <title>
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -12208,7 +10465,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/7. Requests, Responses i Validació en Laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -12335,7 +10592,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/6. Seeders i Factories en Laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -12486,7 +10743,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/5. Laravel Eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -12688,7 +10945,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/4. Laravel Query Builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -12768,7 +11025,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/3. Migracions en Laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -12888,7 +11145,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/2. Configuració inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -12919,7 +11176,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/1. Introducció/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -12932,7 +11189,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/7. Web Scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -13029,7 +11286,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/6. Accès a fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -13126,7 +11383,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/5. QueryBuilder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -13371,7 +11628,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/4. Login &amp; Password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -13434,7 +11691,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/3. PHP Data Objects  PDO/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -13781,7 +12038,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/2. Bases de dades relacionals (SQL)/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -13897,7 +12154,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/1. Introducció a les tecnologies per accedir a dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -13919,7 +12176,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/0. Indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -13976,7 +12233,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -17004,7 +15261,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/Exercicis proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -17180,7 +15437,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/9.  Generació de PDF amb DOMPDF/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -17242,7 +15499,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/8. Logger amb Monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -17449,7 +15706,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/7. Composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -17542,7 +15799,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/6. Gestió d&#39;Errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -17750,7 +16007,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/5. Tecnologies i Mecanismes per a la Separació/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -17826,7 +16083,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -17883,7 +16140,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/3. Espai de noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -18006,7 +16263,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/2. Principis de la POO/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -18472,7 +16729,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/15. Autoavaluació Programació Orientada a Objectes en PHP/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -18701,7 +16958,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/14. Enunciat dels projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -18939,7 +17196,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/13. Exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -19642,7 +17899,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/12. Referències Bibliogràfiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -19757,7 +18014,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/11. Proves amb PHPUNIT/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -19891,7 +18148,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/10. Documentación con phpDocumentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -19999,7 +18256,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/1. Concepte de classes i Objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -20062,7 +18319,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB/Programación en Web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -21517,7 +19774,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -21530,7 +19787,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1.1 Entornos de desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -21723,7 +19980,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1. Arquitecturas WEB/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -23104,7 +21361,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -23260,7 +21517,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -23418,7 +21675,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/TDD-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -23587,7 +21844,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/README/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -23758,7 +22015,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -24146,7 +22403,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -24351,7 +22608,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -24633,7 +22890,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -25454,7 +23711,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -25762,7 +24019,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -25775,7 +24032,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -26062,7 +24319,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/05-BOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -26269,7 +24526,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04.1-MVC/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -26474,7 +24731,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04-DOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -26857,7 +25114,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -26955,7 +25212,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -27195,7 +25452,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -27473,7 +25730,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -27873,7 +26130,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -28053,7 +26310,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -28070,7 +26327,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -28085,7 +26342,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -28182,7 +26439,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Diseño de interfaces WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -28196,7 +26453,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Despliegue de aplicaciones Web/Despliegue de aplicaciones WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -28210,7 +26467,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -28223,7 +26480,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-01-04T22:44:55Z</updated>
+            <updated>2025-01-04T22:44:58Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
