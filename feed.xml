@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-01-04T22:45:11Z</updated>
+    <updated>2025-01-04T22:45:16Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 Sin título
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/templates/sin-titulo/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 Default
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/templates/default/</id>
             <content type="html">
                 
@@ -34,7 +34,7 @@
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -595,7 +595,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -722,7 +722,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -873,7 +873,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -1075,7 +1075,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -1155,7 +1155,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -1275,7 +1275,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -1306,7 +1306,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -1319,7 +1319,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -1416,7 +1416,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -1513,7 +1513,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -1758,7 +1758,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;imagenes/06/06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -1821,7 +1821,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -2168,7 +2168,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -2284,7 +2284,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -2306,7 +2306,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -2363,7 +2363,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -5391,7 +5391,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -5567,7 +5567,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -5629,7 +5629,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -5836,7 +5836,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/notas/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;imagenes/05/logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -5929,7 +5929,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -6137,7 +6137,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -6213,7 +6213,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -6270,7 +6270,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -6393,7 +6393,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -6859,7 +6859,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -7085,1066 +7085,10 @@ function checkAnswer7() {
         </entry>
         <entry>
             <title>
-                14. Enunciat dels projectes
-                
-            </title>
-            <updated>2025-01-04T22:45:02Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
-            <content type="html">
-                &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
-&lt;h4 id=&quot;1-refactoritzacio-amb-programacio-orientada-a-objectes-poo&quot; tabindex=&quot;-1&quot;&gt;1. Refactorització amb Programació Orientada a Objectes (POO)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Crear una Classe &lt;code&gt;JocOfegat&lt;/code&gt;&lt;/strong&gt;: Refactoritza la lògica principal del joc en una classe &lt;code&gt;JocOfegat&lt;/code&gt; que gestione l&#39;estat del joc, la paraula a endevinar, les lletres endevinades, i el nombre d&#39;intents restants.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mètodes Principals&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;iniciarJoc($paraula): void&lt;/code&gt; – Inicia una nova partida amb la paraula donada.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;endevinaLletra($lletra): bool&lt;/code&gt; – Comprova si la lletra és part de la paraula i actualitza l&#39;estat del joc.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;estaAcabat(): bool&lt;/code&gt; – Retorna &lt;code&gt;true&lt;/code&gt; si el joc ha acabat, ja siga per guanyar o per perdre.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;obteEstat(): array&lt;/code&gt; – Retorna l&#39;estat actual del joc, incloent les lletres encertades, intents restants, etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-separacio-del-model-de-negoci-de-la-presentacio&quot; tabindex=&quot;-1&quot;&gt;2. Separació del Model de Negoci de la Presentació&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Model-Vista-Controlador (MVC)&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Model&lt;/strong&gt;: La classe JocOfegat actua com a model, gestionant la lògica del joc i mantenint l&#39;estat. Aquest model ha d&#39;estar completament separat de qualsevol codi que gestione la presentació (HTML, CSS).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vista&lt;/strong&gt;: Crea vistes que s&#39;encarreguen exclusivament de mostrar la informació a l&#39;usuari. Aquestes vistes poden utilitzar plantilles HTML i accedir al model a través de controladors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Controlador&lt;/strong&gt;: El controlador serà responsable de rebre les entrades de l&#39;usuari (com l&#39;endevinació d&#39;una lletra), interactuar amb el model (JocOfegat) per actualitzar l&#39;estat del joc, i seleccionar la vista adequada per a mostrar els resultats a l&#39;usuari.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-integracio-de-composer-i-autoloading&quot; tabindex=&quot;-1&quot;&gt;3. Integració de Composer i Autoloading&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Configuració de Composer&lt;/strong&gt;: Utilitza Composer per gestionar les dependències del projecte. Defineix l&#39;autoloading per carregar automàticament les classes de &lt;code&gt;JocOfegat&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Estructura del Projecte&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Organitza el codi en directoris com &lt;code&gt;src/Models&lt;/code&gt; per a les classes del joc, i &lt;code&gt;src/Services&lt;/code&gt; per a la gestió de sessions i autenticació.&lt;/li&gt;
-&lt;li&gt;Defineix un &lt;code&gt;composer.json&lt;/code&gt; per configurar l&#39;autoloading PSR-4.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;4-proves-amb-php-unit&quot; tabindex=&quot;-1&quot;&gt;4. Proves amb PHPUnit&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Escriu Proves Unitàries&lt;/strong&gt;: Crea proves unitàries per a la classe &lt;code&gt;JocOfegat&lt;/code&gt; utilitzant PHPUnit. Les proves poden incloure:
-&lt;ul&gt;
-&lt;li&gt;Prova per assegurar que una paraula es configura correctament.&lt;/li&gt;
-&lt;li&gt;Prova per verificar que una lletra encertada actualitza l&#39;estat correctament.&lt;/li&gt;
-&lt;li&gt;Prova per assegurar que el joc detecta correctament quan s&#39;ha guanyat o perdut.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Prova de Gestió de Sessions&lt;/strong&gt;: Afig proves per a la gestió de sessions, comprovant que l&#39;estat del joc es guarda i es recupera correctament.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;5-logger-amb-monolog&quot; tabindex=&quot;-1&quot;&gt;5. Logger amb Monolog&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Configuració de Logger&lt;/strong&gt;: Utilitza &lt;code&gt;Monolog&lt;/code&gt; per registrar esdeveniments importants, com quan s&#39;inicia un nou joc, quan un jugador endevina una lletra o quan es produeixen errors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diversos Handlers&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Registra missatges a un fitxer &lt;code&gt;game.log&lt;/code&gt; per a esdeveniments generals.&lt;/li&gt;
-&lt;li&gt;Afig un handler per registrar errors greus, com intents invàlids o problemes de sessió, en un fitxer d&#39;errors separat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;projecte-and-quot-4-en-ratlla-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;4 en Ratlla&amp;quot;&lt;/h3&gt;
-&lt;h4 id=&quot;1-refactoritzacio-amb-programacio-orientada-a-objectes-poo-1&quot; tabindex=&quot;-1&quot;&gt;1. Refactorització amb Programació Orientada a Objectes (POO)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Classe &lt;code&gt;Joc4enRatlla&lt;/code&gt;&lt;/strong&gt;: Refactoritza la lògica del joc en una classe &lt;code&gt;Joc4enRatlla&lt;/code&gt; que gestione la graella, el torn del jugador, i la lògica per determinar el guanyador.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mètodes Principals&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;iniciarPartida(): void&lt;/code&gt; – Inicia una nova partida.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ferMoviment($columna): bool&lt;/code&gt; – Permet que un jugador faça un moviment en una columna determinada.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;comprovaGuanyador(): ?int&lt;/code&gt; – Comprova si hi ha un guanyador després d&#39;un moviment.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;obteEstatGraella(): array&lt;/code&gt; – Retorna l&#39;estat actual de la graella.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-separacio-del-model-de-negoci-de-la-presentacio-1&quot; tabindex=&quot;-1&quot;&gt;2. Separació del Model de Negoci de la Presentació&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Model-Vista-Controlador (MVC)&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Model&lt;/strong&gt;: La classe Joc4enRatlla representa el model, que s&#39;encarrega de tota la lògica del joc, incloent la gestió de la graella i la determinació del guanyador.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vista&lt;/strong&gt;: Les vistes presenten la graella del joc, el torn actual del jugador, i els resultats finals (guanyador o empat). Aquestes vistes han d&#39;estar separades del model i només han de mostrar la informació proporcionada pel controlador.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Controlador&lt;/strong&gt;: El controlador gestiona les interaccions de l&#39;usuari, com els moviments en la graella. Aquest component comunica el model amb les vistes, assegurant-se que els canvis en l&#39;estat del joc es reflectisquen correctament en la presentació.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-integracio-de-composer-i-autoloading-1&quot; tabindex=&quot;-1&quot;&gt;3. Integració de Composer i Autoloading&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Configuració de Composer&lt;/strong&gt;: Defineix un &lt;code&gt;composer.json&lt;/code&gt; per al projecte, configurant l&#39;autoloading PSR-4 per carregar automàticament les classes de &lt;code&gt;Joc4enRatlla&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Estructura del Projecte&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Organitza el codi en directoris com &lt;code&gt;src/Models&lt;/code&gt; per a les classes del joc i &lt;code&gt;src/Controllers&lt;/code&gt; per a la gestió del flux del joc.&lt;/li&gt;
-&lt;li&gt;Configura Composer per gestionar les dependències del projecte.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;4-proves-amb-php-unit-1&quot; tabindex=&quot;-1&quot;&gt;4. Proves amb PHPUnit&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Escriu Proves Unitàries&lt;/strong&gt;: Crea proves unitàries per a la classe &lt;code&gt;Joc4enRatlla&lt;/code&gt; utilitzant PHPUnit. Les proves poden incloure:
-&lt;ul&gt;
-&lt;li&gt;Verificació de la configuració inicial de la graella.&lt;/li&gt;
-&lt;li&gt;Proves per assegurar que un moviment s&#39;aplica correctament a la graella.&lt;/li&gt;
-&lt;li&gt;Proves per assegurar que el joc detecta correctament un guanyador o un empat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proves de Gestió de Sessions&lt;/strong&gt;: Afig proves per assegurar que l&#39;estat del joc i el torn del jugador es mantenen correctament a través de les sessions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;5-logger-amb-monolog-1&quot; tabindex=&quot;-1&quot;&gt;5. Logger amb Monolog&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Configuració de Logger&lt;/strong&gt;: Utilitza &lt;code&gt;Monolog&lt;/code&gt; per registrar esdeveniments importants del joc, com quan un jugador fa un moviment, quan s&#39;inicia una nova partida, o quan es produeixen errors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diversos Handlers&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Registra els moviments dels jugadors i els resultats del joc en un fitxer &lt;code&gt;game.log&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Registra errors greus o problemes amb les sessions en un fitxer d&#39;errors separat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;consideracions-addicionals-per-a-ambdos-projectes&quot; tabindex=&quot;-1&quot;&gt;Consideracions Addicionals per a Ambdós Projectes&lt;/h3&gt;
-&lt;h4 id=&quot;1-documentacio-amb-php-doc&quot; tabindex=&quot;-1&quot;&gt;1. Documentació amb PHPDoc&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Documentació Completa&lt;/strong&gt;: Documenta totes les classes i mètodes amb comentaris PHPDoc. Això inclou les descripcions dels paràmetres i els valors de retorn per a cada mètode.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Generació Automàtica&lt;/strong&gt;: Utilitza &lt;code&gt;phpDocumentor&lt;/code&gt; o una eina similar per generar la documentació automàticament. Afig la documentació generada al projecte per facilitar el manteniment i la comprensió del codi.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;2-implementacio-d-interficies&quot; tabindex=&quot;-1&quot;&gt;2. Implementació d&#39;Interfícies&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Interfície &lt;code&gt;JocInterface&lt;/code&gt;&lt;/strong&gt;: Crea una interfície que definisca els mètodes bàsics que qualsevol joc (com Ofegat o 4 en Ratlla) ha de tindre (&lt;code&gt;iniciarJoc&lt;/code&gt;, &lt;code&gt;ferMoviment&lt;/code&gt;, &lt;code&gt;comprovaGuanyador&lt;/code&gt;, etc.). Assegura&#39;t que les classes &lt;code&gt;JocOfegat&lt;/code&gt; i &lt;code&gt;Joc4enRatlla&lt;/code&gt; implementen aquesta interfície.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;3-serialitzacio-i-persistencia&quot; tabindex=&quot;-1&quot;&gt;3. Serialització i Persistència&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Serialització de l&#39;Estat del Joc&lt;/strong&gt;: Implementa funcionalitats per serialitzar l&#39;estat del joc (usant JSON o &lt;code&gt;serialize()&lt;/code&gt;) i deserialitzar-lo per mantenir la persistència entre sessions o guardar l&#39;estat per a reprendre la partida posteriorment.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;rubrica-d-avaluacio-per-als-projectes-and-quot-ofegat-and-quot-i-and-quot-4-en-ratlla-and-quot&quot; tabindex=&quot;-1&quot;&gt;Rúbrica d&#39;Avaluació per als Projectes &amp;quot;Ofegat&amp;quot; i &amp;quot;4 en Ratlla&amp;quot;&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;Criteri&lt;/strong&gt;&lt;/th&gt;
-&lt;th&gt;** Insuficient (1 punt)**&lt;/th&gt;
-&lt;th&gt;** Adequat (2 punts)**&lt;/th&gt;
-&lt;th&gt;** Bé (3 punts)**&lt;/th&gt;
-&lt;th&gt;** Excel·lent (4 punts)**&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Implementació de Programació Orientada a Objectes (POO)&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Les classes no estan ben dissenyades, falta encapsulació, ús incorrecte d&#39;herència, o mètodes no funcional.&lt;/td&gt;
-&lt;td&gt;Les classes estan creades però poden tindre errors o una estructura confusa. S&#39;aplica la POO de manera bàsica, però hi ha problemes de disseny.&lt;/td&gt;
-&lt;td&gt;Classes correctament estructurades i funcionalment completes. Ús adequat d&#39;encapsulació, herència i polimorfisme.&lt;/td&gt;
-&lt;td&gt;Disseny de classes ben organitzat, reutilitzable i amb una implementació clara dels principis de POO.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Separació del Model de Negoci de la Presentació (MVC)&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No s&#39;ha implementat la separació de model i presentació; el codi de lògica i presentació està mesclat.&lt;/td&gt;
-&lt;td&gt;Hi ha una separació parcial, però algunes parts de la lògica del negoci es barregen amb la presentació o a l&#39;inrevés.&lt;/td&gt;
-&lt;td&gt;La separació entre model, vista i controlador està ben implementada, però podria millorar en alguns aspectes.&lt;/td&gt;
-&lt;td&gt;Excel·lent separació entre el model, vista i controlador, seguint els principis del patró MVC i mantenint un codi net.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Integració de Composer i Autoloading&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No s&#39;ha configurat Composer o l&#39;autoloading, o està mal configurat i no funciona correctament.&lt;/td&gt;
-&lt;td&gt;Composer s&#39;ha utilitzat, però amb una estructura de projectes i autoloading bàsics o incorrectes.&lt;/td&gt;
-&lt;td&gt;Composer i l&#39;autoloading estan configurats correctament amb una estructura de projectes ben definida.&lt;/td&gt;
-&lt;td&gt;Ús excel·lent de Composer amb una configuració avançada d&#39;autoloading i una estructura de projecte organitzada i modular.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Implementació de Proves amb PHPUnit&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No s&#39;han creat proves, o les proves creades són mínimes i no adequades per a verificar la funcionalitat.&lt;/td&gt;
-&lt;td&gt;Es presenten proves bàsiques amb PHPUnit, però cobreixen parcialment les funcionalitats requerides.&lt;/td&gt;
-&lt;td&gt;Proves unitàries completes que cobreixen la majoria dels casos, incloent proves de gestió de sessions i lògica de joc.&lt;/td&gt;
-&lt;td&gt;Proves exhaustives que cobreixen totes les funcionalitats i consideren casos límit, amb ús de mocks quan necessari.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Ús de Logger amb Monolog&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;No s&#39;ha implementat el logger o no s&#39;utilitza de manera efectiva per registrar esdeveniments importants.&lt;/td&gt;
-&lt;td&gt;Logger implementat, però amb ús limitat o incorrecte en la registració d&#39;esdeveniments i errors.&lt;/td&gt;
-&lt;td&gt;Logger ben implementat, amb esdeveniments i errors registrats adequadament en diferents fitxers o canals.&lt;/td&gt;
-&lt;td&gt;Ús avançat de logger amb diferents handlers per registrar informació, errors, i seguiment detallat del flux del joc.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Documentació amb PHPDoc&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Falta documentació o és insuficient per comprendre les classes i mètodes del projecte.&lt;/td&gt;
-&lt;td&gt;Documentació bàsica amb PHPDoc, però amb omisions o descripcions poc clares.&lt;/td&gt;
-&lt;td&gt;Documentació completa amb PHPDoc per a totes les classes i mètodes, amb descripcions clares i detallades.&lt;/td&gt;
-&lt;td&gt;Documentació excel·lent amb PHPDoc, ben estructurada i completa, facilitant la comprensió i manteniment del projecte.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Qualitat del Codi i Bones Pràctiques&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Codi desorganitzat, amb molts errors de sintaxi, mala nomenclatura, o sense bones pràctiques de codi.&lt;/td&gt;
-&lt;td&gt;Codi funcional però amb problemes d&#39;estructura, estil inconsistent o incompliment parcial de bones pràctiques.&lt;/td&gt;
-&lt;td&gt;Codi ben escrit, seguint les convencions de nomenclatura i bones pràctiques de desenvolupament.&lt;/td&gt;
-&lt;td&gt;Codi de qualitat professional, net, ben organitzat, i seguint rigorosament les millors pràctiques de programació.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;explicacio-dels-criteris&quot; tabindex=&quot;-1&quot;&gt;Explicació dels Criteris&lt;/h3&gt;
-&lt;h4 id=&quot;strong-1-punt-insuficient-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1 punt: Insuficient&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;POO&lt;/strong&gt;: Les classes no segueixen els principis bàsics de la programació orientada a objectes. Hi ha problemes greus com la falta d&#39;encapsulació, l&#39;ús inadequat de l&#39;herència o mètodes que no funcionen correctament.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MVC&lt;/strong&gt;: No s&#39;ha implementat la separació del model de negoci i la presentació. El codi de la lògica del negoci està mesclat amb la presentació (HTML, CSS), cosa que dificulta el manteniment i l&#39;escalabilitat del projecte.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Composer i Autoloading&lt;/strong&gt;: No s&#39;ha configurat Composer o l&#39;autoloading. Si estan configurats, no funcionen correctament.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proves amb PHPUnit&lt;/strong&gt;: Les proves estan absents o són mínimes, i no verifiquen adequadament la funcionalitat del projecte.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Logger amb Monolog&lt;/strong&gt;: El logger no s&#39;ha implementat, o si està present, no s&#39;utilitza de manera efectiva per registrar esdeveniments importants.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació amb PHPDoc&lt;/strong&gt;: Falta documentació essencial, o la que existeix és insuficient per a entendre el codi.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qualitat del Codi&lt;/strong&gt;: El codi és desorganitzat, amb molts errors de sintaxi i no segueix les bones pràctiques de programació.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;strong-2-punts-adequat-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;2 punts: Adequat&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;POO&lt;/strong&gt;: Les classes estan creades, però poden contindre errors o una estructura confusa. L&#39;aplicació de la POO és bàsica, amb alguns problemes de disseny.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MVC&lt;/strong&gt;: Hi ha una separació parcial entre el model de negoci i la presentació. No obstant això, encara hi ha parts del codi on la lògica del negoci està barrejada amb la presentació o a l&#39;inrevés, cosa que indica una comprensió bàsica però incompleta del patró MVC.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Composer i Autoloading&lt;/strong&gt;: Composer s&#39;ha utilitzat, però l&#39;estructura de projectes o l&#39;autoloading no són òptims, presentant configuracions bàsiques o incorrectes.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proves amb PHPUnit&lt;/strong&gt;: Es presenten proves bàsiques que cobreixen parcialment les funcionalitats requerides.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Logger amb Monolog&lt;/strong&gt;: El logger està implementat, però l&#39;ús és limitat o incorrecte en la registració d&#39;esdeveniments i errors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació amb PHPDoc&lt;/strong&gt;: La documentació amb PHPDoc és bàsica, amb algunes omisions o descripcions poc clares.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qualitat del Codi&lt;/strong&gt;: El codi és funcional però presenta problemes d&#39;estructura, estil inconsistent o incompliment parcial de bones pràctiques.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;strong-3-punts-be-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;3 punts: Bé&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;POO&lt;/strong&gt;: Les classes estan correctament estructurades i són funcionalment completes. Es fa un ús adequat de l&#39;encapsulació, l&#39;herència i el polimorfisme.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MVC&lt;/strong&gt;: La separació entre el model, vista i controlador està ben implementada, seguint majoritàriament els principis del patró MVC. El codi és clar i estructurat, amb algunes àrees que podrien millorar-se per aconseguir una millor modularitat i mantenibilitat.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Composer i Autoloading&lt;/strong&gt;: Composer i l&#39;autoloading estan configurats correctament, amb una estructura de projectes ben definida.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proves amb PHPUnit&lt;/strong&gt;: Les proves unitàries estan completes i cobreixen la majoria dels casos, incloent-hi la gestió de sessions i la lògica del joc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Logger amb Monolog&lt;/strong&gt;: El logger està ben implementat, amb esdeveniments i errors registrats adequadament en diferents fitxers o canals.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació amb PHPDoc&lt;/strong&gt;: La documentació amb PHPDoc és completa per a totes les classes i mètodes, amb descripcions clares i detallades.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qualitat del Codi&lt;/strong&gt;: El codi està ben escrit, seguint les convencions de nomenclatura i les bones pràctiques de desenvolupament.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;strong-4-punts-excel-lent-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;4 punts: Excel·lent&lt;/strong&gt;&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;POO&lt;/strong&gt;: El disseny de classes està ben organitzat, és reutilitzable i implementa clarament els principis de la programació orientada a objectes. El codi és elegant i eficient.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MVC&lt;/strong&gt;: Excel·lent separació entre el model, vista i controlador, seguint rigorosament els principis del patró MVC. El codi està ben organitzat, modular i fàcil de mantenir, cosa que facilita l&#39;escalabilitat del projecte. Hi ha una clara distinció de responsabilitats entre les diferents capes.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Composer i Autoloading&lt;/strong&gt;: S&#39;utilitza Composer de manera excel·lent, amb una configuració avançada de l&#39;autoloading i una estructura de projecte organitzada i modular.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proves amb PHPUnit&lt;/strong&gt;: Les proves són exhaustives, cobrint totes les funcionalitats i considerant casos límit, amb ús de mocks quan necessari.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Logger amb Monolog&lt;/strong&gt;: S&#39;utilitza el logger de manera avançada, amb diferents handlers per registrar informació, errors, i fer un seguiment detallat del flux del joc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Documentació amb PHPDoc&lt;/strong&gt;: La documentació amb PHPDoc és excel·lent, ben estructurada i completa, facilitant la comprensió i el manteniment del projecte.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qualitat del Codi&lt;/strong&gt;: El codi és de qualitat professional, net, ben organitzat, i segueix rigorosament les millors pràctiques de programació.&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/" >
-        </entry>
-        <entry>
-            <title>
-                13. Exercicis
-                
-            </title>
-            <updated>2025-01-04T22:45:02Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
-            <content type="html">
-                &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
-&lt;h5 id=&quot;exercici-1-crear-una-classe-basica&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Crear una Classe Bàsica&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea una classe &lt;code&gt;Cotxe&lt;/code&gt; que tinga les propietats &lt;code&gt;marca&lt;/code&gt; i &lt;code&gt;model&lt;/code&gt;. Afegeix un mètode &lt;code&gt;mostraInformacio&lt;/code&gt; que retorne un string amb la marca i el model del cotxe.&lt;/li&gt;
-&lt;li&gt;Crea una instància de la classe &lt;code&gt;Cotxe&lt;/code&gt;, assigna-li una marca i un model, i mostra la informació utilitzant el mètode &lt;code&gt;mostraInformacio&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-class Cotxe {
-    public $marca;
-    public $model;
-
-    public function mostraInformacio() {
-        return &amp;quot;Marca: &amp;quot; . $this-&amp;gt;marca . &amp;quot;, Model: &amp;quot; . $this-&amp;gt;model;
-    }
-}
- 
-$cotxe = new Cotxe();
-$cotxe-&amp;gt;marca = &amp;quot;Toyota&amp;quot;;
-$cotxe-&amp;gt;model = &amp;quot;Corolla&amp;quot;;
-echo $cotxe-&amp;gt;mostraInformacio(); // Output: Marca: Toyota, Model: Corolla
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&quot;exercici-2-afegir-un-constructor-i-destructor&quot; tabindex=&quot;-1&quot;&gt;Exercici 2. Afegir un Constructor i destructor&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Modifica la classe &lt;code&gt;Cotxe&lt;/code&gt; per afegir un constructor que prenga com a paràmetres la &lt;code&gt;marca&lt;/code&gt; i el &lt;code&gt;model&lt;/code&gt;, i que establisca aquestes propietats automàticament.&lt;/li&gt;
-&lt;li&gt;Afegeix un destructor a la classe &lt;code&gt;Cotxe&lt;/code&gt; que mostre un missatge quan l&#39;objecte és destruït. Crea un objecte i permet que es destruïsca al final del programa.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-class Cotxe {
-    public $marca;
-    public $model;
-
-    public function __construct($marca, $model) {
-        $this-&amp;gt;marca = $marca;
-        $this-&amp;gt;model = $model;
-    }
-    public function __destruct() {
-        echo &amp;quot;L&#39;objecte Cotxe ha estat destruït.&#92;n&amp;quot;;
-    }
-
-    public function mostraInformacio() {
-        return &amp;quot;Marca: &amp;quot; . $this-&amp;gt;marca . &amp;quot;, Model: &amp;quot; . $this-&amp;gt;model;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&quot;exercici-3-encapsulacio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 3. Encapsulació de Propietats&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Modifica la classe &lt;code&gt;Cotxe&lt;/code&gt; per a que les propietats &lt;code&gt;marca&lt;/code&gt; i &lt;code&gt;model&lt;/code&gt; siguen privades. Afegeix mètodes públics &lt;code&gt;getMarca&lt;/code&gt;, &lt;code&gt;setMarca&lt;/code&gt;, &lt;code&gt;getModel&lt;/code&gt;, i &lt;code&gt;setModel&lt;/code&gt; per accedir i modificar aquestes propietats.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-class Cotxe {
-    private $marca;
-    private $model;
-
-    public function __construct($marca, $model) {
-        $this-&amp;gt;marca = $marca;
-        $this-&amp;gt;model = $model;
-    }
-
-    public function getMarca() {
-        return $this-&amp;gt;marca;
-    }
-
-    public function setMarca($marca) {
-        $this-&amp;gt;marca = $marca;
-    }
-
-    public function getModel() {
-        return $this-&amp;gt;model;
-    }
-
-    public function setModel($model) {
-        $this-&amp;gt;model = $model;
-    }
-
-    public function mostraInformacio() {
-        return &amp;quot;Marca: &amp;quot; . $this-&amp;gt;getMarca() . &amp;quot;, Model: &amp;quot; . $this-&amp;gt;getModel();
-    }
-}
-
-$cotxe = new Cotxe(&amp;quot;Ford&amp;quot;, &amp;quot;Fiesta&amp;quot;);
-echo $cotxe-&amp;gt;mostraInformacio(); // Output: Marca: Ford, Model: Fiesta
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&quot;exercici-4-herencia-i-polimorfisme&quot; tabindex=&quot;-1&quot;&gt;Exercici 4. Herència i Polimorfisme&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea una classe &lt;code&gt;Vehicle&lt;/code&gt; amb una propietat &lt;code&gt;tipus&lt;/code&gt;. A continuació, crea una classe &lt;code&gt;Motocicleta&lt;/code&gt; que herete de &lt;code&gt;Vehicle&lt;/code&gt; i tinga una propietat &lt;code&gt;cilindrada&lt;/code&gt;. Afegeix un mètode a &lt;code&gt;Motocicleta&lt;/code&gt; que retorne el tipus i la cilindrada.&lt;/li&gt;
-&lt;li&gt;Crea una funció &lt;code&gt;mostraDetallsVehicle&lt;/code&gt; que accepte un objecte de tipus &lt;code&gt;Vehicle&lt;/code&gt; i mostre les seues propietats. Prova aquesta funció amb objectes de &lt;code&gt;Cotxe&lt;/code&gt; i &lt;code&gt;Motocicleta&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-class Vehicle {
-    protected $tipus;
-
-    public function __construct($tipus) {
-        $this-&amp;gt;tipus = $tipus;
-    }
-
-    public function mostraDetalls() {
-        return &amp;quot;Tipus: &amp;quot; . $this-&amp;gt;tipus;
-    }
-}
-
-class Cotxe extends Vehicle {
-    private $marca;
-    private $model;
-
-    public function __construct($marca, $model) {
-        parent::__construct(&amp;quot;Cotxe&amp;quot;);
-        $this-&amp;gt;marca = $marca;
-        $this-&amp;gt;model = $model;
-    }
-
-    public function mostraDetalls() {
-        return parent::mostraDetalls() . &amp;quot;, Marca: &amp;quot; . $this-&amp;gt;marca . &amp;quot;, Model: &amp;quot; . $this-&amp;gt;model;
-    }
-}
-
-class Motocicleta extends Vehicle {
-    private $cilindrada;
-
-    public function __construct($cilindrada) {
-        parent::__construct(&amp;quot;Motocicleta&amp;quot;);
-        $this-&amp;gt;cilindrada = $cilindrada;
-    }
-
-    public function mostraDetalls() {
-        return parent::mostraDetalls() . &amp;quot;, Cilindrada: &amp;quot; . $this-&amp;gt;cilindrada;
-    }
-}
-
-function mostraDetallsVehicle(Vehicle $vehicle) {
-    echo $vehicle-&amp;gt;mostraDetalls() . &amp;quot;&#92;n&amp;quot;;
-}
-
-$cotxe = new Cotxe(&amp;quot;Toyota&amp;quot;, &amp;quot;Corolla&amp;quot;);
-$moto = new Motocicleta(600);
-
-mostraDetallsVehicle($cotxe); // Output: Tipus: Cotxe, Marca: Toyota, Model: Corolla
-mostraDetallsVehicle($moto);  // Output: Tipus: Motocicleta, Cilindrada: 600
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&quot;exercici-5-implementacio-del-patro-mvc-amb-vehicles&quot; tabindex=&quot;-1&quot;&gt;Exercici 5. Implementació del Patró MVC amb Vehicles&lt;/h5&gt;
-&lt;p&gt;Continuant amb l&#39;exercici anterior on has creat les classes &lt;code&gt;Vehicle&lt;/code&gt;, &lt;code&gt;Cotxe&lt;/code&gt;, i &lt;code&gt;Motocicleta&lt;/code&gt;, ara refactoritzaràs el codi per seguir el patró Model-Vista-Controlador (MVC). El teu objectiu és separar la lògica de negoci (models) de la presentació (vistes) i gestionar la interacció entre aquestes capes mitjançant un controlador.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Crear el Model&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Refactoritza les classes &lt;code&gt;Vehicle&lt;/code&gt;, &lt;code&gt;Cotxe&lt;/code&gt;, i &lt;code&gt;Motocicleta&lt;/code&gt; perquè representen el model de negoci i només contenen la lògica relacionada amb la gestió de vehicles.&lt;/li&gt;
-&lt;li&gt;Assegura&#39;t que els models no contenen cap codi de presentació.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Crear les Vistes&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Crea vistes separades per mostrar els detalls dels vehicles:
-&lt;ul&gt;
-&lt;li&gt;Una vista HTML que mostre la informació dels vehicles en format HTML.&lt;/li&gt;
-&lt;li&gt;Una vista en text simple que mostre els detalls dels vehicles en un format de text senzill.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Crear el Controlador&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Implementa un controlador que gestione la interacció entre els models i les vistes.&lt;/li&gt;
-&lt;li&gt;El controlador ha de ser capaç de rebre una sol·licitud per mostrar un vehicle i triar la vista adequada per mostrar-ne els detalls.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-// Models
-
-class Vehicle {
-    protected $tipus;
-
-    public function __construct($tipus) {
-        $this-&amp;gt;tipus = $tipus;
-    }
-
-    public function getTipus() {
-        return $this-&amp;gt;tipus;
-    }
-}
-
-class Cotxe extends Vehicle {
-    private $marca;
-    private $model;
-
-    public function __construct($marca, $model) {
-        parent::__construct(&amp;quot;Cotxe&amp;quot;);
-        $this-&amp;gt;marca = $marca;
-        $this-&amp;gt;model = $model;
-    }
-
-    public function getMarca() {
-        return $this-&amp;gt;marca;
-    }
-
-    public function getModel() {
-        return $this-&amp;gt;model;
-    }
-}
-
-class Motocicleta extends Vehicle {
-    private $cilindrada;
-
-    public function __construct($cilindrada) {
-        parent::__construct(&amp;quot;Motocicleta&amp;quot;);
-        $this-&amp;gt;cilindrada = $cilindrada;
-    }
-
-    public function getCilindrada() {
-        return $this-&amp;gt;cilindrada;
-    }
-}
-
-// Vistes
-
-class VehicleView {
-    public function renderHtml(Vehicle $vehicle) {
-        $output = &amp;quot;&amp;lt;p&amp;gt;Tipus: &amp;quot; . $vehicle-&amp;gt;getTipus() . &amp;quot;&amp;lt;/p&amp;gt;&amp;quot;;
-        if ($vehicle instanceof Cotxe) {
-            $output .= &amp;quot;&amp;lt;p&amp;gt;Marca: &amp;quot; . $vehicle-&amp;gt;getMarca() . &amp;quot;&amp;lt;/p&amp;gt;&amp;quot;;
-            $output .= &amp;quot;&amp;lt;p&amp;gt;Model: &amp;quot; . $vehicle-&amp;gt;getModel() . &amp;quot;&amp;lt;/p&amp;gt;&amp;quot;;
-        } elseif ($vehicle instanceof Motocicleta) {
-            $output .= &amp;quot;&amp;lt;p&amp;gt;Cilindrada: &amp;quot; . $vehicle-&amp;gt;getCilindrada() . &amp;quot; cc&amp;lt;/p&amp;gt;&amp;quot;;
-        }
-        return $output;
-    }
-
-    public function renderText(Vehicle $vehicle) {
-        $output = &amp;quot;Tipus: &amp;quot; . $vehicle-&amp;gt;getTipus() . &amp;quot;&#92;n&amp;quot;;
-        if ($vehicle instanceof Cotxe) {
-            $output .= &amp;quot;Marca: &amp;quot; . $vehicle-&amp;gt;getMarca() . &amp;quot;&#92;n&amp;quot;;
-            $output .= &amp;quot;Model: &amp;quot; . $vehicle-&amp;gt;getModel() . &amp;quot;&#92;n&amp;quot;;
-        } elseif ($vehicle instanceof Motocicleta) {
-            $output .= &amp;quot;Cilindrada: &amp;quot; . $vehicle-&amp;gt;getCilindrada() . &amp;quot; cc&#92;n&amp;quot;;
-        }
-        return $output;
-    }
-}
-
-// Controlador
-
-class VehicleController {
-    private $view;
-
-    public function __construct(VehicleView $view) {
-        $this-&amp;gt;view = $view;
-    }
-
-    public function mostrarVehicle(Vehicle $vehicle, $format = &#39;html&#39;) {
-        if ($format === &#39;html&#39;) {
-            echo $this-&amp;gt;view-&amp;gt;renderHtml($vehicle);
-        } else {
-            echo $this-&amp;gt;view-&amp;gt;renderText($vehicle);
-        }
-    }
-}
-
-// Exemple d&#39;ús
-
-$view = new VehicleView();
-$controller = new VehicleController($view);
-
-$cotxe = new Cotxe(&amp;quot;Toyota&amp;quot;, &amp;quot;Corolla&amp;quot;);
-$moto = new Motocicleta(600);
-
-// Mostrar en HTML
-$controller-&amp;gt;mostrarVehicle($cotxe, &#39;html&#39;);
-$controller-&amp;gt;mostrarVehicle($moto, &#39;html&#39;);
-
-// Mostrar en Text
-$controller-&amp;gt;mostrarVehicle($cotxe, &#39;text&#39;);
-$controller-&amp;gt;mostrarVehicle($moto, &#39;text&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-5-classes-abstractes-i-interficies&quot; tabindex=&quot;-1&quot;&gt;Exercici 5. Classes Abstractes i Interfícies&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea una classe abstracta &lt;code&gt;Figura&lt;/code&gt; amb un mètode abstracte &lt;code&gt;calculaArea&lt;/code&gt;. Després, crea classes &lt;code&gt;Cercle&lt;/code&gt; i &lt;code&gt;Rectangle&lt;/code&gt; que estiguen basades en &lt;code&gt;Figura&lt;/code&gt; i implementen el mètode &lt;code&gt;calculaArea&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Defineix una interfície &lt;code&gt;OperacionsBàsiques&lt;/code&gt; amb els mètodes &lt;code&gt;suma&lt;/code&gt; i &lt;code&gt;resta&lt;/code&gt;. Implementa aquesta interfície en una classe &lt;code&gt;CalculadoraSimple&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-abstract class Figura {
-    abstract public function calculaArea();
-}
-
-class Cercle extends Figura {
-    private $radi;
-
-    public function __construct($radi) {
-        $this-&amp;gt;radi = $radi;
-    }
-
-    public function calculaArea() {
-        return pi() * $this-&amp;gt;radi * $this-&amp;gt;radi;
-    }
-}
-
-class Rectangle extends Figura {
-    private $ample;
-    private $llarg;
-
-    public function __construct($ample, $llarg) {
-        $this-&amp;gt;ample = $ample;
-        $this-&amp;gt;llarg = $llarg;
-    }
-
-    public function calculaArea() {
-        return $this-&amp;gt;ample * $this-&amp;gt;llarg;
-    }
-}
-
-$cercle = new Cercle(5);
-$rectangle = new Rectangle(4, 6);
-
-echo &amp;quot;Àrea del cercle: &amp;quot; . $cercle-&amp;gt;calculaArea() . &amp;quot;&#92;n&amp;quot;; // Output: Àrea del cercle: 78.5398
-echo &amp;quot;Àrea del rectangle: &amp;quot; . $rectangle-&amp;gt;calculaArea() . &amp;quot;&#92;n&amp;quot;; // Output: Àrea del rectangle: 24
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-interface OperacionsBàsiques {
-    public function suma($a, $b);
-    public function resta($a, $b);
-}
-
-class CalculadoraSimple implements OperacionsBàsiques {
-    public function suma($a, $b) {
-        return $a + $b;
-    }
-
-    public function resta($a, $b) {
-        return $a - $b;
-    }
-}
-
-$calculadora = new CalculadoraSimple();
-echo &amp;quot;Suma: &amp;quot; . $calculadora-&amp;gt;suma(5, 3) . &amp;quot;&#92;n&amp;quot;; // Output: Suma: 8
-echo &amp;quot;Resta: &amp;quot; . $calculadora-&amp;gt;resta(5, 3) . &amp;quot;&#92;n&amp;quot;; // Output: Resta: 2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-6-utilitzar-traits&quot; tabindex=&quot;-1&quot;&gt;Exercici 6.  Utilitzar Traits&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea un trait &lt;code&gt;Informacio&lt;/code&gt; amb un mètode &lt;code&gt;mostraInformacio&lt;/code&gt;. Inclou aquest trait en les classes &lt;code&gt;Cotxe&lt;/code&gt; i &lt;code&gt;Motocicleta&lt;/code&gt;, i utilitza&#39;l per mostrar informació addicional.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-trait Informacio {
-    public function mostraInformacio() {
-        return &amp;quot;Aquest és un objecte de tipus &amp;quot; . get_class($this);
-    }
-}
-
-class Cotxe {
-    use Informacio;
-}
-
-class Motocicleta {
-    use Informacio;
-}
-
-$cotxe = new Cotxe();
-$moto = new Motocicleta();
-
-echo $cotxe-&amp;gt;mostraInformacio() . &amp;quot;&#92;n&amp;quot;; // Output: Aquest és un objecte de tipus Cotxe
-echo $moto-&amp;gt;mostraInformacio() . &amp;quot;&#92;n&amp;quot;; // Output: Aquest és un objecte de tipus Motocicleta
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-7-gestionar-excepcions&quot; tabindex=&quot;-1&quot;&gt;Exercici 7.  Gestionar Excepcions&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Escriu una funció &lt;code&gt;divideix&lt;/code&gt; que prenga dos nombres com a paràmetres i retorne el resultat de la divisió. Si el segon nombre és zero, llença una excepció amb un missatge adequat. Captura aquesta excepció quan crides a la funció i mostra un missatge d&#39;error.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-function divideix($a, $b) {
-    if ($b == 0) {
-        throw new Exception(&amp;quot;No es pot dividir per zero.&amp;quot;);
-    }
-    return $a / $b;
-}
-
-try {
-    echo divideix(10, 2) . &amp;quot;&#92;n&amp;quot;; // Output: 5
-    echo divideix(10, 0) . &amp;quot;&#92;n&amp;quot;; // Aquesta línia llançarà una excepció
-} catch (Exception $e) {
-    echo &amp;quot;Error: &amp;quot; . $e-&amp;gt;getMessage() . &amp;quot;&#92;n&amp;quot;; // Output: Error: No es pot dividir per zero.
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-8-proves-amb-php-unit&quot; tabindex=&quot;-1&quot;&gt;Exercici 8. Proves amb PHPUnit&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea una classe &lt;code&gt;Calculadora&lt;/code&gt; amb els mètodes &lt;code&gt;suma&lt;/code&gt; i &lt;code&gt;resta&lt;/code&gt;. Escriu una prova unitària amb PHPUnit per verificar que aquests mètodes funcionen correctament.&lt;/li&gt;
-&lt;li&gt;Afegeix un mètode &lt;code&gt;divideix&lt;/code&gt; a la classe &lt;code&gt;Calculadora&lt;/code&gt; que llance una excepció quan es divideix per zero. Escriu una prova unitària que assegure que aquesta excepció es llança correctament.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-// Arxiu: tests/CalculadoraTest.php
-use PHPUnit&#92;Framework&#92;TestCase;
-
-class Calculadora {
-    public function suma($a, $b) {
-        return $a + $b;
-    }
-
-    public function resta($a, $b) {
-        return $a - $b;
-    }
-}
-
-class CalculadoraTest extends TestCase {
-    public function testSuma() {
-        $calculadora = new Calculadora();
-        $resultat = $calculadora-&amp;gt;suma(2, 3);
-        $this-&amp;gt;assertEquals(5, $resultat);
-    }
-
-    public function testResta() {
-        $calculadora = new Calculadora();
-        $resultat = $calculadora-&amp;gt;resta(5, 3);
-        $this-&amp;gt;assertEquals(2, $resultat);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt; 
-// Arxiu: tests/CalculadoraTest.php
-use PHPUnit&#92;Framework&#92;TestCase;
-
-class Calculadora {
-    public function divideix($a, $b) {
-        if ($b == 0) {
-            throw new InvalidArgumentException(&amp;quot;No es pot dividir per zero.&amp;quot;);
-        }
-        return $a / $b;
-    }
-}
-
-class CalculadoraTest extends TestCase {
-    public function testDivideix() {
-        $this-&amp;gt;expectExceptionclass;
-        
-        $calculadora = new Calculadora();
-        $calculadora-&amp;gt;divideix(5, 0);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-9-espais-de-noms-namespaces&quot; tabindex=&quot;-1&quot;&gt;Exercici 9. Espais de Noms (Namespaces)&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea un espai de noms &lt;code&gt;App&#92;Models&lt;/code&gt; i defineix una classe &lt;code&gt;Usuari&lt;/code&gt; dins d&#39;aquest espai de noms. Afegeix un mètode &lt;code&gt;getNomComplet&lt;/code&gt; que retorne el nom complet de l&#39;usuari.&lt;/li&gt;
-&lt;li&gt;En un fitxer separat, importa la classe &lt;code&gt;Usuari&lt;/code&gt; de l&#39;espai de noms &lt;code&gt;App&#92;Models&lt;/code&gt; i crea una instància d&#39;aquesta classe. Utilitza el mètode &lt;code&gt;getNomComplet&lt;/code&gt; per mostrar el nom complet d&#39;un usuari.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-// Arxiu: src/Models/Usuari.php
-namespace App&#92;Models;
-
-class Usuari {
-    private $nom;
-    private $cognom;
-
-    public function __construct($nom, $cognom) {
-        $this-&amp;gt;nom = $nom;
-        $this-&amp;gt;cognom = $cognom;
-    }
-
-    public function getNomComplet() {
-        return $this-&amp;gt;nom . &amp;quot; &amp;quot; . $this-&amp;gt;cognom;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
-// Arxiu: index.php
-require &#39;vendor/autoload.php&#39;;
-
-use App&#92;Models&#92;Usuari;
-
-$usuari = new Usuari(&amp;quot;Joan&amp;quot;, &amp;quot;Garcia&amp;quot;);
-echo $usuari-&amp;gt;getNomComplet(); // Output: Joan Garcia
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-10-autoloading-i-composer&quot; tabindex=&quot;-1&quot;&gt;Exercici 10. Autoloading i Composer&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Configura un projecte PHP amb Composer que utilitze l&#39;autoloading PSR-4. Crea l&#39;estructura de directoris &lt;code&gt;src/Models&lt;/code&gt; i col·loca una classe &lt;code&gt;Producte&lt;/code&gt; dins de &lt;code&gt;src/Models&lt;/code&gt;. Verifica que l&#39;autoloading funcione correctament instanciant la classe &lt;code&gt;Producte&lt;/code&gt; en un fitxer separat.&lt;/li&gt;
-&lt;li&gt;Afegeix la llibreria &lt;code&gt;monolog/monolog&lt;/code&gt; al projecte utilitzant Composer. Crea una instància de &lt;code&gt;Logger&lt;/code&gt; i afegeix una entrada al registre de logs.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Crea l&#39;estructura de directoris src/Models i col·loca el següent codi a src/Models/Producte.php:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-namespace App&#92;Models;
-
-class Producte {
-    private $nom;
-
-    public function __construct($nom) {
-        $this-&amp;gt;nom = $nom;
-    }
-
-    public function getNom() {
-        return $this-&amp;gt;nom;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Configura l&#39;autoloading en composer.json:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
-    &amp;quot;autoload&amp;quot;: {
-        &amp;quot;psr-4&amp;quot;: {
-            &amp;quot;App&#92;&#92;&amp;quot;: &amp;quot;src/&amp;quot;
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Executa composer dump-autoload per generar els fitxers d&#39;autoload.&lt;/li&gt;
-&lt;li&gt;Utilitza la classe producte:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-// Arxiu: index.php
-require &#39;vendor/autoload.php&#39;;
-
-use App&#92;Models&#92;Producte;
-
-$producte = new Producte(&amp;quot;Ordinador&amp;quot;);
-echo $producte-&amp;gt;getNom(); // Output: Ordinador
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;Afegeix Monolog a composer.json:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;composer require monolog/monolog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;Utilitza Monolog per crear un logger:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-require &#39;vendor/autoload.php&#39;;
-
-use Monolog&#92;Logger;
-use Monolog&#92;Handler&#92;StreamHandler;
-
-$log = new Logger(&#39;nom_aplicacio&#39;);
-$log-&amp;gt;pushHandler(new StreamHandler(&#39;app.log&#39;, Logger::WARNING));
-
-// Afegeix una entrada al log
-$log-&amp;gt;warning(&#39;Aquesta és una entrada d&#39;advertència&#39;);
-$log-&amp;gt;error(&#39;Aquesta és una entrada d&#39;error&#39;);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-11-logger&quot; tabindex=&quot;-1&quot;&gt;Exercici 11. Logger&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Utilitzant la llibreria &lt;code&gt;Monolog&lt;/code&gt;, crea un logger que escriga missatges a un fitxer &lt;code&gt;app.log&lt;/code&gt;. Configura el logger per registrar missatges d&#39;informació i d&#39;error.&lt;/li&gt;
-&lt;li&gt;Configura un logger que escriga missatges de registre tant a un fitxer com a la consola. Prova el logger registrant missatges d&#39;error.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-require &#39;vendor/autoload.php&#39;;
-
-use Monolog&#92;Logger;
-use Monolog&#92;Handler&#92;StreamHandler;
-
-$log = new Logger(&#39;nom_aplicacio&#39;);
-$log-&amp;gt;pushHandler(new StreamHandler(&#39;app.log&#39;, Logger::INFO));
-$log-&amp;gt;pushHandler(new StreamHandler(&#39;app.log&#39;, Logger::ERROR));
-
-// Registra missatges d&#39;informació i d&#39;error
-$log-&amp;gt;info(&#39;Aquesta és una entrada d’informació&#39;);
-$log-&amp;gt;error(&#39;Aquesta és una entrada d’error&#39;);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-require &#39;vendor/autoload.php&#39;;
-
-use Monolog&#92;Logger;
-use Monolog&#92;Handler&#92;StreamHandler;
-use Monolog&#92;Handler&#92;ErrorLogHandler;
-
-$log = new Logger(&#39;nom_aplicacio&#39;);
-$log-&amp;gt;pushHandler(new StreamHandler(&#39;app.log&#39;, Logger::WARNING));
-$log-&amp;gt;pushHandler(new ErrorLogHandler());
-
-// Registra missatges d’error al fitxer i a la consola
-$log-&amp;gt;error(&#39;Aquesta és una entrada d’error&#39;);
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exercici-12-documentacio&quot; tabindex=&quot;-1&quot;&gt;Exercici 12. Documentació&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Documenta la classe &lt;code&gt;Producte&lt;/code&gt; creada en l&#39;exercici anterior utilitzant comentaris PHPDoc. Assegura&#39;t d&#39;incloure la descripció de la classe, les propietats, i els mètodes.&lt;/li&gt;
-&lt;li&gt;Utilitza una eina com &lt;code&gt;phpDocumentor&lt;/code&gt; per generar la documentació automàtica del codi PHP del projecte, incloent-hi la classe &lt;code&gt;Producte&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-namespace App&#92;Models;
-
-/**
- * Classe Producte
- *
- * Representa un producte amb un nom.
- */
-class Producte {
-    /**
-     * @var string El nom del producte
-     */
-    private $nom;
-
-    /**
-     * Constructor de la classe Producte
-     *
-     * @param string $nom El nom del producte
-     */
-    public function __construct($nom) {
-        $this-&amp;gt;nom = $nom;
-    }
-
-    /**
-     * Obté el nom del producte
-     *
-     * @return string El nom del producte
-     */
-    public function getNom() {
-        return $this-&amp;gt;nom;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;Instal·la phpDocumentor globalment o com a dependència de desenvolupament:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;composer require --dev phpdocumentor/phpdocumentor
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Genera la documentació:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;vendor/bin/phpdoc -d src -t docs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Aquest comandament generarà la documentació a la carpeta docs.&lt;/p&gt;
-&lt;h4 id=&quot;exercici-13-generacio-de-pd-fs-amb-dom-pdf&quot; tabindex=&quot;-1&quot;&gt;Exercici 13. Generació de PDFs amb DomPDF&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Instal·la la llibreria &lt;code&gt;dompdf/dompdf&lt;/code&gt; amb Composer. Crea un script PHP que genere un PDF senzill amb un títol i un paràgraf de text.&lt;/li&gt;
-&lt;li&gt;Crea un PDF utilitzant DomPDF que incloga una taula amb dades i una imatge. Assegura&#39;t que el PDF es renderitze correctament i que la imatge s&#39;incloga en el document.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Solucio&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Instal·la DomPDF amb Composer:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;composer require dompdf/dompdf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Crea un script PHP que generi un PDF senzill:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-require &#39;vendor/autoload.php&#39;;
-
-use Dompdf&#92;Dompdf;
-
-$dompdf = new Dompdf();
-$html = &#39;&amp;lt;h1&amp;gt;Informe de Vendes&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Aquest és un informe de les vendes.&amp;lt;/p&amp;gt;&#39;;
-
-$dompdf-&amp;gt;loadHtml($html);
-$dompdf-&amp;gt;setPaper(&#39;A4&#39;, &#39;landscape&#39;);
-$dompdf-&amp;gt;render();
-$dompdf-&amp;gt;stream(&#39;informe.pdf&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;Crea un PDF amb una taula i una imatge:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-require &#39;vendor/autoload.php&#39;;
-
-use Dompdf&#92;Dompdf;
-
-$dompdf = new Dompdf();
-$html = &#39;
-    &amp;lt;h1&amp;gt;Informe de Productes&amp;lt;/h1&amp;gt;
-    &amp;lt;table border=&amp;quot;1&amp;quot; cellpadding=&amp;quot;10&amp;quot;&amp;gt;
-        &amp;lt;thead&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;th&amp;gt;Producte&amp;lt;/th&amp;gt;
-                &amp;lt;th&amp;gt;Preu&amp;lt;/th&amp;gt;
-            &amp;lt;/tr&amp;gt;
-        &amp;lt;/thead&amp;gt;
-        &amp;lt;tbody&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;Ordinador&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;500€&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;Teclat&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;20€&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-        &amp;lt;/tbody&amp;gt;
-    &amp;lt;/table&amp;gt;
-    &amp;lt;img src=&amp;quot;https://example.com/imatge.png&amp;quot; alt=&amp;quot;Imatge de Producte&amp;quot; /&amp;gt;
-&#39;;
-
-$dompdf-&amp;gt;loadHtml($html);
-$dompdf-&amp;gt;setPaper(&#39;A4&#39;, &#39;portrait&#39;);
-$dompdf-&amp;gt;render();
-$dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/" >
-        </entry>
-        <entry>
-            <title>
-                12. Referències Bibliogràfiques
-                
-            </title>
-            <updated>2025-01-04T22:45:02Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
-            <content type="html">
-                &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;PHP Objects, Patterns, and Practice&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per M. Zandstra. Apress, 2017. ISBN: 978-1-4842-1361-3. Aquest llibre és un recurs essencial per entendre els fonaments de la programació orientada a objectes en PHP, així com patrons de disseny.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;Learning PHP, MySQL &amp;amp; JavaScript: With jQuery, CSS &amp;amp; HTML5&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per Robin Nixon. O&#39;Reilly Media, 2018. ISBN: 978-1-4919-2070-2. Ofereix una introducció completa a la programació amb PHP, incloent-hi el model d&#39;objectes de PHP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;constructors-i-destructors&quot; tabindex=&quot;-1&quot;&gt;Constructors i Destructors&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;PHP Manual: Constructors and Destructors&lt;/strong&gt;&lt;br /&gt;
-Documentació oficial de PHP sobre constructors i destructors en la programació orientada a objectes. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.decon.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.decon.php&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;encapsulacio-i-visibilitat&quot; tabindex=&quot;-1&quot;&gt;Encapsulació i Visibilitat&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;PHP Manual: Visibility&lt;/strong&gt;&lt;br /&gt;
-Secció del manual oficial de PHP que explica les paraules clau &lt;code&gt;public&lt;/code&gt;, &lt;code&gt;protected&lt;/code&gt;, i &lt;code&gt;private&lt;/code&gt;, així com el concepte d&#39;encapsulació. Accessible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.visibility.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.visibility.php&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;herencia-i-polimorfisme&quot; tabindex=&quot;-1&quot;&gt;Herència i Polimorfisme&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;Programming PHP&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per Kevin Tatroe, Peter MacIntyre, i Rasmus Lerdorf. O&#39;Reilly Media, 2013. ISBN: 978-1-4493-5053-6. Aquest llibre cobreix àmpliament els conceptes d&#39;herència i polimorfisme en PHP, proporcionant exemples pràctics.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PHP Manual: Inheritance&lt;/strong&gt;&lt;br /&gt;
-Documentació oficial de PHP que tracta sobre l&#39;herència en classes, incloent el polimorfisme. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.inheritance.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.inheritance.php&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;classes-abstractes-i-interficies&quot; tabindex=&quot;-1&quot;&gt;Classes Abstractes i Interfícies&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;PHP Manual: Interfaces and Abstract Classes&lt;/strong&gt;&lt;br /&gt;
-Explicació oficial de les classes abstractes i les interfícies en PHP. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.interfaces.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.interfaces.php&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nombres-magics-i-metodes-magics&quot; tabindex=&quot;-1&quot;&gt;Nombres màgics i Metodes màgics&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;PHP Manual: Magic Methods&lt;/strong&gt;&lt;br /&gt;
-Guia completa sobre els mètodes màgics en PHP, com &lt;code&gt;__construct()&lt;/code&gt;, &lt;code&gt;__destruct()&lt;/code&gt;, &lt;code&gt;__get()&lt;/code&gt;, &lt;code&gt;__set()&lt;/code&gt;, entre altres. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.magic.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.magic.php&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;trait-en-php&quot; tabindex=&quot;-1&quot;&gt;Trait en PHP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;PHP Manual: Traits&lt;/strong&gt;&lt;br /&gt;
-Documentació sobre traits en PHP, que permeten reutilitzar codi entre diferents classes. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.traits.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.traits.php&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;excepcions-en-php&quot; tabindex=&quot;-1&quot;&gt;Excepcions en PHP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;The Pragmatic Programmer: Your Journey to Mastery&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per David Thomas i Andrew Hunt. Addison-Wesley Professional, 2019. ISBN: 978-0-1359-5202-8. Inclou bones pràctiques per a la gestió d&#39;excepcions, aplicables també a PHP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PHP Manual: Exceptions&lt;/strong&gt;&lt;br /&gt;
-Secció del manual de PHP dedicada a les excepcions, explicant com llençar i capturar excepcions en PHP. Accessible a &lt;a href=&quot;https://www.php.net/manual/en/language.exceptions.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.exceptions.php&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;proves-amb-php-unit&quot; tabindex=&quot;-1&quot;&gt;Proves amb PHPUnit&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;Modern PHP: New Features and Good Practices&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per Josh Lockhart. O&#39;Reilly Media, 2015. ISBN: 978-1-4919-2904-0. Aquest llibre inclou una secció sobre proves amb PHPUnit.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PHPUnit Documentation&lt;/strong&gt;&lt;br /&gt;
-Documentació oficial de PHPUnit, que cobreix com escriure i executar proves unitàries en PHP. Accessible a &lt;a href=&quot;https://phpunit.de/documentation.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://phpunit.de/documentation.html&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;eines-de-desenvolupament-i-autocarrega&quot; tabindex=&quot;-1&quot;&gt;Eines de Desenvolupament i Autocàrrega&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Composer Documentation&lt;/strong&gt;&lt;br /&gt;
-Accessible des de &lt;a href=&quot;https://getcomposer.org/doc/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://getcomposer.org/doc/&lt;/a&gt;. Composer és l&#39;eina estàndard per a la gestió de dependències en PHP, i inclou suport per a l&#39;autocàrrega de classes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PHP Manual: Autoloading Classes&lt;/strong&gt;&lt;br /&gt;
-Guia sobre el mecanisme d&#39;autocàrrega en PHP, que facilita la inclusió automàtica de classes en els teus projectes. Disponible a &lt;a href=&quot;https://www.php.net/manual/en/language.oop5.autoload.php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.php.net/manual/en/language.oop5.autoload.php&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;poo-avancada-patrons-de-disseny&quot; tabindex=&quot;-1&quot;&gt;POO Avançada: Patrons de Disseny&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;Head First Design Patterns&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per Eric Freeman i Elisabeth Robson. O&#39;Reilly Media, 2020. ISBN: 978-1-4919-7175-9. Un recurs excel·lent per aprendre patrons de disseny aplicables a PHP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;PHP Design Patterns&amp;quot;&lt;/strong&gt;&lt;br /&gt;
-per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-3. Aquest llibre explora com aplicar patrons de disseny en projectes PHP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;webs-de-referencia-addicionals&quot; tabindex=&quot;-1&quot;&gt;Webs de Referència Addicionals&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PHP: The Right Way&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://phptherightway.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://phptherightway.com/&lt;/a&gt;. Una guia per a desenvolupar aplicacions PHP seguint les millors pràctiques de la indústria.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Stack Overflow&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/tagged/php&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://stackoverflow.com/questions/tagged/php&lt;/a&gt;. Una font d&#39;informació valuosa per resoldre problemes específics de PHP i discutir amb altres desenvolupadors.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/" >
-        </entry>
-        <entry>
-            <title>
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -8705,7 +7649,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/7. Requests, Responses i Validació en Laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -8832,7 +7776,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/6. Seeders i Factories en Laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -8983,7 +7927,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/5. Laravel Eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -9185,7 +8129,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/4. Laravel Query Builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -9265,7 +8209,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/3. Migracions en Laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -9385,7 +8329,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/2. Configuració inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -9416,7 +8360,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/1. Introducció/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -9429,7 +8373,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/7. Web Scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -9526,7 +8470,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/6. Accès a fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -9623,7 +8567,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/5. QueryBuilder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -9868,7 +8812,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/4. Login &amp; Password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -9931,7 +8875,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/3. PHP Data Objects  PDO/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -10278,7 +9222,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/2. Bases de dades relacionals (SQL)/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -10394,7 +9338,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/1. Introducció a les tecnologies per accedir a dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -10416,7 +9360,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/0. Indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -10473,7 +9417,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -13501,7 +12445,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/Exercicis proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -13677,7 +12621,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/9.  Generació de PDF amb DOMPDF/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -13739,7 +12683,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/8. Logger amb Monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -13946,7 +12890,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/7. Composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -14039,7 +12983,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/6. Gestió d&#39;Errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -14247,7 +13191,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/5. Tecnologies i Mecanismes per a la Separació/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -14323,7 +13267,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -14380,7 +13324,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/3. Espai de noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -14503,7 +13447,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/2. Principis de la POO/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -14969,7 +13913,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/15. Autoavaluació Programació Orientada a Objectes en PHP/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -15198,7 +14142,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/14. Enunciat dels projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -15436,7 +14380,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/13. Exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -16139,7 +15083,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/12. Referències Bibliogràfiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -16254,7 +15198,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/11. Proves amb PHPUNIT/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -16388,7 +15332,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/10. Documentación con phpDocumentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -16496,7 +15440,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/1. Concepte de classes i Objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -16559,7 +15503,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB/Programación en Web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -18014,7 +16958,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -18027,7 +16971,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1.1 Entornos de desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -18220,7 +17164,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1. Arquitecturas WEB/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -19601,7 +18545,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -19757,7 +18701,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -19915,7 +18859,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/TDD-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -20084,7 +19028,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/README/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -20255,7 +19199,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -20643,7 +19587,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -20848,7 +19792,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -21130,7 +20074,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -21951,7 +20895,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -22259,7 +21203,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -22272,7 +21216,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -22559,7 +21503,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/05-BOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -22766,7 +21710,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04.1-MVC/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -22971,7 +21915,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04-DOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -23354,7 +22298,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -23452,7 +22396,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -23692,7 +22636,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -23970,7 +22914,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -24370,7 +23314,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -24550,7 +23494,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -24567,7 +23511,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -24582,7 +23526,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -24679,7 +23623,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Diseño de interfaces WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -24693,7 +23637,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Despliegue de aplicaciones Web/Despliegue de aplicaciones WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -24707,7 +23651,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -24720,7 +23664,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-01-04T22:45:02Z</updated>
+            <updated>2025-01-04T22:45:07Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
