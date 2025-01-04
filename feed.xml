@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-01-04T22:46:31Z</updated>
+    <updated>2025-01-04T22:46:33Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 Sin título
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/templates/sin-titulo/</id>
             <content type="html">
                 
@@ -22,7 +22,7 @@
                 Default
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/templates/default/</id>
             <content type="html">
                 
@@ -34,7 +34,7 @@
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -595,7 +595,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -722,7 +722,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -870,212 +870,10 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
         </entry>
         <entry>
             <title>
-                5. Laravel Eloquent
-                
-            </title>
-            <updated>2025-01-04T22:46:23Z</updated>
-            <id>https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
-            <content type="html">
-                &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
-&lt;h3 id=&quot;strong-definicio-de-models-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Definició de Models&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Els models es defineixen dins de la carpeta &lt;code&gt;app/Models&lt;/code&gt; i es poden crear mitjançant Artisan:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php artisan make:model Movie
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;exemple-basic&quot; tabindex=&quot;-1&quot;&gt;Exemple bàsic:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;namespace App&#92;Models;
-
-use Illuminate&#92;Database&#92;Eloquent&#92;Model;
-
-class Movie extends Model
-{
-    // Taula associada al model
-    protected $table = &#39;movies&#39;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Per defecte:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El model s&#39;associa a una taula plural (&lt;code&gt;movies&lt;/code&gt; per al model &lt;code&gt;Movie&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Utilitza &lt;code&gt;id&lt;/code&gt; com a clau primària.&lt;/li&gt;
-&lt;li&gt;Assumeix l&#39;ús de camps &lt;code&gt;created_at&lt;/code&gt; i &lt;code&gt;updated_at&lt;/code&gt; gestionats automàticament.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;strong-us-basic-d-un-model-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Ús bàsic d&#39;un model&lt;/strong&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;recuperar-dades&quot; tabindex=&quot;-1&quot;&gt;Recuperar dades:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Tots els registres:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::all();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Registres filtrats:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::where(&#39;rating&#39;, &#39;&amp;gt;&#39;, 4)-&amp;gt;get();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;Registre únic:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::findOrFail($id);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;inserir-dades&quot; tabindex=&quot;-1&quot;&gt;Inserir dades:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = new Movie();
-$movie-&amp;gt;title = &amp;quot;Inception&amp;quot;;
-$movie-&amp;gt;director = &amp;quot;Christopher Nolan&amp;quot;;
-$movie-&amp;gt;save();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;actualitzar-dades&quot; tabindex=&quot;-1&quot;&gt;Actualitzar dades:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::find($id);
-$movie-&amp;gt;title = &amp;quot;Updated Title&amp;quot;;
-$movie-&amp;gt;save();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;esborrar-dades&quot; tabindex=&quot;-1&quot;&gt;Esborrar dades:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movie = Movie::find($id);
-$movie-&amp;gt;delete();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;propietats-comuns-dels-models-eloquent&quot; tabindex=&quot;-1&quot;&gt;Propietats comuns dels Models Eloquent&lt;/h3&gt;
-&lt;p&gt;Els models d&#39;Eloquent ofereixen diverses propietats que permeten configurar el comportament de la interacció amb la base de dades. A continuació es detallen les més importants:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
-
-namespace App&#92;Models;
-
-use Illuminate&#92;Database&#92;Eloquent&#92;Model;
-
-class Example extends Model
-{
-    // Especifica el nom de la taula si no segueix la convenció per defecte
-    protected $table = &#39;custom_table_name&#39;;
-
-    // Defineix la clau primària de la taula
-    protected $primaryKey = &#39;custom_id&#39;;
-
-    // Indica si la clau primària és autoincremental
-    public $incrementing = false;
-
-    // Especifica el tipus de la clau primària (per exemple, string si no és integer)
-    protected $keyType = &#39;string&#39;;
-
-    // Defineix quins camps poden ser assignats massivament
-    protected $fillable = [&#39;name&#39;, &#39;email&#39;, &#39;password&#39;];
-
-    // Defineix quins camps no poden ser assignats massivament
-    protected $guarded = [&#39;is_admin&#39;];
-
-    // Oculta camps quan es converteix a JSON o arrays
-    protected $hidden = [&#39;password&#39;, &#39;remember_token&#39;];
-
-    // Defineix quins camps són visibles quan es converteix a JSON o arrays
-    protected $visible = [&#39;name&#39;, &#39;email&#39;];
-
-    // Transformació automàtica de camps a un tipus específic
-    protected $casts = [
-        &#39;is_admin&#39; =&amp;gt; &#39;boolean&#39;,
-        &#39;settings&#39; =&amp;gt; &#39;array&#39;,
-    ];
-
-    // Indica si la taula té els camps `created_at` i `updated_at`
-    public $timestamps = true;
-
-    // Defineix la connexió a la base de dades
-    protected $connection = &#39;mysql&#39;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;strong-relacions-en-eloquent-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Relacions en Eloquent&lt;/strong&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;1-strong-un-a-un-one-to-one-strong&quot; tabindex=&quot;-1&quot;&gt;1. &lt;strong&gt;Un a un (One-to-One):&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Un usuari té un perfil:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
-{
-    public function profile()
-    {
-        return $this-&amp;gt;hasOneclass;
-    }
-}
-
-$user = User::find(1);
-$profile = $user-&amp;gt;profile;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;2-strong-un-a-molts-one-to-many-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;Un a molts (One-to-Many):&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Un autor té molts llibres:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Author extends Model
-{
-    public function books()
-    {
-        return $this-&amp;gt;hasManyclass;
-    }
-}
-
-$author = Author::find(1);
-$books = $author-&amp;gt;books;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;3-strong-molts-a-molts-many-to-many-strong&quot; tabindex=&quot;-1&quot;&gt;3. &lt;strong&gt;Molts a molts (Many-to-Many):&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Un usuari té molts rols:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
-{
-    public function roles()
-    {
-        return $this-&amp;gt;belongsToManyclass;
-    }
-}
-
-$user = User::find(1);
-$roles = $user-&amp;gt;roles;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;4-strong-has-many-through-relacions-transitives-strong&quot; tabindex=&quot;-1&quot;&gt;4. &lt;strong&gt;Has Many Through (Relacions transitives):&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;Permet accedir a dades relacionades a través d&#39;un altre model.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class Country extends Model
-{
-    public function posts()
-    {
-        return $this-&amp;gt;hasManyThroughclass, User::class;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;strong-eager-loading-carrega-eficient-de-relacions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Eager Loading (Càrrega eficient de relacions)&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Per evitar múltiples consultes a la base de dades, pots carregar relacions amb &lt;code&gt;with&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$authors = Author::with(&#39;books&#39;)-&amp;gt;get();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;strong-col-leccions-i-agrupacions-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Col·leccions i Agrupacions&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Eloquent retorna col·leccions per defecte, que permeten treballar amb &lt;a href=&quot;https://laravel.com/docs/11.x/eloquent-collections#available-methods&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;mètodes&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;strong-mutators-i-accessors-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Mutators i Accessors&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Els &lt;strong&gt;mutators&lt;/strong&gt; permeten transformar dades abans de guardar-les, i els &lt;strong&gt;accessors&lt;/strong&gt; les transformen en recuperar-les.&lt;/p&gt;
-&lt;h4 id=&quot;exemple&quot; tabindex=&quot;-1&quot;&gt;Exemple:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;class User extends Model
-{
-    // Accessor
-    public function getFullNameAttribute()
-    {
-        return &amp;quot;{$this-&amp;gt;first_name} {$this-&amp;gt;last_name}&amp;quot;;
-    }
-
-    // Mutator
-    public function setPasswordAttribute($value)
-    {
-        $this-&amp;gt;attributes[&#39;password&#39;] = bcrypt($value);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;us&quot; tabindex=&quot;-1&quot;&gt;Ús:&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$user = User::find(1);
-$fullName = $user-&amp;gt;full_name;
-
-$user-&amp;gt;password = &#39;new_password&#39;;
-$user-&amp;gt;save();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;h3 id=&quot;strong-paginacio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Paginació&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Laravel facilita la paginació:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$movies = Movie::paginate(10);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En la vista:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;{{ $movies-&amp;gt;links() }}
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/notas/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/" >
-        </entry>
-        <entry>
-            <title>
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -1636,7 +1434,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/7. Requests, Responses i Validació en Laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -1763,7 +1561,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/6. Seeders i Factories en Laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -1914,7 +1712,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/5. Laravel Eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -2116,7 +1914,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/4. Laravel Query Builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -2196,7 +1994,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/3. Migracions en Laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -2316,7 +2114,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/2. Configuració inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -2347,7 +2145,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel/1. Introducció/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -2360,7 +2158,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/7. Web Scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -2457,7 +2255,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/6. Accès a fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -2554,7 +2352,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/5. QueryBuilder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -2799,7 +2597,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/4. Login &amp; Password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -2862,7 +2660,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/3. PHP Data Objects  PDO/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -3209,7 +3007,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/2. Bases de dades relacionals (SQL)/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -3325,7 +3123,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/1. Introducció a les tecnologies per accedir a dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -3347,7 +3145,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/5. Acceso a datos/0. Indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -3404,7 +3202,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -6432,7 +6230,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/Exercicis proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -6608,7 +6406,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/9.  Generació de PDF amb DOMPDF/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -6670,7 +6468,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/8. Logger amb Monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -6877,7 +6675,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/7. Composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -6970,7 +6768,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/6. Gestió d&#39;Errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -7178,7 +6976,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/5. Tecnologies i Mecanismes per a la Separació/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -7254,7 +7052,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -7311,7 +7109,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/3. Espai de noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -7434,7 +7232,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/2. Principis de la POO/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -7900,7 +7698,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/15. Autoavaluació Programació Orientada a Objectes en PHP/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -8129,7 +7927,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/14. Enunciat dels projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -8367,7 +8165,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/13. Exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -9070,7 +8868,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/12. Referències Bibliogràfiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -9185,7 +8983,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/11. Proves amb PHPUNIT/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -9319,7 +9117,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/10. Documentación con phpDocumentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -9427,7 +9225,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP/1. Concepte de classes i Objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -9490,7 +9288,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB/Programación en Web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -10945,7 +10743,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -10958,7 +10756,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1.1 Entornos de desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -11151,7 +10949,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web/1. Arquitecturas WEB/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -12532,7 +12330,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -12688,7 +12486,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -12846,7 +12644,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/TDD-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -13015,7 +12813,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/README/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -13186,7 +12984,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -13574,7 +13372,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -13779,7 +13577,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -14061,7 +13859,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -14882,7 +14680,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -15190,7 +14988,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -15203,7 +15001,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -15490,7 +15288,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/05-BOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -15697,7 +15495,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04.1-MVC/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -15902,7 +15700,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/04-DOM/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -16285,7 +16083,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -16383,7 +16181,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03.1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -16623,7 +16421,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -16901,7 +16699,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -17301,7 +17099,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/02.1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -17481,7 +17279,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -17498,7 +17296,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -17513,7 +17311,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -17610,7 +17408,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Diseño de interfaces WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -17624,7 +17422,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Despliegue de aplicaciones Web/Despliegue de aplicaciones WEB/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -17638,7 +17436,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -17651,7 +17449,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-01-04T22:46:23Z</updated>
+            <updated>2025-01-04T22:46:25Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Desarollo Web en entorno cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
