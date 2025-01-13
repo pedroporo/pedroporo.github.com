@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/11-mas/"}
 ---
+
 # Más cosas a aprender en Javascript
 - [Más cosas a aprender en Javascript](#más-cosas-a-aprender-en-javascript)
   - [Introducción](#introducción)

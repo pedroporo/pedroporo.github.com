@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/08-forms/"}
 ---
+
 # Validación de formularios
 Índice:
 - [Validación de formularios](#validación-de-formularios)

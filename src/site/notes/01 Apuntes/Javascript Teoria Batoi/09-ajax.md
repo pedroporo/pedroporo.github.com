@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/09-ajax/"}
 ---
+
 # Ajax
 - [Ajax](#ajax)
   - [Introducción](#introducción)

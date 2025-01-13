@@ -1,9 +1,12 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/ingles/ingles/"}
 ---
+
 Profesor:
 
 
 agendaweb
-21 de noviempre exposicion a las 16:30
+1 feb entregar proyecto
+7 feb examen
+14Feb presentacion
 

@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/"}
 ---
+
  
 #### Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats
 

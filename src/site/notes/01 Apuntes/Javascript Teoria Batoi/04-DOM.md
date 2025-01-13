@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/04-dom/"}
 ---
+
 # Document Object Model (DOM)
 - [Document Object Model (DOM)](#document-object-model-dom)
   - [Introducción](#introducción)

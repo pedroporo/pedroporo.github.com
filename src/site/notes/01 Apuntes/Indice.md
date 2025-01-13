@@ -1,8 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - gardenEntry
+{"dg-publish":true,"permalink":"/01-apuntes/indice/","tags":["gardenEntry"]}
 ---
+
 Asignaturas
 [[01 Apuntes/Ingles/Ingles\|Ingles]]
 [[01 Apuntes/Diseño de interfaces WEB/Diseño de interfaces WEB\|Diseño de interfaces WEB]]

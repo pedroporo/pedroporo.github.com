@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/ejercicios/"}
 ---
+
 # Ejercicios de Javascript
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

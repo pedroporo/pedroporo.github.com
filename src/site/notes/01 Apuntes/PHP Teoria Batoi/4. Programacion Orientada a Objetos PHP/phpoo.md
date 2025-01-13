@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/"}
 ---
+
 # Desenvolupament d'Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d'Errors i Proves
 
  >[!abstract] "Duració i criteris d'avaluació"

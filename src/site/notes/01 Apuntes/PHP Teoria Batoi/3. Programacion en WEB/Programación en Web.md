@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/"}
 ---
+
 # Programació Web
 
 

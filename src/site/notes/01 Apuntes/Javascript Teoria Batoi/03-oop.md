@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/03-oop/"}
 ---
+
 # Programación orientada a Objetos en Javascript
 - [Programación orientada a Objetos en Javascript](#programación-orientada-a-objetos-en-javascript)
   - [Introducción](#introducción)

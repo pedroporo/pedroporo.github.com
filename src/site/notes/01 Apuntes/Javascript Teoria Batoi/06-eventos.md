@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/06-eventos/"}
 ---
+
 # Eventos
 - [Eventos](#eventos)
   - [Introducción](#introducción)

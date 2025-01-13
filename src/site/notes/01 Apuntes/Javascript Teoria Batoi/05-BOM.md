@@ -1,6 +1,7 @@
 ---
-dg-publish: true
+{"dg-publish":true,"permalink":"/01-apuntes/javascript-teoria-batoi/05-bom/"}
 ---
+
 # Browser Object Model (BOM)
 - [Browser Object Model (BOM)](#browser-object-model-bom)
   - [Introducción](#introducción)
