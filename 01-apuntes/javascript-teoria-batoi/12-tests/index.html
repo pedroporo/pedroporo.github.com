@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>12-tests</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/diseno-de-interfaces-web/diseno-de-interfaces-web/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/ingles/ingles/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="testing" tabindex="-1">Testing</h1>
+<p>Tabla de contenidos</p>
+<ul>
+<li><a href="#testing" target="_blank" class="external-link">Testing</a>
+<ul>
+<li><a href="#introducci%C3%B3n-al-testing" target="_blank" class="external-link">Introducción al testing</a></li>
+</ul>
+</li>
+<li><a href="#testing-en-javascript" target="_blank" class="external-link">Testing en Javascript</a>
+<ul>
+<li><a href="#instalar-npm" target="_blank" class="external-link">Instalar npm</a></li>
+<li><a href="#instalar-jest" target="_blank" class="external-link">Instalar jest</a></li>
+<li><a href="#transpilar-nuestro-c%C3%B3digo" target="_blank" class="external-link">Transpilar nuestro código</a>
+<ul>
+<li><a href="#usando-babel-con-jest" target="_blank" class="external-link">Usando Babel con Jest</a></li>
+</ul>
+</li>
+<li><a href="#usando-webpack" target="_blank" class="external-link">Usando Webpack</a>
+<ul>
+<li><a href="#instalar-webpack" target="_blank" class="external-link">Instalar webpack</a></li>
+<li><a href="#ejecutar-webpack" target="_blank" class="external-link">Ejecutar webpack</a></li>
+<li><a href="#enlazar-el-fichero-generado-en-el-html" target="_blank" class="external-link">Enlazar el fichero generado en el HTML</a></li>
+</ul>
+</li>
+<li><a href="#testear-la-ui" target="_blank" class="external-link">Testear la UI</a></li>
+</ul>
+</li>
+<li><a href="#usar-jest" target="_blank" class="external-link">Usar jest</a>
+<ul>
+<li><a href="#matchers" target="_blank" class="external-link">Matchers</a></li>
+<li><a href="#test-suites" target="_blank" class="external-link">Test suites</a></li>
+<li><a href="#mocks" target="_blank" class="external-link">Mocks</a></li>
+<li><a href="#testear-promesas" target="_blank" class="external-link">Testear promesas</a></li>
+<li><a href="#hooks-de-jest" target="_blank" class="external-link">Hooks de Jest</a></li>
+</ul>
+</li>
+<li><a href="#desarrollo-guiado-por-pruebas-tdd" target="_blank" class="external-link">Desarrollo guiado por pruebas (TDD)</a></li>
+</ul>
+<h2 id="introduccion-al-testing" tabindex="-1">Introducción al testing</h2>
+<p>Es fundamental que nuestro código tenga un cierto nivel de calidad para minimizar los fallos del programa, más cuanto más compleja es la aplicación que estamos desarrollando. Para ello debemos testearlo y dicho testeo seguramente incluirá test automáticos. Dichos test nos permiten:</p>
+<ul>
+<li>comprobar que nuestro código responde como se espera de él</li>
+<li>evitar los <em>errores de regresión</em> (fallos tras incluir una nueva funcionalidad en cosas que antes funcionaban en nuestro programa)</li>
+<li>incluso mejoran la documentación del proyecto ya que el test indica cómo debe funcionar mi código</li>
+</ul>
+<p>Como ya sabéis existen varios tipos de tests:</p>
+<ul>
+<li>unitarios: prueban un trozo de código que sólo hace una cosa (habitualmente una función)</li>
+<li>de integración: prueban que varias partes del código funcionan bien juntas</li>
+<li>de aceptación: prueba que el código permite hacer algo que el cliente quiere qu pueda hacerse</li>
+</ul>
+<p>De momento desarrollaremos tests unitarios. Estos tienen 3 partes:</p>
+<ul>
+<li>Preparación (<em>Arrange</em>): perparamos el código para poder probarlo, por ejemplo, creamos las variables u objetos a probar</li>
+<li>Actuación (<em>Act</em>): realizamos la acción, por ejemplo, llamamos a la función</li>
+<li>Aserción (<em>Assert</em>): comprobamos que el resultado es el esperado</li>
+</ul>
+<p>Ejemplo:</p>
+<pre><code class="language-javascript">test('wordCount() returns 2 when the input is &quot;Hello world&quot;', () =&gt; {
+  // Arrange
+  const string = 'Hello world';
+  
+  // Act
+  const result = wordCount(string);
+  
+  // Assert
+  expect(result).toBe(2);
+});
+</code></pre>
+<h1 id="testing-en-javascript" tabindex="-1">Testing en Javascript</h1>
+<p>Tenemos muchas herramientas para hacer tests unitarios. Usaremos una llamada <strong><em>Jest</em></strong>. Para instalarla usaremos el gestor de paquetes <strong><em>npm</em></strong> que es el más utlizado para usar bibliotecas y sus dependencias en el FrontEnd.</p>
+<h2 id="instalar-npm" tabindex="-1">Instalar npm</h2>
+<p><strong>npm</strong> es el gestor de dependencias de <strong><em>nodejs</em></strong> y aprenderemos más de él en el bloque de <strong>Vue</strong>. Debemos instalar <em>NodeJS</em> para tener npm. Esto podemos hacerlo desde el repositorio de nuestra distribución (con <code>apt install nodejs</code>) pero no se instalará la última versión. Es mejor seguir las indicaciones de la <a href="https://nodejs.org/es/download/package-manager/" target="_blank" class="external-link">página oficial de NodeJS</a>. Aquí tenéis cómo hacerlo para <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall" target="_blank" class="external-link">distribuciones basadas en Debian/Ubuntu</a>.</p>
+<h2 id="instalar-jest" tabindex="-1">Instalar jest</h2>
+<p>Una vez instalado npm crearemos una carpeta para cada proyecto que vayamos a hacer y lo inicializamos ejecutando dentro de ella:</p>
+<pre><code class="language-javascript">npm init
+</code></pre>
+<p>Este comando crea un nuevo proyecto y nos pedirá información sobre el mismo. Cuando nos pregunten por la herramienta para hacer tests escribiremos <strong>jest</strong>. Tras ello tendremos ya creado el fichero <strong>package.json</strong> de nuestra aplicación (es el fichero donde se configura el proyecto y sus dependencias). En el apartado de <em>scripts</em> encontramos uno llamado <em>test</em> que lo que hace es ejecutar <em>jest</em>:</p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+   &quot;test&quot;: &quot;jest&quot;
+}
+</code></pre>
+<p>Ahora falta instalar jest, lo que haremos con:</p>
+<pre><code class="language-javascript">npm install --save-dev jest
+</code></pre>
+<p>Estamos instalando jest sólo como dependencia de desarrollo ya que no lo necesitaremos en producción (lo mismo abreviado sería <code>npm i -D jest</code>).</p>
+<p>Aunque, como vamos a utilizar <em>jest</em> en muchos proyectos distintos, es más conveniente instalarlo globalmente con</p>
+<pre><code class="language-javascript">npm i -g jest
+</code></pre>
+<p>De esta forma no tendremos que instalar <em>jest</em> en cada nuevo proyecto, sólo hacer el <code>npm init</code>.</p>
+<p>Las dependencias que instalemos están en el directorio <em>node_modules</em>. Si estamos usando <em>git</em> debemos asegurarnos de incluir este directorio en nuestro fichero <em>.gitignore</em> (si no tenemos ese fichero podemos crearlo simplemente con <code>echo &quot;node_modules&quot; &gt; .gitignore</code>).</p>
+<h2 id="transpilar-nuestro-codigo" tabindex="-1">Transpilar nuestro código</h2>
+<p>Vamos a crear las funciones de nuestro código en un fichero JS y para que se puedan usar el otro fichero Javascript (el de los tests) debemos exportarlas con <code>module.exports</code>. El fichero de test deberá importarlas con <code>require</code> (se explica más adelante, en el apartado de <a href="#usar-jest" target="_blank" class="external-link">Usar Jest</a>). Por ejemplo, tenemos un fichero llamado <strong>suma.js</strong> que contiene la función <em>add</em> que suma 2 números pasados por parámetro:</p>
+<pre><code class="language-javascript">function add(a, b) {
+  return a + b;
+}
+module.exports = add;
+</code></pre>
+<p>El fichero de test, <strong>suma.test.js</strong> (normalmente le llamaremos igual pero anteponiendo <em>.test</em> a la extensión .js) contiene los test a ejecutar:</p>
+<pre><code class="language-javascript">const add = require('./suma')
+
+describe('Addition', () =&gt; {
+    test('given 3 and 7 as inputs, should return 10', () =&gt; {
+        const expected = 10;
+        const actual = add(3,7);
+        expect(actual).toEqual(expected)
+    });
+
+    test('given -4 and 2 as inputs, should return -2', () =&gt; {
+        const expected = -2;
+        const actual = add(-4,2);
+        expect(actual).toEqual(expected)
+    });
+});
+</code></pre>
+<p>Lo que hace es:</p>
+<ul>
+<li>importa la función que exporta <em>suma.js</em> y la almacena en la constante <strong>add</strong>. Ya pude llamar a esa función</li>
+<li>el bloque <em>describe</em> permite agrupar varios tests relacionados bajo un mismo nombre</li>
+<li>cada sentencia <em>test</em> es un test que se realizará</li>
+</ul>
+<p>Si ejecutamos los tests en la terminal (<code>npm run test</code>) muestra un error ya que Jest no sabe cómo gestionar las sentencias ECMAScript <em>import</em> y <em>export</em>. Para solucionarlo debemos transpilar nuestro código de manera que Jest pueda entenderlo. Podemos hacerlo de 2 maneras:</p>
+<ul>
+<li>instalando el transpilador <strong>Babel</strong> y configurando <em>Jest</em> para que transpile el código</li>
+<li>utilizando un <em>bundler</em> como <strong>Webpack</strong>. En este caso no sólo transpilamos el código sino que juntamos todos nuestros ficheros JS en uno sólo que será el que enlazaremos en el fichero HTML de nuestra aplicación. Es la solución si queremos que nuestro código funcione en el navegador además de poder pasar los tests.</li>
+</ul>
+<h3 id="usando-babel-con-jest" tabindex="-1">Usando Babel con Jest</h3>
+<p>Si queremos sólo poder pasar los tests pero no vamos a usar ese código en el navegador sólo tenemos que instalar el transpilador Babel:</p>
+<pre><code class="language-bash">npm add jest babel-jest @babel/core @babel/preset-env
+</code></pre>
+<p>Y crear 2 ficheros para configurarlo y que sepa trabajar junto a Jest:</p>
+<ul>
+<li><strong>jest.config.json</strong></li>
+</ul>
+<pre><code class="language-json">{
+    &quot;transform&quot;: {
+        &quot;^.+\\.jsx?$&quot;: &quot;babel-jest&quot;
+    }
+}
+</code></pre>
+<ul>
+<li><strong>.babelrc</strong></li>
+</ul>
+<pre><code class="language-json">{
+    &quot;presets&quot;: [&quot;@babel/preset-env&quot;]
+}
+</code></pre>
+<p>Ahora ya podemos ejecutar los test y comprobar que nuestro código los pasa.</p>
+<p>En la siguiente página explica cómo configurar npm y jest con babel (sin usar webpack) e integrarlo con Travis-CI, la herramienta de integracion continua de GitHub:</p>
+<ul>
+<li><a href="https://levelup.gitconnected.com/automate-npm-releases-with-jest-codecov-io-semantic-release-and-travisci-eff812e97541" target="_blank" class="external-link">Automate NPM releases with Jest, codecov.io, Semantic Release, and TravisCI</a></li>
+</ul>
+<h2 id="usando-webpack" tabindex="-1">Usando Webpack</h2>
+<p>Con la configuración anterior nuestro código es transpilado para ejecutar los tests, pero dará error si intentamos ejecutarlo en el navegador porque allí no está transpilado. Podemos solucionarlo usando <em>webpack</em> para empaquetar y transpilar el código (por tanto no sería necesario realizar lo indicado en al apartado anterior).</p>
+<p><a href="https://webpack.js.org/" target="_blank" class="external-link">Webpack</a> el un <em>bundler</em> o empaquetador de código que además puede usar transpiladores para convertir nuestro código que usa versiones modernas de ECMAscript en otro soportado por la mayoría de navegadores.</p>
+<p>Por tanto nos va a permitir, entre otras cosas:</p>
+<ul>
+<li>Tener en nuestro <em>index.html</em> una sóla entrada de script (<code>&lt;script src=&quot;./dist/main.js'&gt;</code>) en lugar de una para cada archivo que estemos utilizando (index.js, functions.js, ...)</li>
+<li>Además podremos usar instrucciones como <code>module.exports</code> para exportar funciones o <code>require</code> para importarlas en otro fichero Javascript, que sin traspilar provocarían errores en el navegador</li>
+</ul>
+<p>Existen infinidad de páginas que nos enseñan las mil posibilidades que tiene <em>webpack</em>, pero nosotros por ahora sólo necesitamos:</p>
+<h3 id="instalar-webpack" tabindex="-1">Instalar webpack</h3>
+<p>Tenemos que instalar webpack y webpack-cli. Como son dependencias de desarrollo (en producción no las necesitaremos) ejecutamos:</p>
+<pre><code class="language-bash">npm i -D webpack webpack-cli
+</code></pre>
+<h3 id="ejecutar-webpack" tabindex="-1">Ejecutar webpack</h3>
+<p>Se ejecuta con el comando <code>npx webpack</code> y hay que indicarle:</p>
+<ul>
+<li>cuál es nuestro archivo Javascript principal de nuestro código (si no lo ponemos supondrá que es <strong>./src/index.js</strong>)</li>
+<li>cuál será el archivo que creará de salida (por defecto <strong>./dist/main.js</strong>)</li>
+<li>si estamos en desarrollo o en producción, para permitir o no depurar el código generado</li>
+</ul>
+<p>Siguiendo con el ejemplo anterior de la suma crearemos un fichero <strong>index.js</strong> dentro de <em>src/</em> que importará el fichero <em>suma.js</em> (con el comando <code>require</code>como se hace en el fichero de tests) y que contendrá el resto de código de la aplicación (como pedir al usuario los números a sumar, mostrar el resultado, ...). Para que webpack empaquete y transpile esos 2 ficheros (index.js y suma.js) ejecutaremos en la terminal:</p>
+<pre><code class="language-bash">npx webpack --mode=development
+</code></pre>
+<h3 id="enlazar-el-fichero-generado-en-el-html" tabindex="-1">Enlazar el fichero generado en el HTML</h3>
+<p>Por último, en nuestro <em>index.html</em> debemos incluir sólo el <em>main.js</em> generado por webpack <code>&lt;script src=&quot;dist/main.js&quot;&gt;&lt;/script&gt;</code></p>
+<h2 id="testear-la-ui" tabindex="-1">Testear la UI</h2>
+<p>Si queremos hacer tests unitarios de los cambios que produce nuestro código en la página web hay varios frameworks que podemos usar, pero también podemos hacerlo sin usar ninguno, usando sólo los módulos de Node que ya tenemos instalados y <em>Jest</em>, en concreto su herramienta <em>jsdom</em> que usa para emular un navegador.</p>
+<p>Para usarlo debemos instalar la librería <a href="https://testing-library.com/" target="_blank" class="external-link">Testing Library</a>. Para ello, tras configurar nuestro proyecto con <em>Babel</em> como hemos visto antes, instalaremos para desarrollo los paquetes <strong>@testing-library/dom</strong> y <strong>@testing-library/jest-dom</strong>:</p>
+<pre><code class="language-bash">npm i -D @testing-library/dom @testing-library/jest-dom
+</code></pre>
+<p>En el fichero de test debemos poner al principio:</p>
+<pre><code class="language-javascript">const { fireEvent, getByText } = require('@testing-library/dom')
+import '@testing-library/jest-dom/extend-expect'
+import { JSDOM } from 'jsdom'
+import fs from 'fs'
+import path from 'path'
+</code></pre>
+<p>y antes de ejecutar cada test cargamos nuestra página HTML con:</p>
+<pre><code class="language-javascript">const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
+</code></pre>
+<p>OJO: sólo debemos cargar así la página si confiamos totalmente en el código que vamos a probar (en este caso es nuestro código) y no deberíamos hacerlo para código de terceros.</p>
+<p>Luego ya podemos acceder al HTML y mirar si existen ciertas etiquetas o su contenido, como en este ejemplo:</p>
+<pre><code class="language-javascript">const { fireEvent, getByText } = require('@testing-library/dom')
+import '@testing-library/jest-dom/extend-expect'
+import { JSDOM } from 'jsdom'
+import fs from 'fs'
+import path from 'path'
+
+const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf8');
+
+let dom
+let container
+
+describe('index.html', () =&gt; {
+  beforeEach(() =&gt; {
+    // Constructing a new JSDOM with this option is the key
+    // to getting the code in the script tag to execute.
+    // This is indeed dangerous and should only be done with trusted content.
+    // https://github.com/jsdom/jsdom#executing-scripts
+    dom = new JSDOM(html, { runScripts: 'dangerously' })
+    container = dom.window.document.body
+  })
+
+  it('renders a heading element', () =&gt; {
+    expect(container.querySelector('h1')).not.toBeNull()
+    expect(getByText(container, 'Almacén central - ACME SL')).toBeInTheDocument()
+  })
+})
+</code></pre>
+<p>Además de <em>getByText</em> para comprobar los elementos de la página tenemos otras <a href="https://testing-library.com/docs/dom-testing-library/api-queries" target="_blank" class="external-link">queries</a> que podemos utilizar.</p>
+<p>Fuente: <a href="https://levelup.gitconnected.com/how-to-unit-test-html-and-vanilla-javascript-without-a-ui-framework-c4c89c9f5e56" target="_blank" class="external-link">How to Unit Test HTML and Vanilla JavaScript Without a UI Framework</a></p>
+<h1 id="usar-jest" tabindex="-1">Usar jest</h1>
+<p>La <a href="https://jestjs.io/docs/en/getting-started.html" target="_blank" class="external-link">documentación oficial</a> proporciona muy buena información de cómo usarlo. En resumen, en los ficheros con las funciones que vayamos a testear debemos '<em>exportar</em>' esas funciones para que las pueda importar el fichero de test. Lo haremos con <code>module.exports</code>:</p>
+<pre><code class="language-javascript">function suma(a, b) {
+  return a + b;
+}
+module.exports = suma;
+</code></pre>
+<p>Si tenemos varias funciones podemos exportar un objeto con todas ellas:<br>
+<code>module.exports</code>:</p>
+<pre><code class="language-javascript">function suma(a, b) {
+  return a + b;
+}
+module.exports = { suma, resta, multiplica, divide };
+</code></pre>
+<p>En el fichero de test (que normalmente se llamará como el original más <em>test</em> antes de la extensión, por ejemplo <em>funciones.test.js</em>) importamos esas funciones con un <code>require</code>:</p>
+<pre><code class="language-javascript">const suma = require('./funciones');
+</code></pre>
+<p>y ya podemos acceder llamar a la función 'suma' desde el fichero de test. Si queremos importar varias funciones haremos:</p>
+<pre><code class="language-javascript">const funciones = require('./funciones');
+</code></pre>
+<p>y accederemos a cada una como 'funciones.suma', ...</p>
+<p>Ya podemos crear nuestro primer test para probar la función suma:</p>
+<pre><code class="language-javascript">test('Suma 1 + 1 devuelve 2', () =&gt; {
+  expect(funciones.suma(1, 1)).toBe(2);
+});
+</code></pre>
+<p>Para crear un test usamos la instrucción <code>test</code> (o <code>it</code>) a la que le pasamos como primer parámetro un nombre descriptivo de lo que hace y como segundo parámetro la función que realiza el test. En general usaremos <code>expect</code> y le pasamos como parámetro la llamada a la función a testear y comparamos el resultado devuelto usando un <em>matcher</em>.</p>
+<h2 id="matchers" tabindex="-1">Matchers</h2>
+<p>Los más comunes son:</p>
+<ul>
+<li><strong>toBe()</strong>: compara el resultado del <em>expect</em> con lo que le pasamos como parámetro. Sólo sirve para valores primitivos (number, string, boolean, ...) no para arrays ni objetos</li>
+<li><strong>toBeCLoseTo()</strong>: se usa para números de punto flotante. <code>expect(0.1 + 0.2).toBe(0.3)</code> fallaría por el error de redondeo</li>
+<li><strong>toEqual()</strong>: como el anterior pero para objetos y arrays. Comprueba cada uno de los elementos el objeto o array</li>
+<li><strong>toBeLessThan</strong>, <strong>toBeLessThanOrEqual</strong>, <strong>toBeGreaterThan</strong>, <strong>toBeGreaterThanOrEqual</strong>: para comparaciones &lt;, &lt;=, &gt;, &gt;=</li>
+<li><strong>toBeTruthy</strong>: el valor devuelvo es verdadero o asimilable a verdadero (si fuera la condición de un <em>if</em> se ejecutaría el <em>then</em>)</li>
+<li><strong>toBeFalsy</strong>: el valor devuelvo es falso o asimilable a falso (si fuera la condición de un <em>if</em> se ejecutaría el <em>else</em>)</li>
+<li><strong>toBeUndefined</strong>: el valor es <em>undefined</em></li>
+<li><strong>toBeDefined</strong>: el valor NO es <em>undefined</em></li>
+<li><strong>toBeNull</strong>: el valor devuelto es <em>null</em></li>
+<li><strong>toMatch</strong>: el valor devuelto debe cumplir con la expresión regular pasada</li>
+<li><strong>toContain</strong>: el array devuelto debe contener el elemento pasado como parámetro</li>
+<li><strong>toHaveLength</strong>: el array o el string devueltos debe tener la longitud indicada</li>
+</ul>
+<p>Para comprobar si una función ha lanzado una excepción se usa <code>toThrow</code>. Podemos comprobar sólo que haya lanzado un error, que sea de un tipo determinado, el mensaje exacto que tiene o si el mensaje cumple con una expresión regular:</p>
+<pre><code class="language-javascript">function compileAndroidCode() {
+  throw new Error('you are using the wrong JDK');
+}
+
+test('compiling android goes as expected', () =&gt; {
+  expect(compileAndroidCode).toThrow();
+  expect(compileAndroidCode).toThrow(Error);
+  expect(compileAndroidCode).toThrow('you are using the wrong JDK');
+  expect(compileAndroidCode).toThrow(/JDK/);
+});
+</code></pre>
+<p>Podemos obtener la lsita completa de <em>matchers</em> en al <a href="https://jestjs.io/docs/es-ES/expect" target="_blank" class="external-link">documentación oficial de Jest</a>.</p>
+<h2 id="test-suites" tabindex="-1">Test suites</h2>
+<p>En muchas ocasiones no vamos a pasar un único test sino un conjunto de ellos. En ese caso podemos agruparlos en un <em>test suite</em> que definimos con la instruacción <code>describe</code> a la que pasamos un nombre que la describa y una función que contiene todos los tests a pasar:</p>
+<pre><code class="language-javascript">describe('Funciones aritméticas', () =&gt; {
+  test('Suma 1 + 1 devuelve 2', () =&gt; {
+    expect(funciones.suma(1, 1)).toBe(2);
+  });
+
+  test('Resta 2 - 1 devuelve 1', () =&gt; {
+    expect(funciones.resta(2, 1)).toBe(1);
+  });
+});
+</code></pre>
+<h2 id="mocks" tabindex="-1">Mocks</h2>
+<p>Muchas veces debemos testear partes del código que llaman a otras funciones pero no nos interesa que se ejecuten esas funciones sino simplemente saber si se han llamado o no y con qué parámetros. Para eso se definen las fuciones <em>mock</em>. Consiste en declarar en nuestro fichero de test una función a la que llama el código como función de <em>jest</em>.</p>
+<p>Por ejemplo, tenemos un método de un controlador llamado <em>addProduct</em> que llama a otro de la vista llamado <em>renderProduct</em> para renderizar algo. Nosotros sólo queremos testear que se llama a la vista y que el parámetro que se le pasa es el adecuado. En nuestro test haremos:</p>
+<pre><code class="language-javascript">renderProduct = jest.fn();
+
+test('renderProduct called once with product {id: 1, name: &quot;Prod 1&quot;, price: 49.99}', () =&gt; {
+  const product = {id: 1, name: &quot;Prod 1&quot;, price: 49.99};
+  
+  renderProduct(product);
+  renderProduct({});
+  
+	expect(renderProduct.mock.calls.length).toBe(2);
+	expect(renderProduct.mock.calls[0][0]).toEqual(newProd);
+	expect(renderProduct.mock.calls[1][0]).toEqual({});
+})
+</code></pre>
+<p>En realidad no se llama a la función real sino a la definida por el mock y podemos ver las veces que ha sido llamada (<code>fn.mock.calls.length</code>) o el primer parámetro pasado en la primera llamada (<code>fn.mock.calls[0][0]</code>) o en la segunda (<code>fn.mock.calls[1][0]</code>).</p>
+<p>Podéis obtener toda la información en la <a href="https://jestjs.io/docs/en/mock-functions" target="_blank" class="external-link">documentación de jest</a>.</p>
+<p>También podemos encontrar muchos ejemplos en otras webs, como en <a href="https://books.adalab.es/materiales-front-end-e/sprint-3.-react/3_14_testing_js" target="_blank" class="external-link">adalab</a></p>
+<h2 id="testear-promesas" tabindex="-1">Testear promesas</h2>
+<p>Para testear una función que devuelve una promesa debemos hacerlo de diferente manera. Por ejemplo tenemos una función 'getData' que devuelve una promesa. Para testearla:</p>
+<pre><code class="language-javascript">test('getData devuelve un arrya de 3 elementos', () =&gt; {
+  return getData().then(data =&gt; expect(data).toHaveLength(3) );
+});
+</code></pre>
+<p>No olvidéis poner el 'return', si no el test acabará sin esperar a que se resuelva la promesa. Si lo que queremos es comprobar que la promesa es rechazada haremos:</p>
+<pre><code class="language-javascript">test('getData devuelve un arrya de 3 elementos', () =&gt; {
+  expect.assertions(1);
+  return getData().catch(err =&gt; expect(err).toMatch('404');
+  });
+});
+</code></pre>
+<p>En este caso esperamos que devuelva un error que contenga '404'. Hay que poner la línea de <code>expect.assertions</code> para evitar que una promesa cumplida no haga que falle el test.</p>
+<p>En la <a href="https://jestjs.io/docs/en/asynchronous" target="_blank" class="external-link">documentación oficial de Jest</a> podemos encontrar información de cómo probar todo tipo de llamadas asíncronas (<em>callback</em>, <em>async/await</em>, ...).</p>
+<h2 id="hooks-de-jest" tabindex="-1">Hooks de Jest</h2>
+<p>Permiten ejecutar código antes o depués de pasar cada test o el conjunto de ellos. Son:</p>
+<ul>
+<li><strong>afterEach()</strong>: Después de cada prueba.</li>
+<li><strong>afterAll()</strong>: Después de todas las pruebas.</li>
+<li><strong>beforeEach()</strong>: Antes de cada prueba.</li>
+<li><strong>beforeAll()</strong>: Antes de todas las pruebas.</li>
+</ul>
+<p>Por ejemplo podemos querer inicializar la base de datos antes de pasar cada test:</p>
+<pre><code class="language-javascript">beforeAll(() =&gt; {
+  initializeCityDatabase();
+});
+</code></pre>
+<p>Si se trata de una función asíncrona habrá que añadirle un 'return' igual que hacíamos con las promesas:</p>
+<pre><code class="language-javascript">beforeAll(() =&gt; {
+  return initializeCityDatabase();
+});
+
+afterAll(() =&gt; {
+  return clearCityDatabase();
+});
+
+test('city database has Vienna', () =&gt; {
+  expect(isCity('Vienna')).toBeTruthy();
+});
+
+test('city database has San Juan', () =&gt; {
+  expect(isCity('San Juan')).toBeTruthy();
+});`
+</code></pre>
+<h1 id="desarrollo-guiado-por-pruebas-tdd" tabindex="-1">Desarrollo guiado por pruebas (TDD)</h1>
+<p>Es una forma de programar que consiste en escribir primero las pruebas que deba pasar el código (Test Dirve Development) y luego el código que las pase. Por último deberíamos refactorizarlo (<a href="https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n" target="_blank" class="external-link">Refactoring</a>). Para escribir las pruebas generalmente se utilizan las <a href="https://es.wikipedia.org/wiki/Prueba_unitaria" target="_blank" class="external-link">pruebas unitarias</a> (unit test en inglés).</p>
+<p>El ciclo de programación usando TDD tiene tres fases:</p>
+<ol>
+<li>Fase <em>roja</em>: escribimos el test que cumpla los requerimientos y lo pasamos. Fallará ya que nuestro código no pasa el test (de hecho la primera vez no tenemos ni código)</li>
+<li>Fase <em>verde</em>: conseguimos que nuestro código pase el test. Ya funciona aunque seguramente no estará muy bien escrito</li>
+<li><em>Refactorización</em>: mejoramos nuestro código</li>
+</ol>
+<p>En primer lugar, se escribe una prueba y se verifica que las pruebas fallan. A continuación, se implementa el código que hace que la prueba pase satisfactoriamente y seguidamente se refactoriza el código escrito. El propósito del desarrollo guiado por pruebas es lograr un código limpio que funcione. La idea es que los requisitos sean traducidos a pruebas, de este modo, cuando las pruebas pasen se garantizará que el software cumple con los requisitos que se han establecido.</p>
+<p>Para ello debemos en primer lugar se debe definir una lista de requisitos y después se ejecuta el siguiente ciclo:</p>
+<ol>
+<li>Elegir un requisito: Se elige de una lista el requisito que se cree que nos dará mayor conocimiento del problema y que a la vez sea fácilmente implementable.</li>
+<li>Escribir una prueba: Se comienza escribiendo una prueba para el requisito. Para ello el programador debe entender claramente las especificaciones y los requisitos de la funcionalidad que está por implementar. Este paso fuerza al programador a tomar la perspectiva de un cliente considerando el código a través de sus interfaces.</li>
+<li>Verificar que la prueba falla: Si la prueba no falla es porque el requisito ya estaba implementado o porque la prueba es errónea.</li>
+<li>Escribir la implementación: Escribir el código más sencillo que haga que la prueba funcione. Se usa la expresión &quot;Déjelo simple&quot; (&quot;Keep It Simple, Stupid!&quot;), conocida como principio KISS.</li>
+<li>Ejecutar las pruebas automatizadas: Verificar si todo el conjunto de pruebas funciona correctamente.</li>
+<li>Eliminación de duplicación: El paso final es la refactorización, que se utilizará principalmente para eliminar código duplicado. Se hace un pequeño cambio cada vez y luego se corren las pruebas hasta que funcionen.</li>
+<li>Actualización de la lista de requisitos: Se actualiza la lista de requisitos tachando el requisito implementado. Asimismo se agregan requisitos que se hayan visto como necesarios durante este ciclo y se agregan requisitos de diseño (P. ej que una funcionalidad esté desacoplada de otra).</li>
+</ol>
+<p>Tener un único repositorio universal de pruebas facilita complementar TDD con otra práctica recomendada por los procesos ágiles de desarrollo, la &quot;Integración Continua&quot;. Integrar continuamente nuestro trabajo con el del resto del equipo de desarrollo permite ejecutar toda batería de pruebas y así descubrir si nuestra última versión es compatible con el resto del sistema. Es recomendable y menos costoso corregir pequeños problemas cada pocas horas que enfrentarse a problemas enormes cerca de la fecha de entrega fijada.</p>
+<p>(Fuente <a href="https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas" target="_blank" class="external-link">Wikipedia</a>).</p>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
