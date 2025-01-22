@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/"}
+{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/","tags":["PHP"]}
 ---
 
 # Programació Web

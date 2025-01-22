@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/"}
+{"dg-publish":true,"permalink":"/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/","tags":["PHP"]}
 ---
 
  
