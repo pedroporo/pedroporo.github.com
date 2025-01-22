@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>09-cosas</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/diseno-de-interfaces-web/diseno-de-interfaces-web/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/ingles/ingles/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/index/">index </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Vue Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Vue Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/0x-quasar/">0x-quasar </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/0x-testing/">0x-testing </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/01-basics/">01-basics </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/02-directivas/">02-directivas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-componentes/">03-componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-1-sfc/">03_1-sfc </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/">03_2-comunicar_componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/04-axios/">04-axios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/05-vue-router/">05-vue-router </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/06-profundizando/">06-profundizando </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/07-pinia/">07-pinia </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/07-vuex/">07-vuex </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/09-cosas/">09-cosas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/">10-vue3_composition_api </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/21-typescript/">21-typescript </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/90-tdd/">90-tdd </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="siguientes-cosas-a-aprender-en-vue" tabindex="-1">Siguientes cosas a aprender en Vue</h1>
+<p>Algunas cosas interesantes que nos pueden ser útiles en nuestros proyectos son:</p>
+<ul>
+<li><a href="#siguientes-cosas-a-aprender-en-vue" target="_blank" class="external-link">Siguientes cosas a aprender en Vue</a>
+<ul>
+<li><a href="#autenticaci%C3%B3n" target="_blank" class="external-link">Autenticación</a>
+<ul>
+<li><a href="#store" target="_blank" class="external-link">Store</a></li>
+<li><a href="#api" target="_blank" class="external-link">API</a></li>
+<li><a href="#loginvue" target="_blank" class="external-link">Login.vue</a></li>
+<li><a href="#router" target="_blank" class="external-link">Router</a></li>
+</ul>
+</li>
+<li><a href="#paso-a-producci%C3%B3n" target="_blank" class="external-link">Paso a producción</a></li>
+<li><a href="#vuetify" target="_blank" class="external-link">Vuetify</a>
+<ul>
+<li><a href="#instalaci%C3%B3n" target="_blank" class="external-link">Instalación</a></li>
+<li><a href="#crear-el-layout" target="_blank" class="external-link">Crear el layout</a></li>
+<li><a href="#saber-m%C3%A1s" target="_blank" class="external-link">Saber más</a></li>
+</ul>
+</li>
+<li><a href="#typescript" target="_blank" class="external-link">Typescript</a></li>
+<li><a href="#ssr-server-side-rendering" target="_blank" class="external-link">SSR (Server Side Rendering)</a></li>
+<li><a href="#crear-aplicaciones-m%C3%B3viles-con-vue" target="_blank" class="external-link">Crear aplicaciones móviles con Vue</a>
+<ul>
+<li><a href="#quasar" target="_blank" class="external-link">Quasar</a></li>
+<li><a href="#vue-native" target="_blank" class="external-link">Vue Native</a></li>
+<li><a href="#ionic-vue" target="_blank" class="external-link">Ionic Vue</a></li>
+</ul>
+</li>
+<li><a href="#nuxt" target="_blank" class="external-link">Nuxt</a></li>
+<li><a href="#conclusi%C3%B3n" target="_blank" class="external-link">Conclusión</a></li>
+<li><a href="#angular" target="_blank" class="external-link">Angular</a></li>
+<li><a href="#vue-con-laravel" target="_blank" class="external-link">Vue con Laravel</a>
+<ul>
+<li><a href="#creaci%C3%B3n-del-proyecto" target="_blank" class="external-link">Creación del proyecto</a></li>
+<li><a href="#configuramos-el-proyecto-en-vue" target="_blank" class="external-link">Configuramos el proyecto en Vue</a></li>
+<li><a href="#configuramos-laravel" target="_blank" class="external-link">Configuramos Laravel</a></li>
+<li><a href="#compilamos-vue" target="_blank" class="external-link">Compilamos Vue</a></li>
+<li><a href="#creamos-la-api" target="_blank" class="external-link">Creamos la API</a></li>
+<li><a href="#saber-m%C3%A1s-1" target="_blank" class="external-link">Saber más</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="autenticacion" tabindex="-1">Autenticación</h2>
+<p>Una parte importante de cualquier aplicación es la autenticación de usuarios. Una de las formas más usadas y sencillas de autenticarnos frente a una API es el uso de <em>tokens</em>: cuando nos logueamos la API nos pasa un token y en cada petición que le hagamos debemos adjuntar dicho token en las cabeceras de la petición, tal y como vimos al final del tema de <a href="https://cipfpbatoi.github.io/materials/daw/dwc/02-vue/04-axios.html#a%C3%B1adir-cabeceras-a-la-petici%C3%B3n" target="_blank" class="external-link"><em>axios</em></a>.</p>
+<p>Aparte de eso, que es lo básico, hay muchas más cosas que podemos incluir en nuestras aplicaciones. Por ejemplo vamos a hacer una aplicación que:</p>
+<ul>
+<li>al loguearnos la API nos pasa un token que guardaremos en el <em>store</em> y también en el <em>localStorage</em> para poder continuar logueados si se recarga la página (recuerda que al recargar se borran todas las variables de nuestro código)</li>
+<li>interceptaremos todas las peticiones a la API para incluir en las cabeceras el token, si tenemos</li>
+<li>interceptaremos todas las respuestas a la API y si en alguna el servidor responde con un error 401 (Unauthenticated) reenviaremos al usuario a la página de login para que se loguee pero pasándole como parámetro la página a la que quería ir para que una vez logueado vaya automáticamente a dicha página</li>
+<li>el login hará varias cosas
+<ul>
+<li>si hay token en el <em>localStorage</em> es que ya está logueado (posiblemente se haya recargado la página y al interceptar la respuesta era un 401 porque iba sin token y se ha redireccionado aquí). En este caso simplemente se guarda el token en el <em>store</em> y se vuelve a la página de donde venía la petición. OJO: si el token caduca (que es lo más normal) deberemos mirar si ya ha expirado y en ese caso no se guarda en el <em>store</em> sino que se elimina del <em>localStorage</em> y se hace un login normal</li>
+<li>si no hay token es que debemos loguearnos así que se muestra el formulario para que el usuario introduzca sus credenciales y se le envían al servidor. Este contestará con un token que deberemos guardar en el <em>store</em> y en el <em>localStorage</em> antes de redireccionar a la página de la que venía la petición o a la página de inicio</li>
+</ul>
+</li>
+<li>en el <em>router</em> indicaremos para qué rutas hay que estar autentificado y antes de cargar cualquiera de ellas (usaremos el <em>hook</em> <em>beforeEach</em>) comprobamos si estamos autenticados y en caso de no estarlo redireccionamos al login, pero pasándole como parámetro la ruta a la que queríamos ir para que se cargue tras loguearse</li>
+</ul>
+<p>Veamos el código para hacer todo esto:</p>
+<h3 id="store" tabindex="-1">Store</h3>
+<pre><code class="language-javascript">// Fichero '@/store/index.js'
+...
+mutations: {
+    loginUser(state, token) {
+        state.token = token
+        localStorage.token = token
+    },
+    logoutUser(state) {
+        state.token = null
+        localStorage.removeItem('token')
+    },
+},
+actions: {
+    login(context, user) {
+        return new Promise ((resolve, reject) =&gt; {
+            API.users.login(user)
+            .then((response) =&gt; {
+                context.commit('login', response.data)
+                resolve(response.data)
+            })
+            .catch((err) =&gt; reject(err))
+        })
+    },
+    ...
+},
+</code></pre>
+<p>La acción que envía las credenciales del usuario al servidor es una promesa porque el componente <em>Login.vue</em> tiene que saber cuándo se obtiene el token para redireccionar a la página correspondiente.</p>
+<p>Las <em>mutaciones</em> almacenan el <em>token</em> en el <em>store</em> y también en el <em>localStorage</em>.</p>
+<h3 id="api" tabindex="-1">API</h3>
+<pre><code class="language-javascript">// Fichero '@/services/API.js'
+import axios from 'axios'
+import store from '@/store'
+import router from '@/router'
+
+const API_URL = process.env.VUE_APP_API
+
+const users = {
+    login: (item) =&gt; axios.post(`${API_URL}/auth/login`, item),
+    register: (user) =&gt; axios.post(`${API_URL}/auth/signup`, user),
+}
+...
+
+axios.interceptors.request.use((config) =&gt; {
+    const token = store.state.user.access_token
+    if (token) {
+        config.headers['Authorization'] = 'Bearer ' + token
+    }
+    return config;
+}, (error) =&gt; {
+    return Promise.reject(error)
+})
+
+axios.interceptors.response.use((response) =&gt; {
+    return response
+}, (error) =&gt; {
+    if (error.response) {
+        switch (error.response.status) {
+            case 401:
+                store.commit('logout')
+                if (router.currentRoute.path !== 'login') {
+                    router.replace({
+                        path: 'login',
+                        query: { redirect: router.currentRoute.path },
+                    })
+                }
+        }
+    }
+    return Promise.reject(error)
+})
+
+export default {
+    users,
+    ...
+};
+</code></pre>
+<p>Interceptamos las peticiones para incluir el <em>token</em> si lo tenemos.Y también las respuestas porque si es un error 401 hay que loguearse por lo que se cambia el router al <em>login</em> pero se le pasa la dirección de la página en la que se estaba para que tras loguearse se cargue esa página y no la de inicio.</p>
+<h3 id="login-vue" tabindex="-1">Login.vue</h3>
+<pre><code class="language-vue">// script de la vista 'Login.vue'
+...
+  mounted() {
+    if (localStorage.token) {
+      // Si el token caduca debemos comprobar que no haya expirado
+      this.$store.commit(&quot;login&quot;, localStorage.token)
+      this.loadPage()
+    }
+  },
+  methods: {
+    submit() {
+      this.$store.dispatch(&quot;login&quot;, this.user)
+        .then(() =&gt; this.loadPage())
+        .catch((err) =&gt; alert(err))
+    },
+    loadPage() {
+      const redirect = decodeURIComponent(this.$route.query.redirect || '/')
+      this.$router.push({ path: redirect })
+    }
+  },
+...
+</code></pre>
+<h3 id="router" tabindex="-1">Router</h3>
+<pre><code class="language-javascript">import Vue from 'vue'
+import VueRouter from 'vue-router'
+import store from '../store'
+
+import Datos from '../views/Datos.vue'
+...
+
+Vue.use(VueRouter)
+
+router.beforeEach((to, from, next) =&gt; {
+  if (to.meta.requireAuth) {
+    if (store.token) {
+      next();
+    }
+    else {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath }
+      })
+    }
+  }
+  else {
+    next();
+  }
+})
+
+const routes = [
+  {
+    path: '/datos',
+    name: 'Datos',
+    component: Datos,
+    meta: {
+      requireAuth: true,
+    },
+  },
+  ...
+]
+
+export default router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+</code></pre>
+<p>Para ver algunos ejemplos de cómo gestionar la autenticación en nuestros proyectos Vue podemos consultar cualquiera de estos enlaces:</p>
+<ul>
+<li><a href="https://blog.sqreen.io/authentication-best-practices-vue/" target="_blank" class="external-link">Authentication Best Practices for Vue</a></li>
+<li><a href="https://scotch.io/tutorials/vue-authentication-and-route-handling-using-vue-router" target="_blank" class="external-link">Vue Authentication And Route Handling Using Vue-router</a></li>
+</ul>
+<h2 id="paso-a-produccion" tabindex="-1">Paso a producción</h2>
+<p>Una vez acabada nuestra aplicación debemos general el <em>build</em> que pasaremos a producción. El <em>build</em> es el conjunto de ficheros compilados, minificados, etc que subiremos al servidor de producción. Para ello tenemos un script en el <em>package.json</em> que se encarga de todo:</p>
+<pre><code class="language-bash">npm run build
+</code></pre>
+<p>Crea un directorio <strong><em>dist</em></strong> con lo qie hay que subir a producción:</p>
+<ul>
+<li><strong>index.html</strong>: HTML</li>
+<li><strong>ficheros que hay en <code>/public</code></strong>: imágenes, CSS y cualquier otro fichero estático que hubiera en la carpeta <code>/public</code>, como <em>favicon.ico</em></li>
+<li><strong>assets</strong>: todo lo que ha compilado <em>Vite</em> optimizado y minimizado:
+<ul>
+<li><strong>index-xxxx.js</strong>: fichero con todo nuestro código Javascript más el de las librerías usadas</li>
+<li><strong>index-xxxx-css</strong>: fichero con todo nuestro CSS</li>
+<li>imágenes y otros archivos que hubiera en <em>assets</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="vuetify" tabindex="-1">Vuetify</h2>
+<p>Son varias las librerías para Vue que nos facilitan enormemente la creación de nuestros componentes ya que nos dan un código para los mismos (tanto el <em>template</em> como el Javascript) de manera que simplemente personalizando ese código con nuestros datos ya tenemos un componente totalmente funcional. Entre ellas están <a href="https://material.io/design" target="_blank" class="external-link">Material Design</a>, <a href="https://element.eleme.io/#/es" target="_blank" class="external-link">ElementUI</a>, <a href="https://vuetifyjs.com" target="_blank" class="external-link">Vuetify</a> y muchas otras.</p>
+<p>Podemos ver la utilidad de estas librerías consultando, por ejemplo, como crear una <a href="https://vuetifyjs.com/en/components/data-tables/" target="_blank" class="external-link"><em>Datatable</em></a> con Vuetify. Vuetify sigue el diseño de <em>Material Design</em>.</p>
+<p>Podemos obtener toda la información sobre esta librería en <a href="https://vuetifyjs.com/en/" target="_blank" class="external-link">su página web</a>.</p>
+<h3 id="instalacion" tabindex="-1">Instalación</h3>
+<p>Vue se instala como cualquier otro plugin:</p>
+<pre><code class="language-bash">vue add vuetify
+</code></pre>
+<h3 id="crear-el-layout" tabindex="-1">Crear el layout</h3>
+<p>En <strong>App.vue</strong> borramos todo su contenido y lo sustituimos por el código de <a href="https://vuetifyjs.com/en/getting-started/wireframes/" target="_blank" class="external-link">layout</a> que deseemos de Vuetify. Para ver el código pinchamos en la imagen del layout deseada y lo copiamos.</p>
+<p>A continuación ponemos el <code>&lt;router-view&gt;</code> donde corresponda.</p>
+<p>Cada elemento del menú es una etiqueta <code>&lt;v-list-tile&gt;</code> dentro del <code>&lt;v-navigation-drawer&gt;</code>. Para modificar el menú vamos a <em>Vuetify -&gt; UI components -&gt; Navigation drawers</em>.</p>
+<p>Para cada elemento que queramos añadir:</p>
+<ul>
+<li>Su icono está dentro de <code>&lt;v-icon&gt;</code> y para elegirlo vamos a <a href="https://material.io/tools/icons/?style=baseline" target="_blank" class="external-link">Material Design</a> y elegimos el que queramos. Para modificar su aspecto vamos a <em>Vuetify -&gt; UI components -&gt; Icons</em> y copiamos el código que queramos</li>
+<li>Para que enlace a la ruta que queramos añadimos a la etiqueta <code>&lt;v-list-tile-title&gt;</code> una etiqueta <code>&lt;router-link :to=&quot;{ name: nombre_de_la_ruta }&gt;</code>, ejemplo:</li>
+</ul>
+<pre><code class="language-html">&lt;v-list-tile-title&gt;
+  &lt;routerlink :to=&quot;{ name: 'perfil' }&quot;&gt;Perfil&lt;/router-link&gt;
+&lt;/v-list-tile-title&gt;
+</code></pre>
+<p>Si no nos gusta Material Dessign tenemos alternativas como <em><strong>Buefy</strong></em> (que proporciona componentes Vue basados en <em>Bulma</em>) y muchas otras.</p>
+<h3 id="saber-mas" tabindex="-1">Saber más</h3>
+<ul>
+<li><a href="https://vuetifyjs.com/es-MX/getting-started/quick-start" target="_blank" class="external-link">VuetifyJS.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=GeUhmMJUFZQ" target="_blank" class="external-link">Vuetify Material Framework in 60 minutes</a></li>
+<li><a href="https://www.youtube.com/watch?v=5GfpGaHKfyo" target="_blank" class="external-link">Intro and Overview of Vuetify.js (Build a CRUD client with Vue.js)</a></li>
+</ul>
+<h2 id="typescript" tabindex="-1">Typescript</h2>
+<p>Es Javascript al que se le ha incorporado tipado de datos y otras utilidades. En los <a href="./21-typescript.html" target="_blank" class="external-link">apuntes</a> puedes ver una introducción a cómo usarlo en Vue y en Internet tienes infinidad de recursos para aprender más.</p>
+<h2 id="ssr-server-side-rendering" tabindex="-1">SSR (Server Side Rendering)</h2>
+<p>Esta tecnología permite que al obtener la página un robot (haciendo <code>curl miURL</code>) no devuelva sólo la &lt;app&gt; sino el HTML para que los robots la puedan indexar correctamente.</p>
+<p>El problema que tiene una SPA es que las rutas no existen realmente sino sólo en el front y se generan asíncronamente, lo que dificulta a los robots obtener las páginas de las distintas rutas.</p>
+<p>SSR hace que la primera vez que un usuario accede a la web se sirve entera desde el servidor y el resto de veces ya se sirve desde el front. Eso permite que a un robot se le sirva toda desde el servidor y la puede indexar. Esto no es algo que nos interese en todos los proyectos, sólo en aquellos en que sea importante que estén bien posicionados en los buscadores.</p>
+<p>Más info: <a href="https://vuejs.org/v2/guide/ssr.html" target="_blank" class="external-link">Server-Side Rendering</a>.</p>
+<p>Explicación de qué es y cómo funciona en Angular: <a href="http://app.getresponse.com/click.html?x=a62b&amp;lc=BmvXkb&amp;mc=CL&amp;s=mh7Vjl&amp;u=B71jy&amp;y=T&amp;" target="_blank" class="external-link">Angular &amp; SEO</a></p>
+<h2 id="crear-aplicaciones-moviles-con-vue" tabindex="-1">Crear aplicaciones móviles con Vue</h2>
+<p>Diferentes librerías nos permiten que nuestras aplicaciones puedan ejecutarse en móviles tanto Android como iOS. La mayoría utilizan la librería <strong><em>Cordova</em></strong> de Apache2 para tener acceso a los elementos del móvil como notificaciones, cámara, geolocalización, ...</p>
+<p>Existen muchos pero las más utilizadas hoy en día son <em>Quasar</em>, <em>Vue native</em> e <em>Ionic</em>.</p>
+<h3 id="quasar" tabindex="-1">Quasar</h3>
+<p><a href="https://quasar.dev/" target="_blank" class="external-link">Quasar</a> es un framework basado en VueJS que te permite generar la aplicación de escritorio y la aplicación móvil tanto para Android como para iOS.</p>
+<p>Tiene licencia MIT y su UI sigue las guías de Material. Su ventaja sobre los otros es que está creado en Vue y pensado para este framework.</p>
+<h3 id="vue-native" tabindex="-1">Vue Native</h3>
+<p><a href="https://vue-native.io/" target="_blank" class="external-link">Vue native</a> es otro framework que permite generar aplicaciones móviles nativas usando Vue. En realidad es una capa sobre <strong><em>React Native</em></strong> que permite a Vue usar su API.</p>
+<p>Con ella podemos acceder a los diferentes <a href="https://vue-native.io/docs/device-apis.html" target="_blank" class="external-link">dispositivos</a> del móvil como la cámara, la geolocalización, el acelerómetro, ... Podemos encontrar en Internet muchos ejemplos de cómo hacer nuestra App con este framework, como <a href="https://scotch.io/tutorials/how-to-setup-build-and-deploy-native-apps-with-vue" target="_blank" class="external-link">este</a> de <a href="http://scotch.io" target="_blank" class="external-link">scotch.io</a>.</p>
+<h3 id="ionic-vue" tabindex="-1">Ionic Vue</h3>
+<p><a href="https://ionicframework.com/" target="_blank" class="external-link">Ionic</a> es posiblemente el Framework más utilizado para crear aplicaciones móviles nativas a partir de nuestra aplicación web. Está basado en Angular pero desde diciembre de 2020 puede usarse directamente en Vue, y es compatible con Vue3 y su <em>Composition API</em>.</p>
+<h2 id="nuxt" tabindex="-1">Nuxt</h2>
+<p><a href="https://nuxtjs.org/" target="_blank" class="external-link">Nuxt</a> es un framework basado en Vue que crea un <em>scaffolding</em> de Vue con todo lo necesario para una aplicación media-grande (incluye rutas, <em>Vuex</em>,...) lo que nos facilita el desarrollo de nuestros proyectos.</p>
+<p>También hay otras librerías que nos pueden ser de utilidad como:</p>
+<ul>
+<li><em><a href="https://framework7.io/" target="_blank" class="external-link">Framework7</a></em> para crear una aplicación web que use</li>
+<li><em><a href="https://weex.apache.org/" target="_blank" class="external-link">Weex</a></em> para crear aplicaciones nativas para iOS y Android</li>
+</ul>
+<h2 id="conclusion" tabindex="-1">Conclusión</h2>
+<p>Como vés existen infinidad de librerías alrededor de Vue para ofrecernos nuevas funcionalidades. Son tantas que el equipo de Vue ha creado <a href="https://github.com/vuejs/awesome-vue" target="_blank" class="external-link">AwesomeVue</a> donde se registran parte de estas librerías y a donde podemos acceder en busca de cualquier cosa que necesitemos.</p>
+<h2 id="angular" tabindex="-1">Angular</h2>
+<p>Aunque el crecimiento de Vue es muy importante, Angular sigue siendo aún el framework Javascript más demandado por las empresas. Si quieres aprender aquí tienes algunos enlaces de utilidad:</p>
+<ul>
+<li><a href="https://angular.io/" target="_blank" class="external-link">Documentación oficial de Angular</a></li>
+<li><a href="https://www.djamware.com/post/5e435e84a8d0ef4300ffc5f6/angular-9-tutorial-learn-to-build-a-crud-angular-app-quickly" target="_blank" class="external-link">Ejemplo de CRUD con Angular</a></li>
+<li>...</li>
+</ul>
+<h2 id="vue-con-laravel" tabindex="-1">Vue con Laravel</h2>
+<p>Es sencillo crear una SPA completa usando Vue en el Front-end y Laravel para crear el Back-end que sirva la API. Podemos hacerlo como dos proyectos independientes o integrando Vue en Laravel.</p>
+<p>Como proyectos independientes es la forma más sencilla. Simplemente nuestro proyecto Vue hará peticiones a la API desarrollada en Laravel.</p>
+<p>Si queremos integrar Vue dentro del proyecto Laravel el funcionamiento es el siguiente:</p>
+<ul>
+<li>La primera petición le llega al router de Laravel que renderiza el diseño de la SPA</li>
+<li>Las demás peticiones usan la API <em>history.pushState</em> para navegar sin recargar la página y las gestiona el enrutador Vue</li>
+</ul>
+<p>Vamos a ver en detalle cómo gestionarlo.</p>
+<h3 id="creacion-del-proyecto" tabindex="-1">Creación del proyecto</h3>
+<p>Creamos el proyecto Laravel. Dentro del mismo instalamos los paquetes que necesitemos para Vue:</p>
+<pre><code class="language-bash">laravel new laravue
+cd laravue
+npm install
+npm i -S vue-router
+</code></pre>
+<h3 id="configuramos-el-proyecto-en-vue" tabindex="-1">Configuramos el proyecto en Vue</h3>
+<p>Configuramos el router de Vue en un nuevo fichero JS (por ejemplo <strong>/resources/js/router.js</strong>) y lo importamos en el fichero principal, <strong>/resources/js/app.js</strong> (el equivalente al <strong>main.js</strong> de un proyecto con <em>vue-cli</em>):</p>
+<pre><code class="language-javascript">// Fichero app.js
+...
+import App from './views/App'
+import router from './router'
+
+const app = new Vue({
+    el: '#app',
+    components: {
+        App
+    },
+    router,
+});
+</code></pre>
+<p>Creamos el fichero <strong>/resources/js/App.vue</strong> que será el equivalente al <strong>App.vue</strong> de los proyectos <em>vue-cli</em>:</p>
+<pre><code class="language-HTML">&lt;template&gt;
+    &lt;div&gt;
+        &lt;h1&gt;Vue Router Demo App&lt;/h1&gt;
+
+        &lt;p&gt;
+            &lt;router-link to=&quot;/&quot;&gt;Home&lt;/router-link&gt;
+            ...
+            &lt;router-link to=&quot;/about&quot;&gt;Sobre nosotros...&lt;/router-link&gt;
+        &lt;/p&gt;
+
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;router-view&gt;&lt;/router-view&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<h3 id="configuramos-laravel" tabindex="-1">Configuramos Laravel</h3>
+<p>Creamos la vista principal en <strong>/resources/views/spa.blade.php</strong>:</p>
+<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;{{ str_replace('_','-', app()-&gt;getLocale()) }}&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta name=&quot;csrf-token&quot; content=&quot;{{ csrf_token() }}&quot;&gt;
+    &lt;title&gt;Vue SPA Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;
+        &lt;app&gt;&lt;/app&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;{{ mix('js/app.js') }}&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>NOTA: la línea del <em>&lt;meta CSRF-TOKEN&gt;</em> es para evitar los errores de la consola por no pasar el token csrf.</p>
+<p>Configuramos <strong>/routes/web.php</strong> para que sirva siempre esa página:</p>
+<pre><code class="language-php">Route::get('/{any}', 'SpaController@index')-&gt;where('any', '.*');
+</code></pre>
+<p>para lo que creamos el controlador:</p>
+<pre><code class="language-bash">php artisan make:controller SpaController
+https://vuex.vuejs.org/guide/forms.html```
+y lo editamos:
+```php
+&lt;?php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+
+class SpaController extends Controller
+{
+    public function index()
+    {
+        return view('spa');
+    }
+}
+</code></pre>
+<h3 id="compilamos-vue" tabindex="-1">Compilamos Vue</h3>
+<p>Ahora simplemente ejecutamos en la terminal</p>
+<pre><code class="language-bash">npm run dev
+</code></pre>
+<p>y ya tenemos la aplicación en marcha. Si aparece un error de <em>&quot;The Mix manifest does not exist&quot;</em> ejecutaremos <code>npm run prod</code> que crea el fichero <em>mix-manifest.json</em>.</p>
+<p>Para que se compilen automáticamente los cambios que vayamos haciendo en Vue mientras desarrollamos el proyecto ejecutamos <code>npm run watch-poll</code> en una terminal.</p>
+<h3 id="creamos-la-api" tabindex="-1">Creamos la API</h3>
+<p>Para obtener datos de una API debemos en primer lugar crear la ruta en <strong>/routes/api.php</strong>:</p>
+<pre><code class="language-php">Route::namespace('Api')-&gt;group(function () {
+    Route::get('/alumnos', 'AlumnosController@index');
+});
+</code></pre>
+<p>Esto nos crea sólo la ruta para el verbo GET. Una opción mejor es crear todas las rutas del recurso con:</p>
+<pre><code class="language-php">Route::resource('alumnos',’AlumnosController’,['only'=&gt;['index','store','show','update','destroy' ]]);
+</code></pre>
+<p>La opción <em>only</em> es opcional y permite restringir las rutas que se crearán para que no se muestren las que no utilizaremos (podemos comprobarlo con un <code>php artisan route:list</code>).</p>
+<p>Otra opción es usar <code>apiResources</code> que crea sólo funciones para los métodos API:</p>
+<pre><code class="language-php">Route::apiResource('alumnos',’AlumnosController’);
+</code></pre>
+<p>También podemos crear las rutas para varios controladores a la vez con <code>resources</code> en vez de <code>resource</code>:</p>
+<pre><code class="language-php">Route::resources(
+  [
+    'alumnos' =&gt; 'Api\AlumnosController',
+    'profes' =&gt; 'Api\ProfesoresController',
+  ],
+  ['only'=&gt;['index','store','show','update','destroy' ]]
+);
+</code></pre>
+<p>Luego creamos el controlador y el recurso:</p>
+<pre><code class="language-php">php artisan make:controller Api/AlumnosController --api
+</code></pre>
+<p>La opción <code>--resource</code> (o <code>-r</code>) crea automáticamente los puntos de entrada para los métodos indicados. La opción <code>--api</code> es igual pero no crea funciones para los métodos <em>create</em> ni <em>edit</em>.</p>
+<p>y el recurso:</p>
+<pre><code class="language-php">php artisan make:resource AlumnoResource
+</code></pre>
+<p>Un recurso es un modelo que se debe transformar a un objeto JSON (lo que necesitamos en una API).</p>
+<p>y editamos el controlador:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Alumno;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\AlumnoResource;
+
+class AlumnosController extends Controller {
+    public function index()  {
+        return AlumnoResource::collectionpaginate(10);
+        // Esto devuelve, además del data información para paginar la salida
+
+        // lo anterior equivaldría, sin usar el recurso, a
+        $alumnos=Alumno::all()-&gt;toArray();
+        return response()-&gt;json($alumnos);        
+    }
+
+    public function show($id)  {
+       return new AlumnoResourcefind($id);
+    }
+    
+    public function store(Request $request)  {
+    
+        $alumno = Alumno::create([
+            'alumno_id' =&gt; $request-&gt;alumno()-&gt;id,
+            'nombre' =&gt; $request-&gt;nombre,
+            'apellidos' =&gt; $request-&gt;apellidos,
+            ...
+        ]);
+
+      return new AlumnoResource($alumno);
+    }
+}
+</code></pre>
+<h3 id="saber-mas-1" tabindex="-1">Saber más</h3>
+<ul>
+<li><a href="https://laravel-news.com/using-vue-router-laravel" target="_blank" class="external-link">Building a Vue SPA with Laravel</a></li>
+<li><a href="https://medium.com/@weehong/laravel-5-7-vue-vue-router-spa-5e07fd591981" target="_blank" class="external-link">Laravel 5.7 + Vue + Vue Router = SPA</a>. Igual pero usando la librería Vuetify</li>
+</ul>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
