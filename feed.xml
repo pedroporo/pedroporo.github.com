@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:34:13Z</updated>
+    <updated>2025-09-15T16:34:18Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -179,7 +179,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -414,7 +414,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -982,7 +982,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -1257,7 +1257,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -1292,7 +1292,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -1761,7 +1761,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -2261,7 +2261,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -2627,7 +2627,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -2872,7 +2872,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -3362,7 +3362,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -3659,7 +3659,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -4082,7 +4082,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -4613,7 +4613,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -5072,7 +5072,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -5365,7 +5365,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -5562,7 +5562,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -5851,7 +5851,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -5994,7 +5994,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -6555,7 +6555,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -6682,7 +6682,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -6833,7 +6833,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -7035,7 +7035,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -7115,7 +7115,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -7235,7 +7235,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -7266,7 +7266,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -7279,7 +7279,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -7376,7 +7376,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:34:00Z</updated>
+            <updated>2025-09-15T16:34:01Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -22559,41 +22559,6 @@ Tutoria&lt;br /&gt;
 
             </content>
             <link href="https://pedroporo.github.io/01-apuntes/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/" >
-        </entry>
-        <entry>
-            <title>
-                Desarollo Web en entorno servidor
-                
-            </title>
-            <updated>2025-09-15T16:34:00Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
-            <content type="html">
-                &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;php artisan route:list
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/" >
-        </entry>
-        <entry>
-            <title>
-                Desarollo Web en entorno cliente
-                
-            </title>
-            <updated>2025-09-15T16:34:00Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
-            <content type="html">
-                &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
-action Sin título
-templater true
-```{ &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#button-km7s&quot;&gt;#button-km7s&lt;/a&gt;}
-
-
-[Pagina de github de los apuntes](https://github.com/cipfpbatoi/materials)
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/" >
         </entry>
         <entry>
             <title>
