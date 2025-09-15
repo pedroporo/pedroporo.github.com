@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>04-DOM</title>
+<title>8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -152,7 +152,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/04-dom/">04-DOM </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/04-dom/">04-DOM </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -522,7 +522,7 @@
 <span class="foldername">8. Gestió de Dades amb Laravel</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
 </div>
 </div>
 </div>
@@ -624,377 +624,555 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="document-object-model-dom" tabindex="-1">Document Object Model (DOM)</h1>
+<p>L'objectiu d'aquest exercici és estendre la Guia d'Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.</p>
+<hr>
+<h2 id="strong-1-crear-la-migracio-per-a-la-taula-code-equips-code-strong" tabindex="-1"><strong>1. Crear la Migració per a la Taula <code>equips</code></strong></h2>
+<h3 id="strong-migracio-strong" tabindex="-1"><strong>Migració</strong></h3>
+<ol>
+<li>Genera una migració per a la taula <code>equips</code> amb la següent estructura:
 <ul>
-<li><a href="#document-object-model-dom" target="_blank" class="external-link">Document Object Model (DOM)</a>
-<ul>
-<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
-<li><a href="#acceso-a-los-nodos" target="_blank" class="external-link">Acceso a los nodos</a></li>
-<li><a href="#acceso-a-nodos-a-partir-de-otros" target="_blank" class="external-link">Acceso a nodos a partir de otros</a>
-<ul>
-<li><a href="#propiedades-de-un-nodo" target="_blank" class="external-link">Propiedades de un nodo</a></li>
+<li><code>id</code>: Clau primària, autoincremental.</li>
+<li><code>nom</code>: Nom de l'equip (cadena, únic, obligatori).</li>
+<li><code>estadi</code>: Nom de l'estadi de l'equip (cadena, obligatori).</li>
+<li><code>titols</code>: Nombre de títols guanyats (entero, predeterminat 0).</li>
+<li><code>created_at</code> i <code>updated_at</code>: Camps de timestamps generats automàticament.</li>
 </ul>
 </li>
-<li><a href="#manipular-el-%C3%A1rbol-dom" target="_blank" class="external-link">Manipular el árbol DOM</a>
-<ul>
-<li><a href="#a%C3%B1adir-nuevos-nodos-con-innerhtml" target="_blank" class="external-link">Añadir nuevos nodos con <em>innerHTML</em></a></li>
-</ul>
-</li>
-<li><a href="#atributos-de-los-nodos" target="_blank" class="external-link">Atributos de los nodos</a>
-<ul>
-<li><a href="#estilos-de-los-nodos" target="_blank" class="external-link">Estilos de los nodos</a></li>
-<li><a href="#atributos-de-clase" target="_blank" class="external-link">Atributos de clase</a></li>
-<li><a href="#atributos-de-datos" target="_blank" class="external-link">Atributos de datos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="introduccion" tabindex="-1">Introducción</h2>
-<p>La mayoría de las veces que programamos con Javascript es para que se ejecute en una página web mostrada por el navegador. En este contexto tenemos acceso a ciertos objetos que nos permiten interactuar con la página (DOM) y con el navegador (Browser Object Model, BOM).</p>
-<p>El <strong>DOM</strong> es una estructura en árbol que representa todos los elementos HTML de la página y sus atributos. Todo lo que contiene la página se representa como nodos del árbol y mediante el DOM podemos acceder a cada nodo, modificarlo, eliminarlo o añadir nuevos nodos de forma que cambiamos dinámicamente la página mostrada al usuario.</p>
-<p>La raíz del árbol DOM es <strong>document</strong> y de este nodo cuelgan el resto de elementos HTML. Cada uno constituye su propio nodo y tiene subnodos con sus <em>atributos</em>, <em>estilos</em> y elementos HTML que contiene.</p>
-<p>Por ejemplo, la página HTML:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Página simple&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Esta página es &lt;strong&gt;muy simple&lt;/strong&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+</ol>
+<pre><code class="language-bash">php artisan make:migration create_equips_table --create=equips
 </code></pre>
-<p>se convierte en el siguiente árbol DOM:</p>
-<p>![Árbol DOM](/img/user/01 Apuntes/DAW/Javascript Teoria Batoi/img/domSimple.png)</p>
-<p>Cada etiqueta HTML suele originar 2 nodos:</p>
-<ul>
-<li>Element: correspondiente a la etiqueta</li>
-<li>Text: correspondiente a su contenido (lo que hay entre la etiqueta y su par de cierre)</li>
-</ul>
-<p>Cada nodo es un objeto con sus propiedades y métodos.</p>
-<p>El ejemplo anterior está simplificado porque sólo aparecen los nodos de tipo <em><strong>elemento</strong></em> pero en realidad también generan nodos los saltos de línea, tabuladores, espacios, comentarios, etc. En el siguiente ejemplo podemos ver TODOS los nodos que realmente se generan. La página:</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;My Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Header&lt;/h1&gt;
-  &lt;p&gt;
-    Paragraph
-  &lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-</code></pre>
-<p>se convierte en el siguiente árbol DOM:</p>
-<p><a title="L. David Baron [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Dom_tree.png"><img width="512" alt="Dom tree" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Dom_tree.png"></a></p>
-<h2 id="acceso-a-los-nodos" tabindex="-1">Acceso a los nodos</h2>
-<p>Los principales métodos para acceder a los diferentes nodos son:</p>
-<ul>
-<li><strong>.getElementById(id)</strong>: devuelve el nodo con la <em>id</em> pasada. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nodo = document.getElementById('main');   // nodo contendrá el nodo cuya id es _main_
-</code></pre>
-<ul>
-<li><strong>.getElementsByClassName(clase)</strong>: devuelve una colección (similar a un array) con todos los nodos de la <em>clase</em> indicada. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nodos = document.getElementsByClassName('error');   // nodos contendrá todos los nodos cuya clase es _error_
-</code></pre>
-<p>NOTA: las colecciones son similares a arrays (se accede a sus elementos con <em>[indice]</em>) pero no se les pueden aplicar sus métodos <em>filter</em>, <em>map</em>, ... a menos que se conviertan a arrays con <em>Array.from()</em></p>
-<ul>
-<li><strong>.getElementsByTagName(etiqueta)</strong>: devuelve una colección con todos los nodos de la <em>etiqueta</em> HTML indicada. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nodos = document.getElementsByTagName('p');   // nodos contendrá todos los nodos de tipo  _&lt;p&gt;_
-</code></pre>
-<ul>
-<li><strong>.getElementsByName(name)</strong>: devuelve una colección con todos los nodos que contengan un atributo <code>name</code> con el valor indicado. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let radiosSexo = document.getElementsByName('sexo');   // radiosSexo contendrá todos los nodos con ese atributo (seguramente radiobuttons con name=&quot;sexo&quot;)
-</code></pre>
-<ul>
-<li><strong>.querySelector(selector)</strong>: devuelve el primer nodo seleccionad por el <em>selector</em> CSS indicado. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nodo = document.querySelector('p.error');   // nodo contendrá el primer párrafo de clase _error_
-</code></pre>
-<ul>
-<li><strong>.querySelectorAll(selector)</strong>: devuelve una colección con todos los nodos seleccionados por el <em>selector</em> CSS indicado. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nodos = document.querySelectorAll('p.error');   // nodos contendrá todos los párrafos de clase _error_
-</code></pre>
-<p>NOTA: al aplicar estos métodos sobre <em>document</em> se seleccionará sobre la página pero podrían también aplicarse a cualquier nodo y en ese caso la búsqueda se realizaría sólo entre los descendientes de dicho nodo.</p>
-<p>También tenemos 'atajos' para obtener algunos elementos comunes:</p>
-<ul>
-<li><code>document.documentElement</code>: devuelve el nodo del elemento <em>&lt;html&gt;</em></li>
-<li><code>document.head</code>: devuelve el nodo del elemento <em>&lt;head&gt;</em></li>
-<li><code>document.body</code>: devuelve el nodo del elemento <em>&lt;body&gt;</em></li>
-<li><code>document.title</code>: devuelve el nodo del elemento <em>&lt;title&gt;</em></li>
-<li><code>document.link</code>: devuelve una colección con todos los hiperenlaces del documento</li>
-<li><code>document.anchor</code>: devuelve una colección con todas las anclas del documento</li>
-<li><code>document.forms</code>: devuelve una colección con todos los formularios del documento</li>
-<li><code>document.images</code>: devuelve una colección con todas las imágenes del documento</li>
-<li><code>document.scripts</code>: devuelve una colección con todos los scripts del documento</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: Para hacer los ejercicios de este tema descárgate <a href="ejemploDOM.html" target="_blank" class="external-link">esta página de ejemplo</a> y ábrela en tu navegador. Obtén por consola, al menos de 2 formas diferentes:</p>
-<ul>
-<li>El elemento con id 'input2'
-<ul>
-<li>document.getElementById('input2') o document.querySelector('#input2')</li>
-</ul>
-</li>
-<li>La colección de párrafos
-<ul>
-<li>document.getElementsByTagName('p') o document.querySelectorAll('p')</li>
-</ul>
-</li>
-<li>
-<h2 id="lo-mismo-pero-solo-de-los-parrafos-que-hay-dentro-del-div-lipsum" tabindex="-1">Lo mismo pero sólo de los párrafos que hay dentro del div 'lipsum'</h2>
-</li>
-<li>El formulario (ojo, no la colección con el formulario sino sólo el formulario)</li>
-<li>Todos los inputs</li>
-<li>Sólo los inputs con nombre 'sexo'</li>
-<li>Los items de lista de la clase 'important' (sólo los LI)</li>
-</ul>
-</blockquote>
-<h2 id="acceso-a-nodos-a-partir-de-otros" tabindex="-1">Acceso a nodos a partir de otros</h2>
-<p>En muchas ocasiones queremos acceder a cierto nodo a partir de uno dado. Para ello tenemos los siguientes métodos que se aplican sobre un elemento del árbol DOM:</p>
-<ul>
-<li><code>elemento.parentElement</code>: devuelve el elemento padre de <em>elemento</em></li>
-<li><code>elemento.children</code>: devuelve la colección con todos los elementos hijo de <em>elemento</em> (sólo elementos HTML, no comentarios ni nodos de tipo texto)</li>
-<li><code>elemento.childNodes</code>: devuelve la colección con todos los hijos de <em>elemento</em>, incluyendo comentarios y nodos de tipo texto por lo que no suele utilizarse</li>
-<li><code>elemento.firstElementChild</code>: devuelve el elemento HTML que es el primer hijo de <em>elemento</em></li>
-<li><code>elemento.firstChild</code>: devuelve el nodo que es el primer hijo de <em>elemento</em> (incluyendo nodos de tipo texto o comentarios)</li>
-<li><code>elemento.lastElementChild</code>, <code>elemento.lastChild</code>: igual pero con el último hijo</li>
-<li><code>elemento.nextElementSibling</code>: devuelve el elemento HTML que es el siguiente hermano de <em>elemento</em></li>
-<li><code>elemento.nextSibling</code>: devuelve el nodo que es el siguiente hermano de <em>elemento</em> (incluyendo nodos de tipo texto o comentarios)</li>
-<li><code>elemento.previousElementSibling</code>, <code>elemento.previousSibling</code>: igual pero con el hermano anterior</li>
-<li><code>elemento.hasChildNodes</code>: indica si <em>elemento</em> tiene o no nodos hijos</li>
-<li><code>elemento.childElementCount</code>: devuelve el nº de nodos hijo de <em>elemento</em></li>
-<li><code>elemento.closest(selector)</code>: devuelve el ancestro más cercano que coincide con el selector. Por ejemplo si el elemento es un &lt;td&gt; de una tabla entonces <code>elemento.closest('table')</code> devolverá la tabla a la que pertenece</li>
-</ul>
-<p><strong>IMPORTANTE</strong>: a menos que me interesen comentarios, saltos de página, etc <strong>siempre</strong> debo usar los métodos que sólo devuelven elementos HTML, no todos los nodos.</p>
-<p>![Recorrer el árbol DOM](/img/user/01 Apuntes/DAW/Javascript Teoria Batoi/img/domRelaciones.png)</p>
-<blockquote>
-<p>EJERCICIO: Siguiento con la <a href="ejemploDOM.html" target="_blank" class="external-link">página de ejemplo</a> obtén desde la consola, al menos de 2 formas diferentes:</p>
-<ul>
-<li>El primér párrafo que hay dentro del div 'lipsum'</li>
-<li>El segundo párrafo de 'lipsum'</li>
-<li>El último item de la lista</li>
-<li>La label de 'Escoge sexo'</li>
-</ul>
-</blockquote>
-<h3 id="propiedades-de-un-nodo" tabindex="-1">Propiedades de un nodo</h3>
-<p>Las principales propiedades de un nodo son:</p>
-<ul>
-<li><code>elemento.innerHTML</code>: todo lo que hay entre la etiqueta que abre <em>elemento</em> y la que lo cierra, incluyendo otras etiquetas HTML. Por ejemplo si <em>elemento</em> es el nodo <code>&lt;p&gt;Esta página es &lt;strong&gt;muy simple&lt;/strong&gt;&lt;/p&gt;</code></li>
-</ul>
-<pre><code class="language-javascript">let contenido = elemento.innerHTML;   // contenido='Esta página es &lt;strong&gt;muy simple&lt;/strong&gt;'
-</code></pre>
-<ul>
-<li><code>elemento.textContent</code>: todo lo que hay entre la etiqueta que abre <em>elemento</em> y la que lo cierra, pero ignorando otras etiquetas HTML. Siguiendo con el ejemplo anterior:</li>
-</ul>
-<pre><code class="language-javascript">let contenido = elemento.textContent;   // contenido='Esta página es muy simple'
-</code></pre>
-<ul>
-<li><code>elemento.value</code>: devuelve la propiedad 'value' de un &lt;input&gt; (en el caso de un &lt;input&gt; de tipo text devuelve lo que hay escrito en él). Como los &lt;inputs&gt; no tienen etiqueta de cierre (&lt;/input&gt;) no podemos usar <em>.innerHTML</em> ni <em>.textContent</em>. Por ejemplo si <em>elem1</em> es el nodo <code>&lt;input name=&quot;nombre&quot;&gt;</code> y <em>elem2</em> es el nodo <code>&lt;input tipe=&quot;radio&quot; value=&quot;H&quot;&gt;Hombre</code></li>
-</ul>
-<pre><code class="language-javascript">let cont1 = elem1.value;   // cont1 valdría lo que haya escrito en el &lt;input&gt; en ese momento
-let cont2 = elem2.value;   // cont2=&quot;H&quot;
-</code></pre>
-<p>Otras propiedades:</p>
-<ul>
-<li><code>elemento.innerText</code>: igual que <em>textContent</em></li>
-<li><code>elemento.focus</code>: da el foco a <em>elemento</em> (para inputs, etc). Para quitarle el foco <code>elemento.blur</code></li>
-<li><code>elemento.clientHeight</code> / <code>elemento.clientWidth</code>: devuelve el alto / ancho visible del <em>elemento</em></li>
-<li><code>elemento.offsetHeight</code> / <code>elemento.offsetWidth</code>: devuelve el alto / ancho total del <em>elemento</em></li>
-<li><code>elemento.clientLeft</code> / <code>elemento.clientTop</code>: devuelve la distancia de <em>elemento</em> al borde izquierdo / superior</li>
-<li><code>elemento.offsetLeft</code> / <code>elemento.offsetTop</code>: devuelve los píxels que hemos desplazado <em>elemento</em> a la izquierda / abajo</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: Obtén desde la consola, al menos de 2 formas:</p>
-<ul>
-<li>El innerHTML de la etiqueta de 'Escoge sexo'</li>
-<li>El textContent de esa etiqueta</li>
-<li>El valor del primer input de sexo</li>
-<li>El valor del sexo que esté seleccionado (difícil, búscalo por Internet)</li>
-</ul>
-</blockquote>
-<h2 id="manipular-el-arbol-dom" tabindex="-1">Manipular el árbol DOM</h2>
-<p>Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto modificar la página:</p>
-<ul>
-<li><code>document.createElement('etiqueta')</code>: crea un nuevo elemento HTML con la etiqueta indicada, pero aún no se añade a la página. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let nuevoLi = document.createElement('li');
-</code></pre>
-<ul>
-<li><code>elemento.append(elementos o texto)</code>: añade al DOM los parámetros pasados como últimos hijos de <em>elemento</em>. Se le puede pasar tanto un nodo DOM como una cadena de texto (para la que se creará su nodo de texto correspondiente) y que se le pueden pasar varios parámetros para crear varios nodos. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">nuevoLi.append('Nuevo elemento de lista');     // añade el texto pasado al elemento LI creado
-let miPrimeraLista = document.getElementsByTagName('ul')[0];  // selecciona el 1º UL de la página
-miPrimeraLista.append(nuevoLi);    // añade LI como último hijo de UL, es decir al final de la lista
-</code></pre>
-<ul>
-<li><code>elemento.prepend(elementos o texto)</code>: como el anterior pero en lugar de añadirlos como últimos hijos los añade antes del primer hijo.</li>
-</ul>
-<pre><code class="language-javascript">const primerLi = document.createElement('li');
-primerLi.append('Primer elemento de lista'); 
-let miPrimeraLista = document.getElementsByTagName('ul')[0]; 
-miPrimeraLista.prepend(nuevoLi);
-</code></pre>
-<ul>
-<li><code>elemento.after(elementos o texto)</code>: como <em>append</em> pero en lugar de añadirlos como últimos hijos los añade como los siguientes hermanos de <em>elemento</em>.</li>
-</ul>
-<pre><code class="language-javascript">const otroLi = document.createElement('li');
-otroLi.append('Segundo elemento de lista'); 
-primerLi.after(otroLi);
-</code></pre>
-<ul>
-<li><code>elemento.before(elementos o texto)</code>: como el anterior pero los añade como los anteriores hermanos de <em>elemento</em>.</li>
-<li><code>elemento.remove()</code>: borra el nodo <em>elemento</em> del documento.</li>
-<li><code>elemento.replaceWith(nuevoNodo)</code>: reemplaza el nodo <em>elemento</em> con el <em>nuevoNodo</em> pasado</li>
-</ul>
-<pre><code class="language-javascript">let primerElementoDeLista = document.getElementsByTagName('ul')[0].firstChild;  // selecciona el 1º LI de miPrimeraLista
-primerElementoDeLista.replaceChild(nuevoLi);    // reemplaza el 1º elemento de la lista con nuevoLi
-</code></pre>
-<ul>
-<li><code>elementoAClonar.cloneNode(boolean)</code>: devuelve un clon de <em>elementoAClonar</em> o de <em>elementoAClonar</em> con todos sus descendientes según le pasemos como parámetro <em>false</em> o <em>true</em>. Luego podremos insertarlo donde queramos.</li>
-</ul>
-<p>Otros métodos menos usados son:</p>
-<ul>
-<li><code>document.createTextNode('texto')</code>: crea un nuevo nodo de texto con el texto indicado, que luego tendremos que añadir a un nodo HTML. Normalmente no se usa porque <em>append</em> y el resto de métodos anteriores ya lo crean automáticamente. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let textoLi = document.createTextNode('Nuevo elemento de lista');
-</code></pre>
-<ul>
-<li><code>elemento.appendChild(nuevoNodo)</code>: añade <em>nuevoNodo</em> como último hijo de <em>elemento</em> y lo devuelve. Se diferencia con <em>append</em> en que sólo permite un parámetro y éste debe ser un nodo, no puede ser texto. Por eso no suele usarse. Ejemplo:</li>
-</ul>
-<pre><code class="language-javascript">nuevoLi.appendChild(textoLi);     // añade el texto creado al elemento LI creado
-let miPrimeraLista = document.getElementsByTagName('ul')[0];  // selecciona el 1º UL de la página
-miPrimeraLista.appendChild(nuevoLi);    // añade LI como último hijo de UL, es decir al final de la lista
-</code></pre>
-<ul>
-<li><code>elemento.insertBefore(nuevoNodo, nodo)</code>: añade <em>nuevoNodo</em> como hijo de <em>elemento</em> antes del hijo <em>nodo</em>. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let miPrimeraLista = document.getElementsByTagName('ul')[0];                // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName('li')[0];   // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.insertBefore(nuevoLi, primerElementoDeLista);                // añade LI al principio de la lista
-</code></pre>
-<ul>
-<li><code>elemento.removeChild(nodo)</code>: borra <em>nodo</em> de <em>elemento</em> y por tanto se elimina de la página. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let miPrimeraLista = document.getElementsByTagName('ul')[0];  // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName('li')[0];  // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.removeChild(primerElementoDeLista);    // borra el primer elemento de la lista
-// También podríamos haberlo borrado sin tener el padre con:
-primerElementoDeLista.parentElement.removeChild(primerElementoDeLista);
-</code></pre>
-<ul>
-<li><code>elemento.replaceChild(nuevoNodo, viejoNodo)</code>: reemplaza <em>viejoNodo</em> con <em>nuevoNodo</em> como hijo de <em>elemento</em>. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">let miPrimeraLista = document.getElementsByTagName('ul')[0];  // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName('li')[0];  // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.replaceChild(nuevoLi, primerElementoDeLista);    // reemplaza el 1º elemento de la lista con nuevoLi
-</code></pre>
-<p><strong>OJO</strong>: Si añado con el método <code>append</code> o <code>appendChild</code> un nodo que estaba en otro sitio <strong>se elimina de donde estaba</strong> para añadirse a su nueva posición. Si quiero que esté en los 2 sitios deberé clonar el nodo y luego añadir el clon y no el nodo original.</p>
-<h3 id="anadir-nuevos-nodos-con-em-inner-html-em" tabindex="-1">Añadir nuevos nodos con <em>innerHTML</em></h3>
-<p>Supongamos que tenemos un DIV cuya <em>id</em> es <em>myDiv</em> al que queremos añadir al final dos párrafos, el último de ellos con un texto en negrita. El código podría ser:</p>
-<pre><code class="language-javascript">let miDiv = document.getElementById('myDiv');
-let nuevoParrafo = document.createElement('p');
-nuevoParrafo.textContent = 'Párrafo añadido al final';
-let ultimoParrafo = document.createElement('p');
-const textoNegrita = document.createElement('strong');
-textoNegrita.textContent = 'con texto en negrita';
-ultimoParrafo.append('Último párrafo ', textoNegrita);
-miDiv.append(nuevoParrafo, ultimoParrafo);
-</code></pre>
-<p>Si utilizamos la propiedad <strong>innerHTML</strong> el código a usar es mucho más simple:</p>
-<pre><code class="language-javascript">let miDiv = document.getElementById('myDiv');
-miDiv.innerHTML += '&lt;p&gt;Párrafo añadido al final&lt;/p&gt;&lt;p&gt;Último párrafo &lt;strong&gt;con texto en negrita&lt;/strong&gt;&lt;/p&gt;';
-</code></pre>
-<p><strong>OJO</strong>: La forma de añadir el último párrafo (línea <a class="tag" onclick="toggleTagSearch(this)" data-content="#3">#3</a>: <code>miDiv.innerHTML+='&lt;p&gt;Párrafo añadido al final&lt;/p&gt;';</code>) aunque es válida no es muy eficiente ya que obliga al navegador a volver a pintar TODO el contenido de miDIV.</p>
-<p>Podemos ver más ejemplos de creación y eliminación de nodos en <a href="http://www.w3schools.com/js/js_htmldom_nodes.asp" target="_blank" class="external-link">W3Schools</a>.</p>
-<blockquote>
-<p>EJERCICIO: Añade a la página:</p>
-<ul>
-<li>Un nuevo párrafo al final del DIV <em>'lipsum'</em> con el texto &quot;Nuevo párrafo <strong>añadido</strong> por javascript&quot; (fíjate que una palabra está en negrita)</li>
-<li>Un nuevo elemento al formulario tras el <em>'Dato 1'</em> con la etiqueta <em>'Dato 1 bis'</em> y el INPUT con id <em>'input1bis'</em> que al cargar la página tendrá escrito &quot;Hola&quot;</li>
-</ul>
-</blockquote>
-<h2 id="atributos-de-los-nodos" tabindex="-1">Atributos de los nodos</h2>
-<p>Podemos ver y modificar los valores de los atributos de cada elemento HTML y también añadir o eliminar atributos:</p>
-<ul>
-<li><code>elemento.attributes</code>: devuelve un array con todos los atributos de <em>elemento</em></li>
-<li><code>elemento.hasAttribute('nombreAtributo')</code>: indica si <em>elemento</em> tiene o no definido el atributo <em>nombreAtributo</em></li>
-<li><code>elemento.getAttribute('nombreAtributo')</code>: devuelve el valor del atributo <em>nombreAtributo</em> de <em>elemento</em>. Para muchos elementos este valor puede directamente con <code>elemento.atributo</code>.</li>
-<li><code>elemento.setAttribute('nombreAtributo', 'valor')</code>: establece <em>valor</em> como nuevo valor del atributo <em>nombreAtributo</em> de <em>elemento</em>. También puede cambiarse el valor directamente con <code>elemento.atributo=valor</code>.</li>
-<li><code>elemento.removeAttribute('nombreAtributo')</code>: elimina el atributo <em>nombreAtributo</em> de <em>elemento</em></li>
-</ul>
-<p>A algunos atributos comunes como <code>id</code>, <code>title</code> o <code>className</code> (para el atributo <strong>class</strong>) se puede acceder y cambiar como si fueran una propiedad del elemento (<code>elemento.atributo</code>). Ejemplos:</p>
-<pre><code class="language-javascript">elemento.id = 'primera-lista';
-// es equivalente ha hacer:
-elemento.setAttribute('id', 'primera-lista');
-</code></pre>
-<h3 id="estilos-de-los-nodos" tabindex="-1">Estilos de los nodos</h3>
-<p>Los estilos están accesibles como el atributo <strong>style</strong>. Cualquier estilo es una propiedad de dicho atributo pero con la sintaxis <em>camelCase</em> en vez de <em>kebab-case</em>. Por ejemplo para cambiar el color de fondo (propiedad background-color) y ponerle el color <em>rojo</em> al elemento <em>miPrimeraLista</em> haremos:</p>
-<pre><code class="language-javascript">miPrimeraLista.style.backgroundColor = 'red';
-</code></pre>
-<p>De todas formas normalmente <strong>NO CAMBIAREMOS ESTILOS</strong> a los elementos sino que les pondremos o quitaremos clases que harán que se le apliquen o no los estilos definidos para ellas en el CSS.</p>
-<h3 id="atributos-de-clase" tabindex="-1">Atributos de clase</h3>
-<p>Ya sabemos que el aspecto de la página debe configurarse en el CSS por lo que no debemos aplicar atributos <em>style</em> al HTML. En lugar de ello les ponemos clases a los elementos que harán que se les aplique el estilo definido para dicha clase.</p>
-<p>Como es algo muy común en lugar de utilizar las instrucciones de <code>elemento.setAttribute('className', 'destacado')</code> o directamente <code>elemento.className='destacado'</code> podemos usar la propiedad <strong><em><a href="https://developer.mozilla.org/es/docs/Web/API/Element/classList" target="_blank" class="external-link">classList</a></em></strong> que devuelve la colección de todas las clases que tiene el elemento. Por ejemplo si <em>elemento</em> es <code>&lt;p class=&quot;destacado direccion&quot;&gt;...</code>:</p>
-<pre><code class="language-javascript">let clases=elemento.classList;   // clases=['destacado', 'direccion'], OJO es una colección, no un Array
-</code></pre>
-<p>Además dispone de los métodos:</p>
-<ul>
-<li><strong>.add(clase)</strong>: añade al elemento la clase pasada (si ya la tiene no hace nada). Ej.:</li>
-</ul>
-<pre><code class="language-javascript">elemento.classList.add('primero');   // ahora elemento será &lt;p class=&quot;destacado direccion primero&quot;&gt;...
-</code></pre>
-<ul>
-<li><strong>.remove(clase)</strong>: elimina del elemento la clase pasada (si no la tiene no hace nada). Ej.:</li>
-</ul>
-<pre><code class="language-javascript">elemento.classList.remove('direccion');   // ahora elemento será &lt;p class=&quot;destacado primero&quot;&gt;...
-</code></pre>
-<ul>
-<li><strong>.toogle(clase)</strong>: añade la clase pasada si no la tiene o la elimina si la tiene ya. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">elemento.classList.toogle('destacado');   // ahora elemento será &lt;p class=&quot;primero&quot;&gt;...
-elemento.classList.toogle('direccion');   // ahora elemento será &lt;p class=&quot;primero direccion&quot;&gt;...
-</code></pre>
-<ul>
-<li><strong>.contains(clase)</strong>: dice si el elemento tiene o no la clase pasada. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">elemento.classList.contains('direccion');   // devuelve true
-</code></pre>
-<ul>
-<li><strong>.replace(oldClase, newClase)</strong>: reemplaza del elemento una clase existente por una nueva. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">elemento.classList.replace('primero', 'ultimo');   // ahora elemento será &lt;p class=&quot;ultimo direccion&quot;&gt;...
-</code></pre>
-<p>Tened en cuenta que NO todos los navegadores soportan <em>classList</em> por lo que si queremos añadir o quitar clases en navegadores que no lo soportan debemos hacerlo con los métodos estándar, por ejemplo para añadir la clase 'rojo':</p>
-<pre><code class="language-javascript">let clases = elemento.className.split(&quot; &quot;);
-if (clases.indexOf('rojo') == -1) {
-  elemento.className += ' ' + 'rojo';
+<ol start="2">
+<li>Modifica el fitxer de migració per incloure l'estructura de la taula:</li>
+</ol>
+<pre><code class="language-php">public function up()
+{
+    Schema::create('equips', function (Blueprint $table) {
+        $table-&gt;id();
+        $table-&gt;string('nom')-&gt;unique();
+        $table-&gt;string('estadi');
+        $table-&gt;integer('titols')-&gt;default(0);
+        $table-&gt;timestamps();
+    });
 }
 </code></pre>
-<h3 id="atributos-de-datos" tabindex="-1">Atributos de datos</h3>
-<p>HTML5 permite agregar atributos personalizados no visuales a las etiquetas utilizando <code>data-*</code>. Estos atributos pueden ser accesibles a través de JavaScript usando <code>dataset</code>.</p>
-<pre><code class="language-html">&lt;article
-    id=&quot;electriccars&quot;
-    data-columns=&quot;3&quot;
-    data-index-number=&quot;12314&quot;
-    data-parent=&quot;cars&quot;&gt;
+<ol start="3">
+<li>Executa la migració per crear la taula:</li>
+</ol>
+<pre><code class="language-bash">php artisan migrate
+</code></pre>
+<h3 id="strong-models-i-seeders-strong" tabindex="-1"><strong>Models i Seeders</strong></h3>
+<ol>
+<li>Genera un model anomenat <code>Equip</code> per gestionar la taula:</li>
+</ol>
+<pre><code class="language-bash">php artisan make:model Equip 
+</code></pre>
+<ol start="2">
+<li>Modifica el model Equip a app/Models/Equip.php per definir els camps que es poden emplenar mitjançant assignació massiva:</li>
+</ol>
+<pre><code class="language-php">protected $fillable = ['nom', 'estadi', 'titols'];
+</code></pre>
+<ol start="3">
+<li>Crea un seeder per a la taula <code>equips</code>:</li>
+</ol>
+<pre><code class="language-bash">php artisan make:seeder EquipsSeeder
+</code></pre>
+<ol start="4">
+<li>Modifica el seeder EquipsSeeder per generar dades d'exemple:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
+    DB::table('equips')-&gt;insert([
+            ['nom' =&gt; 'Barça Femení', 'estadi' =&gt; 'Camp Nou', 'titols' =&gt; 30],
+            ['nom' =&gt; 'Atlètic de Madrid', 'estadi' =&gt; 'Cívitas Metropolitano', 'titols' =&gt; 10],
+            ['nom' =&gt; 'Real Madrid Femení', 'estadi' =&gt; 'Alfredo Di Stéfano', 'titols' =&gt; 5],
+    ]);
+}
+</code></pre>
+<ol start="5">
+<li>Afegeix el seeder EquipsSeeder al fitxer DatabaseSeeder:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
+    $this-&gt;call([
+        EquipsSeeder::class,
+    ]);
+}
+</code></pre>
+<ol start="6">
+<li>Executa els seeders per omplir la taula <code>equips</code> amb dades d'exemple:</li>
+</ol>
+<pre><code class="language-bash">   php artisan db:seed
+</code></pre>
+<h3 id="strong-controladors-i-crud-strong" tabindex="-1"><strong>Controladors i CRUD</strong></h3>
+<ol>
+<li>
+<p>Modifica el mètode <code>index</code>,<code>show</code>,<code>create</code>,<code>edit</code> i <code>destroy</code> del controlador per obtenir els equips des de la base de dades:</p>
+<pre><code class="language-php">public function index() {
+     $equips = Equip::all();
+     return view('equips.index', compact('equips'));
+ }
+
+ public function show(Equip $equip) {
+     return view('equips.show', compact('equip'));
+ }
+
+ public function create() {
+     return view('equips.create');
+ }
+
+ public function edit(Equip $equip) {
+     return view('equips.edit', compact('equip'));
+ }
+
+ public function destroy(Equip $equip) {
+     $equip-&gt;delete();
+     return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip esborrat correctament!');
+ } 
+</code></pre>
+</li>
+</ol>
+<h3 id="strong-relacions-entre-taules-strong" tabindex="-1"><strong>Relacions entre Taules</strong></h3>
+<ol>
+<li>Anem a crear la migració, model i seeder per la taula <code>estadis</code> i vincular-la amb la taula <code>equips</code>.</li>
+</ol>
+<pre><code class="language-bash">php artisan make:migration create_estadis_table
+php artisan make:migration add_estadi_id_to_equips_table
+php artisan make:model Estadi
+php artisan make:seeder EstadisSeeder
+</code></pre>
+<ol start="2">
+<li>Modifica la migració <code>create_estadis_table</code> per incloure l'estructura de la taula <code>estadis</code>:</li>
+</ol>
+<pre><code class="language-php">public function up()
+{
+    Schema::create('estadis', function (Blueprint $table) {
+        $table-&gt;id();
+        $table-&gt;string('nom')-&gt;unique();
+        $table-&gt;integer('capacitat');
+        $table-&gt;timestamps();
+    });
+}
+</code></pre>
+<ol start="3">
+<li>Modifica la migració <code>add_estadi_id_to_equips_table</code> per afegir la clau forana <code>estadi_id</code> a la taula <code>equips</code>:</li>
+</ol>
+<pre><code class="language-php">public function up()
+{
+    Schema::table('equips', function (Blueprint $table) {
+        $table-&gt;dropColumn('estadi'); // Esborra el camp estadi
+        $table-&gt;foreignId('estadi_id')-&gt;constrained(); // Afegir la clau forana
+    });
+ }
+
+public function down()
+{
+    Schema::table('equips', function (Blueprint $table) {
+        $table-&gt;string('estadi');
+        $table-&gt;dropForeign(['estadi_id']);
+        $table-&gt;dropColumn('estadi_id');
+    });
+}
+</code></pre>
+<ol start="4">
+<li>Modifica el model <code>Equip</code> per definir la relació amb l'estadi:</li>
+</ol>
+<pre><code class="language-php">public function estadi()
+{
+    return $this-&gt;belongsToclass;
+}
+</code></pre>
+<ol start="5">
+<li>Modifica el model <code>Estadi</code> per definir la relació amb els equips:</li>
+</ol>
+<pre><code class="language-php">public function equips()
+{
+    return $this-&gt;hasManyclass;
+}
+</code></pre>
+<ol start="6">
+<li>Modifica el seeder <code>EstadisSeeder</code> per generar dades d'exemple per a la taula <code>estadis</code>:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
+    DB::table('estadis')-&gt;insert([
+        ['nom' =&gt; 'Camp Nou', 'capacitat' =&gt; 99000],
+        ['nom' =&gt; 'Wanda Metropolitano', 'capacitat' =&gt; 68000],
+        ['nom' =&gt; 'Santiago Bernabéu', 'capacitat' =&gt; 81000],
+    ]);
+}
+</code></pre>
+<ol start="7">
+<li>Afegeix el seeder <code>EstadisSeeder</code> al fitxer <code>DatabaseSeeder</code>:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
+    $this-&gt;call([
+        EstadisSeeder::class,
+        EquipsSeeder::class,
+        
+    ]);
+}
+</code></pre>
+<ol start="8">
+<li>Modifica el seeder <code>EquipsSeeder</code> per assignar equips a estadis existents:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
+    $estadi = Estadi::where('nom', 'Camp Nou')-&gt;first();
+    $estadi-&gt;equips()-&gt;create([
+        'nom' =&gt; 'Barça Femení',
+        'titols' =&gt; 30,
+    ]);
+    $estadi = Estadi::where('nom', 'Wanda Metropolitano')-&gt;first();
+    $estadi-&gt;equips()-&gt;create([
+        'nom' =&gt; 'Atlètic de Madrid',
+        'titols' =&gt; 10,
+    ]);
+    $estadi = Estadi::where('nom', 'Santiago Bernabéu')-&gt;first();
+    $estadi-&gt;equips()-&gt;create([
+        'nom' =&gt; 'Real Madrid Femení',
+        'titols' =&gt; 5,
+    ]);
+ }
+</code></pre>
+<ol start="9">
+<li>Executa els seeders per omplir les taules <code>equips</code> i <code>estadis</code> amb dades d'exemple:</li>
+</ol>
+<pre><code class="language-bash">php artisan migrate:fresh --seed 
+</code></pre>
+<ol start="10">
+<li>Modifica la vista <code>equips.index</code> per mostrar l'estadi de cada equip:</li>
+</ol>
+<pre><code class="language-php">@foreach ($equips as $equip)
+    &lt;tr class=&quot;hover:bg-gray-100&quot;&gt;
+        &lt;td class=&quot;border border-gray-300 p-2&quot;&gt;
+            &lt;a href=&quot;{{ route('equips.show', $equip-&gt;id) }}&quot; class=&quot;text-blue-700 hover:underline&quot;&gt;{{ $equip-&gt;nom }}&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;border border-gray-300 p-2&quot;&gt;{{ $equip-&gt;estadi-&gt;nom }}&lt;/td&gt;
+        &lt;td class=&quot;border border-gray-300 p-2&quot;&gt;{{ $equip-&gt;titols }}&lt;/td&gt;
+        &lt;td class=&quot;border border-gray-300 p-2 flex space-x-2&quot;&gt;
+            &lt;a href=&quot;{{ route('equips.show', $equip-&gt;id) }}&quot; class=&quot;text-green-600 hover:underline&quot;&gt;Mostrar&lt;/a&gt;
+            &lt;a href=&quot;{{ route('equips.edit', $equip-&gt;id) }}&quot; class=&quot;text-yellow-600 hover:underline&quot;&gt;Editar&lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+@endforeach
+
+</code></pre>
+<ol start="11">
+<li>Crea la vista <code>equips.create</code> per incloure un desplegable amb els estadis disponibles:</li>
+</ol>
+<pre><code class="language-php">&lt;form action=&quot;{{ route('equips.store') }}&quot; method=&quot;POST&quot; class=&quot;bg-white p-6 rounded-lg shadow-md max-w-md mx-auto&quot;&gt;
+    @csrf
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;nom&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Nom:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;nom&quot; id=&quot;nom&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;titols&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Títols:&lt;/label&gt;
+        &lt;input type=&quot;number&quot; name=&quot;titols&quot; id=&quot;titols&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;estadi_id&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Estadi:&lt;/label&gt;
+        &lt;select name=&quot;estadi_id&quot; id=&quot;estadi_id&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&quot;&gt;
+            @foreach ($estadis as $estadi)
+                &lt;option value=&quot;{{ $estadi-&gt;id }}&quot;&gt;{{ $estadi-&gt;nom }}&lt;/option&gt;
+            @endforeach
+        &lt;/select&gt;
+    &lt;/div&gt;
+    
+    &lt;button type=&quot;submit&quot;
+        class=&quot;w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-blue-600 focus:ring focus:ring-blue-300&quot;&gt;
+        Crear Equip
+    &lt;/button&gt;
+&lt;/form&gt;
+
+</code></pre>
+<p><strong>Cal modificar el controlador <code>EquipController</code> per obtenir els estadis disponibles.</strong></p>
+<ol start="12">
+<li>Crea el mètode store en el controlador EquipController per emmagatzemar un nou equip:</li>
+</ol>
+<pre><code class="language-php">public function store(Request $request) {
+    $validated = $request-&gt;validate([
+        'nom' =&gt; 'required|unique:equips',
+        'estadi_id' =&gt; 'required|exists:estadis,id',
+        'titols' =&gt; 'integer|min:0',
+    ]);
+    Equip::create($validated);
+    return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip creat correctament!');
+}
+</code></pre>
+<p><strong>Cal modificat el model <code>Equip</code> per permetre l'assignació massiva de l'estadi.</strong></p>
+<ol start="13">
+<li>Modifica la vista <code>equips.edit</code> per incloure un desplegable amb els estadis disponibles:</li>
+</ol>
+<pre><code class="language-php">&lt;form action=&quot;{{ route('equips.update', $equip-&gt;id) }}&quot; method=&quot;POST&quot; class=&quot;bg-white p-6 rounded-lg shadow-md max-w-md mx-auto&quot;&gt;
+    @csrf
+    @method('PUT')
+
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;nom&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Nom:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;nom&quot; id=&quot;nom&quot; value=&quot;{{ old('nom', $equip-&gt;nom) }}&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error('nom') border-red-500 @enderror&quot;&gt;
+        @error('nom')
+            &lt;p class=&quot;text-red-500 text-sm mt-1&quot;&gt;{{ $message }}&lt;/p&gt;
+        @enderror
+    &lt;/div&gt;
+
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;titols&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Títols:&lt;/label&gt;
+        &lt;input type=&quot;number&quot; name=&quot;titols&quot; id=&quot;titols&quot; value=&quot;{{ old('titols', $equip-&gt;titols) }}&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error('titols') border-red-500 @enderror&quot;&gt;
+        @error('titols')
+            &lt;p class=&quot;text-red-500 text-sm mt-1&quot;&gt;{{ $message }}&lt;/p&gt;
+        @enderror
+    &lt;/div&gt;
+
+    &lt;div class=&quot;mb-4&quot;&gt;
+        &lt;label for=&quot;estadi_id&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Estadi:&lt;/label&gt;
+        &lt;select name=&quot;estadi_id&quot; id=&quot;estadi_id&quot; required
+            class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 
+            @error('estadi_id') border-red-500 @enderror&quot;&gt;
+            @foreach ($estadis as $estadi)
+                &lt;option value=&quot;{{ $estadi-&gt;id }}&quot; {{ $estadi-&gt;id == $equip-&gt;estadi_id ? 'selected' : '' }}&gt;
+                    {{ $estadi-&gt;nom }}
+                &lt;/option&gt;
+            @endforeach
+        &lt;/select&gt;
+        @error('estadi_id')
+            &lt;p class=&quot;text-red-500 text-sm mt-1&quot;&gt;{{ $message }}&lt;/p&gt;
+        @enderror
+    &lt;/div&gt;
+
+    &lt;button type=&quot;submit&quot;
+        class=&quot;w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-lg shadow hover:bg-blue-600 focus:ring focus:ring-blue-300&quot;&gt;
+        Actualitzar Equip
+    &lt;/button&gt;
+&lt;/form&gt;
+
+</code></pre>
+<ol start="14">
+<li>Crea el mètode update en el controlador EquipController per actualitzar un equip existent:</li>
+</ol>
+<pre><code class="language-php">public function update(Request $request, $id) {
+    $validated = $request-&gt;validate([
+        'nom' =&gt; 'required|unique:equips,nom,'.$id,
+        'estadi_id' =&gt; 'required|exists:estadis,id',
+        'titols' =&gt; 'integer|min:0',
+    ]);
+    $equip = Equip::findOrFail($id);
+    $equip-&gt;update($validated);
+    return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip actualitzat correctament!');
+}
+</code></pre>
+<h3 id="strong-afegir-un-escut-a-l-equip-strong" tabindex="-1"><strong>Afegir un escut a l'equip</strong></h3>
+<ol>
+<li>Crea una migració per afegir un camp <code>escut</code> a la taula <code>equips</code>:</li>
+</ol>
+<pre><code class="language-bash">php artisan make:migration add_escut_to_equips_table
+</code></pre>
+<ol start="2">
+<li>Modifica la migració <code>add_escut_to_equips_table</code> per incloure el camp <code>escut</code>:</li>
+</ol>
+<pre><code class="language-php">public function up()
+{
+    Schema::table('equips', function (Blueprint $table) {
+        $table-&gt;string('escut')-&gt;nullable();
+    });
+}
+public function down()
+{
+    Schema::table('equips', function (Blueprint $table) {
+        $table-&gt;dropColumn('escut');
+    });
+}
+</code></pre>
+<ol start="3">
+<li>Aplicar la migració</li>
+</ol>
+<pre><code class="language-bash">php artisan migrate
+</code></pre>
+<ol start="4">
+<li>Modifica el model <code>Equip</code> per incloure el camp <code>escut</code>:</li>
+</ol>
+<pre><code class="language-php">protected $fillable = ['nom', 'estadi_id', 'titols', 'escut'];
+</code></pre>
+<ol start="5">
+<li>Modifica la vista <code>equips.create</code> per incloure un camp d'arxiu per pujar l'escut de l'equip:</li>
+</ol>
+<pre><code class="language-php">&lt;div class=&quot;mb-4&quot;&gt;
+    &lt;label for=&quot;escut&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Escut:&lt;/label&gt;
+    &lt;input type=&quot;file&quot; name=&quot;escut&quot; id=&quot;escut&quot;
+        class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<ol start="6">
+<li>Modifica la vista <code>equips.edit</code> per incloure un camp d'arxiu per actualitzar l'escut de l'equip:</li>
+</ol>
+<pre><code class="language-php">&lt;div class=&quot;mb-4&quot;&gt;
+    &lt;label for=&quot;escut&quot; class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;Escut:&lt;/label&gt;
+    &lt;input type=&quot;file&quot; name=&quot;escut&quot; id=&quot;escut&quot; 
+        class=&quot;w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500&quot;&gt;
+    @if ($equip-&gt;escut)
+        &lt;p class=&quot;mt-2 text-sm text-gray-500&quot;&gt;Escut actual:&lt;/p&gt;
+        &lt;img src=&quot;{{ asset('storage/' . $equip-&gt;escut) }}&quot; alt=&quot;Escut de {{ $equip-&gt;nom }}&quot; class=&quot;h-16 mt-2&quot;&gt;
+    @endif
+&lt;/div&gt;
+</code></pre>
+<ol start="7">
+<li>Afegeix enctype=&quot;multipart/form-data&quot; al dos formularis:</li>
+</ol>
+<pre><code class="language-html">&lt;form action=&quot;{{ route('equips.store') }}&quot; method=&quot;POST&quot; enctype=&quot;multipart/form-data&quot;&gt;
+</code></pre>
+<ol start="8">
+<li>Crea un enllaç simbòlic a la carpeta storage</li>
+</ol>
+<pre><code class="language-bash">php artisan storage:link
+</code></pre>
+<ol start="9">
+<li>Actualitza el mètode store del controlador</li>
+</ol>
+<pre><code class="language-php">public function store(Request $request)
+{
+    $validated = $request-&gt;validate([
+        'nom' =&gt; 'required|unique:equips',
+        'titols' =&gt; 'integer|min:0',
+        'estadi_id' =&gt; 'required|exists:estadis,id',
+        'escut' =&gt; 'nullable|image|mimes:jpeg,png,jpg|max:2048', // Validació del fitxer
+    ]);
+
+    if ($request-&gt;hasFile('escut')) {
+        $path = $request-&gt;file('escut')-&gt;store('escuts', 'public');
+        $validated['escut'] = $path;
+    }
+
+    Equip::create($validated);
+
+    return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip creat correctament!');
+}
+
+</code></pre>
+<ol start="10">
+<li>Actualitza el mètode update del controlador</li>
+</ol>
+<pre><code class="language-php">public function update(Request $request, $id)
+{
+    $validated = $request-&gt;validate([
+        'nom' =&gt; 'required|unique:equips,nom,' . $id,
+        'titols' =&gt; 'integer|min:0',
+        'estadi_id' =&gt; 'required|exists:estadis,id',
+        'escut' =&gt; 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+    ]);
+
+    $equip = Equip::findOrFail($id);
+
+    if ($request-&gt;hasFile('escut')) {
+        if ($equip-&gt;escut) {
+            Storage::disk('public')-&gt;delete($equip-&gt;escut); // Esborra l'escut antic
+        }
+        $path = $request-&gt;file('escut')-&gt;store('escuts', 'public');
+        $validated['escut'] = $path;
+    }
+
+    $equip-&gt;update($validated);
+
+    return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip actualitzat correctament!');
+}
+</code></pre>
+<ol start="11">
+<li>Crea el mètode delete per esborrar l'escut de l'equip:</li>
+</ol>
+<pre><code class="language-php">public function delete(Equip $equip)
+{
+    if ($equip-&gt;escut) {
+        Storage::disk('public')-&gt;delete($equip-&gt;escut);
+    }
+    $equip-&gt;delete();
+    return redirect()-&gt;route('equips.index')-&gt;with('success', 'Equip esborrat correctament!');
+}
+</code></pre>
+<ol start="12">
+<li>Modificat el component de la vista <code>equips.show</code> per mostrar l'escut de l'equip:</li>
+</ol>
+<pre><code class="language-php">&lt;div class=&quot;equip border rounded-lg shadow-md p-4 bg-white&quot;&gt;
+      @if ($escut)
+          &lt;td class=&quot;border border-gray-300 p-2&quot;&gt;
+              &lt;img src=&quot;{{ asset('storage/' . $escut) }}&quot; alt=&quot;Escut de {{ $nom }}&quot; class=&quot;h-8 w-8 object-cover rounded-full&quot;&gt;
+          &lt;/td&gt;
+      @endif
+    &lt;h2 class=&quot;text-xl font-bold text-blue-800&quot;&gt;{{ $nom }}&lt;/h2&gt;
+    &lt;p&gt;&lt;strong&gt;Estadi:&lt;/strong&gt; {{ $estadi }}&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Títols:&lt;/strong&gt; {{ $titols }}&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="strong-utilitzar-factories-per-a-dades-d-exemple-strong" tabindex="-1"><strong>Utilitzar Factories per a Dades d'Exemple</strong></h3>
+<ol>
+<li>Crea un factory per a la taula <code>equips</code>:</li>
+</ol>
+<pre><code class="language-bash">php artisan make:factory EquipFactory --model=Equip
+</code></pre>
+<ol start="2">
+<li>Modifica el factory <code>EquipFactory</code> per generar dades aleatòries:</li>
+</ol>
+<pre><code class="language-php">public function definition()
+{
+       return [
+           'nom' =&gt; $this-&gt;faker-&gt;unique()-&gt;company,
+           'titols' =&gt; $this-&gt;faker-&gt;numberBetween(0, 50),
+           'estadi_id' =&gt; \App\Models\Estadi::factory(),
+           'escut' =&gt; 'escuts/dummy.png', // Imatge de prova predefinida
+        ];
+    }
+}
+</code></pre>
+<ol start="3">
+<li>Actualitza el seeder <code>EquipsSeeder</code> per utilitzar el factory:</li>
+</ol>
+<pre><code class="language-php">public function run()
+{
     ...
-&lt;/article&gt;
+    Equip::factory()-&gt;count(10)-&gt;create();
+}
 </code></pre>
-<pre><code class="language-javascript">let article = document.getElementById('electriccars');
-console.log(article.dataset.columns); // 3
-console.log(article.dataset.indexNumber); // 12314
+<ol start="4">
+<li>Modifica el model <code>Equip</code> per permetre els factories:</li>
+</ol>
+<pre><code class="language-php">use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Estadi extends Model
+{
+    use HasFactory;
+ ...  
+}
 </code></pre>
-<p>Fuente: <a href="https://xxjcaxx.github.io/libro_dwec/dom.html#atributos-de-datos" target="_blank" class="external-link">Curso DWEC de José Castillo</a></p>
+<ol start="5">
+<li>Crea el factory per a la taula <code>estadis</code>:</li>
+</ol>
+<pre><code class="language-bash">php artisan make:factory EstadiFactory --model=Estadi
+</code></pre>
+<ol start="6">
+<li>Modifica el factory <code>EstadiFactory</code> per generar dades aleatòries:</li>
+</ol>
+<pre><code class="language-php">public function definition()
+{
+    return [
+        'nom' =&gt; $this-&gt;faker-&gt;unique()-&gt;city.' Stadium',
+        'capacitat' =&gt; $this-&gt;faker-&gt;numberBetween(10000, 100000),
+    ];
+}
+</code></pre>
+<ol start="4">
+<li>Executa els seeders per omplir la taula <code>equips</code> amb dades generades pel factory:</li>
+</ol>
+<pre><code class="language-bash">php artisan migrate:fresh --seed
+</code></pre>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
