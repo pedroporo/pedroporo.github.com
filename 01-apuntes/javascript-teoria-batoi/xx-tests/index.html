@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>03_1-sfc</title>
+<title>xx-tests</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -452,7 +452,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/">03_1-sfc </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/">03_1-sfc </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -523,7 +523,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/xx-tests/">xx-tests </a>
 </div>
 </div>
 </div>
@@ -834,453 +834,150 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="single-file-components" tabindex="-1">Single File Components</h1>
+<h2 id="usar-tdd-en-javascript" tabindex="-1">Usar TDD en Javascript</h2>
+<p>Lo más sencillo es usar alguna librería como <strong>Jest</strong>, <strong>Mocha</strong> o <strong>Vitests</strong> (una adaptación de <em>Jest</em> para <em>Vite</em>). Se trata de librerías que se ejecutan sobre <em>Node.js</em> y permiten crear tests tanto síncronos como asíncronos. Para usarlo necesitaremos tener <strong>npm</strong> instalado.</p>
+<h2 id="uso-de-vitest" tabindex="-1">Uso de Vitest</h2>
+<p>Podéis obtener información sobre cómo hacer test con <em>Vitest</em> en muchas páginas de Internet como:</p>
 <ul>
-<li><a href="#single-file-components" target="_blank" class="external-link">Single File Components</a>
-<ul>
-<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a>
-<ul>
-<li><a href="#recordatorio-de-c%C3%B3mo-separar-componentes-en-ficheros" target="_blank" class="external-link">Recordatorio de cómo separar componentes en ficheros</a></li>
-<li><a href="#soluci%C3%B3n-del-ejemplo" target="_blank" class="external-link">Solución del ejemplo</a></li>
+<li><a href="https://xxjcaxx.github.io/libro_dwec/tests.html" target="_blank" class="external-link">Curso DWEC de Jose Castillo</a></li>
+<li><a href="https://vitejs.dev/guide/features.html#testing" target="_blank" class="external-link">Vitest</a></li>
 </ul>
-</li>
-<li><a href="#crear-un-proyecto-vue" target="_blank" class="external-link">Crear un proyecto Vue</a>
-<ul>
-<li><a href="#creaci%C3%B3n-de-un-nuevo-proyecto" target="_blank" class="external-link">Creación de un nuevo proyecto</a></li>
-<li><a href="#scaffolding-creado" target="_blank" class="external-link"><em>Scaffolding</em> creado</a>
-<ul>
-<li><a href="#packagejson" target="_blank" class="external-link">package.json</a></li>
-<li><a href="#indexhtml" target="_blank" class="external-link">index.html</a></li>
-<li><a href="#mainjs" target="_blank" class="external-link">main.js</a></li>
-<li><a href="#appvue" target="_blank" class="external-link">App.vue</a></li>
-<li><a href="#componentshelloworldvue" target="_blank" class="external-link">components/HelloWorld.vue</a></li>
-</ul>
-</li>
-<li><a href="#build-and-deploy-de-nuestra-aplicaci%C3%B3n" target="_blank" class="external-link"><em>Build and Deploy</em> de nuestra aplicación</a></li>
-</ul>
-</li>
-<li><a href="#los-ficheros-sfc-single-file-component" target="_blank" class="external-link">Los ficheros SFC (<em>Single File Component</em>)</a>
-<ul>
-<li><a href="#secciones-de-un-single-file-component" target="_blank" class="external-link">Secciones de un Single File Component</a>
-<ul>
-<li><a href="#template" target="_blank" class="external-link">&lt;template&gt;</a></li>
-<li><a href="#script" target="_blank" class="external-link">&lt;script&gt;</a></li>
-<li><a href="#style" target="_blank" class="external-link">&lt;style&gt;</a></li>
-<li><a href="#custom-blocks" target="_blank" class="external-link">Custom blocks</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#a%C3%B1adir-nuevos-paquetes-y-plugins" target="_blank" class="external-link">Añadir nuevos paquetes y plugins</a>
-<ul>
-<li><a href="#bootstrap" target="_blank" class="external-link">Bootstrap</a>
-<ul>
-<li><a href="#iconos" target="_blank" class="external-link">Iconos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#crear-un-nuevo-componente" target="_blank" class="external-link">Crear un nuevo componente</a></li>
-<li><a href="#depurar-el-c%C3%B3digo-en-la-consola" target="_blank" class="external-link">Depurar el código en la consola</a></li>
-</ul>
-</li>
-<li><a href="#aplicaci%C3%B3n-de-ejemplo" target="_blank" class="external-link">Aplicación de ejemplo</a></li>
-</ul>
-<h2 id="introduccion" tabindex="-1">Introducción</h2>
-<p>La utilidad de separar nuestra aplicación en componentes es que cada uno de ellos puede guardarse en su propio fichero y así no tenemos un fichero con demasiado código. A estos ficheros que contienen un componente se les llama <em>Single File Component (SFC)</em>.</p>
-<h3 id="recordatorio-de-como-separar-componentes-en-ficheros" tabindex="-1">Recordatorio de cómo separar componentes en ficheros</h3>
-<p>Como vimos en la unidad anterior, en el fichero en que definimos el componente exportamos un objeto con las opciones del componente (el segundo parámetro del <code>app.component()</code>):</p>
-<pre><code class="language-javascript">export default {
-    props: ['todo'],
-    template: 
-      `&lt;li @dblclick=&quot;delTodo&quot;&gt;
-        &lt;label&gt;
-          &lt;input type=&quot;checkbox&quot; v-model=&quot;todo.done&quot;&gt;
-          &lt;del v-if=&quot;todo.done&quot;&gt;
-            { { todo.title }}
-          &lt;/del&gt;
-          &lt;span v-else&gt;
-            { { todo.title }}
-          &lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/li&gt;`,
-    methods: {
-      delTodo() {
-        alert('Quiero borrar &quot;' + this.todo.title + '&quot;');
-      }
-    }
-  }
+<h2 id="uso-de-mocha" tabindex="-1">Uso de Mocha</h2>
+<p>Para instalarlo ejecutamos:</p>
+<pre><code class="language-bash">npm install -g mocha    # lo instalamos globalmente para que esté disponible para todos los proyectos
+npm init                # crea en el directorio el package.json
+npm install chai     # en vez de chai podríamos usar assert, should, etc
 </code></pre>
-<p>Y donde queramos usarlo (puede ser en otro componente o en la instancia raíz de <em>Vue</em>) debemos:</p>
+<p>La librería <em>Chai</em> permite 3 tipos de sentencias:</p>
 <ul>
-<li>importar el fichero del componente</li>
-<li>registrar el componente en una propiedad llamada <em>components</em></li>
+<li>asserts</li>
+<li>expects</li>
+<li>should</li>
 </ul>
-<p>El fichero <code>main.js</code> de nuestra aplicación de la <em>Lista de tareas</em> quedaba:</p>
-<pre><code class="language-javascript">import TodoList from './TodoList.js'
-import TodoAdd from './TodoAdd.js'
-import TodoDellAll from './TodoDellAll.js'
+<p>Nosotros vamos a usar <em>asserts</em> por lo que es lo que deberemos importar en los ficheros de tests.</p>
+<p>Dentro de nuestro proyecto crearemos una carpeta donde guardaremos los ficheros JS de los tests (podemos llamarla '<em>tests</em>') y en cada fichero importaremos <em>chai</em> y los ficheros necesarios. Ej.:</p>
+<blockquote>
+<p>Fichero <em>tests/store.specs.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">const assert = require('chai').assert;
+const Store = require('../store.class.js');
 
-var myApp=Vue.createApp({
-    components:  {
-        TodoList,
-        TodoAdd,
-        TodoDellAll,
-    }
+describe('Store', () =&gt; {
+
+	it('should had an integer id', function() {
+		let foo = new Store();
+		assert.typeOf(foo.id, 'integer', 'La id no es un entero')
+	});
+
+	it('should had an empty array of products', function() {
+		let foo = new Store();
+		assert.typeOf(foo.products, 'array', 'Products no es un array')
+		assert.lengthOf(foo.products, 0, 'Products no es un array vacío')
+	});
 })
 </code></pre>
-<p>Recuerda que para que el navegador entienda la sentencia <code>import</code> debemos indicar que el script que lo contiene es de tipo <strong>module</strong>:</p>
-<pre><code class="language-html">  &lt;script type=&quot;module&quot; src=&quot;main.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<h3 id="solucion-del-ejemplo" tabindex="-1">Solución del ejemplo</h3>
-<p>Podéis ver aquí cómo quedará nuestra aplicación de ejemplo con los componentes separados en ficheros:</p>
-<iframe src="https://codesandbox.io/embed/gracious-kepler-mq9ypp?fontsize=14&hidenavigation=1&theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="gracious-kepler-mq9ypp" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
-<h2 id="crear-un-proyecto-vue" tabindex="-1">Crear un proyecto Vue</h2>
-<p>Aunque puede usarse <em>Vue</em> como hemos visto, enlazándolo directamente en el <em>index.html</em> lo más habitual es crear un nuevo proyecto para la aplicación que vamos a desarrollar usando <strong>npm</strong> y <strong>Vite</strong>. Esto:</p>
-<ul>
-<li>Crea automáticamente el <em>scaffolding</em> básico de nuestro proyecto basándose en una serie de plantillas predefinidas</li>
-<li>Facilita el trabajo con componentes, permitiendo que cada uno de ellos esté en su propio fichero (<strong>SFC</strong>, <em>Single File Components</em>)</li>
-<li>Incluye utilidades y herramientas como Babel, Uglify, ... que permiten
-<ul>
-<li>gestionar las dependencias de nuestro código</li>
-<li>empaquetar todos los ficheros <em>.vue</em> y librerías en un único fichero JS y CSS</li>
-<li>traspilar el código ES2015/2016, SCSS, etc a ES5 y CSS3 estándar</li>
-<li>minimizar el código generado</li>
-</ul>
-</li>
-<li>Incluye herramientas que facilitan el desarrollo</li>
-</ul>
-<h3 id="creacion-de-un-nuevo-proyecto" tabindex="-1">Creación de un nuevo proyecto</h3>
-<p>Para crear un nuevo proyecto ejecutamos:</p>
-<pre><code class="language-bash">npm init vue@latest
-</code></pre>
-<p>Al ejecutar este comando se nos pregunta el nombre del proyecto a crear y si queremos usar o no determinadas herramientas (más adelante veremos qué es cada una, de momento decimos que <em>No</em>) y se creará el directorio para el mismo con el <strong><em>package.json</em></strong> del proyecto en su interior con su configuración.</p>
-<p>![Nuevo Proyecto](/img/user/01 Apuntes/DAW/Vue Teoria Batoi/img/npm-init-vue.png)</p>
-<p>Lo primero que haremos es entrar al directorio del proyecto e instalar las dependencias (<code>npm install</code>) y a continuación ejecutar:</p>
-<pre><code class="language-bash">npm run dev
-</code></pre>
-<p>Este script de <em>Vite</em> funciona como ya vismo en el bloque de Javascript: compila el código, muestra si hay errores, lanza un servidor web en el puerto 5173 y carga el proyecto en el navegador (<a href="http://localhost:5173" target="_blank" class="external-link">http://localhost:5173</a>). Si cambiamos cualquier fichero del directorio <em>src</em> recompila y recarga la página automáticamente.</p>
-<p>Además nos permite acceder a una página desde donde explorar los componentes de nuestra aplicación y ver su código, propiedades, etc. igual que podemos hacer desde la consola si hemos instalado las <strong>Vue DevTools</strong>.</p>
-<p>La página generada es por el proyecto es:</p>
-<p>![Proyecto de plantilla simple](/img/user/01 Apuntes/DAW/Vue Teoria Batoi/img/vue-vite-sample-app.png)</p>
-<h3 id="em-scaffolding-em-creado" tabindex="-1"><em>Scaffolding</em> creado</h3>
-<p>Se ha creado la carpeta con el nombre del proyecto y dentro el scaffolding para nuestro proyecto:</p>
-<p>![Directorios del proyecto de plantilla simple](/img/user/01 Apuntes/DAW/Vue Teoria Batoi/img/vue-vite-sample-folders.png)</p>
-<p>Los principales ficheros y directorios creados son:</p>
-<ul>
-<li><code>package.json</code>: configuración del proyecto (nombre, autor, ...) y dependencias</li>
-<li><code>vite.config.js</code>: configuración de Vite</li>
-<li><code>index.html</code>: html con un div donde se cargará la app</li>
-<li><code>node_modules</code>: librerías de las dependencias</li>
-<li><code>public</code>: lugar donde dejar elementos estáticos que no pasarán por <em>vite</em>. Podemos poner imágenes, CSS, etc y lo referenciaremos de forma ABSOLUTA como si estuviera en <code>/</code></li>
-<li><code>src</code>: todo nuestro código
-<ul>
-<li><code>assets/</code>: nuestros CSS, imágenes, etc. Elementos que <em>vite</em> procesará y optimizará</li>
-<li><code>components/</code>: carpeta que contendrá los ficheros .vue de los diferentes componentes
-<ul>
-<li><code>HelloWorld.vue</code>: componente de ejemplo llamado por App.vue</li>
-</ul>
-</li>
-<li><code>router/</code>: carpeta con los ficheros del router si usamos _vue-<em>router</em></li>
-<li><code>store/</code>: carpeta con los ficheros del store si usamos <em>pinia</em> o <em>vuex</em></li>
-<li><code>views</code>: si usamos <em>vue-router</em> aquí pondremos los componentes que constituyen una vista de la aplicación</li>
-<li><code>App.vue</code>: es el componente principal y constituye nuestra página de inicio del proyecto. Aquí cargaremos la cabecera, el menú,... y los diferentes componentes</li>
-<li><code>main.js</code>: JS principal que crea la instancia de Vue que carga el componente principal llamado <em>App.vue</em> y lo renderiza en <code>_#app_</code></li>
-</ul>
-</li>
-</ul>
-<h4 id="package-json" tabindex="-1">package.json</h4>
-<p>Aquí se configura nuestra aplicación:</p>
-<ul>
-<li><strong>name, version, author, license</strong>, ...: configuración general de la aplicación</li>
-<li><strong>scripts</strong>: ejecutan entornos de configuración para webpack:
-<ul>
-<li><strong>dev</strong>: lanza el servidor web de vite y configura vue para el entorno de desarrollo</li>
-<li><strong>build</strong>: crea los ficheros JS y CSS dentro de <strong>/dist</strong> con todo el código de la aplicación</li>
-</ul>
-</li>
-<li><strong>dependences</strong>: se incluyen las librerías y plugins que utiliza nuestra aplicación en producción. Todas las dependencias se instalan dentro de <strong>/node-modules</strong>. Para instalar una nueva dependencia de desarrollo ejecutaremos <code>npm install nombre-del-paquete -S</code> (la opción -S la añade a package.json como dependencia de producción).</li>
-<li><strong>devDependencies</strong>: igual pero son paquetes que sólo se usan en desarrollo (vite, etc). También se instalan dentro de node-modules pero no estarán cuando se genere el código para producción. Para instalar una nueva dependencia de desarrollo ejecutaremos <code>npm install nombre-del-paquete -D</code> (la opción -D la añade a package.json pero como dependencia de desarrollo).</li>
-</ul>
-<h4 id="index-html" tabindex="-1">index.html</h4>
-<p>Simplemente tiene el &lt;div&gt; <em>app</em> que es el que contendrá la aplicación.</p>
-<h4 id="main-js" tabindex="-1">main.js</h4>
-<pre><code class="language-javascript">import { createApp } from 'vue'
-import App from './App.vue'
-import './assets/main.css'
-
-createApp(App).mount('#app')
-</code></pre>
-<p>Es el fichero JS principal. Importa la utilidad <em>createApp</em> de la librería <em>Vue</em> y el componente <em>App.vue</em>. Crea la instancia de Vue con el componente definido en <em>App.vue</em> y lo renderiza en el elemento <code>_#app_.</code></p>
-<h4 id="app-vue" tabindex="-1">App.vue</h4>
-<p>Es el componente raíz de la aplicación, el que contiene el <em>layout</em> de la página. Se trata de un <em>SFC (Single File Component)</em> y lo que contiene dentro de la etiqueta <em>&lt;template&gt;</em> es lo que se renderizará en el div <em>app</em> que hay en <em>index.html</em>. Si contiene algún otro componente se indica aquí dónde renderizarlo (en este caso &lt;HelloWorld&gt; y &lt;TheWelcome&gt;).</p>
-<p>En el siguiente apartado explicaremos qué es un <em>SFC</em> y qué partes lo forman. De momento veamos qué contiene cada sección:</p>
-<p>Sección <strong><em>template</em></strong></p>
-<pre><code class="language-html">&lt;template&gt;
-  &lt;header&gt;
-    &lt;img alt=&quot;Vue logo&quot; class=&quot;logo&quot; src=&quot;./assets/logo.svg&quot; width=&quot;125&quot; height=&quot;125&quot; /&gt;
-
-    &lt;div class=&quot;wrapper&quot;&gt;
-      &lt;HelloWorld msg=&quot;You did it!&quot; /&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;
-
-  &lt;main&gt;
-    &lt;TheWelcome /&gt;
-  &lt;/main&gt;
-&lt;/template&gt;
-</code></pre>
-<p>Muestra la imagen del logo (las imágenes y otros ficheros como ficheros .css se guardan dentro de <strong>/src/assets/</strong>) y los subcomponentes <em>HelloWorld</em> y <em>TheWelcome</em>.</p>
-<p>Sección <strong><em>script</em></strong></p>
-<pre><code class="language-javascript">&lt;script setup&gt;
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-&lt;/script&gt;
-</code></pre>
-<p>Lo que hace es importar los componentes que se utilizan en el template. Su sintaxis es de <em>Composition API</em>. En sintaxis de <em>Options API</em> sería:</p>
-<pre><code class="language-javascript">&lt;script&gt;
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-
-export default {
-  components: {
-    HelloWorld,
-    TheWelcome
-  }
+<p>Para poder importar un módulo con <em>require</em> debemos haberlo exprtado previamente:</p>
+<blockquote>
+<p>Fichero <em>store.js</em></p>
+</blockquote>
+<pre><code class="language-javascript">class Store {
+    constructor (id) {
+        this.id=id;
+        this.products=[];
+    }
+    ...
 }
-&lt;/script&gt;
+ module.exports = Store;
 </code></pre>
-<p>En esta sintaxis siempre se exporta un objeto con las opciones del componente. En este caso la opción <em>components</em> donde se registran los componentes que hemos importado.</p>
-<p>Sección <strong><em>style</em></strong></p>
-<p>Aquí se definen los estilos de este componente. Como la etiqueta SÍ tiene el atributo <em>scoped</em> (<code>&lt;style scoped&gt;</code>) significa que los estilos aquí definidos se aplicarán SÓLO a este componente, y a sus subcomponentes.</p>
-<h4 id="components-hello-world-vue" tabindex="-1">components/HelloWorld.vue</h4>
-<p>Es el componente que muestra el texto que aparece bajo la imagen. Recibe como parámetro el título a mostrar. Veamos qué contiene cada sección:</p>
-<p>Sección <strong><em>template</em></strong></p>
-<pre><code class="language-html">&lt;template&gt;
-  &lt;div class=&quot;greetings&quot;&gt;
-    &lt;h1 class=&quot;green&quot;&gt;{{ msg }}&lt;/h1&gt;
-    &lt;h3&gt;
-      You’ve successfully created a project with
-      &lt;a href=&quot;https://vitejs.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vite&lt;/a&gt; +
-      &lt;a href=&quot;https://vuejs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vue 3&lt;/a&gt;.
-    &lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+<p>Para ejecutar todos los tests de nuestro proyecto ejecutaremos desde la terminal:</p>
+<pre><code class="language-bash">mocha tests
 </code></pre>
-<p>Muestra el <em>msg</em> recibido como parámetro y varios apartados con listas.</p>
-<p>Sección <strong><em>script</em></strong></p>
-<pre><code class="language-javascript">&lt;script setup&gt;
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
+<p>Si sólo queremos pasar uno lo indicamos en el comando: <code>mocha tests/store.specs.js</code>.</p>
+<p>Podemos hacer que <em>mocha</em> escuche en segundo plano y se ejecute automáticamente cada vez que hacemos algún cambio en un fichero con:</p>
+<pre><code class="language-bash">mocha tests --watch
+</code></pre>
+<h2 id="el-fichero-de-tests" tabindex="-1">El fichero de tests</h2>
+<p>Debemos importar le librería <em>Chai</em> y el fichero con el código a testear como hemov visto antes. El fichero con el código que debe exportar la clase o función que contiene con <code>module.exports</code>. Si queremos exportar varias funciones exportaremos un objeto con todas ellas:</p>
+<pre><code class="language-bash">module.exports = {
+    addItem,
+    removeItem
+}
+</code></pre>
+<p>Tras importar los ficheros pondremos el <em>describe</em> y los bloques <em>it</em> que queramos y dentro de cada uno los <em>aasert</em> necesarios:</p>
+<pre><code class="language-bash">const assert = require('chai').assert;
+const index = require('../index.js');
+
+describe('manage items', () =&gt; {
+	it('add a new item', function() {
+		let myItem = ...;
+		assert.typeOf(item, 'object', 'No crea un objeto sino '+typeof(item) );
+		assert.equal(item.units, 0);
+	});
+	
+	if ('change an item () =&gt; {
+	...
+	});
 })
-&lt;/script&gt;
 </code></pre>
-<p>Recibe el parámetro <em>msg</em> que es de tipo String. En sintaxis <strong><em>Options API</em></strong> sería:</p>
-<pre><code class="language-javascript">&lt;script&gt;
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true
-    }
-  }
-}
-&lt;/script&gt;
-</code></pre>
-<p>Sección <strong><em>style</em></strong></p>
-<p>También tiene el atributo <em>scoped</em> (<code>&lt;style scoped&gt;</code>) por lo que los estilos aquí definidos se aplicarán sólo a este componente.</p>
-<h3 id="em-build-and-deploy-em-de-nuestra-aplicacion" tabindex="-1"><em>Build and Deploy</em> de nuestra aplicación</h3>
-<p>Normalmente trabajaremos con algún gestor de versiones como <em>git</em>. Para subir nuestro proyecto al repositorio lo creamos (en <em>GitHub</em>, <em>GitLab</em> o donde queramos) y ejecutamos desde la carpeta del proyecto:</p>
-<pre><code class="language-bash">git init
-git add .
-git remote add origin https://github.com/mi-usuario/mi-proyecto
-git commit -m &quot;Primer commit&quot;
-git push -u origin main
-</code></pre>
-<p>Cuando nuestra aplicación esté lista para subir a producción ejecutaremos el script:</p>
-<pre><code class="language-bash">npm run build
-</code></pre>
-<p>Este comando genera los JS y CSS para subir a producción dentro de la carpeta <em>dist</em>. El contenido de esta carpeta es lo único que debemos subir a nuestro servidor de producción.</p>
-<h2 id="los-ficheros-sfc-em-single-file-component-em" tabindex="-1">Los ficheros SFC (<em>Single File Component</em>)</h2>
-<p>Guardar los componentes en ficheros <code>.js</code> como hicimos en el tema anterior genera varios problemas:</p>
+<h2 id="algunas-sentecias-em-assert-em" tabindex="-1">Algunas sentecias <em>assert</em></h2>
+<p>Estas<br>
+Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar. Recordad que todas pueden tener un último parámetro opcional que es un mensaje a mostrar en caso de que falle esta comprobación:</p>
 <ul>
-<li>El HTML del template está en ese fichero en medio del JS lo que lo hace menos legible y el editor no lo resalta adecuadamente (ya que espera encontrar código JS no HTML)</li>
-<li>El HTML y el JS del componente están juntos pero no su CSS</li>
-<li>No podemos usar fácilmente herramientas para convertir SCSS a CSS, ES2015 a ES5, etc</li>
+<li>.equal(actual, esperado): comprueba que sea el mismo valor, pero sin comprobar los tupos (usa ==, no ===)</li>
+<li>.notEqual(actual, esperado)</li>
+<li>.strictEqual, .notStrictEqual: igual pero hace la compribaciónestricta (===)</li>
+<li>.deepEqual, notDeepEqual: hace una comprobación de cada propiedad del objeto pasado</li>
+<li>.match(valor, regexp), .notMatch: comprueba si el valor cumple o no la expresión regular pasada</li>
+<li>.isAbove(actual, esperado): comprueba que actual &gt; esperado</li>
+<li>.isAtLeast(actual, esperado): comprueba que actual &gt;= esperado</li>
+<li>.isBelow, .isAtMost: comprueba que sea &lt; o &lt;= respectivamente</li>
+<li>.isTrue, .isNotTrue, .isFalse, .isNotFalse, .isNull, .isNotNull, .isUndefined, .isDefined, .isNaN, .isNotNaN, .isFunction, .isNotFunction, .isObject, .isNotObject, .isArray, .isNotArray, .isString, .isNotString, .isNumber, .isNotNumber, .isBoolean, .isNotBoolean, .isFinite</li>
+<li>.exists(valor), .notExists: comprueba que valor no sea (o sea) <em>null</em> o <em>undefined</em></li>
+<li>.typeOf(valor, tipo), .notTypeOf: indica si valor es o no del tipo indicado, que puede ser 'string', 'number', boolean', 'array', 'object', 'null', 'undefined', 'regexp', ...</li>
+<li>.instanceOf(objeto, Clase), .notInstanceOf: indica si un objeto es o no una instancia de la clase indicada</li>
+<li>.include(string/array/objeto, substring/elemento/propiedad:valor): comprueba si la subcadena existe en el string o el elemento se encuentra en el array (usa =<mark>) o si existe la propiedad o propiedades pasadas y su valor es estrictamente (</mark>=) igual al indicado.</li>
+<li>.notInclude</li>
+<li>.property(objeto, propiedad), .notProperty: comprueba si el objeto posee o no la propiedad pasada</li>
+<li>.lengthOf(string/array, num): comprueba que la longitud de la cadena o el array sea la indicada</li>
+<li>.isEmpty(string/array/object), .isNotEmpty: comprueba que la cadena sea '', el array [] o el objeto {}, o no.</li>
+<li>.throws(funcion, [errorLike/string], [string]): para comprobar que la función lanza un error del tipo indicado (TypeError, RangeError, ...) e incluso con el mensaje indicado</li>
 </ul>
-<p>Por tanto eso puede ser adecuado para proyectos muy pequeños pero no lo es cuando estos empiezan a crecer.</p>
-<p>La solución es guardar cada componente en un único fichero (SFC), que tendrá extensión <strong>.vue</strong>. Estos ficheros contienen 3 secciones diferentes:</p>
+<p>Más información en la [página de <em>Chai</em>])<a href="https://www.chaijs.com/api/assert/" target="_blank" class="external-link">https://www.chaijs.com/api/assert/</a>).</p>
+<h2 id="tests-de-funciones-asincronas-con-promesas" tabindex="-1">Tests de funciones asíncronas con promesas</h2>
+<p>Si hacemos llamadas asíncronas Mocha permite testearlas tras el .then o el .catch:</p>
+<pre><code class="language-javascript">describe('API de artículos', () =&gt; {
+	it('should return the article 3', function() {
+		return getArticulo(3)
+			.then(art =&gt; {
+				assert.instanceOf(art, Articulos);
+				assert.equal(art.id, 3);
+			})
+	});
+	it('should return an error', function() {
+		return getArticulo(undefined)
+			.catch(err =&gt; {
+				...
+			})
+	});
+})
+</code></pre>
+<h2 id="em-hooks-em-de-mocha" tabindex="-1"><em>Hooks</em> de Mocha</h2>
+<p>Nos permiten ejecutar código en momentos puntuales. Reciben como parámetro la función a ejecutar. Son:</p>
 <ul>
-<li>&lt;template&gt;: contiene todo el HTML del componente</li>
-<li>&lt;script&gt;: con el JS del mismo</li>
-<li>&lt;style&gt;: donde pondremos el CSS del componente</li>
+<li>before(): el código se ejecutará una vez antes del primer test del bloque <em>describe</em></li>
+<li>beforeEach(): se ejecutará antes de cada test</li>
+<li>after(), afterEach(): lo mismo pero tras ejecutar los tests</li>
 </ul>
-<p>Aunque esto va contra la norma de tener el HTML, JS y CSS en ficheros separados en realidad sí están separados en diferentes secciones y tenemos la ventaja de tener en un único fichero todo lo que necesita el componente.</p>
-<p>La mayoría de editores soportan estos ficheros instalándoles algún plugin, (como <em>Vue-Oficial</em> para Visual Studio Code) por lo que el resaltado de las diferentes partes es correcto. Además <strong>Vite</strong> nos permite usar ES2015 o posterior y los preprocesadores más comunes (SASS, Pug/Jade, Stylus, ...) y ya se se traducirá automáticamente el código a ES5, HTML5 y CSS3.</p>
-<h3 id="secciones-de-un-single-file-component" tabindex="-1">Secciones de un Single File Component</h3>
-<p>Veamos en detalle cada una de las secciones del SFC.</p>
-<h4 id="and-lt-template-and-gt" tabindex="-1">&lt;template&gt;</h4>
-<p>Aquí incluiremos el HTML que sustituirá a la etiqueta del componente. Recuerda que en las versiones anteriores a Vue3 dentro sólo puede haber un único elemento HTML (si queremos poner más de uno los incluiremos en otro que los englobe).</p>
-<pre><code class="language-html">&lt;template&gt;
-  &lt;div class=&quot;greetings&quot;&gt;
-    &lt;h1 class=&quot;green&quot;&gt;{{ msg }}&lt;/h1&gt;
-    &lt;h3&gt;
-      You’ve successfully created a project with
-      &lt;a href=&quot;https://vitejs.dev/&quot;&gt;Vite&lt;/a&gt; +
-      &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue 3&lt;/a&gt;.
-    &lt;/h3&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-</code></pre>
-<p>Si el código HTML a incluir en el template es muy largo podemos ponerlo en un fichero externo y vincularlo en el template, así nuestro SFC queda más pequeño y legible:</p>
-<pre><code class="language-vue">&lt;template src=&quot;./myComp.html&quot;&gt;
-&lt;/template&gt;
-</code></pre>
-<p>Respecto al lenguaje, podemos usar HTML (la opción por defecto) o <a href="https://pugjs.org/api/getting-started.html" target="_blank" class="external-link">PUG</a> que es una forma sencilla de escribir HTML. Lo indicamos como atributo de &lt;template&gt;:</p>
-<pre><code class="language-html">&lt;template lang=&quot;pug&quot;&gt;
-div.greetings
-  h1.green {{ msg }}
-  h3
-    | You’ve successfully created a project with 
-    a(href=&quot;https://vitejs.dev/&quot;) Vite
-    |  +
-    a(href=&quot;https://vuejs.org/&quot;) Vue 3
-
-</code></pre>
-<h4 id="and-lt-script-and-gt" tabindex="-1">&lt;script&gt;</h4>
-<p>Aquí definimos y exportamos el componente, que será un objeto con diferentes propiedades. Si utiliza subcomponentes hay que importarlos antes de definir el objeto y registrarlos dentro de este.</p>
-<p>Entre las propiedades que puede tener el objeto están:</p>
+<h2 id="tests-para-la-ui" tabindex="-1">Tests para la UI</h2>
+<p>Necesitaremos alguna librería que nos permita contruir escenarios de navegación como <em>CasperJS</em> y otra que imite al navegador como <em>PhantomJS</em> (para WebKit) o <em>SlimerJS</em> (para Gecko).</p>
+<p>Hay muchas páginas que nos enseñan a usar Mocha para testear la UI como:</p>
 <ul>
-<li><strong>name</strong>: el nombre del componente. Es recomendable ponerlo, aunque sólo es obligatorio en caso de componentes recursivos. Es el nombre con el que se referenciará al componente en la consola del navegador usando las <em>Dev tools</em>.</li>
-<li><strong>components</strong>: aquí registramos componentes hijos que queramos usar en el <em>template</em> de este componente (debemos haber importado previamente los ficheros <em>.vue</em> que los contienen). En el <em>template</em> usaremos como etiqueta el nombre con que lo registramos aquí</li>
-<li><strong>props</strong>: donde registramos los parámetros que nos pasa el componente padre como atributos de la etiqueta que renderiza este componente</li>
-<li><strong>data()</strong>: función que devuelve un objeto con todas las variables locales del componente</li>
-<li><strong>methods</strong>: objeto con los métodos del componente</li>
-<li><strong>computed</strong>: aquí pondremos las variables calculadas del componente. Lo veremos en detalle en la <a href="https://cipfpbatoi.github.io/materials/daw/dwc/02-vue/06-profundizando.html#computed" target="_blank" class="external-link">unidad 6</a></li>
-<li><strong>created()</strong>, <strong>mounted()</strong>, ...: funciones <em>hook</em> que se ejecutan al crearse el componente, al montarse, ... Aquí pondremos el código que queremos que se ejecute al cargar un componente, como pedir a la BBDD los datos que necesita. Veremos los diferentes <em>hooks</em> en la <a href="https://cipfpbatoi.github.io/materials/daw/dwc/02-vue/06-profundizando.html#ciclo-de-vida-del-componente" target="_blank" class="external-link">unidad 6</a></li>
-<li><strong>watch</strong>: si queremos observar manualmente cambios en alguna variable y ejecutar código como respuesta a ellos (recuerda que Vue ya se encarga de actualizar la vista al cambiar las variables y viceversa). Lo veremos en detalle en la <a href="https://cipfpbatoi.github.io/materials/daw/dwc/02-vue/06-profundizando.html#watchers" target="_blank" class="external-link">unidad 6</a></li>
-<li>...</li>
+<li><a href="https://dev.to/ykyuen/web-ui-testing-in-nodejs--kda" target="_blank" class="external-link">Web UI Testing in NodeJS</a></li>
+<li><a href="https://blogs.msdn.microsoft.com/nilayshah/2018/01/21/ui-test-automation-with-node-js-typescript-mocha-and-selenium/" target="_blank" class="external-link">UI Test Automation with Node.js, TypeScript, Mocha and Selenium</a></li>
+<li><a href="https://itnext.io/automated-ui-testing-with-selenium-and-javascript-90bbe7ca13a3" target="_blank" class="external-link">Automated UI Testing with Selenium and JavaScript</a></li>
+<li><a href="https://medium.com/@tariqul.islam.rony/automated-ui-ux-testing-with-puppeteer-mocha-and-chai-800cfb028ab9" target="_blank" class="external-link">Automated UI/UX Testing with Puppeteer Mocha and Chai</a></li>
+<li></li>
 </ul>
-<h4 id="and-lt-style-and-gt" tabindex="-1">&lt;style&gt;</h4>
-<p>Aquí pondremos estilos CSS que se aplicarán al componente. Podemos usar CSS, SASS o <a href="https://postcss.org/" target="_blank" class="external-link">PostCSS</a>. Si queremos importar ficheros de estilo con <code>@import</code> deberíamos guardarlos dentro de la carpeta <em>assets</em> de nuestra aplicación.</p>
-<p>Si la etiqueta incluye el atributo <em><strong>scoped</strong></em> estos estilos se aplicarán únicamente a este componente (y sus descendientes) y no a todos los componentes de nuestra aplicación. Si tenemos estilos que queremos que se apliquen a toda la aplicación y otros que son sólo para el componente y sus descendientes pondremos 2 etiquetas &lt;style&gt;, una sin el atributo <em>scoped</em> y otra con él.</p>
-<p>La forma más común de asignar estilos a elementos es usando clases. Para conseguir que su estilo cambie fácilmente podemos asignar al elemento clases dinámicas que hagan referencia a variables del componente. Ej.:</p>
-<pre><code class="language-vue">&lt;template&gt;
-  &lt;p :class=&quot;[decoration, {weight: isBold}]&quot;&gt;Hi!&lt;/p&gt;
-&lt;/template&gt;
-
-&lt;script&gt;
-export default {
-  data() {
-    return {
-      decoration: 'underline',
-      isBold: true
-    }
-  }
-}
-&lt;/script&gt;
-
-&lt;style lang=&quot;css&quot;&gt;
-  .underline { text-decoration: underline; }
-  .weight { font-weight: bold; }
-&lt;/style&gt;
-</code></pre>
-<p>El párrafo tendrá la clase indicada en la variable <code>decoration</code> (en este caso <em>underline</em>) y además como el valor de <code>isBold</code> es verdadero tendrá la clase <em>weight</em>. Hacer que cambien las clases del elemento es tan sencillo como cambiar el valor de las variables.</p>
-<p>Podemos ver las diferentes maneras de asignar clases a los elementos HTML en la <a href="https://vuejs.org/guide/essentials/class-and-style.html" target="_blank" class="external-link">documentación de Vue</a>.</p>
-<p>Igual que vimos en la etiqueta &lt;template&gt;, si el código de los estilos es demasiado largo podemos ponerlo en un fichero externo que vinculamos a la etiqueta con el atributo <em>src</em>.</p>
-<h4 id="custom-blocks" tabindex="-1">Custom blocks</h4>
-<p>Además de estos 3 bloques un SFC puede tener otros bloques definidos por el programador para, por ejemplo, incluir la documentación del componente o sus test unitarios:</p>
-<pre><code class="language-vue">&lt;custom1 src=&quot;./unit-test.js&quot;&gt;
-    Aquí podríamos incluir los test unitarios del proyecto
-&lt;/custom1&gt;
-</code></pre>
-<h2 id="anadir-nuevos-paquetes-y-plugins" tabindex="-1">Añadir nuevos paquetes y plugins</h2>
-<p>Si queremos usar un nuevo paquete en nuestra aplicación lo instalaremos con <em>npm</em>:</p>
-<pre><code class="language-bash">npm install nombre-paquete
-</code></pre>
-<p>Este comando además de instalar el paquete en <em>node-modules</em> lo añade a las dependencias del <em>package.json</em>. La opción <strong><code>--save</code></strong> o <strong><code>-S</code></strong> lo añadirá como dependencia de producción y <strong><code>--dev</code></strong> o <strong><code>-D</code></strong> como dependencia de desarrollo. Si no ponemos nada se añade como una dependencia de producción. Ej.:</p>
-<pre><code class="language-bash">npm install -S axios
-</code></pre>
-<p>Para usarlo en nuestros componentes debemos importarlo y registrarlo tal y como se indique en su documentación. Lo normal es hacerlo en el <strong><em>main.js</em></strong> (o en algún fichero JS que importemos en <em>main.js</em> como en el caso de los plugins) si queremos poder usarlo en todos los componentes.</p>
-<p>Si el paquete que queremos instalar se encuentra como plugin el proceso es más sencillo ya que sólo es necesario usar <code>app.use(myPlugin, { /* opciones opcionales */})</code> en el fichero <code>main.js</code>.</p>
-<h3 id="bootstrap" tabindex="-1">Bootstrap</h3>
-<p>Simplemente lo instalaremos como una dependencia de producción y después lo añadimos al fichero <code>src/main.js</code>:</p>
-<pre><code class="language-javascript">import &quot;bootstrap/dist/css/bootstrap.css&quot;
-</code></pre>
-<p>Recuerda que siempre es conveniente importar <em>Bootstrap</em> antes de importar nuestro propio CSS (antes de la línea <code>import './assets/main.css'</code>). Si necesitamos algún componente de <em>Bootstrap</em> que utilice Javascript importaríamos también su javascript en el fichero <em>main.js</em> pero en este caso después de montar la aplicación vue:</p>
-<pre><code class="language-javascript">// src/main.js
-import { createApp } from 'vue'
-import App from './App.vue'
-
-import &quot;bootstrap/dist/css/bootstrap.css&quot;
-import './assets/main.css'
-
-createApp(App).mount('#app')
-
-import &quot;bootstrap/dist/js/bootstrap.js&quot;
-</code></pre>
-<h4 id="iconos" tabindex="-1">Iconos</h4>
-<p>Para usar los iconos de <em>Bootstrap 5</em> podemos instalar el paquete <em>bootstrap-icons</em> o bien importarlos en el CSS desde su CDN, tal y como se explica en la <a href="https://icons.getbootstrap.com/#install" target="_blank" class="external-link">documentación de Bootstrap</a>. Una vez hecho ya podemos incluir los iconos en etiquetas <em>&lt;i&gt;</em>.</p>
-<p>Por ejemplo, si importamos el CSS incluiremos en el <em>&lt;style&gt;</em> del componente <strong>App.vue</strong>:</p>
-<pre><code class="language-javascript">@import url(&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css&quot;)
-</code></pre>
-<p>y donde queramos incluir el icono de la papelera, por ejemplo, incluimos:</p>
-<pre><code class="language-html">&lt;i class=&quot;bi bi-trash&quot;&gt;&lt;/i&gt;
-</code></pre>
-<p>Si queremos usar otras librerías de iconos como <em>Font Awesome</em> o <em>Material Icons</em> simplemente importaremos su CSS en el fichero <em>App.vue</em> y usaremos las clases que nos proporcionen. Para <em>Material Icons</em> sería:</p>
-<pre><code class="language-javascript">@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-</code></pre>
-<p>y su uso sería:</p>
-<pre><code class="language-html">&lt;span class=&quot;material-icons&quot;&gt;delete&lt;/span&gt;
-</code></pre>
-<p>Respecto a los componentes de <em>Bootstrap</em>, para que funcionen sólo tenemos que usar los atributos <code>data-bs-</code> (recuerda que muchos de estos componenetes necesitan su Javascript por lo que deberemos importarlo como se ha explicado antes). Por ejemplo para hacer un botón colapsable haremos:</p>
-<pre><code class="language-html">&lt;button 
-  class=&quot;btn btn-primary&quot; 
-  data-bs-target=&quot;#collapseTarget&quot; 
-  data-bs-toggle=&quot;collapse&quot;&gt;
-  Bootstrap collapse
-&lt;/button&gt;
-&lt;div class=&quot;collapse py-2&quot; id=&quot;collapseTarget&quot;&gt;
-  This is the toggle-able content!
-&lt;/div&gt;
-</code></pre>
-<p>En lugar de usar atributos <em>data-bs-</em> podemos <em>envolver</em> los componentes bootstrap en componentes Vue como se explica en muchas páginas, como <a href="https://stackoverflow.com/questions/65547199/using-bootstrap-5-with-vue-3" target="_blank" class="external-link">Using Bootstrap 5 with Vue 3</a>.</p>
-<h2 id="crear-un-nuevo-componente" tabindex="-1">Crear un nuevo componente</h2>
-<p>Creamos un nuevo fichero en <strong>/src/components</strong> (o en alguna subcarpeta dentro) con extensión <em>.vue</em>. Donde queramos usar ese componente debemos importarlo y registrarlo como ya hemos visto:</p>
-<pre><code class="language-javascript">import CompName from './CompName.vue'
-
-export default {
-  ...
-  components: {
-    'comp-name': CompName
-  }
-  ...
-}
-</code></pre>
-<p>Y ya podemos incluir el componente en el HTML:</p>
-<pre><code class="language-html">&lt;comp-name ...&gt; ... &lt;/comp-name&gt;
-</code></pre>
-<h2 id="depurar-el-codigo-en-la-consola" tabindex="-1">Depurar el código en la consola</h2>
-<p>Podemos seguir depurando nuestro código, poniendo puntos de interrupción y usando todas las herramientas que nos proporciona la consola mientras estamos en modo de depuración (si hemos abierto la aplicación con <code>npm run dev</code>).</p>
-<p>Como estamos usando <em>Vite</em> no se está ejecutando nuestro código directamente sino que se ha convertido al código que ejecuta el navegador, por eso en el depurador aparecen varios ficheros y el que usaremos para depurar es el que pone <em>(mapeado)</em>:</p>
-<p>![Depurar en la consola](/img/user/01 Apuntes/DAW/Vue Teoria Batoi/img/console-vite.png)</p>
-<p>Recordad que si hemos instalado las <strong>Vue DevTools</strong> tenemos una nueva pestaña en la consola desde la que podemos ver todos nuestros componentes con sus propiedades y datos:</p>
-<p>![Vue DevTools](/img/user/01 Apuntes/DAW/Vue Teoria Batoi/img/console-vue_devtools.png)</p>
-<h1 id="aplicacion-de-ejemplo" tabindex="-1">Aplicación de ejemplo</h1>
-<p>Recordemos que la aplicación que estamos desarrollando tiene los componentes:</p>
-<ul>
-<li>todo-list: lista de tareas a hacer. Cada item de la lista es un componente <em>todo-item</em></li>
-<li>todo-item: cada elemento de la lista de tareas a hacer</li>
-<li>todo-add: formulario para añadir una nueva tarea</li>
-<li>todo-del-all: botón para eliminar todas las tareas</li>
-</ul>
-<p>Para transformar esto en SFC simplemente crearemos un fichero para cada uno de estos componentes. Nuestro anterior <em>index.html</em> será el &lt;template&gt; del componente principal <strong>App.vue</strong>, que en un sección &lt;script&gt; deberá importar y registrar cada uno de los componentes usados en el <em>template</em> (<em>todo-list</em>, <em>todo-add</em> y <em>todo-del-all</em>).</p>
-<p>Solución:</p>
-<iframe src="https://codesandbox.io/embed/cranky-mclean-f6xwo3?fontsize=14&hidenavigation=1&theme=dark" style="width:100%;height:500px;border:0;border-radius:4px;overflow:hidden" title="cranky-mclean-f6xwo3" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
