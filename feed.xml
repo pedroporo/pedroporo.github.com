@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:35:30Z</updated>
+    <updated>2025-09-15T16:35:37Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -179,7 +179,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -414,7 +414,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -982,7 +982,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -1257,7 +1257,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -1292,7 +1292,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -1761,7 +1761,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -2261,7 +2261,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:25Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -2627,7 +2627,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -2872,7 +2872,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -3362,7 +3362,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -3659,7 +3659,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -4082,7 +4082,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -4613,7 +4613,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -5072,7 +5072,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -5365,7 +5365,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -5562,7 +5562,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -5851,7 +5851,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -5994,7 +5994,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -6555,7 +6555,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -6682,7 +6682,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -6833,7 +6833,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -7035,7 +7035,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -7115,7 +7115,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -7235,7 +7235,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -7266,7 +7266,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -7279,7 +7279,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -7376,7 +7376,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -7473,7 +7473,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -7718,7 +7718,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -7781,7 +7781,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -8128,7 +8128,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -8244,7 +8244,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -8266,7 +8266,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -8323,7 +8323,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -11351,7 +11351,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -11527,7 +11527,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -11589,7 +11589,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -11796,7 +11796,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -11889,7 +11889,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -12094,10 +12094,266 @@ try {
         </entry>
         <entry>
             <title>
+                5. Tecnologies i Mecanismes per a la Separació
+                
+            </title>
+            <updated>2025-09-15T16:35:24Z</updated>
+            <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
+            <content type="html">
+                &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
+&lt;h4 id=&quot;frameworks-php&quot; tabindex=&quot;-1&quot;&gt;Frameworks PHP:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Laravel: Framework que segueix el patró MVC (Model-View-Controller). Laravel facilita la creació de codi net i ben organitzat, separant clarament la lògica de negoci de la presentació.&lt;/li&gt;
+&lt;li&gt;Symfony: Altres frameworks populars que també segueixen el patró MVC i ofereixen eines per a la separació de la lògica i la presentació.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;patro-mvc&quot; tabindex=&quot;-1&quot;&gt;Patró MVC:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Model-View-Controller: Patró de disseny que divideix una aplicació en tres components interconnectats:
+&lt;ul&gt;
+&lt;li&gt;Model: Gestiona la lògica de negoci i les dades.&lt;/li&gt;
+&lt;li&gt;Vista: Gestiona la presentació de la informació.&lt;/li&gt;
+&lt;li&gt;Controlador: Gestiona la comunicació entre el Model i la Vista.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;plantilles&quot; tabindex=&quot;-1&quot;&gt;Plantilles:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Blade (Laravel): Motor de plantilles que permet separar el codi HTML de la lògica de negoci.&lt;/li&gt;
+&lt;li&gt;Twig (Symfony): Motor de plantilles similar a Blade, utilitzat per separar la lògica de negoci del codi de presentació.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;api-rest&quot; tabindex=&quot;-1&quot;&gt;API REST:&lt;/h4&gt;
+&lt;p&gt;Permet crear serveis web que exposen funcionalitats i dades a través de punts finals d&#39;API, mantenint la lògica de negoci separada de la presentació.&lt;/p&gt;
+&lt;h4 id=&quot;exemple-mvc&quot; tabindex=&quot;-1&quot;&gt;Exemple MVC&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;// Model: Product.php
+class Product {
+    private string $name;
+    private float $price;
+    
+    public function __construct(string $name, float $price) {
+        $this-&amp;gt;name = $name;
+        $this-&amp;gt;price = $price;
+    }
+    
+    public function getName(): string {
+        return $this-&amp;gt;name;
+    }
+    
+    public function getPrice(): float {
+        return $this-&amp;gt;price;
+    }
+}
+
+// Controller: ProductController.php
+class ProductController {
+    public function showProduct() {
+        $product = new Product(&amp;quot;Laptop&amp;quot;, 1200.00);
+        include &#39;views/productView.php&#39;;
+    }
+}
+
+// View: productView.php
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Product Information&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;Product: &amp;lt;?php echo htmlspecialchars($product-&amp;gt;getName()); ?&amp;gt;&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;Price: $&amp;lt;?php echo htmlspecialchars($product-&amp;gt;getPrice()); ?&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;La separació de la lògica de negoci dels aspectes de presentació és crucial per al desenvolupament d&#39;aplicacions web eficients, mantenibles i escalables.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/" >
+        </entry>
+        <entry>
+            <title>
+                4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
+                
+            </title>
+            <updated>2025-09-15T16:35:24Z</updated>
+            <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
+            <content type="html">
+                &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Regles i procediments que defineixen el funcionament de l&#39;aplicació.&lt;/li&gt;
+&lt;li&gt;Inclou processament de dades, càlculs, interaccions amb la base de dades, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;aspectes-de-presentacio&quot; tabindex=&quot;-1&quot;&gt;Aspectes de Presentació&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Manera en què es mostra la informació a l&#39;usuari.&lt;/li&gt;
+&lt;li&gt;Inclou la interfície d&#39;usuari, disseny, navegació, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;avantatges&quot; tabindex=&quot;-1&quot;&gt;Avantatges&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Mantenibilitat&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Facilita la modificació de la lògica de negoci sense afectar la presentació.&lt;/li&gt;
+&lt;li&gt;Permet actualitzar la interfície d&#39;usuari sense modificar la lògica subjacent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Reutilització&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La lògica de negoci pot ser reutilitzada en diferents aplicacions amb interfícies variades.&lt;/li&gt;
+&lt;li&gt;Els components de presentació poden ser reutilitzats amb diferents lògiques de negoci.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Escalabilitat&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ajuda a escalar l&#39;aplicació separant les preocupacions, permetent millorar una part sense impactar l&#39;altra.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prova i Depuració&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Facilita les proves unitàries i la depuració en permetre provar la lògica de negoci per separat de la interfície.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Col·laboració&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permet que desenvolupadors de backend i frontend treballen de manera independent en les seues àrees respectives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/" >
+        </entry>
+        <entry>
+            <title>
+                3. Espai de noms
+                
+            </title>
+            <updated>2025-09-15T16:35:24Z</updated>
+            <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
+            <content type="html">
+                &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] &amp;quot;Recomanació&amp;quot;&lt;br /&gt;
+Un només namespace per arxiu i crear una estructura de carpetes respectant els nivells/subnivells (igual que es fa a Java)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Es declaren en la primera línia mitjançant la paraula clau &lt;code&gt;namespace&lt;/code&gt; seguida del nom de l&#39;espai de noms assignat (cada subnivell se separa amb la barra invertida &lt;code&gt;&#92;&lt;/code&gt;):&lt;/p&gt;
+&lt;p&gt;Per exemple, per a col·locar la classe &lt;code&gt;Producte&lt;/code&gt; dins del &lt;em&gt;namespace&lt;/em&gt; &lt;code&gt;Dwes&#92;Exemples&lt;/code&gt; ho faríem així:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+namespace Dwes&#92;Exemples;
+
+const IVA = 0.21;
+
+class Producte {
+    public $nombre;
+      
+    public function muestra() : void {
+        echo&amp;quot;&amp;lt;p&amp;gt;Prod:&amp;quot; . $this-&amp;gt;nombre . &amp;quot;&amp;lt;/p&amp;gt;&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;acces&quot; tabindex=&quot;-1&quot;&gt;Accés&lt;/h4&gt;
+&lt;p&gt;Per a referenciar a un recurs que conté un namespace, primer hem de tindre&#39;l disponible fent ús de &lt;code&gt;include&lt;/code&gt; o &lt;code&gt;require&lt;/code&gt;. Si el recurs està en el mateix &lt;em&gt;namespace&lt;/em&gt;, es realitza un accés directe (es coneix com a accés sense qualificar).&lt;/p&gt;
+&lt;p&gt;Realment hi ha tres tipus d&#39;accés:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sense qualificar: &lt;code&gt;recurs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;qualificat: &lt;code&gt;rutaRelativa&#92;recurs&lt;/code&gt; → no fa falta posar el &lt;em&gt;namespace&lt;/em&gt; complet&lt;/li&gt;
+&lt;li&gt;totalment qualificat: &lt;code&gt;&#92;rutaAbsoluta&#92;recurs&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+namespace Dwes&#92;Ejemplos;
+
+include_once(&amp;quot;Producto.php&amp;quot;);
+
+echo IVA; // sin cualificar
+echo Utilidades&#92;IVA; // acceso cualificado. Daría error, no existe &#92;Dwes&#92;Ejemplos&#92;Utilidades&#92;IVA
+echo &#92;Dwes&#92;Ejemplos&#92;IVA; // totalmente cualificado
+
+$p1 = new Producto(); // lo busca en el mismo namespace y encuentra &#92;Dwes&#92;Ejemplos&#92;Producto
+$p2 = new Model&#92;Producto(); // daría error, no existe el namespace Model. Está buscando &#92;Dwes&#92;Ejemplos&#92;Model&#92;Producto
+$p3 = new &#92;Dwes&#92;Ejemplos&#92;Producto(); // &#92;Dwes&#92;Ejemplos&#92;Producto
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;acces-1&quot; tabindex=&quot;-1&quot;&gt;Accés&lt;/h4&gt;
+&lt;p&gt;Per a evitar la referència qualificada podem declarar l&#39;ús mitjançant &lt;code&gt;use&lt;/code&gt; (similar a fer &lt;code&gt;import&lt;/code&gt; a Java). Es fa en la capçalera, després del &lt;code&gt;namespace&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Els tipus Posibles són:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;use const nombreCualificadoConstante&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;use function nombreCualificadoFuncion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;use nombreCualificadoClase&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;use nombreCualificadoClase as NuevoNombre&lt;/code&gt; // per a canviar de nom elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Per exemple, si volem utilitzar la classe &lt;code&gt;&#92;Dwes&#92;Exemples&#92;Producte&lt;/code&gt; des d&#39;un recurs que es troba en l&#39;arrel, per exemple en &lt;code&gt;inici.php&lt;/code&gt;, faríem:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+include_once(&amp;quot;Dwes&#92;Exemples&#92;Producte.php&amp;quot;);
+
+use const Dwes&#92;Exemples&#92;IVA;
+use &#92;Dwes&#92;Exemples&#92;Producte;
+
+echo IVA;
+$p1 = new Producte();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] &amp;quot;To &lt;code&gt;use&lt;/code&gt; or not to &lt;code&gt;use&lt;/code&gt;&amp;quot;&lt;br /&gt;
+En resum, &lt;code&gt;use&lt;/code&gt; permet accedir sense qualificar a recursos que estan en un altre &lt;em&gt;namespace&lt;/em&gt;. Si estem en el mateix espai de nom, no necessitem &lt;code&gt;use&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;organitzacio&quot; tabindex=&quot;-1&quot;&gt;Organització&lt;/h4&gt;
+&lt;p&gt;Tot projecte, conforme creix, necessita organitzar el seu codi font. Es planteja una organització en la qual els arxius que interactuan amb el navegador es col·loquen en l&#39;arrel, i les classes que definim van dins d&#39;un namespace (i dins de la seua pròpia carpeta &lt;code&gt;src&lt;/code&gt; o &lt;code&gt;app&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/03/03organizacion.png&quot; alt=&quot;03organizacion.png&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] &amp;quot;Organització, includes i usos&amp;quot;&lt;br /&gt;
+* Col·locarem cada recurs en un fitxer a part.&lt;br /&gt;
+* En la primera línia indicarem la seua &lt;em&gt;namespace&lt;/em&gt; (si no està en l&#39;arrel).&lt;br /&gt;
+* Si utilitzem altres recursos, farem un &lt;code&gt;include_once&lt;/code&gt; d&#39;aqueixos recursos (classes, interfícies, etc...).&lt;br /&gt;
+* Cada recurs ha d&#39;incloure tots els altres recursos que referencie: la classe de la qual hereta, interfícies que implementa, classes utilitzades/rebudes com a paràmetres, etc...&lt;br /&gt;
+* Si els recursos estan en un espai de noms diferent al que estem, emprarem &lt;code&gt;use&lt;/code&gt; amb la ruta completa per a després utilitzar referències sense qualificar.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;autoload&quot; tabindex=&quot;-1&quot;&gt;Autoload&lt;/h4&gt;
+&lt;p&gt;No és tediós haver de fer el &lt;code&gt;include&lt;/code&gt; de les classes? El autoload ve al rescat.&lt;/p&gt;
+&lt;p&gt;Així doncs, permet carregar les classes (no les constants ni les funcions) que s&#39;utilitzaran i evitar haver de fer el &lt;code&gt;include_once&lt;/code&gt; de cadascuna d&#39;elles. Per a això, s&#39;utilitza la funció &lt;code&gt;spl_autoload_register&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+spl_autoload_register( function( $nombreClase ) {
+    include_once $nombreClase.&#39;.php&#39;;
+} );
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!question] &amp;quot;Per què es diuen autoload?&amp;quot;&lt;br /&gt;
+Perquè abans es realitzava mitjançant el mètode màgic &lt;code&gt;__autoload()&lt;/code&gt;, el qual està &lt;em&gt;deprecated&lt;/em&gt; des de PHP 7.2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I com organitzem ara el nostre codi aprofitant el autoload?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/03/03autoload.png&quot; alt=&quot;03autoload.png|600&quot; width=&quot;600px&quot; /&gt;&lt;br /&gt;
+Per a facilitar la cerca dels recursos a incloure, és recomanable col·locar totes les classes dins d&#39;una mateixa carpeta. Nosaltres la col·locarem dins de &lt;code&gt;app&lt;/code&gt; (més endavant, quan estudiem &lt;em&gt;Laravel&lt;/em&gt; veurem el motiu d&#39;aquesta decisió). Altres carpetes que podem crear són &lt;code&gt;test&lt;/code&gt; per a col·locar les proves &lt;em&gt;PhpUnit&lt;/em&gt; que després realitzarem, o la carpeta &lt;code&gt;vendor&lt;/code&gt; on s&#39;emmagatzemaran les llibreries del projecte (aquesta carpeta és un estándard dins de PHP, ja que &lt;em&gt;Composer&lt;/em&gt; la crea automàticament).&lt;/p&gt;
+&lt;p&gt;Com hem col·locat tots els nostres recursos dins de &lt;code&gt;app&lt;/code&gt;, ara nostre &lt;code&gt;autoload.php&lt;/code&gt; (el qual col·loquem en la carpeta arrel) només buscarà dins d&#39;aqueixa carpeta:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php
+spl_autoload_register( function( $nombreClase ) {
+    include_once &amp;quot;app/&amp;quot;.$nombreClase.&#39;.php&#39;;
+} );
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] &amp;quot;autoload i rutes errònies&amp;quot;&lt;br /&gt;
+En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la classe que rep com a paràmetre, les barres dels namespace (&lt;code&gt;&#92;&lt;/code&gt;) són diferents a les de les rutes (&lt;code&gt;/&lt;/code&gt;). Per això, és millor que utilitzem el fitxer autoload:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    &amp;lt;?php
+    spl_autoload_register( function( $nombreClase ) {
+        $ruta = &amp;quot;app&#92;&#92;&amp;quot;.$nombreClase.&#39;.php&#39;;
+        $ruta = str_replace(&amp;quot;&#92;&#92;&amp;quot;, &amp;quot;/&amp;quot;, $ruta); // Sustituimos las barras
+        include_once $_SERVER[&#39;DOCUMENT_ROOT&#39;].&#39;/&#39;.$ruta;
+    } );
+    
+    ```
+&lt;/code&gt;&lt;/pre&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/" >
+        </entry>
+        <entry>
+            <title>
                 Indice
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;Asignaturas:&lt;/strong&gt;&lt;br /&gt;
@@ -12200,7 +12456,7 @@ Tutoria&lt;br /&gt;
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -12369,7 +12625,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -12604,7 +12860,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -13172,7 +13428,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -13447,7 +13703,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -13482,7 +13738,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -13951,7 +14207,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -14451,7 +14707,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -14817,7 +15073,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -15062,7 +15318,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -15552,7 +15808,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -15849,7 +16105,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -16272,7 +16528,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -16803,7 +17059,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -17262,7 +17518,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -17555,7 +17811,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -17752,7 +18008,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -18041,7 +18297,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -18184,7 +18440,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -18745,7 +19001,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -18872,7 +19128,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -19023,7 +19279,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -19225,7 +19481,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -19305,7 +19561,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -19425,7 +19681,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -19456,7 +19712,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -19469,7 +19725,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -19566,7 +19822,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -19663,7 +19919,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -19908,7 +20164,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -19971,7 +20227,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -20318,7 +20574,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -20434,7 +20690,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -20456,7 +20712,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -20513,7 +20769,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -23541,7 +23797,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -23717,7 +23973,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -23779,7 +24035,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -23986,7 +24242,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -24079,7 +24335,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -24287,7 +24543,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -24363,7 +24619,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -24420,7 +24676,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -24543,7 +24799,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -25009,7 +25265,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -25238,7 +25494,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -25476,7 +25732,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -26179,7 +26435,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -26294,7 +26550,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -26428,7 +26684,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -26536,7 +26792,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -26599,7 +26855,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -28054,7 +28310,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -28067,7 +28323,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -28260,7 +28516,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -29641,7 +29897,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -29797,7 +30053,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -29955,7 +30211,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -30124,7 +30380,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -30295,7 +30551,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -30683,7 +30939,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -30888,7 +31144,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -31170,7 +31426,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -31991,7 +32247,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -32299,7 +32555,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -32312,7 +32568,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -32599,7 +32855,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -32806,7 +33062,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -33011,7 +33267,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-dom/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -33394,7 +33650,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -33492,7 +33748,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -33732,7 +33988,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -34010,7 +34266,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -34410,7 +34666,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -34590,7 +34846,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -34607,7 +34863,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -34624,7 +34880,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice DAW
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/indice-daw/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -34723,7 +34979,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -34737,7 +34993,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -34751,7 +35007,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -34853,7 +35109,7 @@ php artisan make:policy UserPolicy --model=User
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-09-15T16:35:19Z</updated>
+            <updated>2025-09-15T16:35:24Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template

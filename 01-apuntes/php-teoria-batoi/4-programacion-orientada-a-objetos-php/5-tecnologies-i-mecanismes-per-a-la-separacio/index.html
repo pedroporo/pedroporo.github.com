@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>01-basics</title>
+<title>5. Tecnologies i Mecanismes per a la Separació</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -530,7 +530,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -663,7 +663,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/01-basics/">01-basics </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/01-basics/">01-basics </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -738,282 +738,70 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="conceptos-basicos" tabindex="-1">Conceptos básicos</h1>
+<p>A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:</p>
+<h4 id="frameworks-php" tabindex="-1">Frameworks PHP:</h4>
 <ul>
-<li><a href="#conceptos-b%C3%A1sicos" target="_blank" class="external-link">Conceptos básicos</a>
-<ul>
-<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
-<li><a href="#usar-vue" target="_blank" class="external-link">Usar Vue</a></li>
-<li><a href="#estructura-de-una-aplicaci%C3%B3n-vue" target="_blank" class="external-link">Estructura de una aplicación Vue</a>
-<ul>
-<li><a href="#html" target="_blank" class="external-link">HTML</a></li>
-<li><a href="#javascript" target="_blank" class="external-link">Javascript</a></li>
+<li>Laravel: Framework que segueix el patró MVC (Model-View-Controller). Laravel facilita la creació de codi net i ben organitzat, separant clarament la lògica de negoci de la presentació.</li>
+<li>Symfony: Altres frameworks populars que també segueixen el patró MVC i ofereixen eines per a la separació de la lògica i la presentació.</li>
 </ul>
-</li>
-<li><a href="#estilos-de-api" target="_blank" class="external-link">Estilos de <em>API</em></a></li>
-<li><a href="#binding-de-variables" target="_blank" class="external-link"><em>Binding</em> de variables</a>
+<h4 id="patro-mvc" tabindex="-1">Patró MVC:</h4>
 <ul>
-<li><a href="#enlace-unidireccional-interpolaci%C3%B3n-" target="_blank" class="external-link">Enlace unidireccional: interpolación {{...}}</a></li>
-<li><a href="#enlazar-a-un-atributo-v-bind" target="_blank" class="external-link">Enlazar a un atributo: v-bind</a></li>
-<li><a href="#enlace-bidireccional-v-model" target="_blank" class="external-link">Enlace bidireccional: v-model</a></li>
-</ul>
-</li>
-<li><a href="#vue-devtools" target="_blank" class="external-link">Vue devtools</a></li>
-<li><a href="#extensiones-para-el-editor-de-c%C3%B3digo" target="_blank" class="external-link">Extensiones para el editor de código</a></li>
-<li><a href="#otras-utilidades" target="_blank" class="external-link">Otras utilidades</a></li>
-<li><a href="#cursos-de-vue" target="_blank" class="external-link">Cursos de Vue</a></li>
+<li>Model-View-Controller: Patró de disseny que divideix una aplicació en tres components interconnectats:
+<ul>
+<li>Model: Gestiona la lògica de negoci i les dades.</li>
+<li>Vista: Gestiona la presentació de la informació.</li>
+<li>Controlador: Gestiona la comunicació entre el Model i la Vista.</li>
 </ul>
 </li>
 </ul>
-<h2 id="introduccion" tabindex="-1">Introducción</h2>
-<p>El uso de un framework nos facilita enormemente el trabajo a la hora de crear una aplicación. Vue es un framework progresivo para la construcción de interfaces de usuario y aplicaciones desde el lado del cliente. Lo de framework &quot;progresivo&quot; significa que su núcleo es pequeño pero está diseñado para crecer: su núcleo está enfocado sólo en la capa de visualización pero es fácil añadirle otras bibliotecas o proyectos existentes (algunos desarrollados por el mismo equipo de Vue) que nos permitan crear complejas SPA.</p>
-<p>Su código es <em>opensource</em> y fue creado por el desarrollador independiente <a href="https://evanyou.me/" target="_blank" class="external-link">Evan You</a>, lo que lo diferencia de los otros 2 frameworks más utilizados: <strong>Angular</strong> desarrollado por <em>Google</em> y <strong>React</strong> desarrollado por <em>Facebook</em>.</p>
-<p>Vue tiene una curva de aprendizaje menor que otros frameworks y es extremadamente rápido y ligero.</p>
-<p>Este material está basado en la <a href="https://vuejs.org/guide/introduction.html" target="_blank" class="external-link">guía oficial de Vue</a> y veremos además los servicios de vue-router, axios y pinia (sustituto de vuex en Vue3) entre otros.</p>
-<p><strong>¿Qué framework es mejor?</strong><br>
-Depende de la aplicación a desarrollar y de los gustos del programador. Tenéis algunos enlaces al respecto:</p>
+<h4 id="plantilles" tabindex="-1">Plantilles:</h4>
 <ul>
-<li><a href="https://vuejs.org/v2/guide/comparison.html" target="_blank" class="external-link">Comparativa VueJs</a></li>
-<li><a href="https://openwebinars.net/blog/vuejs-vs-react/" target="_blank" class="external-link">Openwebminars: Vue vs React vs Angular</a></li>
-<li><a href="https://www.youtube.com/watch?v=jTtab_rnvic" target="_blank" class="external-link">Carlos Azaustre: Vue vs Angular (vídeo)</a></li>
-<li><a href="https://www.codeinwp.com/blog/angular-vs-vue-vs-react/" target="_blank" class="external-link">Angular vs React vs Vue: Which Framework to Choose in 2021</a></li>
-<li>...</li>
+<li>Blade (Laravel): Motor de plantilles que permet separar el codi HTML de la lògica de negoci.</li>
+<li>Twig (Symfony): Motor de plantilles similar a Blade, utilitzat per separar la lògica de negoci del codi de presentació.</li>
 </ul>
-<p>Las razones de que veamos Vue en vez de Angular o React son, en resumen:</p>
-<ul>
-<li><strong>Sencillez</strong>: aunque Angular es el framework más demandado hoy en el mercado su curva de aprendizaje es muy pronunciada. Vue es mucho más sencillo de aprender pero su forma de trabajar es muy similar a Angular por lo que el paso desde Vue a Angular es relativamente sencillo</li>
-<li><strong>Uso del framework</strong>: React es también muy sencillo ya que es simplemente Javascript en el que podemos codificar la vista con JSX, pero la forma de trabajar de Vue es más parecida a otros frameworks, especialmente a Angular por lo que lo aprendido nos será de gran ayuda si queremos pasar a ese framework</li>
-<li><strong>Rendimiento</strong>: Vue hace uso del concepto de <em>Virtual DOM</em> igual que React por lo que también ofrece muy buen rendimiento</li>
-</ul>
-<h2 id="usar-vue" tabindex="-1">Usar Vue</h2>
-<p>Para utilizar Vue sólo necesitamos enlazarlo en nuestra página desde cualquier CDN como:</p>
-<pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/vue@3/dist/vue.global.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>Esta no es la forma más recomendable de trabajar. Lo normal es crear un proyecto con <strong><em>npm</em></strong> que genere un completo <em>scaffolding</em>. Esto nos permitirá trabajar con componentes (<em>Single File Components</em> o <em>SFC</em>) lo que nos facilitará enormemente la creación de nuestras aplicaciones.</p>
-<p>Un <em>SFC</em> es un componente reutilizable que se guarda en un fichero con extensión <em>.vue</em>. Para que <em>VSCode</em> reconozca correctamente los ficheros <em>.vue</em> debemos instalar la <em>extensión</em> <strong>Volar</strong>.</p>
-<h2 id="estructura-de-una-aplicacion-vue" tabindex="-1">Estructura de una aplicación Vue</h2>
-<p>Vamos a crear la aplicación con Vue que mostrará un contador y un botón para actualizarlo:</p>
-<pre><code class="language-javascript">Vue.createApp({
-  data() {
-    return {
-      count: 0
+<h4 id="api-rest" tabindex="-1">API REST:</h4>
+<p>Permet crear serveis web que exposen funcionalitats i dades a través de punts finals d'API, mantenint la lògica de negoci separada de la presentació.</p>
+<h4 id="exemple-mvc" tabindex="-1">Exemple MVC</h4>
+<pre><code class="language-php">// Model: Product.php
+class Product {
+    private string $name;
+    private float $price;
+    
+    public function __construct(string $name, float $price) {
+        $this-&gt;name = $name;
+        $this-&gt;price = $price;
     }
-  },
-  methods: {
-    increment() {
-      this.count++
+    
+    public function getName(): string {
+        return $this-&gt;name;
     }
-  }
-}).mount('#app')
-</code></pre>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;title&gt;Vue&lt;/title&gt;
-    &lt;!-- Import Vue.js --&gt;
-    &lt;script src=&quot;https://unpkg.com/vue@3/dist/vue.global.js&quot;&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
+    
+    public function getPrice(): float {
+        return $this-&gt;price;
+    }
+}
 
-    &lt;div id=&quot;app&quot;&gt;
-      &lt;button @click=&quot;increment&quot;&gt;
-        Count is: { { count }}
-      &lt;/button&gt;
-    &lt;/div&gt;
+// Controller: ProductController.php
+class ProductController {
+    public function showProduct() {
+        $product = new Product(&quot;Laptop&quot;, 1200.00);
+        include 'views/productView.php';
+    }
+}
 
-    &lt;!-- Import Js --&gt;
-    &lt;script src=&quot;./main.js&quot;&gt;&lt;/script&gt;
-  &lt;/body&gt;
+// View: productView.php
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Product Information&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Product: &lt;?php echo htmlspecialchars($product-&gt;getName()); ?&gt;&lt;/h1&gt;
+    &lt;p&gt;Price: $&lt;?php echo htmlspecialchars($product-&gt;getPrice()); ?&gt;&lt;/p&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p>Podéis ver su funcionamiento en la <a href="https://vuejs.org/guide/introduction.html#what-is-vue" target="_blank" class="external-link">documentación oficial de Vue</a> o en <a href="https://codepen.io/juanseguravasco/pen/abYweqQ" target="_blank" class="external-link">CodePen</a>.</p>
-<p>En este ejemplo podemos ver las 2 principales características de Vue:</p>
-<ul>
-<li><strong>Renderizado declarativo</strong>: Vue amplía HTML con una sintaxis que nos permite declarar en HTML una salida basada en un dato Javascript</li>
-<li><strong>Reactividad</strong>: Vue hace un seguimiento de las variables Javascript y modifica el DOM cuando alguna cambia</li>
-</ul>
-<p>Para probar el funcionamiento de código tenemos el <strong><em>Playground</em></strong> de Vue al que accedemos desde su documentación en <a href="https://vuejs.org/guide/quick-start.html#try-vue-online" target="_blank" class="external-link">https://vuejs.org/guide/quick-start.html#try-vue-online</a>.</p>
-<p>Vamos a ver qué estamos haciendo en cada fichero:</p>
-<h3 id="html" tabindex="-1">HTML</h3>
-<p>En el HTML debemos vincular los scripts de la librería de Vue y de nuestro código.</p>
-<p>Vue se ejecutará dentro de un elemento de nuestra página (al que se le suele poner como id <em>app</em>) que en este caso es un <code>&lt;div&gt;</code>.</p>
-<p>Dentro de ese elemento es donde podemos usar expresiones de Vue (fuera del mismo se ignorarán). En este ejemplo se usa</p>
-<ul>
-<li>el <em>moustache</em> <strong>{{ ... }}</strong> que muestra en la página la variable o expresión Javascript que contiene</li>
-<li>la directiva <strong>@click</strong> que pone al elemento un escuchador del evento <em>click</em> que ejecuta la función indicada en el mismo</li>
-</ul>
-<h3 id="javascript" tabindex="-1">Javascript</h3>
-<p>En el fichero JS debemos crear la aplicación con el método <em>createApp</em> (al que se le pasa un objeto con una serie de opciones) y montarla en el elemento del HTML donde se ejecutará dicha aplicación. En nuestro caso la única opción que se le pasa es <strong>data</strong> pero hay muchas más:</p>
-<ul>
-<li><strong><code>data</code></strong>: aquí es donde se define el <em>estado</em> de la aplicación, es decir, los datos de la misma. Es una <strong>función</strong> que <em>devuelve un objeto</em> donde cada dato será una propiedad del mismo. Lo que definimos aquí sería el equivalente a las propiedades definidas en una clase que almacenan el estado de la misma. Estos datos son reactivos y accesibles desde el HTML</li>
-</ul>
-<pre><code class="language-javascript">Vue.createApp({
-  data() {
-    return {
-      count: 0,
-      msg: 'Hola',
-      ...
-    }
-  },
-</code></pre>
-<ul>
-<li><strong><code>methods</code></strong>: es un objeto donde cada propiedad es un método de la aplicación que puede ser llamado desde el HTML. Son el equivalente a los métodos de una clase</li>
-</ul>
-<p>Fijaos que para hacer referencia desde Javascript a una variable (o a un método) hay que anteponerle <strong><em>this</em></strong>.</p>
-<p>Además de las opciones <em>data</em> y <em>methods</em> podemos definir otras como:</p>
-<ul>
-<li><strong>computed</strong>: es un objeto con funciones que devuelven una variable cuyo valor hay que calcularlo. Por ejemplo:</li>
-</ul>
-<pre><code class="language-javascript">data() {
-  return {
-    nombre: 'Juan',
-    apellido: 'Segura', 
-  }
-},
-computed: {
-  nombreCompleto() {
-    return this.nombre + ' ' + this.apellido;
-  }
-}
-</code></pre>
-<ul>
-<li><strong><em>hooks</em></strong> (eventos del ciclo de vida de la instancia): para ejecutar código en determinados momentos: <strong>'created'</strong>, <strong>'mounted'</strong>, <strong>'updated'</strong>, <strong>'destroyed'</strong>. Ej.:</li>
-</ul>
-<pre><code class="language-javascript">created() {
-    console.log('instancia creada'); 
-}
-</code></pre>
-<h2 id="estilos-de-em-api-em" tabindex="-1">Estilos de <em>API</em></h2>
-<p>La forma en que hemos programado estos ejemplos no es la más recomendable por lo que más adelante usaremos <code>npm</code> para crear un completo <em>scaffolding</em> que nos facilitará enormemente la creación de nuestras aplicaciones. Con ella dividiremos nuestra aplicación en componentes llamados <em>Single File Components</em> que incluirán en un único fichero tanto la lógica del componente (Javascript) como su presentación (HTML) y su apariencia (CSS).</p>
-<p>Vue3 proporciona 2 formas diferentes de programar:</p>
-<ul>
-<li><strong><em>Options API</em></strong>: la lógica de un componente se establece en las distintas propiedades de un objeto, a las que se accede mediante <em>this</em> que apunta a la instancia del componente. Es la que veremos ahora ya que es la más similar a la OOP que conocemos.</li>
-</ul>
-<pre><code class="language-vue">&lt;script&gt;
-export default {
-  // Properties returned from data() become reactive state
-  // and will be exposed on `this`.
-  data() {
-    return {
-      msg: &quot;Hola&quot;,
-      count: 0
-    }
-  },
-
-  // Methods are functions that mutate state and trigger updates.
-  // They can be bound as event listeners in templates.
-  methods: {
-    increment() {
-      this.count++
-    },
-    decrement() {
-      this.count--
-    }
-  },
-
-  // Lifecycle hooks are called at different stages
-  // of a component's lifecycle.
-  // This function will be called when the component is mounted.
-  mounted() {
-    console.log(`The initial count is ${this.count}.`)
-  }
-}
-&lt;/script&gt;
-
-&lt;template&gt;
-  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
-  &lt;button @click=&quot;increment&quot;&gt;Count is: {{ count }}&lt;/button&gt;
-&lt;/template&gt;
-</code></pre>
-<ul>
-<li><strong><em>Composition API</em></strong>_: es algo más compleja pero mejora la reutilización de código y su organización por funcionalidades. Indicada para aplicaciones grandes la veremos al final del bloque</li>
-</ul>
-<pre><code class="language-vue">&lt;script setup&gt;
-import { ref, onMounted } from 'vue'
-
-// reactive state
-const count = ref('Hola')
-const count = ref(0)
-
-// functions that mutate state and trigger updates
-function increment() {
-  count.value++
-}
-function decrement() {
-  count.value--
-}
-
-// lifecycle hooks
-onMounted(() =&gt; {
-  console.log(`The initial count is ${count.value}.`)
-})
-&lt;/script&gt;
-
-&lt;template&gt;
-  &lt;h1&gt;{{ msg }}&lt;/h1&gt;
-  &lt;button @click=&quot;increment&quot;&gt;Count is: {{ count }}&lt;/button&gt;
-&lt;/template&gt;
-</code></pre>
-<h2 id="em-binding-em-de-variables" tabindex="-1"><em>Binding</em> de variables</h2>
-<p>En la <a href="https://vuejs.org/tutorial/#step-1" target="_blank" class="external-link">Guía de la documentación oficial de Vue</a> tenemos un tutorial guiado donde podemos probar cada una de las funcionalidades de Vue. En la parte superior izquierda nos pregunta por nuestras preferencias: de momento escogeremos <strong>Options</strong> y <strong>HTML</strong>, aunque enseguida cambiaremos a <strong>Options</strong> y <strong>SFC</strong>.</p>
-<p>| Haz el ejercicio del tutorial de <a href="https://vuejs.org/tutorial/#step-2" target="_blank" class="external-link">Vue.js</a></p>
-<h3 id="enlace-unidireccional-interpolacion" tabindex="-1">Enlace unidireccional: interpolación {{...}}</h3>
-<p>Donde queramos mostrar en la vista el valor de una variable simplemente la ponemos entre dobles llaves:</p>
-<pre><code class="language-html">&lt;p&gt;Contador: { { counter }}&lt;/p&gt;
-</code></pre>
-<p>Y en el código Javascript sólo tenemos que declarar esa variable dentro del objeto devuelto por <em>data()</em>:</p>
-<pre><code class="language-javascript">  data() {
-    return {
-      counter: 0
-    }
-  }
-</code></pre>
-<p>Podemos ver esa variable y manipularla desde la consola, y si cambiamos su valor vemos que cambia lo que muestra nuestra página. Esto es porque Vue (al igual que Angular o React) enlazan el DOM y los datos de forma que cualquier cambio en uno se refleja automáticamente en el otro.</p>
-<h3 id="enlazar-a-un-atributo-v-bind" tabindex="-1">Enlazar a un atributo: v-bind</h3>
-<p>Para mostrar un dato en el DOM usamos la interpolación <code>**{ { }}**</code> pero si queremos nostrarlo como atributo de una etiqueta debemos usar <code>v-bind</code>:</p>
-<pre><code class="language-html">  &lt;p v-bind:title=&quot;message&quot;&gt;
-    Hover your mouse over me for a few seconds
-    to see my dynamically bound title!
-  &lt;/p&gt;
-</code></pre>
-<p>Vue incorpora estos '<em>atributos</em>' que podemos usar en las etiquetas HTML y que se llaman <strong>directivas</strong>. Todas las directivas comienzan por <strong><code>v-</code></strong> (en Angular es igual pero el prefijo es <em>ng-</em>). Como la directiva <code>v-bind</code> se utiliza mucho se puede abreviar símplemente como <code>:</code> (el carácter 'dos puntos'). El siguiente código es equivalente al de antes:</p>
-<pre><code class="language-html">  &lt;p :title=&quot;message&quot;&gt;
-</code></pre>
-<p>| Haz el ejercicio del tutorial de <a href="https://vuejs.org/tutorial/#step-3" target="_blank" class="external-link">Vue.js</a></p>
-<h3 id="enlace-bidireccional-v-model" tabindex="-1">Enlace bidireccional: v-model</h3>
-<p>Tanto <strong><code>{ { }}</code></strong> como <code>v-bind</code> son un enlace unidireccional: muestran en el DOM el valor de un dato y reaccionan ante cualquier cambio en dicho valor.</p>
-<p>Pero además está la directiva <code>v-model</code> que es un enlace bidireccional que enlaza un dato a un campo de formulario y permite cambiar el valor del campo al cambiar el dato pero también cambia el dato si se modifica lo introducido en el input.</p>
-<pre><code class="language-html">  &lt;input v-model=&quot;message&quot;&gt;
-</code></pre>
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GRvdrqp" data-user="juanseguravasco" style="height:300px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;border:2px solid;margin:1em 0;padding:1em">
-<span>See the Pen <a href="https://codepen.io/juanseguravasco/pen/GRvdrqp">
-v-model</a> by Juan Segura (<a href="https://codepen.io/juanseguravasco">@juanseguravasco</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<p>Vemos que al escribir en el <em>input</em> automáticamente cambia lo mostrado en el primer párrafo. Esta característica nos permite ahorrar innumerables líneas de código para hacer que el DOM refleje los cambios que se producen en los datos.</p>
-<p>NOTA: toda la aplicación se monta en el elemento <em>app</em> por lo que las directivas o interpolaciones que pongamos fuera del mismo no se interpretarán.</p>
-<p>| Haz el ejercicio del tutorial de <a href="https://vuejs.org/tutorial/#step-5" target="_blank" class="external-link">Vue.js</a></p>
-<h2 id="vue-devtools" tabindex="-1">Vue devtools</h2>
-<p>Es una extensión para Chrome y Firefox que nos permite inspeccionar nuestro objeto Vue y acceder a todos los datos de nuestra aplicación.</p>
-<p>Anteriormente había que instalarla pero ahora viene integrada en la herramienta de desarrollador de los navegadores.</p>
-<p>En ella tenemos distintos apartados, como:</p>
-<ul>
-<li>Componentes: es la vista por defecto y nos permite inspeccionar todos los componentes Vue creados (ahora tenemos sólo 1, el principal, pero más adelante haremos componentes hijos)</li>
-<li>Pinia: es la herramienta de gestión de estado para aplicaciones medias/grandes</li>
-<li>Router: permite ver las rutas de nuestra aplicación</li>
-<li>Eventos: permite ver todos los eventos emitidos</li>
-<li>...</li>
-</ul>
-<p>![DevTools](/img/user/01 Apuntes/Vue Teoria Batoi/img/DevTools.png)</p>
-<h2 id="extensiones-para-el-editor-de-codigo" tabindex="-1">Extensiones para el editor de código</h2>
-<p>Cuando empecemos a trabajar con componentes usaremos ficheros con extensión <strong>.vue</strong> que integran el HTML, el JS y el CSS de cada componente. Para que nuestro editor los detecte correctamente es conveniente instalar la extensión para Vue.</p>
-<p>En el caso de <strong><em>Visual Studio Code</em></strong> esta extensión se llama <strong>Vue-Oficial</strong>.</p>
-<h2 id="otras-utilidades" tabindex="-1">Otras utilidades</h2>
-<p><em>Vue 3</em> permite utilizar directamente <em>Typescript</em> en nuestros componentes simplemente indicándolo al definir el SFC (lo veremos al llegar allí).</p>
-<p>Respecto a los <em>tests</em> se recomienda usar <em>Vitest</em> para los test unitarios y <em>Cypress</em> para los E2E, como se indica en la <a href="https://vuejs.org/guide/scaling-up/testing.html" target="_blank" class="external-link">documentación oficial</a> aunque también puede usarse <em>Jest</em> u otras herramientas.</p>
-<h2 id="cursos-de-vue" tabindex="-1">Cursos de Vue</h2>
-<p>Podemos encontrar muchos cursos en internet, algunos de ellos gratuitos. Por ejemplo los creadores de Vue tienen la web <a href="https://www.vuemastery.com" target="_blank" class="external-link">Vue Mastery</a> donde podemos encontrar desde cursos de iniciación (gratuitos) hasta los mas avanzados.</p>
+<p>La separació de la lògica de negoci dels aspectes de presentació és crucial per al desenvolupament d'aplicacions web eficients, mantenibles i escalables.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
