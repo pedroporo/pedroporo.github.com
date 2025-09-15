@@ -3,7 +3,7 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:36:38Z</updated>
+    <updated>2025-09-15T16:36:42Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
@@ -976,6 +976,281 @@ export default {
 
             </content>
             <link href="https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/" >
+        </entry>
+        <entry>
+            <title>
+                0x-testing
+                
+            </title>
+            <updated>2025-09-15T16:36:23Z</updated>
+            <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
+            <content type="html">
+                &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
+&lt;p&gt;La librería que incluye Vue para testear las aplicaciones el &lt;strong&gt;vue-test_utils&lt;/strong&gt; que proporciona herramientas para montar e interactuar con componentes. Para los tests unitarios usaremos &lt;a href=&quot;https://jestjs.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Jest&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tras instalar la librería con npm (será una dependencia de desarrollo) indicaremos al &lt;em&gt;linter&lt;/em&gt; que vamos a usar jest para que no genere advertencias al usar sus comandos para lo que modificaremos el fichero &lt;em&gt;.eslintrc.js&lt;/em&gt; y añadiremos al apartado &lt;em&gt;env&lt;/em&gt; una línea indicando que vamos a usar jest. Dicho apartado quedará:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;  env: {
+    node: true,
+    jest: true,
+  },
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si usamos librerías como Vue-Material o Vuetify y debemos importar ficheros .css de las mismas en nuestros componentes es posible que falle Jest a la hora de pasar los test y nos dará un error de que no puede procesar el fichero porque no es Javascript. Podemos solucionarlo instalando para desarrollo el paquete &lt;em&gt;identuty-obj-proxy&lt;/em&gt; y añadiendo una entrada para &lt;em&gt;moduleNameMapper&lt;/em&gt; al fichero de configuración de Jest &lt;strong&gt;jest.config.js&lt;/strong&gt; que quedará:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;module.exports = {
+  preset: &#39;@vue/cli-plugin-unit-jest&#39;,
+  moduleNameMapper: {
+    &amp;quot;&#92;&#92;.(css|less|scss|sass)$&amp;quot;: &amp;quot;identity-obj-proxy&amp;quot;
+  },
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(fuente: &lt;a href=&quot;https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&quot;tests-unitarios&quot; tabindex=&quot;-1&quot;&gt;Tests unitarios&lt;/h2&gt;
+&lt;p&gt;A la hora de crear el proyecto no escogeremos &lt;em&gt;preset&lt;/em&gt; sino que seleccionaremos manualmente las características a instalar y marcaremos la de tests unitarios con &lt;em&gt;Jest&lt;/em&gt; que es la librería que usamos en el bloque de Javascript.&lt;/p&gt;
+&lt;p&gt;Para ejecutar los tests ejecutaremos en la terminal&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm run test:unit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El projecto está configurado para ejecutar los ficheros de pruebas cuyo nombre acabe por &lt;strong&gt;.spec.js&lt;/strong&gt;. Por defecto se guardan en la carpeta &lt;strong&gt;/tests&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;primer-test-hello-world-vue&quot; tabindex=&quot;-1&quot;&gt;Primer test: HelloWorld.vue&lt;/h3&gt;
+&lt;p&gt;En primer lugar vamos a analizar el test que hay hecho en &lt;strong&gt;@/tests/exemple.spec.js&lt;/strong&gt; para testear el componente HelloWorld.vue:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;
+import HelloWorld from &#39;@/components/HelloWorld.vue&#39;
+
+describe(&#39;HelloWorld.vue&#39;, () =&amp;gt; {
+  it(&#39;renders props.msg when passed&#39;, () =&amp;gt; {
+    const msg = &#39;new message&#39;
+    const wrapper = shallowMount(HelloWorld, {
+      propsData: { msg }
+    })
+    expect(wrapper.text()).toMatch(msg)
+  })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lo primero que hay que hacer es importar el plugin de tests de vue y el componente a testear. Dentro de la prueba se monta el componente (&lt;code&gt;shallowMount&lt;/code&gt;) y se le pasan las props que necesite (msg). A esta función se le pasa un componente y devuelve la instancia de Vue creada para él y su nodo del DOM.&lt;/p&gt;
+&lt;p&gt;Como segundo parámetro se le puede pasar un objeto con opciones a montar en el componente (por ejemplo un &lt;em&gt;data&lt;/em&gt; que sustituirá al del componente) o, como en el ejemplo anterior, los parámetros que se le pasan al componente (en &lt;em&gt;propsData&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Además de &lt;code&gt;shallowMount&lt;/code&gt; podemos usar (si lo importamos) el método &lt;code&gt;mount&lt;/code&gt; que hace lo mismo pero también renderiza los subcomponentes que tenga el componente.&lt;/p&gt;
+&lt;p&gt;Por último se comprueba que el texto renderizado por el &lt;em&gt;template&lt;/em&gt; del componente incluye el mensaje pasado. La variable &lt;em&gt;wrapper&lt;/em&gt; es el nodo DOM raíz del componente y podemos obtener su &lt;em&gt;textContent&lt;/em&gt; (&lt;code&gt;.text()&lt;/code&gt;), su &lt;em&gt;innerHTML&lt;/em&gt; (&lt;code&gt;.html()&lt;/code&gt;), sus atributos (&lt;code&gt;.attributes()&lt;/code&gt;, y para acceder a uno, por ejemplo la id haríamos &lt;code&gt;.attributes().id&lt;/code&gt; ), sus clases (&lt;code&gt;.classes()&lt;/code&gt;), etc.Podemos ver todos sus métodos en la &lt;a href=&quot;https://vue-test-utils.vuejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación oficial de Vue test utils&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;También podríamos haber hecho la siguiente comprobación:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    expect(wrapper.html()).toMatch(&#39;&amp;lt;h1&amp;gt;&#39;+msg+&#39;&amp;lt;/h1&amp;gt;&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;o bien comprobar directamente el valor de &lt;em&gt;prop&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    expect(wrapper.props().msg).toBe(msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;comprobar-atributos-clases-y-estilos-en-linea&quot; tabindex=&quot;-1&quot;&gt;Comprobar atributos, clases y estilos en línea&lt;/h3&gt;
+&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;Testing dom attributes&amp;lt;/h1&amp;gt;
+    &amp;lt;a href=&amp;quot;https://google.com&amp;quot; class=&amp;quot;link&amp;quot; style=&amp;quot;color:green&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {};
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y el test es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import App from &#39;../src/App.vue&#39;
+import { shallowMount } from &#39;@vue/test-utils&#39;;
+
+describe(&#39;Testing dom attributes&#39;, () =&amp;gt; {
+    it(&#39;checks href to google &#39;, () =&amp;gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
+        expect(a.attributes().href).toBe(&#39;https://google.com&#39;)
+    })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si lo que queremos comprobar son las clases, estas tienen su propio método:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;Testing class&#39;, () =&amp;gt; {
+    it(&#39;checks the class to be link&#39;, () =&amp;gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
+        expect(a.classes()).toContain(&#39;link&#39;)
+    })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y lo mismo ocurre para comprobar un estilo:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;Testing style&#39;, () =&amp;gt; {
+    it(&#39;checks the inline style color to be green&#39;, () =&amp;gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
+        expect(a.style.color).toBe(&#39;green&#39;)
+    })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;comprobar-un-metodo-de-un-componente&quot; tabindex=&quot;-1&quot;&gt;Comprobar un método de un componente&lt;/h3&gt;
+&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;    &amp;lt;button @click=&amp;quot;changeTitle&amp;quot;&amp;gt;Change title&amp;lt;/button&amp;gt;  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+  data: function() {
+    return {
+      title: &amp;quot;Hello&amp;quot;    };
+  },
+  methods: {
+    changeTitle() {
+      this.title = &amp;quot;Hi&amp;quot;;    }
+  }
+};
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y el test es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;;
+import Post from &#39;../src/components/Welcome.vue&#39;
+describe(&#39;Testing Component Methods&#39;, () =&amp;gt; {
+    const wrapper = shallowMount(Post);
+
+    it(&#39;correctly updates the title when changeTitle is called&#39;, () =&amp;gt; {
+        expect(wrapper.vm.title).toBe(&#39;Hello&#39;); //initial title Hello
+        wrapper.vm.changeTitle();  // calling component method
+        expect(wrapper.vm.title).toBe(&#39;Hi&#39;); // title updates to Hi
+    })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;comprobar-que-un-metodo-es-llamado-al-producirse-un-evento&quot; tabindex=&quot;-1&quot;&gt;Comprobar que un método es llamado al producirse un evento&lt;/h3&gt;
+&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;{{count}}&amp;lt;/h1&amp;gt;
+    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Increment&amp;lt;/button&amp;gt;  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+  data: function() {
+    return {
+      count:0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    }
+  }
+};
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Y el test es:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;;
+import Post from &#39;../src/components/Counter.vue&#39;
+
+describe(&#39;Testing native dom events&#39;, () =&amp;gt; {
+    const wrapper = shallowMount(Post);
+
+    it(&#39;calls increment method when button is clicked&#39;, () =&amp;gt; {
+        const increment = jest.fn(); // mock function
+        // updating method with mock function
+        wrapper.setMethods({ increment });
+        //find the button and trigger click event
+        wrapper.find(&#39;button&#39;).trigger(&#39;click&#39;);
+        expect(increment).toBeCalled();
+    })
+
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fuente: &lt;a href=&quot;https://reactgo.com/vue-test-dom-events/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Dom events in Vue.js using Jest and vue-test-utils. Sai gowtham&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;comprobar-que-el-dom-reacciona-a-cambios-en-una-variable-reactiva&quot; tabindex=&quot;-1&quot;&gt;Comprobar que el DOM reacciona a cambios en una variable reactiva&lt;/h3&gt;
+&lt;p&gt;Dado que Vue realiza las actualizaciones de DOM de forma asíncrona, las comprobaciones sobre las actualizaciones de DOM resultantes del cambio de estado, deberán realizarse en un callback &lt;code&gt;Vue.nextTick&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;it(&#39;button click should increment the count text&#39;, async () =&amp;gt; {
+  expect(wrapper.text()).toContain(&#39;0&#39;)
+  const button = wrapper.find(&#39;button&#39;)
+  button.trigger(&#39;click&#39;)
+  await Vue.nextTick()
+  expect(wrapper.text()).toContain(&#39;1&#39;)
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;comprobar-peticiones-asincronas-a-servicios-ajenos-a-vue&quot; tabindex=&quot;-1&quot;&gt;Comprobar peticiones asíncronas a servicios ajenos a Vue&lt;/h3&gt;
+&lt;p&gt;En muchos casos hacemos peticiones asíncronas, como peticiones a una API. Podéis obtener información en:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vue-test-utils.vuejs.org/guides/testing-async-components.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Doc Vue test utils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jestjs.io/docs/es-ES/mock-functions&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Jest: Mock Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nuestro-primer-test-todo-item-vue&quot; tabindex=&quot;-1&quot;&gt;Nuestro primer test: TodoItem.vue&lt;/h3&gt;
+&lt;p&gt;En primer lugar vamos a testear que la propiedad &#39;done&#39; tiene el valor que se le pasa y que cambia al llamar a la función &#39;toogleDone&#39;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;
+import Usuario from &#39;@/components/Usuario.vue&#39;
+
+describe(&#39;componente Usuario.vue&#39;, () =&amp;gt; {
+ it(&#39;debe cambiar el valor a true&#39;, () =&amp;gt; {
+  /// Crea una instancia del componente
+  const wrapper = shallowMount(Usuario);
+
+  /// Evalúa que el valor por defecto sea &amp;quot;false&amp;quot;
+  expect(wrapper.vm.usuarioActivo).toBe(false);
+
+  /// Ejecuta el metodo que cambia el valor de la variable a &amp;quot;true&amp;quot;
+  wrapper.vm.activarUsuario();
+
+  /// Evalúa que el nuevo valor usuarioActivo sea &amp;quot;true&amp;quot;
+  expect(wrapper.vm.usuarioActivo).toBe(true);
+ })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;testear-vuex&quot; tabindex=&quot;-1&quot;&gt;Testear Vuex&lt;/h3&gt;
+&lt;p&gt;Normalmente nuestros componentes usaran Vuex para:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hacer un &lt;em&gt;commit&lt;/em&gt; a una &lt;em&gt;mutation&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;hacer un &lt;em&gt;dispatch&lt;/em&gt; a una &lt;em&gt;action&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;acceder a los datos mediante &lt;em&gt;state&lt;/em&gt; o &lt;em&gt;getters&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;testear-mutations&quot; tabindex=&quot;-1&quot;&gt;Testear mutations&lt;/h4&gt;
+&lt;p&gt;Es sencillo porque sólo son llamadas Javascript. Ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// store.js
+...
+mutations: {
+      addPost(state, post) {
+        state.posts.push(post);
+      },
+}
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// store.spec.js
+import { mutations } from &amp;quot;@/store/index.js&amp;quot;
+
+describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
+  it(&amp;quot;adds a post to the state&amp;quot;, () =&amp;gt; {
+    const post = { id: 1, title: &amp;quot;Primer post&amp;quot; }
+    const state = {
+      posts: [],
+    }
+
+    mutations.addPost(state, post)
+
+    expect(state).toEqual({
+      posts: [ { id: 1, title: &#39;Primer post&#39; } ]
+    })
+  })
+})
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;testear-actions&quot; tabindex=&quot;-1&quot;&gt;Testear actions&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;ejemplo&quot; tabindex=&quot;-1&quot;&gt;Ejemplo&lt;/h3&gt;
+&lt;p&gt;Podéis encontrar un completo ejemplo de cómo testear una aplicación &lt;em&gt;ToDo&lt;/em&gt; en &lt;a href=&quot;https://www.adictosaltrabajo.com/2018/10/25/testing-en-componentes-de-vue-js/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Adictos al trabajo - Testing en componentes de Vue.js&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Podéis encontrar ejemplos más completos en muchas páginas, como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Testing Vue]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lmiller1990.github.io/vue-testing-handbook/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vue Testing Handbook&lt;/a&gt;: completo tutorial de cómo testear todo en nuestros componentes Vue (props, computed, Vuex, router, ...)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lmiller1990.github.io/vue-testing-handbook/testing-vuex.html#testing-vuex&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Vuex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://livebook.manning.com/book/testing-vue-js-applications/about-this-book/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Vue.js Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fuentes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vue-test-utils.vuejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vue test utils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://es.vuejs.org/v2/guide/unit-testing.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Documentación oficial de Vue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://reactgo.com/vue-test-dom-events/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ReactGo: Vue tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://carlossolis.mobi/pruebas-unitarias-en-vue-js-setup-y-primeros-pasos-7255788f3e3b&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pruebas unitarias en Vue.js: Setup y primeros pasos. Carlos Solis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;test-e2e&quot; tabindex=&quot;-1&quot;&gt;Test e2e&lt;/h2&gt;
+&lt;p&gt;No comprueban un componente sino un &lt;em&gt;workflow&lt;/em&gt; completo, por ejemplo, que el usuario introduce algo como nombre de nueva tarea, pulsa enviar y se añade la tarea a la lista.&lt;/p&gt;
+&lt;p&gt;Al pasar los tests arranca un servidor de tests (&lt;em&gt;selenium&lt;/em&gt;) y un navegador donde hace las pruebas y luego los cierra.&lt;/p&gt;
+
+            </content>
+            <link href="https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/" >
         </entry>
         <entry>
             <title>
