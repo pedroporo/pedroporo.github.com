@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>05-BOM</title>
+<title>2. Bases de dades relacionals (SQL)</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -160,7 +160,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/05-bom/">05-BOM </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/05-bom/">05-BOM </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -530,7 +530,7 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -693,201 +693,118 @@
 <div class="header-meta">
 </div>
 </header>
-<h1 id="browser-object-model-bom" tabindex="-1">Browser Object Model (BOM)</h1>
-<ul>
-<li><a href="#browser-object-model-bom" target="_blank" class="external-link">Browser Object Model (BOM)</a>
-<ul>
-<li><a href="#introducci%C3%B3n" target="_blank" class="external-link">Introducción</a></li>
-<li><a href="#timers" target="_blank" class="external-link">Timers</a></li>
-<li><a href="#objetos-del-bom" target="_blank" class="external-link">Objetos del BOM</a>
-<ul>
-<li><a href="#objeto-window" target="_blank" class="external-link">Objeto window</a>
-<ul>
-<li><a href="#di%C3%A1logos" target="_blank" class="external-link">Diálogos</a></li>
-</ul>
-</li>
-<li><a href="#objeto-location" target="_blank" class="external-link">Objeto location</a></li>
-<li><a href="#objeto-history" target="_blank" class="external-link">Objeto history</a></li>
-<li><a href="#objeto-navigator" target="_blank" class="external-link">Objeto navigator</a></li>
-<li><a href="#otros-objetos" target="_blank" class="external-link">Otros objetos</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="introduccion" tabindex="-1">Introducción</h2>
-<p>En este tema veremos cómo acceder a objetos que nos permitan interactuar con el navegador (<em>Browser Object Model, BOM</em>).</p>
-<p>Usando los objetos BOM podemos:</p>
-<ul>
-<li>Abrir, cambiar y cerrar ventanas</li>
-<li>Ejecutar código en cierto tiempo (<em>timers</em>)</li>
-<li>Obtener información del navegador</li>
-<li>Ver y modificar propiedades de la pantalla</li>
-<li>Gestionar cookies, ...</li>
-</ul>
-<h2 id="timers" tabindex="-1">Timers</h2>
-<p>Permiten ejecutar código en el futuro (cuando transcurran los milisegundos indicados). Hay 2 tipos:</p>
-<ul>
-<li><code>setTimeout(función, milisegundos)</code>: ejecuta la función pasada como parámetro una sóla vez, cuando transcurran los milisegundos indicados</li>
-<li><code>setInterval(función, milisegundos)</code>: ejecuta la función cada vez que transcurran los milisegundos indicados, hasta que sea cancelado el <em>timer</em>. A ambas se le pueden pasar más parámetros tras los milisegundos y serán los parámetros que recibirá la función a ejecutar.</li>
-</ul>
-<p>Ambas funciones devuelven un identificador que nos permitirá cancelar la ejecución del código usando:</p>
-<ul>
-<li><code>clearTiemout(identificador)</code></li>
-<li><code>clearInterval(identificador)</code></li>
-</ul>
-<p>Ejemplo:</p>
-<pre><code class="language-javascript">const idTimeout = setTimeout(() =&gt; alert('Timeout que se ejecuta al cabo de 1 seg.'), 1000);
-
-let i = 1;
-const idInterval = setInterval(() =&gt; {
-	alert('Interval cada 3 seg. Ejecución nº: '+ i++);
-  if (i === 5) {
-    clearInterval(idInterval);
-    alert('Fin de la ejecución del Interval');
-	}
-}, 3000);
+<h3 id="instal-lacio" tabindex="-1">Instal·lació</h3>
+<p>A través de <strong>XAMPP</strong> és molt senzill, simplement ens descarregaríem el programa i l'activaríem. Per a descarregar XAMPP <a href="https://www.apachefriends.org/es/download.html" target="_blank" class="external-link">prem ací</a>.</p>
+<p>Amb <em><strong>Docker</strong></em> utilitzarem un altre repositori que inclou el mysql i el phpMyAdmin i llancem</p>
+<pre><code class="language-bash">docker-compose up -d
 </code></pre>
-<blockquote>
-<p>EJERCICIO: Ejecuta en la consola cada una de esas funciones</p>
-</blockquote>
-<p>En lugar de definir la función a ejecutar podemos llamar a una función que ya exista:</p>
-<pre><code class="language-javascript">function showMessage() {
-  alert('Timeout que se ejecuta al cabo de 1 seg.')
-}
-
-const idTimeout=setTimeout(showMessage, 1000);
+<p>Si tot ha eixit bé i el contenidor està en marxa, podrem visitar la pàgina de phpMyAdmin de la següent manera</p>
+<pre><code class="language-html">http://localhost:8000
 </code></pre>
-<p>Pero en ese caso hay que poner sólo el nombre de la función, sin <code>()</code> ya que si los ponemos se ejecutaría la función en ese momento y no transcurrido el tiempo indicado.</p>
-<p>Si necesitamos pasarle algún parámetro a la función lo añadiremos como parámetros de <code>setTimeout</code> o <code>setInterval</code> después del intervalo:</p>
-<pre><code class="language-javascript">function showMessage(msg) {
-  alert(msg)
-}
-
-const idTimeout = setTimeout(showMessage, 1000, 'Timeout que se ejecuta al cabo de 1 seg.');
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin-login.png" alt="06-bbdd-phpMyAdmin-login.png"><source media="(max-width:480px)" srcset="/img/optimized/tobuHY1RSW-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/tobuHY1RSW-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/tobuHY1RSW-650.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/tobuHY1RSW-650.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin-login.png" alt="06-bbdd-phpMyAdmin-login.png" width=""></picture></p>
+<p>Per a accedir hem d'utilitzar les següents credencials que venen configurades en el arxiu <code>docker-compose.yml</code></p>
+<pre><code>usuario: root
+contraseña: 1234
 </code></pre>
-<h2 id="objetos-del-bom" tabindex="-1">Objetos del BOM</h2>
-<p>Al contrario que para el DOM, no existe un estándar de BOM pero es bastante parecido en los diferentes navegadores.</p>
-<h3 id="objeto-a-href-http-www-w3schools-com-jsref-obj-window-asp-target-blank-class-external-link-window-a" tabindex="-1">Objeto <a href="http://www.w3schools.com/jsref/obj_window.asp" target="_blank" class="external-link">window</a></h3>
-<p>Representa la ventana del navegador y es el objeto principal. De hecho puede omitirse al llamar a sus propiedades y métodos, por ejemplo, el método <code>setTimeout()</code> es en realidad <code>window.setTimeout()</code>.</p>
-<p>Sus principales propiedades y métodos son:</p>
-<ul>
-<li><code>.name</code>: nombre de la ventana actual</li>
-<li><code>.status</code>: valor de la barra de estado</li>
-<li><code>.screenX</code>/<code>.screenY</code>: distancia de la ventana a la esquina izquierda/superior de la pantalla</li>
-<li><code>.outerWidth</code>/<code>.outerHeight</code>: ancho/alto total de la ventana, incluyendo la toolbar y la scrollbar</li>
-<li><code>.innerWidth</code>/<code>.innerHeight</code>: ancho/alto útil del documento, sin la toolbar y la scrollbar</li>
-<li><code>.open(url, nombre, opciones)</code>: abre una nueva ventana. Devuelve el nuevo objeto ventana. Las principales opciones son:
-<ul>
-<li><code>.toolbar</code>: si tendrá barra de herramientas</li>
-<li><code>.location</code>: si tendrá barra de dirección</li>
-<li><code>.directories</code>: si tendrá botones Adelante/Atrás</li>
-<li><code>.status</code>: si tendrá barra de estado</li>
-<li><code>.menubar</code>: si tendrá barra de menú</li>
-<li><code>.scrollbar</code>: si tendrá barras de desplazamiento</li>
-<li><code>.resizable</code>: si se puede cambiar su tamaño</li>
-<li><code>.width=px</code>/<code>.height=px</code>: ancho/alto</li>
-<li><code>.left=px</code>/<code>.top=px</code>: posición izq/sup de la ventana</li>
-</ul>
+<h3 id="estructura-d-una-base-de-dades" tabindex="-1">Estructura d'una base de dades</h3>
+<p>Sabem que una base de dades té molts camps amb els seus noms i valors, però a més sabem que la base de dades ha de tindre un nom. per tant tindríem la següent estructura per a una base de dades:</p>
+<p>NombreBaseDeDatos<br>
+|__Tabla-#1<br>
+| |__DatosTabla-#1<br>
+|<br>
+|__Tabla-#2<br>
+| |__DatosTabla-#2<br>
+|<br>
+|__Tabla-#3<br>
+| |__DatosTabla-#3<br>
+[...]</p>
+<p>Vegem-ho en un exemple real</p>
+<p>Ryanair<br>
+|__pasajero<br>
+| |__id[<em>]<br>
+| |__nombre<br>
+| |__apellidos<br>
+| |__edad<br>
+| |__id_vuelo[^]<br>
+|<br>
+|__vuelo<br>
+| |__id[</em>]<br>
+| |__n_plazas<br>
+| |__disponible<br>
+| |__id_pais[^]<br>
+|<br>
+|__pais<br>
+|__id[*]<br>
+|__nombre</p>
+<div class="leyenda">
+[*] Clau primària [^] Clave Forània
+</div>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-estructura.png" alt="06-bbdd-estructura.png"><source media="(max-width:480px)" srcset="/img/optimized/kToqC2thFJ-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/kToqC2thFJ-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/kToqC2thFJ-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/kToqC2thFJ-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-estructura.png" alt="06-bbdd-estructura.png" width=""></picture></p>
+<h3 id="sql" tabindex="-1">SQL</h3>
+<p>Aquest llenguatge de consulta estructurada (<em>Structured Query Language</em>) és el que utilitzarem per a realitzar les consultes a les nostres bases de dades per a mostrar el contingut en les diferents interfícies web que creem al llarg de la unitat. Si vols saber més detalls visita <a href="https://es.wikipedia.org/wiki/sql" target="_blank" class="external-link">Wiki SQL</a></p>
+<p>Exemple d'una sentència SQL on seleccionem totes les files i columnes de la nostra taula anomenada <strong>'pais'</strong></p>
+<pre><code class="language-sql">SELECT * FROM pais
+</code></pre>
+<p>Estas sentencias pueden invocarse desde la consola de comandos mediante el intérprete <em>mysql</em> (previamente instalado en el sistema) o a través de la herramienta phpMyAdmin.</p>
+<p>Las sentencias SQL también las podemos usar dentro de nuestro código php, de tal manera que cuando se cargue nuestra interfaz web, lance una sentecia SQL para mostrar los datos que queramos.</p>
+<pre><code class="language-php">&lt;?php
+    // Llistat de clients, adreçats per DNI de manera ASCendent
+    $clientesOrdenadosPorDNI = &quot;SELECT * FROM `pasajero` ORDER BY `dni`&quot; ASC;
+?&gt;
+</code></pre>
+<h3 id="php-my-admin" tabindex="-1">phpMyAdmin</h3>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin-logo.png" alt="06-bbdd-phpMyAdmin-logo.png"><source media="(max-width:480px)" srcset="/img/optimized/M22DcWO04J-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/M22DcWO04J-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/M22DcWO04J-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/M22DcWO04J-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin-logo.png" alt="06-bbdd-phpMyAdmin-logo.png" width=""></picture><br>
+Aquest programari funciona sota Ngingx i PHP i és més que res una interfície web per a gestionar les bases de dades que tinguem disponibles en el nostre servidor local. Molts *<em>hostings</em> ofereixen aquesta eina per defecte per a poder gestionar les BBDD que tinguem configurades sota el nostre compte.</p>
+<h4 id="creant-una-base-de-dades-dins-de-php-my-admin" tabindex="-1">Creant una base de dades dins de phpMyAdmin</h4>
+<p><picture src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin.gif" alt="06-bbdd-phpMyAdmin.gif"><source media="(max-width:480px)" srcset="/img/optimized/Oc5EuebHiR-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/Oc5EuebHiR-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/Oc5EuebHiR-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/Oc5EuebHiR-700.jpeg"><img class="" src="/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-bbdd-phpMyAdmin.gif" alt="06-bbdd-phpMyAdmin.gif" width=""></picture></p>
+<ol>
+<li>
+<p>Per a crear una nova base de dades hem d'entrar en <em>phpMyAdmin</em> com a <em>usuari root</em> i punxar en l'opció <span class="warning"><em>Nova</em></span> del menú de l'esquerra.</p>
 </li>
-<li><code>.opener</code>: referencia a la ventana desde la que se abrió esta ventana (para ventanas abiertas con <em>open</em>)</li>
-<li><code>.close()</code>: la cierra (pide confirmación, a menos que la hayamos abierto con open)</li>
-<li><code>.moveTo(x,y)</code>: la mueve a las coord indicadas</li>
-<li><code>.moveBy(x,y)</code>: la desplaza los px indicados</li>
-<li><code>.resizeTo(x,y)</code>: la da el ancho y alto indicados</li>
-<li><code>.resizeBy(x,y)</code>: le añade ese ancho/alto</li>
-<li><code>.pageXoffset / pageYoffset</code>: scroll actual de la ventana horizontal / vertical</li>
-<li>Otros métodos: <code>.back()</code>, <code>.forward()</code>, <code>.home()</code>, <code>.stop()</code>, <code>.focus()</code>, <code>.blur()</code>, <code>.find()</code>, <code>.print()</code>, …<br>
-NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle un tamaño menor de 100x100 px ni tampoco se puede mover una ventana no abierta con .open() o si tiene varias pestañas</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: Ejecuta desde la consola:</p>
+<li>
+<p>En la nova finestra de creació posarem un <strong>nom</strong> a nostra <em>bbdd</em>.</p>
+</li>
+<li>
+<p>També establirem el <strong>cotejamiento</strong> <span class="warning"><em>utf8m4_unicode_ci</em></span> perquè nostra <em>bbdd</em> suporte tot tipus de caràcters (com els asiàtics) i fins i tot <em>emojis</em> ;)</p>
+</li>
+<li>
+<p>Li donem al botó de <strong>Crear</strong> per a crear la <em>bbdd</em> i començar a escriure les diferents taules que anem a introduir en ella.</p>
+</li>
+</ol>
+<p>El sistema generarà el codi SQL per a crear tot el que li hem posat i crearà la base de dades amb les taules que li hàgem ficat.</p>
+<pre><code class="language-sql">CREATE TABLE `persona`. ( `id` INT NOT NULL AUTO_INCREMENT , `nombre` TINYTEXT NOT NULL , `apellidos` TEXT NOT NULL , `telefono` TINYTEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+</code></pre>
+<h4 id="opcions-en-php-my-admin" tabindex="-1">Opcions en phpMyAdmin</h4>
+<p>Quan seleccionem una base de dades de la llista, el sistema ens mostra diverses pestanyes amb les quals interactuar amb la base de dades en qüestió:</p>
 <ul>
-<li>abre una nueva ventana de dimensiones 500x200px en la posición (100,200)</li>
-<li>escribe en ella (con document.write) un título h1 que diga 'Hola'</li>
-<li>muévela 300 px hacia abajo y 100 a la izquierda</li>
-<li>ciérrala</li>
-</ul>
-</blockquote>
-<p>Puedes ver un ejemplo de cómo abrir ventanas en <a href="https://www.youtube.com/watch?v=jkTt6bs2tPo&amp;list=PLI7nHlOIIPOJtTDs1HVJABswW-xJcA7_o&amp;index=40" target="_blank" class="external-link">este vídeo</a>.</p>
-<blockquote>
-<p>EJERCICIO: Haz que a los 2 segundos de abrir la página se abra un <em>popup</em> con un mensaje de bienvenida. Esta ventana tendrá en su interior un botón Cerrar que permitirá que el usuario la cierre haciendo clic en él. Tendrá el tamaño justo para visualizar el mensaje y no tendrá barras de scroll, ni de herramientas, ni de dirección... únicamente el mensaje.</p>
-</blockquote>
-<h4 id="dialogos" tabindex="-1">Diálogos</h4>
-<p>Hay 3 métodos del objeto <em>window</em> que ya conocemos y que nos permiten abrir ventanas de diálogo con el usuario:</p>
-<ul>
-<li><code>window.alert(mensaje)</code>: muestra un diálogo con el mensaje indicado y un botón de 'Aceptar'</li>
-<li><code>window.confirm(mensaje)</code>: muestra un diálogo con el mensaje indicado y botones de 'Aceptar' y 'Cancelar'. Devuelve <em>true</em> si se ha pulsado el botón de aceptar del diálogo y <em>false</em> si no.</li>
-<li><code>window.prompt(mensaje [, valor predeterminado])</code>: muestra un diálogo con el mensaje indicado, un cuadro de texto (vacío o co el valor predeterminado indicado) y botones de 'Aceptar' y 'Cancelar'. Si se pulsa 'Aceptar' devolverá un <em>string</em> con el valor que haya en el cuadro de texto y si se pulsa 'Cancelar' o se cierra devolverá <em>null</em>.</li>
-</ul>
-<h3 id="objeto-a-href-http-www-w3schools-com-jsref-obj-location-asp-target-blank-class-external-link-location-a" tabindex="-1">Objeto <a href="http://www.w3schools.com/jsref/obj_location.asp" target="_blank" class="external-link">location</a></h3>
-<p>Contiene información sobre la URL actual del navegador y podemos modificarla. Sus principales propiedades y métodos son:</p>
-<ul>
-<li><code>.href</code>: devuelve la URL actual completa</li>
-<li><code>.protocol</code>, <code>.hostname</code>, <code>.port</code>: devuelve el protocolo, host y puerto respectivamente de la URL actual</li>
-<li><code>.pathname</code>, <code>hash</code>, <code>search</code>: devuelve la ruta al recurso actual, el gragmento (<code>#...</code>) y la cadena de búsqueda (<code>?...</code>) respectivamente</li>
-<li><code>.reload()</code>: recarga la página actual</li>
-<li><code>.assign(url)</code>: carga la página pasada como parámetro</li>
-<li><code>.replace(url)</code>: ídem pero sin guardar la actual en el historial</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: Ejecuta en la consola</p>
-<ul>
-<li>muestra la ruta completa de la página actual</li>
-<li>muestra el servidor de esta página</li>
-<li>carga la página de Google usando el objeto <em>location</em></li>
-</ul>
-</blockquote>
-<h3 id="objeto-a-href-http-www-w3schools-com-jsref-obj-history-asp-target-blank-class-external-link-history-a" tabindex="-1">Objeto <a href="http://www.w3schools.com/jsref/obj_history.asp" target="_blank" class="external-link">history</a></h3>
-<p>Permite acceder al historial de páginas visitadas y navegar por él:</p>
-<ul>
-<li><code>.length</code>: muestra el número de páginas almacenadas en el historial</li>
-<li><code>.back()</code>: vuelve a la página anterior</li>
-<li><code>.forward()</code>: va a la siguiente página</li>
-<li><code>.go(num)</code>: se mueve <em>num</em> páginas hacia adelante o hacia atrás (si <em>num</em> es negativo) en el historial</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: desde la consola vuelve a la página anterior</p>
-</blockquote>
-<h3 id="objeto-navigator" tabindex="-1">Objeto navigator</h3>
-<p>Nos da información sobre el navegador y el sistema en que se ejecuta:</p>
-<ul>
-<li><code>.userAgent</code>: muestra información sobre el navegador que usamos</li>
-<li><code>.language</code>: muestra el idioma del navegador</li>
-<li><code>.languages</code>: muestra los idiomas instalados en el navegador</li>
-<li><code>.appVersion</code>: versión del navegador</li>
-<li><code>.appName</code>: nombre del navegador</li>
-<li><code>.appCodeName</code>: nombre en código del navegador</li>
-<li><code>.product</code>: producto del navegador</li>
-<li><code>.platform</code>: sistema en el que se ejecuta el navegador</li>
-<li>...</li>
-</ul>
-<p>También incluye objetos con sus propias API para poder interactuar con el sistema:</p>
-<ul>
-<li><code>.geolocation</code>: devuelve un objeto con la localización del dispositivo (sólo funciona en https)</li>
-<li><code>.storage</code>: permite acceder a los datos almacenados en el navegador (los veremos en detalle más adelante)</li>
-<li><code>.clipboard</code>: permite copiar texto al portapapeles del usuario con <code>.writeText()</code> (sólo funciona en https)</li>
-<li><code>.mediaDevices</code>: permite acceder a los dispositivos multimedia del usuario</li>
-<li><code>.serviceWorker</code>: permite trabajar con <em>service workers</em></li>
-<li>...</li>
-</ul>
-<blockquote>
-<p>EJERCICIO: desde la consola muestra la información del navegador, su lenguaje y del sistema en que se ejecuta</p>
-</blockquote>
-<h3 id="otros-objetos" tabindex="-1">Otros objetos</h3>
-<p>Otros objetos que incluye BOM son:</p>
-<ul>
-<li><a href="http://www.w3schools.com/jsref/obj_screen.asp" target="_blank" class="external-link">screen</a>: nos da información sobre la pantalla
-<ul>
-<li><code>.width</code>/<code>.height</code>: ancho/alto total de la pantalla (resolución)</li>
-<li><code>.availWidth</code>/<code>.availHeight</code>: igual pero excluyendo la barra del S.O.</li>
-<li>...</li>
-</ul>
+<li>
+<p><code>Estructura</code>: Podem veure les diferents taules que consoliden la nostra base de dades</p>
+</li>
+<li>
+<p><code>SQL</code>: Per si volem injectar codi SQL perquè el sistema l'interprete</p>
+</li>
+<li>
+<p><code>Buscar</code>: Serveix per a buscar per termes, en la nostra base de dades, aplicant diferents filtres de cerca</p>
+</li>
+<li>
+<p><code>Generar consulta</code>: semblança a SQL però d'una manera més gràfica, sense haver de saber res del llenguatge</p>
+</li>
+<li>
+<p><code>Exportar i importar</code>: Com el seu nom indica, per a fer qualsevol de les 2 operacions sobre la base de dades</p>
+</li>
+<li>
+<p><code>Operacions</code>: Diferents opcions avançades per a realitzar en la nostra base de dades, de la qual destacarem l'opció <em>Cotejamiento</em> on podrem canviar el <em>cotejamiento</em> de la nostra taula però <span class="alert"><em>ULL AMB ACÔ</em> perquè podem eliminar dades sense voler, ja que en canviar el <em>cotejamiento</em> podem suprimir caràcters no suportats pel nou <em>cotejamiento</em></span></p>
 </li>
 </ul>
-<blockquote>
-<p>EJERCICIO: obtén desde la consola todas las propiedades width/height y availWidth/availHeight del objeto <em>scrren</em>. Compáralas con las propiedades innerWidth/innerHeight y outerWidth/outerHeight de <em>window</em>.</p>
-</blockquote>
+<p>No aprofundirem en la resta d'opcions però, en la pestanya <strong>Més</strong> existeix l'opció <strong>Dissenyador</strong> per a poder editar les relacions entre taules d'una manera gràfica (punxant i arrossegant) que veurem més endavant.</p>
 <div class="giscus"></div>
 <script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
 </main>
