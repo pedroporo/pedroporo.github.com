@@ -1,0 +1,1249 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>0x-testing</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Notas de pedro</h1>
+</a>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Notas de pedro</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">01 Apuntes</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">DAW</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/diseno-de-interfaces-web/diseno-de-interfaces-web/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/ingles/ingles/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/php-teoria-batoi/index/">index </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/DAW/Vue Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Vue Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/0x-quasar/">0x-quasar </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/0x-testing/">0x-testing </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/01-basics/">01-basics </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/02-directivas/">02-directivas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/03-componentes/">03-componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/">03_1-sfc </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/03-2-comunicar-componentes/">03_2-comunicar_componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/04-axios/">04-axios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/05-vue-router/">05-vue-router </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/06-profundizando/">06-profundizando </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/07-pinia/">07-pinia </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/07-vuex/">07-vuex </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/09-cosas/">09-cosas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/10-vue3-composition-api/">10-vue3_composition_api </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/21-typescript/">21-typescript </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/vue-teoria-batoi/90-tdd/">90-tdd </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/daw/indice-daw/">Indice DAW </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno cliente')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno cliente</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/">Asignatura de entornos a clientes </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Desarollo Web en entorno servidor')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Desarollo Web en entorno servidor</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/">Desarollo Web en entorno servidor </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Despliegue de aplicaciones Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Despliegue de aplicaciones Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/">Despliegue de aplicaciones WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Diseño de interfaces WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Diseño de interfaces WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/diseno-de-interfaces-web/diseno-de-interfaces-web/">Diseño de interfaces WEB </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Ingles')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Ingles</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/ingles/ingles/">Ingles </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Javascript Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Javascript Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">01-sintaxis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-1-objetos/">02.1-objetos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/02-2-arrays/">02.2-arrays </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-oop/">03-oop </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-vite/">03.1-vite </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/03-1-webpack/">03.1-webpack </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-dom/">04-DOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/04-1-mvc/">04.1-MVC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/05-bom/">05-BOM </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/06-eventos/">06-eventos </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">07-globales </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/09-ajax/">09-ajax </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/10-apis/">10-apis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/11-mas/">11-mas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/12-tests/">12-tests </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/ejercicios/">ejercicios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/readme/">README </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/tdd-mocha/">TDD-mocha </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/javascript-teoria-batoi/xx-tests/">xx-tests </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PHP Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/1. Arquitecturas Web')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">1. Arquitecturas Web</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/">1. Arquitecturas WEB </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/">1.1 Entornos de desarrollo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2. Introduccion a PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Introducción a PHP </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/3. Programacion en WEB')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">3. Programacion en WEB</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/">Programación en Web </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/4. Programacion Orientada a Objetos PHP')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">4. Programacion Orientada a Objetos PHP</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/">1. Concepte de classes i Objectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/">2. Principis de la POO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/">3. Espai de noms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/">4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/">5. Tecnologies i Mecanismes per a la Separació </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/">6. Gestió d&#39;Errors </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/">7. Composer </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/">8. Logger amb Monolog </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/">9. Generació de PDF amb DOMPDF </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/">10. Documentación con phpDocumentor </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/">11. Proves amb PHPUNIT </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/">12. Referències Bibliogràfiques </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/">13. Exercicis </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/">14. Enunciat dels projectes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/">15. Autoavaluació Programació Orientada a Objectes en PHP </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/">Exercicis proposats </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/">phpoo </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/5. Acceso a datos')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">5. Acceso a datos</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/">0. Indice </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/">1. Introducció a les tecnologies per accedir a dades </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/">2. Bases de dades relacionals (SQL) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/">3. PHP Data Objects PDO </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/">4. Login &amp; Password </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/">5. QueryBuilder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/">6. Accès a fitxers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/">7. Web Scraping </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/PHP Teoria Batoi/8. Gestió de Dades amb Laravel')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">8. Gestió de Dades amb Laravel</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/">1. Introducció </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/">2. Configuració inicial </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/">3. Migracions en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/">4. Laravel Query Builder </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/">5. Laravel Eloquent </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/">6. Seeders i Factories en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/">7. Requests, Responses i Validació en Laravel </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/">8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/php-teoria-batoi/index/">index </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('01 Apuntes/Vue Teoria Batoi')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Vue Teoria Batoi</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/0x-quasar/">0x-quasar </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/0x-testing/">0x-testing </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/01-basics/">01-basics </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/02-directivas/">02-directivas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-componentes/">03-componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-1-sfc/">03_1-sfc </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/">03_2-comunicar_componentes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/04-axios/">04-axios </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/05-vue-router/">05-vue-router </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/06-profundizando/">06-profundizando </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/07-pinia/">07-pinia </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/07-vuex/">07-vuex </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/08-forms/">08-forms </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/09-cosas/">09-cosas </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/">10-vue3_composition_api </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/21-typescript/">21-typescript </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/01-apuntes/vue-teoria-batoi/90-tdd/">90-tdd </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Indice </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="testear-nuestros-componentes" tabindex="-1">Testear nuestros componentes</h1>
+<p>La librería que incluye Vue para testear las aplicaciones el <strong>vue-test_utils</strong> que proporciona herramientas para montar e interactuar con componentes. Para los tests unitarios usaremos <a href="https://jestjs.io/" target="_blank" class="external-link"><em>Jest</em></a>.</p>
+<p>Tras instalar la librería con npm (será una dependencia de desarrollo) indicaremos al <em>linter</em> que vamos a usar jest para que no genere advertencias al usar sus comandos para lo que modificaremos el fichero <em>.eslintrc.js</em> y añadiremos al apartado <em>env</em> una línea indicando que vamos a usar jest. Dicho apartado quedará:</p>
+<pre><code class="language-json">  env: {
+    node: true,
+    jest: true,
+  },
+</code></pre>
+<p>Si usamos librerías como Vue-Material o Vuetify y debemos importar ficheros .css de las mismas en nuestros componentes es posible que falle Jest a la hora de pasar los test y nos dará un error de que no puede procesar el fichero porque no es Javascript. Podemos solucionarlo instalando para desarrollo el paquete <em>identuty-obj-proxy</em> y añadiendo una entrada para <em>moduleNameMapper</em> al fichero de configuración de Jest <strong>jest.config.js</strong> que quedará:</p>
+<pre><code class="language-javascript">module.exports = {
+  preset: '@vue/cli-plugin-unit-jest',
+  moduleNameMapper: {
+    &quot;\\.(css|less|scss|sass)$&quot;: &quot;identity-obj-proxy&quot;
+  },
+}
+</code></pre>
+<p>(fuente: <a href="https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites" target="_blank" class="external-link">https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites</a>)</p>
+<h2 id="tests-unitarios" tabindex="-1">Tests unitarios</h2>
+<p>A la hora de crear el proyecto no escogeremos <em>preset</em> sino que seleccionaremos manualmente las características a instalar y marcaremos la de tests unitarios con <em>Jest</em> que es la librería que usamos en el bloque de Javascript.</p>
+<p>Para ejecutar los tests ejecutaremos en la terminal</p>
+<pre><code class="language-bash">npm run test:unit
+</code></pre>
+<p>El projecto está configurado para ejecutar los ficheros de pruebas cuyo nombre acabe por <strong>.spec.js</strong>. Por defecto se guardan en la carpeta <strong>/tests</strong>.</p>
+<h3 id="primer-test-hello-world-vue" tabindex="-1">Primer test: HelloWorld.vue</h3>
+<p>En primer lugar vamos a analizar el test que hay hecho en <strong>@/tests/exemple.spec.js</strong> para testear el componente HelloWorld.vue:</p>
+<pre><code class="language-javascript">import { shallowMount } from '@vue/test-utils'
+import HelloWorld from '@/components/HelloWorld.vue'
+
+describe('HelloWorld.vue', () =&gt; {
+  it('renders props.msg when passed', () =&gt; {
+    const msg = 'new message'
+    const wrapper = shallowMount(HelloWorld, {
+      propsData: { msg }
+    })
+    expect(wrapper.text()).toMatch(msg)
+  })
+})
+</code></pre>
+<p>Lo primero que hay que hacer es importar el plugin de tests de vue y el componente a testear. Dentro de la prueba se monta el componente (<code>shallowMount</code>) y se le pasan las props que necesite (msg). A esta función se le pasa un componente y devuelve la instancia de Vue creada para él y su nodo del DOM.</p>
+<p>Como segundo parámetro se le puede pasar un objeto con opciones a montar en el componente (por ejemplo un <em>data</em> que sustituirá al del componente) o, como en el ejemplo anterior, los parámetros que se le pasan al componente (en <em>propsData</em>).</p>
+<p>Además de <code>shallowMount</code> podemos usar (si lo importamos) el método <code>mount</code> que hace lo mismo pero también renderiza los subcomponentes que tenga el componente.</p>
+<p>Por último se comprueba que el texto renderizado por el <em>template</em> del componente incluye el mensaje pasado. La variable <em>wrapper</em> es el nodo DOM raíz del componente y podemos obtener su <em>textContent</em> (<code>.text()</code>), su <em>innerHTML</em> (<code>.html()</code>), sus atributos (<code>.attributes()</code>, y para acceder a uno, por ejemplo la id haríamos <code>.attributes().id</code> ), sus clases (<code>.classes()</code>), etc.Podemos ver todos sus métodos en la <a href="https://vue-test-utils.vuejs.org/" target="_blank" class="external-link">documentación oficial de Vue test utils</a>.</p>
+<p>También podríamos haber hecho la siguiente comprobación:</p>
+<pre><code class="language-javascript">    expect(wrapper.html()).toMatch('&lt;h1&gt;'+msg+'&lt;/h1&gt;')
+</code></pre>
+<p>o bien comprobar directamente el valor de <em>prop</em>:</p>
+<pre><code class="language-javascript">    expect(wrapper.props().msg).toBe(msg)
+</code></pre>
+<h3 id="comprobar-atributos-clases-y-estilos-en-linea" tabindex="-1">Comprobar atributos, clases y estilos en línea</h3>
+<p>El componente que vamos a probar es:</p>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Testing dom attributes&lt;/h1&gt;
+    &lt;a href=&quot;https://google.com&quot; class=&quot;link&quot; style=&quot;color:green&quot;&gt;Google&lt;/a&gt;  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {};
+&lt;/script&gt;
+</code></pre>
+<p>Y el test es:</p>
+<pre><code class="language-javascript">import App from '../src/App.vue'
+import { shallowMount } from '@vue/test-utils';
+
+describe('Testing dom attributes', () =&gt; {
+    it('checks href to google ', () =&gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find('a'); //finds an `a` element
+        expect(a.attributes().href).toBe('https://google.com')
+    })
+})
+</code></pre>
+<p>Si lo que queremos comprobar son las clases, estas tienen su propio método:</p>
+<pre><code class="language-javascript">describe('Testing class', () =&gt; {
+    it('checks the class to be link', () =&gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find('a'); //finds an `a` element
+        expect(a.classes()).toContain('link')
+    })
+})
+</code></pre>
+<p>Y lo mismo ocurre para comprobar un estilo:</p>
+<pre><code class="language-javascript">describe('Testing style', () =&gt; {
+    it('checks the inline style color to be green', () =&gt; {
+        const wrapper = shallowMount(App);
+        const a = wrapper.find('a'); //finds an `a` element
+        expect(a.style.color).toBe('green')
+    })
+})
+</code></pre>
+<h3 id="comprobar-un-metodo-de-un-componente" tabindex="-1">Comprobar un método de un componente</h3>
+<p>El componente que vamos a probar es:</p>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{{title}}&lt;/h1&gt;    &lt;button @click=&quot;changeTitle&quot;&gt;Change title&lt;/button&gt;  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      title: &quot;Hello&quot;    };
+  },
+  methods: {
+    changeTitle() {
+      this.title = &quot;Hi&quot;;    }
+  }
+};
+&lt;/script&gt;
+</code></pre>
+<p>Y el test es:</p>
+<pre><code class="language-javascript">import { shallowMount } from '@vue/test-utils';
+import Post from '../src/components/Welcome.vue'
+describe('Testing Component Methods', () =&gt; {
+    const wrapper = shallowMount(Post);
+
+    it('correctly updates the title when changeTitle is called', () =&gt; {
+        expect(wrapper.vm.title).toBe('Hello'); //initial title Hello
+        wrapper.vm.changeTitle();  // calling component method
+        expect(wrapper.vm.title).toBe('Hi'); // title updates to Hi
+    })
+})
+</code></pre>
+<h3 id="comprobar-que-un-metodo-es-llamado-al-producirse-un-evento" tabindex="-1">Comprobar que un método es llamado al producirse un evento</h3>
+<p>El componente que vamos a probar es:</p>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{{count}}&lt;/h1&gt;
+    &lt;button @click=&quot;increment&quot;&gt;Increment&lt;/button&gt;  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      count:0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    }
+  }
+};
+&lt;/script&gt;
+</code></pre>
+<p>Y el test es:</p>
+<pre><code class="language-javascript">import { shallowMount } from '@vue/test-utils';
+import Post from '../src/components/Counter.vue'
+
+describe('Testing native dom events', () =&gt; {
+    const wrapper = shallowMount(Post);
+
+    it('calls increment method when button is clicked', () =&gt; {
+        const increment = jest.fn(); // mock function
+        // updating method with mock function
+        wrapper.setMethods({ increment });
+        //find the button and trigger click event
+        wrapper.find('button').trigger('click');
+        expect(increment).toBeCalled();
+    })
+
+})
+</code></pre>
+<p>Fuente: <a href="https://reactgo.com/vue-test-dom-events/" target="_blank" class="external-link">Testing Dom events in Vue.js using Jest and vue-test-utils. Sai gowtham</a></p>
+<h3 id="comprobar-que-el-dom-reacciona-a-cambios-en-una-variable-reactiva" tabindex="-1">Comprobar que el DOM reacciona a cambios en una variable reactiva</h3>
+<p>Dado que Vue realiza las actualizaciones de DOM de forma asíncrona, las comprobaciones sobre las actualizaciones de DOM resultantes del cambio de estado, deberán realizarse en un callback <code>Vue.nextTick</code>.</p>
+<pre><code class="language-javascript">it('button click should increment the count text', async () =&gt; {
+  expect(wrapper.text()).toContain('0')
+  const button = wrapper.find('button')
+  button.trigger('click')
+  await Vue.nextTick()
+  expect(wrapper.text()).toContain('1')
+})
+</code></pre>
+<h3 id="comprobar-peticiones-asincronas-a-servicios-ajenos-a-vue" tabindex="-1">Comprobar peticiones asíncronas a servicios ajenos a Vue</h3>
+<p>En muchos casos hacemos peticiones asíncronas, como peticiones a una API. Podéis obtener información en:</p>
+<ul>
+<li><a href="https://vue-test-utils.vuejs.org/guides/testing-async-components.html" target="_blank" class="external-link">Doc Vue test utils</a></li>
+<li><a href="https://jestjs.io/docs/es-ES/mock-functions" target="_blank" class="external-link">Jest: Mock Functions</a></li>
+<li>...</li>
+</ul>
+<h3 id="nuestro-primer-test-todo-item-vue" tabindex="-1">Nuestro primer test: TodoItem.vue</h3>
+<p>En primer lugar vamos a testear que la propiedad 'done' tiene el valor que se le pasa y que cambia al llamar a la función 'toogleDone':</p>
+<pre><code class="language-javascript">import { shallowMount } from '@vue/test-utils'
+import Usuario from '@/components/Usuario.vue'
+
+describe('componente Usuario.vue', () =&gt; {
+ it('debe cambiar el valor a true', () =&gt; {
+  /// Crea una instancia del componente
+  const wrapper = shallowMount(Usuario);
+
+  /// Evalúa que el valor por defecto sea &quot;false&quot;
+  expect(wrapper.vm.usuarioActivo).toBe(false);
+
+  /// Ejecuta el metodo que cambia el valor de la variable a &quot;true&quot;
+  wrapper.vm.activarUsuario();
+
+  /// Evalúa que el nuevo valor usuarioActivo sea &quot;true&quot;
+  expect(wrapper.vm.usuarioActivo).toBe(true);
+ })
+})
+</code></pre>
+<h3 id="testear-vuex" tabindex="-1">Testear Vuex</h3>
+<p>Normalmente nuestros componentes usaran Vuex para:</p>
+<ul>
+<li>hacer un <em>commit</em> a una <em>mutation</em></li>
+<li>hacer un <em>dispatch</em> a una <em>action</em></li>
+<li>acceder a los datos mediante <em>state</em> o <em>getters</em></li>
+</ul>
+<h4 id="testear-mutations" tabindex="-1">Testear mutations</h4>
+<p>Es sencillo porque sólo son llamadas Javascript. Ejemplo:</p>
+<pre><code class="language-javascript">// store.js
+...
+mutations: {
+      addPost(state, post) {
+        state.posts.push(post);
+      },
+}
+...
+</code></pre>
+<pre><code class="language-javascript">// store.spec.js
+import { mutations } from &quot;@/store/index.js&quot;
+
+describe(&quot;addPost&quot;, () =&gt; {
+  it(&quot;adds a post to the state&quot;, () =&gt; {
+    const post = { id: 1, title: &quot;Primer post&quot; }
+    const state = {
+      posts: [],
+    }
+
+    mutations.addPost(state, post)
+
+    expect(state).toEqual({
+      posts: [ { id: 1, title: 'Primer post' } ]
+    })
+  })
+})
+
+</code></pre>
+<h4 id="testear-actions" tabindex="-1">Testear actions</h4>
+<pre><code class="language-javascript"></code></pre>
+<h3 id="ejemplo" tabindex="-1">Ejemplo</h3>
+<p>Podéis encontrar un completo ejemplo de cómo testear una aplicación <em>ToDo</em> en <a href="https://www.adictosaltrabajo.com/2018/10/25/testing-en-componentes-de-vue-js/" target="_blank" class="external-link">Adictos al trabajo - Testing en componentes de Vue.js</a>.</p>
+<p>Podéis encontrar ejemplos más completos en muchas páginas, como:</p>
+<ul>
+<li>[Testing Vue]</li>
+<li><a href="https://lmiller1990.github.io/vue-testing-handbook/" target="_blank" class="external-link">Vue Testing Handbook</a>: completo tutorial de cómo testear todo en nuestros componentes Vue (props, computed, Vuex, router, ...)</li>
+<li><a href="https://lmiller1990.github.io/vue-testing-handbook/testing-vuex.html#testing-vuex" target="_blank" class="external-link">Testing Vuex</a></li>
+<li><a href="https://livebook.manning.com/book/testing-vue-js-applications/about-this-book/" target="_blank" class="external-link">Testing Vue.js Applications</a></li>
+<li>[]</li>
+</ul>
+<p>Fuentes:</p>
+<ul>
+<li><a href="https://vue-test-utils.vuejs.org/" target="_blank" class="external-link">Vue test utils</a></li>
+<li><a href="https://es.vuejs.org/v2/guide/unit-testing.html" target="_blank" class="external-link">Documentación oficial de Vue</a></li>
+<li><a href="https://reactgo.com/vue-test-dom-events/" target="_blank" class="external-link">ReactGo: Vue tutorials</a></li>
+<li><a href="https://carlossolis.mobi/pruebas-unitarias-en-vue-js-setup-y-primeros-pasos-7255788f3e3b" target="_blank" class="external-link">Pruebas unitarias en Vue.js: Setup y primeros pasos. Carlos Solis</a></li>
+<li></li>
+</ul>
+<h2 id="test-e2e" tabindex="-1">Test e2e</h2>
+<p>No comprueban un componente sino un <em>workflow</em> completo, por ejemplo, que el usuario introduce algo como nombre de nueva tarea, pulsa enviar y se añade la tarea a la lista.</p>
+<p>Al pasar los tests arranca un servidor de tests (<em>selenium</em>) y un navegador donde hace las pruebas y luego los cierra.</p>
+<div class="giscus"></div>
+<script src="https://giscus.app/client.js" data-repo="pedroporo/pedroporo.github.com" data-repo-id="R_kgDOMtM_mQ" data-category="Announcements" data-category-id="DIC_kwDOMtM_mc4CiOKM" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="es" data-loading="lazy" crossorigin="anonymous" async></script>
+</main>
+<style>#tooltip-wrapper{background:var(--background-primary);padding:1em;border-radius:4px;overflow:hidden;position:fixed;width:80%;max-width:400px;height:auto;max-height:300px;font-size:.8em;box-shadow:0 5px 10px rgba(0,0,0,.1);opacity:0;transition:opacity .1s;unicode-bidi:plaintext;overflow-y:scroll;z-index:10}#tooltip-wrapper:after{content:"";position:absolute;z-index:1;bottom:0;left:0;pointer-events:none;width:100%;unicode-bidi:plaintext;height:75px}</style>
+<div style="opacity:0;display:none" id="tooltip-wrapper">
+<div id="tooltip-content">
+</div>
+</div>
+<iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
+</iframe>
+<script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="dd MMM yyyy, h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
