@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:36:42Z</updated>
+    <updated>2025-09-15T16:36:46Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -179,7 +179,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -411,853 +411,10 @@ class Student implements IStudent {
         </entry>
         <entry>
             <title>
-                10-vue3_composition_api
-                
-            </title>
-            <updated>2025-09-15T16:36:23Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/</id>
-            <content type="html">
-                &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#la-composition-api-de-vue3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#ejemplo-b%C3%A1sico&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ejemplo básico&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#setup&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;setup&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#script-setup&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&amp;lt;script setup&amp;gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#reactividad-en-vue3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Reactividad en Vue3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#configuraciones-b%C3%A1sicas&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Configuraciones básicas&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#props&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Props&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#components&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Components&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#computed&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Computed&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#hooks&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;hooks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#router&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;router&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#watcheffect-y-watch&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;watchEffect y watch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#pinia&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pinia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#reusabilidad-composables&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Reusabilidad: &lt;em&gt;composables&lt;/em&gt;&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#valores-devueltos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Valores devueltos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#paso-de-par%C3%A1metros&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Paso de parámetros&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#organizar-el-c%C3%B3digo-con-composables&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Organizar el código con &lt;em&gt;composables&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduccion&quot; tabindex=&quot;-1&quot;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Vue3 incluye una importante novedad, la &lt;em&gt;Composition API&lt;/em&gt;, aunque podemos seguir usando la &lt;em&gt;Options API&lt;/em&gt; clásica de Vue2 donde cada elemento (data, computed, methods, ...) es una opción del componente.&lt;/p&gt;
-&lt;p&gt;La forma de trabajar hasta Vue 2 es mediante la &lt;em&gt;Options API&lt;/em&gt; donde definíamos un componente mediante una serie de opciones:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;export default {
-  name: &amp;quot;ComponentName&amp;quot;,
-  props: { ... },
-  data() { return {...} },
-  computed: { ... },
-  methods: { ... },
-  mounted() { ... },
-  ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Esto es ideal para pequeñas aplicaciones porque mantiene el código ordenado según su funcionalidad: variables en &lt;em&gt;data&lt;/em&gt;, funciones en &lt;em&gt;methods&lt;/em&gt;, .... Pero en grandes aplicaciones donde un componente necesita hacer varias cosas (como mostrar datos en una tabla pero que esté paginada y con posibilidad de filtrar, ...) el código crece y esta forma de organizarlo se vuelve algo confusa.&lt;/p&gt;
-&lt;p&gt;Vue3 permite seguir trabajando así pero incorpora una nueva forma de trabajar con nuestros componentes, la &lt;em&gt;Composition API&lt;/em&gt;. En ella se define un &lt;em&gt;hook&lt;/em&gt; llamado &lt;code&gt;setup()&lt;/code&gt; donde escribimos el código que inicializa el componente y devuelve un objeto con las variables y métodos que podrá usar el resto del componente (por ejemplo el &lt;em&gt;template&lt;/em&gt;).&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script&amp;gt;
-import { defineProps } from &amp;quot;vue&amp;quot;;
-
-export default {
-  name: &amp;quot;ComponentName&amp;quot;,
-  props: defineProps({ ... }),     // Props
-  setup(props, context) {
-    // Init logic, lifecycle hooks, etc...
-
-    return {
-      // Data, methods, computed, etc...
-    }
-  }
-}
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La &lt;em&gt;composition API&lt;/em&gt; es especialmente útil en aplicaciones grandes ya que va a permitir que nuestros componentes sean mucho más reutilizables. Además nos va a permitir organizar el código por funcionalidades y no por &lt;em&gt;opciones&lt;/em&gt;. Por ejemplo si un componente muestra una serie de datos y tiene filtrado de datos y paginación de los mismos en el &lt;code&gt;data()&lt;/code&gt; definiré variables para los datos, variables para el filtrado y variables para la paginación. En &lt;code&gt;computed&lt;/code&gt; puede que también tenga métodos para las 3 cosas y el &lt;code&gt;methods&lt;/code&gt; tendré varios métodos para cada una de las 3 funcionalidades. La &lt;em&gt;composition API&lt;/em&gt; me va a permitir que todo el código (&lt;em&gt;data&lt;/em&gt;, &lt;em&gt;computed&lt;/em&gt;, &lt;em&gt;methods&lt;/em&gt;, ...) referente a la funcionalidad de mostrar los datos esté junto y lo mismo para las funcionalidades de filtrar y de paginar:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://vuejs.org/assets/composition-api-after.e3f2c350.png&quot; alt=&quot;composition api vs options api&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Cuándo es recomendable usarla:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;si queremos soporte total de Typescript&lt;/li&gt;
-&lt;li&gt;si nuestro componente es demasiado largo y queremos organizarlo por características (&lt;em&gt;features&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;para mejorar la reutilización de código entre componentes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;ejemplo-basico&quot; tabindex=&quot;-1&quot;&gt;Ejemplo básico&lt;/h2&gt;
-&lt;p&gt;Por ejemplo, un componente que muestra un contador y un botón para incrementarlo, con la &lt;em&gt;Options API&lt;/em&gt; sería:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;El valor del contador es: { { count }}&amp;lt;p&amp;gt;
-    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Incrementar&amp;lt;/button&amp;gt;
-&amp;lt;/template&amp;gt;
-
-&amp;lt;script&amp;gt;
-export default {
-  // Properties returned from data() becomes reactive state
-  // and will be exposed on `this`.
-  props: [&#39;title&#39;],
-  data() {
-    return {
-      count: 0
-    }
-  },
-  methods: {
-    increment() {
-      this.count++
-    }
-  },
-  mounted() {
-    console.log(`The initial count is ${this.count}.`)
-  }
-}
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Este ejemplo con la &lt;em&gt;Composition API&lt;/em&gt; quedaría:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script&amp;gt;
-import { ref, onMounted } from &amp;quot;vue&amp;quot;;
-
-export default {
-  name: &amp;quot;ComponentName&amp;quot;,
-  props: [&#39;title&#39;],
-  
-  setup(props, context) {
-    const count = ref(0)
-
-    function increment() {
-      count.value++
-    }
-
-    onMounted(() =&amp;gt; {
-      console.log(`${props.title}: the initial count is ${count.value}.`)
-    })
-
-    return {
-      count,
-      increment,
-    }
-  }
-}
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;El valor del contador es: { { count }}&amp;lt;p&amp;gt;
-    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Incrementar&amp;lt;/button&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Fijaos que para hacer reactiva una variable hemos de declararla con &lt;code&gt;ref&lt;/code&gt; y su valor lo obtenemos dentro de la propiedad &lt;code&gt;.value&lt;/code&gt;, aunque en el &lt;em&gt;&amp;lt;template&amp;gt;&lt;/em&gt; no es necesario poner el &lt;em&gt;.value&lt;/em&gt;. En el caso de objetos (incluidos arrays) se hacen reactivos con &lt;code&gt;reactive&lt;/code&gt; como veremos al hablar de la &lt;a href=&quot;https://pedroporo.github.io/#reactividad-en-vue3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;reactividad&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Las funciones podemos ponerlas como &lt;em&gt;arrow functions&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    const increment = () =&amp;gt; {
-      count.value++
-    }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;setup&quot; tabindex=&quot;-1&quot;&gt;setup&lt;/h2&gt;
-&lt;p&gt;Lo primero que hace un componente que usa esta API es ejecutar su método &lt;em&gt;setup&lt;/em&gt;, antes de evaluar ninguna otra característica (&lt;em&gt;data&lt;/em&gt;, &lt;em&gt;computed&lt;/em&gt;, &lt;em&gt;hooks&lt;/em&gt;, ...). Por tanto este método no tiene acceso a &lt;em&gt;this&lt;/em&gt; como el resto. Para que pueda acceder a datos que pueda necesitar recibe 2 parámetros:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;props&lt;/strong&gt;: aquí recibe los parámetros pasados al componente. Todos ellos son reactivos y se pueden observar con un &lt;em&gt;watch&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;context&lt;/strong&gt;: es un objeto con las propiedades &lt;em&gt;attrs&lt;/em&gt;, &lt;em&gt;slots&lt;/em&gt;, &lt;em&gt;parent&lt;/em&gt; y &lt;em&gt;emit&lt;/em&gt;. Nos permite acceder a lo que antes accedíamos desde &lt;em&gt;this&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;El &lt;em&gt;hook&lt;/em&gt; &lt;strong&gt;&lt;code&gt;setup()&lt;/code&gt;&lt;/strong&gt; se encarga de:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;tareas de inicialización del componente: todo lo que antes se hacía en &lt;em&gt;created()&lt;/em&gt; o &lt;em&gt;mounted()&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;tareas de definición: aquí se definen las variables (que antes estaban en &lt;em&gt;data&lt;/em&gt;), variables calculadas (antes &lt;em&gt;computed&lt;/em&gt;), funciones (antes &lt;em&gt;methods&lt;/em&gt;) o los &lt;em&gt;watchers&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;devolver los elementos que se puedan usar en el &lt;em&gt;&amp;lt;template&amp;gt;&lt;/em&gt; (variables y funciones)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;and-lt-script-setup-and-gt&quot; tabindex=&quot;-1&quot;&gt;&amp;lt;script setup&amp;gt;&lt;/h3&gt;
-&lt;p&gt;Además de la sintaxis que hemos visto arriba existe una forma &#39;reducida&#39; de escribir la parte de &amp;lt;script&amp;gt; que es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import { ref, defineProps, onMounted } from &amp;quot;vue&amp;quot;;
-
-const props = defineProps([&#39;title&#39;])
-const count = ref(0)
-
-const increment = () =&amp;gt; {
-  count.value++
-}
-
-onMounted(() =&amp;gt; {
-  console.log(`${props.title}: the initial count is ${count.value}.`)
-})
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;El valor del contador es: { { count }}&amp;lt;p&amp;gt;
-    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Incrementar&amp;lt;/button&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso no es necesario exportar nada (por defecto se exportan las variables y funciones definidas).&lt;/p&gt;
-&lt;p&gt;Esta es la &lt;strong&gt;sintaxis recomendada&lt;/strong&gt; cuando usamos SFC por simplicidad y rendimiento tal y como se indica en la &lt;a href=&quot;https://vuejs.org/api/sfc-script-setup.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación de Vue3&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;reactividad-en-vue3&quot; tabindex=&quot;-1&quot;&gt;Reactividad en Vue3&lt;/h2&gt;
-&lt;p&gt;En la &lt;em&gt;composition API&lt;/em&gt; de Vue3 sólo las variables recogidas en &lt;em&gt;props&lt;/em&gt; son reactivas. Cualquier otra declarada en el &lt;em&gt;setup&lt;/em&gt; que queramos que lo sea debemos declararla con &lt;code&gt;ref&lt;/code&gt; si es un tipo primitivo o &lt;code&gt;reactive&lt;/code&gt; si es un objeto.&lt;/p&gt;
-&lt;p&gt;La función &lt;code&gt;ref&lt;/code&gt; envuelve la variable en un Proxy reactivo. El valor de la variable estará en su propiedad &lt;code&gt;.value&lt;/code&gt;, aunque desde el template podemos usarla directamente como hemos visto en el código anterior.&lt;/p&gt;
-&lt;p&gt;En el caso de variables de tipos no primitivos (objetos, arrays, ...) se declaran con &lt;em&gt;reactive&lt;/em&gt; pero en este caso no es necesario usar la propiedad &lt;code&gt;.value&lt;/code&gt; (es lo mismo que hace el método &lt;code&gt;data()&lt;/code&gt; en la &lt;em&gt;options API&lt;/em&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import { reactive, defineProps, onMounted } from &amp;quot;vue&amp;quot;;
-
-const props = defineProps([&#39;title&#39;])
-const counter = reactive({ count: 0})
-
-const increment = () =&amp;gt; {
-  counter.count++
-}
-
-onMounted(() =&amp;gt; {
-  console.log(`${props.title}: the initial count is ${counter.count}.`)
-})
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt;El valor del contador es: { { counter.count }}&amp;lt;p&amp;gt;
-    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Incrementar&amp;lt;/button&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Sin embargo si cambiamos la referencia del objeto (por ejemplo si lo desestructuramos) pierde su reactividad.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { reactive } from &amp;quot;vue&amp;quot;;
-
-const counter = reactive({ count: 0})
-let { count } = counter   // count no es reactivo
-count++   // no afecta a counter.count
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para hacerlo reactivo deberíamos usar el método &lt;code&gt;toRef()&lt;/code&gt; o &lt;code&gt;toRefs()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { reactive } from &amp;quot;vue&amp;quot;;
-
-const counter = reactive({ count: 0})
-let { count } = toRefs(counter)   // count SÍ es reactivo
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O bien, si queremos trabajar con las propiedades de un objeto podemos declararlas con &lt;code&gt;ref&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { ref } from &amp;quot;vue&amp;quot;;
-
-const counter = { count: ref(0) }
-let { count } = counter   // count SÍ es reactivo
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;También hay métodos para ver si una variable es reactiva:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;isRef(variable)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;isReactive(variable)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Podéis ver esto con más detalle en:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://escuelavue.es/tips/ref-vs-reactive-vue-3/?utm_source=newsletter&amp;amp;utm_medium=email&amp;amp;utm_campaign=cuando_usar_ref_vs_reactive_en_vue_3&amp;amp;utm_term=2022-05-29&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Escuela VUE&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://vuejs.org/api/reactivity-core.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Documentación de Vue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;configuraciones-basicas&quot; tabindex=&quot;-1&quot;&gt;Configuraciones básicas&lt;/h2&gt;
-&lt;h3 id=&quot;em-props-em&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;Props&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;Para tener acceso a las &lt;em&gt;props&lt;/em&gt; hay que hacerlas accesibles con &lt;code&gt;defineProps&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import { defineProps } from &amp;quot;vue&amp;quot;;
-
-defineProps([&#39;title&#39;])
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si necesitamos acceder a ellas desde el código las asignamos a una variable:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import { onMounted, defineProps } from &amp;quot;vue&amp;quot;;
-
-const props = defineProps([&#39;title&#39;])
-
-onMounted(() =&amp;gt; {
-  console.log(`El parámetro pasado en &#39;title&#39; es ${props.title}`)
-})
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{ { title }}&amp;lt;/h1&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;em-components-em&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;Components&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;No necesitamos registrarlos, basta con importarlos y ya se pueden usar:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import ErrorMessages from &amp;quot;./components/ErrorMessages.vue&amp;quot;;
-import AppNav from &amp;quot;./components/AppNav.vue&amp;quot;;
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;app-nav&amp;gt;&amp;lt;/app-nav&amp;gt;
-    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-      &amp;lt;error-messages&amp;gt;&amp;lt;/error-messages&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;em-computed-em&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;Computed&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;El uso de &lt;em&gt;computed&lt;/em&gt; cambia ya que ahora es una función en lugar de un objeto.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;# Options API
-data(): {
-  return {
-    productPrice: 100
-  }
-},
-computed: {
-  offerPrice() {
-    return this.productPrice * 50%
-  },
-  originalPrice() {
-    return this.productPrice
-  },
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Composition API
-import { ref, computed } from &amp;quot;vue&amp;quot;;
-
-const productPrice = ref(100)
-
-const offerPrice = computed(() =&amp;gt; productPrice.value * 50%)
-const originalPrice = computed(() =&amp;gt; productPrice.value)
-...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Todas las variables definidas como &lt;em&gt;computed&lt;/em&gt; son automáticamente reactivas.&lt;/p&gt;
-&lt;h3 id=&quot;hooks&quot; tabindex=&quot;-1&quot;&gt;hooks&lt;/h3&gt;
-&lt;p&gt;Se les antepone &lt;em&gt;on&lt;/em&gt; (ej, &lt;code&gt;onMounted&lt;/code&gt;). Ya no son necesarios ni &lt;em&gt;beforeCreated&lt;/em&gt; ni &lt;em&gt;created&lt;/em&gt; que son sustituidas por el &lt;code&gt;setup&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Podéis ver esto con más detalle en la &lt;a href=&quot;https://vuejs.org/api/composition-api-lifecycle.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación de Vue&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;router&quot; tabindex=&quot;-1&quot;&gt;router&lt;/h3&gt;
-&lt;p&gt;Para acceder al &lt;em&gt;router&lt;/em&gt; y a la variable &lt;em&gt;route&lt;/em&gt; en &lt;em&gt;composition API&lt;/em&gt; tenemos que importarlas de &lt;em&gt;vue-router&lt;/em&gt; e instanciarlas, ya que no tenemos acceso a &lt;em&gt;this&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { useRouter, useRoute } from &#39;vue-router&#39;
-
-const router = useRouter()
-const route = useRoute()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;watch-effect-y-watch&quot; tabindex=&quot;-1&quot;&gt;watchEffect y watch&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;watch&lt;/em&gt; funciona como en &lt;em&gt;Vue2&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;# Vue 3
-import { ref, watch } from &amp;quot;vue&amp;quot;;
-setup(props) {
-  const productPrice = ref(props.price);
-  watch(productPrice, (current, prev) =&amp;gt; {
-    console.log(&#39;productPrice current: &#39; + current + &#39;, prev: &#39; + prev)
-  })
-  ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;watchEffect&lt;/em&gt; es una función que se ejecuta inmediatamente y cada vez que cambie alguna de sus dependencias reactivas:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { ref, watchEffect } from &amp;quot;vue&amp;quot;;
-setup(props) {
-  const productPrice = ref(props.price);
-  watchEffect(() =&amp;gt; {
-    console.log(&#39;productPrice current: &#39; + productPrice.value)
-  })
-  ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos obtener más información sobre cuándo usar un u otro método en &lt;a href=&quot;https://escuelavue.es/tips/vue-3-watch-vs-watcheffect/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Escuela VUE&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h3&gt;
-&lt;p&gt;Los ficheros de &lt;em&gt;store&lt;/em&gt; no cambian pero sí la forma de usarlos en el componente. Allí se importa el &lt;em&gt;store&lt;/em&gt; y cada variable, &lt;em&gt;getter&lt;/em&gt; o &lt;em&gt;action&lt;/em&gt; que queramos usar en el componente:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-import { useCounterStore } from &#39;../stores/counterStore&#39;;
-import { computed } from &#39;vue&#39;;
-
-   // store
-   const counterStore = useCounterStore();
-
-   //state &amp;amp; getters
-   const count = computed(() =&amp;gt; counterStore.count);  // state
-   const lastOperation = computed(() =&amp;gt; counterStore.lastOperation);  // getter
-
-   //actions
-   const increment = () =&amp;gt; counterStore.increment();
-   const decrement = () =&amp;gt; counterStore.decrement();
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-    &amp;lt;div&amp;gt;
-        &amp;lt;p&amp;gt;Counter: { { count }}&amp;lt;/p&amp;gt;
-        &amp;lt;p&amp;gt;Last: { { lastOperation }}&amp;lt;/p&amp;gt;
-        &amp;lt;button @click=&amp;quot;increment()&amp;quot;&amp;gt;Add&amp;lt;/button&amp;gt;
-        &amp;lt;button @click=&amp;quot;decrement()&amp;quot;&amp;gt;Subtract&amp;lt;/button&amp;gt;
-    &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;reusabilidad-em-composables-em&quot; tabindex=&quot;-1&quot;&gt;Reusabilidad: &lt;em&gt;composables&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;La principal razón de ser de la &lt;em&gt;composition API&lt;/em&gt; es que permite usar funciones &lt;strong&gt;&lt;em&gt;composables&lt;/em&gt;&lt;/strong&gt;, que son funciones donde podemos poner código &lt;em&gt;con estado&lt;/em&gt; (es decir, que usa variables reactivas). El nombre de las funciones &lt;em&gt;composables&lt;/em&gt; por convenio comienza por &lt;em&gt;use&lt;/em&gt; y se usan para encapsular código que podrá usar cualquier componente.&lt;/p&gt;
-&lt;p&gt;Por ejemplo podemos hacer una &lt;em&gt;composable&lt;/em&gt; que nos proporcione la posición actual del ratón:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// mouse.js
-
-import { ref, onMounted, onUnmounted } from &#39;vue&#39;
-
-export function useMouse() {
-  const x = ref(0)
-  const y = ref(0)
-
-  function update(event) {
-    x.value = event.pageX
-    y.value = event.pageY
-  }
-
-  onMounted(() =&amp;gt; window.addEventListener(&#39;mousemove&#39;, update))
-  onUnmounted(() =&amp;gt; window.removeEventListener(&#39;mousemove&#39;, update))
-
-  return { x, y }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La función &lt;em&gt;useMouse&lt;/em&gt; proporciona a quien la importe 2 variables reactivas (&lt;em&gt;x&lt;/em&gt; e &lt;em&gt;y&lt;/em&gt;) donde se encuentra la posición actual del ratón, actualizada por la función &lt;em&gt;update&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;En cualquier componente donde necesitemos conocer la posición del ratón sólo necesitamos importar esta función:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-  import { useMouse } from &#39;./useMouse&#39;;
-  const { x, y } = useMouse();
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  X: { { x }} Y: { { y }}
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Siempre que pongamos un escuchador en una &lt;em&gt;composable&lt;/em&gt; (como hemos hecho en el &lt;code&gt;onMounted&lt;/code&gt;) debemos quitarlo cuando ya no se utilice (en el &lt;code&gt;unMounted&lt;/code&gt;).&lt;/p&gt;
-&lt;h3 id=&quot;valores-devueltos&quot; tabindex=&quot;-1&quot;&gt;Valores devueltos&lt;/h3&gt;
-&lt;p&gt;Como se ve la &lt;em&gt;composable&lt;/em&gt; devuelve un objeto formado por variables reactivas (&lt;em&gt;refs&lt;/em&gt;) en lugar de un objeto reactivo. Se hace así por convención, lo que permite desestructurar las variables en el componente que las vaya a usar sin perder su reactividad (al desestructurar un &lt;em&gt;reactive&lt;/em&gt; deja de serlo).&lt;/p&gt;
-&lt;p&gt;Si lo hubiéramos hecho con un &lt;em&gt;reactive&lt;/em&gt; NO funcionaría:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// mouse.js MAL
-
-import { reactive, onMounted, onUnmounted } from &#39;vue&#39;
-
-export function useMouse() {
-  const x = 0
-  const y = 0
-
-  ...
-  return reactive({ x, y })
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;porque entonces al hacer en el componente&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;  const { x, y } = useMouse();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;las variables &lt;em&gt;x&lt;/em&gt; e &lt;em&gt;y&lt;/em&gt; dejarían de ser reactivas.&lt;/p&gt;
-&lt;p&gt;Podría hacerse no desestructurando el objeto, pero se prefiere así por claridad, para tener claras qué variables nos proporciona la función:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-  import { useMouse } from &#39;./useMouse&#39;;
-  const position = useMouse();
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  X: { { position.x }} Y: { { position.y }}
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Esto sí funcionaría pero se recomienda la otra forma: una &lt;em&gt;composable&lt;/em&gt; devuelve un array de variables reactivas que se importan (desestructurando el objeto) en el componente que las vaya a usar.&lt;/p&gt;
-&lt;h3 id=&quot;paso-de-parametros&quot; tabindex=&quot;-1&quot;&gt;Paso de parámetros&lt;/h3&gt;
-&lt;p&gt;Podemos pasar parámetros a las funciones &lt;em&gt;composables&lt;/em&gt; en el momento de usarlas y dichos parámetros los recibirá directamente la &lt;em&gt;composable&lt;/em&gt; como cualquier otra función.&lt;/p&gt;
-&lt;p&gt;Por ejemplo podemos crear &lt;em&gt;useFetch&lt;/em&gt; a la que le pasamos una &lt;em&gt;url&lt;/em&gt; y hace un &lt;em&gt;fetch&lt;/em&gt; para hacer la llamada a esa url y devolver los datos o el error devueltos por el servidor.&lt;br /&gt;
-El componente que quiera usarla haría:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;script setup&amp;gt;
-  import { useFetch } from &#39;./useFetch&#39;;
-  const { data, error } = useFetch(&#39;https://jsonplaceholder.typicode.com/users/3&#39;)
-&amp;lt;/script&amp;gt;
-
-&amp;lt;template&amp;gt;
-  &amp;lt;div v-if=&amp;quot;error&amp;quot;&amp;gt;{{ error }}&amp;lt;/div&amp;gt;
-  &amp;lt;div v-else&amp;gt;
-    // Aquí mostramos los datos recibidos en la variable &#39;data&#39;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y nuestra función haría:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// useFetch.js
-import { ref } from &#39;vue&#39;
-
-export function useFetch(url) {
-  const data = ref(null)
-  const error = ref(null)
-
-  fetch(url)
-    .then((res) =&amp;gt; res.json())
-    .then((json) =&amp;gt; (data.value = json))
-    .catch((err) =&amp;gt; (error.value = err))
-
-  return { data, error }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si el parámetro recibido es reactivo podemos hacer que la función se ejecute cada vez que cambie observándolo con &lt;em&gt;watch&lt;/em&gt; o &lt;em&gt;watchEffect&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// fetch.js
-import { ref, watch } from &#39;vue&#39;
-
-export function useFetch(url) {
-  const data = ref(null)
-  const error = ref(null)
-
-  function doFetch() {
-    fetch(url.value)
-      .then((res) =&amp;gt; res.json())
-      .then((json) =&amp;gt; (data.value = json))
-      .catch((err) =&amp;gt; (error.value = err))
-  }
-
-  watch(url, () =&amp;gt; doFetch())
-  
-  return { data, error }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si nuestras &lt;em&gt;composables&lt;/em&gt; pueden recibir parámetros reactivos siempre es una buena práctica que puedan recibir también parámetros primitivos (en el caso anterior daría un error al hacer &lt;code&gt;fetch(url.value)&lt;/code&gt; porque url es un &lt;em&gt;string&lt;/em&gt;). La forma más correcta de hacerlo sería:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// fetch.js
-import { ref, isRef, unref, watchEffect } from &#39;vue&#39;
-
-export function useFetch(url) {
-  const data = ref(null)
-  const error = ref(null)
-
-  function doFetch() {
-    // reset state before fetching..
-    data.value = null
-    error.value = null
-    // unref() unwraps potential refs
-    fetch(unref(url))
-      .then((res) =&amp;gt; res.json())
-      .then((json) =&amp;gt; (data.value = json))
-      .catch((err) =&amp;gt; (error.value = err))
-  }
-
-  if (isRef(url)) {
-    // setup reactive re-fetch if input URL is a ref
-    watchEffect(doFetch)
-  } else {
-    // otherwise, just fetch once
-    // and avoid the overhead of a watcher
-    doFetch()
-  }
-
-  return { data, error }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso se ha hecho una función que va a funcionar tanto si se le pasa un url estática como si se le pasa una reactiva. Lo que ha cambiado es:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;isRef&lt;/code&gt;: nos dice si el parámetro pasado es o no reactivo. Si no lo es llama directamente a la función. Si lo es hace&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;watchEffect&lt;/code&gt;: cada vez que cambie el valor de &lt;em&gt;url&lt;/em&gt; llamará a la función&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;unref&lt;/code&gt;: devuelve el &lt;code&gt;.value&lt;/code&gt; de una variable si es reactiva o la variable si no lo es. Si &lt;em&gt;url&lt;/em&gt; es reactiva devuelve &lt;code&gt;url.value&lt;/code&gt; y si no devuelve &lt;code&gt;url&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;organizar-el-codigo-con-em-composables-em&quot; tabindex=&quot;-1&quot;&gt;Organizar el código con &lt;em&gt;composables&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;Además de para que el código sea fácilmente reutilizable, las &lt;em&gt;composables&lt;/em&gt; se usan para sacar código de un componente cuando este es demasiado grande o se encarga de varias funcionalidades. Una vez creadas las funciones se usan en el componente:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;&amp;lt;script setup&amp;gt;
-import { useFeatureA } from &#39;./featureA.js&#39;
-import { useFeatureB } from &#39;./featureB.js&#39;
-import { useFeatureC } from &#39;./featureC.js&#39;
-
-const { foo, bar } = useFeatureA()
-const { baz } = useFeatureB(foo)
-const { qux } = useFeatureC(baz)
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si tenemos que usar una función &lt;em&gt;composable&lt;/em&gt; en un componente escrito en modo &lt;em&gt;Options API&lt;/em&gt; simplemente añadimos el &lt;em&gt;hook&lt;/em&gt; &lt;code&gt;setup&lt;/code&gt; y allí la llamamos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { useMouse } from &#39;./mouse.js&#39;
-import { useFetch } from &#39;./fetch.js&#39;
-
-export default {
-  setup() {
-    const { x, y } = useMouse()
-    const { data, error } = useFetch(&#39;...&#39;)
-    return { x, y, data, error }
-  },
-  mounted() {
-    // setup() exposed properties can be accessed on `this`
-    console.log(this.x)
-  }
-  // ...other options
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Algunos enlaces útiles:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/vue-composition-api-reusable-components/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;How to Create Reusable Components with the Vue 3 Composition API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://mokkapps.de/blog/why-i-love-vue-3-s-composition-api/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Why I Love Vue 3&#39;s Composition API&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Podemos encontrar infinidad de &lt;em&gt;composables&lt;/em&gt; que podemos usar en nuestro código en la página &lt;a href=&quot;https://vueuse.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;VueUse&lt;/a&gt;.&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/" >
-        </entry>
-        <entry>
-            <title>
-                0x-testing
-                
-            </title>
-            <updated>2025-09-15T16:36:23Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
-            <content type="html">
-                &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
-&lt;p&gt;La librería que incluye Vue para testear las aplicaciones el &lt;strong&gt;vue-test_utils&lt;/strong&gt; que proporciona herramientas para montar e interactuar con componentes. Para los tests unitarios usaremos &lt;a href=&quot;https://jestjs.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Jest&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Tras instalar la librería con npm (será una dependencia de desarrollo) indicaremos al &lt;em&gt;linter&lt;/em&gt; que vamos a usar jest para que no genere advertencias al usar sus comandos para lo que modificaremos el fichero &lt;em&gt;.eslintrc.js&lt;/em&gt; y añadiremos al apartado &lt;em&gt;env&lt;/em&gt; una línea indicando que vamos a usar jest. Dicho apartado quedará:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;  env: {
-    node: true,
-    jest: true,
-  },
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si usamos librerías como Vue-Material o Vuetify y debemos importar ficheros .css de las mismas en nuestros componentes es posible que falle Jest a la hora de pasar los test y nos dará un error de que no puede procesar el fichero porque no es Javascript. Podemos solucionarlo instalando para desarrollo el paquete &lt;em&gt;identuty-obj-proxy&lt;/em&gt; y añadiendo una entrada para &lt;em&gt;moduleNameMapper&lt;/em&gt; al fichero de configuración de Jest &lt;strong&gt;jest.config.js&lt;/strong&gt; que quedará:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;module.exports = {
-  preset: &#39;@vue/cli-plugin-unit-jest&#39;,
-  moduleNameMapper: {
-    &amp;quot;&#92;&#92;.(css|less|scss|sass)$&amp;quot;: &amp;quot;identity-obj-proxy&amp;quot;
-  },
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;(fuente: &lt;a href=&quot;https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://stackoverflow.com/questions/46177148/how-to-exclude-css-module-files-from-jest-test-suites&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;tests-unitarios&quot; tabindex=&quot;-1&quot;&gt;Tests unitarios&lt;/h2&gt;
-&lt;p&gt;A la hora de crear el proyecto no escogeremos &lt;em&gt;preset&lt;/em&gt; sino que seleccionaremos manualmente las características a instalar y marcaremos la de tests unitarios con &lt;em&gt;Jest&lt;/em&gt; que es la librería que usamos en el bloque de Javascript.&lt;/p&gt;
-&lt;p&gt;Para ejecutar los tests ejecutaremos en la terminal&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm run test:unit
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El projecto está configurado para ejecutar los ficheros de pruebas cuyo nombre acabe por &lt;strong&gt;.spec.js&lt;/strong&gt;. Por defecto se guardan en la carpeta &lt;strong&gt;/tests&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;primer-test-hello-world-vue&quot; tabindex=&quot;-1&quot;&gt;Primer test: HelloWorld.vue&lt;/h3&gt;
-&lt;p&gt;En primer lugar vamos a analizar el test que hay hecho en &lt;strong&gt;@/tests/exemple.spec.js&lt;/strong&gt; para testear el componente HelloWorld.vue:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;
-import HelloWorld from &#39;@/components/HelloWorld.vue&#39;
-
-describe(&#39;HelloWorld.vue&#39;, () =&amp;gt; {
-  it(&#39;renders props.msg when passed&#39;, () =&amp;gt; {
-    const msg = &#39;new message&#39;
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
-    })
-    expect(wrapper.text()).toMatch(msg)
-  })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Lo primero que hay que hacer es importar el plugin de tests de vue y el componente a testear. Dentro de la prueba se monta el componente (&lt;code&gt;shallowMount&lt;/code&gt;) y se le pasan las props que necesite (msg). A esta función se le pasa un componente y devuelve la instancia de Vue creada para él y su nodo del DOM.&lt;/p&gt;
-&lt;p&gt;Como segundo parámetro se le puede pasar un objeto con opciones a montar en el componente (por ejemplo un &lt;em&gt;data&lt;/em&gt; que sustituirá al del componente) o, como en el ejemplo anterior, los parámetros que se le pasan al componente (en &lt;em&gt;propsData&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;Además de &lt;code&gt;shallowMount&lt;/code&gt; podemos usar (si lo importamos) el método &lt;code&gt;mount&lt;/code&gt; que hace lo mismo pero también renderiza los subcomponentes que tenga el componente.&lt;/p&gt;
-&lt;p&gt;Por último se comprueba que el texto renderizado por el &lt;em&gt;template&lt;/em&gt; del componente incluye el mensaje pasado. La variable &lt;em&gt;wrapper&lt;/em&gt; es el nodo DOM raíz del componente y podemos obtener su &lt;em&gt;textContent&lt;/em&gt; (&lt;code&gt;.text()&lt;/code&gt;), su &lt;em&gt;innerHTML&lt;/em&gt; (&lt;code&gt;.html()&lt;/code&gt;), sus atributos (&lt;code&gt;.attributes()&lt;/code&gt;, y para acceder a uno, por ejemplo la id haríamos &lt;code&gt;.attributes().id&lt;/code&gt; ), sus clases (&lt;code&gt;.classes()&lt;/code&gt;), etc.Podemos ver todos sus métodos en la &lt;a href=&quot;https://vue-test-utils.vuejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación oficial de Vue test utils&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;También podríamos haber hecho la siguiente comprobación:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    expect(wrapper.html()).toMatch(&#39;&amp;lt;h1&amp;gt;&#39;+msg+&#39;&amp;lt;/h1&amp;gt;&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;o bien comprobar directamente el valor de &lt;em&gt;prop&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;    expect(wrapper.props().msg).toBe(msg)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comprobar-atributos-clases-y-estilos-en-linea&quot; tabindex=&quot;-1&quot;&gt;Comprobar atributos, clases y estilos en línea&lt;/h3&gt;
-&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;Testing dom attributes&amp;lt;/h1&amp;gt;
-    &amp;lt;a href=&amp;quot;https://google.com&amp;quot; class=&amp;quot;link&amp;quot; style=&amp;quot;color:green&amp;quot;&amp;gt;Google&amp;lt;/a&amp;gt;  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-
-&amp;lt;script&amp;gt;
-export default {};
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y el test es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import App from &#39;../src/App.vue&#39;
-import { shallowMount } from &#39;@vue/test-utils&#39;;
-
-describe(&#39;Testing dom attributes&#39;, () =&amp;gt; {
-    it(&#39;checks href to google &#39;, () =&amp;gt; {
-        const wrapper = shallowMount(App);
-        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
-        expect(a.attributes().href).toBe(&#39;https://google.com&#39;)
-    })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si lo que queremos comprobar son las clases, estas tienen su propio método:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;Testing class&#39;, () =&amp;gt; {
-    it(&#39;checks the class to be link&#39;, () =&amp;gt; {
-        const wrapper = shallowMount(App);
-        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
-        expect(a.classes()).toContain(&#39;link&#39;)
-    })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y lo mismo ocurre para comprobar un estilo:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;Testing style&#39;, () =&amp;gt; {
-    it(&#39;checks the inline style color to be green&#39;, () =&amp;gt; {
-        const wrapper = shallowMount(App);
-        const a = wrapper.find(&#39;a&#39;); //finds an `a` element
-        expect(a.style.color).toBe(&#39;green&#39;)
-    })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comprobar-un-metodo-de-un-componente&quot; tabindex=&quot;-1&quot;&gt;Comprobar un método de un componente&lt;/h3&gt;
-&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;    &amp;lt;button @click=&amp;quot;changeTitle&amp;quot;&amp;gt;Change title&amp;lt;/button&amp;gt;  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-
-&amp;lt;script&amp;gt;
-export default {
-  data: function() {
-    return {
-      title: &amp;quot;Hello&amp;quot;    };
-  },
-  methods: {
-    changeTitle() {
-      this.title = &amp;quot;Hi&amp;quot;;    }
-  }
-};
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y el test es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;;
-import Post from &#39;../src/components/Welcome.vue&#39;
-describe(&#39;Testing Component Methods&#39;, () =&amp;gt; {
-    const wrapper = shallowMount(Post);
-
-    it(&#39;correctly updates the title when changeTitle is called&#39;, () =&amp;gt; {
-        expect(wrapper.vm.title).toBe(&#39;Hello&#39;); //initial title Hello
-        wrapper.vm.changeTitle();  // calling component method
-        expect(wrapper.vm.title).toBe(&#39;Hi&#39;); // title updates to Hi
-    })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comprobar-que-un-metodo-es-llamado-al-producirse-un-evento&quot; tabindex=&quot;-1&quot;&gt;Comprobar que un método es llamado al producirse un evento&lt;/h3&gt;
-&lt;p&gt;El componente que vamos a probar es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;{{count}}&amp;lt;/h1&amp;gt;
-    &amp;lt;button @click=&amp;quot;increment&amp;quot;&amp;gt;Increment&amp;lt;/button&amp;gt;  &amp;lt;/div&amp;gt;
-&amp;lt;/template&amp;gt;
-
-&amp;lt;script&amp;gt;
-export default {
-  data: function() {
-    return {
-      count:0
-    };
-  },
-  methods: {
-    increment() {
-      this.count++;
-    }
-  }
-};
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y el test es:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;;
-import Post from &#39;../src/components/Counter.vue&#39;
-
-describe(&#39;Testing native dom events&#39;, () =&amp;gt; {
-    const wrapper = shallowMount(Post);
-
-    it(&#39;calls increment method when button is clicked&#39;, () =&amp;gt; {
-        const increment = jest.fn(); // mock function
-        // updating method with mock function
-        wrapper.setMethods({ increment });
-        //find the button and trigger click event
-        wrapper.find(&#39;button&#39;).trigger(&#39;click&#39;);
-        expect(increment).toBeCalled();
-    })
-
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Fuente: &lt;a href=&quot;https://reactgo.com/vue-test-dom-events/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Dom events in Vue.js using Jest and vue-test-utils. Sai gowtham&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;comprobar-que-el-dom-reacciona-a-cambios-en-una-variable-reactiva&quot; tabindex=&quot;-1&quot;&gt;Comprobar que el DOM reacciona a cambios en una variable reactiva&lt;/h3&gt;
-&lt;p&gt;Dado que Vue realiza las actualizaciones de DOM de forma asíncrona, las comprobaciones sobre las actualizaciones de DOM resultantes del cambio de estado, deberán realizarse en un callback &lt;code&gt;Vue.nextTick&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;it(&#39;button click should increment the count text&#39;, async () =&amp;gt; {
-  expect(wrapper.text()).toContain(&#39;0&#39;)
-  const button = wrapper.find(&#39;button&#39;)
-  button.trigger(&#39;click&#39;)
-  await Vue.nextTick()
-  expect(wrapper.text()).toContain(&#39;1&#39;)
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;comprobar-peticiones-asincronas-a-servicios-ajenos-a-vue&quot; tabindex=&quot;-1&quot;&gt;Comprobar peticiones asíncronas a servicios ajenos a Vue&lt;/h3&gt;
-&lt;p&gt;En muchos casos hacemos peticiones asíncronas, como peticiones a una API. Podéis obtener información en:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://vue-test-utils.vuejs.org/guides/testing-async-components.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Doc Vue test utils&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://jestjs.io/docs/es-ES/mock-functions&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Jest: Mock Functions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nuestro-primer-test-todo-item-vue&quot; tabindex=&quot;-1&quot;&gt;Nuestro primer test: TodoItem.vue&lt;/h3&gt;
-&lt;p&gt;En primer lugar vamos a testear que la propiedad &#39;done&#39; tiene el valor que se le pasa y que cambia al llamar a la función &#39;toogleDone&#39;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import { shallowMount } from &#39;@vue/test-utils&#39;
-import Usuario from &#39;@/components/Usuario.vue&#39;
-
-describe(&#39;componente Usuario.vue&#39;, () =&amp;gt; {
- it(&#39;debe cambiar el valor a true&#39;, () =&amp;gt; {
-  /// Crea una instancia del componente
-  const wrapper = shallowMount(Usuario);
-
-  /// Evalúa que el valor por defecto sea &amp;quot;false&amp;quot;
-  expect(wrapper.vm.usuarioActivo).toBe(false);
-
-  /// Ejecuta el metodo que cambia el valor de la variable a &amp;quot;true&amp;quot;
-  wrapper.vm.activarUsuario();
-
-  /// Evalúa que el nuevo valor usuarioActivo sea &amp;quot;true&amp;quot;
-  expect(wrapper.vm.usuarioActivo).toBe(true);
- })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;testear-vuex&quot; tabindex=&quot;-1&quot;&gt;Testear Vuex&lt;/h3&gt;
-&lt;p&gt;Normalmente nuestros componentes usaran Vuex para:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;hacer un &lt;em&gt;commit&lt;/em&gt; a una &lt;em&gt;mutation&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;hacer un &lt;em&gt;dispatch&lt;/em&gt; a una &lt;em&gt;action&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;acceder a los datos mediante &lt;em&gt;state&lt;/em&gt; o &lt;em&gt;getters&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;testear-mutations&quot; tabindex=&quot;-1&quot;&gt;Testear mutations&lt;/h4&gt;
-&lt;p&gt;Es sencillo porque sólo son llamadas Javascript. Ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// store.js
-...
-mutations: {
-      addPost(state, post) {
-        state.posts.push(post);
-      },
-}
-...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// store.spec.js
-import { mutations } from &amp;quot;@/store/index.js&amp;quot;
-
-describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
-  it(&amp;quot;adds a post to the state&amp;quot;, () =&amp;gt; {
-    const post = { id: 1, title: &amp;quot;Primer post&amp;quot; }
-    const state = {
-      posts: [],
-    }
-
-    mutations.addPost(state, post)
-
-    expect(state).toEqual({
-      posts: [ { id: 1, title: &#39;Primer post&#39; } ]
-    })
-  })
-})
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&quot;testear-actions&quot; tabindex=&quot;-1&quot;&gt;Testear actions&lt;/h4&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;ejemplo&quot; tabindex=&quot;-1&quot;&gt;Ejemplo&lt;/h3&gt;
-&lt;p&gt;Podéis encontrar un completo ejemplo de cómo testear una aplicación &lt;em&gt;ToDo&lt;/em&gt; en &lt;a href=&quot;https://www.adictosaltrabajo.com/2018/10/25/testing-en-componentes-de-vue-js/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Adictos al trabajo - Testing en componentes de Vue.js&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Podéis encontrar ejemplos más completos en muchas páginas, como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[Testing Vue]&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://lmiller1990.github.io/vue-testing-handbook/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vue Testing Handbook&lt;/a&gt;: completo tutorial de cómo testear todo en nuestros componentes Vue (props, computed, Vuex, router, ...)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://lmiller1990.github.io/vue-testing-handbook/testing-vuex.html#testing-vuex&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Vuex&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://livebook.manning.com/book/testing-vue-js-applications/about-this-book/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Vue.js Applications&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Fuentes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://vue-test-utils.vuejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vue test utils&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://es.vuejs.org/v2/guide/unit-testing.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Documentación oficial de Vue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://reactgo.com/vue-test-dom-events/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ReactGo: Vue tutorials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://carlossolis.mobi/pruebas-unitarias-en-vue-js-setup-y-primeros-pasos-7255788f3e3b&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pruebas unitarias en Vue.js: Setup y primeros pasos. Carlos Solis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;test-e2e&quot; tabindex=&quot;-1&quot;&gt;Test e2e&lt;/h2&gt;
-&lt;p&gt;No comprueban un componente sino un &lt;em&gt;workflow&lt;/em&gt; completo, por ejemplo, que el usuario introduce algo como nombre de nueva tarea, pulsa enviar y se añade la tarea a la lista.&lt;/p&gt;
-&lt;p&gt;Al pasar los tests arranca un servidor de tests (&lt;em&gt;selenium&lt;/em&gt;) y un navegador donde hace las pruebas y luego los cierra.&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/" >
-        </entry>
-        <entry>
-            <title>
                 Indice
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;Asignaturas:&lt;/strong&gt;&lt;br /&gt;
@@ -1360,7 +517,7 @@ Tutoria&lt;br /&gt;
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -1529,7 +686,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -1764,7 +921,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -2332,7 +1489,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -2607,7 +1764,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -2642,7 +1799,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -3111,7 +2268,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -3611,7 +2768,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -3977,7 +3134,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -4222,7 +3379,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -4712,7 +3869,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -5009,7 +4166,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -5432,7 +4589,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -5963,7 +5120,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -6422,7 +5579,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -6715,7 +5872,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -6912,7 +6069,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -7201,7 +6358,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -7344,7 +6501,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -7905,7 +7062,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -8032,7 +7189,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -8183,7 +7340,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -8385,7 +7542,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -8465,7 +7622,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -8585,7 +7742,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -8616,7 +7773,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -8629,7 +7786,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -8726,7 +7883,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -8823,7 +7980,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -9068,7 +8225,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -9131,7 +8288,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -9478,7 +8635,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -9594,7 +8751,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -9616,7 +8773,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -9673,7 +8830,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -12701,7 +11858,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -12877,7 +12034,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -12939,7 +12096,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -13146,7 +12303,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -13239,7 +12396,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -13447,7 +12604,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -13523,7 +12680,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -13580,7 +12737,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -13703,7 +12860,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -14169,7 +13326,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -14398,7 +13555,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -14636,7 +13793,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -15339,7 +14496,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -15454,7 +14611,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -15588,7 +14745,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -15696,7 +14853,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -15759,7 +14916,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -17214,7 +16371,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -17227,7 +16384,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -17420,7 +16577,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -18801,7 +17958,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -18957,7 +18114,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -19115,7 +18272,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -19284,7 +18441,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -19455,7 +18612,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -19843,7 +19000,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -20048,7 +19205,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -20330,7 +19487,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -21151,7 +20308,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -21459,7 +20616,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -21472,7 +20629,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -21759,7 +20916,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -21966,7 +21123,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -22171,7 +21328,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-dom/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -22554,7 +21711,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -22652,7 +21809,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -22892,7 +22049,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -23170,7 +22327,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -23570,7 +22727,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -23750,7 +22907,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -23767,7 +22924,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -23784,7 +22941,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice DAW
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/indice-daw/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -23883,7 +23040,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -23897,7 +23054,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -23911,7 +23068,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -24013,7 +23170,7 @@ php artisan make:policy UserPolicy --model=User
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-09-15T16:36:23Z</updated>
+            <updated>2025-09-15T16:36:32Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
