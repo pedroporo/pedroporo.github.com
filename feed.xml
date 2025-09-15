@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:34:40Z</updated>
+    <updated>2025-09-15T16:34:58Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -179,7 +179,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -414,7 +414,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -982,7 +982,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -1257,7 +1257,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -1292,7 +1292,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -1761,7 +1761,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -2261,7 +2261,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -2627,7 +2627,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -2872,7 +2872,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -3362,7 +3362,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -3659,7 +3659,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -4082,7 +4082,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -4613,7 +4613,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -5072,7 +5072,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -5365,7 +5365,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -5562,7 +5562,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -5851,7 +5851,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -5994,7 +5994,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -6555,7 +6555,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -6682,7 +6682,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -6833,7 +6833,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -7035,7 +7035,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -7115,7 +7115,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -7235,7 +7235,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -7266,7 +7266,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -7279,7 +7279,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -7376,7 +7376,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -7473,7 +7473,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -7718,7 +7718,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -7781,7 +7781,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -8128,7 +8128,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -8244,7 +8244,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -8266,7 +8266,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -8323,7 +8323,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -11351,7 +11351,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -11527,7 +11527,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -11589,7 +11589,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -11796,7 +11796,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -11889,7 +11889,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -12097,7 +12097,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -12173,7 +12173,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -12230,7 +12230,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -12353,7 +12353,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -12819,7 +12819,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -13048,7 +13048,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -13286,7 +13286,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -13989,7 +13989,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -14104,7 +14104,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -14238,7 +14238,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -14346,7 +14346,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -14409,7 +14409,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -15864,7 +15864,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -15877,7 +15877,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -16070,7 +16070,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -17451,7 +17451,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -17604,1101 +17604,10 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
         </entry>
         <entry>
             <title>
-                ejercicios
-                
-            </title>
-            <updated>2025-09-15T16:34:20Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/ejercicios/</id>
-            <content type="html">
-                &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
-&lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
-&lt;!-- DON&#39;T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --&gt;
-&lt;p&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;  &lt;em&gt;generated with &lt;a href=&quot;https://github.com/thlorenz/doctoc&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;DocToc&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#ejercicios-de-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ejercicios de Javascript&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#1--sintaxis&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1.- Sintaxis&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#11-frase&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1.1 Frase&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#2--arrays&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;2.- Arrays&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#3--poo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;3.- POO&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#31--productos-de-un-almac%C3%A9n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;3.1.- Productos de un almacén&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#32--carro-de-compra&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;3.2.- Carro de compra&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#4--dom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;4.- DOM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#5--bom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;5.- BOM&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#6--eventos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;6.- Eventos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#7--objetos-globales&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;7.- Objetos globales&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#8--ajax&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;8.- Ajax&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#9--apis&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;9.- APIs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- END doctoc generated TOC please keep comment here to allow auto update --&gt;
-&lt;h2 id=&quot;1-sintaxis&quot; tabindex=&quot;-1&quot;&gt;1.- Sintaxis&lt;/h2&gt;
-&lt;h3 id=&quot;1-1-frase&quot; tabindex=&quot;-1&quot;&gt;1.1 Frase&lt;/h3&gt;
-&lt;p&gt;Vamos a pedir al usuario que introduzca una frase y a continuación mostraremos en la consola:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;el número de letras y de palabras que tiene&lt;/li&gt;
-&lt;li&gt;la frase en mayúsculas&lt;/li&gt;
-&lt;li&gt;la frase con la primera letra de cada palabra en mayúsculas&lt;/li&gt;
-&lt;li&gt;la frase escrita con las letras al revés&lt;/li&gt;
-&lt;li&gt;la frase escrita con las palabras al revés&lt;/li&gt;
-&lt;li&gt;si es o no un palíndromo (si se lee igual al revés) pero omitiendo espacios en blanco y sin diferenciar mayúsculas y minúsculas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ej.: con la frase introducida “&lt;em&gt;La ruta nos aporto otro paso natural&lt;/em&gt;” se mostraría&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;36 letras y 7 palabras&lt;br /&gt;
-LA RUTA NOS APORTO OTRO PASO NATURAL&lt;br /&gt;
-La Ruta Nos Aporto Otro Paso Natural&lt;br /&gt;
-larutan osap orto otropa son atur aL&lt;br /&gt;
-natural paso otro aporto nos ruta La&lt;br /&gt;
-Sí es un palíndromo&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Intenta usar en cada caso el bucle más adecuado. Las funciones &lt;code&gt;split&lt;/code&gt; y &lt;code&gt;join&lt;/code&gt; (lo opuesto) de String y Array nos pueden ayudar a algunas cosas.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;RECUERDA&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;el código deberá estar en un fichero externo y se incluirá al final del body&lt;/li&gt;
-&lt;li&gt;debes comentarlo para tener claro qué hace&lt;/li&gt;
-&lt;li&gt;tanto el código JS como el HTML deben estar correctamente indentados&lt;/li&gt;
-&lt;li&gt;ten en cuenta los datos que pueden “estropearnos” el programa: introducir un dato de un tipo que no te esperas, omitir algún parámetro, ...&lt;/li&gt;
-&lt;li&gt;usa las recomendaciones indicadas: &#39;use strict&#39;, ...&lt;/li&gt;
-&lt;li&gt;el código debe ser lo más limpio y claro posible, sin variables o código innecesario&lt;/li&gt;
-&lt;li&gt;siempre es bueno refactorizar el código: cuando nuestro programa ya funciona bien le damos un “repaso” para mejorar su claridad (y lo volvemos a probar)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;2-arrays&quot; tabindex=&quot;-1&quot;&gt;2.- Arrays&lt;/h2&gt;
-&lt;p&gt;Vamos a hacer un programa que va pidiendo al usuario que introduzca las notas de un examen y las va guardando en un array. El usuario puede introducir una sóla nota o varias separadas por un guión (ej. 4,5 - 6 - 8,75) y se continuará pidiendo notas al usuario hasta que éste pulse &#39;Cancelar&#39;. Recuerda que en Javascript el símbolo decimal es el punto pero el usuario puede introducir decimales con la coma.&lt;/p&gt;
-&lt;p&gt;Cada nota introducida se almacenará en un array y una vez que estén todas se mostrará por la consola:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;el array con los datos suministrados por el usuario&lt;/li&gt;
-&lt;li&gt;el array &amp;quot;limpiado&amp;quot;: quitaremos del mismo todo lo que no sean números o no estén entre 0 y 10&lt;/li&gt;
-&lt;li&gt;el nº total de aprobados y sus notas&lt;/li&gt;
-&lt;li&gt;el nº total de suspensos y sus notas&lt;/li&gt;
-&lt;li&gt;la nota del 1º suspenso y su posición en el array&lt;/li&gt;
-&lt;li&gt;la nota media del examen&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Siempre que sea posible utilizaremos métodos de arrays en lugar de bucles.&lt;/p&gt;
-&lt;h2 id=&quot;3-poo&quot; tabindex=&quot;-1&quot;&gt;3.- POO&lt;/h2&gt;
-&lt;h3 id=&quot;3-1-productos-de-un-almacen&quot; tabindex=&quot;-1&quot;&gt;3.1.- Productos de un almacén&lt;/h3&gt;
-&lt;p&gt;En este ejercicio vamos a trabajar con los productos de un almacén, para lo que crearemos las clases:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Product&lt;/em&gt;&lt;/strong&gt;: cada producto será un objeto con las propiedades &lt;em&gt;cod&lt;/em&gt;, &lt;em&gt;name&lt;/em&gt;, &lt;em&gt;price&lt;/em&gt; y &lt;em&gt;units&lt;/em&gt; (las unidades que tenemos de ese producto). Si no le pasamos unidades al constructor su número por defecto será 1. Esta clase tendrá los siguientes métodos:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;changeUnits&lt;/em&gt;&lt;/strong&gt;: recibe la cantidad a aumentar (positiva o negativa) e incrementa (o decrementa) las unidades en la cantidad recibida. Si se intentan restar más unidades de las que hay no hace nada y devuelve &lt;em&gt;false&lt;/em&gt; y en otro caso cambia las unidades y devuelve &lt;em&gt;true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;productImport&lt;/em&gt;&lt;/strong&gt;: devuelve el importe total del producto (su precio multiplicado por el nº de unidades)&lt;/li&gt;
-&lt;li&gt;además si se intenta imprimir el producto se mostrará su descripción, sus unidades entre paréntesis, su precio y el importe total, como en el siguiente ejemplo: &lt;code&gt;TV Samsung MP45 (5): 235,95 €/u =&amp;gt; 1179,75 €&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Store&lt;/em&gt;&lt;/strong&gt;: es el almacén de productos y tendrá las propiedades &lt;em&gt;id&lt;/em&gt; (código numérico que nos pasan al crear el almacén) y &lt;em&gt;products&lt;/em&gt; (array de productos que al crearlo estará vacío) y los métodos:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;findProduct&lt;/em&gt;&lt;/strong&gt;: recibe un código de producto y devuelve el producto que tiene dicho código o &lt;em&gt;null&lt;/em&gt; si ese código no existe en el almacén&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;addProduct&lt;/em&gt;&lt;/strong&gt;: recibe como parámetro el código y unidades a añadir y, opcionalmente, el nombre y precio (si se trata de un producto nuevo) y lo añade al almacén. Si ya existe el código suma al producto las unidades indicadas y si no existe crea un nuevo producto en el array. Devuelve &lt;em&gt;true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;delProduct&lt;/em&gt;&lt;/strong&gt;: recibe como parámetro el código y las unidades a quitar de un producto y lo resta del almacén. Devuelve &lt;em&gt;true&lt;/em&gt; a menos que haya menos unidades de las que quieren restarse, en cuyo caso no hace nada y devuelve &lt;em&gt;false&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;totalImport&lt;/em&gt;&lt;/strong&gt;: devuelve el valor total de los productos del almacén&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;orderByDescrip&lt;/em&gt;&lt;/strong&gt;: devuelve el array de productos ordenado por el nombre&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;orderByUnits&lt;/em&gt;&lt;/strong&gt;: devuelve el array de productos ordenado por unidades descendente&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para probar que funciona correctamente ejecutaremos en nuestro fichero main.js:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let almacen=new Store(1);
-almacen.addProduct(1, 4, &#39;TV Samsung MP45&#39;, 345.95);
-almacen.addProduct(2, 8, &#39;Portátil Acer Travelmate 200&#39;, 245.95);
-almacen.addProduct(3, 15, &#39;Impresora Epson LX-455&#39;, 45.95);
-almacen.addProduct(4, 25, &#39;USB Kingston 16GB&#39;, 5.95);
-
-console.log(&#39;LISTADO DEL ALMACÉN&#39;);
-almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
-
-almacen.addProduct(5, 15, &#39;USB Kingston 64GB&#39;, 15.95);
-almacen.delProduct(3, 11);
-almacen.delProduct(3, 7);
-almacen.addProduct(1, 9);
-
-console.log(&#39;LISTADO DEL ALMACÉN&#39;);
-almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Además en nuestro main.js haremos que se muestren por consola todos los productos de los que tenemos menos de 5 unidades en stock o cuyo importe es inferior a 150 €.&lt;/p&gt;
-&lt;h3 id=&quot;3-2-carro-de-compra&quot; tabindex=&quot;-1&quot;&gt;3.2.- Carro de compra&lt;/h3&gt;
-&lt;p&gt;Vamos a permitir que los usuarios hagan compras on-line para lo que crearemos una clase para los carritos de la compra:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;em&gt;Cart&lt;/em&gt;&lt;/strong&gt;: esta clase la usaremos para crear carritos de compra con los productos a comprar. Es como la clase &lt;em&gt;Store&lt;/em&gt; pero tiene además la propiedad &lt;em&gt;user&lt;/em&gt; con el identificador del usuario que hace la compra y que nos lo pasarán al crear el carrito. Respecto a sus métodos son igual que los de la clase &lt;em&gt;Store&lt;/em&gt; pero:
-&lt;ul&gt;
-&lt;li&gt;el método &lt;em&gt;delProduct&lt;/em&gt; eliminará el producto del array de productos si sus unidades son 0&lt;/li&gt;
-&lt;li&gt;tendrá dos nuevos métodos &lt;strong&gt;&lt;em&gt;addToCart&lt;/em&gt;&lt;/strong&gt; y &lt;strong&gt;&lt;em&gt;removeFromCart&lt;/em&gt;&lt;/strong&gt; que nos permitan añadir y quitar productos del carro y que recibirán como parámetros el código del producto y las unidades a añadir o quitar.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;NOTA: la variable del almacén será una variable global en el fichero main.js&lt;/p&gt;
-&lt;h2 id=&quot;4-dom&quot; tabindex=&quot;-1&quot;&gt;4.- DOM&lt;/h2&gt;
-&lt;p&gt;Vamos a mostrar en una tabla los products de nuestro almacén. Cada fila corresponderá a un producto y se mostrará su código, nombre, unidades, precio por unidad e importe. Debajo de la tabla mostraremos el importe total del almacén. En el fichero &lt;em&gt;index.html&lt;/em&gt; crearemos la tabla vacía y el párrafo para poner el importe total.&lt;/p&gt;
-&lt;p&gt;Para simplificar nuestro código a la clase &lt;em&gt;Product&lt;/em&gt; le añadiremos el método &lt;strong&gt;&lt;em&gt;toTR&lt;/em&gt;&lt;/strong&gt; que devolverá el código HTML para mostrar una fila con los datos del producto y a la clase &lt;em&gt;Store&lt;/em&gt; le añadiremos el método &lt;strong&gt;&lt;em&gt;toHTML&lt;/em&gt;&lt;/strong&gt; que devolverá el código HTML que insertaremos dentro de la tabla del almacén.&lt;/p&gt;
-&lt;p&gt;Además cada vez que creemos un carrito se mostrará en la página una nueva UL con su código y su usuario. Cada artículo del carro será una LI de la UL y al final habrá una LI con el importe total del carro. Ej.:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Carro 2 - juan&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 x TV Samsung MP45 (345.95 €) = 345.95 €&lt;/li&gt;
-&lt;li&gt;3 x USB Kingston 16GB (5.95 €) = 17.85 €&lt;/li&gt;
-&lt;li&gt;Importe total: 353.80 €&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;NOTA: podemos hacer algo para que sea más fácil crear los elementos del DOM tal y como hems hecho para crear la tabla???.&lt;/p&gt;
-&lt;p&gt;OPCIONAL: mejorar la presentación usando bootstrap. Pondremos la tabla del almacén y debajo los carritos, 2 por fila.&lt;/p&gt;
-&lt;h2 id=&quot;5-bom&quot; tabindex=&quot;-1&quot;&gt;5.- BOM&lt;/h2&gt;
-&lt;h2 id=&quot;6-eventos&quot; tabindex=&quot;-1&quot;&gt;6.- Eventos&lt;/h2&gt;
-&lt;p&gt;Botones y enlaces para el ejercicio del almacén&lt;/p&gt;
-&lt;h2 id=&quot;7-objetos-globales&quot; tabindex=&quot;-1&quot;&gt;7.- Objetos globales&lt;/h2&gt;
-&lt;p&gt;Fechas, ...&lt;/p&gt;
-&lt;h2 id=&quot;8-ajax&quot; tabindex=&quot;-1&quot;&gt;8.- Ajax&lt;/h2&gt;
-&lt;p&gt;Leer y guardar el almacén (y los carritos?)&lt;/p&gt;
-&lt;h2 id=&quot;9-ap-is&quot; tabindex=&quot;-1&quot;&gt;9.- APIs&lt;/h2&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/ejercicios/" >
-        </entry>
-        <entry>
-            <title>
-                TDD-mocha
-                
-            </title>
-            <updated>2025-09-15T16:34:20Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/tdd-mocha/</id>
-            <content type="html">
-                &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
-&lt;p&gt;Es una forma de programar que consiste en escribir primero las pruebas que deba pasar el código (Test Dirve Development) y después refactorizarlo (&lt;a href=&quot;https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Refactoring&lt;/a&gt;). Para escribir las pruebas generalmente se utilizan las &lt;a href=&quot;https://es.wikipedia.org/wiki/Prueba_unitaria&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;pruebas unitarias&lt;/a&gt; (unit test en inglés).&lt;/p&gt;
-&lt;p&gt;El ciclo de programación usando TDD tiene tres fases:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Fase &lt;em&gt;roja&lt;/em&gt;: escribimos el test que cumpla los requerimientos y lo pasamos. Fallará ya que nuestro código no pasa el est (de hecho la primera vez no tenemos ni código)&lt;/li&gt;
-&lt;li&gt;Fase &lt;em&gt;verde&lt;/em&gt;: conseguimos que nuestro código pase el test. Ya funciona aunque seguramente no estará muy bien escrito&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Refactorización&lt;/em&gt;: mejoramos nuestro código&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;En primer lugar, se escribe una prueba y se verifica que las pruebas fallan. A continuación, se implementa el código que hace que la prueba pase satisfactoriamente y seguidamente se refactoriza el código escrito. El propósito del desarrollo guiado por pruebas es lograr un código limpio que funcione. La idea es que los requisitos sean traducidos a pruebas, de este modo, cuando las pruebas pasen se garantizará que el software cumple con los requisitos que se han establecido.&lt;/p&gt;
-&lt;p&gt;Para ello debemos en primer lugar se debe definir una lista de requisitos y después se ejecuta el siguiente ciclo:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Elegir un requisito: Se elige de una lista el requisito que se cree que nos dará mayor conocimiento del problema y que a la vez sea fácilmente implementable.&lt;/li&gt;
-&lt;li&gt;Escribir una prueba: Se comienza escribiendo una prueba para el requisito. Para ello el programador debe entender claramente las especificaciones y los requisitos de la funcionalidad que está por implementar. Este paso fuerza al programador a tomar la perspectiva de un cliente considerando el código a través de sus interfaces.&lt;/li&gt;
-&lt;li&gt;Verificar que la prueba falla: Si la prueba no falla es porque el requisito ya estaba implementado o porque la prueba es errónea.&lt;/li&gt;
-&lt;li&gt;Escribir la implementación: Escribir el código más sencillo que haga que la prueba funcione. Se usa la expresión &amp;quot;Déjelo simple&amp;quot; (&amp;quot;Keep It Simple, Stupid!&amp;quot;), conocida como principio KISS.&lt;/li&gt;
-&lt;li&gt;Ejecutar las pruebas automatizadas: Verificar si todo el conjunto de pruebas funciona correctamente.&lt;/li&gt;
-&lt;li&gt;Eliminación de duplicación: El paso final es la refactorización, que se utilizará principalmente para eliminar código duplicado. Se hace un pequeño cambio cada vez y luego se corren las pruebas hasta que funcionen.&lt;/li&gt;
-&lt;li&gt;Actualización de la lista de requisitos: Se actualiza la lista de requisitos tachando el requisito implementado. Asimismo se agregan requisitos que se hayan visto como necesarios durante este ciclo y se agregan requisitos de diseño (P. ej que una funcionalidad esté desacoplada de otra).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Tener un único repositorio universal de pruebas facilita complementar TDD con otra práctica recomendada por los procesos ágiles de desarrollo, la &amp;quot;Integración Continua&amp;quot;. Integrar continuamente nuestro trabajo con el del resto del equipo de desarrollo permite ejecutar toda batería de pruebas y así descubrir si nuestra última versión es compatible con el resto del sistema. Es recomendable y menos costoso corregir pequeños problemas cada pocas horas que enfrentarse a problemas enormes cerca de la fecha de entrega fijada.&lt;/p&gt;
-&lt;p&gt;(Fuente &lt;a href=&quot;https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;
-&lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
-&lt;p&gt;Lo más sencillo es usar alguna librería como &lt;strong&gt;Mocha&lt;/strong&gt;. Se trata de un gramework que se ejecuta sobre &lt;em&gt;Node.js&lt;/em&gt; y permite crear tests tanto síncronos como asíncronos. Para usarlo necesitaremos tener &lt;strong&gt;npm&lt;/strong&gt; instalado. Luego creamos una carpeta para nuestro proyecto y dentro ejecutamos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm install -g mocha    # lo instalamos globalmente para que esté disponible para todos los proyectos
-npm init                # crea en el directorio el package.json
-npm install chai     # en vez de chai podríamos usar assert, should, etc
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La librería &lt;em&gt;Chai&lt;/em&gt; permite 3 tipos de sentencias:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;asserts&lt;/li&gt;
-&lt;li&gt;expects&lt;/li&gt;
-&lt;li&gt;should&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nosotros vamos a usar &lt;em&gt;asserts&lt;/em&gt; por lo que es lo que deberemos importar en los ficheros de tests.&lt;/p&gt;
-&lt;p&gt;Dentro de nuestro proyecto crearemos una carpeta donde guardaremos los ficheros JS de los tests (podemos llamarla &#39;&lt;em&gt;tests&lt;/em&gt;&#39;) y en cada fichero importaremos &lt;em&gt;chai&lt;/em&gt; y los ficheros necesarios. Ej.:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Fichero &lt;em&gt;tests/store.specs.js&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const assert = require(&#39;chai&#39;).assert;
-const Store = require(&#39;../store.class.js&#39;);
-
-describe(&#39;Store&#39;, () =&amp;gt; {
-
-	it(&#39;should had an integer id&#39;, function() {
-		let foo = new Store();
-		assert.typeOf(foo.id, &#39;integer&#39;, &#39;La id no es un entero&#39;)
-	});
-
-	it(&#39;should had an empty array of products&#39;, function() {
-		let foo = new Store();
-		assert.typeOf(foo.products, &#39;array&#39;, &#39;Products no es un array&#39;)
-		assert.lengthOf(foo.products, 0, &#39;Products no es un array vacío&#39;)
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para poder importar un módulo con &lt;em&gt;require&lt;/em&gt; debemos haberlo exprtado previamente:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Fichero &lt;em&gt;store.js&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;class Store {
-    constructor (id) {
-        this.id=id;
-        this.products=[];
-    }
-    ...
-}
- module.exports = Store;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para ejecutar todos los tests de nuestro proyecto ejecutaremos desde la terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mocha tests
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si sólo queremos pasar uno lo indicamos en el comando: &lt;code&gt;mocha tests/store.specs.js&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Podemos hacer que &lt;em&gt;mocha&lt;/em&gt; escuche en segundo plano y se ejecute automáticamente cada vez que hacemos algún cambio en un fichero con:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;mocha tests --watch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;el-fichero-de-tests&quot; tabindex=&quot;-1&quot;&gt;El fichero de tests&lt;/h2&gt;
-&lt;p&gt;Debemos importar le librería &lt;em&gt;Chai&lt;/em&gt; y el fichero con el código a testear como hemov visto antes. El fichero con el código que debe exportar la clase o función que contiene con &lt;code&gt;module.exports&lt;/code&gt;. Si queremos exportar varias funciones exportaremos un objeto con todas ellas:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;module.exports = {
-    addItem,
-    removeItem
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Tras importar los ficheros pondremos el &lt;em&gt;describe&lt;/em&gt; y los bloques &lt;em&gt;it&lt;/em&gt; que queramos y dentro de cada uno los &lt;em&gt;aasert&lt;/em&gt; necesarios:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;const assert = require(&#39;chai&#39;).assert;
-const index = require(&#39;../index.js&#39;);
-
-describe(&#39;manage items&#39;, () =&amp;gt; {
-	it(&#39;add a new item&#39;, function() {
-		let myItem = ...;
-		assert.typeOf(item, &#39;object&#39;, &#39;No crea un objeto sino &#39;+typeof(item) );
-		assert.equal(item.units, 0);
-	});
-	
-	if (&#39;change an item () =&amp;gt; {
-	...
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;algunas-sentecias-em-assert-em&quot; tabindex=&quot;-1&quot;&gt;Algunas sentecias &lt;em&gt;assert&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;Estas&lt;br /&gt;
-Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar. Recordad que todas pueden tener un último parámetro opcional que es un mensaje a mostrar en caso de que falle esta comprobación:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;.equal(actual, esperado): comprueba que sea el mismo valor, pero sin comprobar los tupos (usa ==, no ===)&lt;/li&gt;
-&lt;li&gt;.notEqual(actual, esperado)&lt;/li&gt;
-&lt;li&gt;.strictEqual, .notStrictEqual: igual pero hace la compribaciónestricta (===)&lt;/li&gt;
-&lt;li&gt;.deepEqual, notDeepEqual: hace una comprobación de cada propiedad del objeto pasado&lt;/li&gt;
-&lt;li&gt;.match(valor, regexp), .notMatch: comprueba si el valor cumple o no la expresión regular pasada&lt;/li&gt;
-&lt;li&gt;.isAbove(actual, esperado): comprueba que actual &amp;gt; esperado&lt;/li&gt;
-&lt;li&gt;.isAtLeast(actual, esperado): comprueba que actual &amp;gt;= esperado&lt;/li&gt;
-&lt;li&gt;.isBelow, .isAtMost: comprueba que sea &amp;lt; o &amp;lt;= respectivamente&lt;/li&gt;
-&lt;li&gt;.isTrue, .isNotTrue, .isFalse, .isNotFalse, .isNull, .isNotNull, .isUndefined, .isDefined, .isNaN, .isNotNaN, .isFunction, .isNotFunction, .isObject, .isNotObject, .isArray, .isNotArray, .isString, .isNotString, .isNumber, .isNotNumber, .isBoolean, .isNotBoolean, .isFinite&lt;/li&gt;
-&lt;li&gt;.exists(valor), .notExists: comprueba que valor no sea (o sea) &lt;em&gt;null&lt;/em&gt; o &lt;em&gt;undefined&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;.typeOf(valor, tipo), .notTypeOf: indica si valor es o no del tipo indicado, que puede ser &#39;string&#39;, &#39;number&#39;, boolean&#39;, &#39;array&#39;, &#39;object&#39;, &#39;null&#39;, &#39;undefined&#39;, &#39;regexp&#39;, ...&lt;/li&gt;
-&lt;li&gt;.instanceOf(objeto, Clase), .notInstanceOf: indica si un objeto es o no una instancia de la clase indicada&lt;/li&gt;
-&lt;li&gt;.include(string/array/objeto, substring/elemento/propiedad:valor): comprueba si la subcadena existe en el string o el elemento se encuentra en el array (usa =&lt;mark&gt;) o si existe la propiedad o propiedades pasadas y su valor es estrictamente (&lt;/mark&gt;=) igual al indicado.&lt;/li&gt;
-&lt;li&gt;.notInclude&lt;/li&gt;
-&lt;li&gt;.property(objeto, propiedad), .notProperty: comprueba si el objeto posee o no la propiedad pasada&lt;/li&gt;
-&lt;li&gt;.lengthOf(string/array, num): comprueba que la longitud de la cadena o el array sea la indicada&lt;/li&gt;
-&lt;li&gt;.isEmpty(string/array/object), .isNotEmpty: comprueba que la cadena sea &#39;&#39;, el array [] o el objeto {}, o no.&lt;/li&gt;
-&lt;li&gt;.throws(funcion, [errorLike/string], [string]): para comprobar que la función lanza un error del tipo indicado (TypeError, RangeError, ...) e incluso con el mensaje indicado&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Más información en la [página de &lt;em&gt;Chai&lt;/em&gt;])&lt;a href=&quot;https://www.chaijs.com/api/assert/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.chaijs.com/api/assert/&lt;/a&gt;).&lt;/p&gt;
-&lt;h2 id=&quot;tests-de-funciones-asincronas-con-promesas&quot; tabindex=&quot;-1&quot;&gt;Tests de funciones asíncronas con promesas&lt;/h2&gt;
-&lt;p&gt;Si hacemos llamadas asíncronas Mocha permite testearlas tras el .then o el .catch:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;API de artículos&#39;, () =&amp;gt; {
-	it(&#39;should return the article 3&#39;, function() {
-		return getArticulo(3)
-			.then(art =&amp;gt; {
-				assert.instanceOf(art, Articulos);
-				assert.equal(art.id, 3);
-			})
-	});
-	it(&#39;should return an error&#39;, function() {
-		return getArticulo(undefined)
-			.catch(err =&amp;gt; {
-				...
-			})
-	});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;em-hooks-em-de-mocha&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;Hooks&lt;/em&gt; de Mocha&lt;/h2&gt;
-&lt;p&gt;Nos permiten ejecutar código en momentos puntuales. Reciben como parámetro la función a ejecutar. Son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;before(): el código se ejecutará una vez antes del primer test del bloque &lt;em&gt;describe&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;beforeEach(): se ejecutará antes de cada test&lt;/li&gt;
-&lt;li&gt;after(), afterEach(): lo mismo pero tras ejecutar los tests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;tests-para-la-ui&quot; tabindex=&quot;-1&quot;&gt;Tests para la UI&lt;/h2&gt;
-&lt;p&gt;Necesitaremos alguna librería que nos permita contruir escenarios de navegación como &lt;em&gt;CasperJS&lt;/em&gt; y otra que imite al navegador como &lt;em&gt;PhantomJS&lt;/em&gt; (para WebKit) o &lt;em&gt;SlimerJS&lt;/em&gt; (para Gecko).&lt;/p&gt;
-&lt;p&gt;Hay muchas páginas que nos enseñan a usar Mocha para testear la UI como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://dev.to/ykyuen/web-ui-testing-in-nodejs--kda&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Web UI Testing in NodeJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/nilayshah/2018/01/21/ui-test-automation-with-node-js-typescript-mocha-and-selenium/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;UI Test Automation with Node.js, TypeScript, Mocha and Selenium&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://itnext.io/automated-ui-testing-with-selenium-and-javascript-90bbe7ca13a3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Automated UI Testing with Selenium and JavaScript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://medium.com/@tariqul.islam.rony/automated-ui-ux-testing-with-puppeteer-mocha-and-chai-800cfb028ab9&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Automated UI/UX Testing with Puppeteer Mocha and Chai&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/tdd-mocha/" >
-        </entry>
-        <entry>
-            <title>
-                README
-                
-            </title>
-            <updated>2025-09-15T16:34:20Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/readme/</id>
-            <content type="html">
-                &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
-&lt;p&gt;En este primer bloque vamos a conocer el lenguaje Javascript. El bloque se divide en:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n-a-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción a Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/01-sintaxis.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;1-Sintaxis&lt;/a&gt;: Variables. Funciones. Estructuras y bucles. Tipos de datos. Buenas prácticas
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/tests.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción a los test en Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/02.1-objetos.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;2.1-Objetos&lt;/a&gt;: Introducción a los objetos en Javascript&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/02.2-arrays.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;2.2-Arrays&lt;/a&gt;: Métodos. &lt;em&gt;Functional Programming&lt;/em&gt;. Referencia vs copia. Rest y Spread. Desestructuración de arrays. Map. Set
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/03.1-vite.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Vite&lt;/a&gt;: Cómo usar vite&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/03.1-webpack.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Webpack&lt;/a&gt;: Cómo usar webpack&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/03-oop.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;3-Programación Orientada a Objetos&lt;/a&gt;: Introducción. Clases. POO en JS5&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/05-BOM.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;4-Browser Object Model - BOM&lt;/a&gt;: Timers. Objetos del BOM (window,&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/09-ajax.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;5-Ajax. Promesas. SPA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/04-DOM.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;6-Document Object Model - DOM&lt;/a&gt;: Acceso a nodos. Acceso desde otros nodos. Manipular el árbol DOM. Atributos de los nodos
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/04.1-MVC.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;6.1-MVC&lt;/a&gt;: Cómo usaremos el patrón MVC para crear la UI de nuestra aplicación&lt;br /&gt;
-location, history, otros objetos)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/06-eventos.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;7-Eventos&lt;/a&gt;: Escuchadores. Tipos de eventos. Los objetos &lt;em&gt;this&lt;/em&gt; y &lt;em&gt;event&lt;/em&gt;. Propagación de eventos (&lt;em&gt;bubbling&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/07-globales.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;8-Objetos nativos&lt;/a&gt;: Funciones globales. Objetos nativos del lenguaje: Math, Date, RegExp, ...&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/01%20Apuntes/Javascript%20Teoria%20Batoi/08-forms.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;9-Validación de formularios&lt;/a&gt;: Validación de formularios. La API de validación de formularios. Expresiones regulares&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/10-apis.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;10-APIs HTML5&lt;/a&gt;: Drag and drop. API Storage. Geolocalización. API de Google Maps&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/11-mas.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;11-Más cosas a aprender...&lt;/a&gt;: WebComponents. WebSockets. WebWorkers. Typescript.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/12-tests.md&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;12-Tests&lt;/a&gt;: Testear JS con Jest&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;introduccion-a-javascript&quot; tabindex=&quot;-1&quot;&gt;Introducción a Javascript&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#bloque-1---el-lenguaje-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n-a-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción a Javascript&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#un-poco-de-historia&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Un poco de historia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#soporte-en-los-navegadores&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Soporte en los navegadores&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#herramientas&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Herramientas&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#la-consola-del-navegador&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;La consola del navegador&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#editores&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Editores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#editores-on-line&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Editores on-line&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#incluir-javascript-en-una-p%C3%A1gina-web&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Incluir javascript en una página web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#mostrar-informaci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mostrar información&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#bibliograf%C3%ADa&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Bibliografía&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduccion&quot; tabindex=&quot;-1&quot;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;En las páginas web el elemento fundamental es el fichero HTML con la información a mostrar en el navegador. Posteriormente surgió la posibilidad de &amp;quot;decorar&amp;quot; esa información para mejorar su apariencia, lo que dio lugar al CSS. Y también se pensó en dar dinamismo a las páginas y apareció el lenguaje Javascript.&lt;/p&gt;
-&lt;p&gt;En un primer momento las 3 cosas estaban mezcladas en el fichero HTML pero eso complicaba bastante el poder leer esa página a la hora de mantenerla por lo que se pensó en separar los 3 elementos básicos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HTML: se encarga de estructurar la página y proporciona su información, pero es una información estática&lt;/li&gt;
-&lt;li&gt;CSS: es lo que da forma a dicha información, permite mejorar su apariencia, permite que se adapte a distintos dispositivos, ...&lt;/li&gt;
-&lt;li&gt;Javascript: es el que da vida a un sitio web y le permite reaccionar a las acciones del usuario&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Por tanto nuestras aplicaciones tendrán estos 3 elementos y lo recomendable es que estén separados en distintos ficheros:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El HTML lo tendremos habitualmente en un fichero index.html, normalmente en una carpeta llamada &lt;em&gt;public&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;El CSS lo tendremos en uno o más ficheros con extensión &lt;em&gt;.css&lt;/em&gt; dentro de una carpeta llamada &lt;em&gt;styles&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;EL JS estará en ficheros con extensión &lt;em&gt;.js&lt;/em&gt; en un directorio llamado &lt;em&gt;scripts&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Las características principales de Javascript son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;es un lenguaje interpretado, no compilado&lt;/li&gt;
-&lt;li&gt;se ejecuta en el lado cliente (en un navegador web), aunque hay implementaciones como NodeJS para el lado servidor&lt;/li&gt;
-&lt;li&gt;es un lenguaje orientado a objetos (podemos crear e isntanciar objetos y usar objetos predefinidos del lenguaje) pero basado en prototipos (por debajo un objeto es un prototipo y nosotros podemos crear objetos sin instanciarlos, haciendo copias del prototipo)&lt;/li&gt;
-&lt;li&gt;se trata de un lenguaje débilmente tipado, con tipificación dinámica (no se indica el tipo de datos de una variable al declararla e incluso puede cambiarse)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lo usaremos para:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Cambiar el contenido de la página&lt;/li&gt;
-&lt;li&gt;Cambiar los atributos de un elemento&lt;/li&gt;
-&lt;li&gt;Cambiar la apariencia de algo&lt;/li&gt;
-&lt;li&gt;Validar datos de formularios&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sin embargo, por razones de seguridad, Javascript no nos permite hacer cosas como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Acceder al sistema de ficheros del cliente&lt;/li&gt;
-&lt;li&gt;Capturar datos de un servidor (puede pedirlo y el servidor se los servirá, o no)&lt;/li&gt;
-&lt;li&gt;Modificar las preferencias del navegador&lt;/li&gt;
-&lt;li&gt;Enviar e-mails de forma invisible o crear ventanas sin que el usuario lo vea&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;un-poco-de-historia&quot; tabindex=&quot;-1&quot;&gt;Un poco de historia&lt;/h3&gt;
-&lt;p&gt;Javascript es una implementación del lenguaje &lt;strong&gt;ECMAScript&lt;/strong&gt; (el estándar que define sus características). El lenguaje surgió en 1997 y todos los navegadores a partir de 2012 soportan al menos la versión &lt;strong&gt;ES5.1&lt;/strong&gt; completamente. En 2015 se lanzó la 6ª versión, inicialmente llamada &lt;strong&gt;ES6&lt;/strong&gt; y posteriormente renombrada como &lt;strong&gt;ES2015&lt;/strong&gt;, que introdujo importantes mejoras en el lenguaje y que es la versión mínima que usaremos nosotros. Desde entonces van saliendo nuevas versiones cada año que introducen cambios pequeños. La última es la &lt;strong&gt;ES2024&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Las principales mejoras que introdujo ES2015 son: clases de objetos, let, for..of, Map, Set, Arrow functions, Promesas, spread, destructuring, ...&lt;/p&gt;
-&lt;h3 id=&quot;soporte-en-los-navegadores&quot; tabindex=&quot;-1&quot;&gt;Soporte en los navegadores&lt;/h3&gt;
-&lt;p&gt;Los navegadores no se adaptan inmediatamente a las nuevas versiones de Javascript por lo que puede ser un problema usar una versión muy moderna ya que puede haber partes de los programas que no funcionen en los navegadores de muchos usuarios. En la página de &lt;a href=&quot;https://kangax.github.io/compat-table/es6/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Kangax&lt;/em&gt;&lt;/a&gt; podemos ver la compatibilidad de los diferentes navegadores con las distintas versiones de Javascript. También podemos usar &lt;a href=&quot;https://caniuse.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;CanIUse&lt;/em&gt;&lt;/a&gt; para buscar la compatibilidad de un elemento concreto de Javascript así como de HTML5 o CSS3.&lt;/p&gt;
-&lt;p&gt;Si queremos asegurar la máxima compatibilidad debemos usar la versión ES5 (pero nos perdemos muchas mejoras del lenguaje) o mejor, usar la ES6 (o posterior) y después &lt;em&gt;transpilar&lt;/em&gt; nuestro código a la version ES5. De esto se ocupan los &lt;em&gt;transpiladores&lt;/em&gt; (&lt;strong&gt;Babel&lt;/strong&gt; es el más conocido) por lo que no suponen un esfuerzo extra para el programador.&lt;/p&gt;
-&lt;h2 id=&quot;herramientas&quot; tabindex=&quot;-1&quot;&gt;Herramientas&lt;/h2&gt;
-&lt;h3 id=&quot;la-consola-del-navegador&quot; tabindex=&quot;-1&quot;&gt;La consola del navegador&lt;/h3&gt;
-&lt;p&gt;Es la herramienta que más nos va a ayudar a la hora de depurar nuestro código. Abrimos las herramientas para el desarrollador (en Chrome y Firefox pulsando la tecla &lt;em&gt;F12&lt;/em&gt;) y vamos a la pestaña &lt;em&gt;Consola&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;![Consola](/img/user/01 Apuntes/Javascript Teoria Batoi/img/Consola.png)&lt;/p&gt;
-&lt;p&gt;Allí vemos mensajes del navegador como errores y advertencias que genera el código y todos los mensajes que pongamos en el código para ayudarnos a depurarlo (usando los comandos &lt;strong&gt;console.log&lt;/strong&gt; y &lt;strong&gt;console.error&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Además en ella podemos escribir instrucciones Javascript que se ejecutarán mostrando su resultado. También la usaremos para mostrar el valor de nuestras variables y para probar código que, una vez que funcione correctamente, lo copiaremos a nuestro programa.&lt;/p&gt;
-&lt;p&gt;Podemos obtener ayuda sobre el funcionamiento de la consola en la web de &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/web_console/index.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mozilla&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;EJERCICIO: abre la consola y prueba las funciones &lt;em&gt;alert&lt;/em&gt;, &lt;em&gt;confirm&lt;/em&gt; y &lt;em&gt;prompt&lt;/em&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Siempre depuraremos los programas desde aquí (ponemos puntos de interrupción, vemos el valor de las variables, ...).&lt;/p&gt;
-&lt;p&gt;![Consola - depurar](/img/user/01 Apuntes/Javascript Teoria Batoi/img/Consola-depurar.png)&lt;/p&gt;
-&lt;p&gt;Es fundamental dedicar tiempo a saber utilizar la consola porque nos facilitará enormemente la tarea de depurar nuestro código. Podéis encontrar infinidad de páginas en internet donde nos explican en profundidad el uso de la consola, como &lt;a href=&quot;https://es.javascript.info/debugging-chrome&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Debugging en el navegador&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;editores&quot; tabindex=&quot;-1&quot;&gt;Editores&lt;/h3&gt;
-&lt;p&gt;Podemos usar el que más nos guste, desde editores tan simples como NotePad++ hasta complejos IDEs. La mayoría soportan las últimas versiones de la sintaxis de Javascript (Netbeans, Eclipse, Visual Studio, Sublime, Atom, Kate, Notepad++, ...). Yo voy a utilizar &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt;&lt;/a&gt; o &lt;a href=&quot;https://www.sublimetext.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Sublime text&lt;/strong&gt;&lt;/a&gt; por su sencillez y por los plugins que incorpora para hacer más cómodo mi trabajo. En &lt;em&gt;Visual Studio Code&lt;/em&gt; instalaré algún &lt;em&gt;plugin&lt;/em&gt; como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SonarLint: es más que un &lt;em&gt;linter&lt;/em&gt; y me informa de todo tipo de errores pero también del código que no cumple las recomendaciones (incluye gran número de reglas). Marca el código mientras lo escribimos y además podemos ver todas las advertencias en el panel de Problemas (Ctrl+&lt;/li&gt;
-&lt;li&gt;Vetur: lo instalaremos en el segundo bloque. Necesario para trabajar con los ficheros de &lt;em&gt;Vue&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;editores-on-line&quot; tabindex=&quot;-1&quot;&gt;Editores on-line&lt;/h3&gt;
-&lt;p&gt;Son muy útiles porque permiten ver el código y el resultado a la vez. Normalmente tienen varias pestañas o secciones de la página donde poner el código HTML, CSS yJavascript y ver su resultado.&lt;/p&gt;
-&lt;p&gt;Algunos de los más conocidos son &lt;a href=&quot;https://codesandbox.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Codesandbox&lt;/a&gt;, &lt;a href=&quot;https://jsfiddle.net/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Fiddle&lt;/a&gt;, &lt;a href=&quot;https://plnkr.co/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Plunker&lt;/a&gt;, &lt;a href=&quot;https://codepen.io/pen/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;CodePen&lt;/a&gt;, ...aunque hay muchos más.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Ejemplo de &#39;Hello World&#39; en Fiddle:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://jsfiddle.net/afabbro/vrVAP/embed/&quot;&gt;&lt;/script&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Ejemplo de &#39;Hello World&#39; en CodePen:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-default-tab=&quot;js,result&quot; data-user=&quot;kscatcensus&quot; data-slug-hash=&quot;XedLvZ&quot; style=&quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Hello World Codepen&quot;&gt;
-  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/kscatcensus/pen/XedLvZ/&quot;&gt;
-  Hello World Codepen&lt;/a&gt; by Kevin Schweickhardt (&lt;a href=&quot;https://codepen.io/kscatcensus&quot;&gt;@kscatcensus&lt;/a&gt;)
-  on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
-&lt;/p&gt;
-&lt;script async=&quot;&quot; src=&quot;https://static.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-&lt;h2 id=&quot;incluir-javascript-en-una-pagina-web&quot; tabindex=&quot;-1&quot;&gt;Incluir javascript en una página web&lt;/h2&gt;
-&lt;p&gt;El código Javascript va entre etiquetas &lt;em&gt;&amp;lt;script&amp;gt;&lt;/em&gt;. Puede ponerse en el &lt;em&gt;&amp;lt;head&amp;gt;&lt;/em&gt; o en el &lt;em&gt;&amp;lt;body&amp;gt;&lt;/em&gt;. Funciona como cualquier otra etiqueta y el navegador la interpreta cuando llega a ella (va leyendo y ejecutando el fichero línea a línea). Podéis ver en &lt;a href=&quot;https://www.youtube.com/watch?v=AQn22gjtSWQ&amp;amp;list=PLI7nHlOIIPOJtTDs1HVJABswW-xJcA7_o&amp;amp;index=2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;este vídeo&lt;/a&gt; un ejemplo muy simple de cómo se ejecuta el código en el HEAD y en el BODY.&lt;/p&gt;
-&lt;p&gt;Lo mejor en cuanto a rendimiento es ponerla al final del &lt;em&gt;&amp;lt;body&amp;gt;&lt;/em&gt; para que no se detenga el renderizado de la página mientras se descarga y se ejecuta el código. También podemos ponerlo en el &amp;lt;head&amp;gt; pero usando los atributos &lt;strong&gt;async&lt;/strong&gt; y/o &lt;strong&gt;defer&lt;/strong&gt; (en Internet encontraréis mucha información sobre esta cuestión, por ejemplo &lt;a href=&quot;https://es.javascript.info/script-async-defer&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Como se ve en el primer vídeo, es posible poner el código directamente entre la etiqueta &lt;em&gt;&amp;lt;script&amp;gt;&lt;/em&gt;  y su etiqueta de finalización pero lo correcto es que esté en un fichero externo (con extensión &lt;strong&gt;.js&lt;/strong&gt;) que cargamos mediante el atributo &lt;em&gt;src&lt;/em&gt; de la etiqueta. Así conseguimos que la página HTML cargue más rápido (si lo ponemos al final del BODY o usamos &lt;em&gt;async&lt;/em&gt;) y además no mezclar HTML y JS en el mismo fichero, lo mejora la legibilidad del código y facilita su mantenimento:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script src=&amp;quot;./scripts/main.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;mostrar-informacion&quot; tabindex=&quot;-1&quot;&gt;Mostrar información&lt;/h2&gt;
-&lt;p&gt;Javascript permite mostrar al usuario ventanas modales para pedirle o mostrarle información. Las funciones que lo hacen son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;window.alert(mensaje)&lt;/code&gt;: Muesta en una ventana modal &lt;em&gt;mensaje&lt;/em&gt; con un botón de &lt;em&gt;Aceptar&lt;/em&gt; para cerra la ventana.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;window.confirm(mensaje)&lt;/code&gt;: Muesta en una ventana modal &lt;em&gt;mensaje&lt;/em&gt; con botones de &lt;em&gt;Aceptar&lt;/em&gt; y &lt;em&gt;Cancelar&lt;/em&gt;. La función devuelve &lt;strong&gt;true&lt;/strong&gt; o &lt;strong&gt;false&lt;/strong&gt; en función del botón pulsado por el usuario.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;window.prompt(mensaje [, valor predeterminado])&lt;/code&gt;: Muesta en una ventana modal &lt;em&gt;mensaje&lt;/em&gt; y debajo tiene un campo donde el usuario puede escribir, junto con botones de &lt;em&gt;Aceptar&lt;/em&gt; y &lt;em&gt;Cancelar&lt;/em&gt;. La función devuelve el valor introducido por el usuario como texto (es decir que si introduce 54 lo que se obtiene es &amp;quot;54&amp;quot;) o &lt;strong&gt;false&lt;/strong&gt; si el usuario pulsa &lt;em&gt;Cancelar&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;También se pueden escribir las funciones sin &lt;em&gt;window.&lt;/em&gt; (es decir &lt;code&gt;alert(&#39;Hola&#39;)&lt;/code&gt; en vez de &lt;code&gt;window.alert(&#39;Hola&#39;)&lt;/code&gt;) ya que en Javascript todos los métodos y propiedades de los que no se indica de qué objeto son se ejecutan en el objeto &lt;em&gt;window&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Si queremos mostrar una información para depurar nuestro código no utilizaremos &lt;em&gt;alert(mensaje)&lt;/em&gt; sino &lt;code&gt;console.log(mensaje)&lt;/code&gt; o &lt;code&gt;console.error(mensaje)&lt;/code&gt;. Estas funciones muestran la información pero en la consola del navegador. La diferencia es que &lt;em&gt;console.error&lt;/em&gt; la muestra como si fuera un error de Javascript.&lt;/p&gt;
-&lt;h1 id=&quot;bibliografia&quot; tabindex=&quot;-1&quot;&gt;Bibliografía&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Curso &amp;quot;Programación con JavaScript&amp;quot;. CEFIRE Xest. Arturo Bernal Mayordomo&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLiZCpIzKtvqvt4tcQV4SAvaJn7QMdwUbd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso de JavaScript y TypeScript&lt;/a&gt; de Arturo Bernal en Youtube&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/Web/JavaScript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN Web Docs&lt;/a&gt;. Moz://a. &lt;a href=&quot;https://developer.mozilla.org/es/docs/Web/JavaScript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://developer.mozilla.org/es/docs/Web/JavaScript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://librosweb.es/libro/javascript/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción a JavaScript&lt;/a&gt;. Librosweb. &lt;a href=&quot;http://librosweb.es/libro/javascript/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;http://librosweb.es/libro/javascript/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLI7nHlOIIPOJtTDs1HVJABswW-xJcA7_o&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso de Javascript (Desarrollo web en entorno cliente)&lt;/a&gt;. Ada Lovecode - Didacticode (90 vídeos) de Laura Folgado&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/sergarb1/ApuntesDWEC&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Apuntes Desarrollo Web en Entorno Cliente (DWEC)&lt;/a&gt;. Sergi García Barea&lt;/li&gt;
-&lt;/ul&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/readme/" >
-        </entry>
-        <entry>
-            <title>
-                12-tests
-                
-            </title>
-            <updated>2025-09-15T16:34:20Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/12-tests/</id>
-            <content type="html">
-                &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
-&lt;p&gt;Tabla de contenidos&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#testing&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n-al-testing&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción al testing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#testing-en-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing en Javascript&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#instalar-npm&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Instalar npm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#instalar-jest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Instalar jest&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#transpilar-nuestro-c%C3%B3digo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Transpilar nuestro código&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#usando-babel-con-jest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Usando Babel con Jest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#usando-webpack&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Usando Webpack&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#instalar-webpack&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Instalar webpack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#ejecutar-webpack&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Ejecutar webpack&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#enlazar-el-fichero-generado-en-el-html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Enlazar el fichero generado en el HTML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#testear-la-ui&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testear la UI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#usar-jest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Usar jest&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#matchers&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Matchers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#test-suites&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Test suites&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#mocks&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mocks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#testear-promesas&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testear promesas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#hooks-de-jest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Hooks de Jest&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#desarrollo-guiado-por-pruebas-tdd&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduccion-al-testing&quot; tabindex=&quot;-1&quot;&gt;Introducción al testing&lt;/h2&gt;
-&lt;p&gt;Es fundamental que nuestro código tenga un cierto nivel de calidad para minimizar los fallos del programa, más cuanto más compleja es la aplicación que estamos desarrollando. Para ello debemos testearlo y dicho testeo seguramente incluirá test automáticos. Dichos test nos permiten:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;comprobar que nuestro código responde como se espera de él&lt;/li&gt;
-&lt;li&gt;evitar los &lt;em&gt;errores de regresión&lt;/em&gt; (fallos tras incluir una nueva funcionalidad en cosas que antes funcionaban en nuestro programa)&lt;/li&gt;
-&lt;li&gt;incluso mejoran la documentación del proyecto ya que el test indica cómo debe funcionar mi código&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Como ya sabéis existen varios tipos de tests:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;unitarios: prueban un trozo de código que sólo hace una cosa (habitualmente una función)&lt;/li&gt;
-&lt;li&gt;de integración: prueban que varias partes del código funcionan bien juntas&lt;/li&gt;
-&lt;li&gt;de aceptación: prueba que el código permite hacer algo que el cliente quiere qu pueda hacerse&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;De momento desarrollaremos tests unitarios. Estos tienen 3 partes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Preparación (&lt;em&gt;Arrange&lt;/em&gt;): perparamos el código para poder probarlo, por ejemplo, creamos las variables u objetos a probar&lt;/li&gt;
-&lt;li&gt;Actuación (&lt;em&gt;Act&lt;/em&gt;): realizamos la acción, por ejemplo, llamamos a la función&lt;/li&gt;
-&lt;li&gt;Aserción (&lt;em&gt;Assert&lt;/em&gt;): comprobamos que el resultado es el esperado&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;test(&#39;wordCount() returns 2 when the input is &amp;quot;Hello world&amp;quot;&#39;, () =&amp;gt; {
-  // Arrange
-  const string = &#39;Hello world&#39;;
-  
-  // Act
-  const result = wordCount(string);
-  
-  // Assert
-  expect(result).toBe(2);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;testing-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Testing en Javascript&lt;/h1&gt;
-&lt;p&gt;Tenemos muchas herramientas para hacer tests unitarios. Usaremos una llamada &lt;strong&gt;&lt;em&gt;Jest&lt;/em&gt;&lt;/strong&gt;. Para instalarla usaremos el gestor de paquetes &lt;strong&gt;&lt;em&gt;npm&lt;/em&gt;&lt;/strong&gt; que es el más utlizado para usar bibliotecas y sus dependencias en el FrontEnd.&lt;/p&gt;
-&lt;h2 id=&quot;instalar-npm&quot; tabindex=&quot;-1&quot;&gt;Instalar npm&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;npm&lt;/strong&gt; es el gestor de dependencias de &lt;strong&gt;&lt;em&gt;nodejs&lt;/em&gt;&lt;/strong&gt; y aprenderemos más de él en el bloque de &lt;strong&gt;Vue&lt;/strong&gt;. Debemos instalar &lt;em&gt;NodeJS&lt;/em&gt; para tener npm. Esto podemos hacerlo desde el repositorio de nuestra distribución (con &lt;code&gt;apt install nodejs&lt;/code&gt;) pero no se instalará la última versión. Es mejor seguir las indicaciones de la &lt;a href=&quot;https://nodejs.org/es/download/package-manager/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;página oficial de NodeJS&lt;/a&gt;. Aquí tenéis cómo hacerlo para &lt;a href=&quot;https://github.com/nodesource/distributions/blob/master/README.md#debinstall&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;distribuciones basadas en Debian/Ubuntu&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;instalar-jest&quot; tabindex=&quot;-1&quot;&gt;Instalar jest&lt;/h2&gt;
-&lt;p&gt;Una vez instalado npm crearemos una carpeta para cada proyecto que vayamos a hacer y lo inicializamos ejecutando dentro de ella:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm init
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Este comando crea un nuevo proyecto y nos pedirá información sobre el mismo. Cuando nos pregunten por la herramienta para hacer tests escribiremos &lt;strong&gt;jest&lt;/strong&gt;. Tras ello tendremos ya creado el fichero &lt;strong&gt;package.json&lt;/strong&gt; de nuestra aplicación (es el fichero donde se configura el proyecto y sus dependencias). En el apartado de &lt;em&gt;scripts&lt;/em&gt; encontramos uno llamado &lt;em&gt;test&lt;/em&gt; que lo que hace es ejecutar &lt;em&gt;jest&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;&amp;quot;scripts&amp;quot;: {
-   &amp;quot;test&amp;quot;: &amp;quot;jest&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Ahora falta instalar jest, lo que haremos con:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm install --save-dev jest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Estamos instalando jest sólo como dependencia de desarrollo ya que no lo necesitaremos en producción (lo mismo abreviado sería &lt;code&gt;npm i -D jest&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Aunque, como vamos a utilizar &lt;em&gt;jest&lt;/em&gt; en muchos proyectos distintos, es más conveniente instalarlo globalmente con&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;npm i -g jest
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;De esta forma no tendremos que instalar &lt;em&gt;jest&lt;/em&gt;  en cada nuevo proyecto, sólo hacer el &lt;code&gt;npm init&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Las dependencias que instalemos están en el directorio &lt;em&gt;node_modules&lt;/em&gt;. Si estamos usando &lt;em&gt;git&lt;/em&gt; debemos asegurarnos de incluir este directorio en nuestro fichero &lt;em&gt;.gitignore&lt;/em&gt; (si no tenemos ese fichero podemos crearlo simplemente con &lt;code&gt;echo &amp;quot;node_modules&amp;quot; &amp;gt; .gitignore&lt;/code&gt;).&lt;/p&gt;
-&lt;h2 id=&quot;transpilar-nuestro-codigo&quot; tabindex=&quot;-1&quot;&gt;Transpilar nuestro código&lt;/h2&gt;
-&lt;p&gt;Vamos a crear las funciones de nuestro código en un fichero JS y para que se puedan usar el otro fichero Javascript (el de los tests) debemos exportarlas con &lt;code&gt;module.exports&lt;/code&gt;. El fichero de test deberá importarlas con &lt;code&gt;require&lt;/code&gt; (se explica más adelante, en el apartado de &lt;a href=&quot;https://pedroporo.github.io/#usar-jest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Usar Jest&lt;/a&gt;). Por ejemplo, tenemos un fichero llamado &lt;strong&gt;suma.js&lt;/strong&gt; que contiene la función &lt;em&gt;add&lt;/em&gt; que suma 2 números pasados por parámetro:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function add(a, b) {
-  return a + b;
-}
-module.exports = add;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El fichero de test, &lt;strong&gt;suma.test.js&lt;/strong&gt; (normalmente le llamaremos igual pero anteponiendo &lt;em&gt;.test&lt;/em&gt; a la extensión .js) contiene los test a ejecutar:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const add = require(&#39;./suma&#39;)
-
-describe(&#39;Addition&#39;, () =&amp;gt; {
-    test(&#39;given 3 and 7 as inputs, should return 10&#39;, () =&amp;gt; {
-        const expected = 10;
-        const actual = add(3,7);
-        expect(actual).toEqual(expected)
-    });
-
-    test(&#39;given -4 and 2 as inputs, should return -2&#39;, () =&amp;gt; {
-        const expected = -2;
-        const actual = add(-4,2);
-        expect(actual).toEqual(expected)
-    });
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Lo que hace es:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;importa la función que exporta &lt;em&gt;suma.js&lt;/em&gt; y la almacena en la constante &lt;strong&gt;add&lt;/strong&gt;. Ya pude llamar a esa función&lt;/li&gt;
-&lt;li&gt;el bloque &lt;em&gt;describe&lt;/em&gt; permite agrupar varios tests relacionados bajo un mismo nombre&lt;/li&gt;
-&lt;li&gt;cada sentencia &lt;em&gt;test&lt;/em&gt; es un test que se realizará&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Si ejecutamos los tests en la terminal (&lt;code&gt;npm run test&lt;/code&gt;) muestra un error ya que Jest no sabe cómo gestionar las sentencias ECMAScript &lt;em&gt;import&lt;/em&gt; y &lt;em&gt;export&lt;/em&gt;. Para solucionarlo debemos transpilar nuestro código de manera que Jest pueda entenderlo. Podemos hacerlo de 2 maneras:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;instalando el transpilador &lt;strong&gt;Babel&lt;/strong&gt; y configurando &lt;em&gt;Jest&lt;/em&gt; para que transpile el código&lt;/li&gt;
-&lt;li&gt;utilizando un &lt;em&gt;bundler&lt;/em&gt; como &lt;strong&gt;Webpack&lt;/strong&gt;. En este caso no sólo transpilamos el código sino que juntamos todos nuestros ficheros JS en uno sólo que será el que enlazaremos en el fichero HTML de nuestra aplicación. Es la solución si queremos que nuestro código funcione en el navegador además de poder pasar los tests.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;usando-babel-con-jest&quot; tabindex=&quot;-1&quot;&gt;Usando Babel con Jest&lt;/h3&gt;
-&lt;p&gt;Si queremos sólo poder pasar los tests pero no vamos a usar ese código en el navegador sólo tenemos que instalar el transpilador Babel:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm add jest babel-jest @babel/core @babel/preset-env
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y crear 2 ficheros para configurarlo y que sepa trabajar junto a Jest:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;jest.config.json&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
-    &amp;quot;transform&amp;quot;: {
-        &amp;quot;^.+&#92;&#92;.jsx?$&amp;quot;: &amp;quot;babel-jest&amp;quot;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.babelrc&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
-    &amp;quot;presets&amp;quot;: [&amp;quot;@babel/preset-env&amp;quot;]
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Ahora ya podemos ejecutar los test y comprobar que nuestro código los pasa.&lt;/p&gt;
-&lt;p&gt;En la siguiente página explica cómo configurar npm y jest con babel (sin usar webpack) e integrarlo con Travis-CI, la herramienta de integracion continua de GitHub:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://levelup.gitconnected.com/automate-npm-releases-with-jest-codecov-io-semantic-release-and-travisci-eff812e97541&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Automate NPM releases with Jest, codecov.io, Semantic Release, and TravisCI&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;usando-webpack&quot; tabindex=&quot;-1&quot;&gt;Usando Webpack&lt;/h2&gt;
-&lt;p&gt;Con la configuración anterior nuestro código es transpilado para ejecutar los tests, pero dará error si intentamos ejecutarlo en el navegador porque allí no está transpilado. Podemos solucionarlo usando &lt;em&gt;webpack&lt;/em&gt; para empaquetar y transpilar el código (por tanto no sería necesario realizar lo indicado en al apartado anterior).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Webpack&lt;/a&gt; el un &lt;em&gt;bundler&lt;/em&gt; o empaquetador de código que además puede usar transpiladores para convertir nuestro código que usa versiones modernas de ECMAscript en otro soportado por la mayoría de navegadores.&lt;/p&gt;
-&lt;p&gt;Por tanto nos va a permitir, entre otras cosas:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tener en nuestro &lt;em&gt;index.html&lt;/em&gt; una sóla entrada de script (&lt;code&gt;&amp;lt;script src=&amp;quot;./dist/main.js&#39;&amp;gt;&lt;/code&gt;) en lugar de una para cada archivo que estemos utilizando (index.js, functions.js, ...)&lt;/li&gt;
-&lt;li&gt;Además podremos usar instrucciones como &lt;code&gt;module.exports&lt;/code&gt; para exportar funciones o &lt;code&gt;require&lt;/code&gt; para importarlas en otro fichero Javascript, que sin traspilar provocarían errores en el navegador&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Existen infinidad de páginas que nos enseñan las mil posibilidades que tiene &lt;em&gt;webpack&lt;/em&gt;, pero nosotros por ahora sólo necesitamos:&lt;/p&gt;
-&lt;h3 id=&quot;instalar-webpack&quot; tabindex=&quot;-1&quot;&gt;Instalar webpack&lt;/h3&gt;
-&lt;p&gt;Tenemos que instalar webpack y webpack-cli. Como son dependencias de desarrollo (en producción no las necesitaremos) ejecutamos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm i -D webpack webpack-cli
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;ejecutar-webpack&quot; tabindex=&quot;-1&quot;&gt;Ejecutar webpack&lt;/h3&gt;
-&lt;p&gt;Se ejecuta con el comando &lt;code&gt;npx webpack&lt;/code&gt; y hay que indicarle:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cuál es nuestro archivo Javascript principal de nuestro código (si no lo ponemos supondrá que es &lt;strong&gt;./src/index.js&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;cuál será el archivo que creará de salida (por defecto &lt;strong&gt;./dist/main.js&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;si estamos en desarrollo o en producción, para permitir o no depurar el código generado&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Siguiendo con el ejemplo anterior de la suma crearemos un fichero &lt;strong&gt;index.js&lt;/strong&gt; dentro de &lt;em&gt;src/&lt;/em&gt; que importará el fichero &lt;em&gt;suma.js&lt;/em&gt; (con el comando &lt;code&gt;require&lt;/code&gt;como se hace en el fichero de tests) y que contendrá el resto de código de la aplicación (como pedir al usuario los números a sumar, mostrar el resultado, ...). Para que webpack empaquete y transpile esos 2 ficheros (index.js y suma.js) ejecutaremos en la terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npx webpack --mode=development
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;enlazar-el-fichero-generado-en-el-html&quot; tabindex=&quot;-1&quot;&gt;Enlazar el fichero generado en el HTML&lt;/h3&gt;
-&lt;p&gt;Por último, en nuestro &lt;em&gt;index.html&lt;/em&gt; debemos incluir sólo el &lt;em&gt;main.js&lt;/em&gt; generado por webpack &lt;code&gt;&amp;lt;script src=&amp;quot;dist/main.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;testear-la-ui&quot; tabindex=&quot;-1&quot;&gt;Testear la UI&lt;/h2&gt;
-&lt;p&gt;Si queremos hacer tests unitarios de los cambios que produce nuestro código en la página web hay varios frameworks que podemos usar, pero también podemos hacerlo sin usar ninguno, usando sólo los módulos de Node que ya tenemos instalados y &lt;em&gt;Jest&lt;/em&gt;, en concreto su herramienta &lt;em&gt;jsdom&lt;/em&gt; que usa para emular un navegador.&lt;/p&gt;
-&lt;p&gt;Para usarlo debemos instalar la librería &lt;a href=&quot;https://testing-library.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Testing Library&lt;/a&gt;. Para ello, tras configurar nuestro proyecto con &lt;em&gt;Babel&lt;/em&gt; como hemos visto antes, instalaremos para desarrollo los paquetes &lt;strong&gt;@testing-library/dom&lt;/strong&gt; y &lt;strong&gt;@testing-library/jest-dom&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;npm i -D @testing-library/dom @testing-library/jest-dom
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En el fichero de test debemos poner al principio:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const { fireEvent, getByText } = require(&#39;@testing-library/dom&#39;)
-import &#39;@testing-library/jest-dom/extend-expect&#39;
-import { JSDOM } from &#39;jsdom&#39;
-import fs from &#39;fs&#39;
-import path from &#39;path&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;y antes de ejecutar cada test cargamos nuestra página HTML con:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const html = fs.readFileSync(path.resolve(__dirname, &#39;../index.html&#39;), &#39;utf8&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;OJO: sólo debemos cargar así la página si confiamos totalmente en el código que vamos a probar (en este caso es nuestro código) y no deberíamos hacerlo para código de terceros.&lt;/p&gt;
-&lt;p&gt;Luego ya podemos acceder al HTML y mirar si existen ciertas etiquetas o su contenido, como en este ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const { fireEvent, getByText } = require(&#39;@testing-library/dom&#39;)
-import &#39;@testing-library/jest-dom/extend-expect&#39;
-import { JSDOM } from &#39;jsdom&#39;
-import fs from &#39;fs&#39;
-import path from &#39;path&#39;
-
-const html = fs.readFileSync(path.resolve(__dirname, &#39;../index.html&#39;), &#39;utf8&#39;);
-
-let dom
-let container
-
-describe(&#39;index.html&#39;, () =&amp;gt; {
-  beforeEach(() =&amp;gt; {
-    // Constructing a new JSDOM with this option is the key
-    // to getting the code in the script tag to execute.
-    // This is indeed dangerous and should only be done with trusted content.
-    // https://github.com/jsdom/jsdom#executing-scripts
-    dom = new JSDOM(html, { runScripts: &#39;dangerously&#39; })
-    container = dom.window.document.body
-  })
-
-  it(&#39;renders a heading element&#39;, () =&amp;gt; {
-    expect(container.querySelector(&#39;h1&#39;)).not.toBeNull()
-    expect(getByText(container, &#39;Almacén central - ACME SL&#39;)).toBeInTheDocument()
-  })
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Además de &lt;em&gt;getByText&lt;/em&gt; para comprobar los elementos de la página tenemos otras &lt;a href=&quot;https://testing-library.com/docs/dom-testing-library/api-queries&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;queries&lt;/a&gt; que podemos utilizar.&lt;/p&gt;
-&lt;p&gt;Fuente: &lt;a href=&quot;https://levelup.gitconnected.com/how-to-unit-test-html-and-vanilla-javascript-without-a-ui-framework-c4c89c9f5e56&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;How to Unit Test HTML and Vanilla JavaScript Without a UI Framework&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;usar-jest&quot; tabindex=&quot;-1&quot;&gt;Usar jest&lt;/h1&gt;
-&lt;p&gt;La &lt;a href=&quot;https://jestjs.io/docs/en/getting-started.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación oficial&lt;/a&gt; proporciona muy buena información de cómo usarlo. En resumen, en los ficheros con las funciones que vayamos a testear debemos &#39;&lt;em&gt;exportar&lt;/em&gt;&#39; esas funciones para que las pueda importar el fichero de test. Lo haremos con &lt;code&gt;module.exports&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function suma(a, b) {
-  return a + b;
-}
-module.exports = suma;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si tenemos varias funciones podemos exportar un objeto con todas ellas:&lt;br /&gt;
-&lt;code&gt;module.exports&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function suma(a, b) {
-  return a + b;
-}
-module.exports = { suma, resta, multiplica, divide };
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En el fichero de test (que normalmente se llamará como el original más &lt;em&gt;test&lt;/em&gt; antes de la extensión, por ejemplo &lt;em&gt;funciones.test.js&lt;/em&gt;) importamos esas funciones con un &lt;code&gt;require&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const suma = require(&#39;./funciones&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;y ya podemos acceder llamar a la función &#39;suma&#39; desde el fichero de test. Si queremos importar varias funciones haremos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const funciones = require(&#39;./funciones&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;y accederemos a cada una como &#39;funciones.suma&#39;, ...&lt;/p&gt;
-&lt;p&gt;Ya podemos crear nuestro primer test para probar la función suma:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;test(&#39;Suma 1 + 1 devuelve 2&#39;, () =&amp;gt; {
-  expect(funciones.suma(1, 1)).toBe(2);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para crear un test usamos la instrucción &lt;code&gt;test&lt;/code&gt; (o &lt;code&gt;it&lt;/code&gt;) a la que le pasamos como primer parámetro un nombre descriptivo de lo que hace y como segundo parámetro la función que realiza el test. En general usaremos &lt;code&gt;expect&lt;/code&gt; y le pasamos como parámetro la llamada a la función a testear y comparamos el resultado devuelto usando un &lt;em&gt;matcher&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;matchers&quot; tabindex=&quot;-1&quot;&gt;Matchers&lt;/h2&gt;
-&lt;p&gt;Los más comunes son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;toBe()&lt;/strong&gt;: compara el resultado del &lt;em&gt;expect&lt;/em&gt; con lo que le pasamos como parámetro. Sólo sirve para valores primitivos (number, string, boolean, ...) no para arrays ni objetos&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeCLoseTo()&lt;/strong&gt;: se usa para números de punto flotante. &lt;code&gt;expect(0.1 + 0.2).toBe(0.3)&lt;/code&gt; fallaría por el error de redondeo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toEqual()&lt;/strong&gt;: como el anterior pero para objetos y arrays. Comprueba cada uno de los elementos el objeto o array&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeLessThan&lt;/strong&gt;, &lt;strong&gt;toBeLessThanOrEqual&lt;/strong&gt;, &lt;strong&gt;toBeGreaterThan&lt;/strong&gt;, &lt;strong&gt;toBeGreaterThanOrEqual&lt;/strong&gt;: para comparaciones &amp;lt;, &amp;lt;=, &amp;gt;, &amp;gt;=&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeTruthy&lt;/strong&gt;: el valor devuelvo es verdadero o asimilable a verdadero (si fuera la condición de un &lt;em&gt;if&lt;/em&gt; se ejecutaría el &lt;em&gt;then&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeFalsy&lt;/strong&gt;: el valor devuelvo es falso o asimilable a falso (si fuera la condición de un &lt;em&gt;if&lt;/em&gt; se ejecutaría el &lt;em&gt;else&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeUndefined&lt;/strong&gt;: el valor es &lt;em&gt;undefined&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeDefined&lt;/strong&gt;: el valor NO es &lt;em&gt;undefined&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toBeNull&lt;/strong&gt;: el valor devuelto es &lt;em&gt;null&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toMatch&lt;/strong&gt;: el valor devuelto debe cumplir con la expresión regular pasada&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toContain&lt;/strong&gt;: el array devuelto debe contener el elemento pasado como parámetro&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;toHaveLength&lt;/strong&gt;: el array o el string devueltos debe tener la longitud indicada&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para comprobar si una función ha lanzado una excepción se usa &lt;code&gt;toThrow&lt;/code&gt;. Podemos comprobar sólo que haya lanzado un error, que sea de un tipo determinado, el mensaje exacto que tiene o si el mensaje cumple con una expresión regular:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function compileAndroidCode() {
-  throw new Error(&#39;you are using the wrong JDK&#39;);
-}
-
-test(&#39;compiling android goes as expected&#39;, () =&amp;gt; {
-  expect(compileAndroidCode).toThrow();
-  expect(compileAndroidCode).toThrow(Error);
-  expect(compileAndroidCode).toThrow(&#39;you are using the wrong JDK&#39;);
-  expect(compileAndroidCode).toThrow(/JDK/);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos obtener la lsita completa de &lt;em&gt;matchers&lt;/em&gt; en al &lt;a href=&quot;https://jestjs.io/docs/es-ES/expect&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación oficial de Jest&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;test-suites&quot; tabindex=&quot;-1&quot;&gt;Test suites&lt;/h2&gt;
-&lt;p&gt;En muchas ocasiones no vamos a pasar un único test sino un conjunto de ellos. En ese caso podemos agruparlos en un &lt;em&gt;test suite&lt;/em&gt; que definimos con la instruacción &lt;code&gt;describe&lt;/code&gt; a la que pasamos un nombre que la describa y una función que contiene todos los tests a pasar:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;describe(&#39;Funciones aritméticas&#39;, () =&amp;gt; {
-  test(&#39;Suma 1 + 1 devuelve 2&#39;, () =&amp;gt; {
-    expect(funciones.suma(1, 1)).toBe(2);
-  });
-
-  test(&#39;Resta 2 - 1 devuelve 1&#39;, () =&amp;gt; {
-    expect(funciones.resta(2, 1)).toBe(1);
-  });
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;mocks&quot; tabindex=&quot;-1&quot;&gt;Mocks&lt;/h2&gt;
-&lt;p&gt;Muchas veces debemos testear partes del código que llaman a otras funciones pero no nos interesa que se ejecuten esas funciones sino simplemente saber si se han llamado o no y con qué parámetros. Para eso se definen las fuciones &lt;em&gt;mock&lt;/em&gt;. Consiste en declarar en nuestro fichero de test una función a la que llama el código como función de &lt;em&gt;jest&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Por ejemplo, tenemos un método de un controlador llamado &lt;em&gt;addProduct&lt;/em&gt; que llama a otro de la vista llamado &lt;em&gt;renderProduct&lt;/em&gt; para renderizar algo. Nosotros sólo queremos testear que se llama a la vista y que el parámetro que se le pasa es el adecuado. En nuestro test haremos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;renderProduct = jest.fn();
-
-test(&#39;renderProduct called once with product {id: 1, name: &amp;quot;Prod 1&amp;quot;, price: 49.99}&#39;, () =&amp;gt; {
-  const product = {id: 1, name: &amp;quot;Prod 1&amp;quot;, price: 49.99};
-  
-  renderProduct(product);
-  renderProduct({});
-  
-	expect(renderProduct.mock.calls.length).toBe(2);
-	expect(renderProduct.mock.calls[0][0]).toEqual(newProd);
-	expect(renderProduct.mock.calls[1][0]).toEqual({});
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En realidad no se llama a la función real sino a la definida por el mock y podemos ver las veces que ha sido llamada (&lt;code&gt;fn.mock.calls.length&lt;/code&gt;) o el primer parámetro pasado en la primera llamada (&lt;code&gt;fn.mock.calls[0][0]&lt;/code&gt;) o en la segunda (&lt;code&gt;fn.mock.calls[1][0]&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Podéis obtener toda la información en la &lt;a href=&quot;https://jestjs.io/docs/en/mock-functions&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación de jest&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;También podemos encontrar muchos ejemplos en otras webs, como en &lt;a href=&quot;https://books.adalab.es/materiales-front-end-e/sprint-3.-react/3_14_testing_js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;adalab&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;testear-promesas&quot; tabindex=&quot;-1&quot;&gt;Testear promesas&lt;/h2&gt;
-&lt;p&gt;Para testear una función que devuelve una promesa debemos hacerlo de diferente manera. Por ejemplo tenemos una función &#39;getData&#39; que devuelve una promesa. Para testearla:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;test(&#39;getData devuelve un arrya de 3 elementos&#39;, () =&amp;gt; {
-  return getData().then(data =&amp;gt; expect(data).toHaveLength(3) );
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;No olvidéis poner el &#39;return&#39;, si no el test acabará sin esperar a que se resuelva la promesa. Si lo que queremos es comprobar que la promesa es rechazada haremos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;test(&#39;getData devuelve un arrya de 3 elementos&#39;, () =&amp;gt; {
-  expect.assertions(1);
-  return getData().catch(err =&amp;gt; expect(err).toMatch(&#39;404&#39;);
-  });
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso esperamos que devuelva un error que contenga &#39;404&#39;. Hay que poner la línea de &lt;code&gt;expect.assertions&lt;/code&gt; para evitar que una promesa cumplida no haga que falle el test.&lt;/p&gt;
-&lt;p&gt;En la &lt;a href=&quot;https://jestjs.io/docs/en/asynchronous&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;documentación oficial de Jest&lt;/a&gt; podemos encontrar información de cómo probar todo tipo de llamadas asíncronas (&lt;em&gt;callback&lt;/em&gt;, &lt;em&gt;async/await&lt;/em&gt;, ...).&lt;/p&gt;
-&lt;h2 id=&quot;hooks-de-jest&quot; tabindex=&quot;-1&quot;&gt;Hooks de Jest&lt;/h2&gt;
-&lt;p&gt;Permiten ejecutar código antes o depués de pasar cada test o el conjunto de ellos. Son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;afterEach()&lt;/strong&gt;: Después de cada prueba.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;afterAll()&lt;/strong&gt;: Después de todas las pruebas.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;beforeEach()&lt;/strong&gt;: Antes de cada prueba.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;beforeAll()&lt;/strong&gt;: Antes de todas las pruebas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Por ejemplo podemos querer inicializar la base de datos antes de pasar cada test:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;beforeAll(() =&amp;gt; {
-  initializeCityDatabase();
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si se trata de una función asíncrona habrá que añadirle un &#39;return&#39; igual que hacíamos con las promesas:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;beforeAll(() =&amp;gt; {
-  return initializeCityDatabase();
-});
-
-afterAll(() =&amp;gt; {
-  return clearCityDatabase();
-});
-
-test(&#39;city database has Vienna&#39;, () =&amp;gt; {
-  expect(isCity(&#39;Vienna&#39;)).toBeTruthy();
-});
-
-test(&#39;city database has San Juan&#39;, () =&amp;gt; {
-  expect(isCity(&#39;San Juan&#39;)).toBeTruthy();
-});`
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
-&lt;p&gt;Es una forma de programar que consiste en escribir primero las pruebas que deba pasar el código (Test Dirve Development) y luego el código que las pase. Por último deberíamos refactorizarlo (&lt;a href=&quot;https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Refactoring&lt;/a&gt;). Para escribir las pruebas generalmente se utilizan las &lt;a href=&quot;https://es.wikipedia.org/wiki/Prueba_unitaria&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;pruebas unitarias&lt;/a&gt; (unit test en inglés).&lt;/p&gt;
-&lt;p&gt;El ciclo de programación usando TDD tiene tres fases:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Fase &lt;em&gt;roja&lt;/em&gt;: escribimos el test que cumpla los requerimientos y lo pasamos. Fallará ya que nuestro código no pasa el test (de hecho la primera vez no tenemos ni código)&lt;/li&gt;
-&lt;li&gt;Fase &lt;em&gt;verde&lt;/em&gt;: conseguimos que nuestro código pase el test. Ya funciona aunque seguramente no estará muy bien escrito&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Refactorización&lt;/em&gt;: mejoramos nuestro código&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;En primer lugar, se escribe una prueba y se verifica que las pruebas fallan. A continuación, se implementa el código que hace que la prueba pase satisfactoriamente y seguidamente se refactoriza el código escrito. El propósito del desarrollo guiado por pruebas es lograr un código limpio que funcione. La idea es que los requisitos sean traducidos a pruebas, de este modo, cuando las pruebas pasen se garantizará que el software cumple con los requisitos que se han establecido.&lt;/p&gt;
-&lt;p&gt;Para ello debemos en primer lugar se debe definir una lista de requisitos y después se ejecuta el siguiente ciclo:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Elegir un requisito: Se elige de una lista el requisito que se cree que nos dará mayor conocimiento del problema y que a la vez sea fácilmente implementable.&lt;/li&gt;
-&lt;li&gt;Escribir una prueba: Se comienza escribiendo una prueba para el requisito. Para ello el programador debe entender claramente las especificaciones y los requisitos de la funcionalidad que está por implementar. Este paso fuerza al programador a tomar la perspectiva de un cliente considerando el código a través de sus interfaces.&lt;/li&gt;
-&lt;li&gt;Verificar que la prueba falla: Si la prueba no falla es porque el requisito ya estaba implementado o porque la prueba es errónea.&lt;/li&gt;
-&lt;li&gt;Escribir la implementación: Escribir el código más sencillo que haga que la prueba funcione. Se usa la expresión &amp;quot;Déjelo simple&amp;quot; (&amp;quot;Keep It Simple, Stupid!&amp;quot;), conocida como principio KISS.&lt;/li&gt;
-&lt;li&gt;Ejecutar las pruebas automatizadas: Verificar si todo el conjunto de pruebas funciona correctamente.&lt;/li&gt;
-&lt;li&gt;Eliminación de duplicación: El paso final es la refactorización, que se utilizará principalmente para eliminar código duplicado. Se hace un pequeño cambio cada vez y luego se corren las pruebas hasta que funcionen.&lt;/li&gt;
-&lt;li&gt;Actualización de la lista de requisitos: Se actualiza la lista de requisitos tachando el requisito implementado. Asimismo se agregan requisitos que se hayan visto como necesarios durante este ciclo y se agregan requisitos de diseño (P. ej que una funcionalidad esté desacoplada de otra).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Tener un único repositorio universal de pruebas facilita complementar TDD con otra práctica recomendada por los procesos ágiles de desarrollo, la &amp;quot;Integración Continua&amp;quot;. Integrar continuamente nuestro trabajo con el del resto del equipo de desarrollo permite ejecutar toda batería de pruebas y así descubrir si nuestra última versión es compatible con el resto del sistema. Es recomendable y menos costoso corregir pequeños problemas cada pocas horas que enfrentarse a problemas enormes cerca de la fecha de entrega fijada.&lt;/p&gt;
-&lt;p&gt;(Fuente &lt;a href=&quot;https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/12-tests/" >
-        </entry>
-        <entry>
-            <title>
-                11-mas
-                
-            </title>
-            <updated>2025-09-15T16:34:20Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/11-mas/</id>
-            <content type="html">
-                &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#m%C3%A1s-cosas-a-aprender-en-javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Más cosas a aprender en Javascript&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#webcomponents&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WebComponents&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#websockets&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WebSockets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#webworkers&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WebWorkers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#typescript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Typescript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#jquery&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduccion&quot; tabindex=&quot;-1&quot;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;Hace unos años Javscript era considerado un lenguaje de programación de segunda categoría, que se usaba para hacer molestas páginas web. Hoy en día el navegador es la aplicación más importante de un equipo y con él, además de navegar, se ejecutan todo tipo de aplicaciones. Además HTML5 y JavaScript han pasado de estar solo en nuestro navegador a ser un pilar básico de las plataformas móviles, de aplicaciones de escritorio e incluso JavaScript lo encontramos en servidores (con &lt;em&gt;Node.js&lt;/em&gt;) o como lenguaje estándar de algunos entornos de escritorio (como &lt;em&gt;GNOME&lt;/em&gt; para Linux).&lt;/p&gt;
-&lt;p&gt;Por ello HTML5 y Javascript siguen su contínuo crecimiento... y su contínua evolución que les permite hacer cada vez más cosas. En esta página vamos a hablar muy brevemente de algunas de las características que están incorporando.&lt;/p&gt;
-&lt;h2 id=&quot;web-components&quot; tabindex=&quot;-1&quot;&gt;WebComponents&lt;/h2&gt;
-&lt;p&gt;Son distintas tecnologías que podemos usar (todas o alguna de ellas) para crear componentes reutilizables para nuestras páginas HTML. Las tecnologías que hay tras los Web Components son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Custom Elements&lt;/a&gt;: permite crear elementos HTML personalizados, es decir, nuevas etiquetas definidas por nosotros con funcionalidad propia. Por ejemplo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;comp-calendar
-    mode=&amp;quot;month&amp;quot;
-    date=&amp;quot;2020-02-23&amp;quot;
-    on-select=&amp;quot;dateSelected()&amp;quot; &amp;gt;
-&amp;lt;/comp-calendar&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;HTML Templates&lt;/a&gt;: la etiqueta &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt; permite definir fragmentos de código HTML que no serán renderizados y que usaremos más adelante. Pueden incluir &lt;strong&gt;slots&lt;/strong&gt; o huecos a los que se pasa un contenido&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Shadow DOM&lt;/a&gt;: permite asociar un DOM oculto a un elemento. Esto permite que tenga su propio código JS y estilos CSS aislados del resto del DOM&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ES Modules&lt;/a&gt;: Es el estándar de ECMAScript para importar módulos Javascript.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Un WebComponent es un elemento que creamos y que tiene su propia representación (HTML) y funcionalidad (establecida con Javascript). Este elemento es reusable y compartible y se contruye sin librerías externas, sólo con HTML5, ES6 y CSS3.&lt;/p&gt;
-&lt;p&gt;Algunos ejemplos de componentes útiles que podríamos usar son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;componente para loguearnos mediante Google, Facebook, etc&lt;/li&gt;
-&lt;li&gt;componente que me muestre el tiempo en una ciudad&lt;/li&gt;
-&lt;li&gt;componente para hacer un modal&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hay infinidad de páginas donde podemos aprender más sobre WebComponents y cómo crear nuestro propio componente, como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/Web/Web_Components&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Web Components | MDN&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.webcomponents.org/introduction&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introduction - webcomponents.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://lenguajejs.com/webcomponents/introduccion/que-son-webcomponents/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;¿Qué son los WebComponents? - Javascript en español&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8bcfgXePHnk&amp;amp;feature=em-subs_digest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Carlos Azaustre - Cómo crear un WebComponent de forma nativa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;En resumen debemos crear un fichero donde definimos la clase de nuestro componente que debe heredar de &lt;code&gt;HTMLElement&lt;/code&gt;. Es conveniente que su nombre (y por tanto el de la etiqueta que usaremos para mostrarlo) tenga al menos 2 palabras para evitar que pueda entrar en conflicto con posibles futuras etiquetas de HTML (por ejemplo podría ser &amp;lt;social-login&amp;gt; o &amp;lt;my-weather&amp;gt;). En esta clase definiremos el HTML y el estilo que tendrá nuestro componente, así como su comportamiento.&lt;/p&gt;
-&lt;p&gt;Actualmente no todos los navegadores ofrecen soporte para WebComponents. Esto junto al hecho de que frameworks como Vue, Angular o React ofrecen soluciones con sus propios componentes han hecho que el uso de los WebComponents no acabe de despegar. A pesar de ello hay lugares como &lt;a href=&quot;https://www.webcomponents.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WebComponents.org&lt;/a&gt; donde podemos encontrar un catálogo de componentes hechos y que podemos usar en nuestras páginas.&lt;/p&gt;
-&lt;p&gt;Por su parte Google ha desarrollado la librería Polymer para ayudarnos a crear nuestros propios componentes basados en WebComponents y los principales frameworks JS como Angular o Vue permiten crear sus propios componentes de forma muy sencilla, com veremos en el bloque de Vue.&lt;/p&gt;
-&lt;h2 id=&quot;web-sockets&quot; tabindex=&quot;-1&quot;&gt;WebSockets&lt;/h2&gt;
-&lt;p&gt;WebSockets es una tecnología basada en el protocolo &lt;strong&gt;ws&lt;/strong&gt; que permite establecer una conexión continua &lt;em&gt;full-duplex&lt;/em&gt; entre un cliente (puede ser un navegador) y un servidor. La conexión siempre la abre el cliente pero una vez abierta no se cierra por lo que el servidor puede comunicar en cualquier momento con el cliente y enviarle información.&lt;/p&gt;
-&lt;p&gt;Ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let exampleSocket=new WebSocket(uri);
-exampleWebsocjet.onopen=function(event) {
-    console.log(&#39;Se ha establecido la conexión&#39;);
-}
-exampleSocket.onclose=function(event) {
-    console.log(&#39;Se ha cerrado la conexión&#39;);
-}
-exampleSocket.onerror=function(event) {
-    console.log(&#39;Se ha producido un error en la conexión&#39;);
-}
-exampleSocket.onmessage=function(event) {
-    console.log(&#39;Se ha recibido el mensaje:&#39; + event.data);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El &lt;em&gt;uri&lt;/em&gt; de la conexión deberá usar el protocolo &lt;strong&gt;ws&lt;/strong&gt; (o wss), no http (ej. &amp;quot;ws://miservidor.com/socketserver&amp;quot;). El evento &lt;em&gt;open&lt;/em&gt; se produce cuando la propiedad &lt;em&gt;readyState&lt;/em&gt; cambia a OPEN y el &lt;em&gt;close&lt;/em&gt; cuando cambia su valor a CLOSED. Cada vez que se reciba algo del servidor se produce el evento &lt;em&gt;message&lt;/em&gt; y en la propiedad &lt;strong&gt;data&lt;/strong&gt; del mismo tendremos lo que se nos ha enviado.&lt;/p&gt;
-&lt;p&gt;Para enviar algo al servidor usamos el mátodo &lt;strong&gt;.send&lt;/strong&gt;. Lo que le enviamos ex texto en formato utf-8 (o un objeto convertido a JSON):&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;exampleSocket.send(&#39;Your message&#39;);
-exampleSocket.send(JSON.stringify(msg));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;También podemos enviar (y recibir) imágenes (convertidas a ArrayBuffer) o ficheros como un objeto Blob.&lt;/p&gt;
-&lt;p&gt;Para cerrar la conexión llamamos al método &lt;strong&gt;.close()&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;exampleSocket.close();
-console.log(&#39;Conexión cerrada&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para programar la parte del servidor podemos usar librerías que nos ayudan como &lt;a href=&quot;https://github.com/ghedipunk/PHP-WebSockets&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PHP-WebSockets&lt;/a&gt;, SocketIO, ...&lt;/p&gt;
-&lt;p&gt;Las aplicaciones de esta tecnología son muchas:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Juegos multjugador&lt;/li&gt;
-&lt;li&gt;Aplicaciones de chat&lt;/li&gt;
-&lt;li&gt;Actualización en tiempo real de cotizaciones de bolsa, recursos en uso o cualquier otra información&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Podemos practicar con &lt;a href=&quot;https://www.websocket.org/echo.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;www.websocket.org&lt;/a&gt; que tiene un servidor websocket que devuelve lo que le enviamos. En esta web también tenemos ejemplos de aplicaciones.&lt;/p&gt;
-&lt;p&gt;Saber más:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/WebSockets-840092-dup/Writing_WebSocket_client_applications&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN: Escribiendo aplicaciones con WebSockets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://es.javascript.info/websocket&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;WebSocket - El Tutorial de JavaScript Moderno&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ppiAvvkvAz0&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Carlos Azaustre: Crear chat con WebSockets&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;web-workers&quot; tabindex=&quot;-1&quot;&gt;WebWorkers&lt;/h2&gt;
-&lt;p&gt;En principio Javascript se ejecuta en un único hilo de ejecución pero esta tecnología permite ejecutar scripts en segundo plano en hilos separados que se ejecutan en segundo plano y se comunican con la tarea que los crea mediante el envío de mensajes.&lt;/p&gt;
-&lt;p&gt;Cuando se está ejecutando un script la página no responde hasta que finaliza su ejecución. Si el script lo ejecuta un web worker la página será funcional (podemos interactuar con ella) ya que le ejecución del script se realiza en segundo plano en otro hilo.&lt;/p&gt;
-&lt;p&gt;Hay 3 tipos de &lt;em&gt;WebWorkers&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dedicated Workers: Estos son los más comunes y se ejecutan en un hilo dedicado al contexto del script que los creó. No comparten recursos con otros scripts y son útiles para tareas intensivas que requieren mucho procesamiento.&lt;/li&gt;
-&lt;li&gt;Shared Workers: Pueden ser compartidos por varios scripts ejecutándose en diferentes ventanas, pestañas o iframes dentro del mismo dominio. Son ideales para aplicaciones que necesitan coordinar tareas entre múltiples instancias de la misma aplicación web.&lt;/li&gt;
-&lt;li&gt;Service Workers: Actúan como servidores proxy que se ejecutan en segundo plano y gestionan eventos de red como las peticiones HTTP. Son esenciales para crear aplicaciones web progresivas (PWAs) que funcionen sin conexión y mejoren la velocidad de carga.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Podéis ver un ejemplo de cómo crear un WebWorker para generar números primos en el  &lt;a href=&quot;https://xxjcaxx.github.io/libro_dwec/webworkers.html#ejemplo-de-uso-dedicated-worker&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso DWEC de Jose Castillo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Saber más:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://xxjcaxx.github.io/libro_dwec/webworkers.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso DWEC de Jose Castillo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;MDN - Usando WebWorkers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.w3schools.com/html/html5_webworkers.asp&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;w3schools - HTML5 Web Workers&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h2&gt;
-&lt;p&gt;TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipado estático y objetos basados en clases. TypeScript extiende la sintaxis de JavaScript, por tanto cualquier código JavaScript existente debería funcionar sin problemas.&lt;/p&gt;
-&lt;p&gt;Puede que la principal diferencia entre ambos es que Typescript obliga al tipado de las variables (y por supuesto no permite cambios de tipo) lo que evita muchos errores a la hora de programar.&lt;/p&gt;
-&lt;p&gt;Algunos frameworks y librerías, como Angular, utilizan TS en lugar de JS como lenguaje, que luego es transpilado a JS a la hora de generar la aplicación para producción.&lt;/p&gt;
-&lt;p&gt;Quizá el inconveniente es que es algo más difícil que JS pero como está basado en él y la sintaxis es prácticamente igual el esfuerzo de aprender TS para un programador JS es muy pequeño.&lt;/p&gt;
-&lt;p&gt;Saber más:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/TypeScript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Wikipedia - Typescript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.typescriptlang.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Typescriptlang&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;j-query&quot; tabindex=&quot;-1&quot;&gt;jQuery&lt;/h2&gt;
-&lt;p&gt;Se trata de una biblioteca que nos facilita enormemente el trabajo con el DOM ya que tiene &amp;quot;atajos&amp;quot; para muchas instrucciones, por ejemplo para poner &#39;Hola mundo&#39; como contenido de un elemento cuya &lt;em&gt;id&lt;/em&gt; es &lt;code&gt;mensaje&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Código con Javascript sólo
-document.getElementById(&#39;mensaje&#39;).textContent = &#39;Hola mundo&#39;
-
-// Código con jQuery
-$(&#39;#mensaje&#39;).text(&#39;Hola mundo&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Otra ventaja de jQuery es que permite trabajar con conjuntos de elementos sin tener que hacer un &lt;code&gt;forEach&lt;/code&gt; (lo hace internamente). Por ejemplo para poner un escuchador que muestre un alert &#39;Párrafo pinchado&#39; al hacer click sobre cualquier párrafo de la clase &#39;importante&#39; tendríamos que hacer:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Código con Javascript sólo
-Array.from(document.querySelectorAll(&#39;p.importante&#39;))
-.forEach(parrafo =&amp;gt; parrafo.addEventListener(&#39;click&#39;, () =&amp;gt; alert(&#39;Párrafo pinchado&#39;))
-
-// Código con jQuery
-$(&#39;p.importante&#39;).click(() =&amp;gt; alert(&#39;Párrafo pinchado&#39;))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Como vemos, básicamente nos permite hacer lo mismo pero escribiendo mucho menos código. También incluye funciones para cosas que en Javascript requieren varias líneas de código como animaciones o Ajax. Por ejemplo una pertición para mostrar en una tabla con id &lt;em&gt;posts&lt;/em&gt; todos los posts del servidor &lt;em&gt;jsonplaceholder&lt;/em&gt; tendremos que hacer:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Código con Javascript sólo
-const SERVER = &#39;https://jsonplaceholder.typicode.com&#39;;
-
-function getPosts() {   // Función que pide los datos al servidor
-  return new Promise(function(resolve, reject) {
-    let peticion = new XMLHttpRequest();
-    peticion.open(&#39;GET&#39;, SERVER + &#39;/posts&#39;);
-    peticion.send();
-    peticion.addEventListener(&#39;load&#39;, function() {
-      if (peticion.status === 200) {
-        resolve(JSON.parse(peticion.responseText));
-      } else {
-        reject(&amp;quot;Error &amp;quot; + this.status + &amp;quot; (&amp;quot; + this.statusText + &amp;quot;) en la petición&amp;quot;);
-      }
-    })
-    peticion.addEventListener(&#39;error&#39;, () =&amp;gt; reject(&#39;Error en la petición HTTP&#39;));
-  })
-}
-
-function renderPosts() {   // Función que los muestra en la página
-  getPosts(idUser)
-    .then((posts) =&amp;gt; {
-      document.querySelector(&#39;#posts tbody&#39;).innerHTML = &#39;&#39;; // borramos su contenido
-      posts.forEach((post) =&amp;gt; {
-        const newPost = document.createElement(&#39;tr&#39;);
-        newPost.innerHTML = `
-          &amp;lt;td&amp;gt;${post.userId}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.id}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.title}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.body}&amp;lt;/td&amp;gt;`;
-        document.querySelector(&#39;#posts tbody&#39;).appendChild(newPost);
-      })
-    })
-    .catch((error) =&amp;gt; console.error(error))
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Usando jQuery es mucho más sencillo. En primer lugar no hay que hacer la función que hace la petición al servidor porque hay uns función que hace eso: &lt;code&gt;$.ajax&lt;/code&gt; y sus derivadas &lt;code&gt;$.get&lt;/code&gt;, &lt;code&gt;$.post&lt;/code&gt;, ... Además la parte de pintar los datos es también mucho más corta:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Código con jquery
-const SERVER = &#39;https://jsonplaceholder.typicode.com&#39;;
-
-function renderPosts() {   // Función que los muestra en la página
-  $.get(SERVER + &#39;/posts&#39;)
-    .done((posts) =&amp;gt; {
-      $(&#39;#posts tbody&#39;).text(&#39;&#39;);    // borramos el contenido de la tabla
-      posts.forEach(post =&amp;gt; $(&#39;#posts tbody&#39;).append(
-        `&amp;lt;tr&amp;gt;
-          &amp;lt;td&amp;gt;${post.userId}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.id}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.title}&amp;lt;/td&amp;gt;
-          &amp;lt;td&amp;gt;${post.body}&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;`
-      ))
-    })
-    .fail((error) =&amp;gt; console.error(error))
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Encontraréis infinidad de tutoriales por Internet donde aprender &lt;em&gt;jQuery&lt;/em&gt;, por ejemplo unos vídeos de &lt;a href=&quot;https://didacticode.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Didacticode&lt;/a&gt; que podéis encontrar en &lt;a href=&quot;https://didacticode.com/curso/curso-de-jquery/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://didacticode.com/curso/curso-de-jquery/&lt;/a&gt; (tenéis que registraros para tener acceso a muchos cursos de Javascript y &amp;quot;derivados&amp;quot; pero vale la pena) o directamente en su &lt;a href=&quot;https://www.youtube.com/channel/UCPbFiM-HA4lwJH12JXdXxDA&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;canal de Youtube&lt;/a&gt;.&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/11-mas/" >
-        </entry>
-        <entry>
-            <title>
                 Indice
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;Asignaturas:&lt;/strong&gt;&lt;br /&gt;
@@ -18801,7 +17710,7 @@ Tutoria&lt;br /&gt;
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -18970,7 +17879,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -19205,7 +18114,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -19773,7 +18682,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -20048,7 +18957,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -20083,7 +18992,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -20552,7 +19461,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -21052,7 +19961,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -21418,7 +20327,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -21663,7 +20572,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -22153,7 +21062,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -22450,7 +21359,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -22873,7 +21782,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -23404,7 +22313,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -23863,7 +22772,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -24156,7 +23065,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -24353,7 +23262,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -24642,7 +23551,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -24785,7 +23694,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -25346,7 +24255,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -25473,7 +24382,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -25624,7 +24533,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -25826,7 +24735,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -25906,7 +24815,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -26026,7 +24935,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -26057,7 +24966,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -26070,7 +24979,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -26167,7 +25076,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -26264,7 +25173,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -26509,7 +25418,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -26572,7 +25481,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -26919,7 +25828,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -27035,7 +25944,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -27057,7 +25966,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -27114,7 +26023,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -30142,7 +29051,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -30318,7 +29227,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -30380,7 +29289,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -30587,7 +29496,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -30680,7 +29589,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -30888,7 +29797,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -30964,7 +29873,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -31021,7 +29930,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -31144,7 +30053,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -31610,7 +30519,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -31839,7 +30748,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -32077,7 +30986,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -32780,7 +31689,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -32895,7 +31804,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -33029,7 +31938,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -33137,7 +32046,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -33200,7 +32109,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -34655,7 +33564,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -34668,7 +33577,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -34861,7 +33770,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -36242,7 +35151,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -36398,7 +35307,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -36556,7 +35465,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -36725,7 +35634,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -36896,7 +35805,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -37284,7 +36193,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -37489,7 +36398,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -37771,7 +36680,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -38592,7 +37501,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -38900,7 +37809,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -38913,7 +37822,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -39200,7 +38109,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -39407,7 +38316,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -39612,7 +38521,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-dom/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -39995,7 +38904,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -40093,7 +39002,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -40333,7 +39242,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -40611,7 +39520,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -41011,7 +39920,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -41191,7 +40100,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -41208,7 +40117,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -41225,7 +40134,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice DAW
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/indice-daw/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -41324,7 +40233,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -41338,7 +40247,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -41352,7 +40261,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -41454,7 +40363,7 @@ php artisan make:policy UserPolicy --model=User
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-09-15T16:34:20Z</updated>
+            <updated>2025-09-15T16:34:47Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
