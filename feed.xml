@@ -3,14 +3,14 @@
     <title>Notas de pedro</title>
     <link href="https://pedroporo.github.io/feed.xml" rel="self" >
     <link href="https://pedroporo.github.io" >
-    <updated>2025-09-15T16:34:23Z</updated>
+    <updated>2025-09-15T16:34:28Z</updated>
     <id>https://pedroporo.github.io</id>
         <entry>
             <title>
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -179,7 +179,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -414,7 +414,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -982,7 +982,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -1257,7 +1257,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -1292,7 +1292,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -1761,7 +1761,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -2261,7 +2261,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -2627,7 +2627,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -2872,7 +2872,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -3362,7 +3362,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -3659,7 +3659,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -4082,7 +4082,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -4613,7 +4613,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -5072,7 +5072,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -5365,7 +5365,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -5562,7 +5562,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -5851,7 +5851,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -5994,7 +5994,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -6555,7 +6555,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -6682,7 +6682,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -6833,7 +6833,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -7035,7 +7035,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -7115,7 +7115,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -7235,7 +7235,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -7266,7 +7266,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -7279,7 +7279,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -7376,7 +7376,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -7473,7 +7473,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -7718,7 +7718,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -7781,7 +7781,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -8128,7 +8128,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -8244,7 +8244,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -8266,7 +8266,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -8323,7 +8323,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -11351,7 +11351,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -11527,7 +11527,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -11589,7 +11589,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -11796,7 +11796,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -11889,7 +11889,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -12097,7 +12097,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -12173,7 +12173,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -12230,7 +12230,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -12353,7 +12353,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -12819,7 +12819,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -13048,7 +13048,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -13286,7 +13286,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -13989,7 +13989,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -14104,7 +14104,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -14238,7 +14238,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -14346,7 +14346,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -14409,7 +14409,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -15864,7 +15864,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -15877,7 +15877,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -16070,7 +16070,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -17451,7 +17451,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -17607,7 +17607,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -17765,7 +17765,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -17934,7 +17934,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -18105,7 +18105,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -18493,7 +18493,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -18698,7 +18698,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -18980,7 +18980,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -19801,7 +19801,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -20109,7 +20109,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -20122,7 +20122,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -20409,7 +20409,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -20616,7 +20616,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -20818,393 +20818,10 @@ storeApp.deleteProduct(1)
         </entry>
         <entry>
             <title>
-                04-DOM
-                
-            </title>
-            <updated>2025-09-15T16:34:09Z</updated>
-            <id>https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/04-dom/</id>
-            <content type="html">
-                &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#document-object-model-dom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Document Object Model (DOM)&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#introducci%C3%B3n&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Introducción&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#acceso-a-los-nodos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Acceso a los nodos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#acceso-a-nodos-a-partir-de-otros&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Acceso a nodos a partir de otros&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#propiedades-de-un-nodo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Propiedades de un nodo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#manipular-el-%C3%A1rbol-dom&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Manipular el árbol DOM&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#a%C3%B1adir-nuevos-nodos-con-innerhtml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Añadir nuevos nodos con &lt;em&gt;innerHTML&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#atributos-de-los-nodos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Atributos de los nodos&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#estilos-de-los-nodos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Estilos de los nodos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#atributos-de-clase&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Atributos de clase&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://pedroporo.github.io/#atributos-de-datos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Atributos de datos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;introduccion&quot; tabindex=&quot;-1&quot;&gt;Introducción&lt;/h2&gt;
-&lt;p&gt;La mayoría de las veces que programamos con Javascript es para que se ejecute en una página web mostrada por el navegador. En este contexto tenemos acceso a ciertos objetos que nos permiten interactuar con la página (DOM) y con el navegador (Browser Object Model, BOM).&lt;/p&gt;
-&lt;p&gt;El &lt;strong&gt;DOM&lt;/strong&gt; es una estructura en árbol que representa todos los elementos HTML de la página y sus atributos. Todo lo que contiene la página se representa como nodos del árbol y mediante el DOM podemos acceder a cada nodo, modificarlo, eliminarlo o añadir nuevos nodos de forma que cambiamos dinámicamente la página mostrada al usuario.&lt;/p&gt;
-&lt;p&gt;La raíz del árbol DOM es &lt;strong&gt;document&lt;/strong&gt; y de este nodo cuelgan el resto de elementos HTML. Cada uno constituye su propio nodo y tiene subnodos con sus &lt;em&gt;atributos&lt;/em&gt;, &lt;em&gt;estilos&lt;/em&gt; y elementos HTML que contiene.&lt;/p&gt;
-&lt;p&gt;Por ejemplo, la página HTML:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-  &amp;lt;title&amp;gt;Página simple&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;p&amp;gt;Esta página es &amp;lt;strong&amp;gt;muy simple&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;se convierte en el siguiente árbol DOM:&lt;/p&gt;
-&lt;p&gt;![Árbol DOM](/img/user/01 Apuntes/Javascript Teoria Batoi/img/domSimple.png)&lt;/p&gt;
-&lt;p&gt;Cada etiqueta HTML suele originar 2 nodos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Element: correspondiente a la etiqueta&lt;/li&gt;
-&lt;li&gt;Text: correspondiente a su contenido (lo que hay entre la etiqueta y su par de cierre)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Cada nodo es un objeto con sus propiedades y métodos.&lt;/p&gt;
-&lt;p&gt;El ejemplo anterior está simplificado porque sólo aparecen los nodos de tipo &lt;em&gt;&lt;strong&gt;elemento&lt;/strong&gt;&lt;/em&gt; pero en realidad también generan nodos los saltos de línea, tabuladores, espacios, comentarios, etc. En el siguiente ejemplo podemos ver TODOS los nodos que realmente se generan. La página:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;title&amp;gt;My Document&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;h1&amp;gt;Header&amp;lt;/h1&amp;gt;
-  &amp;lt;p&amp;gt;
-    Paragraph
-  &amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;se convierte en el siguiente árbol DOM:&lt;/p&gt;
-&lt;p&gt;&lt;a title=&quot;L. David Baron [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Dom_tree.png&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Dom tree&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/5/58/Dom_tree.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;acceso-a-los-nodos&quot; tabindex=&quot;-1&quot;&gt;Acceso a los nodos&lt;/h2&gt;
-&lt;p&gt;Los principales métodos para acceder a los diferentes nodos son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.getElementById(id)&lt;/strong&gt;: devuelve el nodo con la &lt;em&gt;id&lt;/em&gt; pasada. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nodo = document.getElementById(&#39;main&#39;);   // nodo contendrá el nodo cuya id es _main_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.getElementsByClassName(clase)&lt;/strong&gt;: devuelve una colección (similar a un array) con todos los nodos de la &lt;em&gt;clase&lt;/em&gt; indicada. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nodos = document.getElementsByClassName(&#39;error&#39;);   // nodos contendrá todos los nodos cuya clase es _error_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;NOTA: las colecciones son similares a arrays (se accede a sus elementos con &lt;em&gt;[indice]&lt;/em&gt;) pero no se les pueden aplicar sus métodos &lt;em&gt;filter&lt;/em&gt;, &lt;em&gt;map&lt;/em&gt;, ... a menos que se conviertan a arrays con &lt;em&gt;Array.from()&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.getElementsByTagName(etiqueta)&lt;/strong&gt;: devuelve una colección con todos los nodos de la &lt;em&gt;etiqueta&lt;/em&gt; HTML indicada. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nodos = document.getElementsByTagName(&#39;p&#39;);   // nodos contendrá todos los nodos de tipo  _&amp;lt;p&amp;gt;_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.getElementsByName(name)&lt;/strong&gt;: devuelve una colección con todos los nodos que contengan un atributo &lt;code&gt;name&lt;/code&gt; con el valor indicado. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let radiosSexo = document.getElementsByName(&#39;sexo&#39;);   // radiosSexo contendrá todos los nodos con ese atributo (seguramente radiobuttons con name=&amp;quot;sexo&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.querySelector(selector)&lt;/strong&gt;: devuelve el primer nodo seleccionad por el &lt;em&gt;selector&lt;/em&gt; CSS indicado. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nodo = document.querySelector(&#39;p.error&#39;);   // nodo contendrá el primer párrafo de clase _error_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.querySelectorAll(selector)&lt;/strong&gt;: devuelve una colección con todos los nodos seleccionados por el &lt;em&gt;selector&lt;/em&gt; CSS indicado. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nodos = document.querySelectorAll(&#39;p.error&#39;);   // nodos contendrá todos los párrafos de clase _error_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;NOTA: al aplicar estos métodos sobre &lt;em&gt;document&lt;/em&gt; se seleccionará sobre la página pero podrían también aplicarse a cualquier nodo y en ese caso la búsqueda se realizaría sólo entre los descendientes de dicho nodo.&lt;/p&gt;
-&lt;p&gt;También tenemos &#39;atajos&#39; para obtener algunos elementos comunes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;document.documentElement&lt;/code&gt;: devuelve el nodo del elemento &lt;em&gt;&amp;lt;html&amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.head&lt;/code&gt;: devuelve el nodo del elemento &lt;em&gt;&amp;lt;head&amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.body&lt;/code&gt;: devuelve el nodo del elemento &lt;em&gt;&amp;lt;body&amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.title&lt;/code&gt;: devuelve el nodo del elemento &lt;em&gt;&amp;lt;title&amp;gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.link&lt;/code&gt;: devuelve una colección con todos los hiperenlaces del documento&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.anchor&lt;/code&gt;: devuelve una colección con todas las anclas del documento&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.forms&lt;/code&gt;: devuelve una colección con todos los formularios del documento&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.images&lt;/code&gt;: devuelve una colección con todas las imágenes del documento&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;document.scripts&lt;/code&gt;: devuelve una colección con todos los scripts del documento&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;EJERCICIO: Para hacer los ejercicios de este tema descárgate &lt;a href=&quot;https://pedroporo.github.io/ejemploDOM.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;esta página de ejemplo&lt;/a&gt; y ábrela en tu navegador. Obtén por consola, al menos de 2 formas diferentes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El elemento con id &#39;input2&#39;
-&lt;ul&gt;
-&lt;li&gt;document.getElementById(&#39;input2&#39;) o document.querySelector(&#39;#input2&#39;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;La colección de párrafos
-&lt;ul&gt;
-&lt;li&gt;document.getElementsByTagName(&#39;p&#39;) o document.querySelectorAll(&#39;p&#39;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h2 id=&quot;lo-mismo-pero-solo-de-los-parrafos-que-hay-dentro-del-div-lipsum&quot; tabindex=&quot;-1&quot;&gt;Lo mismo pero sólo de los párrafos que hay dentro del div &#39;lipsum&#39;&lt;/h2&gt;
-&lt;/li&gt;
-&lt;li&gt;El formulario (ojo, no la colección con el formulario sino sólo el formulario)&lt;/li&gt;
-&lt;li&gt;Todos los inputs&lt;/li&gt;
-&lt;li&gt;Sólo los inputs con nombre &#39;sexo&#39;&lt;/li&gt;
-&lt;li&gt;Los items de lista de la clase &#39;important&#39; (sólo los LI)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;acceso-a-nodos-a-partir-de-otros&quot; tabindex=&quot;-1&quot;&gt;Acceso a nodos a partir de otros&lt;/h2&gt;
-&lt;p&gt;En muchas ocasiones queremos acceder a cierto nodo a partir de uno dado. Para ello tenemos los siguientes métodos que se aplican sobre un elemento del árbol DOM:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.parentElement&lt;/code&gt;: devuelve el elemento padre de &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.children&lt;/code&gt;: devuelve la colección con todos los elementos hijo de &lt;em&gt;elemento&lt;/em&gt; (sólo elementos HTML, no comentarios ni nodos de tipo texto)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.childNodes&lt;/code&gt;: devuelve la colección con todos los hijos de &lt;em&gt;elemento&lt;/em&gt;, incluyendo comentarios y nodos de tipo texto por lo que no suele utilizarse&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.firstElementChild&lt;/code&gt;: devuelve el elemento HTML que es el primer hijo de &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.firstChild&lt;/code&gt;: devuelve el nodo que es el primer hijo de &lt;em&gt;elemento&lt;/em&gt; (incluyendo nodos de tipo texto o comentarios)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.lastElementChild&lt;/code&gt;, &lt;code&gt;elemento.lastChild&lt;/code&gt;: igual pero con el último hijo&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.nextElementSibling&lt;/code&gt;: devuelve el elemento HTML que es el siguiente hermano de &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.nextSibling&lt;/code&gt;: devuelve el nodo que es el siguiente hermano de &lt;em&gt;elemento&lt;/em&gt; (incluyendo nodos de tipo texto o comentarios)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.previousElementSibling&lt;/code&gt;, &lt;code&gt;elemento.previousSibling&lt;/code&gt;: igual pero con el hermano anterior&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.hasChildNodes&lt;/code&gt;: indica si &lt;em&gt;elemento&lt;/em&gt; tiene o no nodos hijos&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.childElementCount&lt;/code&gt;: devuelve el nº de nodos hijo de  &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.closest(selector)&lt;/code&gt;: devuelve el ancestro más cercano que coincide con el selector. Por ejemplo si el elemento es un &amp;lt;td&amp;gt; de una tabla entonces &lt;code&gt;elemento.closest(&#39;table&#39;)&lt;/code&gt; devolverá la tabla a la que pertenece&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;IMPORTANTE&lt;/strong&gt;: a menos que me interesen comentarios, saltos de página, etc &lt;strong&gt;siempre&lt;/strong&gt; debo usar los métodos que sólo devuelven elementos HTML, no todos los nodos.&lt;/p&gt;
-&lt;p&gt;![Recorrer el árbol DOM](/img/user/01 Apuntes/Javascript Teoria Batoi/img/domRelaciones.png)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;EJERCICIO: Siguiento con la &lt;a href=&quot;https://pedroporo.github.io/ejemploDOM.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;página de ejemplo&lt;/a&gt; obtén desde la consola, al menos de 2 formas diferentes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El primér párrafo que hay dentro del div &#39;lipsum&#39;&lt;/li&gt;
-&lt;li&gt;El segundo párrafo de &#39;lipsum&#39;&lt;/li&gt;
-&lt;li&gt;El último item de la lista&lt;/li&gt;
-&lt;li&gt;La label de &#39;Escoge sexo&#39;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;propiedades-de-un-nodo&quot; tabindex=&quot;-1&quot;&gt;Propiedades de un nodo&lt;/h3&gt;
-&lt;p&gt;Las principales propiedades de un nodo son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.innerHTML&lt;/code&gt;: todo lo que hay entre la etiqueta que abre &lt;em&gt;elemento&lt;/em&gt; y la que lo cierra, incluyendo otras etiquetas HTML. Por ejemplo si &lt;em&gt;elemento&lt;/em&gt; es el nodo &lt;code&gt;&amp;lt;p&amp;gt;Esta página es &amp;lt;strong&amp;gt;muy simple&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let contenido = elemento.innerHTML;   // contenido=&#39;Esta página es &amp;lt;strong&amp;gt;muy simple&amp;lt;/strong&amp;gt;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.textContent&lt;/code&gt;: todo lo que hay entre la etiqueta que abre &lt;em&gt;elemento&lt;/em&gt; y la que lo cierra, pero ignorando otras etiquetas HTML. Siguiendo con el ejemplo anterior:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let contenido = elemento.textContent;   // contenido=&#39;Esta página es muy simple&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.value&lt;/code&gt;: devuelve la propiedad &#39;value&#39; de un &amp;lt;input&amp;gt; (en el caso de un &amp;lt;input&amp;gt; de tipo text devuelve lo que hay escrito en él). Como los &amp;lt;inputs&amp;gt; no tienen etiqueta de cierre (&amp;lt;/input&amp;gt;) no podemos usar &lt;em&gt;.innerHTML&lt;/em&gt; ni &lt;em&gt;.textContent&lt;/em&gt;.  Por ejemplo si &lt;em&gt;elem1&lt;/em&gt; es el nodo &lt;code&gt;&amp;lt;input name=&amp;quot;nombre&amp;quot;&amp;gt;&lt;/code&gt; y &lt;em&gt;elem2&lt;/em&gt; es el nodo &lt;code&gt;&amp;lt;input tipe=&amp;quot;radio&amp;quot; value=&amp;quot;H&amp;quot;&amp;gt;Hombre&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let cont1 = elem1.value;   // cont1 valdría lo que haya escrito en el &amp;lt;input&amp;gt; en ese momento
-let cont2 = elem2.value;   // cont2=&amp;quot;H&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Otras propiedades:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.innerText&lt;/code&gt;: igual que &lt;em&gt;textContent&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.focus&lt;/code&gt;: da el foco a &lt;em&gt;elemento&lt;/em&gt; (para inputs, etc). Para quitarle el foco &lt;code&gt;elemento.blur&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.clientHeight&lt;/code&gt; / &lt;code&gt;elemento.clientWidth&lt;/code&gt;: devuelve el alto / ancho visible del &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.offsetHeight&lt;/code&gt; / &lt;code&gt;elemento.offsetWidth&lt;/code&gt;: devuelve el alto / ancho total del &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.clientLeft&lt;/code&gt; / &lt;code&gt;elemento.clientTop&lt;/code&gt;: devuelve la distancia de &lt;em&gt;elemento&lt;/em&gt; al borde izquierdo / superior&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.offsetLeft&lt;/code&gt; / &lt;code&gt;elemento.offsetTop&lt;/code&gt;: devuelve los píxels que hemos desplazado &lt;em&gt;elemento&lt;/em&gt; a la izquierda / abajo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;EJERCICIO: Obtén desde la consola, al menos de 2 formas:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El innerHTML de la etiqueta de &#39;Escoge sexo&#39;&lt;/li&gt;
-&lt;li&gt;El textContent de esa etiqueta&lt;/li&gt;
-&lt;li&gt;El valor del primer input de sexo&lt;/li&gt;
-&lt;li&gt;El valor del sexo que esté seleccionado (difícil, búscalo por Internet)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;manipular-el-arbol-dom&quot; tabindex=&quot;-1&quot;&gt;Manipular el árbol DOM&lt;/h2&gt;
-&lt;p&gt;Vamos a ver qué métodos nos permiten cambiar el árbol DOM, y por tanto modificar la página:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;document.createElement(&#39;etiqueta&#39;)&lt;/code&gt;: crea un nuevo elemento HTML con la etiqueta indicada, pero aún no se añade a la página. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let nuevoLi = document.createElement(&#39;li&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.append(elementos o texto)&lt;/code&gt;: añade al DOM los parámetros pasados como últimos hijos de &lt;em&gt;elemento&lt;/em&gt;. Se le puede pasar tanto un nodo DOM como una cadena de texto (para la que se creará su nodo de texto correspondiente) y que se le pueden pasar varios parámetros para crear varios nodos. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nuevoLi.append(&#39;Nuevo elemento de lista&#39;);     // añade el texto pasado al elemento LI creado
-let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0];  // selecciona el 1º UL de la página
-miPrimeraLista.append(nuevoLi);    // añade LI como último hijo de UL, es decir al final de la lista
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.prepend(elementos o texto)&lt;/code&gt;: como el anterior pero en lugar de añadirlos como últimos hijos los añade antes del primer hijo.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const primerLi = document.createElement(&#39;li&#39;);
-primerLi.append(&#39;Primer elemento de lista&#39;); 
-let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0]; 
-miPrimeraLista.prepend(nuevoLi);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.after(elementos o texto)&lt;/code&gt;: como &lt;em&gt;append&lt;/em&gt; pero en lugar de añadirlos como últimos hijos los añade como los siguientes hermanos de &lt;em&gt;elemento&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const otroLi = document.createElement(&#39;li&#39;);
-otroLi.append(&#39;Segundo elemento de lista&#39;); 
-primerLi.after(otroLi);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.before(elementos o texto)&lt;/code&gt;: como el anterior pero los añade como los anteriores hermanos de &lt;em&gt;elemento&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.remove()&lt;/code&gt;: borra el nodo &lt;em&gt;elemento&lt;/em&gt; del documento.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.replaceWith(nuevoNodo)&lt;/code&gt;: reemplaza el nodo &lt;em&gt;elemento&lt;/em&gt; con el &lt;em&gt;nuevoNodo&lt;/em&gt; pasado&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let primerElementoDeLista = document.getElementsByTagName(&#39;ul&#39;)[0].firstChild;  // selecciona el 1º LI de miPrimeraLista
-primerElementoDeLista.replaceChild(nuevoLi);    // reemplaza el 1º elemento de la lista con nuevoLi
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elementoAClonar.cloneNode(boolean)&lt;/code&gt;: devuelve un clon de &lt;em&gt;elementoAClonar&lt;/em&gt; o de &lt;em&gt;elementoAClonar&lt;/em&gt; con todos sus descendientes según le pasemos como parámetro &lt;em&gt;false&lt;/em&gt; o &lt;em&gt;true&lt;/em&gt;. Luego podremos insertarlo donde queramos.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Otros métodos menos usados son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;document.createTextNode(&#39;texto&#39;)&lt;/code&gt;: crea un nuevo nodo de texto con el texto indicado, que luego tendremos que añadir a un nodo HTML. Normalmente no se usa porque &lt;em&gt;append&lt;/em&gt; y el resto de métodos anteriores ya lo crean automáticamente. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let textoLi = document.createTextNode(&#39;Nuevo elemento de lista&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.appendChild(nuevoNodo)&lt;/code&gt;: añade &lt;em&gt;nuevoNodo&lt;/em&gt; como último hijo de &lt;em&gt;elemento&lt;/em&gt; y lo devuelve. Se diferencia con &lt;em&gt;append&lt;/em&gt; en que sólo permite un parámetro y éste debe ser un nodo, no puede ser texto. Por eso no suele usarse. Ejemplo:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;nuevoLi.appendChild(textoLi);     // añade el texto creado al elemento LI creado
-let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0];  // selecciona el 1º UL de la página
-miPrimeraLista.appendChild(nuevoLi);    // añade LI como último hijo de UL, es decir al final de la lista
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.insertBefore(nuevoNodo, nodo)&lt;/code&gt;: añade &lt;em&gt;nuevoNodo&lt;/em&gt; como hijo de &lt;em&gt;elemento&lt;/em&gt; antes del hijo &lt;em&gt;nodo&lt;/em&gt;. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0];                // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName(&#39;li&#39;)[0];   // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.insertBefore(nuevoLi, primerElementoDeLista);                // añade LI al principio de la lista
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.removeChild(nodo)&lt;/code&gt;: borra &lt;em&gt;nodo&lt;/em&gt; de &lt;em&gt;elemento&lt;/em&gt; y por tanto se elimina de la página. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0];  // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName(&#39;li&#39;)[0];  // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.removeChild(primerElementoDeLista);    // borra el primer elemento de la lista
-// También podríamos haberlo borrado sin tener el padre con:
-primerElementoDeLista.parentElement.removeChild(primerElementoDeLista);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.replaceChild(nuevoNodo, viejoNodo)&lt;/code&gt;: reemplaza &lt;em&gt;viejoNodo&lt;/em&gt; con &lt;em&gt;nuevoNodo&lt;/em&gt; como hijo de &lt;em&gt;elemento&lt;/em&gt;. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let miPrimeraLista = document.getElementsByTagName(&#39;ul&#39;)[0];  // selecciona el 1º UL de la página
-let primerElementoDeLista = miPrimeraLista.getElementsByTagName(&#39;li&#39;)[0];  // selecciona el 1º LI de miPrimeraLista
-miPrimeraLista.replaceChild(nuevoLi, primerElementoDeLista);    // reemplaza el 1º elemento de la lista con nuevoLi
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;OJO&lt;/strong&gt;: Si añado con el método &lt;code&gt;append&lt;/code&gt; o &lt;code&gt;appendChild&lt;/code&gt; un nodo que estaba en otro sitio &lt;strong&gt;se elimina de donde estaba&lt;/strong&gt; para añadirse a su nueva posición. Si quiero que esté en los 2 sitios deberé clonar el nodo y luego añadir el clon y no el nodo original.&lt;/p&gt;
-&lt;h3 id=&quot;anadir-nuevos-nodos-con-em-inner-html-em&quot; tabindex=&quot;-1&quot;&gt;Añadir nuevos nodos con &lt;em&gt;innerHTML&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;Supongamos que tenemos un DIV cuya &lt;em&gt;id&lt;/em&gt; es &lt;em&gt;myDiv&lt;/em&gt; al que queremos añadir al final dos párrafos, el último de ellos con un texto en negrita. El código podría ser:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let miDiv = document.getElementById(&#39;myDiv&#39;);
-let nuevoParrafo = document.createElement(&#39;p&#39;);
-nuevoParrafo.textContent = &#39;Párrafo añadido al final&#39;;
-let ultimoParrafo = document.createElement(&#39;p&#39;);
-const textoNegrita = document.createElement(&#39;strong&#39;);
-textoNegrita.textContent = &#39;con texto en negrita&#39;;
-ultimoParrafo.append(&#39;Último párrafo &#39;, textoNegrita);
-miDiv.append(nuevoParrafo, ultimoParrafo);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si utilizamos la propiedad &lt;strong&gt;innerHTML&lt;/strong&gt; el código a usar es mucho más simple:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let miDiv = document.getElementById(&#39;myDiv&#39;);
-miDiv.innerHTML += &#39;&amp;lt;p&amp;gt;Párrafo añadido al final&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Último párrafo &amp;lt;strong&amp;gt;con texto en negrita&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;OJO&lt;/strong&gt;: La forma de añadir el último párrafo (línea &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#3&quot;&gt;#3&lt;/a&gt;: &lt;code&gt;miDiv.innerHTML+=&#39;&amp;lt;p&amp;gt;Párrafo añadido al final&amp;lt;/p&amp;gt;&#39;;&lt;/code&gt;) aunque es válida no es muy eficiente ya que obliga al navegador a volver a pintar TODO el contenido de miDIV.&lt;/p&gt;
-&lt;p&gt;Podemos ver más ejemplos de creación y eliminación de nodos en &lt;a href=&quot;http://www.w3schools.com/js/js_htmldom_nodes.asp&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;W3Schools&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;EJERCICIO: Añade a la página:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Un nuevo párrafo al final del DIV &lt;em&gt;&#39;lipsum&#39;&lt;/em&gt; con el texto &amp;quot;Nuevo párrafo &lt;strong&gt;añadido&lt;/strong&gt; por javascript&amp;quot; (fíjate que una palabra está en negrita)&lt;/li&gt;
-&lt;li&gt;Un nuevo elemento al formulario tras el &lt;em&gt;&#39;Dato 1&#39;&lt;/em&gt; con la etiqueta &lt;em&gt;&#39;Dato 1 bis&#39;&lt;/em&gt; y el INPUT con id &lt;em&gt;&#39;input1bis&#39;&lt;/em&gt; que al cargar la página tendrá escrito &amp;quot;Hola&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;atributos-de-los-nodos&quot; tabindex=&quot;-1&quot;&gt;Atributos de los nodos&lt;/h2&gt;
-&lt;p&gt;Podemos ver y modificar los valores de los atributos de cada elemento HTML y también añadir o eliminar atributos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;elemento.attributes&lt;/code&gt;: devuelve un array con todos los atributos de &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.hasAttribute(&#39;nombreAtributo&#39;)&lt;/code&gt;: indica si &lt;em&gt;elemento&lt;/em&gt; tiene o no definido el atributo &lt;em&gt;nombreAtributo&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.getAttribute(&#39;nombreAtributo&#39;)&lt;/code&gt;: devuelve el valor del atributo &lt;em&gt;nombreAtributo&lt;/em&gt; de &lt;em&gt;elemento&lt;/em&gt;. Para muchos elementos este valor puede directamente con &lt;code&gt;elemento.atributo&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.setAttribute(&#39;nombreAtributo&#39;, &#39;valor&#39;)&lt;/code&gt;: establece &lt;em&gt;valor&lt;/em&gt; como nuevo valor del atributo &lt;em&gt;nombreAtributo&lt;/em&gt; de &lt;em&gt;elemento&lt;/em&gt;. También puede cambiarse el valor directamente con &lt;code&gt;elemento.atributo=valor&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;elemento.removeAttribute(&#39;nombreAtributo&#39;)&lt;/code&gt;: elimina el atributo &lt;em&gt;nombreAtributo&lt;/em&gt; de &lt;em&gt;elemento&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A algunos atributos comunes como &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt; o &lt;code&gt;className&lt;/code&gt; (para el atributo &lt;strong&gt;class&lt;/strong&gt;) se puede acceder y cambiar como si fueran una propiedad del elemento (&lt;code&gt;elemento.atributo&lt;/code&gt;). Ejemplos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.id = &#39;primera-lista&#39;;
-// es equivalente ha hacer:
-elemento.setAttribute(&#39;id&#39;, &#39;primera-lista&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;estilos-de-los-nodos&quot; tabindex=&quot;-1&quot;&gt;Estilos de los nodos&lt;/h3&gt;
-&lt;p&gt;Los estilos están accesibles como el atributo &lt;strong&gt;style&lt;/strong&gt;. Cualquier estilo es una propiedad de dicho atributo pero con la sintaxis &lt;em&gt;camelCase&lt;/em&gt; en vez de &lt;em&gt;kebab-case&lt;/em&gt;. Por ejemplo para cambiar el color de fondo (propiedad background-color) y ponerle el color &lt;em&gt;rojo&lt;/em&gt; al elemento &lt;em&gt;miPrimeraLista&lt;/em&gt; haremos:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;miPrimeraLista.style.backgroundColor = &#39;red&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;De todas formas normalmente &lt;strong&gt;NO CAMBIAREMOS ESTILOS&lt;/strong&gt; a los elementos sino que les pondremos o quitaremos clases que harán que se le apliquen o no los estilos definidos para ellas en el CSS.&lt;/p&gt;
-&lt;h3 id=&quot;atributos-de-clase&quot; tabindex=&quot;-1&quot;&gt;Atributos de clase&lt;/h3&gt;
-&lt;p&gt;Ya sabemos que el aspecto de la página debe configurarse en el CSS por lo que no debemos aplicar atributos &lt;em&gt;style&lt;/em&gt; al HTML. En lugar de ello les ponemos clases a los elementos que harán que se les aplique el estilo definido para dicha clase.&lt;/p&gt;
-&lt;p&gt;Como es algo muy común en lugar de utilizar las instrucciones de &lt;code&gt;elemento.setAttribute(&#39;className&#39;, &#39;destacado&#39;)&lt;/code&gt; o directamente &lt;code&gt;elemento.className=&#39;destacado&#39;&lt;/code&gt; podemos usar la propiedad &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://developer.mozilla.org/es/docs/Web/API/Element/classList&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;classList&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt; que devuelve la colección de todas las clases que tiene el elemento. Por ejemplo si &lt;em&gt;elemento&lt;/em&gt; es &lt;code&gt;&amp;lt;p class=&amp;quot;destacado direccion&amp;quot;&amp;gt;...&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let clases=elemento.classList;   // clases=[&#39;destacado&#39;, &#39;direccion&#39;], OJO es una colección, no un Array
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Además dispone de los métodos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.add(clase)&lt;/strong&gt;: añade al elemento la clase pasada (si ya la tiene no hace nada). Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.classList.add(&#39;primero&#39;);   // ahora elemento será &amp;lt;p class=&amp;quot;destacado direccion primero&amp;quot;&amp;gt;...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.remove(clase)&lt;/strong&gt;: elimina del elemento la clase pasada (si no la tiene no hace nada). Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.classList.remove(&#39;direccion&#39;);   // ahora elemento será &amp;lt;p class=&amp;quot;destacado primero&amp;quot;&amp;gt;...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.toogle(clase)&lt;/strong&gt;: añade la clase pasada si no la tiene o la elimina si la tiene ya. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.classList.toogle(&#39;destacado&#39;);   // ahora elemento será &amp;lt;p class=&amp;quot;primero&amp;quot;&amp;gt;...
-elemento.classList.toogle(&#39;direccion&#39;);   // ahora elemento será &amp;lt;p class=&amp;quot;primero direccion&amp;quot;&amp;gt;...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.contains(clase)&lt;/strong&gt;: dice si el elemento tiene o no la clase pasada. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.classList.contains(&#39;direccion&#39;);   // devuelve true
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;.replace(oldClase, newClase)&lt;/strong&gt;: reemplaza del elemento una clase existente por una nueva. Ej.:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;elemento.classList.replace(&#39;primero&#39;, &#39;ultimo&#39;);   // ahora elemento será &amp;lt;p class=&amp;quot;ultimo direccion&amp;quot;&amp;gt;...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Tened en cuenta que NO todos los navegadores soportan &lt;em&gt;classList&lt;/em&gt; por lo que si queremos añadir o quitar clases en navegadores que no lo soportan debemos hacerlo con los métodos estándar, por ejemplo para añadir la clase &#39;rojo&#39;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let clases = elemento.className.split(&amp;quot; &amp;quot;);
-if (clases.indexOf(&#39;rojo&#39;) == -1) {
-  elemento.className += &#39; &#39; + &#39;rojo&#39;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;atributos-de-datos&quot; tabindex=&quot;-1&quot;&gt;Atributos de datos&lt;/h3&gt;
-&lt;p&gt;HTML5 permite agregar atributos personalizados no visuales a las etiquetas utilizando &lt;code&gt;data-*&lt;/code&gt;. Estos atributos pueden ser accesibles a través de JavaScript usando &lt;code&gt;dataset&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;article
-    id=&amp;quot;electriccars&amp;quot;
-    data-columns=&amp;quot;3&amp;quot;
-    data-index-number=&amp;quot;12314&amp;quot;
-    data-parent=&amp;quot;cars&amp;quot;&amp;gt;
-    ...
-&amp;lt;/article&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;let article = document.getElementById(&#39;electriccars&#39;);
-console.log(article.dataset.columns); // 3
-console.log(article.dataset.indexNumber); // 12314
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Fuente: &lt;a href=&quot;https://xxjcaxx.github.io/libro_dwec/dom.html#atributos-de-datos&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Curso DWEC de José Castillo&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://pedroporo.github.io/01-apuntes/javascript-teoria-batoi/04-dom/" >
-        </entry>
-        <entry>
-            <title>
                 Indice
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/</id>
             <content type="html">
                 &lt;p&gt;&lt;strong&gt;Asignaturas:&lt;/strong&gt;&lt;br /&gt;
@@ -21307,7 +20924,7 @@ Tutoria&lt;br /&gt;
                 90-tdd
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/90-tdd/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -21476,7 +21093,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 21-typescript
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/21-typescript/</id>
             <content type="html">
                 &lt;h1 id=&quot;typescript&quot; tabindex=&quot;-1&quot;&gt;Typescript&lt;/h1&gt;
@@ -21711,7 +21328,7 @@ class Student implements IStudent {
                 10-vue3_composition_api
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/10-vue3-composition-api/</id>
             <content type="html">
                 &lt;h1 id=&quot;la-em-composition-api-em-de-vue3&quot; tabindex=&quot;-1&quot;&gt;La &lt;em&gt;Composition API&lt;/em&gt; de Vue3&lt;/h1&gt;
@@ -22279,7 +21896,7 @@ export default {
                 0x-testing
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-testing/</id>
             <content type="html">
                 &lt;h1 id=&quot;testear-nuestros-componentes&quot; tabindex=&quot;-1&quot;&gt;Testear nuestros componentes&lt;/h1&gt;
@@ -22554,7 +22171,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 0x-quasar
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/0x-quasar/</id>
             <content type="html">
                 &lt;h1 id=&quot;quasar&quot; tabindex=&quot;-1&quot;&gt;Quasar&lt;/h1&gt;
@@ -22589,7 +22206,7 @@ describe(&amp;quot;addPost&amp;quot;, () =&amp;gt; {
                 09-cosas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/09-cosas/</id>
             <content type="html">
                 &lt;h1 id=&quot;siguientes-cosas-a-aprender-en-vue&quot; tabindex=&quot;-1&quot;&gt;Siguientes cosas a aprender en Vue&lt;/h1&gt;
@@ -23058,7 +22675,7 @@ class AlumnosController extends Controller {
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;formularios-en-vue&quot; tabindex=&quot;-1&quot;&gt;Formularios en Vue&lt;/h1&gt;
@@ -23558,7 +23175,7 @@ export default {
                 07-vuex
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-vuex/</id>
             <content type="html">
                 &lt;h1 id=&quot;vuex&quot; tabindex=&quot;-1&quot;&gt;Vuex&lt;/h1&gt;
@@ -23924,7 +23541,7 @@ export default new Vuex.Store({
                 07-pinia
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/07-pinia/</id>
             <content type="html">
                 &lt;h1 id=&quot;pinia&quot; tabindex=&quot;-1&quot;&gt;Pinia&lt;/h1&gt;
@@ -24169,7 +23786,7 @@ export const useToDoStore = defineStore(&#39;todo&#39;, {
                 06-profundizando
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/06-profundizando/</id>
             <content type="html">
                 &lt;h1 id=&quot;profundizando-en-vue&quot; tabindex=&quot;-1&quot;&gt;Profundizando en Vue&lt;/h1&gt;
@@ -24659,7 +24276,7 @@ export default router
                 05-vue-router
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/05-vue-router/</id>
             <content type="html">
                 &lt;h1 id=&quot;vue-router&quot; tabindex=&quot;-1&quot;&gt;Vue-router&lt;/h1&gt;
@@ -24956,7 +24573,7 @@ Definiremos la ruta del siguiente modo:&lt;/li&gt;
                 04-axios
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/04-axios/</id>
             <content type="html">
                 &lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
@@ -25379,7 +24996,7 @@ export default {
                 03_2-comunicar_componentes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-2-comunicar-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;comunicacion-entre-componentes&quot; tabindex=&quot;-1&quot;&gt;Comunicación entre componentes&lt;/h1&gt;
@@ -25910,7 +25527,7 @@ Tenemos un componente llamado &lt;em&gt;my-component&lt;/em&gt; con un slot:&lt;
                 03_1-sfc
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-1-sfc/</id>
             <content type="html">
                 &lt;h1 id=&quot;single-file-components&quot; tabindex=&quot;-1&quot;&gt;Single File Components&lt;/h1&gt;
@@ -26369,7 +25986,7 @@ export default {
                 03-componentes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/03-componentes/</id>
             <content type="html">
                 &lt;h1 id=&quot;componentes-en-vue&quot; tabindex=&quot;-1&quot;&gt;Componentes en Vue&lt;/h1&gt;
@@ -26662,7 +26279,7 @@ Vue.createApp({
                 02-directivas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/02-directivas/</id>
             <content type="html">
                 &lt;h1 id=&quot;directivas-en-vue&quot; tabindex=&quot;-1&quot;&gt;Directivas en Vue&lt;/h1&gt;
@@ -26859,7 +26476,7 @@ o
                 01-basics
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/vue-teoria-batoi/01-basics/</id>
             <content type="html">
                 &lt;h1 id=&quot;conceptos-basicos&quot; tabindex=&quot;-1&quot;&gt;Conceptos básicos&lt;/h1&gt;
@@ -27148,7 +26765,7 @@ onMounted(() =&amp;gt; {
                 PHP Teoria Batoi
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/index/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-web-en-entorn-servidor&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament Web en Entorn Servidor&lt;/h1&gt;
@@ -27291,7 +26908,7 @@ list from 1. Arquitecturas Web
                 8. Exercici Pràctic, Guia d&#39;Equips de Futbol Femení amb Base de Dades
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/8-exercici-practic-guia-d-equips-de-futbol-femeni-amb-base-de-dades/</id>
             <content type="html">
                 &lt;p&gt;L&#39;objectiu d&#39;aquest exercici és estendre la Guia d&#39;Equips de Futbol Femení per utilitzar una base de dades relacional. Aprendràs a crear taules amb migracions, models per gestionar les dades, i a integrar-los amb controladors i vistes.&lt;/p&gt;
@@ -27852,7 +27469,7 @@ class Estadi extends Model
                 7. Requests, Responses i Validació en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/7-requests-responses-i-validacio-en-laravel/</id>
             <content type="html">
                 &lt;h2 id=&quot;strong-1-requests-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;1. Requests&lt;/strong&gt;&lt;/h2&gt;
@@ -27979,7 +27596,7 @@ Validator::extend(&#39;uppercase&#39;, function ($attribute, $value, $parameters
                 6. Seeders i Factories en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/6-seeders-i-factories-en-laravel/</id>
             <content type="html">
                 &lt;p&gt;Els &lt;strong&gt;seeders&lt;/strong&gt; i &lt;strong&gt;factories&lt;/strong&gt; permeten generar dades de prova de manera fàcil i ràpida, útils durant el desenvolupament per simular dades inicials en una aplicació.&lt;/p&gt;
@@ -28130,7 +27747,7 @@ Author::factory()-&amp;gt;count(10)-&amp;gt;create();
                 5. Laravel Eloquent
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/5-laravel-eloquent/</id>
             <content type="html">
                 &lt;p&gt;Eloquent és l&#39;ORM (Object-Relational Mapping) de Laravel. Proporciona una interfície senzilla i elegant per treballar amb bases de dades relacionals mitjançant models.&lt;/p&gt;
@@ -28332,7 +27949,7 @@ $user-&amp;gt;save();
                 4. Laravel Query Builder
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/4-laravel-query-builder/</id>
             <content type="html">
                 &lt;p&gt;El &lt;strong&gt;Query Builder&lt;/strong&gt; de Laravel proporciona una interfície fluida per construir i executar consultes de bases de dades. Permet treballar amb diverses bases de dades de manera senzilla sense escriure SQL brut.&lt;/p&gt;
@@ -28412,7 +28029,7 @@ $users = $first-&amp;gt;union($second)-&amp;gt;get();
                 3. Migracions en Laravel
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/3-migracions-en-laravel/</id>
             <content type="html">
                 &lt;h3 id=&quot;strong-introduccio-strong&quot; tabindex=&quot;-1&quot;&gt;&lt;strong&gt;Introducció&lt;/strong&gt;&lt;/h3&gt;
@@ -28532,7 +28149,7 @@ $table-&amp;gt;primary([&#39;first_name&#39;, &#39;last_name&#39;]);
                 2. Configuració inicial
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/2-configuracio-inicial/</id>
             <content type="html">
                 &lt;p&gt;Laravel suporta diversos motors de bases de dades com MySQL, PostgreSQL, SQLite i SQL Server. La configuració principal es fa al fitxer &lt;code&gt;.env&lt;/code&gt; i &lt;code&gt;config/database.php&lt;/code&gt;.&lt;/p&gt;
@@ -28563,7 +28180,7 @@ DB_PASSWORD=contrasenya
                 1. Introducció
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/8-gestio-de-dades-amb-laravel/1-introduccio/</id>
             <content type="html">
                 &lt;p&gt;Laravel és un framework PHP modern que simplifica el desenvolupament d&#39;aplicacions web, incloent-hi la gestió de bases de dades. La integració amb Eloquent, el seu ORM (Object-Relational Mapping), permet treballar amb bases de dades de forma intuïtiva i eficient.&lt;/p&gt;
@@ -28576,7 +28193,7 @@ DB_PASSWORD=contrasenya
                 7. Web Scraping
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/7-web-scraping/</id>
             <content type="html">
                 &lt;p&gt;Consisteix a navegar a una pàgina web i extraure informació automàticament, a partir del codi HTML generat, i organitzar la informació pública disponible en Internet.&lt;br /&gt;
@@ -28673,7 +28290,7 @@ echo $precioTotal;
                 6. Accès a fitxers
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/6-acces-a-fitxers/</id>
             <content type="html">
                 &lt;p&gt;Gràcies a la funció fopen() des de PHP podem obrir arxius que es troben en els nostres servidor o una URL.&lt;/p&gt;
@@ -28770,7 +28387,7 @@ echo $datos[9] . &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; // Momento de última m
                 5. QueryBuilder
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/5-query-builder/</id>
             <content type="html">
                 &lt;p&gt;Un Query Builder (Constructor de Consultes) és una eina o classe que facilita la creació, execució i manipulació de consultes SQL en un programa. L&#39;objectiu principal és proporcionar una interfície més intuïtiva i segura per interactuar amb bases de dades, sense haver d&#39;escriure consultes SQL en brut.&lt;/p&gt;
@@ -29015,7 +28632,7 @@ exit;
                 4. Login &amp; Password
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/4-login-and-password/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/06/06-login-password.gif&quot; alt=&quot;06-login-password.gif&quot; /&gt;&lt;br /&gt;
@@ -29078,7 +28695,7 @@ Per a manejar un sistema complet de login i password amb contrasenyes xifrades, 
                 3. PHP Data Objects  PDO
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/3-php-data-objects-pdo/</id>
             <content type="html">
                 &lt;p&gt;La classe PDO de PHP s&#39;utilitza per connectar-se a una base de dades i executar consultes SQL de manera segura. Quan construeixes una instància de PDO, pots passar-li diferents atributs en el constructor i opcions per configurar el comportament de la connexió. Aquí tens els atributs principals i el seu propòsit:&lt;/p&gt;
@@ -29425,7 +29042,7 @@ try {
                 2. Bases de dades relacionals (SQL)
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/2-bases-de-dades-relacionals-sql/</id>
             <content type="html">
                 &lt;h3 id=&quot;instal-lacio&quot; tabindex=&quot;-1&quot;&gt;Instal·lació&lt;/h3&gt;
@@ -29541,7 +29158,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 1. Introducció a les tecnologies per accedir a dades
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/1-introduccio-a-les-tecnologies-per-accedir-a-dades/</id>
             <content type="html">
                 &lt;h3 id=&quot;bases-de-dades-relacionals-sql&quot; tabindex=&quot;-1&quot;&gt;Bases de dades relacionals (SQL)&lt;/h3&gt;
@@ -29563,7 +29180,7 @@ Aquest programari funciona sota Ngingx i PHP i és més que res una interfície 
                 0. Indice
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/5-acceso-a-datos/0-indice/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -29620,7 +29237,7 @@ Duració estimada: 10 hores&lt;/p&gt;
                 phpoo
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/phpoo/</id>
             <content type="html">
                 &lt;h1 id=&quot;desenvolupament-d-aplicacions-web-poo-separacio-de-logica-i-presentacio-gestio-d-errors-i-proves&quot; tabindex=&quot;-1&quot;&gt;Desenvolupament d&#39;Aplicacions Web: POO, Separació de Lògica i Presentació, Gestió d&#39;Errors i Proves&lt;/h1&gt;
@@ -32648,7 +32265,7 @@ function checkAnswer7() {
                 Exercicis proposats
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/exercicis-proposats/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-creacio-de-la-classe-basica-i-gestio-de-propietats&quot; tabindex=&quot;-1&quot;&gt;Exercici 1. Creació de la Classe Bàsica i Gestió de Propietats&lt;/h4&gt;
@@ -32824,7 +32441,7 @@ function checkAnswer7() {
                 9.  Generació de PDF amb DOMPDF
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/9-generacio-de-pdf-amb-dompdf/</id>
             <content type="html">
                 &lt;p&gt;Amb PHP podem manejar tot tipus d&#39;arxius com ja hem vist però, què passa si volem generar fitxers PDF amb dades tretes d&#39;una base de dades?&lt;/p&gt;
@@ -32886,7 +32503,7 @@ Aquesta és una guia bàsica per començar amb DOMPDF. Per a casos d&#39;ús mé
                 8. Logger amb Monolog
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/8-logger-amb-monolog/</id>
             <content type="html">
                 &lt;p&gt;Provarem &lt;em&gt;Composer&lt;/em&gt; afegint la llibreria de &lt;a href=&quot;https://github.com/seldaek/monolog&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Monolog&lt;/em&gt;&lt;/a&gt; al nostre projecte. Es tracta d&#39;un llibreria per a la gestió de logs de les nostres aplicacions, suportant diferents nivells (info, warning, etc...), eixides (fitxers, sockets, BBDD, Web Services, email, etc) i formats (text pla, HTML, JSON, etc...).&lt;/p&gt;
@@ -33093,7 +32710,7 @@ class Cliente {
                 7. Composer
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/7-composer/</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://pedroporo.github.io/img/user/01%20Apuntes/DAW/PHP%20Teoria%20Batoi/imagenes/05/logo-composer.png&quot; alt=&quot;logo-composer.png|200&quot; width=&quot;200px&quot; /&gt;&lt;br /&gt;
@@ -33186,7 +32803,7 @@ require &#39;vendor/autoload.php&#39;;
                 6. Gestió d&#39;Errors
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/6-gestio-d-errors/</id>
             <content type="html">
                 &lt;p&gt;PHP classifica els errors que ocorren en diferents nivells. Cada nivell s&#39;identifica amb una constant. Per exemple:&lt;/p&gt;
@@ -33394,7 +33011,7 @@ try {
                 5. Tecnologies i Mecanismes per a la Separació
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/5-tecnologies-i-mecanismes-per-a-la-separacio/</id>
             <content type="html">
                 &lt;p&gt;A continuació es presenten diverses tecnologies i mecanismes que faciliten la separació de la lògica de negoci i la presentació en una aplicació web:&lt;/p&gt;
@@ -33470,7 +33087,7 @@ class ProductController {
                 4. Separar la lògica de negoci dels aspectes de presentació de l&#39;aplicació
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/4-separar-la-logica-de-negoci-dels-aspectes-de-presentacio-de-l-aplicacio/</id>
             <content type="html">
                 &lt;h4 id=&quot;logica-de-negoci&quot; tabindex=&quot;-1&quot;&gt;Lògica de Negoci&lt;/h4&gt;
@@ -33527,7 +33144,7 @@ class ProductController {
                 3. Espai de noms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/3-espai-de-noms/</id>
             <content type="html">
                 &lt;p&gt;Des de PHP 5.3 i també coneguts com &lt;em&gt;Namespaces&lt;/em&gt;, permeten organitzar les classes/interfícies, funcions i/o constants de manera similar als paquets a &lt;em&gt;Java&lt;/em&gt;.&lt;/p&gt;
@@ -33650,7 +33267,7 @@ En &lt;em&gt;Ubuntu&lt;/em&gt; en fer el &lt;em&gt;include&lt;/em&gt; de la clas
                 2. Principis de la POO
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/2-principis-de-la-poo/</id>
             <content type="html">
                 &lt;p&gt;Encapsulació&lt;/p&gt;
@@ -34116,7 +33733,7 @@ class Libro {
                 15. Autoavaluació Programació Orientada a Objectes en PHP
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/15-autoavaluacio-programacio-orientada-a-objectes-en-php/</id>
             <content type="html">
                 &lt;h4 id=&quot;exercici-1-constructors-en-php&quot; tabindex=&quot;-1&quot;&gt;Exercici 1: Constructors en PHP&lt;/h4&gt;
@@ -34345,7 +33962,7 @@ function checkAnswer7() {
                 14. Enunciat dels projectes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/14-enunciat-dels-projectes/</id>
             <content type="html">
                 &lt;h3 id=&quot;projecte-and-quot-ofegat-and-quot&quot; tabindex=&quot;-1&quot;&gt;Projecte &amp;quot;Ofegat&amp;quot;&lt;/h3&gt;
@@ -34583,7 +34200,7 @@ function checkAnswer7() {
                 13. Exercicis
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/13-exercicis/</id>
             <content type="html">
                 &lt;h3 id=&quot;bateria-d-exercicis-solucionats-per-a-la-unitat-de-programacio-orientada-a-objectes&quot; tabindex=&quot;-1&quot;&gt;Bateria d&#39;Exercicis Solucionats per a la Unitat de Programació Orientada a Objectes&lt;/h3&gt;
@@ -35286,7 +34903,7 @@ $dompdf-&amp;gt;stream(&amp;quot;informe_productes.pdf&amp;quot;);
                 12. Referències Bibliogràfiques
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/12-referencies-bibliografiques/</id>
             <content type="html">
                 &lt;h3 id=&quot;programacio-orientada-a-objectes-en-php&quot; tabindex=&quot;-1&quot;&gt;Programació Orientada a Objectes en PHP&lt;/h3&gt;
@@ -35401,7 +35018,7 @@ per Stephan Schmidt. Publicat per Packt Publishing, 2008. ISBN: 978-1-84719-255-
                 11. Proves amb PHPUNIT
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/11-proves-amb-phpunit/</id>
             <content type="html">
                 &lt;p&gt;El curs passat, dins del mòdul de Entorns de Desenvolupament*, estudiarieu la importància de la realització de proves, així com les proves unitàries mitjançant &lt;a href=&quot;https://junit.org/junit5/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;JUnit&lt;/a&gt;.&lt;/p&gt;
@@ -35535,7 +35152,7 @@ public function testExcepcio() {
                 10. Documentación con phpDocumentor
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/10-documentacion-con-php-documentor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://www.phpdoc.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;phpDocumentor&lt;/a&gt; és l&#39;eina per a documentar el codi PHP. És similar en propòsit i funcionament a &lt;em&gt;Javadoc&lt;/em&gt;.&lt;/p&gt;
@@ -35643,7 +35260,7 @@ class Cliente {
                 1. Concepte de classes i Objectes
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/4-programacion-orientada-a-objetos-php/1-concepte-de-classes-i-objectes/</id>
             <content type="html">
                 &lt;p&gt;PHP segueix un paradigma de programació orientada a objectes (POO) basada en classes.&lt;/p&gt;
@@ -35706,7 +35323,7 @@ $bruno-&amp;gt;imprimir();
                 Programación en Web
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/3-programacion-en-web/programacion-en-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacio-web&quot; tabindex=&quot;-1&quot;&gt;Programació Web&lt;/h1&gt;
@@ -37161,7 +36778,7 @@ function checkAnswer7() {
                 Introducción a PHP
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/PHP Teoria Batoi/2. Introduccion a PHP/Introducción a PHP/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt;, `&lt;/p&gt;
@@ -37174,7 +36791,7 @@ function checkAnswer7() {
                 1.1 Entornos de desarrollo
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-1-entornos-de-desarrollo/</id>
             <content type="html">
                 &lt;h1 id=&quot;entorn-de-desenvolupament&quot; tabindex=&quot;-1&quot;&gt;Entorn de desenvolupament&lt;/h1&gt;
@@ -37367,7 +36984,7 @@ S&#39;ha creat un shell per executar totes les proves&lt;/p&gt;
                 1. Arquitecturas WEB
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/php-teoria-batoi/1-arquitecturas-web/1-arquitecturas-web/</id>
             <content type="html">
                 &lt;h1 id=&quot;arquitectures-web&quot; tabindex=&quot;-1&quot;&gt;Arquitectures Web&lt;/h1&gt;
@@ -38748,7 +38365,7 @@ function checkAnswer7() {
                 xx-tests
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/xx-tests/</id>
             <content type="html">
                 &lt;h2 id=&quot;usar-tdd-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Usar TDD en Javascript&lt;/h2&gt;
@@ -38904,7 +38521,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 ejercicios
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/ejercicios/</id>
             <content type="html">
                 &lt;h1 id=&quot;ejercicios-de-javascript&quot; tabindex=&quot;-1&quot;&gt;Ejercicios de Javascript&lt;/h1&gt;
@@ -39062,7 +38679,7 @@ almacen.products.forEach(prod=&amp;gt;console.log(prod.toString()));
                 TDD-mocha
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/tdd-mocha/</id>
             <content type="html">
                 &lt;h1 id=&quot;desarrollo-guiado-por-pruebas-tdd&quot; tabindex=&quot;-1&quot;&gt;Desarrollo guiado por pruebas (TDD)&lt;/h1&gt;
@@ -39231,7 +38848,7 @@ Aquí tenéis un pequeño resumen de algunas de las sentencias que podemos usar.
                 README
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/readme/</id>
             <content type="html">
                 &lt;h1 id=&quot;bloque-1-el-lenguaje-javascript&quot; tabindex=&quot;-1&quot;&gt;BLOQUE 1 - El lenguaje Javascript&lt;/h1&gt;
@@ -39402,7 +39019,7 @@ location, history, otros objetos)&lt;/li&gt;
                 12-tests
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/12-tests/</id>
             <content type="html">
                 &lt;h1 id=&quot;testing&quot; tabindex=&quot;-1&quot;&gt;Testing&lt;/h1&gt;
@@ -39790,7 +39407,7 @@ test(&#39;city database has San Juan&#39;, () =&amp;gt; {
                 11-mas
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/11-mas/</id>
             <content type="html">
                 &lt;h1 id=&quot;mas-cosas-a-aprender-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Más cosas a aprender en Javascript&lt;/h1&gt;
@@ -39995,7 +39612,7 @@ function renderPosts() {   // Función que los muestra en la página
                 10-apis
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/10-apis/</id>
             <content type="html">
                 &lt;h1 id=&quot;ap-is-html-5-drag-and-drop-local-storage-geolocalizacion-api-de-google-maps&quot; tabindex=&quot;-1&quot;&gt;APIs HTML5: Drag And Drop. Local Storage. Geolocalización. API de Google Maps&lt;/h1&gt;
@@ -40277,7 +39894,7 @@ function initMap() {
                 09-ajax
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/09-ajax/</id>
             <content type="html">
                 &lt;h1 id=&quot;ajax&quot; tabindex=&quot;-1&quot;&gt;Ajax&lt;/h1&gt;
@@ -41098,7 +40715,7 @@ const posts = await repository.getAllPosts()
                 08-forms
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/08-forms/</id>
             <content type="html">
                 &lt;h1 id=&quot;validacion-de-formularios&quot; tabindex=&quot;-1&quot;&gt;Validación de formularios&lt;/h1&gt;
@@ -41406,7 +41023,7 @@ console.log(str.replace(/am/gi, function(match) {
                 07-globales
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/07-globales/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;==&lt;/code&gt;&lt;/p&gt;
@@ -41419,7 +41036,7 @@ console.log(str.replace(/am/gi, function(match) {
                 06-eventos
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/06-eventos/</id>
             <content type="html">
                 &lt;h1 id=&quot;eventos&quot; tabindex=&quot;-1&quot;&gt;Eventos&lt;/h1&gt;
@@ -41706,7 +41323,7 @@ elem.dispatchEvent(event);
                 05-BOM
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/05-bom/</id>
             <content type="html">
                 &lt;h1 id=&quot;browser-object-model-bom&quot; tabindex=&quot;-1&quot;&gt;Browser Object Model (BOM)&lt;/h1&gt;
@@ -41913,7 +41530,7 @@ NOTA: por seguridad no se puede mover una ventana fuera de la pantalla ni darle 
                 04.1-MVC
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-1-mvc/</id>
             <content type="html">
                 &lt;h1 id=&quot;el-patron-modelo-vista-controlador&quot; tabindex=&quot;-1&quot;&gt;El patrón Modelo-Vista-Controlador&lt;/h1&gt;
@@ -42118,7 +41735,7 @@ storeApp.deleteProduct(1)
                 04-DOM
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/04-dom/</id>
             <content type="html">
                 &lt;h1 id=&quot;document-object-model-dom&quot; tabindex=&quot;-1&quot;&gt;Document Object Model (DOM)&lt;/h1&gt;
@@ -42501,7 +42118,7 @@ console.log(article.dataset.indexNumber); // 12314
                 03.1-webpack
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-webpack/</id>
             <content type="html">
                 &lt;h1 id=&quot;webpack&quot; tabindex=&quot;-1&quot;&gt;Webpack&lt;/h1&gt;
@@ -42599,7 +42216,7 @@ const myProd = new Product()
                 03.1-vite
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-1-vite/</id>
             <content type="html">
                 &lt;h1 id=&quot;vite&quot; tabindex=&quot;-1&quot;&gt;Vite&lt;/h1&gt;
@@ -42839,7 +42456,7 @@ document.body.prepend(logoHtml)
                 03-oop
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/03-oop/</id>
             <content type="html">
                 &lt;h1 id=&quot;programacion-orientada-a-objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Programación orientada a Objetos en Javascript&lt;/h1&gt;
@@ -43117,7 +42734,7 @@ console.log(cpo.getInfo())     // imprime &#39;El alumno Carlos Pérez Ortíz ti
                 02.2-arrays
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-2-arrays/</id>
             <content type="html">
                 &lt;h1 id=&quot;arrays&quot; tabindex=&quot;-1&quot;&gt;Arrays&lt;/h1&gt;
@@ -43517,7 +43134,7 @@ const ganadoresNoDuplicados = Array.from(new Set(ganadores))    // [&#39;Márque
                 02.1-objetos
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/javascript-teoria-batoi/02-1-objetos/</id>
             <content type="html">
                 &lt;h1 id=&quot;objetos-en-javascript&quot; tabindex=&quot;-1&quot;&gt;Objetos en Javascript&lt;/h1&gt;
@@ -43697,7 +43314,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 01-sintaxis
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/notes/01 Apuntes/DAW/Javascript Teoria Batoi/01-sintaxis/</id>
             <content type="html">
                 &lt;p&gt;&lt;code&gt;=&lt;/code&gt; en una asignación pero debemos hacerlo siempre igual. Existen muchas guías de estilo y muy buenas: &lt;a href=&quot;https://github.com/airbnb/javascript&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Airbnb&lt;/a&gt;, &lt;a href=&quot;https://google.github.io/styleguide/javascriptguide.xml&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/rwaldron/idiomatic.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Idiomatic&lt;/a&gt;, etc. Para obligarnos a seguir las reglas podemos usar alguna herramienta &lt;a href=&quot;https://www.codereadability.com/what-are-javascript-linters/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;linter&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -43714,7 +43331,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Ingles
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/ingles/ingles/</id>
             <content type="html">
                 &lt;p&gt;Profesor:&lt;/p&gt;
@@ -43731,7 +43348,7 @@ const b =  structuredClone(a)       // ahora ambos objetos contienen lo mismo pe
                 Indice DAW
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/indice-daw/</id>
             <content type="html">
                 &lt;p&gt;Asignaturas&lt;br /&gt;
@@ -43830,7 +43447,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Diseño de interfaces WEB
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/diseno-de-interfaces-web/diseno-de-interfaces-web/</id>
             <content type="html">
                 &lt;p&gt;Hola Diseño&lt;/p&gt;
@@ -43844,7 +43461,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Despliegue de aplicaciones WEB
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/despliegue-de-aplicaciones-web/despliegue-de-aplicaciones-web/</id>
             <content type="html">
                 &lt;p&gt;Hola despliege&lt;/p&gt;
@@ -43858,7 +43475,7 @@ PMDM-Pedro-Guillferri&lt;/p&gt;
                 Desarollo Web en entorno servidor
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-servidor/desarollo-web-en-entorno-servidor/</id>
             <content type="html">
                 &lt;p&gt;&lt;a href=&quot;https://github.com/cipfpbatoi/dwes2324&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Pagina de github de los apuntes&lt;/a&gt;&lt;/p&gt;
@@ -43960,7 +43577,7 @@ php artisan make:policy UserPolicy --model=User
                 Desarollo Web en entorno cliente
                 
             </title>
-            <updated>2025-09-15T16:34:09Z</updated>
+            <updated>2025-09-15T16:34:12Z</updated>
             <id>https://pedroporo.github.io/01-apuntes/daw/desarollo-web-en-entorno-cliente/desarollo-web-en-entorno-cliente/</id>
             <content type="html">
                 &lt;pre&gt;&lt;code class=&quot;language-button&quot;&gt;type note(function(){return this.inputEl.value}) template
