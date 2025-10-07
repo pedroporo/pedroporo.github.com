@@ -7,7 +7,7 @@ Acceso a datos
 Desarrollo de interfaces
 Digitalizacion aplicada el sistema productivo GS
 Itinerario personal para la empleabilidad II
-Módulo optativo
+Módulo optativo (Introducción a la nube publica)
 Programación de servicios y procesos
 Programación multimedia y dispositivos móviles
 Proyecto intermodular 2 de Desarrollo de aplicaciones multiplataforma
